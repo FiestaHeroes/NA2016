@@ -1,0 +1,42 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	-							
+#Record	1	-							
+#Record	2	-							
+#Record	3	B_CrackerGuardian_Normal_Wide							
+#Record	4	-							
+#Record	5	B_CrackerGuardian_Normal_Atk			
+#Record	6	-			
+#Record	7	-			
+#Record	8	-			
+#Record	9	B_CrackerGuardian_Normal_Wide			
+#Record	10	-			
+#Record	11	B_CrackerGuardian_Normal_Atk			
+#Record	12	-			
+#Record	13	-			
+#Record	14	-			
+#Record	15	B_CrackerGuardian_Normal_Wide			
+#Record	16	-			
+#Record	17	B_CrackerGuardian_Normal_Atk			
+#Record	18	-			
+#Record	19	-			
+#Record	20	-			
+#Record	21	B_CrackerGuardian_Normal_Wide			
+#Record	22	-			
+#Record	23	B_CrackerGuardian_Normal_Atk			
+#Record	24	-			
+#Record	25	-			
+#Record	26	-			
+#Record	27	B_CrackerGuardian_Normal_Wide			
+#Record	28	-			
+#Record	29	B_CrackerGuardian_Normal_Atk			
+#End					

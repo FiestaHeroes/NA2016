@@ -1,0 +1,37 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Intro00	"...6! Equals 720, 6C2 equals 9, in this case the standard deviation of the distribution is 2.43...Yes!!"	
+#Record	Intro01	"Uh? Oh, you are finally here. I was expecting you to come with the 97.5% of degree of confidence. "	
+#Record	Intro02	What I did just now? This is a probability of you winning and taking my Precious.	
+#Record	Intro03	"Unfortunately, your winning rate is just 1.03%. Do you still want to go for it??"	
+#Record	Intro04	"This is a very simple game, you pick one die and spin the roulette."	
+#Record	Intro05	"If your choice is wrong, you will have some fun time with my slaves."	
+			
+#Record	Roulette1	Pick the die first and then spin the roulette.	
+		
+#Record	PlayerWin	Seems like I am out of luck.
+		
+#Record	Reward	I do what I said. Enter that door and take the Precious.
+		
+; 20060817 수정		
+#Record	Betray	Let's start the second game. Only the winner survives. What do you think??
+		
+#Record	NotSelect	Pick the die first and then spin the roulette.
+#Record	Luck	Good luck to you... and best luck to me...hahaha
+		
+#Record	RouReturn30	Move to Roumen in 30 seconds.
+#Record	RouReturn20	Move to Roumen in 20 seconds.
+#Record	RouReturn10	Move to Roumen in 10 seconds.
+#Record	RouReturn5	Move to Roumen in 5 seconds.
+		
+; 20060817 추가		
+#Record	LastScript0	From where my calculation has been wrong?? That piece of time-space! That must have blinded me!
+#Record	LastScript1	"Yes, take that piece of time-space, so that it can blind your eyes too."
+		
+#End		

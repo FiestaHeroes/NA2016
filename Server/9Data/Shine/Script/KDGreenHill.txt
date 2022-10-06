@@ -1,0 +1,30 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	Guard_FaceCut01	So you tracked the King Slime all the way here.	
+#Record	Guard_FaceCut02	The Emperor Slime is planning to move his army shortly.	
+#Record	Guard_FaceCut03	"But he doesn't have enough troops yet, so this is our chance!"	
+#Record	Guard_FaceCut04	Kill the Emperor Slime and the remnants of his army.	
+#Record	Guard_FaceCut05	I'll go and request backup.	
+#Record	King_FaceCut01	The Emperor will punish you all!	
+#Record	King_FaceCut02	The Slimes will march and kill the Henneath Adventure Union!	
+#Record	King_FaceCut03	Do I really look like the King Slime? Hahahah! You'll never find out!	
+#Record	Emperor_FaceCut01	Who dares disturb the Emperor Slime's dinner? I will teach you imprudent fools a lesson!	
+#Record	Emperor_FaceCut02	"Argh... How could I have been beaten so easily? Sooner or later, the Slimes will avenge me!"	
+#Record	Guard_FaceCut06	You got the job done before the backup even arrived.	
+#Record	Guard_FaceCut07	Now those Slimes won't be a danger for us anymore.	
+#Record	Guard_FaceCut08	"Thank you, brave warriors."	
+#Record	Emperor_Shout01	Punish those foolish people!	
+#Record	Emperor_Shout02	Not bad! Evil Slimes! Advance!	
+#Record	Emperor_Shout03	Slimes as strong as steel! I believe in you!	
+#Record	Emperor_Shout04	"Oho, Queen Slimes! Help your Emperor and make those adventurers fall!"	
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+			
+#End			

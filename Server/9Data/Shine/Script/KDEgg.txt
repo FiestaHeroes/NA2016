@@ -1,0 +1,64 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+; 페이스컷			
+; 입장 5초 후 마을사람들			
+#Record	EldLord_01	This event is for both residents and travelers. Please enjoy yourself!	
+#Record	Worze_01	Wow! Look at the easter egg! It is so beautiful.	
+#Record	Kenton_01	It's fantastic!	
+#Record	Maria_01	Wow! So beautiful!	
+#Record	Palmers_01	I worked hard to make the golden egg for my grandchildren. You will be able to see the beautiful thing if you have some time. Haha!	
+;웨이브 1			
+#Record	Shutian_01	Please evacuate now! Monsters are coming from outside of the castle!	
+#Record	Boogy_01	I wonder what's in the golden egg. Let's break it!!	
+#Record	Palmers_02	No! The egg is for my grandchildren. Please protect the egg.	
+#Record	Palmers_03	I brought landmines which have been used in the mine. Buy them from me to use!	
+;웨이브 2			
+#Record	Worze_02	The monsters stole all my eggs. *sniff*	
+#Record	Kenton_02	They stole my other eggs. I will give you a small gift if you can get my stolen eggs back.	
+;웨이브 3			
+#Record	Kebing_01	Let's take it first before someone else does!	
+;웨이브 5			
+#Record	Honeyng_01	The egg?!?! I want to have it!	
+;웨이브 6			
+#Record	Shutian_03	We are in big trouble! Some of them are turning around from the back!	
+;웨이브 8			
+#Record	Honeyng_02	It must be worth something if they are desperately trying to stop us!	
+#Record	Kebing_02	Let's gather all our strength!!	
+#Record	Boogy_02	"Now I'm curious about it, too!!"	
+;웨이브 10			
+#Record	Shutian_02	It seems like we defeated most of the monsters! Their numbers are dwindling!	
+#Record	Palmers_04	Time is almost up!	
+;몬스터 몹챗			
+#Record	Mob01_Normal01	Wow! Delicious eggs!	
+#Record	Mob01_Normal02	I want the golden egg!	
+#Record	Mob01_Normal03	"Heeere eggy, eggy, eggy! Hahaha!"	
+#Record	Mob01_Die01	The egg is mine.	
+#Record	Mob01_Die02	Maybe I was too greedy. 	
+#Record	Mob01_Die03	I should've just gone back.	
+#Record	Mob02_Normal01	Let's snag the golden egg!	
+#Record	Mob02_Normal02	It is such a beautiful egg!!	
+#Record	Mob02_Normal03	Hahaha! The golden egg is mine!	
+#Record	Mob02_Die01	I was so close.	
+#Record	Mob02_Die02	This might be the end.	
+; 성공시			
+#Record	Kebing_03	Many friends were injured because of the egg. Let's run away!	
+#Record	Palmers_05	Haha! Isn't it beautiful?	
+#Record	Palmers_06	This is a small heirloom for my lovely grandchildren.	
+#Record	Palmers_07	"Thanks to you, I was able to give the gift to my grandchildren. Thank you!"	
+#Record	Kenton_03	Just beautiful! What happened to the stolen eggs?	
+#Record	Kenton_04	I will give you a small reward if you bring the reclaimed easter eggs to me.	
+;실패시			
+#Record	Honeyng_03	What?! There's not much here! I should grab the gold pieces and head back!	
+#Record	Palmers_08	This can't be. The golden egg for my grandchildren! How sad.	
+#Record	Palmers_09	I would like to say thank you to everyone who tried so hard.	
+;밖으로 이동 안내			
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+#End			

@@ -1,0 +1,26 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+#Record	KQReturn60	Giant Honeying is defeated.	
+#Record	KQReturn50	Move to Elderine in 50 seconds.	
+#Record	KQReturn40	Move to Elderine in 40 seconds.	
+#Record	KQReturn30	Move to Elderine in 30 seconds.	
+#Record	KQReturn20	Move to Elderine in 20 seconds.	
+#Record	KQReturn10	Move to Elderine in 10 seconds.	
+#Record	KQReturn5	Move to Elderine in 5 seconds.	
+
+#Record	KQFReturn30	Move to Elderine in 30 seconds.	
+#Record	KQFReturn20	Move to Elderine in 20 seconds.
+#Record	KQFReturn10	Move to Elderine in 10 seconds.
+#Record	KQFReturn5	Move to Elderine in 5 seconds.
+
+#Record	Honeying01	Where do you think you are!
+#Record	Honeying02	You want to get stung!!?
+
+#Record	Summon01	Friends! Attack those worthless people!!
+
+#End		

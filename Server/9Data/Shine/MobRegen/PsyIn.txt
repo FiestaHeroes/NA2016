@@ -1,0 +1,220 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		PsyIn_001	N	10762	15845	0	0	52									
+#record		PsyIn_002	N	10350	15839	0	0	45									
+#record		PsyIn_003	N	9894	16157	0	0	31									
+#record		PsyIn_004	N	12965	15843	0	0	59									
+#record		PsyIn_005	N	13361	15833	0	0	52									
+#record		PsyIn_006	N	13872	16155	0	0	38									
+#record		PsyIn_007	N	12075	16447	0	0	94									
+#record		PsyIn_008	N	11678	16850	0	0	115									
+#record		PsyIn_009	N	12389	16854	0	0	66									
+#record		PsyIn_010	N	10537	13882	0	0	150									
+#record		PsyIn_011	N	10864	13877	0	0	150									
+#record		PsyIn_012	N	11180	13877	0	0	143									
+#record		PsyIn_013	N	12583	13894	0	0	157									
+#record		PsyIn_014	N	12912	13894	0	0	143									
+#record		PsyIn_015	N	13221	13891	0	0	143									
+#record		PsyIn_016	N	10095	15091	0	0	171									
+#record		PsyIn_017	N	10560	14744	0	0	129									
+#record		PsyIn_018	N	10103	14566	0	0	185									
+#record		PsyIn_019	N	10561	15130	0	0	122									
+#record		PsyIn_020	N	9960	13961	0	0	122									
+#record		PsyIn_021	N	9992	13658	0	0	143									
+#record		PsyIn_022	N	10037	13265	0	0	200									
+#record		PsyIn_023	N	13640	15081	0	0	171									
+#record		PsyIn_024	N	13223	15086	0	0	150									
+#record		PsyIn_025	N	13235	14733	0	0	157									
+#record		PsyIn_026	N	13673	14596	0	0	199									
+#record		PsyIn_027	N	13789	13932	0	0	129									
+#record		PsyIn_028	N	13790	13614	0	0	143									
+#record		PsyIn_029	N	13727	13237	0	0	171									
+#record		PsyIn_030	N	10166	16887	0	0	200									
+#record		PsyIn_031	N	10604	16892	0	0	192									
+#record		PsyIn_032	N	10382	16626	0	0	242									
+#record		PsyIn_033	N	13160	16944	0	0	192									
+#record		PsyIn_034	N	13593	16951	0	0	199									
+#record		PsyIn_035	N	13375	16640	0	0	256									
+#record		PsyIn_036	N	11876	17621	0	0	256									
+#record		PsyIn_037	N	12378	17872	0	0	164									
+#record		PsyIn_038	N	12897	17914	0	0	200									
+#record		PsyIn_039	N	13400	17927	0	0	200									
+#record		PsyIn_040	N	13400	18451	0	0	200									
+#record		PsyIn_041	N	13382	19007	0	0	200									
+#record		PsyIn_042	N	11367	17871	0	0	157									
+#record		PsyIn_043	N	10872	17931	0	0	200									
+#record		PsyIn_044	N	10375	17936	0	0	200									
+#record		PsyIn_045	N	10372	18422	0	0	200									
+#record		PsyIn_046	N	10376	18935	0	0	200									
+#record		PsyIn_047	N	10886	18921	0	0	200									
+#record		PsyIn_048	N	11380	19003	0	0	171									
+#record		PsyIn_049	N	12401	19004	0	0	164									
+#record		PsyIn_050	N	12909	18982	0	0	200									
+#record		PsyIn_051	N	11877	19163	0	0	192									
+#record		PsyIn_052	N	12394	19954	0	0	200									
+#record		PsyIn_053	N	12865	19934	0	0	200									
+#record		PsyIn_054	N	13335	19938	0	0	200									
+#record		PsyIn_055	N	13860	19900	0	0	200									
+#record		PsyIn_056	N	14392	19847	0	0	270									
+#record		PsyIn_057	N	14373	19245	0	0	200									
+#record		PsyIn_058	N	14375	18746	0	0	200									
+#record		PsyIn_059	N	14378	17949	0	0	200									
+#record		PsyIn_060	N	14385	17483	0	0	200									
+#record		PsyIn_061	N	14389	17015	0	0	200									
+#record		PsyIn_062	N	14388	16534	0	0	200									
+#record		PsyIn_063	N	14397	16050	0	0	200									
+#record		PsyIn_064	N	11350	19923	0	0	200									
+#record		PsyIn_065	N	10892	19909	0	0	200									
+#record		PsyIn_066	N	10437	19917	0	0	200									
+#record		PsyIn_067	N	9960	19921	0	0	200									
+#record		PsyIn_068	N	9400	19838	0	0	284									
+#record		PsyIn_069	N	9397	19273	0	0	200									
+#record		PsyIn_070	N	9361	18809	0	0	200									
+#record		PsyIn_071	N	9371	17917	0	0	200									
+#record		PsyIn_072	N	9374	17445	0	0	200									
+#record		PsyIn_073	N	9367	16973	0	0	200									
+#record		PsyIn_074	N	9370	16492	0	0	200									
+#record		PsyIn_075	N	9377	16020	0	0	200									
+#record		PsyIn_076	N	15736	18490	0	0	164									
+#record		PsyIn_077	N	15282	18808	0	0	214									
+#record		PsyIn_078	N	16708	18493	0	0	200									
+#record		PsyIn_079	N	17406	18516	0	0	200									
+#record		PsyIn_080	N	18153	18490	0	0	200									
+#record		PsyIn_081	N	8492	18811	0	0	228									
+#record		PsyIn_082	N	7998	18471	0	0	178									
+#record		PsyIn_083	N	7018	18495	0	0	200									
+#record		PsyIn_084	N	6300	18497	0	0	200									
+#record		PsyIn_085	N	5620	18476	0	0	200									
+#record		PsyIn_HERO01	N	20113	18459	0	0	100									
+#record		PsyIn_HERO02	N	3585	18506	0	0	100									
+#record		PresentBox01	N	23376	21219	0	0	164									
+#record		PresentBox02	N	387	21251	0	0	192									
+#record		PsyOut_MINE1	N	21320	20187	0	0	166									
+#record		PsyOut_MINE2	N	22580	20090	0	0	201									
+#record		PsyOut_MINE3	N	22201	19892	0	0	194									
+#record		PsyOut_MINE4	N	21427	19903	0	0	152									
+#record		PsyOut_MINE5	N	22964	20104	0	0	180									
+#record		PsyOut_MINE6	N	1326	19618	0	0	173									
+#record		PsyOut_MINE7	N	1266	18255	0	0	159									
+#record		PsyOut_MINE8	N	1621	19814	0	0	187									
+#record		PsyOut_MINE9	N	1155	19336	0	0	159									
+#record		PsyOut_MINE10	N	1242	18615	0	0	173									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		PsyIn_001	Psy_Wraith	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_002	Psy_Wraith	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_003	Psy_Wraith	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_004	Psy_Wraith	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_005	Psy_Wraith	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_006	Psy_Wraith	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_007	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_008	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_009	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_010	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_011	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_012	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_013	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_014	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_015	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_016	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_017	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_018	IncubusG	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_019	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_020	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_021	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_022	IncubusG	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_023	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_024	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_025	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_026	IncubusG	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_027	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_028	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_029	IncubusG	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_030	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_031	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_032	IncubusG	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_033	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_034	IncubusG	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_035	IncubusG	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_036	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_037	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_038	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_039	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_040	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_041	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_042	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_043	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_044	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_045	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_046	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_047	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_048	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_049	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_050	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_051	Psy_Statue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_052	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_053	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_054	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_055	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_056	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_057	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_058	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_052	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_053	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_054	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_055	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_056	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_057	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_058	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_059	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_060	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_061	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_062	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_063	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_064	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_065	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_066	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_067	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_068	Psy_Mist	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_069	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_070	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_064	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_065	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_066	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_067	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_068	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_069	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_070	Psy_Statue	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_071	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_072	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_073	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_074	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_075	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_076	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_077	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_078	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_079	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_080	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_081	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_082	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_083	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_084	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_085	Psy_Mist	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_HERO01	Psy_Psyken	1	0	3600	3500	3700	-8	17	-4	22	10	29	13	34	0
+#record		PsyIn_HERO02	Chimera	1	0	86400	84000	88800	-8	17	-4	22	10	29	13	34	0
+																	
+#end																	

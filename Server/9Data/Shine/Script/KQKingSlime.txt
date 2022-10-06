@@ -1,0 +1,32 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Guardian	Spear Guard	
+			
+#Record	KingSlime0	"You, who affront the sacred Slime"	
+#Record	KingSlime1	My curse shall be with you forever!!	
+#Record	KingSlimeSummon	"Slimes, destroy them with my power!!"	
+#Record	KingSlimeDead	??	
+			
+#Record	StartWarn0	What are you doing in this time of crisis?	
+#Record	StartWarn1	"Slimes, fighting under King Slime, have invaded!!!"
+#Record	StartWarn2	We are  in big trouble if we don't defeat them within 50 minutes.
+#Record	StartWarn3	I will go and request reinforcements.
+#Record	StartWarn4	You should leave here as soon as possible.
+		
+#Record	GuardianSuc0	Are you all safe and well?
+#Record	GuardianSuc1	Our reinforcements will arrive in 5 minutes.
+#Record	GuardianSuc2	"In the meantime, try to hide somewhere safe."
+		
+;	KQ 임시	
+#Record	KQReturn30	Move to Roumen in 30 seconds.
+#Record	KQReturn20	Move to Roumen in 20 seconds.
+#Record	KQReturn10	Move to Roumen in 10 seconds.
+#Record	KQReturn5	Move to Roumen in 5 seconds.
+		
+#End		

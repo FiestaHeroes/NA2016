@@ -1,0 +1,31 @@
+; 킹덤퀘스트가 끝난후 맵에 있는 모든 사람들을 루멘으로 쫓아내기 위한 스크립트
+
+open [main]
+    shout all "천년로보" "모두 집합!!!".
+    shout all "천년로보" "앉아!".
+    shout all "천년로보" "일어서!".
+    shout all "천년로보" "뒤로취침!".
+    shout all "천년로보" "기상!".
+    shout all "천년로보" "앞으로취침!".
+    shout all "천년로보" "기상!".
+    shout all "천년로보" "동작봐라! 모두 엎드려 뻗쳐!".
+    WaitTime MilliSec 1000.             ; 1초간 대기
+    shout all "천년로보" "사막늑대, 너, 너는 머리박아! 똑바로 못해?".
+    shout all "천년로보" "너.. 너, 내가 너 입조심하라고 그랬지?".
+    WaitTime MilliSec 1000.             ; 1초간 대기
+    shout all "천년로보" "너, 다시한번 입을 함부로 놀리면 알아서 해라...".
+    WaitTime MilliSec 1000.             ; 1초간 대기
+    shout all "천년로보" "늑대만 빼고 모두 기상!!".
+    WaitTime MilliSec 1000.             ; 1초간 대기
+    shout all "천년로보" "앞으로 다음 킹퀘까지 하루 20시간씩 훈련이다. 알았나???".
+
+    broadcast all "30초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "20초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "10초후 루멘으로 이동합니다.".
+    wait sec 5.
+    broadcast all "5초후 루멘으로 이동합니다.".
+    wait sec 5.
+    linkto all "Rou" "Rou" 7907 8572.
+close

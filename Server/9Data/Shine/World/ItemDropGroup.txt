@@ -1,0 +1,1100 @@
+;	Shine DropItem from Mob																					;
+#IGNORE	\o042			;인용부호무시																		;
+#EXCHANGE	#	\x20		;#=>space																		;
+;	기획용	2005.02.27																				;
+;																						;
+#TABLE	ItemDropGroup																					;
+#COLUMNTYPE	Index	String[40]	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	Word	DWORD	;
+#COLUMNNAME	ItemGroupIdx	ItemID	MinQtty	MaxQtty	Upgrade00	Upgrade01	Upgrade02	Upgrade03	Upgrade04	Upgrade05	Upgrade06	Upgrade07	Upgrade08	Upgrade09	Upgrade10	Upgrade11	Upgrade12	Upgrade13	Upgrade14	Upgrade15	CheckSum	;
+;																						;
+																						;
+#RECORD	Shoes1	Shoes1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat1	Hat1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg1	Leg1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body1	Body1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon1	Weapon1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield1	Shield1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon1	NamedOp1Weapon1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon1	NamedOp2Weapon1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon1	NamedOp3Weapon1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield1	NamedOP3Shield1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes2	Shoes2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat2	Hat2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg2	Leg2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body2	Body2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon2	Weapon2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield2	Shield2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon2	NamedOp1Weapon2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon2	NamedOp2Weapon2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon2	NamedOp3Weapon2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor2	NamedOP3Armor2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants2	NamedOP3Pants2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat2	NamedOP3Hat2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots2	NamedOP3Boots2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield2	NamedOP3Shield2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes3	Shoes3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat3	Hat3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg3	Leg3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body3	Body3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon3	Weapon3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield3	Shield3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon3	NamedOp1Weapon3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon3	NamedOp2Weapon3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon3	NamedOp3Weapon3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor3	NamedOP3Armor3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants3	NamedOP3Pants3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat3	NamedOP3Hat3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots3	NamedOP3Boots3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield3	NamedOP3Shield3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes4	Shoes4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat4	Hat4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg4	Leg4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body4	Body4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon4	Weapon4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield4	Shield4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon4	NamedOp1Weapon4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon4	NamedOp2Weapon4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon4	NamedOp3Weapon4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor4	NamedOP3Armor4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants4	NamedOP3Pants4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat4	NamedOP3Hat4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots4	NamedOP3Boots4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield4	NamedOP3Shield4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes5	Shoes5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat5	Hat5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg5	Leg5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body5	Body5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon5	Weapon5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield5	Shield5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon5	NamedOp1Weapon5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon5	NamedOp2Weapon5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon5	NamedOp3Weapon5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor5	NamedOP3Armor5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants5	NamedOP3Pants5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat5	NamedOP3Hat5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots5	NamedOP3Boots5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield5	NamedOP3Shield5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes6	Shoes6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat6	Hat6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg6	Leg6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body6	Body6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon6	Weapon6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield6	Shield6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon6	NamedOp1Weapon6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon6	NamedOp2Weapon6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon6	NamedOp3Weapon6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor6	NamedOP3Armor6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants6	NamedOP3Pants6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat6	NamedOP3Hat6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots6	NamedOP3Boots6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield6	NamedOP3Shield6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes7	Shoes7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat7	Hat7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg7	Leg7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body7	Body7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon7	Weapon7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield7	Shield7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon7	NamedOp1Weapon7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon7	NamedOp2Weapon7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon7	NamedOp3Weapon7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor7	NamedOP3Armor7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants7	NamedOP3Pants7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat7	NamedOP3Hat7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots7	NamedOP3Boots7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield7	NamedOP3Shield7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes8	Shoes8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat8	Hat8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg8	Leg8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body8	Body8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon8	Weapon8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield8	Shield8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon8	NamedOp1Weapon8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon8	NamedOp2Weapon8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon8	NamedOp3Weapon8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor8	NamedOP3Armor8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants8	NamedOP3Pants8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat8	NamedOP3Hat8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots8	NamedOP3Boots8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield8	NamedOP3Shield8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes9	Shoes9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat9	Hat9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg9	Leg9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body9	Body9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon9	Weapon9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield9	Shield9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon9	NamedOp1Weapon9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon9	NamedOp2Weapon9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon9	NamedOp3Weapon9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor9	NamedOP3Armor9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants9	NamedOP3Pants9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat9	NamedOP3Hat9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots9	NamedOP3Boots9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield9	NamedOP3Shield9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes10	Shoes10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat10	Hat10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg10	Leg10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body10	Body10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon10	Weapon10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield10	Shield10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon10	NamedOp1Weapon10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon10	NamedOp2Weapon10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon10	NamedOp3Weapon10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor10	NamedOP3Armor10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants10	NamedOP3Pants10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat10	NamedOP3Hat10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots10	NamedOP3Boots10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield10	NamedOP3Shield10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes11	Shoes11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat11	Hat11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg11	Leg11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body11	Body11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon11	Weapon11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield11	Shield11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp1Weapon11	NamedOp1Weapon11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp2Weapon11	NamedOp2Weapon11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOp3Weapon11	NamedOp3Weapon11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Armor11	NamedOP3Armor11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Pants11	NamedOP3Pants11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Hat11	NamedOP3Hat11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Boots11	NamedOP3Boots11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedOP3Shield11	NamedOP3Shield11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes12	Shoes12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat12	Hat12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg12	Leg12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body12	Body12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon12	Weapon12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield12	Shield12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes13	Shoes13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat13	Hat13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg13	Leg13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body13	Body13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon13	Weapon13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield13	Shield13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes14	Shoes14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat14	Hat14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg14	Leg14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body14	Body14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon14	Weapon14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield14	Shield14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Shoes15	Shoes15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Hat15	Hat15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Leg15	Leg15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Body15	Body15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Weapon15	Weapon15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Shield15	Shield15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Ring01	Ring01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Ring02	Ring02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Ring03	Ring03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Ring04	Ring04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Ring05	Ring05	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Ring06	Ring06	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedRing01	NamedRing01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedRing02	NamedRing02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedRing03	NamedRing03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedRing04	NamedRing04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedRing05	NamedRing05	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	NamedRing06	NamedRing06	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	PhinoRing	PhinoRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	PhinoFlieRing	PhinoFlieRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	MaraRing	MaraRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SkullRing	SkullRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	RoboRing	RoboRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	GobleKingRing	GobleKingRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	JewelKeeperRing	JewelKeeperRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	GhostNightRing	GhostNightRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	RareRing01	RareRing01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	RareRing02	RareRing02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	RareRing03	RareRing03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	UniqRing01	UniqRing01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	UniqRing02	UniqRing02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						
+#RECORD	Neck01	Neck01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Neck02	Neck02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Neck03	Neck03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Neck04	Neck04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Neck05	Neck05	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Neck06	Neck06	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedNeck01	NamedNeck01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedNeck02	NamedNeck02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedNeck03	NamedNeck03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedNeck04	NamedNeck04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedNeck05	NamedNeck05	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedNeck06	NamedNeck06	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KebingNeck	KebingNeck	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SkullNeck	SkullNeck	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GoblinNeck	GoblinNeck	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KaraNeck	KaraNeck	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	TrumphyNeck01	TrumphyNeck01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	TrumphyNeck02	TrumphyNeck02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	RareNeck01	RareNeck01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	RareNeck02	RareNeck02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareNeck03	RareNeck03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	UniqNeck01	UniqNeck01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	UniqNeck02	UniqNeck02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						;
+#RECORD	Upsource01	Upsource01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource02	Upsource02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource03	Upsource03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource04	Upsource04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource05	Upsource05	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource06	Upsource06	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource07	Upsource07	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource08	Upsource08	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource09	Upsource09	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource10	Upsource10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource11	Upsource11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource12	Upsource12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource13	Upsource13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource14	Upsource14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Upsource15	Upsource15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+
+																						;
+#RECORD	SpUpsource01	SpUpsource01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource02	SpUpsource02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource03	SpUpsource03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource04	SpUpsource04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource05	SpUpsource05	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource06	SpUpsource06	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource07	SpUpsource07	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource08	SpUpsource08	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource09	SpUpsource09	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource10	SpUpsource10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource11	SpUpsource11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource12	SpUpsource12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource13	SpUpsource13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource14	SpUpsource14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	SpUpsource15	SpUpsource15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+																						;
+#RECORD	Grade01Source01	Grade01Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade01Source02	Grade01Source02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade01Source03	Grade01Source03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade02Source01	Grade02Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade02Source02	Grade02Source02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade02Source03	Grade02Source03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade03Source01	Grade03Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade03Source02	Grade03Source02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade03Source03	Grade03Source03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade04Source01	Grade04Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade04Source02	Grade04Source02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade04Source03	Grade04Source03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	;
+#RECORD	Grade05Source01	Grade05Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Grade05Source02	Grade05Source02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Grade05Source03	Grade05Source03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Grade06Source01	Grade06Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Grade07Source01	Grade07Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Grade08Source01	Grade08Source01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	Badge	Badge	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestBag	BestBag	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestBeast	BestBeast	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestBelt	BestBelt	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestBrokenTeeth	BestBrokenTeeth	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestCarcass	BestCarcass	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestDust	BestDust	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestGlove	BestGlove	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestPledge	BestPledge	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestShell	BestShell	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	ElementalEgg	ElementalEgg	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighBag	HighBag	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighBeast	HighBeast	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighBelt	HighBelt	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighBrokenTeeth	HighBrokenTeeth	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighCarcass	HighCarcass	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighDust	HighDust	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighGlove	HighGlove	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighPledge	HighPledge	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighShell	HighShell	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	Kylin	Kylin	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowBag	LowBag	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowBeast	LowBeast	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	;
+#RECORD	LowBelt	LowBelt	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowBrokenTeeth	LowBrokenTeeth	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowCarcass	LowCarcass	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowDust	LowDust	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowGlove	LowGlove	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowPledge	LowPledge	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowShell	LowShell	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	Mushroom	Mushroom	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorBag	NorBag	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorBeast	NorBeast	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorBelt	NorBelt	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorBrokenTeeth	NorBrokenTeeth	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorCarcass	NorCarcass	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorDust	NorDust	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorGlove	NorGlove	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorPledge	NorPledge	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorShell	NorShell	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	SlimeJelly	SlimeJelly	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	LowCopperOre	LowCopperOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NorCopperOre	NorCopperOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HighCopperOre	HighCopperOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LowSilverOre	LowSilverOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NorSilverOre	NorSilverOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HighSilverOre	HighSilverOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LowHerb	LowHerb	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	NorHerb	NorHerb	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	HighHerb	HighHerb	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	BestHerb	BestHerb	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	LowMush	LowMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	NorMush	NorMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	;
+#RECORD	HighMush	HighMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	;
+#RECORD	BestMush	BestMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	;
+#RECORD	LowMush	LowMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	;
+#RECORD	NorMush	NorMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	;
+#RECORD	HighMush	HighMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	;
+#RECORD	BestMush	BestMush	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	;
+																						;
+#RECORD	LowMagicCrystal	LowMagicCrystal	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	;
+#RECORD	LowCleanWater	LowCleanWater	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	;
+#RECORD	NorMagicCrystal	NorMagicCrystal	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorCleanWater	NorCleanWater	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	;
+#RECORD	HighMagicCrystal	HighMagicCrystal	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighCleanWater	HighCleanWater	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestMagicCrystal	BestMagicCrystal	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestCleanWater	BestCleanWater	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+																						
+#RECORD	LowKylin	LowKylin	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	NorKylin	NorKylin	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	HighKylin	HighKylin	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	BestKylin	BestKylin	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+																						
+#RECORD	Topaz	Topaz	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Ruby	Ruby	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Sapphire	Sapphire	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Emerald	Emerald	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	Q_HerbLeaf	Q_HerbLeaf	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_HerbStem	Q_HerbStem	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_HerbRoot	Q_HerbRoot	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Wood	Q_Wood	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_MiddleRankWood	Q_MiddleRankWood	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Orange	Q_Orange	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Strawberry	Q_Strawberry	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Apple	Q_Apple	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_OceanMushroom	Q_OceanMushroom	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Starfish	Q_Starfish	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Petal(Red)	Q_Petal(Red)	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Petal(Yellow)	Q_Petal(Yellow)	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Petal(Blue)	Q_Petal(Blue)	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	StageHomeRecallScroll	StageHomeRecallScroll	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	RatmanLicence	RatmanLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BoarLicence	BoarLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BoogyLicence	BoogyLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MaraLicence	MaraLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KebingLicence	KebingLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	TombRaiderLicence	TombRaiderLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MarloneLicence	MarloneLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SkelLicence	SkelLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BatLicence	BatLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SpiderLicence	SpiderLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ZombieLicence	ZombieLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FlyingStaffLicence	FlyingStaffLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	OldFoxLicence	OldFoxLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FireViViLicence	FireViViLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GhostLicence	GhostLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RoboLicence	RoboLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HobLicence	HobLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BoneImpLicence	BoneImpLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GoblinLicence	GoblinLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ProckLicence	ProckLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WereBearLicence	WereBearLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	PrisonerLicence	PrisonerLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	TorturerLicence	TorturerLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	VampireBatLicence	VampireBatLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KaraLicence	KaraLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HarkanLicence	HarkanLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MageBookLicence	MageBookLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WeakenedOgreLicence	WeakenedOgreLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GoldenBatLicence	GoldenBatLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KingCallLicence	KingCallLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ArchMageBookLicence	ArchMageBookLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RatmanKnightLicence	RatmanKnightLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KingSpiderLicence	KingSpiderLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	JewelKeeperLicence	JewelKeeperLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RunningBasLicence	RunningBasLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GhostKnightLicence	GhostKnightLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ImpLicence	ImpLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	Tools	Tools	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	MDragonGoldRing	MDragonGoldRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	LowWoodSab	LowWoodSab	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	NorWoodSab	NorWoodSab	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	HighWoodSab	HighWoodSab	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	BestWoodSab	BestWoodSab	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+																						
+#RECORD	LowGoldOre	LowGoldOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NorGoldOre	NorGoldOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HighGoldOre	HighGoldOre	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	CopperLump01	CopperLump01	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+#RECORD	SilverLump01	SilverLump01	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+#RECORD	GoldLump01	GoldLump01	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+																						
+#RECORD	StageRouRecallScroll	StageRouRecallScroll	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	StageEldRecallScroll	StageEldRecallScroll	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	StageUrgRecallScroll	StageUrgRecallScroll	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	StageAlRecallScroll	StageAlRecallScroll	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	StageBeraRecallScroll	StageBeraRecallScroll	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+																						
+#RECORD	RareWeapon01	RareWeapon01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareWeapon02	RareWeapon02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareWeapon03	RareWeapon03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareWeapon04	RareWeapon04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareArmor01	RareArmor01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareArmor02	RareArmor02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareArmor03	RareArmor03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareArmor04	RareArmor04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	S_RouCos01Crap	S_RouCos01Crap	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_RouCos02Crap	S_RouCos02Crap	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_Wolf	S_Wolf	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_Boogy	S_Boogy	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Mara	Mara	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_MarloneFighter	D_MarloneFighter	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_kingMarlone	D_kingMarlone	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Marlone	Marlone	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_Kebing	S_Kebing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_Zombieking	D_Zombieking	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_OldFox	D_OldFox	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SkelKnight	SkelKnight	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_Zombie	S_Zombie	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_GiantGblKing	D_GiantGblKing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_GoblinSwordman	D_GoblinSwordman	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GobleKing	GobleKing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_WereBear	S_WereBear	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Robo	Robo	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_Prisoner	D_Prisoner	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_VampireBat	S_VampireBat	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_Torturerking	D_Torturerking	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_GiantOrcCaptain	D_GiantOrcCaptain	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_Nox	D_Nox	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_Greenky	S_Greenky	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LegendaryTree	LegendaryTree	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	S_Stonie	S_Stonie	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GhostKnight	GhostKnight	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_Harpy	D_Harpy	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_GuardianMaster	D_GuardianMaster	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BellowKnight	BellowKnight	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	Helga	Helga	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	GatherLow	GatherLow	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+#RECORD	GatherNor	GatherNor	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+#RECORD	GatherHigh	GatherHigh	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+#RECORD	GatherBest	GatherBest	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+#RECORD	Ore01	Ore01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Ore02	Ore02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Ore03	Ore03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Ore04	Ore04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	UniqRing01	UniqRing01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	UniqNeck01	UniqNeck01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon1	NamedWeapon1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon2	NamedWeapon2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon3	NamedWeapon3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon4	NamedWeapon4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon5	NamedWeapon5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon6	NamedWeapon6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon7	NamedWeapon7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon8	NamedWeapon8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon9	NamedWeapon9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon10	NamedWeapon10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon11	NamedWeapon11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon12	NamedWeapon12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon13	NamedWeapon13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon14	NamedWeapon14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon15	NamedWeapon15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedWeapon16	NamedWeapon16	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	네임드 방어구																					
+#RECORD	NamedArmor1	NamedArmor1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor2	NamedArmor2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor3	NamedArmor3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor4	NamedArmor4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor5	NamedArmor5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor6	NamedArmor6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor7	NamedArmor7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor8	NamedArmor8	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor9	NamedArmor9	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor10	NamedArmor10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor11	NamedArmor11	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor12	NamedArmor12	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor13	NamedArmor13	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor14	NamedArmor14	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedArmor15	NamedArmor15	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	BestLowProduct	BestLowProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LowProduct	LowProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NorProduct	NorProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HighProduct	HighProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BestProduct	BestProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareBestLowProduct	RareBestLowProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLowProduct	RareLowProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareNorProduct	RareNorProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareHighProduct	RareHighProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareBestProduct	RareBestProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	MiniSlime	MiniSlime	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MiniHoneying	MiniHoneying	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MiniKebing	MiniKebing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	PILicence	PILicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LIZARDLicence	LIZARDLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KingMushRoomLicence	KingMushRoomLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	TREELicence	TREELicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NaiadSoulLicence	NaiadSoulLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ShylphLicence	ShylphLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LipsLicence	LipsLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ElfKnightSoulLicence	ElfKnightSoulLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	TRUMPYLicence	TRUMPYLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ORCLicence	ORCLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NoxHunterLicence	NoxHunterLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KEEPERLicence	KEEPERLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	STONIELicence	STONIELicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SparkDogLicence	SparkDogLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ARCHONLicence	ARCHONLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	INCUBUSLicence	INCUBUSLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MiniPinkyLicence	MiniPinkyLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SpeedyBoogyLicence	SpeedyBoogyLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SmartPhinoLicence	SmartPhinoLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	JokeKebingLicence	JokeKebingLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LittleLizardManLicence	LittleLizardManLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BabyBatLicence	BabyBatLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GoldrySlimeLicence	GoldrySlimeLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GlowWolfLicence	GlowWolfLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	IceViViLicence	IceViViLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ScareImpLicence	ScareImpLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MasicStaffLicence	MasicStaffLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	CemWolfLicence	CemWolfLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BabyWereBearLicence	BabyWereBearLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EarthSpiderLicence	EarthSpiderLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SandMushroomLicence	SandMushroomLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MiniLipsLicence	MiniLipsLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LightingViViLicence	LightingViViLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ArchonJuinorLicence	ArchonJuinorLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MiniJewelKeeperLicence	MiniJewelKeeperLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	OrcHunterLicence	OrcHunterLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RedStonieLicence	RedStonieLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BlueCloverTrumpyLicence	BlueCloverTrumpyLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GiantPixyLicence	GiantPixyLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GreedyLizardManLicence	GreedyLizardManLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	OldArchonLicence	OldArchonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ElfKnightDemonLicence	ElfKnightDemonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FireNixLicence	FireNixLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FireSpiritLicence	FireSpiritLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FlameHoneyingLicence	FlameHoneyingLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	CoreGuardian-ULicence	CoreGuardian-ULicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MineMoleLicence	MineMoleLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RubyGuardian-ULicence	RubyGuardian-ULicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FlameSpiritLicence	FlameSpiritLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KidMonLicence	KidMonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MinerLicence	MinerLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	UndeadMinerLicence	UndeadMinerLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KartMinerLicence	KartMinerLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LavaViviLicence	LavaViviLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	JewelTreeLicence	JewelTreeLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MagmaTonLicence	MagmaTonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FlameMinemoleLicence	FlameMinemoleLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RedNixLicence	RedNixLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	CrystalGuardian-ULicence	CrystalGuardian-ULicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LavaMagmatonLicence	LavaMagmatonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GuardianMasterLicence	GuardianMasterLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GagoyleLicence	GagoyleLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GiantMagmatonLicence	GiantMagmatonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BellowKnightLicence	BellowKnightLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BellowKnight-SLicence	BellowKnight-SLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BellowKnight-GLicence	BellowKnight-GLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BellowknightRordLicence	BellowknightRordLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	CaimanJuniorLicence	CaimanJuniorLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	CaimanLicence	CaimanLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RhinoceLicence	RhinoceLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MudManLicence	MudManLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MandrakeLicence	MandrakeLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MantrapPlantLicence	MantrapPlantLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WereBoarLicence	WereBoarLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LivingTotemLicence	LivingTotemLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SlugLicence	SlugLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ShadowLicence	ShadowLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RhinoceLordLicence	RhinoceLordLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MadSlugLicence	MadSlugLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RedShadowLicence	RedShadowLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RaplanLicence	RaplanLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BigMudManLicence	BigMudManLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LivingStatueLicence	LivingStatueLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	PhouchLicence	PhouchLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LivingStoneLicence	LivingStoneLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WeaselLicence	WeaselLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RhinoceHunterLicence	RhinoceHunterLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	Q_GoblinMushroom	Q_GoblinMushroom	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	Q_GoblinHerb	Q_GoblinHerb	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	Q_SandHerb	Q_SandHerb	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	Q_GoblinFruit	Q_GoblinFruit	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+																						
+#RECORD	Mini	Mini	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	D_MarloneRing	D_MarloneRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_ZombieRing	D_ZombieRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_GobleKingRing	D_GobleKingRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_TorturerkingRing	D_TorturerkingRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_OrcCaptainRing	D_OrcCaptainRing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	ProdSkill1	ProdSkill1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ProdSkill2	ProdSkill2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ProdSkill3	ProdSkill3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ProdSkill4	ProdSkill4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ProdSkill5	ProdSkill5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	StageRecallScroll	StageRecallScroll	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	KQPotion10	KQPotion10	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	KQPotion20	KQPotion20	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	KQPotion30	KQPotion30	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	KQPotion40	KQPotion40	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	KQPotion50	KQPotion50	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	KQPotion60	KQPotion60	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	KQPotion70	KQPotion70	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+#RECORD	KQPotion80	KQPotion80	1	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1004	
+																						
+#RECORD	Potion01	Potion01	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	Potion02	Potion02	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	Potion03	Potion03	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	Potion04	Potion04	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+#RECORD	Potion05	Potion05	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	
+																						
+#RECORD	PickParts	PickParts	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SkillReload	SkillReload	2	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1005	
+#RECORD	BuleMile01	BuleMile01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BuleMile02	BuleMile02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BuleMile03	BuleMile03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BuleMile04	BuleMile04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	AbilityUp	AbilityUp	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	PickPartsUp	PickPartsUp	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	EventHobby	EventHobby	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem01	EventItem01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem02	EventItem02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem03	EventItem03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem04	EventItem04	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem05	EventItem05	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem06	EventItem06	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem07	EventItem07	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventItem08	EventItem08	1	10	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1011	
+#RECORD	EventItem09	EventItem09	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ForEvent	ForEvent	1	10	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1011	
+;#RECORD	KebingEvent01	KebingEvent01	1	2	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1003	; Kebing Claw
+
+																						
+#RECORD	Q_MalabutiaHairpin	Q_MalabutiaHairpin	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_BlueHeart	Q_BlueHeart	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_BlackEye	Q_BlackEye	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Q_Restorative	Q_Restorative	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	Q_Flower	Q_Flower	1	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+#RECORD	Q_SoleFire	Q_SoleFire	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	세트 아이템 드롭 그룹																					
+#RECORD	SetItem20	SetItem20	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetItem35	SetItem35	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetItem55	SetItem55	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetItem75	SetItem75	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetItem95	SetItem95	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인던-용의무덤 인던용 세트 아이템 드롭 그룹		1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetID85	SetID85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인던-용의무덤 파이터용 세트 아이템 드롭 그룹																					
+#RECORD	SetFig85	SetFig85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인던-용의무덤 클레릭용 세트 아이템 드롭 그룹																					
+#RECORD	SetCle85	SetCle85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인던-용의무덤 아처용 세트 아이템 드롭 그룹																					
+#RECORD	SetArc85	SetArc85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인던-용의무덤 메이지용 세트 아이템 드롭 그룹																					
+#RECORD	SetMag85	SetMag85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인던-용의무덤 크루세이더용 세트 아이템 드롭 그룹																					
+#RECORD	SetSen85	SetSen85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	킹퀘용 세트 아이템 드롭 그룹																					
+#RECORD	SetKQ110	SetKQ110	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	공용 악세서리류 세트 아이템 드롭 그룹																					
+#RECORD	SetAcc35	SetAcc35	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetAcc55	SetAcc55	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetAcc75	SetAcc75	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetAcc110	SetAcc110	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetAcc85	SetAcc85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인스턴트 던전 드롭 그룹																					
+#RECORD	GoldKey	GoldKey	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SilverKey	SilverKey	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	용사의 조건 킹퀘																					
+#RECORD	MINE_MAUL	MINE_MAUL	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MINE_ICE	MINE_ICE	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	P_KQHBAT1	P_KQHBAT1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	P_KQHBAT2	P_KQHBAT2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	P_KQHBAT3	P_KQHBAT3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	P_KQHBAT4	P_KQHBAT4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	크리스 마스 퀘스트 관련																					
+#RECORD	SantaBox5	SantaBox5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SantaBox10	SantaBox10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SantaBox20	SantaBox20	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SantaBox40	SantaBox40	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SantaSocks	SantaSocks	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SantaBox1	SantaBox1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EventIsyablossom	EventIsyablossom	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;																						;
+#RECORD	BellowKnight	BellowKnight	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_Magrite	D_Magrite	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+																						
+#RECORD	RhinoceHunterLicence	RhinoceHunterLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BlackBearLicence	BlackBearLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RedBearLicence	RedBearLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FireShellaLicence	FireShellaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	FireTaitanLicence	FireTaitanLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WaterAlcaLicence	WaterAlcaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WaterBaridonLicence	WaterBaridonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EarthCalerbenLicence	EarthCalerbenLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MagriteHoneyingLicence	MagriteHoneyingLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EarthNerpaLicence	EarthNerpaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WindNepilimLicence	WindNepilimLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SeidhunterLicence	SeidhunterLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WindLenceLicence	WindLenceLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SeidstarLicence	SeidstarLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SeidwarriorLicence	SeidwarriorLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MagriteLicence	MagriteLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RugaLicence	RugaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BabyPhouchLicence	BabyPhouchLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	VehimothLicence	VehimothLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	PoisonMantrapPlantLicence	PoisonMantrapPlantLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RedCondorLicence	RedCondorLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RaplansiaLicence	RaplansiaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GiantRedCondorLicence	GiantRedCondorLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	PoisonMandrakeLicence	PoisonMandrakeLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KrugeLicence	KrugeLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ShellaLicence	ShellaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BaridonLicence	BaridonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NerpaLicence	NerpaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	AlkaLicence	AlkaLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KaraWarriorLicence	KaraWarriorLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KaraDarkTemplerLicence	KaraDarkTemplerLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	PergyLicence	PergyLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LeoPardLicence	LeoPardLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ApeLicence	ApeLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BattleBeakLicence	BattleBeakLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	OldLeipoonLicence	OldLeipoonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LeipoonLicence	LeipoonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BabyLeipoonLicence	BabyLeipoonLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	PsykenLicence	PsykenLicence	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;																						
+#RECORD	BellowKnight01	BellowKnight01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BellowKnight02	BellowKnight02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BellowKnight03	BellowKnight03	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	D_Magrite01	D_Magrite01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	아이젤의 탑 드랍 그룹																					
+#RECORD	SetItem45	SetItem45	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Tower20	Tower20	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Tower30	Tower30	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Tower40	Tower40	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	신규 액세서리																					
+#RECORD	NormalLv10	NormalLv10	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv30	NormalLv30	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv65	NormalLv65	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv70	NormalLv70	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv80	NormalLv80	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv90	NormalLv90	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv102	NormalLv102	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv104	NormalLv104	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv108	NormalLv108	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NormalLv112	NormalLv112	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv20	NamedLv20	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv50	NamedLv50	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv75	NamedLv75	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv85	NamedLv85	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv106	NamedLv106	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv110	NamedLv110	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv114	NamedLv114	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv120	NamedLv120	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NamedLv125	NamedLv125	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv40	RareLv40	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv95	RareLv95	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv116	RareLv116	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv120	RareLv120	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv125	RareLv125	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	UniqLv60	UniqLv60	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	미국 6월 이벤트  퀘스트																					
+#RECORD	EQ_WoodCocoa	EQ_WoodCocoa	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EQ_FlowerSugar	EQ_FlowerSugar	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	EQ_AllMopMilk	EQ_AllMopMilk	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	미국 7월 이벤트  퀘스트																					
+#RECORD	EQ_WStar	EQ_WStar	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	크리스탈 성 퀘템 아이템																					
+#RECORD	CJ1	CJ1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	CJ2	CJ2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	추수감사 퀘스트																					
+#RECORD	Q_TurkeyD	Q_TurkeyD	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	발렌타인데이 퀘스트																					
+#RECORD	Choco01	Choco01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Choco02	Choco02	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	카렌 보상																					
+#RECORD	Karen	Karen	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenNamedWeapon	KarenNamedWeapon	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenNamedArmor	KarenNamedArmor	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenAccBoss	KarenEarBoss	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenAccChief	KarenAccChief	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenProduct	KarenProduct	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenUpsource	KarenUpsource	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenGoldNine	KarenGoldNine	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	KarenGoldNine1	KarenGoldNine1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	미국 추가 퀘스트 아이템																					
+#RECORD	LetterRagged	LetterRagged	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	레비아탄 보상																					
+#RECORD	Lev_SetItem90_KB	Lev_SetItem90_KB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lev_SetItem90_EC	Lev_SetItem90_EC	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lev_SetItem100	Lev_SetItem100	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	비밀의 실험실																					
+#RECORD	Lab_Open	Lab_Open	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_Armor	Lab_Armor	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_Pants	Lab_Pants	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_Boots	Lab_Boots	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_Helmet	Lab_Helmet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_Set	Lab_Set	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_Weapon	Lab_Weapon	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_WeaponS	Lab_WeaponS	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Lab_Key	Lab_Key	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	105보스필드 아이템																					
+#RECORD	B_CrackerOHS	B_CrackerOHS	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerTHS	B_CrackerTHS	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerAxe	B_CrackerAxe	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerMace	B_CrackerMace	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerHammer	B_CrackerHammer	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerBow	B_CrackerBow	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerCBow	B_CrackerCBow	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerStaff	B_CrackerStaff	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWand	B_CrackerWand	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerFS	B_CrackerFS	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerCS	B_CrackerCS	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGlaB	B_CrackerGlaB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGlaH	B_CrackerGlaH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGlaP	B_CrackerGlaP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGlaA	B_CrackerGlaA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerKniB	B_CrackerKniB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerKniH	B_CrackerKniH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerKniP	B_CrackerKniP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerKniA	B_CrackerKniA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGuaB	B_CrackerGuaB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGuaH	B_CrackerGuaH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGuaP	B_CrackerGuaP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerGuaA	B_CrackerGuaA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerHolB	B_CrackerHolB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerHolH	B_CrackerHolH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerHolP	B_CrackerHolP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerHolA	B_CrackerHolA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerShaB	B_CrackerShaB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerShaH	B_CrackerShaH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerShaP	B_CrackerShaP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerShaA	B_CrackerShaA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRanB	B_CrackerRanB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRanH	B_CrackerRanH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRanP	B_CrackerRanP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRanA	B_CrackerRanA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWarlB	B_CrackerWarlB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWarlH	B_CrackerWarlH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWarlP	B_CrackerWarlP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWarlA	B_CrackerWarlA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWizB	B_CrackerWizB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWizH	B_CrackerWizH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWizP	B_CrackerWizP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerWizA	B_CrackerWizA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerClsB	B_CrackerClsB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerClsH	B_CrackerClsH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerClsP	B_CrackerClsP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerClsA	B_CrackerClsA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerAssB	B_CrackerAssB	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerAssH	B_CrackerAssH	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerAssP	B_CrackerAssP	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerAssA	B_CrackerAssA	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerClaw	B_CrackerClaw	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerDSword	B_CrackerDSword	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRare1	B_CrackerRare1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRare2	B_CrackerRare2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRare3	B_CrackerRare3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRare4	B_CrackerRare4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRare5	B_CrackerRare5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerRare6	B_CrackerRare6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerUnique1	B_CrackerUnique1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	B_CrackerUnique2	B_CrackerUnique2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	2010 할로윈 이벤트 아이템																					
+#RECORD	HWRC	HWRC	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HWRC	HWRC	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	영혼의신전 추가 아이템																					
+#RECORD	RareLv95Boot	RareLv95Boot	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv95Helmet	RareLv95Helmet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv95Pants	RareLv95Pants	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	RareLv95Armor	RareLv95Armor	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	2011 할로윈 이벤트 아이템																					
+#RECORD	HalloweenHouse	HalloweenHouse	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HalloweenCandyBlue	HalloweenCandyBlue	5	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1010	
+#RECORD	HalloweenCandyRed	HalloweenCandyRed	5	5	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1010	
+#RECORD	HalloweenExpCard	HalloweenExpCard	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HalloweenMiniGhost	HalloweenMiniGhost	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	보스필드 하드모드 후마르																					
+#RECORD	BH_HumarRare	BH_HumarRare	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BH_HumarRare2	BH_HumarRare2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BH_HumarRare3	BH_HumarRare3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BH_HumarUnique1	BH_HumarUnique1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BH_HumarQuest	BH_HumarQuest	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	보스필드 하드모드 헬가																					
+#RECORD	BH_HelgaUnique1	BH_HelgaUnique1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	프시켄 드랍																					
+#RECORD	D_Psy	D_Psy	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	할로윈 이벤트																					
+#RECORD	ChristaMasRed_Pbox	ChristaMasRed_Pbox	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ChristaMasBlue_Pbox	ChristaMasBlue_Pbox	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ChristaMasYellow_Pbox	ChristaMasYellow_Pbox	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ChristMasExpCard	ChristMasExpCard	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ChristMasMiniGinger	ChristMasMiniGinger	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	키메라 보상 유니크 아이템																					
+#RECORD	ChimeraUniqueWeapon	ChimeraUniqueWeapon	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	컬렉션카드																					
+#RECORD	ClosedCollectCard	ClosedCollectCard	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	카렌 추가 보상																					
+#RECORD	D_Karen	D_Karen	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	110레벨 세트 방어구 & 악세서리																					
+#RECORD	Set110	Set110	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SetAcc110	SetAcc110	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	인챈트 아이템																					
+#RECORD	ENC1	ENC1	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ENC2	ENC2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ENC3	ENC3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ENC4	ENC4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ENC5	ENC5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	아이템 다양화로 추가 되는 아이템의 드랍 설정																					
+#RECORD	R_NamedWeapon4	R_NamedWeapon4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedWeapon5	R_NamedWeapon5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedWeapon6	R_NamedWeapon6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedWeapon7	R_NamedWeapon7	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_D_kingMarlone	R_D_kingMarlone	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_D_Zombieking	R_D_Zombieking	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_D_GiantGblKing	R_D_GiantGblKing	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_D_Torturerking	R_D_Torturerking	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedArmor3	R_NamedArmor3	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedArmor4	R_NamedArmor4	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedArmor5	R_NamedArmor5	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedArmor6	R_NamedArmor6	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_NamedArmor2	R_NamedArmor2	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_SetItem20	R_SetItem20	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_SetItem35	R_SetItem35	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_SetItem45	R_SetItem45	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_SetItem55	R_SetItem55	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_Tower20	R_Tower20	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_Tower30	R_Tower30	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	R_Tower40	R_Tower40	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	눈싸움																					
+#RECORD	BallSnow01	BallSnow01	10	20	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1030	
+#RECORD	BallCrush01	BallCrush01	5	10	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1015	
+;	중급 보상 세트 악세서리																					
+#RECORD	WarNSet	WarNSet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	최하급 보상 코스튬																					
+#RECORD	Mask_Foras01	Mask_Foras01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	아델리아 귀환 스크롤																					
+#RECORD	StageAdlRecallScroll	StageAdlRecallScroll	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	슬라임 맺어주기 이벤트 전용 벌집볼																					
+#RECORD	E_BallHive02	E_BallHive02	10	20	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1030	
+;	부활절 이벤트 전용 부활절 달걀																					
+#RECORD	EasterEgg	EasterEgg	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	마계 병영 보상 해골 모자																					
+#RECORD	Hat_Cranium01	Hat_Cranium01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	상급 인던																					
+#RECORD	WarHSet	WarHSet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WarHBoot	WarHBoot	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	WarHHelmet	WarHHelmet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	드랍 그룹 추가																					
+#RECORD	SetItemA67	SetItemA67	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	2013년 할로윈 이벤트																					
+#RECORD	Q_HwinCandyM	Q_HwinCandyM	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	킹덤퀘스트 보상 수정관련																					
+#RECORD	MaraNewReward	MaraNewReward	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	LostMiniNewReward	LostMiniNewReward	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GordonMasterNewReward	GordonMasterNewReward	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GiantHoneyingNewReward	GiantHoneyingNewReward	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	HenneathNewReward	HenneathNewReward	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	120레벨 레어 무기																					
+#RECORD	SirenSet	SirenSet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	120레벨 세트 방어구																					
+#RECORD	SirenDefSet	SirenDefSet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SirenHelmet	SirenHelmet	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SirenArmor	SirenArmor	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SirenBoot	SirenBoot	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SirenPant	SirenPant	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SirenACC	SirenACC	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	세이렌 화폐																					
+#RECORD	SirenMoney01	SirenMoney01	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SirenMoney02	SirenMoney02	3	3	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1006	
+;	120레벨 라이선스																					
+#RECORD	Q_HwinCandyM	Q_HwinCandyM	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DarkApeLicense	DarkApeLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BlackSpikeHornLicense	BlackSpikeHornLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedSpearmanLicense	DepravedSpearmanLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedRangerLicense	DepravedRangerLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedFightersLicense	DepravedFightersLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedKnightLicense	DepravedKnightLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	GreatTornadoLicense	GreatTornadoLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DarkNepilimLicense	DarkNepilimLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ShadowElfThiefLicense	ShadowElfThiefLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ShadowElfMageLicense	ShadowElfMageLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DarkLichLicense	DarkLichLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedElfArcherLicense	DepravedElfArcherLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedElfMageLicense	DepravedElfMageLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedElfThiefLicense	DepravedElfThiefLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	DepravedElfClericLicense	DepravedElfClericLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SnowPergiLicense	SnowPergiLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SnowWereBearLicense	SnowWereBearLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MeganLicense	MeganLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	YetiLicense	YetiLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	SnowWolfLicense	SnowWolfLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	MasLicense	MasLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NorthWitchLicense	NorthWitchLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	NorthGiantLicense	NorthGiantLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ArkGuardLicense	ArkGuardLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ArkNoviceLicense	ArkNoviceLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ArkArchLicense	ArkArchLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ArkTechLicense	ArkTechLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	ArkMechLicense	ArkMechLicense	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	115레벨 신규추가 액세서리																					
+#RECORD	Normal117Acc	Normal117Acc	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	120~125레벨 유니크 무기																					
+#RECORD	UniWpLv120	UniWpLv120	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	UniWpLv125	UniWpLv125	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	125레벨 세트 방어구																					
+#RECORD	SetDefLv125	SetDefLv125	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	불길한 협곡 - 125레벨 유니크 방어구																					
+#RECORD	UNIDef125	UNIDef125	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	불길한 협곡 티켓																					
+#RECORD	SD_Vale01Ticket	SD_Vale01Ticket	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	신규제련																					
+#RECORD	H_Dust	H_Dust	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Upsource16	Upsource16	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	120레벨 무기 분리																					
+#RECORD	RareWpLv120	RareWpLv120	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	비쥬의 팔찌																					
+#RECORD	BR_100	BR_100	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BR_110	BR_110	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	BR_120	BR_120	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Upsource17	Upsource17	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+;	7주년 퀘스트 드랍 그룹																					
+#RECORD	Honey_7th	Honey_7th	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Cacao_7th	Cacao_7th	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#RECORD	Vanilla_7th	Vanilla_7th	1	1	1000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1002	
+#END																						

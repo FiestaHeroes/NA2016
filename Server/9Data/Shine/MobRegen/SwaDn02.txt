@@ -1,0 +1,138 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		swa1-2	N	6796	8210	0	0	85									
+#record		swa1-3	N	7073	8417	0	0	156									
+#record		swa1-4	N	6637	8876	0	0	500									
+#record		swa1-5	N	5957	8941	0	0	254									
+#record		swa1-6	N	7416	9165	0	0	121									
+#record		swa1-7	N	4322	9364	0	0	500									
+#record		swa1-8	N	4416	8658	0	0	219									
+#record		swa1-9	N	4859	8756	0	0	93									
+#record		swa1-10	N	8933	9284	0	0	500									
+#record		swa1-11	N	9444	8964	0	0	135									
+#record		swa2-1	N	10516	6852	0	0	267									
+#record		swa2-2	N	10908	5921	0	0	275									
+#record		swa2-3	N	11281	5072	0	0	191									
+#record		swa2-4	N	11693	3750	0	0	500									
+#record		swa2-5	N	10864	3857	0	0	204									
+#record		swa2-6	N	11678	4802	0	0	155									
+#record		swa2-7	N	10726	4504	0	0	120									
+#record		swa2-8	N	11308	4435	0	0	289									
+#record		swa3	N	7004	6358	0	0	500									
+#record		swa3-1	N	7382	6875	0	0	240									
+#record		swa3-2	N	6072	6481	0	0	345									
+#record		swa3-3	N	6679	5485	0	0	282									
+#record		swa3-4	N	5746	5922	0	0	233									
+#record		swa3-7	N	2022	6510	0	0	500									
+#record		swa3-8	N	2601	5988	0	0	380									
+#record		swa3-9	N	1945	5854	0	0	296									
+#record		swa3-10	N	1848	3743	0	0	534									
+#record		swa3-11	N	2350	3466	0	0	219									
+#record		swa3-12	N	2516	4770	0	0	177									
+#record		swa4	N	4493	4598	0	0	513									
+#record		swa4-1	N	4537	1910	0	0	696									
+#record		swa4-2	N	4503	2830	0	0	275									
+#record		swa4-3	N	5284	1564	0	0	254									
+#record		swa4-4	N	3632	2025	0	0	219									
+#record		swa4-5	N	6884	2399	96	553	0									
+#record		swa4-6	N	7067	1397	0	0	612									
+#record		swa5	N	9081	3655	106	501	-16									
+#record		swa5-1	N	9401	2206	0	0	801									
+#record		swa5-2	N	9915	1668	0	0	500									
+#record		swa5-3	N	9087	1562	0	0	275									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		swa1-2	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-3	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-3	P_Raplan1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-4	P_Raplan1	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-4	P_Raplan2	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-5	P_Mage7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-6	P_Archer7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-7	P_Raplan2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-7	P_Raplan1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-7	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-8	P_Raplan2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-8	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-9	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-10	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-10	P_Raplan2	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-10	P_Cleric7F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa1-11	P_Raplan1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-1	P_Raplan2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-1	P_Raplan3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-2	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-2	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-3	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-4	P_Raplan4	4	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-4	P_Raplan3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-4	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-4	P_Archer7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-4	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-5	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-6	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-6	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-7	P_Mage7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa2-8	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3	P_Raplan3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-1	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-2	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-3	P_Raplan2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-3	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-3	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-4	P_Archer7F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-4	P_Mage7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-7	P_Raplan3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-8	P_Raplan3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-9	P_Raplan3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-9	P_Raplan2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-9	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-10	P_Raplan4	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-10	P_Fighter7M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-10	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-10	P_Mage7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-11	P_Fighter7M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-11	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa3-12	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4	P_Mage7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-1	P_Raplan2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-1	P_Raplan3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-1	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-2	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-2	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-3	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-4	P_Raplan1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-4	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-5	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-5	P_Archer7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-5	P_Mage7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-6	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa4-6	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5	P_Raplan1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-1	P_Raplan4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-1	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-1	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-1	P_Raplan3	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-2	P_Raplan4	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-2	P_Mage7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-2	P_Fighter7M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-3	P_LivingTotem	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		swa5-3	P_Cleric7F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+																	
+#end																	

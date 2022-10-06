@@ -1,0 +1,233 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		01ArkGuard01	N	2575	5353	0	0	180									
+#record		01ArkGuard02	N	3016	6069	0	0	222									
+#record		01ArkGuard03	N	2845	5689	0	0	201									
+#record		01ArkGuard04	N	1750	6085	0	0	208									
+#record		01ArkGuard05	N	2020	5717	0	0	229									
+#record		01ArkGuard06	N	1601	5505	0	0	208									
+#record		02ArkNovice01	N	4917	3927	0	0	159									
+#record		02ArkNovice02	N	3887	3084	0	0	180									
+#record		02ArkNovice03	N	5062	3221	0	0	187									
+#record		02ArkNovice04	N	4329	2605	0	0	159									
+#record		02ArkNovice05	N	4842	2269	0	0	173									
+#record		02ArkNovice06	N	5478	2879	0	0	180									
+#record		02ArkNovice07	N	4096	4087	0	0	131									
+#record		02ArkNovice08	N	4478	4454	0	0	124									
+#record		02ArkNovice09	N	5832	2732	0	0	124									
+#record		02ArkNovice10	N	5094	4411	0	0	201									
+#record		02ArkArch01	N	5264	4057	0	0	165									
+#record		02ArkArch02	N	5578	3808	0	0	194									
+#record		02ArkArch03	N	5647	4169	0	0	187									
+#record		02ArkArch04	N	5983	3966	0	0	208									
+#record		02ArkArch05	N	6294	3552	0	0	229									
+#record		02ArkArch06	N	4432	4139	0	0	116									
+#record		02ArkTech01	N	5596	2438	0	0	194									
+#record		02ArkTech02	N	4766	2664	0	0	144									
+#record		02ArkTech03	N	4273	3232	0	0	173									
+#record		02ArkTech04	N	4661	3271	0	0	187									
+#record		03ArkTech01	N	8325	2856	0	0	152									
+#record		03ArkTech02	N	8407	3196	0	0	173									
+#record		03ArkTech03	N	8648	2887	0	0	180									
+#record		03ArkTech04	N	9042	2920	0	0	215									
+#record		03ArkArch01	N	9239	2672	0	0	208									
+#record		03ArkArch02	N	10021	2465	0	0	201									
+#record		03ArkArch03	N	10250	3585	0	0	187									
+#record		03ArkArch04	N	10608	2649	0	0	180									
+#record		03ArkArch05	N	10591	3023	0	0	180									
+#record		03ArkArch06	N	9857	3036	0	0	173									
+#record		03ArkMech01	N	9439	3100	0	0	194									
+#record		03ArkMech02	N	10653	4832	0	0	173									
+#record		03ArkMech03	N	9099	4177	0	0	201									
+#record		03ArkMech04	N	9253	4688	0	0	124									
+#record		03ArkMech05	N	9731	4493	0	0	166									
+#record		03ArkMech06	N	9411	4960	0	0	159									
+#record		03ArkMech07	N	9758	5166	0	0	180									
+#record		03ArkMech08	N	10663	3467	0	0	208									
+#record		03ArkMech09	N	10294	3211	0	0	187									
+#record		03ArkMech10	N	10704	4371	0	0	201									
+#record		03ArkMech11	N	10649	3932	0	0	229									
+#record		03ArkMaster01	N	10232	2863	0	0	173									
+#record		03ArkMaster02	N	9393	4425	0	0	124									
+#record		03ArkAstan01	N	10130	4198	0	0	243									
+#record		03ArkAstan02	N	10286	5097	0	0	201									
+#record		04ArkTech01	N	10573	8986	0	0	131									
+#record		04ArkTech02	N	10349	9538	0	0	152									
+#record		04ArkTech03	N	10101	9771	0	0	159									
+#record		04ArkTech04	N	9755	9768	0	0	145									
+#record		04ArkTech05	N	9158	9111	0	0	173									
+#record		04ArkTech06	N	9869	8910	0	0	159									
+#record		04ArkNovice01	N	9549	8516	0	0	145									
+#record		04ArkTech07	N	9073	8564	0	0	194									
+#record		04ArkTech08	N	8390	8708	0	0	166									
+#record		04ArkTech09	N	8162	9249	0	0	208									
+#record		04ArkTech10	N	8629	9199	0	0	201									
+#record		04ArkNovice02	N	8085	8268	0	0	300									
+#record		04ArkTech11	N	7701	9270	0	0	194									
+#record		04ArkTech12	N	8088	9804	0	0	110									
+#record		04ArkTech13	N	8588	9778	0	0	117									
+#record		04ArkTech14	N	8835	10461	0	0	117									
+#record		04ArkMaster01	N	8338	10313	0	0	110									
+#record		04ArkMaster02	N	9485	10467	0	0	103									
+#record		04ArkMaster03	N	10024	10325	0	0	117									
+#record		04ArkAstan01	N	9226	9535	0	0	194									
+#record		04ArkAstan02	N	5861	9105	0	0	215									
+#record		04ArkAstan03	N	5859	8639	0	0	215									
+#record		04ArkAstan04	N	7125	9598	0	0	166									
+#record		05ArkAstan01	N	4080	9643	0	0	152									
+#record		05ArkAstan02	N	3967	9276	0	0	187									
+#record		05ArkAstron01	N	3535	9258	0	0	194									
+#record		05ArkAstan03	N	4403	9374	0	0	173									
+#record		05ArkAstan04	N	2891	8461	0	0	201									
+#record		05ArkAstron02	N	2769	8881	0	0	187									
+#record		05ArkAstron03	N	2340	8726	0	0	187									
+#record		05ArkMaster01	N	2436	9150	0	0	194									
+#record		05ArkAstanica01	N	2850	9355	0	0	222									
+#record		05ArkAstanica02	N	2429	9690	0	0	257									
+#record		05ArkMaster02	N	2860	9867	0	0	215									
+#record		05ArkAstron04	N	2512	10148	0	0	194									
+#record		05ArkAstron05	N	2530	10630	0	0	222									
+#record		05ArkAstan05	N	2990	10391	0	0	278									
+#record		05ArkAstan06	N	3514	10363	0	0	215									
+#record		05ArkAstron06	N	3259	9535	0	0	173									
+#record		05ArkAstan07	N	3884	10155	0	0	215									
+#record		05ArkAstan08	N	3691	9657	0	0	201									
+#record		SArkGuard01	N	2387	3765	0	0	130									
+#record		SArkGuard02	N	3156	3276	0	0	151									
+#record		SArkGuard03	N	11531	6657	0	0	137									
+#record		SArkGuard04	N	11661	7735	0	0	137									
+#record		SArkGuard05	N	11198	8918	0	0	123									
+#record		SArkGuard06	N	10897	6685	0	0	151									
+#record		SArkGuard07	N	9571	6395	0	0	201									
+#record		SArkGuard08	N	8067	6178	0	0	201									
+#record		SArkGuard09	N	7372	5866	0	0	201									
+#record		SArkGuard10	N	6189	5526	0	0	201									
+#record		SArkGuard11	N	6208	7031	0	0	201									
+#record		SArkGuard12	N	5843	8133	0	0	123									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		01ArkGuard01	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		01ArkGuard02	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		01ArkGuard03	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		01ArkGuard04	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		01ArkGuard05	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		01ArkGuard06	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice01	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice02	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice03	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice04	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice05	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice06	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice07	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice08	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice09	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkNovice10	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch01	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch01	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch02	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch03	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch04	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch05	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch05	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		02ArkArch06	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkTech01	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkTech02	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkTech03	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		02ArkTech04	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkTech01	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkTech02	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkTech03	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkTech04	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkArch01	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkArch01	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		03ArkArch02	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkArch03	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkArch04	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkArch05	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkArch06	P_ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech01	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech02	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech03	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech03	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech04	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech05	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech06	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech07	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech08	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech08	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech09	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech10	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMech11	P_ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMaster01	P_ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		03ArkMaster02	P_ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		03ArkAstan01	P_ArkAstan	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		03ArkAstan02	P_ArkAstan	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech01	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech02	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech03	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech04	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech05	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech06	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkNovice01	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech07	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech08	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech09	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech10	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkNovice02	P_ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech11	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech12	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech13	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkTech14	P_ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		04ArkMaster01	P_ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		04ArkMaster02	P_ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		04ArkMaster03	P_ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		04ArkAstan01	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		04ArkAstan02	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		04ArkAstan03	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		04ArkAstan04	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan01	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan02	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstron01	P_ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan03	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan04	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstron02	P_ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstron03	P_ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkMaster01	P_ArkMaster	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstanica01	P_ArkAstanica	1	0	200	180	240	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstanica02	P_ArkAstanica	1	0	200	180	240	-2	5	-1	8	0	10	1	13	2
+#record		05ArkMaster02	P_ArkMaster	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstron04	P_ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstron05	P_ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan05	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan06	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstron06	P_ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan07	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		05ArkAstan08	P_ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard01	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard02	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard03	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard04	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard05	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard06	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard07	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard08	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard09	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard10	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard11	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		SArkGuard12	P_ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+																	
+#end																	

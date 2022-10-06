@@ -1,0 +1,134 @@
+open [main]
+    var Players             ""
+        Count               ""
+
+
+        GateNumber          10
+        GateHandle0         ""
+        GateHandle1         ""
+        GateHandle2         ""
+        GateHandle3         ""
+        GateHandle4         ""
+        GateHandle5         ""
+        GateHandle6         ""
+        GateHandle7         ""
+        GateHandle8         ""
+        GateHandle9         ""
+
+        MobIndex0           "Slime"
+        MobIndex1           "MushRoom"
+        MobIndex2           "Imp"
+        MobIndex3           "Crab"
+        MobIndex4           "Honeying"
+        MobIndex5           "HungryWolf"
+        MobIndex6           "Phino"
+        MobIndex7           "PhinoFlie"
+        MobIndex8           "Ratman"
+        MobIndex9           "Boar"
+
+
+
+        InterruptBlock      ""
+        InterruptArg        "".
+
+
+    Count = 0.
+    while Count < GateNumber
+    open
+        mobregen #("GateHandle" % Count) "MINE1" 0 0 0 10000 "Normal".      ; 게이트 대신 광석
+        print #("GateHandle" % Count).
+        Count = Count + 1.
+    close
+
+
+
+
+    ; 플레이어 로긴 기다림
+    waitlogin Players.
+    if Players == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    interruptclear all.
+    interruptset Sec "" 99999 10 "Summon".      ; 10초마다 한번씩 문에서 몹 소환
+
+
+
+    Count = 0.
+    while Count < GateNumber
+    open
+        interruptset DeadHandle "" 1 #("GateHandle" % Count) "GateBreak" % Count.
+        Count = Count + 1.
+    close
+
+
+
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+
+
+
+
+
+
+
+close
+
+open [GateBreak0]
+    GateHandle0 = "".
+close
+
+open [GateBreak1]
+    GateHandle1 = "".
+close
+
+open [GateBreak2]
+    GateHandle2 = "".
+close
+
+open [GateBreak3]
+    GateHandle3 = "".
+close
+
+open [GateBreak4]
+    GateHandle4 = "".
+close
+
+open [GateBreak5]
+    GateHandle5 = "".
+close
+
+open [GateBreak6]
+    GateHandle6 = "".
+close
+
+open [GateBreak7]
+    GateHandle7 = "".
+close
+
+open [GateBreak8]
+    GateHandle8 = "".
+close
+
+open [GateBreak9]
+    GateHandle9 = "".
+close
+
+open [Summon]       ; 일정시간마다 게이트에서 몹 소환
+    Count = 0.
+    while Count < GateNumber
+    open
+        if #("GateHandle" % Count) =!= "" then
+        open
+            summonmob #("GateHandle" % Count) #("MobIndex" % Count) 1.
+        close
+
+        Count = Count + 1.
+    close
+close

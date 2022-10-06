@@ -1,0 +1,141 @@
+;		ItemList in NPC																																																																	
+#ignore	\o042			; 인용부호 무시																																																															
+#exchange	#	\x20		; # => space																																																															
+;		2006.01.25																																																																	
+																																																																			
+#Table	Tab00	;파이터 액티브																																																																	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0 	-	-	-	-	-	-																																																												
+#Record	1 	-	-	-	-	-	-																																																												
+#Record	2 	-	-	-	-	-	-																																																												
+#Record	3 	-	-	-	-	-	-																																																												
+#Record	4 	-	-	-	-	-	-																																																												
+#Record	5 	-	-	-	-	-	-																																																												
+#Record	6 	-	-	-	-	-	-																																																												
+#Record	7 	-	-	-	-	-	-																																																												
+#Record	8 	-	-	-	-	-	-																						
+#Record	9 	-	-	-	-	-	-																						
+#Record	10 	-	-	-	-	-	-																						
+#Record	11 	-	-	-	-	-	-																						
+																													
+#Table	Tab01	;파이터 패시브																											
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																						
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																						
+#Record	0 	-	-	-	-	-	-																						
+#Record	1 	-	-	-	-	-	-																						
+#Record	2 	-	-	-	-	-	-																						
+#Record	3 	-	-	-	-	-	-																						
+																													
+#Table	Tab02	;클레릭 액티브																											
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																						
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																						
+#Record	0 	-	-	-	-	-	-																																																																																									
+#Record	1 	-	-	-	-	-	-																																																																																									
+#Record	2 	-	-	-	-	-	-																																																																																									
+#Record	3 	-	-	-	-	-	-																																																																																									
+#Record	4 	-	-	-	-	-	-																																																																																									
+#Record	5 	-	-	-	-	-	-																																																																																									
+#Record	6 	-	-	-	-	-	-																																																																																									
+#Record	7 	-	-	-	-	-	-																																																																																									
+#Record	8 	-	-	-	-	-	-																																																																																									
+#Record	9 	-	-	-	-	-	-																																																																																									
+#Record	10 	-	-	-	-	-	-																																																																																									
+#Record	11 	-	-	-	-	-	-																																																																																									
+#Record	12 	-	-	-	-	-	-																																																																																									
+#Record	13 	-	-	-	-	-	-																																																																																									
+																																																																																																
+#Table	Tab03	;클레릭 패시브																																																																																														
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																		
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																		
+#Record	0 	-	-	-	-	-	-																																																																		
+#Record	1 	-	-	-	-	-	-																																																																		
+#Record	2 	-	-	-	-	-	-																																																																		
+																																																																									
+#Table	Tab04	;아처 액티브																																																																							
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																		
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																		
+#Record	0 	-	-	-	-	-	-																																																																		
+#Record	1 	-	-	-	-	-	-																																																																		
+#Record	2 	-	-	-	-	-	-																																																																		
+#Record	3 	-	-	-	-	-	-																																																																		
+#Record	4 	-	-	-	-	-	-																																																																		
+#Record	5 	-	-	-	-	-	-																																																																		
+#Record	6 	-	-	-	-	-	-																																																																		
+																																																																																	
+#Table	Tab05	;아처 패시브																																																																															
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																										
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																										
+#Record	0 	-	-	-	-	-	-																																																																										
+#Record	1 	-	-	-	-	-	-																																																																										
+#Record	2 	-	-	-	-	-	-																																																																										
+																																																																																	
+#Table	Tab06	;메이지 액티브																																																																															
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																										
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																										
+#Record	0 	MagicMissile05	MagicMissile06	MagicMissile07	MagicMissile08	-	-																																																																										
+#Record	1 	IceBolt04	IceBolt05	IceBolt06	IceBolt07	IceBolt08	-																																																																										
+#Record	2 	FireBolt04	FireBolt05	FireBolt06	FireBolt07	FireBolt08	-																																																																										
+#Record	3 	LightningBolt04	LightningBolt05	LightningBolt06	LightningBolt07	LightningBolt08	-																																																																										
+#Record	4 	VitalConversion01	VitalConversion02	VitalConversion03	VitalConversion04	VitalConversion05	-																																																																										
+#Record	5 	MagicBurst02	MagicBurst03	MagicBurst04	-	-	-																											
+#Record	6 	DispelTrick01	DispelTrick02	-	-	-	-																											
+#Record	7 	ManaBurn01	ManaBurn02	ManaBurn03	-	-	-																											
+#Record	8 	Bleach01	-	-	-	-	-																											
+#Record	9 	MagicBall01	MagicBall02	-	-	-	-																											
+#Record	10 	IceBlast01	IceBlast02	-	-	-	-																											
+#Record	11 	FireBall01	-	-	-	-	-																											
+#Record	12 	ChainLightning01	-	-	-	-	-																											
+#Record	13 	MagicBurst01	-	-	-	-	-																											
+#Record	14 	ChainCasting01	-	-	-	-	-																											
+																																		
+#Table	Tab07	;메이지 패시브																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0 	StaffMastery03	StaffMastery04	StaffMastery05	StaffMastery06	-	-																											
+#Record	1 	WandMastery01	WandMastery02	WandMastery03	WandMastery04	WandMastery05	-																											
+#Record	2 	WisdomMastery02	WisdomMastery03	WisdomMastery04	WisdomMastery05	WisdomMastery06	-																																																																																																							
+																																																																																																														
+#Table	Tab08	;연금술 																																																																																																												
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																																																							
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																																																							
+#Record	0 	Mining	UseRide	-	-	-	-																																																																																																							
+#Record	1 	Recipe_El1	Recipe_El2	Recipe_El3	Recipe_C_NorKylinLeather	Recipe_C_HighSpiritDust	Recipe_R_LowPledge																																																																																																							
+#Record	2 	Recipe_Lix1	Recipe_Lix2	Recipe_Lix3	Recipe_C_NorBrokenBone	Recipe_C_IronBadge	Recipe_R_Sage																																																																																																							
+#Record	3 	Recipe_Xir1	Recipe_Xir2	Recipe_Xir3	Recipe_C_NorSoulDust	Recipe_C_HighMeat	Recipe_R_HighCopperOre																																																																																																							
+#Record	4 	Recipe_BestLowHpPotion	Recipe_LowHpPotion	Recipe_NorHpPotion	Recipe_C_HighSilverOre	Recipe_C_HighSkin	Recipe_R_NorMushrooms																																																																																																							
+#Record	5 	Recipe_BestLowSpPotion	Recipe_LowSpPotion	Recipe_NorSpPotion	Recipe_C_HighMushrooms	Recipe_R_LowKylinLeather	Recipe_R_NorToadStool																																																																																																							
+#Record	6 	Recipe_BestLowConHPPotion	Recipe_LowConHPPotion	Recipe_NorConHPPotion	Recipe_C_Ruby	Recipe_R_Geranium	Recipe_R_Violet																																																																																																							
+#Record	7 	Recipe_BestLowConSPPotion	Recipe_LowConSPPotion	Recipe_NorConSPPotion	Recipe_C_HighKylinLeather	Recipe_R_NorCopperOre	Recipe_R_NorBeastLeather																																																																																																							
+#Record	8 	Recipe_BestLowTHScroll	Recipe_LowTHScroll	Recipe_NorTHScroll	Recipe_C_HighBeastLeather	Recipe_R_Topaz	Recipe_R_NorBeastTooth																																																																																																							
+#Record	9 	Recipe_BestLowTBScroll	Recipe_LowTBScroll	Recipe_NorTBScroll	Recipe_C_HighBeastTooth	Recipe_R_LowSilverOre	Recipe_R_KylinTail																																																																																																							
+#Record	10 	Recipe_BestLowMRScroll	Recipe_LowMRScroll	Recipe_NorMRScroll	Recipe_C_KylinFighterTail	Recipe_R_NorWoodSab	Recipe_R_NorSkin																																																																																																							
+#Record	11 	Recipe_BestLowACScroll	Recipe_LowACScroll	-	Recipe_C_HighGemDust	Recipe_R_Rosemary	Recipe_R_NorBrokenBone																																																																																						
+#Record	12 	Recipe_BestLowMaxHPScroll	Recipe_LowMaxHPScroll	-	Recipe_C_HighBrokenBone	Recipe_R_NorSilverOre	Recipe_R_NorMagicCrystal																																																																																						
+#Record	13 	Recipe_BestLowMaxSPScroll	Recipe_LowMaxSPScroll	Recipe_NorMaxSPScroll	Recipe_C_NorPledge	Recipe_R_NorSpiritDust	Recipe_R_NorSoulDust																																																																																						
+#Record	14 	Recipe_BestLowMSScroll	Recipe_LowMSScroll	-	Recipe_C_NorMagicCrystal	Recipe_R_NorMeat	-																																																																																						
+#Record	15 	Recipe_LowPsnResiPotion	Recipe_NorPsnResiPotion	-	Recipe_C_NorGemDust	Recipe_R_NorKylinLeather	-																																																																																						
+#Record	16 	Recipe_LowDssResiPotion	Recipe_NorDssResiPotion	-	Recipe_C_Ramsear	Recipe_R_NorCleanWater	-																																																																																						
+#Record	17 	Recipe_LowCurResiPotion	Recipe_NorCurResiPotion	-	Recipe_C_HighToadStool	Recipe_R_NorPledge	-																																																																																						
+#Record	18 	Recipe_LowPsnCurPotion	Recipe_NorPsnCurPotion	-	Recipe_C_LowGoldOre	-	-																																																																																						
+#Record	19 	Recipe_LowDssCurPotion	Recipe_NorDssCurPotion	-	Recipe_C_Basil	-	-																																																																																						
+#Record	20 	Recipe_BestLowCurScroll	Recipe_LowCurScroll	Recipe_NorCurScroll	Recipe_C_HighWoodSab	-	-																																																																																						
+																																																																																													
+#End																																																																																													
+																																																																																													
+																																																																																													
+																																																																																													
+																																																																																													
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						

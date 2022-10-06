@@ -1,0 +1,68 @@
+;		ItemList in NPC												
+#ignore	\o042			; 인용부호 무시										
+#exchange	#	\x20		; # => space										
+;		2013.10.01												
+														
+#Table	Tab00	;무기												
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]							
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05							
+#Record	0	Arena_F100Sword	Arena_F110Sword	Arena_F115Sword	-	Arena_F100FShield	-							
+#Record	1	Arena_F100TSword	Arena_F110TSword	Arena_F115TSword	-	Arena_F110FShield	-							
+#Record	2	Arena_F100Axe	Arena_F110Axe	Arena_F115Axe	-	Arena_F115FShield	-							
+#Record	3	-	-	-	-	-	-							
+#Record	4	Arena_C100Mace	Arena_C110Mace	Arena_C115Mace	-	-	-							
+#Record	5	Arena_C100Hammer	Arena_C110Hammer	Arena_C115Hammer	-	-	-							
+#Record	6	Arena_F100CShield	Arena_F110CShield	Arena_F115CShield	-	-	-							
+#Record	7	Arena_A100Bow	Arena_A110Bow	Arena_A115Bow	-	-	-							
+#Record	8	Arena_A100CrossBow	Arena_A110CrossBow	Arena_A115CrossBow	-	-	-							
+#Record	9	-	-	-	-	-	-							
+#Record	10	Arena_M100Staff	Arena_M110Staff	Arena_M115Staff	-	-	-							
+#Record	11	Arena_M100Wand	Arena_M110Wand	Arena_M115Wand	-	-	-							
+#Record	12	-	-	-	-	-	-							
+#Record	13	-	-	-	-	-	-							
+#Record	14	Arena_J100Claw	Arena_J110Claw	Arena_J115Claw	-	-	-							
+#Record	15	Arena_J100DSword	Arena_J110DSword	Arena_J115DSword	-	-	-							
+#Record	16	-	-	-	-	-	-							
+#Record	17	Arena_S100Blade	Arena_S110Blade	Arena_S115Blade	-	-	-							
+														
+#Table	Tab01	;방어구												
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]							
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05							
+#Record	0	Arena_F100Helmet01	Arena_F100Helmet02	Arena_F110Helmet01	Arena_F110Helmet02	Arena_F115Helmet01	Arena_F115Helmet02							
+#Record	1	Arena_F100Armor01	Arena_F100Armor02	Arena_F110Armor01	Arena_F110Armor02	Arena_F115Armor01	Arena_F115Armor02							
+#Record	2	Arena_F100Pants01	Arena_F100Pants02	Arena_F110Pants01	Arena_F110Pants02	Arena_F115Pants01	Arena_F115Pants02							
+#Record	3	Arena_F100Boots01	Arena_F100Boots02	Arena_F110Boots01	Arena_F110Boots02	Arena_F115Boots01	Arena_F115Boots02							
+#Record	4	-	-	-	-	-	-							
+#Record	5	Arena_C100Helmet01	Arena_C100Helmet02	Arena_C110Helmet01	Arena_C110Helmet02	Arena_C115Helmet01	Arena_C115Helmet02							
+#Record	6	Arena_C100Armor01	Arena_C100Armor02	Arena_C110Armor01	Arena_C110Armor02	Arena_C115Armor01	Arena_C115Armor02							
+#Record	7	Arena_C100Pants01	Arena_C100Pants02	Arena_C110Pants01	Arena_C110Pants02	Arena_C115Pants01	Arena_C115Pants02							
+#Record	8	Arena_C100Boots01	Arena_C100Boots02	Arena_C110Boots01	Arena_C110Boots02	Arena_C115Boots01	Arena_C115Boots02							
+#Record	9	-	-	-	-	-	-							
+#Record	10	Arena_A100Hat01	Arena_A100Hat02	Arena_A110Hat01	Arena_A110Hat02	Arena_A115Hat01	Arena_A115Hat02							
+#Record	11	Arena_A100Armor01	Arena_A100Armor02	Arena_A110Armor01	Arena_A110Armor02	Arena_A115Armor01	Arena_A115Armor02							
+#Record	12	Arena_A100Pants01	Arena_A100Pants02	Arena_A110Pants01	Arena_A110Pants02	Arena_A115Pants01	Arena_A115Pants02							
+#Record	13	Arena_A100Boots01	Arena_A100Boots02	Arena_A110Boots01	Arena_A110Boots02	Arena_A115Boots01	Arena_A115Boots02							
+#Record	14	Arena_M100Hat01	Arena_M100Hat02	Arena_M110Hat01	Arena_M110Hat02	Arena_M115Hat01	Arena_M115Hat02							
+#Record	15	Arena_M100Shirt01	Arena_M100Shirt02	Arena_M110Shirt01	Arena_M110Shirt02	Arena_M115Shirt01	Arena_M115Shirt02							
+#Record	16	Arena_M100Pants01	Arena_M100Pants02	Arena_M110Pants01	Arena_M110Pants02	Arena_M115Pants01	Arena_M115Pants02							
+#Record	17	Arena_M100Boots01	Arena_M100Boots02	Arena_M110Boots01	Arena_M110Boots02	Arena_M115Boots01	Arena_M115Boots02							
+#Record	18	-	-	-	-	-	-							
+#Record	19	Arena_J100Hood01	Arena_J100Hood02	Arena_J110Hood01	Arena_J110Hood02	Arena_J115Hood01	Arena_J115Hood02							
+#Record	20	Arena_J100Armor01	Arena_J100Armor02	Arena_J110Armor01	Arena_J110Armor02	Arena_J115Armor01	Arena_J115Armor02							
+#Record	21	Arena_J100Pants01	Arena_J100Pants02	Arena_J110Pants01	Arena_J110Pants02	Arena_J115Pants01	Arena_J115Pants02							
+#Record	22	Arena_J100Boots01	Arena_J100Boots02	Arena_J110Boots01	Arena_J110Boots02	Arena_J115Boots01	Arena_J115Boots02							
+#Record	23	-	-	-	-	-	-							
+#Record	24	Arena_S100Helmet01	Arena_S110Helmet01	Arena_S115Helmet01	-	-	-							
+#Record	25	Arena_S100Armor01	Arena_S110Armor01	Arena_S115Armor01	-	-	-							
+#Record	26	Arena_S100Pants01	Arena_S110Pants01	Arena_S115Pants01	-	-	-							
+#Record	27	Arena_S100Shoes01	Arena_S110Shoes01	Arena_S115Shoes01	-	-	-							
+														
+#Table	Tab02	;액세서리												
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]							
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05							
+#Record	0	Arena_100Neck01	Arena_110Neck01	Arena_115Neck01	-	-	-							
+#Record	1	Arena_100Ear01	Arena_110Ear01	Arena_115Ear01	-	-	-							
+#Record	2	Arena_100Ring01	Arena_110Ring01	Arena_115Ring01	-	-	-							
+#Record	3	Arena_100Ring02	Arena_110Ring02	Arena_115Ring02	-	-	-							
+														
+#End														

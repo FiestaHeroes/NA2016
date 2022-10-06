@@ -1,0 +1,116 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		LinkField02_01	N	3025	3004	0	0	135									
+#record		LinkField02_02	N	3693	2563	0	0	149									
+#record		LinkField02_03	N	4634	2376	0	0	191									
+#record		LinkField02_04	N	4455	3729	0	0	303									
+#record		LinkField02_05	N	5265	4087	0	0	296									
+#record		LinkField02_06	N	5709	2570	0	0	289									
+#record		LinkField02_07	N	6729	3147	0	0	191									
+#record		LinkField02_08	N	6023	4112	0	0	156									
+#record		LinkField02_09	N	6805	4420	0	0	338									
+#record		LinkField02_10	N	8413	3069	0	0	500									
+#record		LinkField02_11	N	7999	3717	0	0	212									
+#record		LinkField02_12	N	9523	4186	916	249	49									
+#record		LinkField02_13	N	8820	6147	0	0	352									
+#record		LinkField02_14	N	7866	7260	0	0	359									
+#record		LinkField02_15	N	9542	6663	0	0	247									
+#record		LinkField02_16	N	8881	7714	0	0	170									
+#record		LinkField02_17	N	8558	8365	0	0	135									
+#record		LinkField02_18	N	10303	9972	0	0	619									
+#record		LinkField02_19	N	9244	9869	0	0	247									
+#record		LinkField02_20	N	8683	9486	0	0	170									
+#record		LinkField02_21	N	8028	9529	0	0	240									
+#record		LinkField02_22	N	8077	8363	0	0	156									
+#record		LinkField02_23	N	6405	7181	0	0	324									
+#record		LinkField02_24	N	5429	8316	0	0	359									
+#record		LinkField02_25	N	4946	5820	0	0	233									
+#record		LinkField02_26	N	6164	8808	0	0	198									
+#record		LinkField02_27	N	6830	7938	0	0	142									
+#record		LinkField02_28	N	7483	9880	0	0	240									
+#record		LinkField02_29	N	6970	10010	0	0	163									
+#record		LinkField02_30	N	6752	10654	0	0	254									
+#record		LinkField02_31	N	5638	10458	0	0	135									
+#record		LinkField02_32	N	5134	9488	0	0	114									
+#record		LinkField02_33	N	5090	10415	0	0	142									
+#record		LinkField02_34	N	4293	10574	0	0	471									
+#record		LinkField02_35	N	3679	10117	0	0	212									
+#record		LinkField02_36	N	4652	9278	0	0	128									
+#record		LinkField02_37	N	3822	8897	0	0	184									
+#record		LinkField02_38	N	3118	8695	0	0	268									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		LinkField02_01	KaraSolider	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_02	KaraSolider	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_02	DisHarkan	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_03	KaraSolider	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_03	KaraTempler	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_04	KaraSolider	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_04	KaraTempler	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_05	KaraSolider	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_05	DisHarkan	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_06	KaraSolider	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_06	KaraTempler	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_06	DisHarkan	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_07	KaraSolider	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_07	KaraTempler	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_07	DisHarkan	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_08	KaraTempler	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_08	DisHarkan	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_09	KaraSolider	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_09	DisHarkan	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_10	KaraSolider	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_10	KaraTempler	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_11	KaraSolider	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_11	DisHarkan	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_12	DisHarkan	10	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_13	ArchonJuinor	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_14	ArchonJuinor	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_15	ArchonJuinor	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_16	ArchonJuinor	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_17	ArchonJuinor	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_18	ArchonJuinor	8	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_19	ArchonJuinor	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_20	ArchonJuinor	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_21	ArchonJuinor	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_22	ArchonJuinor	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_23	Pixy	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_23	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_24	Pixy	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_24	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_25	Pixy	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_25	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_26	Pixy	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_27	Pixy	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_28	Pixy	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_28	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_29	Pixy	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_30	Pixy	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_30	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_31	Pixy	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_32	Pixy	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_33	Pixy	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_33	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_34	Pixy	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_34	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_35	Pixy	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_36	Pixy	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_37	Pixy	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_38	Pixy	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		LinkField02_38	Pinky	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

@@ -1,0 +1,148 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2011.03.31					
+							
+#Table	Tab00	;인첸트 상점					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0 	NorHpPotionProd	NorSpPotionProd	-	-	-	-
+#Record	1 	NorConHPPotion	NorConSPPotion	-	-	-	-
+#Record	2 	NorTHScroll	NorTBScroll	NorACScroll	NorCriScroll	-	-
+#Record	3 	NorMaxHPScroll	NorMaxSPScroll	NorMSScroll	-	-	-
+#Record	4 	Ruby	Topaz	Sapphire	-	-	-
+							
+#End							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+	0						
+	1						
+	2						
+	3						

@@ -1,0 +1,81 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		E_Ski_NPC	N	4844	22447	0	0	10									
+#record		EventSnow01	N	5719	4396	0	0	65									
+#record		EventSnow02	N	5343	5773	0	0	65									
+#record		EventSnow03	N	4771	5328	0	0	65									
+#record		EventSnow04	N	4442	6624	0	0	65									
+#record		EventSnow05	N	3210	9815	0	0	65									
+#record		EventSnow06	N	3731	11258	0	0	65									
+#record		EventSnow07	N	3204	12094	0	0	65									
+#record		EventSnow08	N	3078	10927	0	0	72									
+#record		EventSnow09	N	1092	7434	0	0	72									
+#record		EventSnow10	N	2117	6949	0	0	72									
+#record		EventSnow11	N	2311	5635	0	0	79									
+#record		EventSnow12	N	5646	4391	0	0	86									
+#record		EventSnow13	N	5308	5920	0	0	79									
+#record		EventSnow14	N	4740	5200	0	0	79									
+#record		EventSnow15	N	3873	6383	0	0	79									
+#record		EventSnow16	N	3103	9727	0	0	86									
+#record		EventSnow17	N	3782	11331	0	0	72									
+#record		EventSnow18	N	3185	11236	0	0	65									
+#record		EventSnow19	N	3118	10805	0	0	65									
+#record		EventSnow20	N	1877	7326	0	0	65									
+#record		EventSnow21	N	2080	6812	0	0	65									
+#record		EventSnow22	N	2329	5840	0	0	65									
+#record		EventSnow23	N	5748	4294	0	0	72									
+#record		EventSnow24	N	5468	5801	0	0	72									
+#record		EventSnow25	N	4889	5235	0	0	72									
+#record		EventSnow26	N	3128	9949	0	0	79									
+#record		EventSnow27	N	3063	12057	0	0	86									
+#record		EventSnow28	N	3047	10978	0	0	79									
+#record		EventSnow29	N	1888	7500	0	0	79									
+#record		EventSnow30	N	2042	6649	0	0	79									
+#record		EventSnow31	N	2437	5498	0	0	86									
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		E_Ski_NPC	E_Ski_CongressNPC	1	0	600	600	600	-4	5	-2	8	0	10	2	13	4
+#record		EventSnow01	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow02	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow03	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow04	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow05	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow06	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow07	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow08	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow09	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow10	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow11	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow12	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow13	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow14	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow15	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow16	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow17	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow18	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow19	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow20	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow21	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow22	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow23	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow24	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow25	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow26	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow27	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow28	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow29	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow30	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#record		EventSnow31	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#end																	

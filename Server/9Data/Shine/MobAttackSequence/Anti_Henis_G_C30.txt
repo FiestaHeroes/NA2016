@@ -1,0 +1,23 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+#Record	0	-			
+#Record	1	Wield04			
+#Record	2	Heal05			
+#Record	3	-			
+#Record	4	Wield04			
+#Record	5	Heal05			
+#Record	6	-
+#Record	7	Wield04
+#Record	8	Heal05
+#Record	9	-
+#Record	10	Wield04
+#Record	11	Heal05
+#End		

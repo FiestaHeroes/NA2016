@@ -1,0 +1,24 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	IDCorneliusNeut01			
+#Record	1	IDCorneliusAtkSkill1			
+#Record	2	-			
+#Record	3	IDCorneliusAtkSkill1			
+#Record	4	-			
+#Record	5	-
+#Record	6	IDCorneliusNeut01
+#Record	7	IDCorneliusAtkSkill1
+#Record	8	IDCorneliusAtkSkill2
+#Record	9	-
+#Record	10	IDCorneliusAtkSkill2
+#Record	11	-
+#End		

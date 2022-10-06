@@ -1,0 +1,49 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	-			
+#Record	1	-			
+#Record	2	Salare_Skill01_N			
+#Record	3	-			
+#Record	4	Salare_Skill01_N			
+#Record	5	-			
+#Record	6	Salare_Skill02_W			
+#Record	7	Salare_Skill02_W			
+#Record	8	Salare_Skill01_N			
+#Record	9	Salare_Skill02_W			
+#Record	10	Salare_Skill01_N			
+#Record	11	Salare_Skill02_W			
+#Record	12	-			
+#Record	13	Salare_Skill02_W			
+#Record	14	-			
+#Record	15	-			
+#Record	16	Salare_Skill02_W			
+#Record	17	Salare_Skill01_N			
+#Record	18	Salare_Skill01_N			
+#Record	19	Salare_Skill01_N			
+					
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우	
+#ColumnType	Index	Index	String[33]	String[33]	
+#ColumnName	Condition	Value	From	To	
+#Record	HPLow_ChangeOrder	400	6	Salare_Skill04_W	
+#Record	HPLow_ChangeOrder	400	7	Salare_Skill04_W	
+#Record	HPLow_ChangeOrder	400	9	Salare_Skill04_W	
+#Record	HPLow_ChangeOrder	400	11	Salare_Skill04_W	
+#Record	HPLow_ChangeOrder	400	13	Salare_Skill04_W	
+#Record	HPLow_ChangeOrder	400	16	Salare_Skill04_W	
+#Record	HPLow_ChangeOrder	700	0	Salare_Skill03_N	
+#Record	HPLow_ChangeOrder	700	3	Salare_Skill03_N	
+#Record	HPLow_ChangeOrder	700	5	Salare_Skill03_N	
+#Record	HPLow_ChangeOrder	700	7	Salare_Skill03_N	
+#Record	HPLow_ChangeOrder	700	12	Salare_Skill03_N	
+#Record	HPLow_ChangeOrder	700	14	Salare_Skill03_N	
+#Record	HPLow_ChangeOrder	700	18	Salare_Skill03_N	
+#End					

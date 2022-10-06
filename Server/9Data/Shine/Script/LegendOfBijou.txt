@@ -1,0 +1,28 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	SucMessage	God bless you passed a victor test.	
+#Record	FailMessage	You lost the war.	
+			
+#Record	KQReturn30	"After 30sec, move to Alberstrol Ruins."	
+#Record	KQReturn20	"After 20sec, move to Alberstrol Ruins."	
+#Record	KQReturn10	"After 10sec, move to Alberstrol Ruins."	
+#Record	KQReturn5	"After 5sec, move to Alberstrol Ruins."	
+			
+#Record	KQLbMessage1	"Go, warrior! Win dark Kamaris and pass the victor test. "	
+#Record	KQLbMessage2	Conquered Dark Kamaris!! Advance with this speed! Break through the enemy line!	
+#Record	KQLbMessage3	Break hidden Dark Bijiou and throw down an gage to KalbanObeb	
+#Record	KQLbMessage4	Break through all Dark Bijiou! New route will be appeared. Go Go Go!!	
+#Record	KQLbMessage5	kalbanObeb soul is here. Make a savage attack upoon the Dark Kamaris!	
+#Record	KQLbMessage6	"When all Dark Kamaris lost, KalbanObeb will accept your challenge!"	
+#Record	KQLbMessage7	This is the last fight with kalbanObeb! Prove that you are a victor of Bijiou.	
+#Record	KQLbMessage8	Express my respect to you passed KalbanObeb's test.	
+#Record	KQLbMessage9	God bless you passed a victor test.	
+			
+			
+#END			

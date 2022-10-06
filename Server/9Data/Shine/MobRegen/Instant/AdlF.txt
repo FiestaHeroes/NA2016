@@ -1,0 +1,122 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		AdlF_01_Loussier	N	4245	10349	0	0	20									
+#record		AdlF_01_Marlene	N	3620	9549	0	0	20									
+#record		AdlF_01_Alber	N	3584	9418	0	0	20									
+#record		AdlF_01_Estelle	N	3546	9666	0	0	12									
+#record		AdlF_01_S_SP01	N	4153	10662	0	0	173									
+#record		AdlF_01_S_KN01	N	4525	10391	0	0	194									
+#record		AdlF_01_SP01	N	5031	11682	0	0	257									
+#record		AdlF_01_SP02	N	4864	13311	0	0	300									
+#record		AdlF_01_SP03	N	5351	13578	0	0	300									
+#record		AdlF_01_SP04	N	4989	14330	0	0	300									
+#record		AdlF_01_RA01	N	4936	15234	0	0	131									
+#record		AdlF_01_SP05	N	4667	16965	0	0	300									
+#record		AdlF_01_SP06	N	4188	16396	0	0	300									
+#record		AdlF_01_SP07	N	3723	17038	0	0	300									
+#record		AdlF_01_SP08	N	2461	16927	0	0	300									
+#record		AdlF_01_RA02	N	3525	16058	0	0	201									
+#record		AdlF_01_RA03	N	2975	16316	0	0	292									
+#record		AdlF_01_KN01	N	3303	17536	0	0	243									
+#record		AdlF_01_DL01	N	2177	16024	0	0	250									
+#record		AdlF_02_SP01	N	3470	18802	0	0	300									
+#record		AdlF_02_SP02	N	2987	18646	0	0	300									
+#record		AdlF_02_RA01	N	1918	19135	0	0	300									
+#record		AdlF_02_RA02	N	2244	19803	0	0	300									
+#record		AdlF_02_RA03	N	1990	20712	0	0	208									
+#record		AdlF_02_RA04	N	1928	21447	0	0	300									
+#record		AdlF_02_KN01	N	3287	22055	0	0	300									
+#record		AdlF_02_KN02	N	3412	21533	0	0	300									
+#record		AdlF_02_RA05	N	5080	22412	0	0	300									
+#record		AdlF_02_RA06	N	5290	21987	0	0	300									
+#record		AdlF_02_RA07	N	5131	21553	0	0	300									
+#record		AdlF_02_DL01	N	5014	19016	0	0	243									
+#record		AdlF_02_DL02	N	1989	22316	0	0	257									
+#record		AdlF_02_DL03	N	3445	20305	0	0	215									
+#record		AdlF_02_Salare	N	5159	20960	0	0	20									
+#record		AdlF_03_KN01	N	7754	20608	0	0	300									
+#record		AdlF_03_KN02	N	7721	20050	0	0	300									
+#record		AdlF_03_KN03	N	7308	20288	0	0	300									
+#record		AdlF_03_S1_KN01	N	10722	21032	0	0	300									
+#record		AdlF_03_S1_KN02	N	9596	19360	0	0	300									
+#record		AdlF_03_S1_KN03	N	9075	21275	0	0	300									
+#record		AdlF_03_S2_KN01	N	8910	21952	0	0	300									
+#record		AdlF_03_S2_KN02	N	11389	20990	0	0	300									
+#record		AdlF_03_S2_KN03	N	9628	18674	0	0	300									
+#record		AdlF_03_S3_KN01	N	8910	21952	0	0	300									
+#record		AdlF_03_S3_KN02	N	11389	20990	0	0	300									
+#record		AdlF_03_S3_KN03	N	9628	18674	0	0	300									
+#record		AdlF_04_Eglack	N	12925	9654	0	0	20									
+#record		AdlF_01_GU01	N	4958	12992	0	0	16									
+#record		AdlF_01_GU02	N	5110	13075	0	0	16									
+#record		AdlF_01_GU03	N	5240	13204	0	0	16									
+#record		AdlF_01_GU04	N	5393	13215	0	0	16									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		AdlF_01_Loussier	AdlF_Loussier	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_Marlene	AdlF_Marlene	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_Alber	AdlF_GuardAlber	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_Estelle	AdlF_GuardEstelle	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_S_SP01	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_S_KN01	AdlF_Fknuckleman	4	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP01	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP02	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP03	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP04	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_RA01	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP05	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP06	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP07	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_SP08	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_RA02	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_RA03	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_KN01	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_DL01	AdlF_Dlich	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_SP01	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_SP02	AdlF_Fspearman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_RA01	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_RA02	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_RA03	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_RA04	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_KN01	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_KN02	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_RA05	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_RA06	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_RA07	AdlF_Franger	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_DL01	AdlF_Dlich	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_DL02	AdlF_Dlich	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_DL03	AdlF_Dlich	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_02_Salare	MID_KingSlime	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_KN01	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_KN02	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_KN03	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S1_KN01	AdlF_Fknuckleman	2	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S1_KN02	AdlF_Fknuckleman	2	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S1_KN03	AdlF_Fknuckleman	2	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S2_KN01	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S2_KN02	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S2_KN03	AdlF_Fknuckleman	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S3_KN01	AdlF_Fknuckleman	4	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S3_KN02	AdlF_Fknuckleman	4	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_03_S3_KN03	AdlF_Fknuckleman	4	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_GU01	AdlFH_Guard	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_GU02	AdlFH_Guard	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_GU03	AdlFH_Guard	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_01_GU04	AdlFH_Guard	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AdlF_04_Eglack	MID_KingSlime	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

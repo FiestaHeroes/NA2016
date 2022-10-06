@@ -1,0 +1,193 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		UrgSwaDn01	N	9556	11289	0	0	90									
+#record		UrgSwaDn02	N	9934	10927	0	0	90									
+#record		UrgSwaDn03	N	9573	10525	0	0	90									
+#record		UrgSwaDn04	N	7622	11522	0	0	90									
+#record		UrgSwaDn05	N	6917	11515	0	0	90									
+#record		UrgSwaDn06	N	9242	11422	0	0	90									
+#record		UrgSwaDn07	N	8322	11523	0	0	90									
+#record		UrgSwaDn08	N	10091	9843	0	0	90									
+#record		UrgSwaDn09	N	9586	9733	0	0	90									
+#record		UrgSwaDn10	N	9996	10511	0	0	90									
+#record		UrgSwaDn11	N	9772	10087	0	0	90									
+#record		UrgSwaDn12	N	9054	10471	0	0	90									
+#record		UrgSwaDn13	N	9359	10863	0	0	90									
+#record		UrgSwaDn14	N	9275	10072	0	0	90									
+#record		UrgSwaDn15	N	4566	11525	0	0	90									
+#record		UrgSwaDn16	N	2997	11527	0	0	90									
+#record		UrgSwaDn17	N	1323	10871	0	0	90									
+#record		UrgSwaDn18	N	3811	11511	0	0	90									
+#record		UrgSwaDn19	N	1701	10529	0	0	90									
+#record		UrgSwaDn20	N	2099	10843	0	0	90									
+#record		UrgSwaDn21	N	2819	8936	0	0	90									
+#record		UrgSwaDn22	N	1794	8944	0	0	90									
+#record		UrgSwaDn23	N	4218	8940	0	0	90									
+#record		UrgSwaDn24	N	1993	10039	0	0	90									
+#record		UrgSwaDn25	N	1313	9753	0	0	90									
+#record		UrgSwaDn26	N	1247	10372	0	0	90									
+#record		UrgSwaDn27	N	8140	8150	0	0	90									
+#record		UrgSwaDn28	N	6251	8674	0	0	90									
+#record		UrgSwaDn29	N	7647	8683	0	0	90									
+#record		UrgSwaDn30	N	5668	8864	0	0	90									
+#record		UrgSwaDn31	N	7120	8907	0	0	90									
+#record		UrgSwaDn32	N	8475	8580	0	0	90									
+#record		UrgSwaDn33	N	8666	7940	0	0	90									
+#record		UrgSwaDn34	N	6046	5978	0	0	90									
+#record		UrgSwaDn35	N	4826	7307	0	0	90									
+#record		UrgSwaDn36	N	4751	6431	0	0	90									
+#record		UrgSwaDn37	N	5197	5957	0	0	90									
+#record		UrgSwaDn38	N	7609	5645	0	0	90									
+#record		UrgSwaDn39	N	4543	4391	0	0	90									
+#record		UrgSwaDn40	N	6626	4346	0	0	90									
+#record		UrgSwaDn41	N	7971	5968	0	0	90									
+#record		UrgSwaDn42	N	7261	5987	0	0	90									
+#record		UrgSwaDn43	N	8044	4627	0	0	90									
+#record		UrgSwaDn44	N	5644	4372	0	0	90									
+#record		UrgSwaDn45	N	8078	3276	0	0	90									
+#record		UrgSwaDn46	N	8442	8240	0	0	1									
+#record		UrgSwaDn47	N	6073	1790	0	0	90									
+#record		UrgSwaDn48	N	6301	2230	0	0	90									
+#record		UrgSwaDn49	N	5243	2659	0	0	90									
+#record		UrgSwaDn50	N	6184	2666	0	0	90									
+#record		UrgSwaDn51	N	5313	1777	0	0	90									
+#record		UrgSwaDn52	N	5077	2268	0	0	90									
+#record		UrgSwaDn53	N	5697	3128	0	0	90									
+#record		UrgSwaDn54	N	5696	2710	0	0	90									
+#record		UrgSwaDn55	N	5662	2275	0	0	1									
+#record		UrgSwaDn56	N	2539	2602	0	0	90									
+#record		UrgSwaDn57	N	1864	1516	0	0	90									
+#record		UrgSwaDn58	N	2550	1578	0	0	90									
+#record		UrgSwaDn59	N	1179	1492	0	0	90									
+#record		UrgSwaDn60	N	3298	735	0	0	90									
+#record		UrgSwaDn61	N	1411	2137	0	0	90									
+#record		UrgSwaDn62	N	1532	1706	0	0	1									
+#record		UrgSwaDn63	N	6521	6471	0	0	90									
+#record		UrgSwaDn64	N	5764	6479	0	0	90									
+#record		UrgSwaDn65	N	5309	6915	0	0	90									
+#record		UrgSwaDn66	N	5288	7587	0	0	90									
+#record		UrgSwaDn67	N	5975	7685	0	0	90									
+#record		UrgSwaDn68	N	6094	7074	0	0	90									
+#record		UrgSwaDn69	N	6506	7570	0	0	90									
+#record		Waypoint01	N	3389	8962	0	0	420									
+#record		Waypoint02	N	2235	8943	0	0	420									
+#record		Waypoint03	N	1944	11441	0	0	420									
+#record		Waypoint04	N	4978	11549	0	0	420									
+#record		Waypoint05	N	4413	11560	0	0	420									
+#record		Waypoint06	N	3714	11534	0	0	420									
+#record		Waypoint07	N	4678	4300	0	0	420									
+#record		Waypoint08	N	7612	6010	0	0	420									
+#record		Waypoint09	N	6057	6752	0	0	420									
+#record		Waypoint10	N	6615	7137	0	0	420									
+#record		Waypoint11	N	4842	7736	0	0	420									
+#record		Waypoint12	N	6057	6752	0	0	420									
+#record		Waypoint13	N	5085	4279	0	0	420									
+#record		Waypoint14	N	4595	4609	0	0	420									
+#record		Waypoint15	N	5057	4612	0	0	420									
+#record		Waypoint16	N	7863	5969	0	0	420									
+#record		Waypoint17	N	7336	5968	0	0	420									
+#record		Waypoint18	N	7597	5574	0	0	420									
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		UrgSwaDn01	SlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn02	SlugB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn03	SlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn04	SlugB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn05	SlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn06	SlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn07	SlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn08	MadSlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn09	MadSlugB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn10	MadSlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn11	MadSlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn12	MadSlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn13	MadSlugB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn14	MadSlugB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn15	ShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn16	ShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn17	ShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn18	ShadowB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn19	ShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn20	ShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn21	RedShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn22	RedShadowB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn23	RedShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn24	RedShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn25	RedShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn26	RedShadowB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn27	BigMudManB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn28	BigMudManB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn29	BigMudManB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn30	BigMudManB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn31	BigMudManB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn32	BigMudManB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn33	LivingStatueB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn34	LivingStatueB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn35	LivingStoneB	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn36	LivingStoneB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn37	LivingStoneB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn38	RhinoceHunterB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn39	RhinoceHunterB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn40	RhinoceHunterB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn41	RhinoceHunterB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn42	RhinoceHunterB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn43	RhinoceHunterB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn44	RhinoceHunterB	3	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn45	RhinoceHunterB	3	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn46	StoneMaster	1	0	1800	1700	1900	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn47	BlackShadow	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn48	BlackShadow	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn49	BlackShadow	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn50	BlackShadow	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn51	BlackShadow	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn52	BlackShadow	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn53	BlackShadow	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn54	BlackShadow	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn55	ShadowMaster	1	0	1800	1700	1900	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn56	FireShella	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn57	FireShella	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn58	FireShella	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn59	FireShella	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn60	FireShella	1	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn61	FireShella	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn62	FlameMaster	1	0	1800	1700	1900	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn63	LivingStatueB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn64	LivingStatueB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn65	LivingStatueB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn66	LivingStatueB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn67	LivingStoneB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn68	LivingStoneB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		UrgSwaDn69	LivingStoneB	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint01	RedShadowA	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint02	RedShadowA	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint03	RedShadowA	5	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint04	SlugA	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint05	SlugA	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint06	SlugA	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint07	ShadowMaster	1	0	1800	1700	1900	5	0	2	0	3	0	4	0	5
+#record		Waypoint08	ShadowMaster	1	0	1800	1700	1900	5	0	2	0	3	0	4	0	5
+#record		Waypoint09	LivingStoneA	3	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint10	LivingStoneA	2	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint11	LivingStatueA	3	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint12	LivingStatueA	3	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint13	BlackShadow	5	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint14	BlackShadow	5	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint15	BlackShadow	5	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint16	BlackShadow	5	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint17	BlackShadow	5	0	35	34	36	5	0	2	0	3	0	4	0	5
+#record		Waypoint18	BlackShadow	5	0	35	34	36	5	0	2	0	3	0	4	0	5
+																	
+#end																	

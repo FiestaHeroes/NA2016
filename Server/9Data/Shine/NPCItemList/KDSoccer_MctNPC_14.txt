@@ -1,0 +1,21 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00	;크리스마스 이벤트 2013 보상 아이템					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	E_IglooHouse_15	E_SnowmanHouse_15	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	E_Cos_Penguin_15	E_Hat_Penguin_15	E_Cos_Eff_Ice_15	-	-	-
+#Record	3	-	-	-	-	-	-
+#Record	4	E_MiniSnowy_15	E_MiniPenguin_15	-	-	-	-
+#Record	5	-	-	-	-	-	-
+#Record	6	E_M_SnowBall_15	E_M_Penguin_15	-	-	-	-
+#End							
+							
+							
+							
+							
+			-				

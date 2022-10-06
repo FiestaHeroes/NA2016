@@ -1,0 +1,43 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	SpyName	Spear Guard	
+#Record	MaraName	Commanding Mara	
+#Record	MarloneName	Charismatic Marlone	
+			
+#Record	SpyLie0	"Oh my, what  a surprise!"	
+#Record	SpyLie1	I am sorry. I thought the pirates discovered us...	
+#Record	SpyLie2	I was keeping my eyes on the pirates to wipe them out.	
+#Record	SpyLie3	"Wait a minute, I am getting equipped so I can help you."	
+#Record	SpyReport0	What? The enemies are here?
+#Record	SpyReport1	"Yes, if did not hurry…"
+#Record	SpyReport2	Emergency! Withstand 50 more minutes until we can take off!
+#Record	SpyReport3	You! Go and inform the general.
+#Record	SpyReport4	"Yes, sir!"
+#Record	MiddleReport0	The line of defense has been broken through.
+#Record	MiddleReport1	You are so useless.
+#Record	MiddleReport2	"Don't worry, Mara. I, Marlone, will destroy them all."
+#Record	MiddleReport3	I cannot let you have all the fun.
+#Record	MiddleReport4	"Everyone, get ready!!"
+#Record	MidMaraDead	"Oh, this is so resentful.."
+#Record	MidMarloneDead	No!!!
+#Record	LastMaraDead	Is this really the end.....???
+#Record	LastMarloneDead	It's such a beautiful sky…
+		
+#Record	Fail0	"Boss, we surely would have been raided had it not been for me."
+#Record	Fail1	"Well, I am not bragging, just saying… hahaha"
+#Record	Fail2	I remember you promised me something before…
+#Record	Fail3	Take this and go away. I don't want to see your face again.
+		
+;	KQ 임시	
+#Record	KQReturn30	Move to Elderine in 30 seconds.
+#Record	KQReturn20	Move to Elderine in 20 seconds.
+#Record	KQReturn10	Move to Elderine in 10 seconds.
+#Record	KQReturn5	Move to Elderine in 5 seconds.
+
+#End		

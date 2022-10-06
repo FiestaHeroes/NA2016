@@ -1,0 +1,271 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		FrzPu01	N	3184	10490	0	0	231									
+#record		FrzPu02	N	3706	10236	0	0	280									
+#record		FrzPu03	N	3977	9818	0	0	196									
+#record		FrzPu04	N	4096	9316	0	0	280									
+#record		FrzPu05	N	2974	9452	0	0	266									
+#record		FrzPu06	N	3402	8992	0	0	280									
+#record		FrzPu07	N	2770	10190	0	0	217									
+#record		FrzPu08	N	3543	9551	0	0	280									
+#record		FrzPu09	N	3200	9970	0	0	252									
+#record		FrzPu10	N	4047	8705	0	0	252									
+#record		FrzMa01	N	3821	6882	0	0	203									
+#record		FrzMa02	N	2680	7633	0	0	188									
+#record		FrzMa03	N	2940	7041	0	0	217									
+#record		FrzMa04	N	3096	5436	0	0	187									
+#record		FrzMa05	N	2635	5985	0	0	210									
+#record		FrzMa06	N	4034	5147	0	0	208									
+#record		FrzMa07	N	2955	6513	0	0	203									
+#record		FrzMa08	N	3356	6850	0	0	216									
+#record		FrzMa09	N	3088	4966	0	0	203									
+#record		FrzMa10	N	3578	4952	0	0	203									
+#record		FrzMa11	N	3312	7307	0	0	203									
+#record		FrzWo01	N	1235	7427	0	0	140									
+#record		FrzWo02	N	1205	7945	0	0	166									
+#record		FrzWo03	N	3251	4318	0	0	140									
+#record		FrzWo04	N	1468	7094	0	0	173									
+#record		FrzWo05	N	2670	4851	0	0	140									
+#record		FrzWo06	N	1322	5346	0	0	159									
+#record		FrzWo07	N	3733	4454	0	0	140									
+#record		FrzWo08	N	1432	4429	0	0	130									
+#record		FrzWo09	N	1190	8456	0	0	140									
+#record		FrzMe01	N	2170	3078	0	0	140									
+#record		FrzMe02	N	1565	4008	0	0	173									
+#record		FrzMe03	N	2736	2963	0	0	140									
+#record		FrzMe04	N	1909	3349	0	0	174									
+#record		FrzMe05	N	2985	2728	0	0	140									
+#record		FrzMe06	N	2619	2590	0	0	188									
+#record		FrzMe07	N	2389	2857	0	0	140									
+#record		FrzMe08	N	2912	2338	0	0	159									
+#record		FrzMe09	N	1634	3639	0	0	140									
+#record		PlnBe01	N	9188	6655	0	0	265									
+#record		PlnBe02	N	8575	6663	0	0	285									
+#record		PlnBe03	N	9890	6120	0	0	294									
+#record		PlnBe04	N	10426	5782	0	0	280									
+#record		PlnBe05	N	9877	5482	0	0	294									
+#record		PlnBe06	N	8066	6382	0	0	264									
+#record		PlnBe07	N	7601	5170	0	0	231									
+#record		PlnBe08	N	7719	5715	0	0	244									
+#record		PlnBe09	N	8390	4984	0	0	230									
+#record		PlnBe10	N	9330	6156	0	0	209									
+#record		PlnBe11	N	9374	5704	0	0	209									
+#record		PlnBe12	N	9312	5176	0	0	294									
+#record		PlnSh01	N	10921	8972	0	0	200									
+#record		PlnSh02	N	11094	8581	0	0	200									
+#record		PlnSh03	N	11070	7983	0	0	200									
+#record		PlnSh04	N	11018	7535	0	0	200									
+#record		PlnSh05	N	10638	7858	0	0	200									
+#record		PlnSh06	N	9854	9105	0	0	100									
+#record		PlnSh07	N	9694	8641	0	0	100									
+#record		PlnSh08	N	10729	8284	0	0	200									
+#record		PlnSh09	N	9712	8877	0	0	100									
+#record		PlnSh10	N	10974	7066	0	0	200									
+#record		PlnSp01	N	8325	4009	0	0	237									
+#record		PlnSp02	N	8852	3938	0	0	257									
+#record		PlnSp03	N	9376	4011	0	0	230									
+#record		PlnSp04	N	11022	3811	0	0	279									
+#record		PlnSp05	N	11043	4367	0	0	196									
+#record		PlnSp06	N	10910	3291	0	0	236									
+#record		PlnSp07	N	7584	2971	0	0	264									
+#record		PlnSp08	N	7585	2392	0	0	264									
+#record		PlnSp09	N	8108	2760	0	0	259									
+#record		PlnSp10	N	8120	2200	0	0	252									
+#record		PlnSp11	N	8750	2129	0	0	252									
+#record		PlnSp12	N	8659	2638	0	0	238									
+#record		PlnSp13	N	9257	2678	0	0	238									
+#record		PlnSp14	N	9342	2124	0	0	273									
+#record		PlnSp15	N	9716	2776	0	0	210									
+#record		PlnSp16	N	9849	2286	0	0	252									
+#record		PlnAp01	N	9049	10517	0	0	231									
+#record		PlnAp02	N	9535	10685	0	0	251									
+#record		PlnAp03	N	10031	10853	0	0	203									
+#record		PlnAp04	N	11617	10334	0	0	202									
+#record		PlnAp05	N	11459	9969	0	0	168									
+#record		PlnAp06	N	11299	9582	0	0	209									
+#record		PlnAp07	N	9834	10295	0	0	210									
+#record		PlnAp08	N	10309	10354	0	0	195									
+#record		PlnAp09	N	10077	9886	0	0	188									
+#record		BerValeDw01	N	7413	3700	0	0	104									
+#record		BerValeDw02	N	4320	3690	0	0	109									
+#record		BerValeDw03	N	7696	7644	0	0	111									
+#record		BerValeDw04	N	4452	7634	0	0	116									
+#record		BerValeGaruda	N	3184	6001	0	0	300									
+#record		GatherZ101	N	4255	6725	0	0	234									
+#record		GatherZ102	N	3899	5714	85	251	-13									
+#record		GatherZ103	N	4134	4572	148	153	0									
+#record		GatherZ104	N	4148	8279	206	124	0									
+#record		GatherZ105	N	4474	9038	87	99	0									
+#record		GatherZ106	N	1453	5928	97	254	23									
+#record		GatherZ107	N	3118	10590	115	119	0									
+#record		GatherZ108	N	2714	9797	94	96	39									
+#record		GatherZ109	N	2707	5521	106	107	0									
+#record		GatherZ201	N	10176	3808	222	497	0									
+#record		GatherZ202	N	9775	7699	127	171	-65									
+#record		GatherZ203	N	8757	7747	214	306	90									
+#record		GatherZ204	N	8504	8654	98	215	37									
+#record		GatherZ205	N	11255	8240	62	190	10									
+#record		GatherZ206	N	11340	4163	138	138	0									
+#record		GatherZ207	N	7829	4085	211	121	0									
+#record		GatherZ208	N	8122	1959	367	109	0									
+#record		GatherZ209	N	8957	1817	376	81	0									
+#record		P01	N	11209	10642	0	0	50									
+#record		P02	N	4168	2677	0	0	50									
+#record		Waypoint01	N	1805	7909	0	0	450									
+#record		Waypoint02	N	3719	7460	0	0	450									
+#record		Waypoint03	N	1722	5781	0	0	450									
+#record		Waypoint04	N	10965	10369	0	0	450									
+#record		Waypoint05	N	9247	7523	0	0	450									
+#record		Waypoint06	N	7643	4123	0	0	450									
+#record		Waypoint07	N	4150	4595	0	0	450									
+#record		Waypoint08	N	4168	8220	0	0	450									
+#record		Waypoint09	N	11248	1719	0	0	450									
+#record		Waypoint10	N	2487	4155	0	0	450									
+#record		Waypoint11	N	4171	2671	0	0	450									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		FrzPu01	ValeSnowyPuggy	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu02	ValeSnowyPuggy	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu03	ValeSnowyPuggy	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu04	ValeSnowyPuggy	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu05	ValeSnowyPuggy	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu06	ValeSnowyPuggy	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu07	ValeSnowyPuggy	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu08	ValeSnowyPuggy	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu09	ValeSnowyPuggy	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzPu10	ValeSnowyPuggy	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa01	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa02	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa03	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa04	ValeMastodons	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa05	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa06	ValeMastodons	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa07	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa08	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa09	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa10	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMa11	ValeMastodons	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo01	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo02	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo03	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo04	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo05	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo06	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo07	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo08	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzWo09	ValeSnowyWolf	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe01	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe02	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe03	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe04	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe05	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe06	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe07	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe08	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		FrzMe09	ValeMegan	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe01	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe02	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe03	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe04	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe05	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe06	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe07	ValeBattleBeak	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe08	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe09	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe10	ValeBattleBeak	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe11	ValeBattleBeak	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnBe12	ValeBattleBeak	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh01	ValeShella	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh02	ValeShella	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh03	ValeShella	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh04	ValeShella	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh05	ValeShella	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh06	ValeShella	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh07	ValeShella	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh08	ValeShella	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh09	ValeShella	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSh10	ValeShella	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp01	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp02	ValeBSpikeHorn	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp03	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp04	ValeBSpikeHorn	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp05	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp06	ValeBSpikeHorn	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp07	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp08	ValeBSpikeHorn	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp09	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp10	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp11	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp12	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp13	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp14	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp15	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnSp16	ValeBSpikeHorn	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp01	ValeApe	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp02	ValeApe	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp03	ValeApe	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp04	ValeApe	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp05	ValeApe	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp06	ValeApe	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp07	ValeApe	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp08	ValeApe	2	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		PlnAp09	ValeApe	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerValeDw01	ValeArkGuard	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerValeDw02	ValeArkGuard	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerValeDw03	ValeArkGuard	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerValeDw04	ValeArkGuard	1	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerValeGaruda	Garuda	1	0	600	480	720	-4	5	-2	8	0	10	2	13	4
+#record		GatherZ101	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ101	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ101	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ102	Mushroom1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ102	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ103	Flower7_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ103	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ104	Herb1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ104	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ104	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ105	Herb1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ106	Flower7_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ107	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ108	Mushroom1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ109	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ109	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ201	Wood7_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ202	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ203	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ204	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ205	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ206	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ207	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ208	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ209	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		P01	PresentBox_Snow	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		P02	PresentBox_Snow	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint01	ValeSnowyPuggy	10	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint02	ValeSnowyPuggy	5	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint03	ValeSnowyPuggy	10	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint04	ValeShella	10	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint05	ValeShella	10	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint06	Wood7_Snow	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint07	Wood7_Snow	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint08	Wood7_Snow	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint09	Wood7_Snow	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint10	ValeMegan	10	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint11	ValeMegan	5	0	12	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

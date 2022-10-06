@@ -1,0 +1,21 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00	;할로윈 보상판매 상점					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	E_Hwin_Cos_Zhunter	-	-	-	-	-
+#Record	1	E_Hwin_Hat_Halloween	E_Hwin_Back_Halloween	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	MiniJack01_2	Halloween02_1	-	-	-	-
+#Record	4	-	-	-	-	-	-
+#Record	5	E_Hwin_JackO_Sword	E_Hwin_JackO_Tsword	E_Hwin_JackO_Axe	-	-	-
+#Record	6	E_Hwin_JackO_Mace	E_Hwin_JackO_Hammer	-	-	-	-
+#Record	7	E_Hwin_JackO_Bow	E_Hwin_JackO_Cbow	-	-	-	-
+#Record	8	E_Hwin_JackO_Staff	E_Hwin_JackO_Wand	-	-	-	-
+#Record	9	E_Hwin_JackO_Claw	E_Hwin_JackO_Dsword	-	-	-	-
+#Record	10	E_Hwin_JackO_Blade	-	-	-	-	-
+							
+#End							

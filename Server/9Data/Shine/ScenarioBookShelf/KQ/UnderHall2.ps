@@ -1,0 +1,729 @@
+open [main]
+    var Wait            ""
+        InterruptBlock  ""
+        InterruptArg    ""
+        KQ_GB_Spider  "".
+     ;  HiddenEvent01   1.
+     ;  HiddenEvent02   aaaa. 
+
+    waitlogin Wait.
+    if Wait == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    pause Sec 60.
+
+    scriptfile "KQUnderHall2".
+
+    timelimit Min 30.
+
+    call "First".
+    call "Second".
+    call "Third".
+    call "Forth".
+    call "Fifth".
+    call "Sixth".
+    call "Seventh".
+    call "Eighth".
+    call "Nineth".
+    call "Tenth".
+    call "Eleventh".
+    call "Twelveth".
+    call "Thirteenth".
+    call "Forteenth".
+    call "Fifteenth".
+    call "Sixteenth".
+    call "Seventeenth".
+    call "Eighteenth".
+    call "Nineteenth".
+    call "Twelve".
+    call "TwelveOne".
+    call "TwelveTwo".
+
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [First]
+    regengroup "KDSpider" "KDUnderArea1".
+    regengroup "KDSpider" "KDUnderArea2".
+    regengroup "KDSpider" "KDUnderArea3".
+    regengroup "KDSpider" "KDUnderArea4".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (90 - 30) "FirstEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FirstEnd]
+    break "First".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Second]
+    regengroup "KDSpider" "KDUnderArea5".
+    regengroup "KDSpider" "KDUnderArea6".
+    regengroup "KDSpider" "KDUnderArea7".
+    regengroup "KDSpider" "KDUnderArea8".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (130 - 90) "SecondEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SecondEnd]
+    break "Second".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Third]
+    regengroup "KDSpider" "KDUnderArea9".
+    regengroup "KDSpider" "KDUnderArea10".
+    regengroup "KDSpider" "KDUnderArea11".
+    regengroup "KDSpider" "KDUnderArea12".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (170 - 130) "ThirdEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ThirdEnd]
+    break "Third".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Forth]
+    regengroup "KDSpider" "KDUnderArea13".
+    regengroup "KDSpider" "KDUnderArea14".
+    regengroup "KDSpider" "KDUnderArea15".
+    regengroup "KDSpider" "KDUnderArea16".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (220 - 170) "ForthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ForthEnd]
+    break "Forth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fifth]
+    regengroup "KDSpider" "KDUnderArea17".
+    regengroup "KDSpider" "KDUnderArea18".
+    regengroup "KDSpider" "KDUnderArea19".
+    regengroup "KDSpider" "KDUnderArea20".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (280 - 220) "FifthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FifthEnd]
+    break "Fifth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Sixth]
+    regengroup "KDSpider" "KDUnderArea21".
+    regengroup "KDSpider" "KDUnderArea22".
+    regengroup "KDSpider" "KDUnderArea23".
+    regengroup "KDSpider" "KDUnderArea24".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (360 - 280) "SixthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SixthEnd]
+    break "Sixth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Seventh]
+    regengroup "KDSpider" "KDUnderArea25".
+    regengroup "KDSpider" "KDUnderArea26".
+    regengroup "KDSpider" "KDUnderArea27".
+    regengroup "KDSpider" "KDUnderArea28".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (460 - 360) "SeventhEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SeventhEnd]
+    break "Seventh".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eighth]
+    regengroup "KDSpider" "KDUnderArea29".
+    regengroup "KDSpider" "KDUnderArea30".
+    regengroup "KDSpider" "KDUnderArea31".
+    regengroup "KDSpider" "KDUnderArea32".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (580 - 460) "EighthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EighthEnd]
+    break "Eighth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Nineth]
+    regengroup "KDSpider" "KDUnderArea33".
+    regengroup "KDSpider" "KDUnderArea34".
+    regengroup "KDSpider" "KDUnderArea35".
+    regengroup "KDSpider" "KDUnderArea36".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (700 - 580) "NinethEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [NinethEnd]
+    break "Nineth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Tenth]
+    regengroup "KDSpider" "KDUnderArea37".
+    regengroup "KDSpider" "KDUnderArea38".
+    regengroup "KDSpider" "KDUnderArea39".
+    regengroup "KDSpider" "KDUnderArea40".
+
+    regengroup "KDSpider" "KDUnderArea29".
+    regengroup "KDSpider" "KDUnderArea30".
+    regengroup "KDSpider" "KDUnderArea31".
+    regengroup "KDSpider" "KDUnderArea32".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (820 - 700) "TenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [TenthEnd]
+    break "Tenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eleventh]
+    regengroup "KDSpider" "KDUnderArea41".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (940 - 820) "EleventhEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EleventhEnd]
+    break "Eleventh".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Twelveth]
+    regengroup "KDSpider" "KDUnderArea42".
+    regengroup "KDSpider" "KDUnderArea43".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1100 - 940) "TwelvethEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [TwelvethEnd]
+    break "Twelveth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Thirteenth]
+    regengroup "KDSpider" "KDUnderArea44".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1230 - 1100) "ThirteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ThirteenthEnd]
+    break "Thirteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Forteenth]
+    regengroup "KDSpider" "KDUnderArea45".
+    regengroup "KDSpider" "KDUnderArea46".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1255 - 1230) "ForteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ForteenthEnd]
+    break "Forteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fifteenth]
+    regengroup "KDSpider" "KDUnderArea47".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1265 - 1255) "FifteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FifteenthEnd]
+    break "Fifteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Sixteenth]
+    regengroup "KDSpider" "KDUnderArea48".
+    regengroup "KDSpider" "KDUnderArea49".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1275 - 1265) "SixteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SixteenthEnd]
+    break "Sixteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Seventeenth]
+
+    regengroup "KDSpider" "KDUnderArea50".
+    regengroup "KDSpider" "KDUnderArea51".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1325 - 1275) "SeventeenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SeventeenthEnd]
+    break "Seventeenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eighteenth]
+    regengroup "KDSpider" "KDUnderArea52".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1365 - 1325) "EighteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EighteenthEnd]
+    break "Eighteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Nineteenth]
+    regengroup "KDSpider" "KDUnderArea50".
+    regengroup "KDSpider" "KDUnderArea51".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1425 - 1365) "NineteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [NineteenthEnd]
+    break "Nineteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [Twelve]
+    regengroup "KDSpider" "KDUnderArea52".
+    regengroup "KDSpider" "KDUnderArea52".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1450 - 1425) "TwelveEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [TwelveEnd]
+    break "Twelve".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [TwelveOne]
+    regengroup "KDSpider" "KDUnderArea50".
+    regengroup "KDSpider" "KDUnderArea51".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1480 - 1450) "TwelveOneEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [TwelveOneEnd]
+    break "TwelveOne".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [TwelveTwo]
+
+   ; regengroup "KDSpider" "KDUnderArea53".
+   ; 베이비 드래곤은 과감히 빼버리겠음
+
+     chatwin "KQ_GB_Spider" "Spider01".
+     pause sec 3.
+
+     chatwin "KQ_GB_Spider" "Spider02".
+     pause sec 3.
+
+     chatwin "RouTownChiefRoumenus" "Roumenus01".
+     pause sec 3.
+
+     chatwin "RouTownChiefRoumenus" "Roumenus02".
+     pause sec 3.
+
+     mobregen KQ_GB_Spider "KQ_GB_Spider" 2350 2550 90 1000 "Normal".
+
+     interruptclear.
+     interruptset HPLow "" 1 KQ_GB_Spider 900 "Summon1".
+     interruptset HPLow "" 1 KQ_GB_Spider 800 "Summon2".
+     interruptset HPLow "" 1 KQ_GB_Spider 700 "Summon3".
+     interruptset HPLow "" 1 KQ_GB_Spider 600 "Summon4".
+     interruptset HPLow "" 1 KQ_GB_Spider 500 "Summon5".
+     interruptset HPLow "" 1 KQ_GB_Spider 400 "Summon6".
+     interruptset HPLow "" 1 KQ_GB_Spider 300 "Summon7".
+     interruptset HPLow "" 1 KQ_GB_Spider 200 "Summon8".
+     interruptset HPLow "" 1 KQ_GB_Spider 100 "Summon9".
+     interruptset HPLow "" 1 KQ_GB_Spider 50   "Summon10".
+
+     interruptset PlayerEliminate "" 1 "QuestFail".
+     interruptset TimeOut "" 1 "QuestSuc".  
+     interruptset DeadHandle "" 1 KQ_GB_Spider "QuestSuc2".
+      
+     infinite
+     open
+         waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+;;;;;;;;;;;;;;;;;;;;;;소환 부분 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  open [Summon1]
+      summonmob KQ_GB_Spider "KQ_M_Spider"   5.
+      pause sec 2.
+      summonmob KQ_GB_Spider "KQ_M_Spider"   5.
+      pause sec 2.
+      summonmob KQ_GB_Spider "KQ_M_Spider"   5.
+      pause sec 2.
+      summonmob KQ_GB_Spider "KQ_U_Spider01"  2.
+  close
+
+open [Summon2]
+      summonmob KQ_GB_Spider "KQ_M_Spider" 5.
+      pause sec 2.
+      summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+      pause sec 2.
+      summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+      pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_Spider02"  2.
+close
+
+open [Summon3]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_Spider03"  2.
+close
+
+open [Summon4]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 4.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 5.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_Spider04"  2.
+close
+
+open [Summon5]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 5.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 5.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 5.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 5.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 5.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_Spider05"  2.
+close
+
+open [Summon6]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 6.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_AMageBook"  2.
+close
+
+open [Summon7]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_Lvivi"  2.
+close
+
+open [Summon8]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 8.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 8.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 8.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 8.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 8.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_Greenky"  2.
+close
+
+open [Summon9]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 7.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_TombRaider" 2.
+close
+
+open [Summon10]
+     summonmob KQ_GB_Spider "KQ_M_Spider" 9.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 9.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 9.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 9.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_M_Spider" 9.
+     pause sec 2.
+     summonmob KQ_GB_Spider "KQ_U_Uspider"  2.
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuc]
+    questresult Suc.                
+    reward KingdomQuest.
+    questmobkill 2668 "Daliy_Check" 1.
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;; 거미가 죽었을 경우 숨어져 있는 이벤트 발생 이 부분에 대한 것은 
+;;;;;;;;;;;;;;;;;;;;;;;;;; 내 마음대로 결정 크크크!
+
+open [QuestSuc2]
+
+    questresult Suc.                
+    reward KingdomQuest.
+    questmobkill 2668 "Daliy_Check" 1.
+    pause sec 30.  
+    regengroup "KDSpider" "KDUnderArea54".
+
+
+;    mobregen HiddenEvent01 "" 2350 2550 90 1000 "Normal".
+;    mobregen HiddenEvent02 "" 2400 2650 90 1000 "Normal".
+;    broadcasting Msg" " ????
+;    broadcasting MSg " " ????
+
+     
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Urg" "Urg" 5835 6397.
+    endofkq.
+    break "main".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestFail]
+    questresult Fail.                  
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Urg" "Urg" 5835 6397.
+    endofkq.
+    break "main".
+ close

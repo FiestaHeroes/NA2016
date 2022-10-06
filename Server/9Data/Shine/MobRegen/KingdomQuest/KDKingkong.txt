@@ -1,0 +1,158 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KQ_Kingkong_01_01	N	11240	8047	0	0	352									
+#record		KQ_Kingkong_01_02	N	10879	8044	701	195	11									
+#record		KQ_Kingkong_01_03	N	10164	8493	211	495	0									
+#record		KQ_Kingkong_01_04	N	10320	8791	520	258	-49									
+#record		KQ_Kingkong_01_05	N	10963	9156	978	177	-28									
+#record		KQ_Kingkong_01_06	N	11921	10072	0	0	436									
+#record		KQ_Kingkong_01_07	N	11396	11221	957	343	50									
+#record		KQ_Kingkong_01_08	N	9643	11383	1151	453	0									
+#record		KQ_Kingkong_01_09	N	9223	11289	0	0	500									
+#record		KQ_Kingkong_01_10	N	8946	10970	0	0	500									
+#record		KQ_Kingkong_01_Boss	N	8877	10999	0	0	500									
+#record		KQ_Kingkong_02_01	N	7309	8879	780	231	50									
+#record		KQ_Kingkong_02_02	N	7318	9023	0	0	338									
+#record		KQ_Kingkong_02_03	N	6840	9140	769	351	0									
+#record		KQ_Kingkong_02_04	N	6012	8329	249	1038	35									
+#record		KQ_Kingkong_02_05	N	4612	7624	0	0	253									
+#record		KQ_Kingkong_02_06	N	5181	7850	1097	243	-23									
+#record		KQ_Kingkong_02_07	N	4425	7311	0	0	240									
+#record		KQ_Kingkong_02_08	N	4385	7568	0	0	163									
+#record		KQ_Kingkong_02_Boss	N	4299	7556	0	0	65									
+#record		KQ_Kingkong_03_01	N	6410	4554	0	0	289									
+#record		KQ_Kingkong_03_02	N	6262	3893	0	0	450									
+#record		KQ_Kingkong_03_03	N	6831	3702	574	122	0									
+#record		KQ_Kingkong_03_04	N	7569	3886	135	339	36									
+#record		KQ_Kingkong_03_05	N	7734	4148	0	0	205									
+#record		KQ_Kingkong_03_06	N	9703	2915	0	0	373									
+#record		KQ_Kingkong_03_07	N	10096	2839	0	0	436									
+#record		KQ_Kingkong_03_08	N	10477	2531	0	0	500									
+#record		KQ_Kingkong_03_09	N	10097	2396	238	729	128									
+#record		KQ_Kingkong_03_10	N	10411	2004	0	0	500									
+#record		KQ_Kingkong_03_11	N	10148	2136	0	0	500									
+#record		KQ_Kingkong_03_Boss	N	10635	2210	0	0	65									
+#record		KQ_Kingkong_04_01	N	6993	2129	0	0	296									
+#record		KQ_Kingkong_04_02	N	6963	1846	0	0	317									
+#record		KQ_Kingkong_04_03	N	6830	1133	0	0	500									
+#record		KQ_Kingkong_04_04	N	6356	825	0	0	366									
+#record		KQ_Kingkong_04_05	N	5250	2853	0	0	289									
+#record		KQ_Kingkong_04_06	N	5250	2853	0	0	289									
+#record		KQ_Kingkong_04_07	N	4773	2797	0	0	500									
+#record		KQ_Kingkong_04_08	N	4574	2377	0	0	500									
+#record		KQ_Kingkong_04_09	N	4295	1687	0	0	500									
+#record		KQ_Kingkong_04_10	N	3507	1800	0	0	500									
+#record		KQ_Kingkong_04_11	N	2276	1952	0	0	1039									
+#record		KQ_Kingkong_04_12	N	2398	2215	0	0	500									
+#record		KQ_Kingkong_04_13	N	2414	2534	0	0	500									
+#record		KQ_Kingkong_04_14	N	2030	1868	0	0	500									
+#record		KQ_Kingkong_04_Boss	N	2052	2086	0	0	51									
+#record		KQ_Kingkong_05_01	N	1149	4583	0	0	387									
+#record		KQ_Kingkong_05_02	N	929	5340	0	0	500									
+#record		KQ_Kingkong_05_03	N	1567	6267	0	0	500									
+#record		KQ_Kingkong_05_04	N	1817	6793	0	0	500									
+#record		KQ_Kingkong_05_05	N	1019	8143	0	0	331									
+#record		KQ_Kingkong_05_06	N	1004	8690	0	0	500									
+#record		KQ_Kingkong_05_07	N	1429	9071	0	0	394									
+#record		KQ_Kingkong_05_08	N	2473	10687	0	0	1235									
+#record		KQ_Kingkong_05_09	N	2516	10723	0	0	1214									
+#record		KQ_Kingkong_05_10	N	2581	10631	0	0	1025									
+#record		KQ_Kingkong_05_11	N	2475	10711	0	0	500									
+#record		KQ_Kingkong_05_12	N	2809	10051	0	0	500									
+#record		KQ_Kingkong_05_13	N	2164	10074	0	0	500									
+#record		KQ_Kingkong_05_14	N	2715	10263	0	0	500									
+#record		KQ_Kingkong_05_15	N	5155	10921	0	0	513									
+#record		KQ_Kingkong_05_16	N	3442	10559	0	0	500									
+#record		KQ_Kingkong_05_17	N	4958	11182	0	0	500									
+#record		KQ_Kingkong_05_18	N	5307	11281	0	0	500									
+#record		KQ_Kingkong_05_19	N	4997	10884	0	0	507									
+#record		KQ_Kingkong_05_20	N	5117	11319	0	0	500									
+#record		KQ_Kingkong_05_SubBoss	N	5521	11532	0	0	58									
+#record		KQ_Kingkong_05_Boss	N	5521	11534	0	0	51									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KQ_Kingkong_01_01	KQ_K_Ogre	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_02	KQ_K_KingCall	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_03	KQ_K_Ogre	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_04	KQ_K_KingCall	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_05	KQ_K_Harkan	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_06	KQ_K_KingCall	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_07	KQ_K_Harkan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_08	KQ_K_KingCall	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_09	KQ_K_Harkan	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_10	KQ_K_VampireBat	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_01_Boss	KQ_K_Mara	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_01	KQ_K_KingCall	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_02	KQ_K_Harkan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_03	KQ_K_VampireBat	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_04	KQ_K_Prisoner	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_05	KQ_K_Prisoner	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_06	KQ_K_VampireBat	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_07	KQ_K_Torturer	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_08	KQ_K_Solider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_02_Boss	KQ_K_Marlone	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_01	KQ_K_Harkan	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_02	KQ_K_VampireBat	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_03	KQ_K_Prisoner	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_04	KQ_K_VampireBat	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_05	KQ_K_Prisoner	3	0	11	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_06	KQ_K_Torturer	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_07	KQ_K_Solider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_08	KQ_K_Templer	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_09	KQ_K_Prisoner	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_10	KQ_K_Templer	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_11	KQ_K_Torturer	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_03_Boss	KQ_K_G_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_01	KQ_K_Prisoner	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_02	KQ_K_Torturer	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_03	KQ_K_Solider	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_04	KQ_K_Templer	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_05	KQ_K_Harkan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_06	KQ_K_Harkan	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_07	KQ_K_VampireBat	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_08	KQ_K_Prisoner	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_09	KQ_K_Torturer	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_10	KQ_K_Solider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_11	KQ_K_Templer	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_12	KQ_K_Ratman	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_13	KQ_K_GoldenBat	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_14	KQ_K_Spider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_04_Boss	KQ_K_Robo	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_01	KQ_K_Prisoner	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_02	KQ_K_Torturer	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_03	KQ_K_Solider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_04	KQ_K_GoldenBat	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_05	KQ_K_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_06	KQ_K_Spider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_07	KQ_K_GoldenBat	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_08	KQ_K_GoldenBat	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_09	KQ_K_Prisoner	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_10	KQ_K_Torturer	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_11	KQ_K_Solider	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_12	KQ_K_Templer	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_13	KQ_K_Ratman	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_14	KQ_K_GoldenBat	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_15	KQ_K_Spider	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_16	KQ_K_Nox	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_17	KQ_K_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_18	KQ_K_GoldenBat	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_19	KQ_K_Spider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_20	KQ_K_Nox	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_SubBoss	KQ_K_PhinoFlie	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_Kingkong_05_Boss	KQ_K_BossPhino	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

@@ -1,0 +1,86 @@
+open [main]
+    var InterruptBlock      1
+        InterruptArg        2
+        Administrator       3
+        AnswerCommand       4
+        Door                5
+        Effect              6.
+
+;    doorbuild Door "KQ_Gate5" 6457 3655 0 1000 "Normal".
+    doorbuild Door "OX_gate" 6457 3655 0 1000 "Normal".
+
+    dooropen Door "OXBlock".
+
+    interruptclear all.
+    interruptset admin "" 1 "".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".    ; InterruptArg에는 운영자 핸들
+        call InterruptBlock "Default".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Default]
+    broadcast Handle "Block not exist" InterruptArg.
+    interruptset admin "" 1 "".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Check]
+    broadcast Handle "Script in running" InterruptArg.
+    interruptset admin "" 1 "".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Blocking]
+    timelimit sec 15.                                   ; 블럭 닫힐 때까지 제한시간 15초
+    interruptset TimeOut "" 1 "CenterBlock".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".    ; InterruptArg에는 운영자 핸들
+        call InterruptBlock.
+    close
+close
+
+open [CenterBlock]
+    doorclose Door "OXBlock".
+    interruptset admin "" 1 "".
+    break "Blocking".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [AnswerO]
+    Administrator = InterruptArg.
+    briefeffect all 1.
+    pause Sec 4.
+    effectloc Effect "OX_act" 6942 3639 0 5000 1000.           ; 5초간
+    AnswerCommand = "XZone01".
+    call "Ban".
+close
+
+open [AnswerX]
+    Administrator = InterruptArg.
+    briefeffect all 2.
+    pause Sec 4.
+    effectloc Effect "OX_act" 5940 3646 0 5000 1000.           ; 5초간
+    AnswerCommand = "OZone01".
+    call "Ban".
+close
+
+open [Ban]
+    pause Sec 5.                                        ; 결과 나온후 딜레이시간
+    banfromarea "OX_field" AnswerCommand "OX_field" 6467 4771.
+    interruptset admin "" 1 "".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [BlockClear]
+    dooropen Door "OXBlock".
+    interruptset admin "" 1 "".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [ArenaClear]
+    banfromarea "OX_field" "OZone01" "OX_field" 6467 4771.
+    banfromarea "OX_field" "XZone01" "OX_field" 6467 4771.
+            ; OX_field의 OZone01, XZone01에 있는 사람을 OX_field 6467 4771로 이동
+    
+    interruptset admin "" 1 "".
+close

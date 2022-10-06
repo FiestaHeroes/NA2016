@@ -1,0 +1,25 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	BH_Humar_AC_Down_Atk			
+#Record	1	-			
+#Record	2	BH_Humar_Skill_DrainSP			
+#Record	3	BH_Humar_Skill_Heal			
+#Record	4	-			
+#Record	5	B_CrackerHumar_Normal_Atk			
+#Record	6	-			
+#Record	7	B_CrackerHumar_Normal_Wide			
+#Record	8	-			
+#Record	9	B_CrackerHumar_Normal_Atk			
+#Record	10	-			
+#Record	11	B_CrackerHumar_Normal_Atk			
+#Record	12	-			
+#End					

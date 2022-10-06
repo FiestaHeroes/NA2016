@@ -1,0 +1,88 @@
+;		Mob Attack Sequence		
+				
+#Ignore	\o042			
+#Exchange	#	\x20		
+;#delimeter	\x20			
+				
+				
+#Table	AttSeq			
+#ColumnType	WORD	STRING[33]		
+#ColumnName	Order	Attack		
+				
+#Record	0	SD_DragonSkill04_N		
+#Record	1	SD_DragonSkill05_W		
+#Record	2	SD_DragonSkill04_N		
+#Record	3	SD_DragonSkill04_N		
+#Record	4	SD_DragonSkill05_W		
+#Record	5	SD_DragonSkill04_N		
+#Record	6	SD_DragonSkill06_W		
+#Record	7	SD_DragonSkill05_W		
+#Record	8	SD_DragonSkill04_N		
+#Record	9	SD_DragonSkill04_N		
+#Record	10	SD_DragonSkill04_N		
+#Record	11	SD_DragonSkill05_W		
+#Record	12	SD_DragonSkill04_N		
+#Record	13	SD_DragonSkill04_N		
+#Record	14	SD_DragonSkill05_W		
+#Record	15	SD_DragonSkill04_N		
+#Record	16	SD_DragonSkill06_W		
+#Record	17	SD_DragonSkill05_W		
+				
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우
+#ColumnType	Index	Index	String[33]	String[33]
+#ColumnName	Condition	Value	From	To
+#Record	HPLow_ChangeOrder	300	0	SD_DragonSkill13_N
+#Record	HPLow_ChangeOrder	300	1	SD_DragonSkill07_W
+#Record	HPLow_ChangeOrder	300	2	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	300	3	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	300	4	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	300	5	SD_DragonSkill12_N
+#Record	HPLow_ChangeOrder	300	6	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	300	7	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	300	8	SD_DragonSkill13_N
+#Record	HPLow_ChangeOrder	300	9	SD_DragonSkill07_W
+#Record	HPLow_ChangeOrder	300	10	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	300	11	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	300	12	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	300	13	SD_DragonSkill07_W
+#Record	HPLow_ChangeOrder	300	14	SD_DragonSkill13_N
+#Record	HPLow_ChangeOrder	300	15	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	300	16	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	300	17	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	500	0	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	500	1	SD_DragonSkill08_N
+#Record	HPLow_ChangeOrder	500	2	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	500	3	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	500	4	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	500	5	SD_DragonSkill12_N
+#Record	HPLow_ChangeOrder	500	6	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	500	7	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	500	8	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	500	9	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	500	10	SD_DragonSkill08_N
+#Record	HPLow_ChangeOrder	500	11	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	500	12	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	500	13	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	500	14	SD_DragonSkill12_N
+#Record	HPLow_ChangeOrder	500	15	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	500	16	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	500	17	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	800	0	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	800	1	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	800	2	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	800	3	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	800	4	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	800	5	SD_DragonSkill07_W
+#Record	HPLow_ChangeOrder	800	6	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	800	7	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	800	8	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	800	9	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	800	10	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	800	11	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	800	12	SD_DragonSkill07_W
+#Record	HPLow_ChangeOrder	800	13	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	800	14	SD_DragonSkill04_N
+#Record	HPLow_ChangeOrder	800	15	SD_DragonSkill05_W
+#Record	HPLow_ChangeOrder	800	16	SD_DragonSkill06_W
+#Record	HPLow_ChangeOrder	800	17	SD_DragonSkill04_N
+#End				

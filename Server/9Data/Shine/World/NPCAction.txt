@@ -1,0 +1,86 @@
+;	NPCAction									
+;										
+										
+;#Ignore	\o042	; 인용부호 무시								
+;#Exchange	#	\x20	;	# => space						
+#Delimiter	\x20	;	나중에 space를 delimiter로 넣고 delimiter 제거기능 넣을것!!!!							
+										
+										
+#Table	NPCCondition									
+#ColumnType	Byte	String[33]	String[33]	DWRD	DWRD	String[33]	String[33]	DWRD	DWRD	
+#ColumnName	ConditionID	ConditionA	TypeA	AX	AY	ConditionB	TypeB	BX	BY	
+#Record	1	Default	-	0	0	None	-	0	0	
+#Record	2	LvGap	-	10	20	None	-	0	0	
+#Record	3	Class	Fighter	0	0	None	-	0	0	
+#Record	4	AbState	StaPoisonShot	0	0	None	-	0	0	
+#Record	5	Term	-	1000	3000	Skill	MagicBurst01	0	0	
+#Record	6	Term	-	3000	0	None	-	0	0	
+#Record	7	Term	-	1000	0	Emotion	-	17	1	
+#Record	8	Term	-	1000	3000	Emotion	-	31	1	
+#Record	9	Term	-	1000	3000	Emotion	-	31	0	
+#Record	10	Die	-	0	0	None	-	0	0	
+#Record	11	Emotion	-	12	1	None	-	0	0	
+#Record	12	Emotion	-	23	1	None	-	0	0	
+#Record	13	Emotion	-	24	1	None	-	0	0	
+#Record	14	Emotion	-	25	1	None	-	0	0	
+#Record	15	Emotion	-	26	1	None	-	0	0	
+#Record	16	GTITeam	-	0	0	None	-	0	0	;A팀
+#Record	17	GTITeam	-	1	0	None	-	0	0	;B팀
+#Record	18	DmgAbsorb	-	0	0	None	-	0	0	;캐릭터가 충돌액션 범위내 데미지을 입었을경우MultiProtect 몹으로 데미지를 돌려준다
+#Record	19	CheckCycleParty	-	1500	0	None	-	0	0	;AX의 주기마다 파티원인지 체크(1/1000 초)
+#Record	20	AttackMob	-	0	0	None	-	0	0	;이 조건이 걸린 몹을 때리면
+										
+#Table	NPCAction									
+#ColumnType	Byte	String[33]	String[33]	DWRD	DWRD					
+#ColumnName	ActionID	ActionIndex	Type	X	Y					
+#Record	1	Link	-	0	0					
+#Record	2	Skill	MagicBurst01	0	0					
+#Record	3	AbState	StaPoisonShot	0	0					
+#Record	4	Dispell	StaPoisonShot	0	0					
+#Record	5	Emotion	-	31	0					
+#Record	6	Skill	Revival01	0	0					
+#Record	7	Notice	Totem01	0	0					
+#Record	8	Skill	Summon01	0	0					
+#Record	9	AbState	StaMob6Poison	0	0					
+#Record	10	AbState	StaMob6Poison	0	0					
+#Record	11	AbState	StaMob6Poison	0	0					
+#Record	12	AbState	StaMob6Poison	0	0					
+#Record	13	Notice	Totem02	0	0					
+#Record	14	Notice	Totem03	0	0					
+#Record	15	Notice	Totem04	0	0					
+#Record	16	Notice	Boar	0	0					
+#Record	17	AbState	StaEventHpUp	0	0					
+#Record	18	AbState	StaEventSpUp	0	0					
+#Record	19	AbState	StaEventAllStatsUp	0	0					
+#Record	20	AbState	StaEventSpeed	0	0					
+#Record	21	AbState	StaEventAcUp	0	0					
+#Record	22	Dispell	StaEventHpUp	0	0					
+#Record	23	Dispell	StaEventSpUp	0	0					
+#Record	24	Dispell	StaEventAllStatsUp	0	0					
+#Record	25	Dispell	StaEventSpeed	0	0					
+#Record	26	Dispell	StaEventAcUp	0	0					
+#Record	27	GTIEffect	-	0	0	;길토 아이템 효과를 발동시켜라				
+#Record	28	Die	-	0	0	;NPC는 죽어라				
+#Record	29	DmgAbsorb	-	0	0	;캐릭터에게 받은 데미지를 MultiProtect 으로 돌려주는 액션				
+#Record	30	AbState	StaMultiHeal	0	0	;멀티프로텍트 도트힐 상태이상				
+#Record	31	AbState	StaRadionBuff	0	0	;이속증가(중급마계인던)				
+#Record	32	RestoreRate	HP	1000	0	;비율 회복(중급마계인던)				
+#Record	33	RestoreRate	SP	1000	0	;비율 회복(중급마계인던)				
+#Record	34	AbState	StaOrbAtkRateUp	4	0	;공격력비율증가(센티넬)				
+#Record	35	AbState	StaOrbAtkRateUp	5	0	;공격력비율증가(센티넬)				
+#Record	36	AbState	StaOrbAtkRateUp	6	0	;공격력비율증가(센티넬)				
+#Record	37	AbState	StaOrbAtkRateUp	7	0	;공격력비율증가(센티넬)				
+#Record	38	AbState	StaOrbAtkRateUp	8	0	;공격력비율증가(센티넬)				
+#Record	39	AbState	StaKQSpringSlow	0	0	;무거움 상태이상이 걸린다(깃발뺏기킹퀘)				
+#Record	40	AbState	StaKQSpUpBuff	0	0	;신속 상태이상이 걸린다(깃발뺏기킹퀘)				
+#Record	41	AbState	StaKQSpImBuff	0	0	;강철 상태이상이 걸린다(깃발뺏기킹퀘)				
+#Record	42	AbState	StaMultiHeal	2	0	;멀티프로텍트 도트힐 상태이상				
+#Record	43	AbState	StaMultiHeal	3	0	;멀티프로텍트 도트힐 상태이상				
+#Record	44	AbState	StaOrbAtkRateUp	9	0	;공격력비율증가(센티넬)				
+#Record	45	AbState	StaOrbAtkRateUp	10	0	;공격력비율증가(센티넬)				
+#Record	46	AbState	StaOrbAtkRateUp	11	0	;공격력비율증가(센티넬)				
+#Record	47	AbState	StaOrbAtkRateUp	12	0	;공격력비율증가(센티넬)				
+#Record	48	AbState	StaOrbAtkRateUp	13	0	;공격력비율증가(센티넬)				
+#Record	49	CallLua	-	0	0	;동계올림픽 진행중 추가됨. 몹에 루아스크립트 붙어있으면 그쪽 함수 실행함				
+#Record	50	Ball	-	0	0	;과거 슬라임축구이벤트시 개발된 것. 캐릭터와 닿으면 몹이 애니메이션 없이 좌표이동된다. (현재 개발서버에 적용된 컨텐츠는 없음)				
+#End										

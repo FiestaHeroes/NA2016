@@ -1,0 +1,11 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;일일퀘스트 명성치 상인(엘더린)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	D_LuckyCapsule01	D_LuckyCapsule02	D_LuckyCapsule03	-	-	-
+							
+#End							

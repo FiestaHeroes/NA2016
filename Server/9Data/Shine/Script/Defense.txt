@@ -1,0 +1,17 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	DefenseStart	In order to fulfill or dreams, we must stop Isyans from being able to complete their class changes. 	
+#Record	DefenseSucc	Your actions will be forever remembered in history. Thanks you	
+#Record	DefenseFail	Hahahaha... Isya will be under my control.... It's only a matter of time	
+#Record	CastleDie01	Isyans, please protect Grand Master Sean.	
+#Record	WaveStart01	Monsters of Tower of Izyel, kill Grand Master Sean!	
+#Record	WaveStart02	There are more powerful warriors waiting...	
+#Record	WaveEnd01	Isyans ! Cheer up !	
+#Record	WaveEnd02	The monster will get stronger after the 5th wave! Keep it up!	
+#Record	WaveEnd03	This is the last wave! Keep up the hard work!	
+#End			

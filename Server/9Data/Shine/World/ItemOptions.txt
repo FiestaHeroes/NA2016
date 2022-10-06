@@ -1,0 +1,29 @@
+;	ItemOptions										
+#ignore	\o042										
+#exchange	#	\x20									
+											
+#table	Options										
+#columntype	WORD	Index	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD
+#columnname	OptionDegree	type	1	2	3	4	5	6	7	8	9
+
+#record	1	Number	995	5	0	0	0	0	0	0	0
+#record	1	Str	900	100	0	0	0	0	0	0	0
+#record	1	Int	950	45	5	0	0	0	0	0	0
+#record	1	Dex	950	50	0	0	0	0	0	0	0
+#record	1	Men	900	90	9	1	0	0	0	0	0
+#record	1	Con	950	45	5	0	0	0	0	0	0
+											
+#record	2	Number	900	90	9	1	0	0	0	0	0
+#record	2	Str	900	90	9	1	0	0	0	0	0
+#record	2	Int	825	100	75	0	0	0	0	0	0
+#record	2	Dex	950	50	0	0	0	0	0	0	0
+#record	2	Men	900	90	9	1	0	0	0	0	0
+#record	2	Con	950	45	5	0	0	0	0	0	0
+#record	2	TH	950	50	0	0	0	0	0	0	0
+#record	2	TB	950	50	0	0	0	0	0	0	0
+#record	2	AC	950	50	0	0	0	0	0	0	0
+#record	2	WC	950	50	0	0	0	0	0	0	0
+#record	2	MA	950	50	0	0	0	0	0	0	0
+#record	2	MR	950	50	0	0	0	0	0	0	0
+
+#end											

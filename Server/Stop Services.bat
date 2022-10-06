@@ -1,0 +1,12 @@
+sc stop _Account
+sc stop _AccountLog
+sc stop _Login
+sc stop _Character
+sc stop _GameLog
+sc stop _WorldManager
+sc stop _GamigoZR
+sc stop _Zone0
+sc stop _Zone1
+sc stop _Zone2
+sc stop _Zone3
+sc stop _Zone4

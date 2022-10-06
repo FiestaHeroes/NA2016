@@ -1,0 +1,57 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;무기					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Splitter	AvantGardeSword	SerpentSword	-	-	-
+#Record	1	Claymore	Flamberge	GiantSword	-	-	-
+#Record	2	Halberd	BikingAxe	GiantAxe	-	-	-
+#Record	3	WarMace	BattleMace	GiantMace	-	-	-
+#Record	4	WarHammer	BattleHammer	GiantHammer	-	-	-
+#Record	5	WarBow	BattleBow	GiantBow	-	-	-
+#Record	6	WarCrossBow	BattleCrossBow	GiantCrossBow	-	-	-
+#Record	7	FairyStaff	BattleStaff	GiantStaff	-	-	-
+#Record	8	FairyWand	BattleWand	GiantWand	-	-	-
+#Record	9	RingClaw	ZabadClaw	RedeyeClaw	-	-	-
+#Record	10	RingDoubleSword	ZabadDoubleSword	RedeyeDoubleSword	-	-	-
+#Record	11	ElvenBlade	SentinelBlade	MoonLightBlade	-	-	-
+							
+#Table	Tab01	;방어구					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BrigandineArmor	-	-	-	-	-
+#Record	1	LightPlateBoots	LightPlateHelmet	LightPlatePants	LightPlateArmor	-	-
+#Record	2	HalfPlateBoots	HalfPlateHelmet	HalfPlatePants	HalfPlateArmor	-	-
+#Record	3	MightyPlateBoots	MightyPlateHelmet	MightyPlatePants	-	-	-
+#Record	4	FSplendor	AvantGardeShield	LionHeartShield	-	-	-
+#Record	5	PlateArmor	-	-	-	-	-
+#Record	6	FieldPlateBoots	FieldPlateHelmet	FieldPlatePants	FieldPlateArmor	-	-
+#Record	7	FullPlateBoots	FullPlateHelmet	FullPlatePants	FullPlateArmor	-	-
+#Record	8	HolyBoots	HolyHelmet	HolyPants	-	-	-
+#Record	9	Splendor	ReflectionShield	Towershield	-	-	-
+#Record	10	HunterArmor	-	-	-	-	-
+#Record	11	MasterBoots	MasterHat	MasterPants	MasterArmor	-	-
+#Record	12	DuskBoots	DuskHat	DuskPants	DuskArmor	-	-
+#Record	13	DarknessBoots	DarknessHat	DarknessPants	-	-	-
+#Record	14	NatureShirt	-	-	-	-	-
+#Record	15	ElementBoots	ElementHat	ElementPants	ElementShirt	-	-
+#Record	16	SuperiorHat	SuperiorPants	SuperiorShirt	SuperiorBoots	-	-
+#Record	17	wisdomBoots	wisdomHat	wisdomPants	-	-	-
+#Record	18	LupeArmor	-	-	-	-	-
+#Record	19	StellaBoots	StellaHood	StellaPants	StellaArmor	-	-
+#Record	20	LunaBoots	LunaHood	LunaPants	LunaArmor	-	-
+#Record	21	OrdoBoots	OrdoHood	OrdoPants	-	-	-
+#Record	22	FoliageShoes	FoliageHelmet	FoliagePants	FoliageArmor	-	-
+#Record	23	IronfalconShoes	IronfalconHelmet	IronfalconPants	IronfalconArmor	-	-
+#Record	24	VineShoes	VineHelmet	VinePants	-	-	-
+							
+#Table	Tab02	;악세서리					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-
+#Record	1	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-
+							
+#End							

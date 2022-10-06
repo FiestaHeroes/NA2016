@@ -1,0 +1,288 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		WindyCaveMINE01	N	2327	4297	163	775	11									
+#record		WindyCaveMINE02	N	3644	4397	0	0	603									
+#record		WindyCaveMINE03	N	2902	3373	0	0	625									
+#record		WindyCaveMINE04	N	4336	3754	410	244	55									
+#record		WindyCaveMINE05	N	1550	2997	163	903	7									
+#record		WindyCaveMINE06	N	4500	2340	382	68	-32									
+#record		WindyCaveMINE07	N	22827	22946	0	0	582									
+#record		WindyCaveMINE08	N	23027	21294	0	0	652									
+#record		WindyCaveMINE09	N	21417	22408	425	943	10									
+#record		WindyCaveMINE10	N	23030	24097	399	153	158									
+#record		WindyCaveMINE11	N	22366	22402	459	1263	-36									
+#record		WindyCaveMINE12	N	19294	20747	51	921	57									
+#record		WindyCaveMINE13	N	2856	2090	626	130	-25									
+#record		WindyCaveMINE14	N	9389	8952	212	1027	-27									
+#record		WindyCaveMINE15	N	6787	7339	853	373	-23									
+#record		WindyCaveMINE16	N	8631	7513	877	420	6									
+#record		WindyCaveMINE17	N	9662	10205	0	0	617									
+#record		WindyCaveMINE18	N	7447	10053	1238	262	16									
+#record		WindyCaveMINE19	N	17689	19785	0	0	395									
+#record		WindyCaveMINE20	N	19090	17842	0	0	449									
+#record		WindyCaveMINE21	N	16437	21015	0	0	372									
+#record		WindyCaveMINE22	N	16564	18336	150	1196	50									
+#record		WindyCaveMINE23	N	13870	14679	951	493	-14									
+#record		WindyCaveMINE24	N	16971	5716	1670	185	5									
+#record		WindyCaveMINE25	N	4896	16877	981	333	56									
+#record		WindyCaveMINE26	N	13876	18108	203	1220	-67									
+#record		WindyCaveMINE27	N	11074	18912	1208	109	2									
+#record		WindyCaveMINE28	N	8334	18815	1384	155	-8									
+#record		WindyCaveMINE29	N	17119	15804	147	1795	-42									
+#record		WindyCaveMINE30	N	18952	12911	50	1554	-14									
+#record		WindyCaveMINE31	N	18981	7891	99	1031	24									
+#record		WindyCaveMINE32	N	14313	5626	877	108	3									
+#record		WindyCaveMINE33	N	12024	6038	59	1411	-86									
+#record		WindyCaveMINE34	N	4822	13956	109	1145	-6									
+#record		WindyCaveMINE35	N	5561	11967	71	909	-31									
+#record		WindyCaveMINE36	N	8191	15890	72	1662	109									
+#record		WindyCaveMINE37	N	15868	8896	93	1422	-16									
+#record		WindyCaveMINE38	N	10550	14315	140	887	-10									
+#record		WindyCaveMINE39	N	11005	15689	93	775	48									
+#record		WindyCaveMINE40	N	15778	11661	88	922	35									
+#record		WindyCaveMINE41	N	14088	10402	919	60	-14									
+#record		WindyCaveMINE42	N	10869	12234	105	954	-16									
+#record		WindyCaveMINE43	N	11898	10760	77	970	-54									
+#record		WindyCaveMINE44	N	15116	16562	84	879	27									
+#record		WindyCaveMINE45	N	12236	16969	70	863	34									
+#record		WindyCaveMINE46	N	16719	14031	52	1266	13									
+#record		WindyCaveMINE47	N	8970	20701	202	1104	-14									
+#record		WindyCaveMINE48	N	4328	5064	367	252	-42									
+#record		WindyCaveMINE49	N	13983	13879	285	765	27									
+#record		WindyCaveMINE50	N	3010	3781	0	0	848									
+#record		WindyCaveMINE51	N	2002	2117	757	95	20									
+#record		WindyCaveMINE52	N	4675	5459	1298	100	-46									
+#record		WindyCaveMINE53	N	8570	8788	0	0	512									
+#record		WindyCaveMINE54	N	7883	8602	445	1619	0									
+#record		WindyCaveMINE55	N	5667	11767	50	1637	-32									
+#record		WindyCaveMINE56	N	22171	22280	1608	394	41									
+#record		WindyCaveMINE57	N	23799	23828	441	136	46									
+#record		WindyCaveMINE58	N	22113	22430	250	1233	41									
+#record		WindyCaveMINE59	N	18957	20461	684	58	-35									
+#record		WindyCaveMINE60	N	18673	18493	1422	50	42									
+#record		WindyCaveMINE61	N	16869	20380	84	1225	-53									
+#record		WindyCaveMINE62	N	15555	17381	0	0	445									
+#record		WindyCaveMINE63	N	13848	14395	0	0	779									
+#record		WindyCaveMINE64	N	14542	13449	514	194	-12									
+#record		WindyCaveMINE65	N	13275	18334	1455	110	21									
+#record		WindyCaveMINE66	N	16999	15896	1434	84	48									
+#record		WindyCaveMINE67	N	10599	6475	145	1165	-52									
+#record		WindyCaveMINE68	N	19179	11501	51	1008	-3									
+#record		WindyCaveMINE69	N	9002	20482	1064	162	75									
+#record		WindyCaveMINE70	N	11723	16401	1540	55	-50									
+#record		WindyCaveMINE71	N	16607	13477	1252	50	-74									
+#record		WindyCaveMINE72	N	13240	5853	1316	50	16									
+#record		WindyCaveMINE73	N	5068	14553	58	1393	14									
+#record		WindyCaveMINE74	N	5117	17586	360	1081	59									
+#record		WindyCaveMINE75	N	16067	4814	1315	157	26									
+#record		WindyCaveMINE76	N	10867	10845	141	711	58									
+#record		WindyCaveMINE77	N	10619	13497	56	1650	-7									
+#record		WindyCaveMINE78	N	12163	10551	884	58	30									
+#record		WindyCaveMINE79	N	14112	10420	50	991	74									
+#record		WindyCaveMINE80	N	15641	11393	974	60	-52									
+#record		WindyCaveMINE81	N	15849	8785	55	1370	-13									
+#record		WindyCaveMINE82	N	8284	15875	53	1261	-72									
+#record		WindyCaveMINE83	N	10090	15097	0	0	218									
+#record		WindyCaveMINE84	N	15224	10472	0	0	162									
+#record		WindyCaveMINE85	N	9531	10126	0	0	387									
+#record		WindyCaveMINE88	N	10612	6420	1012	132	37									
+#record		WindyCaveMINE89	N	6541	18530	436	100	-12									
+#record		WindyCaveMINE90	N	9672	18940	1226	63	-3									
+#record		WindyCaveMINE91	N	19165	8558	52	1346	20									
+#record		WindyCaveMINE93	N	16411	6562	783	321	-56									
+#record		WindyCaveMINE94	N	17926	6054	521	789	0									
+#record		WindyCaveMINE95	N	17906	6309	0	0	661									
+#record		WindyCaveMINE96	N	5254	16249	336	1062	59									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		WindyCaveMINE01	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE01	MINE5	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE01	Ec_ArchMageBook	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE02	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE02	MINE4	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE02	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE03	MINE4	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE04	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE04	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE05	MINE4	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE05	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE05	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE06	MINE4	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE06	MINE4	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE06	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE07	MINE4	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE07	MINE4	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE07	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE08	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE08	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE08	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE09	MINE4	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE09	MINE6	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE09	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE10	MINE4	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE10	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE10	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE11	MINE4	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE11	MINE6	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE12	MINE4	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE12	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE12	MINE6	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE13	MINE4	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE13	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE14	MINE4	8	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE14	MINE5	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE14	MINE5	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE14	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE15	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE15	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE15	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE15	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE16	MINE4	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE16	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE16	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE16	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE17	MINE4	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE17	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE18	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE18	MINE5	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE18	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE18	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE19	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE19	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE19	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE19	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE20	MINE4	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE20	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE20	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE20	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE21	MINE4	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE21	MINE5	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE21	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE22	MINE5	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE22	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE22	MINE6	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE22	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE23	MINE5	6	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE23	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE23	MINE6	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE23	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE24	MINE6	7	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE24	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE25	MINE6	8	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE26	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE26	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE27	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE27	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE28	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE28	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE29	MINE5	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE29	MINE5	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE30	MINE5	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE30	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE31	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE31	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE32	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE32	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE33	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE33	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE34	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE34	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE35	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE35	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE36	MINE6	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE36	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE37	MINE6	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE37	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE38	MINE6	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE38	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE39	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE39	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE40	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE40	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE41	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE41	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE42	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE42	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE43	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE43	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE44	MINE5	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE44	MINE6	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE45	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE45	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE46	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE46	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE47	MINE5	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE47	MINE6	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE47	MINE6	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE48	MINE4	6	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE48	MINE5	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE48	Ec_ArchMageBook	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE49	MINE6	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE49	MINE6	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE49	MINE6	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE50	Ec_ArchMageBook	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE51	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE52	Ec_ArchMageBook	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE53	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE54	Ec_ArchMageBook	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE54	MINE5	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE54	MINE4	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE55	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE56	Ec_ArchMageBook	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE57	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE58	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE59	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE60	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE61	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE62	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE63	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE64	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE65	Ec_ArchMageBook	4	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE66	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE67	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE68	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE69	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE70	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE71	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE72	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE73	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE74	Wd_Prock	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE74	MINE6	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE75	Wd_Prock	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE75	MINE6	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE76	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE77	Wd_Prock	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE78	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE79	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE80	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE81	Wd_Prock	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE82	Wd_Prock	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE83	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE84	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE85	Ec_ArchMageBook	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE88	MINE5	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE89	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE90	Wd_Prock	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE91	Wd_Prock	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE93	MINE6	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE93	Wd_Prock	2	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE94	MINE6	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE95	Ec_ArchMageBook	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE96	MINE6	5	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		WindyCaveMINE96	Wd_Prock	3	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+																	
+#end																	

@@ -1,0 +1,79 @@
+open [main]
+    var InterruptBlock  0
+        InterruptArg    0
+        BossHandle      0
+        BossRegenX      0
+        BossRegenY      0
+        BossCoord       InitFlag
+        BossIndex      "Event_Monkey_Boss"
+        SummonIndex    "Event_Monkey_Sub"
+    .
+
+    BossRegenX = @RemoveFirst("BossCoord" " ").
+    BossRegenY = BossCoord.
+
+
+    infinite
+    open [InfiniteLoop]
+        mobregen BossHandle BossIndex BossRegenX BossRegenY 90 1000 "Normal".
+        abstateset BossHandle "StaMonkeyDefense" 1 4000000000.
+
+        interruptclear.
+
+        interruptset HPLow "" 1 BossHandle 900 "SummonMonkey".
+        interruptset DeadHandle "" 1 BossHandle "BossDead".
+
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close
+close
+
+open [SummonMonkey]
+    var num     @Count(SummonIndex)
+        MobList "".
+
+;    printf "Summon Number : " % num.
+
+    hpset BossHandle 99999999.
+    interruptset HPLow "" 1 BossHandle 900 "SummonMonkey".
+
+    if num < 30 then                        ; 최대 소환마리수 50 - 1 + 10 = 59마리
+    open
+        summonmob BossHandle SummonIndex 10.
+    close
+    else open
+        break "SummonMonkey".
+    close
+
+    pause Sec 1.
+
+    MobList = @GetObjectList(BossHandle "MOB").
+    
+    open [AbstateAll]
+        var MobObject 0.
+
+        infinite
+        open
+            MobObject = @RemoveFirst("MobList" " ").
+
+            if MobObject == ""    ; 더이상 찾을수 없음
+            then open
+                break "AbstateAll".
+            close
+            
+            abstateset MobObject "StaMonkeyDefense" 1 4000000000.
+        close
+    close
+close
+
+open [BossDead]
+
+    ;pause Sec 60.    ; 보스가 죽은 후 1분 후 리젠
+    pause Minute 1.    ; 보스가 죽은 후 1분 후 리젠
+
+
+    break "InfiniteLoop".
+close

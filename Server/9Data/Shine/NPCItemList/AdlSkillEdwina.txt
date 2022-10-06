@@ -1,0 +1,205 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2011.10.18					
+							
+#Table	Tab00	;파이터 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	TripleHit14	-	-	-	-	-
+#Record	1	SeverBone11	-	-	-	-	-
+#Record	2	RedSlash13	-	-	-	-	-
+#Record	3	MightySoul12	-	-	-	-	-
+#Record	4	PowerHit14	-	-	-	-	-
+#Record	5	MoraleDecrease12	MoraleDecrease13	-	-	-	-
+#Record	6	SpeedShield13	SpeedShield14	-	-	-	-
+#Record	7	HarmDefect12	HarmDefect13	-	-	-	-
+#Record	8	GreatSwing09	GreatSwing10	-	-	-	-
+#Record	9	PowerDrain09	PowerDrain10	-	-	-	-
+#Record	10	BashStrike09	-	-	-	-	-
+#Record	11	CrushStrike08	-	-	-	-	-
+#Record	12	WindyRaid09	-	-	-	-	-
+#Record	13	BurnPain01	-	-	-	-	-
+#Record	14	GroundStrike01	-	-	-	-	-
+#Record	15	FatalShout05	-	-	-	-	-
+#Record	16	DegroSlash02	-	-	-	-	-
+							
+#Table	Tab01	;파이터 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BraveMastery15	BraveMastery16	-	-	-	-
+#Record	1	OHSwdMastery16	OHSwdMastery17	-	-	-	-
+#Record	2	THSwdMastery14	THSwdMastery15	-	-	-	-
+#Record	3	THAxeMastery14	THAxeMastery15	-	-	-	-
+#Record	4	StrongFury03	StrongFury04	-	-	-	-
+#Record	5	StrongEndure03	StrongEndure04	-	-	-	-
+							
+#Table	Tab02	;클레릭 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Wield16	-	-	-	-	-
+#Record	1	Heal20	-	-	-	-	-
+#Record	2	Blessing14	-	-	-	-	-
+#Record	3	SafeProtection09	-	-	-	-	-
+#Record	4	PsychicBlunt11	-	-	-	-	-
+#Record	5	PsychicChop11	-	-	-	-	-
+#Record	6	DarknessProtection07	-	-	-	-	-
+#Record	7	Restore16	-	-	-	-	-
+#Record	8	HitProtection08	-	-	-	-	-
+#Record	9	GreatHeal14	-	-	-	-	-
+#Record	10	MentalShout11	-	-	-	-	-
+#Record	11	SilverLining10	-	-	-	-	-
+#Record	12	HolySmite07	-	-	-	-	-
+#Record	13	ExplosionNova06	-	-	-	-	-
+#Record	14	HorrorForce04	-	-	-	-	-
+#Record	15	MightyChop03	-	-	-	-	-
+#Record	16	MightyPunch03	-	-	-	-	-
+#Record	17	Rebirth04	-	-	-	-	-
+#Record	18	CrossDrop01	-	-	-	-	-
+#Record	19	MultiProtect01	-	-	-	-	-
+							
+#Table	Tab03	;클레릭 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	MaceMastery16	MaceMastery17	-	-	-	-
+#Record	1	HammerMastery14	HammerMastery15	-	-	-	-
+#Record	2	HolySpirit15	HolySpirit16	-	-	-	-
+#Record	3	BiffTimeIncrease03	BiffTimeIncrease04	-	-	-	-
+#Record	4	HealReinforce03	HealReinforce04	-	-	-	-
+							
+#Table	Tab04	;아처 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	AimingShot13	-	-	-	-	-
+#Record	1	PowerShot12	-	-	-	-	-
+#Record	2	PuryImpact11	-	-	-	-	-
+#Record	3	BoneArrow11	-	-	-	-	-
+#Record	4	PoisonShot11	-	-	-	-	-
+#Record	5	SpiritFog09	-	-	-	-	-
+#Record	6	PiercingGuard09	-	-	-	-	-
+#Record	7	MultiBloodShot03	-	-	-	-	-
+#Record	8	Entrap04	-	-	-	-	-
+#Record	9	LightShot01	-	-	-	-	-
+#Record	10	BombShot01	-	-	-	-	-
+#Record	11	BombDispel01	-	-	-	-	-
+							
+#Table	Tab05	;아처 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BowMastery16	BowMastery17	-	-	-	-
+#Record	1	CBowMastery14	CBowMastery15	-	-	-	-
+#Record	2	DodgeMastery15	DodgeMastery16	-	-	-	-
+#Record	3	MoveEvasion03	MoveEvasion04	-	-	-	-
+#Record	4	PointAttack03	PointAttack04	-	-	-	-
+							
+#Table	Tab06	;메이지 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	VitalConversion13	-	-	-	-	-
+#Record	1	MagicBurst13	MagicBurst14	-	-	-	-
+#Record	2	ManaBurn10	-	-	-	-	-
+#Record	3	MagicBall11	-	-	-	-	-
+#Record	4	IceBlast10	-	-	-	-	-
+#Record	5	FireBall10	-	-	-	-	-
+#Record	6	ChainLightning09	-	-	-	-	-
+#Record	7	Inferno08	-	-	-	-	-
+#Record	8	FrostNova13	FrostNova14	-	-	-	-
+#Record	9	LightningWave01	-	-	-	-	-
+#Record	10	Meteor01	-	-	-	-	-
+							
+#Table	Tab07	;메이지 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	StaffMastery16	StaffMastery17	-	-	-	-
+#Record	1	WandMastery15	WandMastery16	-	-	-	-
+#Record	2	WisdomMastery15	WisdomMastery16	-	-	-	-
+#Record	3	MagicDance03	MagicDance04	-	-	-	-
+#Record	4	DeepFear03	DeepFear04	-	-	-	-
+							
+#Table	Tab08	;조커 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BenTear14	-	-	-	-	-
+#Record	1	NorthTear11	-	-	-	-	-
+#Record	2	PowerBenTear13	-	-	-	-	-
+#Record	3	PowerNorthTear11	-	-	-	-	-
+#Record	4	FitBlood11	-	-	-	-	-
+#Record	5	NorthBreeze12	-	-	-	-	-
+#Record	6	PowerNorthBreeze12	PowerNorthBreeze13	-	-	-	-
+#Record	7	FitPoison09	FitPoison10	-	-	-	-
+#Record	8	WeaponBlast09	-	-	-	-	-
+#Record	9	PowerWeaponBlast08	-	-	-	-	-
+#Record	10	DeepFire04	-	-	-	-	-
+#Record	11	Burden04	-	-	-	-	-
+#Record	12	BodyForce03	-	-	-	-	-
+#Record	13	SwordForce04	-	-	-	-	-
+#Record	14	FinalSwordForce04	-	-	-	-	-
+#Record	15	NobleFrgrance04	-	-	-	-	-
+#Record	16	ResistCurse04	-	-	-	-	-
+#Record	17	FinalDynastBlood04	-	-	-	-	-
+#Record	18	ShockEnemy04	-	-	-	-	-
+#Record	19	FatalCondition04	-	-	-	-	-
+#Record	20	Judge01	-	-	-	-	-
+#Record	21	FatalBlow01	-	-	-	-	-
+							
+#Table	Tab09	;조커 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	ClawMastery16	ClawMastery17	-	-	-	-
+#Record	1	DSwordMastery14	DSwordMastery15	-	-	-	-
+#Record	2	CleaveMastery15	CleaveMastery16	-	-	-	-
+#Record	3	LimitFatal03	LimitFatal04	-	-	-	-
+#Record	4	Shame03	Shame04	-	-	-	-
+							
+#Table	Tab10	;연금술 					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Mining	UseRide	-	-	-	-
+#Record	1	Recipe_El1	Recipe_El2	Recipe_C_HighCleanWater	Recipe_C_HighMagicCrystal	Recipe_R_CommanderBadge	Recipe_R_NorGemDust
+#Record	2	Recipe_Lix1	Recipe_Lix2	Recipe_C_HighPledge	Recipe_C_HighSoulDust	Recipe_R_HighSilverOre	Recipe_R_Ramsear
+#Record	3	Recipe_Xir1	Recipe_Xir2	Recipe_C_NorGoldOre	Recipe_C_BestMushrooms	Recipe_R_HighMushrooms	Recipe_R_HighToadStool
+#Record	4	Recipe_BestLowHpPotion	Recipe_LowHpPotion	Recipe_C_BestToadStool	Recipe_C_Salvia	Recipe_R_Ruby	Recipe_R_LowGoldOre
+#Record	5	Recipe_BestLowSpPotion	Recipe_LowSpPotion	Recipe_C_HighGoldOre	Recipe_C_BestWoodSab	Recipe_R_HighWoodSab	Recipe_R_Basil
+#Record	6	Recipe_BestLowConHPPotion	Recipe_LowConHPPotion	Recipe_C_Marigold	-	-	-
+#Record	7	Recipe_BestLowConSPPotion	Recipe_LowConSPPotion	-	-	-	-
+#Record	8	Recipe_BestLowTHScroll	Recipe_LowTHScroll	-	-	-	-
+#Record	9	Recipe_BestLowTBScroll	Recipe_LowTBScroll	-	-	-	-
+#Record	10	Recipe_BestLowMRScroll	Recipe_LowMRScroll	-	-	-	-
+#Record	11	Recipe_BestLowACScroll	-	-	-	-	-
+#Record	12	Recipe_BestLowMaxHPScroll	-	-	-	-	-
+#Record	13	Recipe_BestLowMaxSPScroll	Recipe_LowMaxSPScroll	-	-	-	-
+#Record	14	Recipe_BestLowMSScroll	-	-	-	-	-
+#Record	15	Recipe_LowPsnResiPotion	-	-	-	-	-
+#Record	16	Recipe_LowDssResiPotion	-	-	-	-	-
+#Record	17	Recipe_LowCurResiPotion	-	-	-	-	-
+#Record	18	Recipe_LowPsnCurPotion	-	-	-	-	-
+#Record	19	Recipe_LowDssCurPotion	-	-	-	-	-
+#Record	20	Recipe_BestLowCurScroll	Recipe_LowCurScroll	-	-	-	-
+							
+#Table	Tab11	;센티넬 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	HeroStrike12	-	-	-	-	-
+#Record	1	Advent12	-	-	-	-	-
+#Record	2	LightStrike10	-	-	-	-	-
+#Record	3	FinalLight06	-	-	-	-	-
+#Record	4	LightWind04	-	-	-	-	-
+#Record	5	LightBlast12	-	-	-	-	-
+#Record	6	LightExplosion06	-	-	-	-	-
+#Record	7	LightOrb04	-	-	-	-	-
+#Record	8	ImpactLight04	-	-	-	-	-
+#Record	9	Recoup12	-	-	-	-	-
+#Record	10	LightTouch10	-	-	-	-	-
+#Record	11	Treat06	-	-	-	-	-
+#Record	12	LightMark04	-	-	-	-	-
+#Record	13	LightField04	-	-	-	-	-
+#Record	14	LightBurst01	-	-	-	-	-
+							
+#Table	Tab12	;센티넬 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	WCMastery12	-	-	-	-	-
+#Record	1	MAMastery12	-	-	-	-	-
+#Record	2	LightMastery04	-	-	-	-	-
+							
+#End							

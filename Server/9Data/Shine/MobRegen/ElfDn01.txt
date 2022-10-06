@@ -1,0 +1,137 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		ElfDnM01	N	4547	6817	407	333	0									
+#record		ElfDnM02	N	2904	5215	385	393	0									
+#record		ElfDnM03	N	6587	6900	357	359	0									
+#record		ElfDnM04	N	6635	5182	415	415	0									
+#record		ElfDnM05	N	3226	3518	408	408	0									
+#record		ElfDnM06	N	5231	3515	408	408	0									
+#record		ElfDnM07	N	7537	3799	379	377	0									
+#record		ElfDnM08	N	8429	7064	521	497	0									
+#record		ElfDnM09	N	8433	5337	542	519	0									
+#record		ElfDnM10	N	5098	1657	532	536	0									
+#record		ElfDnM11	N	1320	3682	548	548	0									
+#record		ElfDnM12	N	1306	1355	738	757	0									
+#record		ElfDnM13	N	11033	6101	651	741	0									
+#record		ElfDnM14	N	9564	1647	0	0	477									
+#record		ElfDnM18	N	4559	5849	71	356	0									
+#record		ElfDnM20	N	6187	3495	328	108	0									
+#record		ElfDnM21	N	9397	2657	712	206	0									
+#record		ElfDnM22	N	8531	1690	168	706	0									
+#record		ElfDnM23	N	9496	609	702	200	0									
+#record		ElfDnM24	N	10579	1414	197	701	0									
+#record		ElfDnM25	Y	9201	2037	0	0	92									
+#record		ElfDnM26	Y	9892	2044	0	0	85									
+#record		ElfDnM27	Y	9169	1208	0	0	85									
+#record		ElfDnM28	Y	9897	1239	0	0	92									
+#record		ElfDnM29	Y	9738	1406	0	0	50									
+#record		ElfDnM31	N	8881	3828	587	53	0									
+#record		ElfDnM32	N	5314	528	2644	58	0									
+#record		ElfDnM34	N	6663	6893	54	418	0									
+#record		ElfDnM35	N	4662	6895	51	269	0									
+#record		ElfDnM36	N	3959	5189	341	52	0									
+#record		ElfDnM37	N	5246	3486	0	0	177									
+#record		ElfDnM39	Y	8443	5376	0	0	128									
+#record		ElfDnM40	Y	11863	6233	0	0	149									
+#record		ElfDnM42	Y	916	1322	0	0	212									
+#record		ElfDnM43	Y	1282	3520	0	0	79									
+#record		ElfDnM50	N	5442	3999	3652	1887	90									
+#record		ElfDnM51	N	1959	3099	1628	2783	0									
+#record		ElfDnM52	N	10638	4446	114	145	0									
+#record		ElfDnM53	N	10656	3483	0	0	142									
+#record		ElfDnM54	N	9614	5196	0	0	121									
+#record		ElfDnM57	N	5643	6893	0	0	107									
+#record		ElfDnM58	N	10292	6066	59	635	0									
+#record		ElfDnM59	N	2201	1358	54	781	0									
+#record		ElfDnM60	N	3228	4302	0	0	85									
+#record		ElfDnM61	Y	7384	2275	0	0	142									
+#record		ElfDn_Boss1	Y	2980	3269	0	0	212									
+#record		ElfDn_Boss2	Y	6810	5015	0	0	212									
+#record		ElfDn_Boss3	Y	5392	1297	0	0	212									
+#record		Pbox01	N	9777	4257	2396	3932	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		ElfDnM01	D_Pixy	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM02	D_Pixy	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM03	D_Pixy	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM04	D_Pixy	2	0	360	356	364	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM04	D_Greenky	2	0	360	356	364	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM05	D_Pixy	2	0	360	356	364	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM05	D_Pinky	2	0	360	356	364	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM06	D_Pixy	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM06	D_Nox	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM07	D_OrcCaptain	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM07	D_Nox	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM08	D_Greenky	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM08	D_Nox	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM09	D_Nox	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM09	D_Greenky	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM10	D_Nox	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM10	D_Greenky	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM11	D_Greenky	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM11	D_Nox	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM12	D_OrcCaptain	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM13	D_OrcCaptain	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM14	D_OrcCaptain	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM18	D_Pixy	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM20	D_Greenky	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM21	D_Greenky	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM22	D_Nox	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM23	D_OrcCaptain	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM24	D_Pinky	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM24	D_Pixy	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM25	D_Nox	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM25	D_Greenky	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM26	D_Nox	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM26	D_OrcCaptain	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM27	D_Greenky	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM27	D_Pixy	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM28	D_Pixy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM28	D_Pinky	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM29	D_GiantOrcCaptain	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM29	D_OrcCaptain	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM31	D_OrcCaptain	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM32	D_Nox	6	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM34	D_Pinky	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM35	D_Pinky	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM36	D_Pinky	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM37	D_Greenky	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM39	D_Greenky	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM40	D_Nox	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM40	D_GiantOrcCaptain	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM42	D_Nox	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM42	D_GiantOrcCaptain	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM43	D_Nox	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM50	PresentBox13	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM51	PresentBox13	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM52	D_Nox	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM53	D_Nox	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM54	D_Nox	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM57	D_Greenky	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM58	D_OrcCaptain	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM59	D_OrcCaptain	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM60	D_Pinky	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDnM61	D_Nox	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ElfDn_Boss1	D_Nox	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDn_Boss1	D_GiantOrcCaptain	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDn_Boss2	D_Nox	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDn_Boss2	D_GiantOrcCaptain	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDn_Boss3	D_Nox	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ElfDn_Boss3	D_GiantOrcCaptain	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Pbox01	PresentBox13	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

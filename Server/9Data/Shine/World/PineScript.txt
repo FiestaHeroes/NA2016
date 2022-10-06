@@ -1,0 +1,119 @@
+;	Project-G	FieldInform					
+;	PineScripts	which	is	loaded	when	server	load
+							
+;#Ignore	\o042	; 인용부호 무시					
+;#Exchange	#	\x20	;	# => space			
+#Delimiter	\x20	;	나중에 space를 delimiter로 넣고 delimiter 제거기능 넣을것!!!!				
+							
+#Table	PineScript						
+#ColumnType	String[32]						
+#ColumnName	ScriptName	; *.ps					
+#Record	KQ/KingSlime/KingSlime	; LuaScript					
+#Record	KQ/MaraPirate/MaraPirate	; LuaScript					
+#Record	KQ/UnderHall						
+#Record	KQ/GoldHill/GoldHill	; LuaScript					
+#Record	KQ/MiniDragon/MiniDragon						
+#Record	KQ/Kingkong/Kingkong						
+;	KQ/ConditionOfHero						
+#Record	KQ/Honeying						
+#Record	KQ/UnderHall2						
+#Record	KQ/GordonMaster						
+#Record	Quest/Quest						
+#Record	Promote/JobChange1						
+#Record	Promote/JobChange2-1						
+#Record	Promote/Job2_Gamb/Job2_Gamb						
+#Record	Promote/Job2_Forest/Job2_Forest	;루아 스크립트					
+#Record	Guild/GuildTournament						
+#Record	Wedding/Wedding						
+#Record	KQ/HMiniDragon/HMiniDragon						
+#Record	KQ/KQHBat1						
+#Record	KQ/KQHBat2						
+#Record	KQ/KQHBat3						
+#Record	KQ/KQHBat4						
+#Record	ID/GraveYard/GraveYard						
+#Record	ID/GraveYardH/GraveYardH						
+#Record	KQ/LegendOfBijou/LegendOfBijou	; LuaScript					
+#Record	KQ/AntiHenis/AntiHenis	; LuaScript					
+#Record	ID/IyzelTower/IyzelTower	; LuaScript					
+#Record	ID/CrystalCastle/CrystalCastle	; LuaScript					
+#Record	ID/d_NestOfLeviathan						
+#Record	ID/LeviathanH/LeviathanH						
+#Record	Map/Monkey						
+#Record	ID/SecretLab/SecretLab	; LuaScript					
+#Record	ID/AdlF/AdlF	; LuaScript					
+#Record	KQ/KQHBat5						
+#Record	KQ/KDMine/KDMine	; LuaScript					
+#Record	ID/WarN/WarN	; LuaScript					
+#Record	ID/WarBL/WarBL	; LuaScript					
+#Record	ID/WarL/WarL	; LuaScript					
+#Record	KQ/KDEgg/KDEgg	; LuaScript					
+#Record	KQ/KDSpring/KDSpring	; LuaScript					
+#Record	ID/WarH/WarH	; LuaScript					
+#Record	Tutorial/Tutorial	; LuaScript					
+#Record	KQ/KDArena/KDArena1						
+#Record	KQ/KDArena/KDArena2						
+#Record	KQ/KDArena/KDArena3						
+#Record	KQ/KDArena/KDArena4						
+#Record	KQ/KDArena/KDArena5						
+#Record	KQ/KDArena/KDArena6						
+#Record	KQ/EmperorSlime/EmperorSlime	; LuaScript					
+#Record	KQ/KDSoccer/KDSoccer						
+#Record	KQ/KDWater/KDWater						
+#Record	ID/Siren/Siren						
+#Record	ID/AdlFH/AdlFH						
+#Record	ID/SecretLabH/SecretLabH						
+#Record	KQ/KDSoccer_W/KDSoccer_W						
+#Record	KQ/KDFargels/KDFargels						
+#Record	ID/SD_Vale01/SD_Vale01						
+#Record	ID/SirenH/SirenH						
+#Record	KQ/KDCake/KDCake						
+							
+#Table	DialogFile	; *.txt					
+#ColumnType	String[32]						
+#ColumnName	ScriptName						
+#Record	KQKingSlime						
+#Record	KQMaraPirate						
+#Record	KQUnderHall						
+#Record	KQUnderHall2						
+#Record	KQGoldHill						
+#Record	KQMiniDragon						
+#Record	KQKingkong						
+;	KQConditionOfHero						
+#Record	KQHoneying						
+#Record	KQGordonMaster						
+#Record	JobChange1						
+#Record	JobChange2-1						
+#Record	JobChange2-2						
+#Record	JobChange2-3						
+;	Scenario						
+#Record	Wedding						
+#Record	KQHBat1						
+#Record	KQHBat2						
+#Record	KQHBat3						
+#Record	KQHBat4						
+#Record	GraveYard						
+#Record	GraveYardH						
+#Record	LegendOfBijou						
+#Record	KQAntiHenis100						
+#Record	Tower01						
+#Record	Tower02						
+#Record	d_NestOfLeviathan						
+#Record	Tower03						
+#Record	Defense						
+#Record	Defense01						
+#Record	AdlF						
+#Record	KQHBat5						
+#Record	KDMine						
+#Record	WarN						
+#Record	WarBL						
+#Record	WarL						
+#Record	Event						
+#Record	KDEgg						
+#Record	KDSpring						
+#Record	WarH						
+#Record	KDArena						
+#Record	KDGreenHill						
+#Record	Siren						
+#Record	AdlFH						
+#Record	KDFargels						
+#End							

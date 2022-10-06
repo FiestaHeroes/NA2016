@@ -1,0 +1,283 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		EchoCaveMINE01	N	2310	4280	163	775	12									
+#record		EchoCaveMINE02	N	3174	4031	0	0	603									
+#record		EchoCaveMINE03	N	3686	4336	0	0	625									
+#record		EchoCaveMINE04	N	4353	3829	475	241	55									
+#record		EchoCaveMINE05	N	1512	2948	163	903	7									
+#record		EchoCaveMINE06	N	4500	2340	382	68	-32									
+#record		EchoCaveMINE07	N	20565	21631	555	170	-38									
+#record		EchoCaveMINE08	N	22980	21359	0	0	652									
+#record		EchoCaveMINE09	N	22142	22648	430	1001	144									
+#record		EchoCaveMINE10	N	23030	24097	399	153	158									
+#record		EchoCaveMINE11	N	21843	22503	523	604	-37									
+#record		EchoCaveMINE12	N	19294	20747	51	921	57									
+#record		EchoCaveMINE13	N	2856	2090	626	130	-25									
+#record		EchoCaveMINE14	N	9389	8952	212	1027	-27									
+#record		EchoCaveMINE15	N	6938	7395	853	373	-23									
+#record		EchoCaveMINE16	N	8631	7513	877	420	6									
+#record		EchoCaveMINE17	N	9662	10205	0	0	617									
+#record		EchoCaveMINE18	N	7447	10053	1238	262	16									
+#record		EchoCaveMINE19	N	17689	19785	0	0	395									
+#record		EchoCaveMINE20	N	19090	17842	0	0	449									
+#record		EchoCaveMINE21	N	16437	21015	0	0	372									
+#record		EchoCaveMINE22	N	16564	18336	150	1196	50									
+#record		EchoCaveMINE23	N	13870	14679	951	493	-14									
+#record		EchoCaveMINE24	N	16971	5716	1670	185	5									
+#record		EchoCaveMINE25	N	4896	16877	981	333	56									
+#record		EchoCaveMINE26	N	13876	18108	203	1220	-67									
+#record		EchoCaveMINE27	N	11074	18912	1208	109	2									
+#record		EchoCaveMINE28	N	8334	18815	1384	155	-8									
+#record		EchoCaveMINE29	N	17119	15804	147	1795	-42									
+#record		EchoCaveMINE30	N	18952	12911	50	1554	-14									
+#record		EchoCaveMINE31	N	18981	7891	99	1031	24									
+#record		EchoCaveMINE32	N	14313	5626	877	108	3									
+#record		EchoCaveMINE33	N	12024	6038	59	1411	-86									
+#record		EchoCaveMINE34	N	4822	13956	109	1145	-6									
+#record		EchoCaveMINE35	N	5561	11967	71	909	-31									
+#record		EchoCaveMINE36	N	8191	15890	72	1662	109									
+#record		EchoCaveMINE37	N	15868	8896	93	1422	-16									
+#record		EchoCaveMINE38	N	10550	14315	140	887	-10									
+#record		EchoCaveMINE39	N	11005	15689	93	775	48									
+#record		EchoCaveMINE40	N	15778	11661	88	922	35									
+#record		EchoCaveMINE41	N	14088	10402	919	60	-14									
+#record		EchoCaveMINE42	N	10869	12234	105	954	-16									
+#record		EchoCaveMINE43	N	11898	10760	77	970	-54									
+#record		EchoCaveMINE44	N	15116	16562	84	879	27									
+#record		EchoCaveMINE45	N	12236	16969	70	863	34									
+#record		EchoCaveMINE46	N	16719	14031	52	1266	13									
+#record		EchoCaveMINE47	N	8970	20701	202	1104	-14									
+#record		EchoCaveMINE48	N	4328	5064	367	252	-42									
+#record		EchoCaveMINE49	N	13983	13879	285	765	27									
+#record		EchoCaveMINE50	N	3458	4031	709	491	-36									
+#record		EchoCaveMINE51	N	2002	2117	757	95	20									
+#record		EchoCaveMINE52	N	4675	5459	1298	100	-46									
+#record		EchoCaveMINE53	N	6189	7032	0	0	512									
+#record		EchoCaveMINE54	N	7883	8602	445	1619	0									
+#record		EchoCaveMINE55	N	5667	11767	50	1637	-32									
+#record		EchoCaveMINE56	N	21534	22258	571	659	50									
+#record		EchoCaveMINE57	N	23799	23828	441	136	46									
+#record		EchoCaveMINE58	N	20776	21824	146	862	51									
+#record		EchoCaveMINE59	N	18957	20461	684	58	-35									
+#record		EchoCaveMINE60	N	18673	18493	1422	50	42									
+#record		EchoCaveMINE61	N	16869	20380	84	1225	-53									
+#record		EchoCaveMINE62	N	15555	17381	0	0	445									
+#record		EchoCaveMINE63	N	13848	14395	0	0	779									
+#record		EchoCaveMINE64	N	14542	13449	514	194	-12									
+#record		EchoCaveMINE65	N	13275	18334	1455	110	21									
+#record		EchoCaveMINE66	N	16999	15896	1434	84	48									
+#record		EchoCaveMINE67	N	10599	6475	145	1165	-52									
+#record		EchoCaveMINE68	N	19179	11501	51	1008	-3									
+#record		EchoCaveMINE69	N	9002	20482	1064	162	75									
+#record		EchoCaveMINE70	N	11723	16401	1540	55	-50									
+#record		EchoCaveMINE71	N	16607	13477	1252	50	-74									
+#record		EchoCaveMINE72	N	13240	5853	1316	50	16									
+#record		EchoCaveMINE73	N	5068	14553	58	1393	14									
+#record		EchoCaveMINE74	N	5117	17586	360	1081	59									
+#record		EchoCaveMINE75	N	16067	4814	1315	157	26									
+#record		EchoCaveMINE76	N	10867	10845	141	711	58									
+#record		EchoCaveMINE77	N	10619	13497	56	1650	-7									
+#record		EchoCaveMINE78	N	12163	10551	884	58	30									
+#record		EchoCaveMINE79	N	14112	10420	50	991	74									
+#record		EchoCaveMINE80	N	15641	11393	974	60	-52									
+#record		EchoCaveMINE81	N	15849	8785	55	1370	-13									
+#record		EchoCaveMINE82	N	8284	15875	53	1261	-72									
+#record		EchoCaveMINE83	N	10090	15097	0	0	218									
+#record		EchoCaveMINE84	N	15224	10472	0	0	162									
+#record		EchoCaveMINE85	N	9531	10126	0	0	387									
+#record		EchoCaveMINE88	N	10612	6420	1012	132	37									
+#record		EchoCaveMINE89	N	6541	18530	436	100	-12									
+#record		EchoCaveMINE90	N	9672	18940	1226	63	-3									
+#record		EchoCaveMINE91	N	19165	8558	52	1346	20									
+#record		EchoCaveQstmob01	N	2570	3011	0	0	625									
+#record		EchoCaveQstmob02	N	22905	23042	0	0	688									
+#record		EchoCaveMine93	N	16411	6562	783	321	-56									
+#record		EchoCaveMine94	N	17926	6054	521	789	0									
+#record		EchoCaveMine95	N	17906	6309	0	0	661									
+#record		EchoCaveMine96	N	5254	16249	336	1062	59									
+#record		EchoCaveMine97	N	8645	8938	589	1340	-17									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EchoCaveMINE01	MINE1	6	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE01	MINE2	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE02	MINE1	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE02	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE03	MINE1	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE04	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE05	MINE1	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE05	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE05	Ec_PhinoFlie	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE06	MINE1	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE06	MINE1	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE07	MINE1	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE07	Ec_PhinoFlie	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE08	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE08	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE09	MINE1	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE09	MINE3	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE09	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE10	MINE1	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE10	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE11	MINE1	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE11	MINE3	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE12	MINE1	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE12	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE12	MINE3	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE13	MINE1	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE13	Ec_PhinoFlie	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE14	MINE1	8	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE14	MINE2	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE14	MINE2	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE14	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE15	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE15	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE15	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE16	MINE1	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE16	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE16	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE16	Ec_PhinoFlie	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE17	MINE1	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE17	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE18	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE18	MINE2	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE18	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE18	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE19	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE19	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE19	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE19	Ec_PhinoFlie	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE20	MINE1	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE20	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE20	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE21	MINE1	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE21	MINE2	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE21	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE22	MINE2	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE22	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE22	MINE3	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE22	Ec_PhinoFlie	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE23	MINE2	6	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE23	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE23	MINE3	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE24	MINE3	7	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE24	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE25	MINE3	8	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE26	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE26	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE27	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE27	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE28	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE28	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE29	MINE2	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE29	MINE2	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE30	MINE2	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE30	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE31	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE31	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE32	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE32	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE33	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE33	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE34	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE34	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE35	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE35	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE36	MINE3	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE36	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE37	MINE3	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE37	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE38	MINE3	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE38	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE39	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE39	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE40	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE40	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE41	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE41	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE42	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE42	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE43	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE43	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE44	MINE2	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE44	MINE3	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE45	MINE2	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE45	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE46	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE46	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE47	MINE2	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE47	MINE3	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE47	MINE3	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE48	MINE1	6	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE48	MINE2	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE49	MINE3	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE49	MINE3	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE49	MINE3	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE50	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE51	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE52	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE53	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE54	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE54	MINE2	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE54	MINE1	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE55	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE56	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE57	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE58	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE59	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE60	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE61	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE62	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE63	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE64	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE65	Ec_PhinoFlie	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE66	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE67	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE68	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE69	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE70	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE71	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE72	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE73	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE74	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE74	MINE3	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE75	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE75	MINE3	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE76	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE77	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE78	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE79	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE80	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE81	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE82	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE83	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE84	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE85	Ec_PhinoFlie	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE88	MINE2	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE89	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE90	Ec_ArchMageBook	1	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMINE91	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveQstmob01	KQ_RookieSkeleton	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveQstmob02	KQ_RookieSkeleton	4	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMine93	MINE3	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMine93	Ec_ArchMageBook	2	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMine94	MINE3	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMine95	Ec_PhinoFlie	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMine96	MINE3	5	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMine96	Ec_ArchMageBook	3	0	100	85	115	-15	8	-10	15	0	60	10	120	15
+#record		EchoCaveMine97	BigPhinoFlie	1	0	21600	21595	21600	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

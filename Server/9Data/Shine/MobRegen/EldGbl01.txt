@@ -1,0 +1,355 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		EldGbl01Area01	N	5981	4380	0	0	506									
+#record		EldGbl01Area02	N	6331	3041	0	0	471									
+#record		EldGbl01Area03	N	7781	5636	232	329	7									
+#record		EldGbl01Area04	N	8693	3581	0	0	666									
+#record		EldGbl01Area05	N	7356	2222	0	0	487									
+#record		EldGbl01Area06	N	8119	1390	0	0	457									
+#record		EldGbl01Area07	N	8613	2322	0	0	456									
+#record		EldGbl01Area08	N	10189	2673	0	0	751									
+#record		EldGbl01Area09	N	10682	1167	0	0	471									
+#record		EldGbl01Area10	N	10388	4306	0	0	503									
+#record		EldGbl01Area11	N	10337	5286	0	0	549									
+#record		EldGbl01Area12	N	9391	7105	590	323	20									
+#record		EldGbl01Area13	N	8936	5596	149	527	48									
+#record		EldGbl01Area14	N	11010	8876	349	186	-34									
+#record		EldGbl01Area15	N	11811	10123	53	1537	2									
+#record		EldGbl01Area16	N	10844	11736	813	211	13									
+#record		EldGbl01Area17	N	10266	10106	0	0	535									
+#record		EldGbl01Area18	N	8668	10237	0	0	427									
+#record		EldGbl01Area19	N	10095	9000	0	0	229									
+#record		EldGbl01Area20	N	9613	11600	0	0	467									
+#record		EldGbl01Area21	N	7506	10299	0	0	454									
+#record		EldGbl01Area22	N	6355	10304	0	0	415									
+#record		EldGbl01Area23	N	6297	9506	0	0	576									
+#record		EldGbl01Area24	N	6031	11625	0	0	472									
+#record		EldGbl01Area25	N	4951	11565	0	0	404									
+#record		EldGbl01Area26	N	5264	10534	0	0	422									
+#record		EldGbl01Area27	N	5334	9478	0	0	272									
+#record		EldGbl01Area28	N	1650	10122	579	120	148									
+#record		EldGbl01Area29	N	3734	11592	595	113	-33									
+#record		EldGbl01Area30	N	1416	10832	108	384	62									
+#record		EldGbl01Area31	N	2822	11963	0	0	306									
+#record		EldGbl01Area32	N	2312	11067	185	633	-37									
+#record		EldGbl01Area33	N	1591	11853	539	102	-31									
+#record		EldGbl01Area34	N	1958	7749	0	0	573									
+#record		EldGbl01Area35	N	1931	6609	0	0	489									
+#record		EldGbl01Area36	N	3441	8096	0	0	405									
+#record		EldGbl01Area37	N	4064	7906	0	0	379									
+#record		EldGbl01Area38	N	2005	4942	0	0	696									
+#record		EldGbl01Area39	N	4881	2148	843	333	48									
+#record		EldGbl01Area40	N	3755	3654	210	864	-39									
+#record		EldGbl01Area41	N	2016	1688	0	0	494									
+#record		EldGbl01Area42	N	1130	1183	0	0	545									
+#record		EldGbl01Area43	N	2219	2491	0	0	702									
+#record		EldGbl01Area44	N	2980	1667	0	0	559									
+#record		EldGbl01Area45	N	1113	2423	0	0	519									
+#record		EldGbl01Area46	N	3012	2757	0	0	256									
+#record		EldGbl01Area47	N	2162	979	0	0	498									
+#record		EldGbl01Area48	N	7157	9177	0	0	239									
+#record		EldGbl01Area49	N	11242	10333	0	0	202									
+#record		EldGbl01AreaN01	N	9175	1018	164	916	-86									
+#record		EldGbl01AreaN02	N	11599	3408	58	1435	-1									
+#record		EldGbl01AreaN03	N	11097	11851	798	86	13									
+#record		EldGbl01AreaN04	N	6476	12035	614	149	0									
+#record		EldGbl01AreaN05	N	920	5082	113	1037	2									
+#record		EldGbl01AreaN06	N	2233	2076	1364	142	33									
+#record		EldGbl01AreaN07	N	10285	2640	0	0	702									
+#record		EldGbl01AreaN08	N	10309	5050	179	1038	0									
+#record		EldGbl01AreaN09	N	10324	10100	0	0	561									
+#record		EldGbl01AreaN10	N	1226	10623	50	878	-6									
+#record		EldGbl01AreaN11	N	4725	7113	295	285	20									
+#record		EldGbl01AreaN12	N	6362	10425	55	798	90									
+#record		EldGbl01AreaN13	N	8680	3616	0	0	568									
+#record		EldGbl01AreaN14	N	7129	11791	0	0	540									
+#record		EldGbl01AreaN15	N	2027	4942	0	0	933									
+#record		EldGbl01AreaN16	N	2138	764	88	694	94									
+#record		EldGbl01AreaN17	N	2876	11975	971	63	11									
+#record		EldGbl01AreaN18	N	8202	11862	732	164	1									
+#record		EldGb01AreaG1	Y	2282	11105	0	0	113									
+#record		EldGb01AreaPbox01	N	9439	6447	2586	6086	0									
+#record		EldGbl01AreaQ01	N	8418	7435	0	0	352									
+#record		EldGbl01AreaQ02	N	2098	4917	443	1165	91									
+#record		EldGbl01AreaQ03	N	963	8324	0	0	442									
+#record		EldGb01Area50	N	1322	9842	0	0	107									
+#record		EldGb01Area51	N	1784	10140	0	0	100									
+#record		EldGb01Area52	N	3593	11407	0	0	107									
+#record		EldGb01Area53	N	4149	11787	0	0	107									
+#record		EldGb01Area54	N	3377	12139	0	0	205									
+#record		EldGb01Area55	N	2693	12240	0	0	121									
+#record		EldGb01Area56	N	1435	10872	0	0	114									
+#record		EldGb01Area57	N	1029	10421	0	0	205									
+#record		EldGb01Area58	N	1217	11593	0	0	212									
+#record		EldGb01Area59	N	2116	12061	0	0	205									
+#record		EldGb01Area60	N	1925	5949	0	0	235									
+#record		EldGb01Area62	N	1880	9062	0	0	422									
+#record		EldGb01Area63	N	4086	10703	0	0	415									
+#record		EldGb01Area64	N	3102	10089	0	0	373									
+#record		EldGb01Area65	N	6530	11398	364	68	-4									
+#record		EldGb01Area66	N	7945	10998	0	0	205									
+#record		EldGbl01AreaPbox02	N	3789	6353	3168	5968	0									
+#record		Qst01	N	10325	4473	2318	753	89									
+#record		Qst02	N	7615	11090	4335	782	0									
+#record		EldGbl01Area67	N	9400	10680	243	168	37									
+#record		EldGblArea68	N	9030	9150	0	0	359									
+#record		EldGblArea69	N	11437	8480	340	172	-52									
+#record		EldGblArea70	N	9314	1375	0	0	499									
+#record		EldGbl01Area70	N	11299	1601	0	0	520									
+#record		EldGbl01Area71	N	3586	10483	873	229	-33									
+#record		EldGbl01Area72	N	10289	6207	0	0	373									
+#record		EldGbl01Area73	N	8453	11654	0	0	468									
+#record		EldGbl01Area74	N	11391	11324	0	0	422									
+#record		EldGbl01Area75	N	11663	9470	0	0	282									
+#record		EldGbl01Area76	N	7332	3562	0	0	471									
+#record		EldGbl01Area77	N	11359	3438	0	0	478									
+#record		EldGbl01Area78	N	11459	4708	0	0	408									
+#record		EldGbl01Area79	N	5609	5016	0	0	485									
+;		Halloween01	N	2450	6561	1919	5905	0									
+;		Halloween02	N	6228	6834	1828	5818	0									
+;		Halloween03	N	10010	6611	1897	5730	0									
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EldGbl01Area01	Goblin	6	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area01	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area02	Goblin	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area02	GoblinSwordman	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area02	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area03	Goblin	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area03	GoblinSwordman	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area03	Prock	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area04	GoblinSwordman	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area04	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area04	Goblin	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area05	Goblin	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area05	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area05	GoblinSwordman	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area06	Goblin	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area06	GoblinSwordman	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area06	Prock	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area07	GoblinSwordman	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area07	Prock	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area08	GoblinSwordman	6	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area08	Prock	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area09	GoblinSwordman	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area09	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area10	GoblinSwordman	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area10	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area11	WereBear	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area11	GoblinSwordman	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area12	WereBear	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area12	GoblinSwordman	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area13	WereBear	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area13	WereBearFighter	1	0	50	35	60	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area13	GoblinSwordman	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area14	GoblinSwordman	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area14	WereBear	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area15	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area15	WereBear	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area16	WereBear	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area16	WereBearFighter	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area17	GoblinMage	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area17	WereBear	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area18	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area18	WereBear	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area19	WereBear	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area19	GoblinMage	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area20	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area20	WereBear	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area21	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area21	GoblinCaptain	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area21	WereBear	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area22	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area22	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area23	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area23	GoblinCaptain	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area24	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area24	GoblinCaptain	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area25	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area25	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area26	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area26	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area27	GoblinCaptain	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area27	GoblinMage	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area28	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area28	GoblinCaptain	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area29	GoblinCaptain	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area29	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area30	GoblinCaptain	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area30	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area30	Ogre	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area31	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area31	Ogre	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area32	Ogre	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area32	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area33	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area33	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area33	Ogre	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area34	GoblinCaptain	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area34	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area35	GoblinCaptain	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area35	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area36	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area36	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area37	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area37	GoblinCaptain	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area38	GoblinCaptain	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area38	GoblinMage	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area39	GoblinCaptain	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area39	GoblinMage	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area40	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area40	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area40	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area41	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area42	GobleKing	1	0	360	345	370	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area42	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area43	GoblinMage	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area43	GoblinCaptain	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area44	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area44	GoblinCaptain	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area45	GoblinCaptain	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area46	GoblinCaptain	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area47	GoblinCaptain	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area47	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area48	GoblinCaptain	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area48	GoblinMage	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area49	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaN01	WOOD4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN01	WOOD5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN01	HERB4	2	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN01	HERB5	2	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN01	HERB6	2	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN02	FLOWER1	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN02	FLOWER1	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN02	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN02	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN02	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN03	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN03	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN03	HERB5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN03	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN04	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN04	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN04	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN04	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN05	WOOD4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN05	WOOD5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN05	FLOWER1	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN05	FLOWER1	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN06	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN06	HERB4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN07	HERB4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN07	HERB5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN07	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN07	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN07	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN07	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN08	HERB4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN08	HERB5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN08	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN08	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN08	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN08	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN09	HERB4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN09	HERB5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN09	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN09	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN09	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN09	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN10	FLOWER1	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN10	FLOWER1	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN10	WOOD4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN10	WOOD5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN11	GoblinCaptain	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaN12	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN12	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN12	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN13	FLOWER1	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN13	WOOD6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN13	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN13	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN14	WereBear	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaN14	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaN15	HERB4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN15	HERB5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN15	HERB6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN16	HERB4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN16	HERB5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN16	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN16	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN17	MUSHROOM4	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN17	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN17	MUSHROOM6	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN18	MUSHROOM5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01AreaN18	HERB5	1	0	180	80	190	-100	10	-50	25	0	150	5	300	10
+#record		EldGb01AreaG1	S_WereBear	1	0	21600	21590	21610	-10	10	-5	25	0	60	5	120	10
+#record		EldGb01AreaG1	WereBear	3	0	21600	21590	21610	-10	10	-5	25	0	60	5	120	10
+#record		EldGb01AreaPbox01	PresentBox9	1	0	14400	14390	14410	-10	10	-5	25	0	60	5	120	10
+#record		EldGbl01AreaQ01	Q_SandRatman	2	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaQ02	Q_SandRatman	2	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaQ03	Q_SandRatman	2	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaQ03	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area50	MiniLips	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area51	MiniLips	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area52	MiniLips	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area53	MiniLips	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area54	MiniLips	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area55	MiniLips	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area56	MiniLips	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area57	MiniLips	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area58	MiniLips	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area59	MiniLips	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area60	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area62	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area62	GoblinCaptain	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area63	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area63	GoblinCaptain	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area64	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area64	GoblinCaptain	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area65	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGb01Area66	SandMushroom	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01AreaPbox02	PresentBox9	1	0	14400	14390	14410	-10	10	-5	25	0	60	5	120	10
+#record		Qst01	Q_GB_Mushroom	5	0	300	200	310	-100	10	-50	25	0	150	5	300	10
+#record		Qst01	Q_GB_Herb	5	0	300	200	310	-100	10	-50	25	0	150	5	300	10
+#record		Qst02	Q_GB_Mushroom	7	0	300	200	310	-100	10	-50	25	0	150	5	300	10
+#record		Qst02	Q_GB_Herb	7	0	300	200	310	-100	10	-50	25	0	150	5	300	10
+#record		EldGbl01Area67	WereBear	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area67	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGblArea68	WereBear	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGblArea68	GoblinMage	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGblArea69	WereBear	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGblArea70	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGblArea70	GoblinSwordman	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area70	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area70	GoblinSwordman	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area71	GoblinMage	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area72	GoblinSwordman	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area73	WereBear	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area73	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area74	WereBear	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area74	GoblinMage	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area75	GoblinSwordman	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area75	WereBear	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area76	Goblin	5	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area76	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area77	GoblinSwordman	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area77	WereBear	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area78	GoblinSwordman	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area79	Goblin	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldGbl01Area79	Prock	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+;		Halloween01	E_JackO03	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO03	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO03	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+#end																	

@@ -1,0 +1,84 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	-			
+#Record	1	Lab_20_Knock_Wide			
+#Record	2	Lab_20_Normal_Atk			
+#Record	3	-			
+#Record	4	-			
+#Record	5	-			
+#Record	6	-			
+#Record	7	-			
+#Record	8	Lab_20_Normal_Atk			
+#Record	9	Lab_20_Angry_Buf			
+#Record	10	Lab_20_Normal_Atk			
+#Record	11	-			
+#Record	12	-			
+#Record	13	-			
+#Record	14	Lab_20_Normal_Atk			
+#Record	15	-			
+#Record	16	-			
+#Record	17	-			
+#Record	18	-			
+#Record	19	-			
+#Record	20	Lab_20_Angry_Buf			
+#Record	21	Lab_20_Normal_Atk			
+#Record	22	Lab_20_Angry_Buf			
+#Record	23	Lab_20_Normal_Atk			
+#Record	24	-			
+#Record	25	-			
+#Record	26	-			
+#Record	27	-			
+#Record	28	-			
+#Record	29	Lab_20_Angry_Buf			
+#Record	30	Lab_20_Knock_Wide			
+#Record	31	-			
+#Record	32	-			
+#Record	33	-			
+#Record	34	Lab_20_Normal_Atk			
+#Record	35	-			
+#Record	36	-			
+#Record	37	-			
+#Record	38	-			
+#Record	39	Lab_20_Normal_Atk			
+#Record	40	-			
+#Record	41	-			
+#Record	42	-			
+#Record	43	Lab_20_Angry_Buf			
+#Record	44	Lab_20_Normal_Atk			
+#Record	45	-			
+#Record	46	-			
+#Record	47	-			
+#Record	48	Lab_20_Knock_Atk			
+#Record	49	-			
+#Record	50	-			
+#Record	51	-			
+#Record	52	-			
+#Record	53	Lab_20_Knock_Atk			
+#Record	54	Lab_20_Knock_Wide			
+#Record	55	-			
+#Record	56	-			
+#Record	57	-			
+#Record	58	-			
+#Record	59	-			
+#Record	60	Lab_20_Angry_Buf			
+#Record	61	Lab_20_Normal_Atk			
+#Record	62	-			
+#Record	63	-			
+#Record	64	-			
+#Record	65	Lab_20_Fear_Wide			
+#Record	66	-			
+#Record	67	-			
+#Record	68	-			
+#Record	69	-			
+#Record	70	Lab_20_Angry_Buf			
+#Record	71	Lab_20_Normal_Atk			
+#End					

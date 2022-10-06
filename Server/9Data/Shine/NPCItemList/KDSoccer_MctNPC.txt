@@ -1,0 +1,20 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00						
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	KDSoccer_Hat01	KDSoccer_Hat02	KDSoccer_Hat03	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	KDSoccer_SportsA	KDSoccer_SportsP	KDSoccer_SportsS	-	-	-
+#Record	3	-	-	-	-	-	-
+#Record	4	KDSoccer_HinaSword	KDSoccer_HinaBastard	KDSoccer_HinaAxe	-	-	-
+#Record	5	KDSoccer_HinaMace	KDSoccer_HinaHammer	-	-	-	-
+#Record	6	KDSoccer_HinaBow	KDSoccer_HinaCBow	-	-	-	-
+#Record	7	KDSoccer_HinaStaff	KDSoccer_HinaWand	-	-	-	-
+#Record	8	KDSoccer_HinaClaw	KDSoccer_HinaDsword	-	-	-	-
+#Record	9	KDSoccer_HinaBlade	-	-	-	-	-
+							
+#End							

@@ -1,0 +1,344 @@
+;	Shine Monster Regeneration Table			V0.2													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		ID_DragonNomal01	Y	1852	6186	0	0	150									
+#record		ID_DragonNomal02	Y	2424	7945	0	0	150									
+#record		ID_DragonNomal03	Y	2664	9686	0	0	150									
+#record		ID_DragonNomal04	Y	3857	10043	0	0	150									
+#record		ID_DragonNomal05	Y	3843	8304	0	0	150									
+#record		ID_DragonNomal06	Y	5059	8456	0	0	150									
+#record		ID_DragonNomal07	Y	3968	6004	0	0	150									
+#record		ID_DragonNomal08	Y	6480	7552	0	0	150									
+#record		ID_DragonNomal09	Y	8923	6227	0	0	150									
+#record		ID_DragonNomal10	Y	9667	6076	0	0	150									
+#record		ID_DragonNomal11	Y	5554	4746	0	0	150									
+#record		ID_DragonNomal12	Y	5591	3946	0	0	150									
+#record		ID_DragonNomal13	Y	5334	3032	0	0	150									
+#record		ID_DragonNomal14	Y	5255	2035	0	0	150									
+#record		ID_DragonNomal15	Y	4296	1987	0	0	150									
+#record		ID_DragonNomal16	Y	6789	4116	0	0	150									
+#record		ID_DragonNomal17	Y	8998	2218	0	0	150									
+#record		ID_DragonNomal18	Y	8443	3903	0	0	150									
+#record		ID_DragonNomal19	Y	9090	3243	0	0	150									
+#record		ID_DragonNomal20	Y	9041	5069	0	0	150									
+#record		ID_Dragon01	Y	2863	6639	0	0	150									
+#record		ID_Dragon02	Y	2738	8247	0	0	150									
+#record		ID_Dragon03	Y	2723	10301	0	0	150									
+#record		ID_Dragon04	Y	4028	5757	0	0	150									
+#record		ID_Dragon05	Y	3736	3074	0	0	150									
+#record		ID_Dragon06	Y	5525	5501	0	0	150									
+#record		ID_Dragon07	Y	6283	5944	0	0	150									
+#record		ID_Dragon08	Y	7061	6242	0	0	150									
+#record		ID_Dragon09	Y	8935	5903	0	0	150									
+#record		ID_Dragon10	Y	11333	4054	0	0	150									
+#record		ID_Dragon11	Y	2721	6804	0	0	150									
+#record		ID_Dragon12	Y	2974	8453	0	0	150									
+#record		ID_Dragon13	Y	2858	10102	0	0	150									
+#record		ID_Dragon14	Y	8148	9257	0	0	150									
+#record		ID_Dragon15	Y	6434	8543	0	0	150									
+#record		ID_Dragon16	Y	5719	6369	0	0	150									
+#record		ID_Dragon17	Y	5329	5645	0	0	150									
+#record		ID_Dragon18	Y	6472	5975	0	0	150									
+#record		ID_Dragon19	Y	6838	6657	0	0	150									
+#record		ID_Dragon20	Y	7056	2015	0	0	150									
+#record		ID_Dragon21	Y	2878	6408	0	0	150									
+#record		ID_Dragon22	Y	2721	8506	0	0	150									
+#record		ID_Dragon23	Y	2950	10286	0	0	150									
+#record		ID_Dragon24	Y	5179	10431	0	0	150									
+#record		ID_Dragon25	Y	6637	10311	0	0	150									
+#record		ID_Dragon26	Y	6287	6522	0	0	150									
+#record		ID_Dragon27	Y	9766	5713	0	0	150									
+#record		ID_Dragon28	Y	9061	6501	0	0	150									
+#record		ID_Dragon29	Y	5480	4179	0	0	150									
+#record		ID_Dragon30	Y	5414	2047	0	0	150									
+#record		ID_Dragon31	Y	6776	10196	0	0	150									
+#record		ID_Dragon32	Y	6546	8425	0	0	150									
+#record		ID_Dragon33	Y	5847	5908	0	0	150									
+#record		ID_Dragon34	Y	6619	6338	0	0	150									
+#record		ID_Dragon35	Y	8359	9348	0	0	150									
+#record		ID_Dragon36	Y	9793	6376	0	0	150									
+#record		ID_Dragon37	Y	9139	5903	0	0	150									
+#record		ID_Dragon38	Y	3844	3134	0	0	150									
+#record		ID_Dragon39	Y	6808	2135	0	0	150									
+#record		ID_Dragon40	Y	11411	4179	0	0	150									
+#record		ID_Dragon41	Y	5023	10348	0	0	150									
+#record		ID_Dragon42	Y	6470	9975	0	0	150									
+#record		ID_Dragon43	Y	7083	6000	0	0	150									
+#record		ID_Dragon44	Y	9630	6426	0	0	150									
+#record		ID_Dragon45	Y	9921	5662	0	0	150									
+#record		ID_Dragon46	Y	6837	1881	0	0	150									
+#record		ID_Dragon47	Y	11185	4204	0	0	150									
+#record		ID_Dragon48	Y	5354	2174	0	0	150									
+#record		ID_Dragon49	Y	9239	4143	0	0	150									
+#record		ID_Dragon50	Y	8013	2048	0	0	150									
+#record		ID_PresentBox01	Y	2924	6674	0	0	10									
+#record		ID_PresentBox02	Y	2682	10375	0	0	10									
+#record		ID_PresentBox03	Y	6697	10356	0	0	10									
+#record		ID_PresentBox04	Y	9872	6453	0	0	10									
+#record		ID_PresentBox05	Y	5384	1994	0	0	10									
+#record		ID_MINE01	N	7589	6057	522	2398	-87									
+#record		ID_Boss1	Y	5034	10483	0	0	150									
+#record		ID_Boss2	Y	8321	9168	0	0	150									
+#record		ID_Boss3	Y	3858	3017	0	0	150									
+#record		ID_Boss4	Y	6900	2021	0	0	150									
+#record		ID_Boss5	Y	11363	4241	0	0	150									
+#record		IDH_DragonNomal01	Y	1852	6186	0	0	150									
+#record		IDH_DragonNomal02	Y	2424	7945	0	0	150									
+#record		IDH_DragonNomal03	Y	2664	9686	0	0	150									
+#record		IDH_DragonNomal04	Y	3857	10043	0	0	150									
+#record		IDH_DragonNomal05	Y	3843	8304	0	0	150									
+#record		IDH_DragonNomal06	Y	5059	8456	0	0	150									
+#record		IDH_DragonNomal07	Y	3968	6004	0	0	150									
+#record		IDH_DragonNomal08	Y	6480	7552	0	0	150									
+#record		IDH_DragonNomal09	Y	8923	6227	0	0	150									
+#record		IDH_DragonNomal10	Y	9667	6076	0	0	150									
+#record		IDH_DragonNomal11	Y	5554	4746	0	0	150									
+#record		IDH_DragonNomal12	Y	5591	3946	0	0	150									
+#record		IDH_DragonNomal13	Y	5334	3032	0	0	150									
+#record		IDH_DragonNomal14	Y	5255	2035	0	0	150									
+#record		IDH_DragonNomal15	Y	4296	1987	0	0	150									
+#record		IDH_DragonNomal16	Y	6789	4116	0	0	150									
+#record		IDH_DragonNomal17	Y	8998	2218	0	0	150									
+#record		IDH_DragonNomal18	Y	8443	3903	0	0	150									
+#record		IDH_DragonNomal19	Y	9090	3243	0	0	150									
+#record		IDH_DragonNomal20	Y	9041	5069	0	0	150									
+#record		IDH_Dragon01	Y	2863	6639	0	0	150									
+#record		IDH_Dragon02	Y	2738	8247	0	0	150									
+#record		IDH_Dragon03	Y	2723	10301	0	0	150									
+#record		IDH_Dragon04	Y	4028	5757	0	0	150									
+#record		IDH_Dragon05	Y	3736	3074	0	0	150									
+#record		IDH_Dragon06	Y	5525	5501	0	0	150									
+#record		IDH_Dragon07	Y	6283	5944	0	0	150									
+#record		IDH_Dragon08	Y	7061	6242	0	0	150									
+#record		IDH_Dragon09	Y	8935	5903	0	0	150									
+#record		IDH_Dragon10	Y	11333	4054	0	0	150									
+#record		IDH_Dragon11	Y	2721	6804	0	0	150									
+#record		IDH_Dragon12	Y	2974	8453	0	0	150									
+#record		IDH_Dragon13	Y	2858	10102	0	0	150									
+#record		IDH_Dragon14	Y	8148	9257	0	0	150									
+#record		IDH_Dragon15	Y	6434	8543	0	0	150									
+#record		IDH_Dragon16	Y	5719	6369	0	0	150									
+#record		IDH_Dragon17	Y	5329	5645	0	0	150									
+#record		IDH_Dragon18	Y	6472	5975	0	0	150									
+#record		IDH_Dragon19	Y	6838	6657	0	0	150									
+#record		IDH_Dragon20	Y	7056	2015	0	0	150									
+#record		IDH_Dragon21	Y	2878	6408	0	0	150									
+#record		IDH_Dragon22	Y	2721	8506	0	0	150									
+#record		IDH_Dragon23	Y	2950	10286	0	0	150									
+#record		IDH_Dragon24	Y	5179	10431	0	0	150									
+#record		IDH_Dragon25	Y	6637	10311	0	0	150									
+#record		IDH_Dragon26	Y	6287	6522	0	0	150									
+#record		IDH_Dragon27	Y	9766	5713	0	0	150									
+#record		IDH_Dragon28	Y	9061	6501	0	0	150									
+#record		IDH_Dragon29	Y	5480	4179	0	0	150									
+#record		IDH_Dragon30	Y	5414	2047	0	0	150									
+#record		IDH_Dragon31	Y	6776	10196	0	0	150									
+#record		IDH_Dragon32	Y	6546	8425	0	0	150									
+#record		IDH_Dragon33	Y	5847	5908	0	0	150									
+#record		IDH_Dragon34	Y	6619	6338	0	0	150									
+#record		IDH_Dragon35	Y	8359	9348	0	0	150									
+#record		IDH_Dragon36	Y	9793	6376	0	0	150									
+#record		IDH_Dragon37	Y	9139	5903	0	0	150									
+#record		IDH_Dragon38	Y	3844	3134	0	0	150									
+#record		IDH_Dragon39	Y	6808	2135	0	0	150									
+#record		IDH_Dragon40	Y	11411	4179	0	0	150									
+#record		IDH_Dragon41	Y	5023	10348	0	0	150									
+#record		IDH_Dragon42	Y	6470	9975	0	0	150									
+#record		IDH_Dragon43	Y	7083	6000	0	0	150									
+#record		IDH_Dragon44	Y	9630	6426	0	0	150									
+#record		IDH_Dragon45	Y	9921	5662	0	0	150									
+#record		IDH_Dragon46	Y	6837	1881	0	0	150									
+#record		IDH_Dragon47	Y	11185	4204	0	0	150									
+#record		IDH_Dragon48	Y	5354	2174	0	0	150									
+#record		IDH_Dragon49	Y	9239	4143	0	0	150									
+#record		IDH_Dragon50	Y	8013	2048	0	0	150									
+#record		IDH_PresentBox01	Y	2924	6674	0	0	10									
+#record		IDH_PresentBox02	Y	2682	10375	0	0	10									
+#record		IDH_PresentBox03	Y	6697	10356	0	0	10									
+#record		IDH_PresentBox04	Y	9872	6453	0	0	10									
+#record		IDH_PresentBox05	Y	5384	1994	0	0	10									
+#record		IDH_MINE01	N	7589	6057	522	2398	-87									
+#record		IDH_Boss1	Y	5034	10483	0	0	150									
+#record		IDH_Boss2	Y	8321	9168	0	0	150									
+#record		IDH_Boss3	Y	3858	3017	0	0	150									
+#record		IDH_Boss4	Y	6900	2021	0	0	150									
+#record		IDH_Boss5	Y	11363	4241	0	0	150									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		ID_DragonNomal01	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal02	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal03	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal04	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal05	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal06	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal07	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal08	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal09	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal10	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal11	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal12	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal13	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal14	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal15	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal16	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal17	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal18	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal19	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_DragonNomal20	ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon01	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon02	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon03	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon04	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon05	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon06	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon07	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon08	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon09	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon10	ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon11	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon12	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon13	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon14	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon15	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon16	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon17	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon18	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon19	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon20	ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon21	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon22	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon23	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon24	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon25	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon26	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon27	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon28	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon29	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon30	ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon31	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon32	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon33	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon34	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon35	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon36	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon37	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon38	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon39	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon40	ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon41	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon42	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon43	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon44	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon45	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon46	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon47	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon48	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon49	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Dragon50	ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_PresentBox01	IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		ID_PresentBox02	IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		ID_PresentBox03	IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		ID_PresentBox04	IDPresentBox02	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		ID_PresentBox05	IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		ID_MINE01	IDMINE01	25	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		ID_Boss1	ID_GiantMagmaton	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Boss2	ID_BigMudMan	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Boss3	ID_FireTaitan	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Boss4	ID_Weasel	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		ID_Boss5	ID_FandomCornelius	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal01	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal02	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal03	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal04	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal05	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal06	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal07	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal08	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal09	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal10	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal11	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal12	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal13	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal14	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal15	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal16	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal17	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal18	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal19	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_DragonNomal20	UrgDTH_ID_Gagoyle	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon01	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon02	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon03	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon04	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon05	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon06	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon07	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon08	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon09	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon10	UrgDTH_ID_FlameSpirit	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon11	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon12	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon13	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon14	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon15	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon16	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon17	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon18	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon19	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon20	UrgDTH_ID_Kruge	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon21	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon22	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon23	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon24	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon25	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon26	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon27	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon28	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon29	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon30	UrgDTH_ID_EarthNerpa	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon31	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon32	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon33	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon34	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon35	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon36	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon37	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon38	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon39	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon40	UrgDTH_ID_EarthCalerben	3	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon41	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon42	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon43	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon44	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon45	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon46	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon47	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon48	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon49	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Dragon50	UrgDTH_ID_FireShella	2	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_PresentBox01	UrgDTH_IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		IDH_PresentBox02	UrgDTH_IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		IDH_PresentBox03	UrgDTH_IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		IDH_PresentBox04	UrgDTH_IDPresentBox02	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		IDH_PresentBox05	UrgDTH_IDPresentBox01	1	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		IDH_MINE01	UrgDTH_IDMINE01	25	0	600	596	604	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Boss1	UrgDTH_ID_GiantMagmaton	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Boss2	UrgDTH_ID_BigMudMan	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Boss3	UrgDTH_ID_FireTaitan	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Boss4	UrgDTH_ID_Weasel	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		IDH_Boss5	UrgDTH_ID_FandomCornelius	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

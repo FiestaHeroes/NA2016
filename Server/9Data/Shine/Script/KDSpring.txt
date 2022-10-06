@@ -1,0 +1,13 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+			
+#End			

@@ -1,0 +1,220 @@
+;	TreasureReward												
+;													
+													
+#Ignore	\o042									; 인용부호 무시			
+#Exchange	#	\x20								; # => space			
+;#delimeter	\x20												
+#Table	Container												
+#ColumnType		DWRD	WORD	String[33]	WORD	WORD	String[33]						
+#ColumnName		ItemID	Index	CardInx	MinLot	MaxLot	DummyInx						
+													
+#Table	Content												
+#ColumnType		DWRD	WORD		String[33]	WORD	BYTE	BYTE	DWRD	WORD			
+#ColumnName		ItemID	Index		RewardInx	RewardLot	UpgradeLow	UpgradeHigh	RewardRate	CheckSum			
+													
+													
+;													
+#RecordIn	Container	0	0	Tbag06	1	1	DTbag06					;	
+#RecordIn	Content	1001	0		GrimjawMask00	1	0	0	50000	1001		;	5
+#RecordIn	Content	1002	0		AnbooCatMask00	1	0	0	50000	1002		;	5
+#RecordIn	Content	1003	0		SoulDevourerMask00	1	0	0	70000	1003		;	7
+#RecordIn	Content	1004	0		Hat_HallGhost03	1	0	0	150000	1004		;	15
+#RecordIn	Content	1005	0		Hat_HallKaby04	1	0	0	150000	1005		;	15
+#RecordIn	Content	1006	0		Hat_HallPumpkin03	1	0	0	150000	1006		;	15
+#RecordIn	Content	1007	0		Hat_3YearSlime02	1	0	0	150000	1007		;	15
+#RecordIn	Content	1008	0		Hat_BlackCat04	1	0	0	115000	1008		;	11.5
+#RecordIn	Content	1009	0		Hat_Mighty07	1	0	0	115000	1009		;	11.5
+;									"1,000,000 "			;	100
+#RecordIn	Container	0	1	EQ_US_IceBox	1	1	EQ_US_DIceBox					;	
+#RecordIn	Content	2001	1		EQ_US_Snowflake	1	0	0	100000	2001		;	10
+#RecordIn	Content	2002	1		EQ_US_Coal	1	0	0	100000	2002		;	10
+#RecordIn	Content	2003	1		EQ_US_WaterDrop	1	0	0	800000	2003		;	80
+;									"1,000,000 "			;	100
+#end													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													

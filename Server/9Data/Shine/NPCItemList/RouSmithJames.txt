@@ -1,0 +1,42 @@
+;		ItemList in NPC																																			
+#ignore	\o042			; 인용부호 무시																																	
+#exchange	#	\x20		; # => space																																	
+;		2006.01.25																																			
+																																					
+#Table	Tab00	;무기																																			
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																														
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																														
+#Record	0 	ShortSword	LongSword	BroadSword	-	-	-																														
+#Record	1 	ShortMace	LongMace	SpikedClub	-	-	-																														
+#Record	2 	ShortBow	LongBow	LightBow	-	-	-																														
+#Record	3 	ShortStaff	LongStaff	MagicStaff	-	-	-																														
+#Record	4 	AbelClaw	BonoClaw	CrimsonClaw	-	-	-																														
+																																					
+#Table	Tab01	;방어구																																			
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																														
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																														
+#Record	0 	LeatherBoots	LeatherHelmet	LeatherPants	LeatherShirt	-	-																														
+#Record	1 	ChainBoots	ChainHelmet	ChainPants	-	-	-																														
+#Record	2 	WoodenShield	Buckler	-	-	-	-																														
+#Record	3 	LitanyBoots	LitanyHelmet	LitanyPants	LitanyArmor	-	-																														
+#Record	4 	BlessBoots	BlessHelmet	BlessPants	-	-	-																														
+#Record	5 	FighterShield	RoundShield	-	-	-	-																														
+#Record	6 	TrivialBoots	TrivialHat	TrivialPants	TrivialShirt	-	-																														
+#Record	7 	HardLeatherBoots	HardLeatherHat	HardLeatherPants	-	-	-																														
+#Record	8 	NoviceBoots	NoviceHat	NovicePants	NoviceShirt	-	-																														
+#Record	9 	MagicBoots	MagicHat	MagicPants	-	-	-																														
+#Record	10 	ReoBoots	ReoHood	ReoPants	-	-	-																														
+#Record	11 	MarioBoots	MarioHood	MarioPants	MarioArmor	-	-																														
+																																					
+#Table	Tab02	;악세서리																																			
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																														
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																													
+#Record	0 	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-																													
+#Record	1 	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-																													
+																																				
+#End																																				
+																																				
+																																				
+																																				
+																																				
+																																				

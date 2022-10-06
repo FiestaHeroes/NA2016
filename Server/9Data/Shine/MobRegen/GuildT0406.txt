@@ -1,0 +1,80 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		itembox	N	2064	9696	0	0	661									
+#record		itembox2	N	3032	10736	0	0	500									
+#record		itembox3	N	6594	10498	0	0	682									
+#record		itembox4	N	9046	10259	0	0	542									
+#record		itembox5	N	10313	9269	0	0	556									
+#record		itembox6	N	4461	8681	229	693	52									
+#record		itembox7	N	6498	8774	766	178	6									
+#record		itembox8	N	8686	8072	0	0	598									
+#record		itembox9	N	2217	6579	514	766	0									
+#record		itembox10	N	5613	6454	0	0	640									
+#record		itembox11	N	7275	6290	0	0	577									
+#record		itembox12	N	10383	6234	790	429	0									
+#record		itembox13	N	4375	4546	500	164	48									
+#record		itembox14	N	6709	3920	557	135	14									
+#record		itembox15	N	9414	4355	137	491	35									
+#record		itembox16	N	11147	3034	84	831	20									
+#record		itembox17	N	2423	3540	0	0	584									
+#record		itembox18	N	3202	2497	0	0	359									
+#record		itembox19	N	6232	1709	661	293	-2									
+#record		itembox20	N	9413	1982	0	0	478									
+#record		lose_Itembox_a1	N	1388	1853	0	0	16									
+#record		lose_Itembox_a2	N	1388	1699	0	0	16									
+#record		lose_Itembox_a3	N	1389	1544	0	0	16									
+#record		lose_Itembox_a4	N	1397	1389	0	0	16									
+#record		lose_Itembox_a5	N	1399	1232	0	0	16									
+#record		lose_Itembox_b1	N	10974	11555	0	0	16									
+#record		lose_Itembox_b2	N	11059	11433	0	0	16									
+#record		lose_Itembox_b3	N	11147	11312	0	0	16									
+#record		lose_Itembox_b4	N	11227	11185	0	0	16									
+#record		lose_Itembox_b5	N	11313	11053	0	0	16									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		itembox	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox2	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox3	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox4	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox5	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox6	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox7	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox8	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox9	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox10	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox11	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox12	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox13	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox14	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox15	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox16	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox17	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox18	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox19	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		itembox20	GTI_BoxAll	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_a1	GTI_BoxTeamA	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_a2	GTI_BoxTeamA	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_a3	GTI_BoxTeamA	1	0	20	20	20	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_a4	GTI_BoxTeamA	1	0	30	30	30	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_a5	GTI_BoxTeamA	1	0	30	30	30	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_b1	GTI_BoxTeamB	1	0	30	30	30	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_b2	GTI_BoxTeamB	1	0	30	30	30	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_b3	GTI_BoxTeamB	1	0	30	30	30	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_b4	GTI_BoxTeamB	1	0	30	30	30	-3	7	-2	9	5	15	6	17	0
+#record		lose_Itembox_b5	GTI_BoxTeamB	1	0	30	30	30	-3	7	-2	9	5	15	6	17	0
+																	
+#end																	

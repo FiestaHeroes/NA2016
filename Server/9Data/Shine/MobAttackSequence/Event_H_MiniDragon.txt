@@ -1,0 +1,34 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	-							
+#Record	1	-							
+#Record	2	E_MD_AtkSkil2_1							
+#Record	3	E_MD_AtkSkil2_2							
+#Record	4	-							
+#Record	5	-							
+#Record	6	E_MD_AtkSkil2_1							
+#Record	7	-							
+#Record	8	-							
+#Record	9	E_MD_AtkSkil2_1							
+#Record	10	-							
+#Record	11	-							
+#Record	12	E_MD_AtkSkil2_2							
+#Record	13	E_MD_AtkSkil2_3							
+#Record	14	-							
+#Record	15	-							
+#Record	16	E_MD_AtkSkil2_1							
+#Record	17	E_MD_AtkSkil2_2							
+#Record	18	-							
+#Record	19	-							
+#Record	20	E_MD_AtkSkil2_3							
+#Record	21	E_MD_HealSkil
+#End		

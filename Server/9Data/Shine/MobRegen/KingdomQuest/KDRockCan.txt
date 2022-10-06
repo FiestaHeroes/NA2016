@@ -1,0 +1,226 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KDRockCanArea01	N	4026	3810	0	0	268									
+#record		KDRockCanArea02	N	7128	5331	0	0	422									
+#record		KDRockCanArea03	N	4305	4495	0	0	135									
+#record		KDRockCanArea04	N	6193	5586	0	0	142									
+#record		KDRockCanArea05	N	4143	4119	0	0	107									
+#record		KDRockCanArea06	N	7206	5737	0	0	128									
+#record		KDRockCanArea07	N	12603	5121	0	0	99									
+#record		KDRockCanArea08	N	13779	5586	0	0	50									
+#record		KDRockCanArea09	N	15351	5991	0	0	219									
+#record		KDRockCanArea10	N	18317	5623	0	0	261									
+#record		KDRockCanArea11	N	12512	5078	0	0	107									
+#record		KDRockCanArea12	N	17485	17380	0	0	149									
+#record		KDRockCanArea13	N	15886	10963	0	0	149									
+#record		KDRockCanArea14	N	12770	5197	0	0	107									
+#record		KDRockCanArea15	N	8134	5080	0	0	128									
+#record		KDRockCanArea16	N	6519	5585	0	0	156									
+#record		KDRockCanArea17	N	15435	6685	0	0	247									
+#record		KDRockCanArea18	N	10542	12106	0	0	268									
+#record		KDRockCanArea19	N	5695	5530	0	0	92									
+#record		KDRockCanArea20	N	9724	4901	0	0	149									
+#record		KDRockCanArea21	N	7243	4932	0	0	170									
+#record		KDRockCanArea22	N	8951	5066	0	0	498									
+#record		KDRockCanArea23	N	13901	19230	0	0	233									
+#record		KDRockCanArea24	N	15601	5380	0	0	338									
+#record		KDRockCanArea25	N	18344	21739	0	0	191									
+#record		KDRockCanArea26	N	11548	5099	0	0	107									
+#record		KDRockCanArea27	N	13931	16526	0	0	107									
+#record		KDRockCanArea28	N	11595	4915	0	0	148									
+#record		KDRockCanArea29	N	14983	12114	0	0	149									
+#record		KDRockCanArea30	N	12414	11692	0	0	240									
+#record		KDRockCanArea31	N	11125	15970	0	0	56									
+#record		KDRockCanArea32	N	11590	16147	0	0	191									
+#record		KDRockCanArea33	N	16355	6143	0	0	940									
+#record		KDRockCanArea34	N	11117	16246	0	0	50									
+#record		KDRockCanArea35	N	16707	6972	0	0	751									
+#record		KDRockCanArea36	N	4868	16357	0	0	50									
+#record		KDRockCanArea37	N	5833	15359	0	0	695									
+#record		KDRockCanArea38	N	14104	16668	0	0	177									
+#record		KDRockCanArea39	N	15075	6035	0	0	401									
+#record		KDRockCanArea40	N	13212	5333	0	0	107									
+#record		KDRockCanArea41	N	16186	8029	0	0	107									
+#record		KDRockCanArea42	N	22941	21852	0	0	737									
+#record		KDRockCanArea43	N	5072	16119	0	0	170									
+#record		KDRockCanArea44	N	11526	11794	0	0	184									
+#record		KDRockCanArea45	N	11210	11795	0	0	205									
+#record		KDRockCanArea46	N	13575	11565	0	0	218									
+#record		KDRockCanArea47	N	14164	11788	0	0	218									
+#record		KDRockCanArea48	N	15629	11780	0	0	232									
+#record		KDRockCanArea49	N	15614	9879	0	0	106									
+#record		KDRockCanArea50	N	13861	11621	0	0	239									
+#record		KDRockCanArea51	N	15727	11584	0	0	177									
+#record		KDRockCanArea52	N	16136	8198	0	0	198									
+#record		KDRockCanArea53	N	15627	9690	0	0	128									
+#record		KDRockCanArea54	N	11176	16333	0	0	50									
+#record		KDRockCanArea55	N	10724	12252	0	0	50									
+#record		KDRockCanArea56	N	10411	12136	0	0	50									
+#record		KDRockCanArea57	N	10018	15197	0	0	50									
+#record		KDRockCanArea58	N	10607	11909	0	0	50									
+#record		KDRockCanArea59	N	15464	16700	0	0	141									
+#record		KDRockCanArea60	N	11228	15938	0	0	50									
+#record		KDRockCanArea61	N	6160	13385	0	0	688									
+#record		KDRockCanArea62	N	8479	14970	0	0	737									
+#record		KDRockCanArea63	N	9468	12576	0	0	730									
+#record		KDRockCanArea64	N	9769	12305	0	0	415									
+#record		KDRockCanArea65	N	11026	4716	0	0	191									
+#record		KDRockCanArea66	N	16111	21608	0	0	289									
+#record		KDRockCanArea67	N	17470	18810	0	0	247									
+#record		KDRockCanArea68	N	9605	15479	0	0	324									
+#record		KDRockCanArea70	N	13496	21563	0	0	317									
+#record		KDRockCanArea71	N	17446	17335	0	0	310									
+#record		KDRockCanArea72	N	15853	21620	0	0	331									
+#record		KDRockCanArea73	N	14294	16793	0	0	247									
+#record		KDRockCanArea74	N	21626	22453	0	0	50									
+#record		KDRockCanArea75	N	21874	22540	0	0	64									
+#record		KDRockCanArea76	N	21866	22211	0	0	50									
+#record		KDRockCanArea77	N	21742	22865	0	0	50									
+#record		KDRockCanArea78	N	15639	16654	0	0	204									
+#record		KDRockCanArea79	N	21600	22113	0	0	50									
+#record		KDRockCanArea80	N	21408	22683	0	0	50									
+#record		KDRockCanArea81	N	23553	23662	0	0	407									
+#record		KDRockCanArea82	N	23940	23980	0	0	205									
+#record		KDRockCanArea83	N	24079	24099	0	0	50									
+#record		KDRockCanArea84	N	23200	23409	0	0	275									
+#record		KDRockCanArea85	N	22118	22625	0	0	646									
+#record		KDRockCanArea86	N	23515	23559	0	0	807									
+#record		KDRockCanArea87	N	14261	19171	0	0	414									
+#record		KDRockCanArea88	N	8973	4995	0	0	173									
+#record		KDRockCanArea89	N	6016	5582	0	0	159									
+#record		KDRockCanArea90	N	20558	22085	0	0	243									
+#record		KDRockCanArea91	N	7222	14141	0	0	264									
+#record		KDRockCanArea92	N	15303	21599	0	0	250									
+#record		KDRockCanArea93	N	17784	18346	0	0	524									
+#record		KDRockCanArea94	N	16259	5918	0	0	328									
+#record		KDRockCanArea95	N	17496	7585	0	0	257									
+#record		KDRockCanArea96	N	5077	16176	0	0	278									
+#record		KDRockCanArea97	N	12975	21112	0	0	482									
+#record		KDRockCanArea98	N	10711	4678	0	0	229									
+#record		KDRockCanArea99	N	9210	14890	0	0	1203									
+#record		KDRockCanArea100	N	8992	5069	0	0	916									
+#record		KDRockCanArea101	N	12194	11676	0	0	285									
+#record		KDRockCanArea102	N	12937	19653	0	0	300									
+#record		KDRockCanArea103	N	16665	4245	0	0	240									
+#record		KDRockCanArea104	N	18058	21751	0	0	170									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KDRockCanArea01	KQ_SandRatman	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea02	KQ_SmallProck	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea03	KQ_GiantMushRoom	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea04	KQ_GiantMushRoom	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea05	KQ_WildKebing	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea06	KQ_GiantMushRoom	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea07	KQ_WildKebing	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea08	KQ_StoneImp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea09	KQ_GiantMushRoom	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea10	KQ_StoneImp	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea11	KQ_DesertWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea12	KQ_RapidBoar	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea13	KQ_SmallProck	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea14	KQ_GiantMushRoom	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea15	KQ_StoneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea16	KQ_StoneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea17	KQ_StoneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea18	KQ_StoneImp	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea19	KQ_SmallProck	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea20	KQ_GiantMushRoom	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea21	KQ_GiantMushRoom	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea22	KQ_StoneImp	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea23	KQ_WildKebing	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea24	KQ_StoneImp	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea25	KQ_WildKebing	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea26	KQ_WildKebing	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea27	KQ_RapidBoar	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea28	KQ_DesertWolf	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea29	KQ_GiantMushRoom	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea30	KQ_StoneImp	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea31	KQ_RapidBoar	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea32	KQ_SandRatman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea33	KQ_SandRatman	20	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea34	KQ_RapidBoar	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea35	KQ_SandRatman	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea36	KQ_BossRobo	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea37	KQ_WildKebing	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea38	KQ_WildKebing	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea39	KQ_RapidBoar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea40	KQ_RapidBoar	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea41	KQ_RapidBoar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea42	KQ_WildKebing	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea43	KQ_RapidBoar	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea44	KQ_SmallProck	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea45	KQ_WildKebing	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea46	KQ_WildKebing	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea47	KQ_SandRatman	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea48	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea49	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea50	KQ_StoneImp	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea51	KQ_SandRatman	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea52	KQ_WildKebing	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea53	KQ_SandRatman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea54	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea55	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea56	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea57	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea58	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea59	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea60	KQ_SmallProck	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea61	KQ_RapidBoar	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea62	KQ_RapidBoar	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea63	KQ_RapidBoar	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea64	KQ_RapidBoar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea65	KQ_WildKebing	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea66	KQ_SmallProck	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea67	KQ_SmallProck	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea68	KQ_RapidBoar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea70	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea71	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea72	KQ_RapidBoar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea73	KQ_KissLips	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea74	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea75	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea76	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea77	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea78	KQ_KissLips	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea79	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea80	KQ_SmallProck	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea81	KQ_SandRatman	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea82	KQ_SmallProck	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea83	KQ_BossRobo	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea84	KQ_SmallProck	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea85	KQ_KissLips	20	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea86	KQ_RapidBoar	40	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea87	KQ_KissLips	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea88	KQ_SmallProck	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea89	KQ_SmallProck	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea90	KQ_RapidBoar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea91	KQ_WildKebing	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea92	KQ_SandRatman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea93	KQ_KissLips	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea94	KQ_SmallProck	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea95	KQ_SandRatman	9	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea96	KQ_SmallProck	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea97	KQ_KissLips	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea98	KQ_SandRatman	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea99	KQ_SandRatman	25	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea100	KQ_SandRatman	14	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea101	KQ_KissLips	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea102	KQ_SmallProck	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea103	KQ_DesertWolf	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDRockCanArea104	KQ_SmallProck	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

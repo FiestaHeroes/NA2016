@@ -1,0 +1,11 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.01					
+							
+#Table	Tab00	;무기					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	TE_Arena_70	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#End							

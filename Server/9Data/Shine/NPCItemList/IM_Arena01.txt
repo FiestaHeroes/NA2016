@@ -1,0 +1,65 @@
+;		ItemList in NPC												
+#ignore	\o042			; 인용부호 무시										
+#exchange	#	\x20		; # => space										
+;		2013.10.01												
+														
+#Table	Tab00	;무기												
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]							
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05							
+#Record	0	Arena_F70Sword	Arena_F80Sword	Arena_F90Sword	-	Arena_F70FShield	-							
+#Record	1	Arena_F70TSword	Arena_F80TSword	Arena_F90TSword	-	Arena_F80FShield	-							
+#Record	2	Arena_F70Axe	Arena_F80Axe	Arena_F90Axe	-	Arena_F90FShield	-							
+#Record	3	-	-	-	-	-	-							
+#Record	4	Arena_C70Mace	Arena_C80Mace	Arena_C90Mace	-	-	-							
+#Record	5	Arena_C70Hammer	Arena_C80Hammer	Arena_C90Hammer	-	-	-							
+#Record	6	Arena_F70CShield	Arena_F80CShield	Arena_F90CShield	-	-	-							
+#Record	7	Arena_A70Bow	Arena_A80Bow	Arena_A90Bow	-	-	-							
+#Record	8	Arena_A70CrossBow	Arena_A80CrossBow	Arena_A90CrossBow	-	-	-							
+#Record	9	-	-	-	-	-	-							
+#Record	10	Arena_M70Staff	Arena_M80Staff	Arena_M90Staff	-	-	-							
+#Record	11	Arena_M70Wand	Arena_M80Wand	Arena_M90Wand	-	-	-							
+#Record	12	-	-	-	-	-	-							
+#Record	13	-	-	-	-	-	-							
+#Record	14	Arena_J70Claw	Arena_J80Claw	Arena_J90Claw	-	-	-							
+#Record	15	Arena_J70DSword	Arena_J80DSword	Arena_J90DSword	-	-	-							
+#Record	16	-	-	-	-	-	-							
+#Record	17	Arena_S70Blade	Arena_S80Blade	Arena_S90Blade	-	-	-							
+														
+#Table	Tab01	;방어구												
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]							
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05							
+#Record	0	Arena_F70Helmet01	Arena_F70Armor01	Arena_F70Pants01	Arena_F70Boots01	-	-							
+#Record	1	Arena_F80Helmet01	Arena_F80Armor01	Arena_F80Pants01	Arena_F80Boots01	-	-							
+#Record	2	Arena_F90Helmet01	Arena_F90Armor01	Arena_F90Pants01	Arena_F90Boots01	-	-							
+#Record	3	-	-	-	-	-	-							
+#Record	4	Arena_C70Helmet01	Arena_C70Armor01	Arena_C70Pants01	Arena_C70Boots01	-	-							
+#Record	5	Arena_C80Helmet01	Arena_C80Armor01	Arena_C80Pants01	Arena_C80Boots01	-	-							
+#Record	6	Arena_C90Helmet01	Arena_C90Armor01	Arena_C90Pants01	Arena_C90Boots01	-	-							
+#Record	7	Arena_A70Hat01	Arena_A70Armor01	Arena_A70Pants01	Arena_A70Boots01	-	-							
+#Record	8	Arena_A80Hat01	Arena_A80Armor01	Arena_A80Pants01	Arena_A80Boots01	-	-							
+#Record	9	Arena_A90Hat01	Arena_A90Armor01	Arena_A90Pants01	Arena_A90Boots01	-	-							
+#Record	10	-	-	-	-	-	-							
+#Record	11	Arena_M70Hat01	Arena_M70Shirt01	Arena_M70Pants01	Arena_M70Boots01	-	-							
+#Record	12	Arena_M80Hat01	Arena_M80Shirt01	Arena_M80Pants01	Arena_M80Boots01	-	-							
+#Record	13	Arena_M90Hat01	Arena_M90Shirt01	Arena_M90Pants01	Arena_M90Boots01	-	-							
+#Record	14	Arena_J70Hood01	Arena_J70Armor01	Arena_J70Pants01	Arena_J70Boots01	-	-							
+#Record	15	Arena_J80Hood01	Arena_J80Armor01	Arena_J80Pants01	Arena_J80Boots01	-	-							
+#Record	16	Arena_J90Hood01	Arena_J90Armor01	Arena_J90Pants01	Arena_J90Boots01	-	-							
+#Record	17	-	-	-	-	-	-							
+#Record	18	Arena_S70Helmet01	Arena_S70Armor01	Arena_S70Pants01	Arena_S70Shoes01	-	-							
+#Record	19	Arena_S80Helmet01	Arena_S80Armor01	Arena_S80Pants01	Arena_S80Shoes01	-	-							
+#Record	20	Arena_S90Helmet01	Arena_S90Armor01	Arena_S90Pants01	Arena_S90Shoes01	-	-							
+														
+														
+														
+#Table	Tab02	;액세서리												
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]							
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05							
+#Record	0	Arena_70Neck01	Arena_80Neck01	Arena_90Neck01	-	-	-							
+#Record	1	Arena_70Ear01	Arena_80Ear01	Arena_90Ear01	-	-	-							
+#Record	2	Arena_70Ring01	Arena_80Ring01	Arena_90Ring01	-	-	-							
+#Record	3	Arena_70Ring02	Arena_80Ring02	Arena_90Ring02	-	-	-							
+														
+#End														
+														
+														

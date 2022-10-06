@@ -1,0 +1,27 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	ForasC_01	Let's conquer Devildom Fortress together and destroy the lurking evil's ambitions!	
+#Record	ForasC_02	Monsters are charging this way! Prepare yourself!	
+#Record	Notice_01	Defeat all the magical monsters.	
+#Record	ForasC_03	I will dispel the magical seal on the castle gate.	
+#Record	ForasC_04	The gate is open. Let's get going!	
+#Record	ForasC_05	The two monsters are bound together by magic. That's why you have to defeat them both at the same time. 	
+#Record	ForasC_06	"We have successfully made our way into the castle. We don't know what creatures await us inside, so don't let your guard down!"	
+#Record	ForasC_07	We've finally conquered Devildom Fortress! That will have weakened the enemy's power.	
+#Record	KQReturn5m	You will be teleported out in 5 minutes.	
+#Record	KQReturn4m	You will be teleported out in 4 minutes.	
+#Record	KQReturn3m	You will be teleported out in 3 minutes.	
+#Record	KQReturn2m	You will be teleported out in 2 minutes.	
+#Record	KQReturn60	You will be teleported out in 60 seconds.	
+#Record	KQReturn30	You will be teleported out in 30 seconds.	
+#Record	KQReturn20	You will be teleported out in 20 seconds.	
+#Record	KQReturn10	You will be teleported out in 10 seconds.	
+#Record	KQReturn5	You will be teleported out in 5 seconds.	
+			
+#End			

@@ -1,0 +1,37 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	-							
+#Record	1	ECrabAtkSkill							
+#Record	2	-							
+#Record	3	-							
+#Record	4	ECrabStun							
+#Record	5	ECrabSpine01							
+#Record	6	-							
+#Record	7	-							
+#Record	8	ECrabGum							
+#Record	9	ECrabAtkSkill							
+#Record	10	ECrabSummon							
+#Record	11	-							
+#Record	12	ECrabStun							
+#Record	13	ECrabSpine01							
+#Record	14	-							
+#Record	15	-							
+#Record	16	ECrabAtkSkill							
+#Record	17	-							
+#Record	18	-							
+#Record	19	ECrabStun							
+#Record	20	ECrabSpine01							
+#Record	21	-							
+#Record	22	ECrabSummon							
+									
+#End									
+									

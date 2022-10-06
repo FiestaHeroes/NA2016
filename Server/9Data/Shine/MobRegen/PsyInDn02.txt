@@ -1,0 +1,186 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		P_PsyIn_001	N	11230	15727	0	0	206									
+#record		P_PsyIn_002	N	10350	15839	0	0	45									
+#record		P_PsyIn_003	N	9894	16157	0	0	31									
+#record		P_PsyIn_004	N	12530	15747	0	0	213									
+#record		P_PsyIn_005	N	13361	15833	0	0	52									
+#record		P_PsyIn_006	N	13872	16155	0	0	38									
+#record		P_PsyIn_007	N	12075	16447	0	0	94									
+#record		P_PsyIn_008	N	11678	16850	0	0	115									
+#record		P_PsyIn_009	N	12389	16854	303	40	0									
+#record		P_PsyIn_010	N	10681	13874	0	0	150									
+#record		P_PsyIn_012	N	11108	13869	0	0	143									
+#record		P_PsyIn_013	N	12747	13901	0	0	157									
+#record		P_PsyIn_015	N	13108	13891	0	0	143									
+#record		P_PsyIn_016	N	10099	15133	0	0	220									
+#record		P_PsyIn_017	N	10498	14907	0	0	220									
+#record		P_PsyIn_018	N	10222	14620	0	0	220									
+#record		P_PsyIn_020	N	10020	13777	0	0	122									
+#record		P_PsyIn_022	N	10025	13326	0	0	200									
+#record		P_PsyIn_023	N	13584	15125	0	0	220									
+#record		P_PsyIn_025	N	13237	14826	0	0	220									
+#record		P_PsyIn_026	N	13625	14648	0	0	241									
+#record		P_PsyIn_027	N	13691	13829	0	0	129									
+#record		P_PsyIn_029	N	13701	13336	0	0	171									
+#record		P_PsyIn_030	N	10166	16887	0	0	200									
+#record		P_PsyIn_031	N	10604	16892	0	0	192									
+#record		P_PsyIn_032	N	10346	16592	0	0	242									
+#record		P_PsyIn_033	N	13160	16944	0	0	192									
+#record		P_PsyIn_034	N	13593	16951	0	0	199									
+#record		P_PsyIn_035	N	13375	16640	0	0	256									
+#record		P_PsyIn_036	N	11876	17621	0	0	256									
+#record		P_PsyIn_038	N	12651	17918	0	0	200									
+#record		P_PsyIn_039	N	13252	17900	0	0	200									
+#record		P_PsyIn_040	N	13400	18451	0	0	200									
+#record		P_PsyIn_041	N	13145	18937	0	0	200									
+#record		P_PsyIn_043	N	11131	17913	0	0	200									
+#record		P_PsyIn_044	N	10572	17905	0	0	200									
+#record		P_PsyIn_045	N	10372	18422	0	0	200									
+#record		P_PsyIn_046	N	10611	18933	0	0	200									
+#record		P_PsyIn_047	N	11167	18948	0	0	200									
+#record		P_PsyIn_050	N	12562	18979	0	0	200									
+#record		P_PsyIn_051	N	11877	19163	0	0	192									
+#record		P_PsyIn_052	N	12394	19954	0	0	200									
+#record		P_PsyIn_054	N	13071	19941	0	0	200									
+#record		P_PsyIn_055	N	13690	19925	0	0	200									
+#record		P_PsyIn_056	N	14349	19824	0	0	270									
+#record		P_PsyIn_057	N	14374	19125	0	0	200									
+#record		P_PsyIn_058	N	14380	18577	0	0	200									
+#record		P_PsyIn_059	N	14386	17833	0	0	200									
+#record		P_PsyIn_060	N	14392	17274	0	0	200									
+#record		P_PsyIn_062	N	14414	16767	0	0	200									
+#record		P_PsyIn_063	N	14437	16259	0	0	200									
+#record		P_PsyIn_064	N	11350	19923	0	0	200									
+#record		P_PsyIn_066	N	10721	19916	0	0	200									
+#record		P_PsyIn_067	N	10146	19882	0	0	200									
+#record		P_PsyIn_068	N	9437	19796	0	0	284									
+#record		P_PsyIn_069	N	9407	19162	0	0	200									
+#record		P_PsyIn_070	N	9413	18647	0	0	200									
+#record		P_PsyIn_071	N	9390	17765	0	0	200									
+#record		P_PsyIn_072	N	9401	17269	0	0	200									
+#record		P_PsyIn_074	N	9413	16757	0	0	200									
+#record		P_PsyIn_075	N	9401	16250	0	0	200									
+#record		P_PsyIn_076	N	15768	18459	0	0	192									
+#record		P_PsyIn_077	N	15227	18869	0	0	291									
+#record		P_PsyIn_078	N	16774	18467	0	0	305									
+#record		P_PsyIn_080	N	17783	18498	0	0	305									
+#record		P_PsyIn_081	N	8543	19091	0	0	283									
+#record		P_PsyIn_082	N	7948	18501	0	0	248									
+#record		P_PsyIn_083	N	6797	18469	0	0	277									
+#record		P_PsyIn_085	N	5801	18471	0	0	256									
+#record		P_PsyIn_086	N	20106	18466	0	0	863									
+#record		P_PsyIn_087	N	3671	18475	0	0	856									
+#record		P_PsyIn_088	N	22374	20516	0	0	605									
+#record		P_PsyIn_089	N	731	19753	0	0	619									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		P_PsyIn_001	P_Psy_Statue1	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_002	P_Psy_Statue1	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_003	P_Psy_Statue1	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_004	P_Psy_Statue1	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_005	P_Psy_Statue1	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_006	P_Psy_Statue1	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_007	P_Psy_Statue1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_008	P_Psy_Statue1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_009	P_Psy_Statue1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_010	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_012	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_013	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_015	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_016	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_017	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_018	P_Psy_Statue2	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_020	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_022	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_023	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_025	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_026	P_Psy_Statue2	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_027	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_029	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_030	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_031	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_032	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_033	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_034	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_035	P_Psy_Statue2	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_036	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_038	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_039	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_040	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_041	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_043	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_044	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_045	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_046	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_047	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_050	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_051	P_Psy_Mist1	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_052	P_Fighter10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_052	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_054	P_Fighter10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_054	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_055	P_Fighter10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_055	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_056	P_Fighter10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_056	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_057	P_Fighter10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_057	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_058	P_Fighter10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_058	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_059	P_Fighter10M	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_060	P_Fighter10M	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_062	P_Fighter10M	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_063	P_Fighter10M	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_064	P_Cleric10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_064	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_066	P_Cleric10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_066	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_067	P_Cleric10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_067	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_068	P_Cleric10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_068	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_069	P_Cleric10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_069	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_070	P_Cleric10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_070	P_Psy_Mist2	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_071	P_Cleric10F	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_072	P_Cleric10F	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_074	P_Cleric10F	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_075	P_Cleric10F	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_076	P_Archer10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_076	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_077	P_Archer10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_077	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_078	P_Archer10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_078	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_080	P_Archer10F	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_080	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_081	P_Mage10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_081	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_082	P_Mage10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_082	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_083	P_Mage10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_083	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_085	P_Mage10M	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_085	P_Psy_Mist3	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_086	P_Mage10M	8	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_087	P_Archer10F	8	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_088	P_Mage10M	8	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P_PsyIn_089	P_Archer10F	8	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+																	
+#end																	

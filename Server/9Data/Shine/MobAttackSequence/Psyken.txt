@@ -1,0 +1,34 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	PsySumSkill01			
+#Record	1	*RepeatStart			
+#Record	2	PsyAtkSkill01			
+#Record	3	PsyAtkSkill03			
+#Record	4	PsyAtkSkill02			
+#Record	5	-			
+#Record	6	PsyAtkSkill03			
+#Record	7	PsyAtkSkill02			
+#Record	8	PsyAtkSkill01			
+#Record	9	-			
+#Record	10	Psyken_Skill4			
+#Record	11	PsyAtkSkill03			
+#Record	12	Psyken_Skill4			
+#Record	13	PsyAtkSkill02			
+#Record	14	PsyAtkSkill01			
+#Record	15	-			
+#Record	16	-			
+#Record	17	PsyAtkSkill01			
+#Record	18	PsyAtkSkill02			
+#Record	19	PsyAtkSkill03			
+#Record	20	PsyAtkSkill02			
+#Record	21	Psyken_Skill4			
+#End					

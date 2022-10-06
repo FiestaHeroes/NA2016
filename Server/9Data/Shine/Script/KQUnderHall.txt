@@ -1,0 +1,56 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+;#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Robo	Robo	
+#Record	FireVivi	Fire Vivi	
+#Record	WildKebing	Wild Kebing	
+#Record	DesertWolf	Desert Wolf	
+			
+#Record	Intro00	"Humans and Elves, you call us monsters and slaughter us."	
+#Record	Intro01	I will show you how horrifying the revenge of the nature could be	
+#Record	Intro02	Let's go and massacre them all!!!!	
+#Record	Intro03	Let's go..
+#Record	Intro04	Kick!!
+#Record	Intro05	I will show you scary it is.
+#Record	Intro06	"Humans and Elves, you have been abusing Mother Nature!!! "
+#Record	Intro07	"Human beings, you'd better be prepared!"
+#Record	Intro08	"Human beings, you'd better…"
+#Record	Intro09	Don't get in the way!!!!
+#Record	Intro10	Huk!
+#Record	Intro11	We're invincible while the Soul Stone shines. You're in trouble!
+#Record	Intro12	How dare you leak such secrets!!!
+#Record	Intro13	Huk!
+#Record	Intro14	"Darn, it is inevitable, butcher them in 30 minutes!"
+#Record	RoboOut	"You are of no use, I shall take the lead!!!!!"
+		
+#Record	Suc00	"Everyone, come here!!!"
+#Record	Suc01	Sit down!
+#Record	Suc02	Stand up!
+#Record	Suc03	Back on the ground!
+#Record	Suc04	Stand up!
+#Record	Suc05	Face down on the ground!!!!!!
+#Record	Suc06	Stand up!
+#Record	Suc07	"You are so slow, everyone drop and give me 50!"
+#Record	Suc08	"Desert Wolf, head on the ground! Pull yourself together!"
+#Record	Suc09	You.. Didn't I tell you to watch your mouth?
+#Record	Suc10	"If you don't rein in your tongue, I'll rein it in for you!!!!!"
+#Record	Suc11	"Everyone, stand up, except the wolf!"
+#Record	Suc12	No weekend passes allowed until the next Kingdom Quest. Got it?
+;		
+;	KQ 임시	
+#Record	KQReturn30	Move to Elderine in 30 seconds.
+#Record	KQReturn20	Move to Elderine in 20 seconds.
+#Record	KQReturn10	Move to Elderine in 10 seconds.
+#Record	KQReturn5	Move to Elderine in 5 seconds.
+;		
+#Record	Spider01	"Keke, you've been hanging well so far, but it all ends here."
+#Record	Spider02	"You cannot contend with me those worn-out sword, bow and magic!"
+#Record	Roumenus01	"Expedition team members, never give up and fight until the end."
+#Record	Roumenus02	"We will meet again in Elderine, the city of hope."
+;		
+#End		

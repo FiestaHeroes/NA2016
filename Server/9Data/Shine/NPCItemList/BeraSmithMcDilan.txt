@@ -1,0 +1,65 @@
+;		ItemList in NPC						
+#ignore	\o042			; 인용부호 무시				
+#exchange	#	\x20		; # => space				
+;		2011.10.17						
+								
+#Table	Tab00	;베라 판매 무기						
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	MetatronSword	PrometheanSword	-	-	-	-	
+#Record	1	AstarothSword	IblisSword	-	-	-	-	
+#Record	2	AstarothAxe	IblisAxe	-	-	-	-	
+#Record	3	DynamisMace	CelestisMace	-	-	-	-	
+#Record	4	SeraphimHammer	TheseusHammer	-	-	-	-	
+#Record	5	ResberkBow	ChironBow	-	-	-	-	
+#Record	6	ZephyrosCBow	CamaelCBow	-	-	-	-	
+#Record	7	MidgardStaff	AntigaLordStaff	-	-	-	-	
+#Record	8	LeonarWand	AgrippaWand	-	-	-	-	
+#Record	9	AbyssClaw	DarkScarClaw	-	-	-	-	
+#Record	10	MartialartsDSword	CypridDSword	-	-	-	-	
+#Record	11	BrightStarBlade	GloryBlade	-	-	-	-	
+								
+#Table	Tab01	;베라 판매 방어구						
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	AstarothHelmet	AstarothArmor	AstarothPants	AstarothBoots	-	-	
+#Record	1	MetatronHelmet	MetatronArmor	MetatronPants	MetatronBoots	-	-	
+#Record	2	MetatronShield	-	-	-	-	-	
+#Record	3	-	-	-	-	-	-	
+#Record	4	IblisHelmet	IblisArmor	IblisPants	IblisBoots	-	-	
+#Record	5	PrometheanHelmet	PrometheanArmor	PrometheanPants	PrometheanBoots	-	-	
+#Record	6	PrometheanShield	-	-	-	-	-	
+#Record	7	DynamisHelmet	DynamisArmor	DynamisPants	DynamisBoots	-	-	
+#Record	8	SeraphimHelmet	SeraphimArmor	SeraphimPants	SeraphimBoots	-	-	
+#Record	9	DynamisShield	-	-	-	-	-	
+#Record	10	-	-	-	-	-	-	
+#Record	11	CelestisHelmet	CelestisArmor	CelestisPants	CelestisBoots	-	-	
+#Record	12	TheseusHelmet	TheseusArmor	TheseusPants	TheseusBoots	-	-	
+#Record	13	CelestisShield	-	-	-	-	-	
+#Record	14	ResberkHat	ResberkShirt	ResberkPants	ResberkBoots	-	-	
+#Record	15	ZephyrosHat	ZephyrosShirt	ZephyrosPants	ZephyrosBoots	-	-	
+#Record	16	-	-	-	-	-	-	
+#Record	17	ChironHat	ChironShirt	ChironPants	ChironBoots	-	-	
+#Record	18	CamaelHat	CamaelShirt	CamaelPants	CamaelBoots	-	-	
+#Record	19	-	-	-	-	-	-	
+#Record	20	LeonarHat	LeonarShirt	LeonarPants	LeonarBoots	-	-	
+#Record	21	MidgardHat	MidgardShirt	MidgardPants	MidgardBoots	-	-	
+#Record	22	-	-	-	-	-	-	
+#Record	23	AgrippaHat	AgrippaShirt	AgrippaPants	AgrippaBoots	-	-	
+#Record	24	AntigaLordHat	AntigaLordShirt	AntigaLordPants	AntigaLordBoots	-	-	
+#Record	25	-	-	-	-	-	-	
+#Record	26	MartialartsGoggles	MartialartsArmor	MartialartsPants	MartialartsBoots	-	-	
+#Record	27	AbyssHood	AbyssArmor	AbyssPants	AbyssBoots	-	-	
+#Record	28	CypridGoggles	CypridArmor	CypridPants	CypridBoots	-	-	
+#Record	29	DarkScarHood	DarkScarArmor	DarkScarPants	DarkScarBoots	-	-	
+#Record	30	-	-	-	-	-	-	
+#Record	31	TitanHelmet	TitanArmor	TitanPants	TitanShoes	-	-	
+#Record	32	BlazeHelmet	BlazeArmor	BlazePants	BlazeShoes	-	-	
+								
+#Table	Tab02	;악세서리						
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-	
+#Record	1	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-	
+								
+#End								

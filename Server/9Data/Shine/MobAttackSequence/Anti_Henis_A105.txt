@@ -1,0 +1,23 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+;	Anti_Henis_A105				
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+#Record	0	-			
+#Record	1	PowerShot08			
+#Record	2	PuryImpact09			
+#Record	3	BoneArrow09			
+#Record	4	-			
+#Record	5	PowerShot08			
+#Record	6	PuryImpact09
+#Record	7	BoneArrow09
+#Record	8	-
+#Record	9	PowerShot08
+#Record	10	PuryImpact09
+#Record	11	BoneArrow09
+#End		

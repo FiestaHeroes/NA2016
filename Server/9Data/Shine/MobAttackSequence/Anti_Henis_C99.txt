@@ -1,0 +1,23 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+;	Anti_Henis_C99				
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+#Record	0	-			
+#Record	1	Wield12			
+#Record	2	Heal17			
+#Record	3	PsychicBlunt07			
+#Record	4	-			
+#Record	5	Wield12			
+#Record	6	Heal17
+#Record	7	PsychicBlunt07
+#Record	8	-
+#Record	9	Wield12
+#Record	10	Heal17
+#Record	11	PsychicBlunt07
+#End		

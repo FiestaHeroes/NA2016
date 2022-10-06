@@ -1,0 +1,1041 @@
+;	ItemRandomOption																		
+#IGNORE	\o042			;인용부호무시															
+#EXCHANGE	#	\x20		;#=>space															
+;																			
+#TABLE	RandomOptionTable																		
+;					이후 파라미터 순서 바꾸지 말것!!!														
+;		"OptionHide : 0이면 떨어질때부터 옵션이 알려져 있음, 1이면 판독을 해야 옵션을 확인, 사용할 수 있음"																	
+#COLUMNTYPE	STRING[33]	BYTE	BYTE	BYTE	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	BYTE	;			
+#COLUMNNAME	DropItemIndex	OptionHide	MinOpCount	MaxOpCount	StrMin	StrMax	ConMin	ConMax	DexMin	DexMax	IntMin	IntMax	MenMin	MenMax	CheckSum	;	분류	레벨 제한	
+; 네임드 아이템																			
+#RECORD	RandomNamedW01	0	1	3	1	2	1	2	1	2	1	2	1	2	4	;	무기	5	
+#RECORD	RandomNamedW02	0	1	3	1	5	1	5	1	5	1	5	1	5	4	;	무기	10	
+#RECORD	RandomNamedW03	0	1	3	1	7	1	7	1	7	1	7	1	7	4	;	무기	15	
+#RECORD	RandomNamedW04	0	1	3	1	10	1	10	1	10	1	10	1	10	4	;	무기	20	
+#RECORD	RandomNamedW05	0	1	3	1	15	1	15	1	15	1	15	1	15	4	;	무기	30	
+#RECORD	RandomNamedW06	0	1	3	1	20	1	20	1	20	1	20	1	20	4	;	무기	40	
+#RECORD	RandomNamedW07	0	1	3	1	25	1	25	1	25	1	25	1	25	4	;	무기	50	
+#RECORD	RandomNamedW08	0	1	3	1	30	1	30	1	30	1	30	1	30	4	;	무기	60	
+#RECORD	RandomNamedW09	0	1	3	1	35	1	35	1	35	1	35	1	35	4	;	무기	70	
+#RECORD	RandomNamedW10	0	1	3	1	40	1	40	1	40	1	40	1	40	4	;	무기	80	
+#RECORD	RandomNamedW11	0	1	3	1	45	1	45	1	45	1	45	1	45	4	;	무기	90	
+#RECORD	RandomNamedW12	0	1	3	1	50	1	50	1	50	1	50	1	50	4	;	무기	100	
+#RECORD	RandomNamedW13	0	1	3	1	55	1	55	1	55	1	55	1	55	4	;	무기	108	
+#RECORD	RandomNamedW14	0	1	3	1	60	1	60	1	60	1	60	1	60	4	;	무기	114	
+#RECORD	RandomNamedW15	0	1	3	1	65	1	65	1	65	1	65	1	65	4	;	무기	118	
+#RECORD	RandomNamedA02	0	1	3	1	7	1	7	1	7	1	7	1	7	4	;	아머	8	
+#RECORD	RandomNamedA03	0	1	3	1	10	1	10	1	10	1	10	1	10	4	;	아머	20	
+#RECORD	RandomNamedA04	0	1	3	1	15	1	15	1	15	1	15	1	15	4	;	아머	30	
+#RECORD	RandomNamedA05	0	1	3	1	20	1	20	1	20	1	20	1	20	4	;	아머	40	
+#RECORD	RandomNamedA06	0	1	3	1	25	1	25	1	25	1	25	1	25	4	;	아머	50	
+#RECORD	RandomNamedA07	0	1	3	1	30	1	30	1	30	1	30	1	30	4	;	아머	60	
+#RECORD	RandomNamedA08	0	1	3	1	35	1	35	1	35	1	35	1	35	4	;	아머	70	
+#RECORD	RandomNamedA09	0	1	3	1	40	1	40	1	40	1	40	1	40	4	;	아머	80	
+#RECORD	RandomNamedA10	0	1	3	1	45	1	45	1	45	1	45	1	45	4	;	아머	90	
+#RECORD	RandomNamedA11	0	1	3	1	50	1	50	1	50	1	50	1	50	4	;	아머	99	
+#RECORD	RandomNamedA12	0	1	3	1	55	1	55	1	55	1	55	1	55	4	;	아머	100	
+#RECORD	RandomNamedA13	0	1	3	1	60	1	60	1	60	1	60	1	60	4	;	아머	108	
+#RECORD	RandomNamedA14	0	1	3	1	65	1	65	1	65	1	65	1	65	4	;	아머	114	
+#RECORD	RandomNamedA15	0	1	3	1	70	1	70	1	70	1	70	1	70	4	;	아머	118	
+#RECORD	RandomNamedP02	0	1	3	1	6	1	6	1	6	1	6	1	6	4	;	팬츠	6	
+#RECORD	RandomNamedP03	0	1	3	1	9	1	9	1	9	1	9	1	9	4	;	팬츠	18	
+#RECORD	RandomNamedP04	0	1	3	1	14	1	14	1	14	1	14	1	14	4	;	팬츠	28	
+#RECORD	RandomNamedP05	0	1	3	1	19	1	19	1	19	1	19	1	19	4	;	팬츠	38	
+#RECORD	RandomNamedP06	0	1	3	1	24	1	24	1	24	1	24	1	24	4	;	팬츠	48	
+#RECORD	RandomNamedP07	0	1	3	1	29	1	29	1	29	1	29	1	29	4	;	팬츠	58	
+#RECORD	RandomNamedP08	0	1	3	1	34	1	34	1	34	1	34	1	34	4	;	팬츠	68	
+#RECORD	RandomNamedP09	0	1	3	1	39	1	39	1	39	1	39	1	39	4	;	팬츠	78	
+#RECORD	RandomNamedP10	0	1	3	1	44	1	44	1	44	1	44	1	44	4	;	팬츠	88	
+#RECORD	RandomNamedP11	0	1	3	1	49	1	49	1	49	1	49	1	49	4	;	팬츠	98	
+#RECORD	RandomNamedP12	0	1	3	1	54	1	54	1	54	1	54	1	54	4	;	팬츠	100	
+#RECORD	RandomNamedP13	0	1	3	1	59	1	59	1	59	1	59	1	59	4	;	팬츠	108	
+#RECORD	RandomNamedP14	0	1	3	1	64	1	64	1	64	1	64	1	64	4	;	팬츠	114	
+#RECORD	RandomNamedP15	0	1	3	1	69	1	69	1	69	1	69	1	69	4	;	팬츠	118	
+#RECORD	RandomNamedH02	0	1	2	1	5	1	5	1	5	1	5	1	5	3	;	헬멧	4	
+#RECORD	RandomNamedH03	0	1	2	1	8	1	8	1	8	1	8	1	8	3	;	헬멧	16	
+#RECORD	RandomNamedH04	0	1	2	1	13	1	13	1	13	1	13	1	13	3	;	헬멧	26	
+#RECORD	RandomNamedH05	0	1	2	1	18	1	18	1	18	1	18	1	18	3	;	헬멧	36	
+#RECORD	RandomNamedH06	0	1	2	1	23	1	23	1	23	1	23	1	23	3	;	헬멧	46	
+#RECORD	RandomNamedH07	0	1	2	1	28	1	28	1	28	1	28	1	28	3	;	헬멧	56	
+#RECORD	RandomNamedH08	0	1	2	1	33	1	33	1	33	1	33	1	33	3	;	헬멧	66	
+#RECORD	RandomNamedH09	0	1	2	1	38	1	38	1	38	1	38	1	38	3	;	헬멧	76	
+#RECORD	RandomNamedH10	0	1	2	1	43	1	43	1	43	1	43	1	43	3	;	헬멧	86	
+#RECORD	RandomNamedH11	0	1	2	1	48	1	48	1	48	1	48	1	48	3	;	헬멧	96	
+#RECORD	RandomNamedH12	0	1	2	1	53	1	53	1	53	1	53	1	53	3	;	헬멧	100	
+#RECORD	RandomNamedH13	0	1	2	1	58	1	58	1	58	1	58	1	58	3	;	헬멧	108	
+#RECORD	RandomNamedH14	0	1	2	1	63	1	63	1	63	1	63	1	63	3	;	헬멧	114	
+#RECORD	RandomNamedH15	0	1	2	1	68	1	68	1	68	1	68	1	68	3	;	헬멧	118	
+#RECORD	RandomNamedB02	0	1	2	1	4	1	4	1	4	1	4	1	4	3	;	부츠	2	
+#RECORD	RandomNamedB03	0	1	2	1	7	1	7	1	7	1	7	1	7	3	;	부츠	14	
+#RECORD	RandomNamedB04	0	1	2	1	12	1	12	1	12	1	12	1	12	3	;	부츠	24	
+#RECORD	RandomNamedB05	0	1	2	1	17	1	17	1	17	1	17	1	17	3	;	부츠	34	
+#RECORD	RandomNamedB06	0	1	2	1	22	1	22	1	22	1	22	1	22	3	;	부츠	44	
+#RECORD	RandomNamedB07	0	1	2	1	27	1	27	1	27	1	27	1	27	3	;	부츠	54	
+#RECORD	RandomNamedB08	0	1	2	1	32	1	32	1	32	1	32	1	32	3	;	부츠	64	
+#RECORD	RandomNamedB09	0	1	2	1	37	1	37	1	37	1	37	1	37	3	;	부츠	74	
+#RECORD	RandomNamedB10	0	1	2	1	42	1	42	1	42	1	42	1	42	3	;	부츠	84	
+#RECORD	RandomNamedB11	0	1	2	1	47	1	47	1	47	1	47	1	47	3	;	부츠	94	
+#RECORD	RandomNamedB12	0	1	2	1	52	1	52	1	52	1	52	1	52	3	;	부츠	100	
+#RECORD	RandomNamedB13	0	1	2	1	57	1	57	1	57	1	57	1	57	3	;	부츠	108	
+#RECORD	RandomNamedB14	0	1	2	1	62	1	62	1	62	1	62	1	62	3	;	부츠	114	
+#RECORD	RandomNamedB15	0	1	2	1	67	1	67	1	67	1	67	1	67	3	;	부츠	118	
+#RECORD	RandomNamedS01	0	1	3	1	2	1	2	1	2	1	2	1	2	4	;	방패	5	
+#RECORD	RandomNamedS02	0	1	3	1	7	1	7	1	7	1	7	1	7	4	;	방패	15	
+#RECORD	RandomNamedS03	0	1	3	1	10	1	10	1	10	1	10	1	10	4	;	방패	20	
+#RECORD	RandomNamedS04	0	1	3	1	15	1	15	1	15	1	15	1	15	4	;	방패	30	
+#RECORD	RandomNamedS05	0	1	3	1	20	1	20	1	20	1	20	1	20	4	;	방패	40	
+#RECORD	RandomNamedS06	0	1	3	1	25	1	25	1	25	1	25	1	25	4	;	방패	50	
+#RECORD	RandomNamedS07	0	1	3	1	30	1	30	1	30	1	30	1	30	4	;	방패	60	
+#RECORD	RandomNamedS08	0	1	3	1	35	1	35	1	35	1	35	1	35	4	;	방패	70	
+#RECORD	RandomNamedS09	0	1	3	1	40	1	40	1	40	1	40	1	40	4	;	방패	80	
+#RECORD	RandomNamedS10	0	1	3	1	45	1	45	1	45	1	45	1	45	4	;	방패	90	
+#RECORD	RandomNamedS11	0	1	3	1	50	1	50	1	50	1	50	1	50	4	;	방패	100	
+#RECORD	RandomNamedS12	0	1	3	1	55	1	55	1	55	1	55	1	55	4	;	방패	108	
+#RECORD	RandomNamedS13	0	1	3	1	60	1	60	1	60	1	60	1	60	4	;	방패	114	
+#RECORD	RandomNamedS14	0	1	3	1	65	1	65	1	65	1	65	1	65	4	;	방패	118	
+; 몹네임드 아이템															0	;			
+#RECORD	RandomNamedMW01	0	1	3	1	5	1	5	1	5	1	5	1	5	4	;	무기	10	
+#RECORD	RandomNamedMW02	0	1	3	1	7	1	7	1	7	1	7	1	7	4	;	무기	15	
+#RECORD	RandomNamedMW03	0	1	3	1	10	1	10	1	10	1	10	1	10	4	;	무기	20	
+#RECORD	RandomNamedMW04	0	1	3	1	15	1	15	1	15	1	15	1	15	4	;	무기	30	
+#RECORD	RandomNamedMW05	0	1	3	1	20	1	20	1	20	1	20	1	20	4	;	무기	40	
+#RECORD	RandomNamedMW06	0	1	3	1	25	1	25	1	25	1	25	1	25	4	;	무기	50	
+#RECORD	RandomNamedMW07	0	1	3	1	30	1	30	1	30	1	30	1	30	4	;	무기	60	
+#RECORD	RandomNamedMW08	0	1	3	1	35	1	35	1	35	1	35	1	35	4	;	무기	70	
+#RECORD	RandomNamedMW09	0	1	3	1	40	1	40	1	40	1	40	1	40	4	;	무기	80	
+#RECORD	RandomNamedMW10	0	1	3	1	45	1	45	1	45	1	45	1	45	4	;	무기	85	
+#RECORD	RandomNamedMW11	0	1	3	1	50	1	50	1	50	1	50	1	50	4	;	무기	90	
+#RECORD	RandomNamedMW12	0	1	3	1	55	1	55	1	55	1	55	1	55	4	;	무기	100	
+#RECORD	RandomNamedMW13	0	1	3	1	60	1	60	1	60	1	60	1	60	4	;	무기	108	
+#RECORD	RandomNamedMW14	0	1	3	1	65	1	65	1	65	1	65	1	65	4	;	무기	114	
+#RECORD	RandomNamedMW15	0	1	3	1	70	1	70	1	70	1	70	1	70	4	;	무기	118	
+; 레어 아이템															0	;			
+#RECORD	RandomRare50	0	2	5	1	25	1	25	1	25	1	25	1	25	7	;	무기	50	
+#RECORD	RandomRare60	0	2	5	1	30	1	30	1	30	1	30	1	30	7	;	무기	60	
+#RECORD	RandomRare70	0	2	5	1	35	1	35	1	35	1	35	1	35	7	;	무기	70	
+#RECORD	RandomRare80	0	2	5	1	40	1	40	1	40	1	40	1	40	7	;	무기	80	
+#RECORD	RandomRare90	0	2	5	1	45	1	45	1	45	1	45	1	45	7	;	무기	90	
+#RECORD	RandomRare100	0	2	5	1	50	1	50	1	50	1	50	1	50	7	;	무기	100	
+#RECORD	RandomRare105	0	2	5	1	55	1	55	1	55	1	55	1	55	7	;	무기	105	
+; 유니크 아이템															0	;			
+#RECORD	UniqueW01	0	2	5	1	70	1	70	1	70	1	70	1	70	7	;	무기	90	
+#RECORD	UniqueW02	0	2	5	1	80	1	80	1	80	1	80	1	80	7	;	무기	118	
+#RECORD	UniqueW03	0	2	5	1	90	1	90	1	90	1	90	1	90	7	;	무기	120	
+#RECORD	UniqueS01	0	2	5	1	70	1	70	1	70	1	70	1	70	7	;	무기	90	
+#RECORD	UniqueS02	0	2	5	1	80	1	80	1	80	1	80	1	80	7	;	무기	118	
+#RECORD	UniqueS03	0	2	5	1	90	1	90	1	90	1	90	1	90	7	;	무기	120	
+;액세서리 아이템																			
+#RECORD	NaAcc005	0	1	3	1	1	1	1	1	1	1	1	1	1	4	;	액세서리	5 ~ 7	
+#RECORD	NaAcc010	0	1	3	1	1	1	1	1	1	1	1	1	1	4	;	액세서리	10 ~ 12
+#RECORD	NaAcc015	0	1	3	1	2	1	2	1	2	1	2	1	2	4	;	액세서리	16 ~ 19
+#RECORD	NaAcc020	0	1	3	1	2	1	2	1	2	1	2	1	2	4	;	액세서리	20 ~ 24
+#RECORD	NaAcc025	0	1	3	1	3	1	3	1	3	1	3	1	3	4	;	액세서리	26 ~ 28
+#RECORD	NaAcc030	0	1	3	1	3	1	3	1	3	1	3	1	3	4	;	액세서리	33
+#RECORD	NaAcc035	0	1	3	1	4	1	4	1	4	1	4	1	4	4	;	액세서리	35 ~ 39
+#RECORD	NaAcc040	0	1	3	1	4	1	4	1	4	1	4	1	4	4	;	액세서리	40 ~ 43
+#RECORD	NaAcc045	0	1	3	1	5	1	5	1	5	1	5	1	5	4	;	액세서리	46 ~ 48
+#RECORD	NaAcc050	0	1	3	1	5	1	5	1	5	1	5	1	5	4	;	액세서리	50 ~ 54
+#RECORD	NaAcc055	0	1	3	1	6	1	6	1	6	1	6	1	6	4	;	액세서리	55 ~ 57
+#RECORD	NaAcc060	0	1	3	1	6	1	6	1	6	1	6	1	6	4	;	액세서리	60 ~ 64
+#RECORD	NaAcc065	0	1	3	1	7	1	7	1	7	1	7	1	7	4	;	액세서리	65 ~ 67
+#RECORD	NaAcc070	0	1	3	1	7	1	7	1	7	1	7	1	7	4	;	액세서리	70 ~ 73
+#RECORD	NaAcc075	0	1	3	1	8	1	8	1	8	1	8	1	8	4	;	액세서리	75 ~ 78
+#RECORD	NaAcc080	0	1	3	1	8	1	8	1	8	1	8	1	8	4	;	액세서리	80
+#RECORD	NaAcc085	0	1	3	1	9	1	9	1	9	1	9	1	9	4	;	액세서리	85 ~ 88
+#RECORD	NaAcc090	0	1	3	1	9	1	9	1	9	1	9	1	9	4	;	액세서리	90
+#RECORD	NaAcc095	0	1	3	1	10	1	10	1	10	1	10	1	10	4	;	액세서리	95
+#RECORD	NaAcc100	0	1	3	1	10	1	10	1	10	1	10	1	10	4	;	액세서리	102
+#RECORD	NaAcc105	0	1	3	1	11	1	11	1	11	1	11	1	11	4	;	액세서리	104
+#RECORD	NaAcc110	0	1	3	1	11	1	11	1	11	1	11	1	11	4	;	액세서리	110
+#RECORD	NaAcc115	0	1	3	1	12	1	12	1	12	1	12	1	12	4	;	액세서리	112 ~ 118
+#RECORD	NaAcc120	0	1	3	1	12	1	12	1	12	1	12	1	12	4	;	액세서리	120
+#RECORD	NaAcc125	0	1	3	1	13	1	13	1	13	1	13	1	13	4	;		
+#RECORD	NaAcc130	0	1	3	1	13	1	13	1	13	1	13	1	13	4	;		
+#RECORD	NaAcc135	0	1	3	1	14	1	14	1	14	1	14	1	14	4	;		
+#RECORD	NaAcc140	0	1	3	1	14	1	14	1	14	1	14	1	14	4	;		
+#RECORD	NaAcc145	0	1	3	1	15	1	15	1	15	1	15	1	15	4	;		
+#RECORD	NaAcc150	0	1	3	1	15	1	15	1	15	1	15	1	15	4	;		
+#RECORD	RaAcc005	0	2	4	1	5	1	5	1	5	1	5	1	5	6	;	R-액세서리	5
+#RECORD	RaAcc010	0	2	4	1	6	1	6	1	6	1	6	1	6	6	;	R-액세서리	10
+#RECORD	RaAcc015	0	2	4	1	7	1	7	1	7	1	7	1	7	6	;	R-액세서리	15
+#RECORD	RaAcc020	0	2	4	1	8	1	8	1	8	1	8	1	8	6	;	R-액세서리	20
+#RECORD	RaAcc025	0	2	4	1	9	1	9	1	9	1	9	1	9	6	;	R-액세서리	25
+#RECORD	RaAcc030	0	2	4	1	10	1	10	1	10	1	10	1	10	6	;	R-액세서리	30
+#RECORD	RaAcc035	0	2	4	1	11	1	11	1	11	1	11	1	11	6	;	R-액세서리	35
+#RECORD	RaAcc040	0	2	4	1	12	1	12	1	12	1	12	1	12	6	;	R-액세서리	40
+#RECORD	RaAcc045	0	2	4	1	13	1	13	1	13	1	13	1	13	6	;	R-액세서리	45
+#RECORD	RaAcc050	0	2	4	1	14	1	14	1	14	1	14	1	14	6	;	R-액세서리	50
+#RECORD	RaAcc055	0	2	4	1	15	1	15	1	15	1	15	1	15	6	;	R-액세서리	55
+#RECORD	RaAcc060	0	2	4	1	16	1	16	1	16	1	16	1	16	6	;	R-액세서리	60
+#RECORD	RaAcc065	0	2	4	1	17	1	17	1	17	1	17	1	17	6	;	R-액세서리	65
+#RECORD	RaAcc070	0	2	4	1	18	1	18	1	18	1	18	1	18	6	;	R-액세서리	70
+#RECORD	RaAcc075	0	2	4	1	19	1	19	1	19	1	19	1	19	6	;	R-액세서리	75
+#RECORD	RaAcc080	0	2	4	1	20	1	20	1	20	1	20	1	20	6	;	R-액세서리	80
+#RECORD	RaAcc085	0	2	4	1	21	1	21	1	21	1	21	1	21	6	;	R-액세서리	85
+#RECORD	RaAcc090	0	2	4	1	22	1	22	1	22	1	22	1	22	6	;	R-액세서리	90
+#RECORD	RaAcc095	0	2	4	1	23	1	23	1	23	1	23	1	23	6	;	R-액세서리	95
+#RECORD	RaAcc100	0	2	4	1	24	1	24	1	24	1	24	1	24	6	;	R-액세서리	100
+#RECORD	RaAcc105	0	2	4	1	25	1	25	1	25	1	25	1	25	6	;	R-액세서리	105
+#RECORD	RaAcc110	0	2	4	1	26	1	26	1	26	1	26	1	26	6	;	R-액세서리	110
+#RECORD	RaAcc115	0	2	4	1	27	1	27	1	27	1	27	1	27	6	;	R-액세서리	115
+#RECORD	RaAcc120	0	2	4	1	28	1	28	1	28	1	28	1	28	6	;	R-액세서리	120
+#RECORD	RaAcc125	0	2	4	1	29	1	29	1	29	1	29	1	29	6	;		
+#RECORD	RaAcc130	0	2	4	1	30	1	30	1	30	1	30	1	30	6	;		
+#RECORD	RaAcc135	0	2	4	1	31	1	31	1	31	1	31	1	31	6	;		
+#RECORD	RaAcc140	0	2	4	1	32	1	32	1	32	1	32	1	32	6	;		
+#RECORD	RaAcc145	0	2	4	1	33	1	33	1	33	1	33	1	33	6	;		
+#RECORD	RaAcc150	0	2	4	1	34	1	34	1	34	1	34	1	34	6	;		
+#RECORD	UnAcc005	0	2	5	1	10	1	10	1	10	1	10	1	10	7	;	U-액세서리	5
+#RECORD	UnAcc010	0	2	5	1	12	1	12	1	12	1	12	1	12	7	;	U-액세서리	10
+#RECORD	UnAcc015	0	2	5	1	14	1	14	1	14	1	14	1	14	7	;	U-액세서리	15
+#RECORD	UnAcc020	0	2	5	1	16	1	16	1	16	1	16	1	16	7	;	U-액세서리	20
+#RECORD	UnAcc025	0	2	5	1	18	1	18	1	18	1	18	1	18	7	;	U-액세서리	25
+#RECORD	UnAcc030	0	2	5	1	20	1	20	1	20	1	20	1	20	7	;	U-액세서리	30
+#RECORD	UnAcc035	0	2	5	1	22	1	22	1	22	1	22	1	22	7	;	U-액세서리	35
+#RECORD	UnAcc040	0	2	5	1	24	1	24	1	24	1	24	1	24	7	;	U-액세서리	40
+#RECORD	UnAcc045	0	2	5	1	26	1	26	1	26	1	26	1	26	7	;	U-액세서리	45
+#RECORD	UnAcc050	0	2	5	1	28	1	28	1	28	1	28	1	28	7	;	U-액세서리	50
+#RECORD	UnAcc055	0	2	5	1	30	1	30	1	30	1	30	1	30	7	;	U-액세서리	55
+#RECORD	UnAcc060	0	2	5	1	32	1	32	1	32	1	32	1	32	7	;	U-액세서리	60
+#RECORD	UnAcc065	0	2	5	1	34	1	34	1	34	1	34	1	34	7	;	U-액세서리	65
+#RECORD	UnAcc070	0	2	5	1	36	1	36	1	36	1	36	1	36	7	;	U-액세서리	70
+#RECORD	UnAcc075	0	2	5	1	38	1	38	1	38	1	38	1	38	7	;	U-액세서리	75
+#RECORD	UnAcc080	0	2	5	1	40	1	40	1	40	1	40	1	40	7	;	U-액세서리	80
+#RECORD	UnAcc085	0	2	5	1	42	1	42	1	42	1	42	1	42	7	;	U-액세서리	85
+#RECORD	UnAcc090	0	2	5	1	44	1	44	1	44	1	44	1	44	7	;	U-액세서리	90
+#RECORD	UnAcc095	0	2	5	1	46	1	46	1	46	1	46	1	46	7	;	U-액세서리	95
+#RECORD	UnAcc100	0	2	5	1	48	1	48	1	48	1	48	1	48	7	;	U-액세서리	100
+#RECORD	UnAcc105	0	2	5	1	50	1	50	1	50	1	50	1	50	7	;	U-액세서리	105
+#RECORD	UnAcc110	0	2	5	1	52	1	52	1	52	1	52	1	52	7	;	U-액세서리	110
+#RECORD	UnAcc115	0	2	5	1	54	1	54	1	54	1	54	1	54	7	;	U-액세서리	115
+#RECORD	UnAcc120	0	2	5	1	56	1	56	1	56	1	56	1	56	7	;	U-액세서리	120
+#RECORD	UnAcc125	0	2	5	1	58	1	58	1	58	1	58	1	58	7	;		
+#RECORD	UnAcc130	0	2	5	1	60	1	60	1	60	1	60	1	60	7	;		
+#RECORD	UnAcc135	0	2	5	1	62	1	62	1	62	1	62	1	62	7	;		
+#RECORD	UnAcc140	0	2	5	1	64	1	64	1	64	1	64	1	64	7	;		
+#RECORD	UnAcc145	0	2	5	1	66	1	66	1	66	1	66	1	66	7	;		
+#RECORD	UnAcc150	0	2	5	1	68	1	68	1	68	1	68	1	68	7	;		
+#END																		
+																		
+																		
+																		
+																		
+																		
+																		
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

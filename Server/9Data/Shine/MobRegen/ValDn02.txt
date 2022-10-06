@@ -1,0 +1,107 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		ValDn02	N	2114	10131	0	0	275									
+#record		ValDn02_01	N	3007	10709	0	0	107									
+#record		ValDn02_02	N	3652	10083	0	0	107									
+#record		ValDn02_03	N	3489	10464	0	0	191									
+#record		ValDn02_04	N	1595	9011	0	0	163									
+#record		ValDn02_05	N	1645	8154	0	0	156									
+#record		ValDn02_06	N	2530	9008	0	0	156									
+#record		ValDn02_07	N	2997	8175	0	0	149									
+#record		ValDn02_08	N	3975	8809	0	0	142									
+#record		ValDn02_09	N	4606	8411	0	0	163									
+#record		ValDn02_10	N	3473	6500	0	0	170									
+#record		ValDn02_11	N	2781	6975	0	0	149									
+#record		ValDn02_12	N	2849	7565	0	0	128									
+#record		ValDn02_13	N	3878	7083	0	0	142									
+#record		ValDn02_14	N	5141	9008	0	0	170									
+#record		ValDn02_15	N	1230	6962	0	0	184									
+#record		ValDn02_16	N	1866	5747	0	0	170									
+#record		ValDn02_17	N	1100	5605	0	0	170									
+#record		ValDn02_18	N	1146	4985	0	0	163									
+#record		ValDn02_19	N	1453	4533	0	0	163									
+#record		ValDn02_20	N	2061	4334	0	0	170									
+#record		ValDn02_21	N	2523	5400	0	0	163									
+#record		ValDn02_22	N	2674	4740	0	0	149									
+#record		ValDn02_23	N	1867	5116	0	0	941									
+#record		ValDn02_24	N	5899	6993	0	0	156									
+#record		ValDn02_25	N	5412	6523	0	0	156									
+#record		ValDn02_26	N	4812	6423	0	0	149									
+#record		ValDn02_27	N	4378	5933	0	0	163									
+#record		ValDn02_28	N	6848	6432	0	0	156									
+#record		ValDn02_29	N	6900	5613	0	0	149									
+#record		ValDn02_30	N	6513	4914	0	0	163									
+#record		ValDn02_31	N	5800	4861	0	0	170									
+#record		ValDn02_32	N	5994	5884	0	0	156									
+#record		ValDn02_33	N	5223	5505	0	0	149									
+#record		ValDn02_34	N	6538	5471	0	0	794									
+#record		ValDn02_35	N	5111	6375	172	1083	56									
+#record		ValDn02_36	N	5182	2770	0	0	170									
+#record		ValDn02_37	N	4559	2266	0	0	184									
+#record		ValDn02_38	N	3712	2749	0	0	198									
+#record		ValDn02_39	N	4256	3736	0	0	198									
+#record		ValDn02_40	N	4453	2949	0	0	927									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		ValDn02	P_Phino1	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_01	P_Phino1	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_02	P_Phino1	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_03	P_PhinoFlie	1	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_04	P_Phino1	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_05	P_Phino1	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_06	P_Phino1	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_07	P_Phino1	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_08	P_Phino1	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_09	P_Phino2	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_10	P_Phino2	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_10	P_PhinoFlie	1	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_11	P_Phino2	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_11	P_PhinoFlie	1	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_12	P_Phino2	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_13	P_Phino2	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_13	P_PhinoFlie	1	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_14	P_Phino2	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_15	P_Phino2	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_16	P_Phino2	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_16	P_Phino3	1	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_17	P_Phino3	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_18	P_Phino3	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_19	P_Phino3	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_20	P_Phino3	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_21	P_Phino3	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_22	P_Phino3	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_23	P_PhinoFlie	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_24	P_Phino3	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_25	P_Phino3	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_26	P_Phino3	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_27	P_Phino4	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_28	P_Phino3	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_28	P_Phino4	1	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_29	P_Phino4	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_30	P_Phino4	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_31	P_Phino4	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_32	P_Phino4	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_33	P_Phino4	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_34	P_PhinoFlie	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_35	P_PhinoFlie	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_36	P_Phino4	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_37	P_Phino4	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_38	P_Phino4	3	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_39	P_Phino4	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+#record		ValDn02_40	P_PhinoFlie	2	0	30	40	50	-10	20	-5	40	0	50	5	60	10
+																	
+#end																	

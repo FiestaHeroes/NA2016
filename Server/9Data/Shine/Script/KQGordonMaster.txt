@@ -1,0 +1,44 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	Rumenus0	We can feel some divine force from a secret room somewhere in the northwest.	
+#Record	Rumenus1	"You'll be able to meet Reinhardt, a hero who lost his soul to an evil spirit.."	
+#Record	Rumenus2	Go meet the hero and seek a way to drive the evil spirit out of here. 	
+#Record	Rumenus3	This is as far as I can help you. I hope I will see you again.	
+			
+#Record	ItemDrop	The key is found.	
+			
+#Record	Hero00	"My name is Reinhardt. I went on a journey to defeat Gordon Master, the evil spirit a long time ago. "	
+#Record	Hero01	"I tried to use these equipment which possess the powers of Teva, but I failed as you can see. "	
+#Record	Hero02	I have been waiting for the people who I gave these equipment to for a long time. 
+#Record	Hero03	"I will give these to you, so please defeat the evil spirit here."
+#Record	Hero04	This is a warrior's sword that can tear apart the evil spirit's shield.
+#Record	Hero05	There is a huge shield that protects the evil spirit's body. 
+#Record	Hero06	"Thus, you cannot damage it without this sword."
+#Record	Hero07	If you possess this sword or stay near the person who wields it... 
+#Record	Hero08	you can attack it regardless of its shield.
+#Record	Hero09	The next item is the Ruby of Truth. This ruby can reveal anything covered by the deceptive curtain made by the evil spirit. 
+#Record	Hero10	The evil spirit will attack you from behind it.
+#Record	Hero11	Please take the Ruby of Truth and carry it with you.
+#Record	Hero12	Then you will be able to find the evil spirit through this deceptive curtain. 
+#Record	Hero13	"Finally, this is the Spiritual Crystal. "
+#Record	Hero14	You can locate the evil spirit if you use it.
+#Record	Hero15	Please use it when the evil spirit suddenly disappears.
+#Record	Hero16	"At last, you will arrive at a sealed door that you cannot open."
+#Record	Hero17	"The door is under the evil spirit's curse, so you cannot open it in an ordinary way."
+#Record	Hero18	Use the help of monsters that use evil forces. That is the only way to destroy the door.
+#Record	Hero19	How to open the door depends entirely on your decisions. 
+		
+#Record	GM_Teleport800	"You stupid, find me if you can."
+#Record	GM_Teleport600	"Wake up, the being of darkness…."
+#Record	GM_Teleport400	You cannot win over me…
+#Record	GM_Teleport200	Your pain will last longer as your life prolongs.
+		
+#Record	Success	No!!!
+#Record	Fail	"Hahaha, lots of quality spirits have gathered... "
+
+#End		

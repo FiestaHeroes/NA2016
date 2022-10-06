@@ -1,0 +1,277 @@
+open [main]
+    var InterruptBlock      1
+        InterruptArg        2
+        Door1               3
+        Door2               4
+        Door3               5
+        Guard               "6"
+        EffDoor1            "7"
+        EffDoor2            "8"
+        EffDoor3            "9"
+        Boss           "ABCDE".
+
+    doorbuild Door1 "KQ_SlimeGate" 9860 6094  272 1000 "Normal".      ; 1층과 2층 사이
+    doorbuild Door2 "KQ_SlimeGate" 6692 3944    6 1000 "Normal".      ; 2층과 3층 사이
+    doorbuild Door3 "KQ_SlimeGate" 5894 6098   88 1000 "Normal".      ; 3층과 4층 사이
+
+    doorclose Door1 "CloseGate01".           ; 모든 문을 닫음
+    doorclose Door2 "CloseGate02".
+    doorclose Door3 "CloseGate03".
+
+    effectobj EffDoor1 Door1 "KQ_SlimeGate" 3600000 1000.
+    effectobj EffDoor2 Door2 "KQ_SlimeGate" 3600000 1000.
+    effectobj EffDoor3 Door3 "KQ_SlimeGate" 3600000 1000.
+
+    waitlogin Guard.
+    if Guard == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+    pause Sec 5.
+
+    scriptfile "KQHoneying".
+
+    timelimit Min 35.
+
+    call "FirstFloor".
+    call "SecondFloor".
+    call "ThirdFloor".
+    call "TopFloor".
+close
+
+;; 문 테스트용, 10초마다 문 여닫기
+;open [FirstFloor]
+;    interruptclear.
+;    interruptset TimeInterval 10000 "DoorOC".
+;    var DoorState.
+;    DoorState = "Close".
+;    infinite
+;    open
+;        waitinterrupt InterruptBlock "InterruptArg".
+;        call InterruptBlock.
+;    close
+;close
+;
+;open [DoorOC]
+;    if DoorState === "Close"
+;    then open
+;        dooropen Door1 "CloseGate01".
+;        DoorState = "Open".
+;    close
+;    else open
+;        doorclose Door1 "CloseGate01".
+;        DoorState = "Close".
+;    close
+;close
+;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [FirstFloor]
+    regengroup "KDHoneying" "HONY_F1_AREA01".
+    regengroup "KDHoneying" "HONY_F1_AREA02".
+    regengroup "KDHoneying" "HONY_F1_AREA03".
+    regengroup "KDHoneying" "HONY_F1_AREA04".
+    regengroup "KDHoneying" "HONY_F1_AREA05".
+    regengroup "KDHoneying" "HONY_F1_AREA07".
+    regengroup "KDHoneying" "HONY_F1_AREA08".
+    regengroup "KDHoneying" "HONY_F1_AREA10".
+    regengroup "KDHoneying" "HONY_F1_AREA11".
+    regengroup "KDHoneying" "HONY_F1_AREA12".
+    regengroup "KDHoneying" "HONY_F1_AREA13".
+    regengroup "KDHoneying" "HONY_F1_AREA14".
+    regengroup "KDHoneying" "HONY_F1_AREA15".
+    regengroup "KDHoneying" "HONY_F1_AREA17".
+
+	pause Sec 1. ; 몹 리젠 간격이 1초 단위이기 때문에 1초 대기
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "FirstMobEleminate".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FirstMobEleminate]
+    dooropen Door1 "CloseGate01".
+    vanish EffDoor1.
+    break "FirstFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [SecondFloor]
+    regengroup "KDHoneying" "HONY_F2_AREA01".
+    regengroup "KDHoneying" "HONY_F2_AREA02".
+    regengroup "KDHoneying" "HONY_F2_AREA03".
+    regengroup "KDHoneying" "HONY_F2_AREA04".
+    regengroup "KDHoneying" "HONY_F2_AREA05".
+    regengroup "KDHoneying" "HONY_F2_AREA06".
+    regengroup "KDHoneying" "HONY_F2_AREA07".
+    regengroup "KDHoneying" "HONY_F2_AREA08".
+    regengroup "KDHoneying" "HONY_F2_AREA09".
+    regengroup "KDHoneying" "HONY_F2_AREA10".
+    regengroup "KDHoneying" "HONY_F2_AREA11".
+    regengroup "KDHoneying" "HONY_F2_AREA12".
+    regengroup "KDHoneying" "HONY_F2_AREA13".
+    regengroup "KDHoneying" "HONY_F2_AREA14".
+    regengroup "KDHoneying" "HONY_F2_AREA15".
+    regengroup "KDHoneying" "HONY_F2_AREA16".
+    regengroup "KDHoneying" "HONY_F2_AREA17".
+    regengroup "KDHoneying" "HONY_F2_AREA18".  
+    regengroup "KDHoneying" "HONY_F2_AREA19".
+
+	pause Sec 1. ; 몹 리젠 간격이 1초 단위이기 때문에 1초 대기
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "SecondMobEleminate".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SecondMobEleminate]
+    dooropen Door2 "CloseGate02".
+    vanish EffDoor2.
+    break "SecondFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [ThirdFloor]
+    regengroup "KDHoneying" "HONY_F3_AREA01".
+    regengroup "KDHoneying" "HONY_F3_AREA02".
+    regengroup "KDHoneying" "HONY_F3_AREA03".
+    regengroup "KDHoneying" "HONY_F3_AREA04".
+    regengroup "KDHoneying" "HONY_F3_AREA05".
+    regengroup "KDHoneying" "HONY_F3_AREA06".
+    regengroup "KDHoneying" "HONY_F3_AREA07".
+    regengroup "KDHoneying" "HONY_F3_AREA08".
+    regengroup "KDHoneying" "HONY_F3_AREA09".
+    regengroup "KDHoneying" "HONY_F3_AREA10".
+    regengroup "KDHoneying" "HONY_F3_AREA11".
+    regengroup "KDHoneying" "HONY_F3_AREA12".
+    regengroup "KDHoneying" "HONY_F3_AREA13".
+    regengroup "KDHoneying" "HONY_F3_AREA14".
+    regengroup "KDHoneying" "HONY_F3_AREA15".
+    regengroup "KDHoneying" "HONY_F3_AREA16".
+
+	pause Sec 1. ; 몹 리젠 간격이 1초 단위이기 때문에 1초 대기
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "ThirdMobEleminate".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ThirdMobEleminate]
+    dooropen Door3 "CloseGate03".
+    vanish EffDoor3.
+    break "ThirdFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [TopFloor]
+    regengroup "KDHoneying" "HONY_F4_AREA01".
+    regengroup "KDHoneying" "HONY_F4_AREA02".
+    regengroup "KDHoneying" "HONY_F4_AREA03".
+    regengroup "KDHoneying" "HONY_F4_AREA04".
+
+
+
+    mobregen Boss "KQ_H_GHoneying" 7081 5972 90 1000 "Normal".
+
+    chatwin "KQ_H_GHoneying" "Honeying01".
+    pause Sec 2.                        ; 2초간 대기
+
+
+    chatwin "KQ_H_GHoneying" "Honeying02".
+    pause Sec 2.                        ; 2초간 대기
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "QuestSuccess".
+    interruptset HPLow "" 1 Boss 800 "Summon1".
+    interruptset HPLow "" 1 Boss 600 "Summon2".
+    interruptset HPLow "" 1 Boss 400 "Summon3".
+    interruptset HPLow "" 1 Boss 150 "Summon4".
+    interruptset DeadHandle "" 1 Boss "Dead".
+
+    infinite
+      open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Summon1]
+    npcshout Boss "Summon01".
+    summonmob Boss "KQ_H_Honeying" 2.
+close
+
+open [Summon2]
+    npcshout Boss "Summon01".
+    summonmob Boss "KQ_H_Honeying" 4.
+close
+
+open [Summon3]
+    npcshout Boss "Summon01".
+    summonmob Boss "KQ_H_Honeying" 8.
+close
+
+open [Summon4]
+    npcshout Boss "Summon01".
+    summonmob Boss "KQ_H_Honeying" 10.
+    summonmob Boss "KQ_H_Honeying" 10.
+close
+
+open [Dead]
+    npcshout Boss "KQ_H_GHoneyingDead".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuccess]
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+    questmobkill 2668 "Daliy_Check" 1.
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+ 
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close

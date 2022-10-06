@@ -1,0 +1,465 @@
+; 고든마스터
+
+open [main]
+    var DoorHero            ""          ; 영웅이 있는 방을 막는 문
+        DoorMidBoss         ""          ; 중간보스로 가는 문
+        GlassDoor2Boss      ""          ; 보스로 가는 문. 보이는 문은 따로 있으므로 이것은 보이지 않고 블럭정보만 있는 문
+        Opener              ""
+        Slot                ""
+
+        GordonMaster        0           ; 고든마스터의 핸들
+        
+        KeyDropRate         0           ; 열쇠떨어뜨리기를 관리할 변수
+        KeyDropIndex        ""          ; 떨어뜨릴 열쇠 인덱스
+
+        InterruptBlock      ""
+        InterruptArg        "".
+
+
+
+    doorbuild DoorHero          "KQ_Gate4"  989  4298    0 1000 "Normal".      ; 시작점과 영웅 사이
+    doorbuild DoorMidBoss       "KQ_Gate4" 2815  4327    0 1000 "Normal".      ; 시작점과 중간보스 사이
+    doorbuild GlassDoor2Boss    "KQ_Gate4" 2834 10023    0 1000 "Normal".      ; 시작점과 보스 사이  - 슬라임처럼 블럭정보만 있는 문
+
+;    sublayershift Logout GlassDoor2Boss 2.         ; 이 문을 은닉층으로 이동시켜 보이지 않게 함
+
+    doorclose DoorHero          "GorDonDoor_01".
+    doorclose DoorMidBoss       "GorDonDoor_02".
+    doorclose GlassDoor2Boss    "GorDonDoor_03".
+
+
+    scriptfile "KQGordonMaster".
+
+
+    var PlayerNumber        "".                     ; 맵에 들어온 플레이어 수를 얻기 위해
+    waitlogin PlayerNumber.
+    if PlayerNumber == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    pause Sec 5.
+
+    chatwin "RouTownChiefRoumenus" "Rumenus0".
+    pause Sec 4.
+    chatwin "RouTownChiefRoumenus" "Rumenus1".
+    pause Sec 4.
+    chatwin "RouTownChiefRoumenus" "Rumenus2".
+    pause Sec 4.
+    chatwin "RouTownChiefRoumenus" "Rumenus3".
+
+
+    timelimit Min 50.
+
+    ; 가장 처음 문을 클릭할 때까지 기다림
+    call "HeroDoorClick".
+
+    ; 히어로의 방
+    call "HeroRoom".
+
+    ; 두번째 문 열기(히어로를 클릭하지 않았으면 문 안열리게 하기 위해)
+    call "Open2ndDoor".
+
+    ; 중간보스 만남
+    call "MidBoss".
+
+    ; 최종보스 만남
+    call "LastBoss".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [KeyDrop]
+    if KeyDropRate > @Random(0 99) then
+    open
+        itemdrop InterruptArg KeyDropIndex 1000000.     ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".                       ; 열쇠가 떨어졌음을 모두에게 알려줌
+        interrupterase "KeyDrop".                       ; 모든 KeyDrop 인터럽트를 없앰
+    close
+    else
+    open
+        KeyDropRate = KeyDropRate + 5.
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [HeroDoorClick]
+    ; MobRegen
+    regengroup "KDEnMaze" "KD_EnMaze01_01". ; KQ_G_Stonie          밑에 KeyDrop interrupt와 연동되어야 함
+    regengroup "KDEnMaze" "KD_EnMaze01_02". ; KQ_G_SparkDog
+    regengroup "KDEnMaze" "KD_EnMaze01_03". ; KQ_G_JewelKeeper
+    regengroup "KDEnMaze" "KD_EnMaze01_04". ; KQ_G_SparkDog
+    regengroup "KDEnMaze" "KD_EnMaze01_05". ; KQ_G_Stonie
+    regengroup "KDEnMaze" "KD_EnMaze01_06". ; KQ_G_SparkDog
+    regengroup "KDEnMaze" "KD_EnMaze01_07". ; KQ_G_JewelKeeper
+    regengroup "KDEnMaze" "KD_EnMaze01_08". ; KQ_G_Pixy
+    regengroup "KDEnMaze" "KD_EnMaze01_09". ; KQ_G_JewelKeeper
+    regengroup "KDEnMaze" "KD_EnMaze01_10". ; KQ_G_OrcCaptain
+    regengroup "KDEnMaze" "KD_EnMaze01_11". ; KQ_G_Pixy
+    regengroup "KDEnMaze" "KD_EnMaze01_12". ; KQ_G_Nox
+
+
+
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".                                      ; 플레이어가 전멸했을때
+    interruptset TimeOut "" 1 "QuestFail".                                              ; 시간이 다 지났을 경우
+    interruptset NPCClickHandle "DoorClick" 9999 DoorHero "HDC_DoorHeroClick".          ; 히어로쪽 문 클릭
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_Stonie"      "KeyDrop".                 ; 몹이 죽었을 경우 키 떨어뜨리는지 체크
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_SparkDog"    "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_JewelKeeper" "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_Pixy"        "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_OrcCaptain"  "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_Nox"         "KeyDrop".
+
+
+
+    ; 몹이 더 있으면 추가
+
+    KeyDropRate = 0.                ; 열쇠떨어뜨리기를 관리할 변수 초기화
+    KeyDropIndex = "KQ_Key05".      ; 떨어뜨릴 열쇠 인덱스
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [HDC_DoorHeroClick]
+    whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음(InterruptArg에는 문의 핸들)
+    invensearch Slot Opener KeyDropIndex.               ; Opener의 인벤토리에서 키를 찾음
+    if Slot =!= ""                                      ; 찾았음
+    then open
+        dooropen DoorHero "GorDonDoor_01".              ; 문 엶
+        itemerase all KeyDropIndex.                     ; 열쇠 없앰
+        interrupterase "DoorClick".                     ; 모든 DoorClick 인터럽트를 없앰
+        break "HeroDoorClick".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [HeroRoom]
+    var HeroHandle          "".
+
+
+    ; 히어로 리젠
+;    npcstand HeroHandle "EldSpeGuard01" 999 5797 0 1000 "Normal".
+    npcstand HeroHandle "KQ_G_Hero01" 999 5797 0 1000 "Normal".
+    mobattr NoAggro HeroHandle 0.                                                ; HeroHandle 몹주의 끌지 않도록
+
+    ; 고든마스터 리젠
+    mobregen GordonMaster "KQ_G_Boss" 2807 11890 180 1000 "Normal".
+    abstateset GordonMaster "StaMobInvisible" 1 4200000000.  ; 고든마스터 은닉
+    mobattr Recover GordonMaster 0.                ; GordonMaster을 자체치료못하도록
+
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".                                      ; 플레이어가 전멸했을때
+    interruptset TimeOut "" 1 "QuestFail".                                              ; 시간이 다 지났을 경우
+    interruptset NPCClickHandle "HeroClick" 9999 HeroHandle "HR_HeroClick".             ; 히어로 클릭
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [HR_HeroClick]
+    npcchat InterruptArg "Hero00".
+    pause Sec 2.
+    npcchat InterruptArg "Hero01".
+    pause Sec 2.
+    npcchat InterruptArg "Hero02".
+    pause Sec 2.
+    npcchat InterruptArg "Hero03".
+    pause Sec 2.
+    itemdrop InterruptArg "KQ_FireSword" 1000000.
+    npcchat InterruptArg "Hero04".
+    pause Sec 3.
+    npcchat InterruptArg "Hero05".
+    pause Sec 3.
+    npcchat InterruptArg "Hero06".
+    pause Sec 3.
+    npcchat InterruptArg "Hero07".
+    pause Sec 3.
+    npcchat InterruptArg "Hero08".
+    pause Sec 3.
+    itemdrop InterruptArg "KQ_TruthRubi" 1000000.
+    npcchat InterruptArg "Hero09".
+    pause Sec 3.
+    npcchat InterruptArg "Hero10".
+    pause Sec 3.
+    npcchat InterruptArg "Hero11".
+    pause Sec 3.
+    npcchat InterruptArg "Hero12".
+    pause Sec 3.
+    itemdrop InterruptArg "KQ_SoulCrystal" 1000000.
+    npcchat InterruptArg "Hero13".
+    pause Sec 3.
+    npcchat InterruptArg "Hero14".
+    pause Sec 3.
+    npcchat InterruptArg "Hero15".
+    pause Sec 3.
+    npcchat InterruptArg "Hero16".
+    pause Sec 3.
+    npcchat InterruptArg "Hero17".
+    pause Sec 3.
+    npcchat InterruptArg "Hero18".
+    pause Sec 3.
+    npcchat InterruptArg "Hero19".
+    suicide #("InterruptArg").      ; 히어로 죽음
+
+    interrupterase "HeroClick".                     ; 더이상 히어로클릭 인터럽트 없음
+
+    pause Sec 3.
+    ; MobRegen
+    regengroup "KDEnMaze" "KD_EnMaze02_01". ; KQ_G_JewelKeeper          밑에 KeyDrop interrupt와 연동되어야 함
+    regengroup "KDEnMaze" "KD_EnMaze02_02". ; KQ_G_Pixy
+    regengroup "KDEnMaze" "KD_EnMaze02_03". ; KQ_G_OrcCaptain
+    regengroup "KDEnMaze" "KD_EnMaze02_04". ; KQ_G_NaiadDemon
+    regengroup "KDEnMaze" "KD_EnMaze02_05". ; KQ_G_Pixy
+    regengroup "KDEnMaze" "KD_EnMaze02_06". ; KQ_G_OrcCaptain
+    regengroup "KDEnMaze" "KD_EnMaze02_07". ; KQ_G_Nox
+    regengroup "KDEnMaze" "KD_EnMaze02_08". ; KQ_G_Shylph
+
+
+    break "HeroRoom".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Open2ndDoor]
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".                                      ; 플레이어가 전멸했을때
+    interruptset TimeOut "" 1 "QuestFail".                                              ; 시간이 다 지났을 경우
+    interruptset NPCClickHandle "DoorClick" 9999 DoorMidBoss "O2D_DoorMidClick".        ; 중간보스쪽 문 클릭
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_JewelKeeper" "KeyDrop".                 ; 몹이 죽었을 경우 키 떨어뜨리는지 체크
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_Pixy"        "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_OrcCaptain"  "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_NaiadDemon"  "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_Nox"         "KeyDrop".
+    interruptset DeadIndex "KeyDrop" 9999 "KQ_G_Shylph"      "KeyDrop".
+
+
+    KeyDropRate = 0.            ; 열쇠떨어뜨리기를 관리할 변수 초기화
+    KeyDropIndex = "KQ_Key06".  ; 떨어뜨릴 열쇠 인덱스
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [O2D_DoorMidClick]
+    whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음(InterruptArg에는 문의 핸들)
+    invensearch Slot Opener KeyDropIndex.               ; Opener의 인벤토리에서 KeyDropIndex를 찾음
+    if Slot =!= ""                                      ; 찾았음
+    then open
+        dooropen DoorMidBoss "GorDonDoor_02".            ; 문 엶
+        itemerase all KeyDropIndex.                     ; 열쇠 없앰
+        interrupterase "DoorClick".                     ; 모든 DoorClick 인터럽트를 없앰
+        break "Open2ndDoor".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [MidBoss]
+    var MidBossHandle   0
+        Door2Boss       0.          ; 보스에게로 가는 문(실제 문은 GlassDoor2Boss이며, Door2Boss는 문이 부서지는 효과를 위한 몹)
+
+    ; MobRegen
+    regengroup "KDEnMaze" "KD_EnMaze03_01".
+    regengroup "KDEnMaze" "KD_EnMaze03_02".
+    regengroup "KDEnMaze" "KD_EnMaze03_03".
+    regengroup "KDEnMaze" "KD_EnMaze03_04".
+    regengroup "KDEnMaze" "KD_EnMaze03_05".
+    regengroup "KDEnMaze" "KD_EnMaze03_06".
+    regengroup "KDEnMaze" "KD_EnMaze03_07".
+    regengroup "KDEnMaze" "KD_EnMaze03_08".
+    regengroup "KDEnMaze" "KD_EnMaze03_09".
+    regengroup "KDEnMaze" "KD_EnMaze03_10".
+    regengroup "KDEnMaze" "KD_EnMaze03_11".
+    regengroup "KDEnMaze" "KD_EnMaze03_12".
+    regengroup "KDEnMaze" "KD_EnMaze03_13".
+    regengroup "KDEnMaze" "KD_EnMaze03_14".
+    regengroup "KDEnMaze" "KD_EnMaze03_15".
+    regengroup "KDEnMaze" "KD_EnMaze03_16".
+    regengroup "KDEnMaze" "KD_EnMaze03_17".
+    regengroup "KDEnMaze" "KD_EnMaze03_18".
+    regengroup "KDEnMaze" "KD_EnMaze03_19".
+    regengroup "KDEnMaze" "KD_EnMaze03_20".
+    regengroup "KDEnMaze" "KD_EnMaze03_21".
+    regengroup "KDEnMaze" "KD_EnMaze03_22".
+    regengroup "KDEnMaze" "KD_EnMaze03_23".
+    regengroup "KDEnMaze" "KD_EnMaze03_24".
+    regengroup "KDEnMaze" "KD_EnMaze03_25".
+    regengroup "KDEnMaze" "KD_EnMaze03_26".
+    regengroup "KDEnMaze" "KD_EnMaze03_27".
+    regengroup "KDEnMaze" "KD_EnMaze03_28".
+    regengroup "KDEnMaze" "KD_EnMaze03_29".
+    regengroup "KDEnMaze" "KD_EnMaze03_30".
+    regengroup "KDEnMaze" "KD_EnMaze03_31".
+    regengroup "KDEnMaze" "KD_EnMaze03_32".
+    regengroup "KDEnMaze" "KD_EnMaze03_33".
+    regengroup "KDEnMaze" "KD_EnMaze03_34".
+    regengroup "KDEnMaze" "KD_EnMaze03_35".
+
+
+    npcstand MidBossHandle "KQ_G_AncientStatue01" 2875 8754 177 1000 "Normal".  ; 중간보스몹 만듦
+
+    dooropen GlassDoor2Boss "GorDonDoor_03".
+
+    mobregen Door2Boss "KQ_Gate6" 2834 9841 0 1000 "Normal".                    ; 가로막고 있는 몹(NoMove, PlayerCamp)
+    mobattr Recover Door2Boss 0.                                                ; Door2Boss을 자체치료못하도록
+    mobattr NoAggro Door2Boss 0.                                                ; Door2Boss 몹주의 끌지 않도록
+
+    doorclose GlassDoor2Boss "GorDonDoor_03".
+
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".                                      ; 플레이어가 전멸했을때
+    interruptset TimeOut "" 1 "QuestFail".                                              ; 시간이 다 지났을 경우
+    interruptset DeadHandle "" 1 Door2Boss "MB_DoorOpen".                               ; 문이 부서진 경우
+    interruptset NPCClickHandle "" 9999 MidBossHandle "MB_MidBossClick".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [MB_DoorOpen]
+    dooropen GlassDoor2Boss "GorDonDoor_03".           ; 문 엶
+    break "MidBoss".
+close
+
+open [MB_MidBossClick]
+    var Clicker     0.
+    whoclickme Clicker InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+    invensearch Slot Clicker "KQ_SoulCrystal".           ; Opener의 인벤토리에서 크리스탈을 찾음
+    if Slot === ""                                       ; 찾지 못했음
+    then open
+        break "MB_MidBossClick".
+    close
+
+
+    ; 중간보스 움직임 시작
+    exchange2mob MidBossHandle "KQ_G_AncientStatue".            ; MidBossHandle를 없애고 새로운 KQ_G_AncientStatue를 만듦
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [LastBoss]
+    var NextTeleportHP          800.
+
+    ; MobRegen
+    regengroup "KDEnMaze" "KD_EnMaze04_01".
+    regengroup "KDEnMaze" "KD_EnMaze04_02".
+    regengroup "KDEnMaze" "KD_EnMaze04_03".
+    regengroup "KDEnMaze" "KD_EnMaze04_04".
+    regengroup "KDEnMaze" "KD_EnMaze04_05".
+    regengroup "KDEnMaze" "KD_EnMaze04_06".
+    regengroup "KDEnMaze" "KD_EnMaze04_07".
+    regengroup "KDEnMaze" "KD_EnMaze04_08".
+    regengroup "KDEnMaze" "KD_EnMaze04_09".
+    regengroup "KDEnMaze" "KD_EnMaze04_10".
+
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".                                      ; 플레이어가 전멸했을때
+    interruptset TimeOut "" 1 "QuestFail".                                              ; 시간이 다 지났을 경우
+    interruptset DeadHandle "" 1 GordonMaster "QuestSuccess".
+    interruptset HPLow "" 1 GordonMaster NextTeleportHP "LB_Flee".                      ; NextTeleportHP만큼 되었을때 달아남
+    interruptset Sec "" 9999 10 "LB_ItemAbState".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [LB_Flee]
+    chatwin "KQ_G_Boss" "GM_Teleport" % NextTeleportHP.
+
+    summonmob GordonMaster "KQ_G_Gordon" 3.           ; 고스트 3 소환
+
+    teleport AnyWhere GordonMaster.
+
+    NextTeleportHP = NextTeleportHP - 200.
+    if NextTeleportHP =!= 0 then
+    open
+        interruptset HPLow "" 1 GordonMaster NextTeleportHP "LB_Flee".                         ; NextTeleportHP만큼 되었을때 달아남
+    close
+close
+
+open [LB_ItemAbState]
+    var Sword       ""
+        SwordMan    0
+        Rubi        ""
+        RubiMan     0.
+    itemowner Sword "KQ_FireSword" " ". ; KQ_Sword를 가지고 있는 사람들의 핸들을 " "을 경계로 얻어옴
+    itemowner Rubi "KQ_TruthRubi" " ".
+
+    SwordMan = @RemoveFirst("Sword" " ").          ; 리스트형태인 Sword에서 " "로 분리된 첫째원소를 SwordMan에 넣고 Sword에서는 지움.
+    RubiMan = @RemoveFirst("Rubi" " ").
+
+
+    if @DistanceBetween(GordonMaster SwordMan) > 1000
+    then open
+        abstateset GordonMaster " StaMobImmortal" 1 4200000000.
+    close
+    else open
+        abstatereset GordonMaster " StaMobImmortal".
+    close
+
+
+    if @DistanceBetween(GordonMaster RubiMan) > 1000
+    then open
+        abstateset GordonMaster "StaMobInvisible" 1 4200000000.
+    close
+    else open
+        abstatereset GordonMaster "StaMobInvisible".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuccess]
+    chatwin "KQ_G_Boss" "Success".
+
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+    questmobkill 2668 "Daliy_Check" 1.
+
+    ;someoneshout "Guardian" "GuardianSuc0".
+    ;pause Sec 2.                        ; 2초간 대기
+
+    ;someoneshout "Guardian" "GuardianSuc1".
+    ;pause Sec 2.                        ; 2초간 대기
+
+    ;someoneshout "Guardian" "GuardianSuc2".
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Urg" "Urg" 5835 6397.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    chatwin "KQ_G_Boss" "Fail".
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Urg" "Urg" 5835 6397.
+    endofkq.
+    break "main".
+close

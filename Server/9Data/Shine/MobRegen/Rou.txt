@@ -1,0 +1,68 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Rou01	N	3250	7138	369	264	49									
+#record		Rou02	N	3106	8171	0	0	507									
+#record		Rou03	N	3780	8725	453	289	-38									
+#record		Rou04	N	4602	9407	0	0	548									
+#record		Rou05	N	5788	9613	587	325	-13									
+#record		Rou06	N	6949	9762	583	319	4									
+#record		Rou07	N	7998	9636	512	320	4									
+#record		Rou08	N	9228	9392	0	0	675									
+#record		RouP01	N	6725	9968	287	50	0									
+#record		RouP02	N	6728	9505	278	52	0									
+#record		Rou09	N	3544	9723	556	146	16									
+#record		EventSnow01	N	5058	4170	0	0	86									
+#record		EventSnow02	N	5406	4031	0	0	93									
+#record		EventSnow03	N	5924	3897	0	0	93									
+#record		EventSnow04	N	6426	3942	0	0	93									
+#record		EventSnow05	N	7122	4252	0	0	100									
+#record		EventSnow06	N	7606	4418	0	0	114									
+#record		EventSnow07	N	8179	4882	0	0	107									
+#record		EventSnow08	N	8761	5045	0	0	107									
+#record		EventSnow09	N	9276	5177	0	0	93									
+#record		EventSnow10	N	10309	5340	0	0	100									
+#record		EventSnow11	N	9993	5485	0	0	100									
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Rou01	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou02	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou03	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou04	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou04	MushRoom	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou05	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou05	MushRoom	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou06	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou06	MushRoom	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou07	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou07	MushRoom	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou08	Slime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou08	MushRoom	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouP01	FLOWER1	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouP02	FLOWER1	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rou09	Slime	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rou09	MushRoom	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+;#record		EventSnow01	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow02	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow03	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow04	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow05	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow06	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow07	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow08	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow09	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow10	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		EventSnow11	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+#end																	

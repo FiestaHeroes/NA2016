@@ -1,0 +1,132 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KDEddyHillArea01	N	7254	6179	0	0	64									
+#record		KDEddyHillArea02	N	7259	5984	0	0	63									
+#record		KDEddyHillArea03	N	6296	4793	0	0	253									
+#record		KDEddyHillArea04	N	5368	6512	126	409	0									
+#record		KDEddyHillArea05	N	4202	9001	670	234	-4									
+#record		KDEddyHillArea06	N	4377	8673	0	0	368									
+#record		KDEddyHillArea07	N	3442	9468	243	647	127									
+#record		KDEddyHillArea08	N	3724	9141	0	0	339									
+#record		KDEddyHillArea09	N	7889	9119	338	955	-75									
+#record		KDEddyHillArea10	N	8973	8930	0	0	277									
+#record		KDEddyHillArea11	N	10472	5763	0	0	394									
+#record		KDEddyHillArea12	N	6458	9142	1000	273	1									
+#record		KDEddyHillArea13	N	9308	8334	166	1353	-49									
+#record		KDEddyHillArea14	N	10179	6928	232	769	-7									
+#record		KDEddyHillArea15	N	7982	9093	0	0	381									
+#record		KDEddyHillArea16	N	9586	8304	0	0	274									
+#record		KDEddyHillArea17	N	9132	6019	0	0	330									
+#record		KDEddyHillArea18	N	8342	4452	945	156	-44									
+#record		KDEddyHillArea19	N	8543	7449	155	641	-27									
+#record		KDEddyHillArea20	N	4670	6090	226	1018	2									
+#record		KDEddyHillArea21	N	4858	4746	691	147	60									
+#record		KDEddyHillArea22	N	6671	4617	0	0	190									
+#record		KDEddyHillArea23	N	7465	7240	456	160	13									
+#record		KDEddyHillArea24	N	5460	8863	727	209	0									
+#record		KDEddyHillArea25	N	5457	5447	97	417	-16									
+#record		KDEddyHillArea26	N	8033	5868	164	624	0									
+#record		KDEddyHillArea27	N	5869	7221	355	181	-29									
+#record		KDEddyHillArea28	N	7452	3969	600	236	0									
+#record		KDEddyHillArea29	N	8004	6749	398	131	82									
+#record		KDEddyHillArea30	N	7102	4831	0	0	303									
+#record		KDEddyHillArea31	N	7245	6453	0	0	65									
+#record		KDEddyHillArea32	N	7001	6073	0	0	79									
+#record		KDEddyHillArea33	N	7035	6447	0	0	65									
+#record		KDEddyHillArea34	N	7209	5729	0	0	86									
+#record		KDEddyHillArea35	N	6976	5702	0	0	79									
+#record		KDEddyHillArea36	N	6819	6441	0	0	86									
+#record		KDEddyHillArea37	N	6785	5708	0	0	79									
+#record		KDEddyHillArea38	N	6826	6117	0	0	55									
+#record		KDEddyHillArea39	N	6169	6076	0	0	268									
+#record		KDEddyHillArea40	N	6579	6613	0	0	275									
+#record		KDEddyHillArea41	N	6444	5583	0	0	303									
+#record		KDEddyHillArea42	N	6447	6267	0	0	177									
+#record		KDEddyHillArea43	N	6472	5983	0	0	240									
+#record		KDEddyHillArea44	N	5607	6883	355	143	-41									
+#record		KDEddyHillArea45	N	5864	4936	0	0	317									
+#record		KDEddyHillArea46	N	7615	5021	0	0	303									
+#record		KDEddyHillArea47	N	7640	6976	371	176	38									
+#record		KDEddyHillArea48	N	5698	4065	728	256	16									
+#record		KDEddyHillArea49	N	7911	8027	538	162	13									
+#record		KDEddyHillArea50	N	5022	7601	139	570	41									
+#record		KDEddyHillArea51	N	6653	8114	872	218	0									
+#record		KDEddyHillArea52	N	7526	8100	569	219	5									
+#record		KDEddyHillArea53	N	5687	8115	482	145	-8									
+#record		KDEddyHillArea54	N	6659	6093	0	0	86									
+#record		KDEddyHillArea56	N	8972	6666	0	0	317									
+#record		KDEddyHillArea57	N	8907	5380	0	0	352									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KDEddyHillArea01	KQ_KingSlime	1	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea02	KQ_QueenSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea03	KQ_Ratman	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea04	KQ_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea05	KQ_Imp	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea06	KQ_MushRoom	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea07	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea08	KQ_FireSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea09	KQ_Honeying	3	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea10	KQ_FireSlime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea11	KQ_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea12	KQ_FireSlime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea13	KQ_Imp	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea14	KQ_IronSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea15	KQ_IronSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea16	KQ_Honeying	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea17	KQ_Honeying	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea18	KQ_FireSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea19	KQ_FireSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea20	KQ_IronSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea21	KQ_IronSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea22	KQ_SilverSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea23	KQ_GoldSlime	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea24	KQ_IronSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea25	KQ_GoldSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea26	KQ_SilverSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea27	KQ_SilverSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea28	KQ_Honeying	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea29	KQ_Boar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea30	KQ_Boar	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea31	KQ_PrinceSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea32	KQ_GoldSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea33	KQ_SilverSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea34	KQ_IronSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea35	KQ_FireSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea36	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea37	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea38	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea39	KQ_Boar	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea40	KQ_Ratman	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea41	KQ_Ratman	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea42	KQ_PrinceSlime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea43	KQ_PrinceSlime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea44	KQ_PrinceSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea45	KQ_PrinceSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea46	KQ_PrinceSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea47	KQ_PrinceSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea48	KQ_Honeying	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea49	KQ_Honeying	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea50	KQ_Honeying	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea51	KQ_FireSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea52	KQ_IronSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea53	KQ_Honeying	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea54	KQ_QueenSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea56	KQ_SilverSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEddyHillArea57	KQ_GoldSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

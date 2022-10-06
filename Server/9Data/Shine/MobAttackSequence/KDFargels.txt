@@ -1,0 +1,43 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	-			
+#Record	1	KDFargels_Skill04_W			
+#Record	2	-			
+#Record	3	-			
+#Record	4	KDFargels_Skill03_W			
+#Record	5	-			
+#Record	6	-			
+#Record	7	-			
+#Record	8	KDFargels_Skill02_W			
+#Record	9	-			
+#Record	10	KDFargels_Skill04_W			
+#Record	11	-			
+#Record	12	KDFargels_Skill02_W			
+#Record	13	-			
+#Record	14	-			
+#Record	15	-			
+#Record	16	KDFargels_Skill03_W			
+#Record	17	-			
+#Record	18	-			
+					
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우	
+#ColumnType	Index	Index	String[33]	String[33]	
+#ColumnName	Condition	Value	From	To	
+#Record	HPLow_ChangeOrder	750	2	KDFargels_Skill05_N	
+#Record	HPLow_ChangeOrder	750	6	KDFargels_Skill05_N	
+#Record	HPLow_ChangeOrder	750	11	KDFargels_Skill05_N	
+#Record	HPLow_ChangeOrder	750	17	KDFargels_Skill05_N	
+#Record	HPLow_ChangeOrder	500	3	KDFargels_Skill06_N	
+#Record	HPLow_ChangeOrder	500	8	KDFargels_Skill06_N	
+#Record	HPLow_ChangeOrder	500	15	KDFargels_Skill06_N	
+#Record	HPLow_ChangeOrder	500	17	KDFargels_Skill06_N	
+#End					

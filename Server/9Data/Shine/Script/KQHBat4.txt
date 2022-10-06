@@ -1,0 +1,34 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Intro0	"To those who wishes to test their might, I welcome you."	
+#Record	Intro1	"In such turbulent times as this, we are in dire need of heroes like you."	
+#Record	Intro2	"Let go of your inhibitions, and unleash all the strength and knowledge you have accumulated so far."	
+#Record	Intro3	"Please remember that in the Mystic Weapon Chest, you'll find mighty weapon that you may have not seen yet."	
+#Record	Intro4	Best of the best will be rewarded accordingly.	
+#Record	Intro5	"Of course, the opposite will be true to those call themselves a warrior that falls below 5000 points or less."	
+#Record	Intro6	"Well, are you ready?  What are we waiting for, let's get ready to rumble!"	
+			
+#Record	DualStart	Let the battle begin!	
+			
+#Record	DualStop	Stop!  Battle is over!	
+			
+#Record	DualResult	"1st place %s, 2nd place %s, and 3rd place goes to %s.  These three are truly the mightiest warriors!"	
+#Record	DualResult1	Those who received less than 5000 points do not deserves to be called a warriors!	
+#Record	DualResult2	"If you received less than 5000 points, it isn't end of the world, just practice harder and live the code of warriors. "	
+#Record	DualResult3	"I hope I see your more fierce self, next time we meet."	
+#Record	DualResult4	Dismissed!	
+			
+#Record	KQReturn30	Returning to Alberstol Ruins in 30 seconds	
+#Record	KQReturn20	Returning to Alberstol Ruins in 20 seconds	
+#Record	KQReturn10	Returning to Alberstol Ruins in 10 seconds	
+#Record	KQReturn5	Returning to Alberstol Ruins in 5 seconds	
+			
+#End			
+;			
+			

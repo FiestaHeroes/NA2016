@@ -1,0 +1,463 @@
+open [main]
+    var Wait            ""
+        InterruptBlock  ""
+        InterruptArg    "".
+
+    waitlogin Wait.
+    if Wait == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    pause Sec 5.
+
+    scriptfile "KQUnderHall".
+
+    timelimit Min 30.
+
+    call "First".
+    call "Second".
+    call "Third".
+    call "Forth".
+    call "Fifth".
+    call "Sixth".
+    call "Seventh".
+    call "Eighth".
+    call "Nineth".
+    call "Tenth".
+    call "Eleventh".
+    call "Twelveth".
+    call "Thirteenth".
+    call "Forteenth".
+    call "Fifteenth".
+    call "Sixteenth".
+    call "Seventeenth".
+    call "Eighteenth".
+    call "Nineteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [First]
+    regengroup "KDUnHall" "KDUnderArea1".
+    regengroup "KDUnHall" "KDUnderArea2".
+    regengroup "KDUnHall" "KDUnderArea3".
+    regengroup "KDUnHall" "KDUnderArea4".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (120 - 60) "FirstEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FirstEnd]
+    break "First".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Second]
+    regengroup "KDUnHall" "KDUnderArea5".
+    regengroup "KDUnHall" "KDUnderArea6".
+    regengroup "KDUnHall" "KDUnderArea7".
+    regengroup "KDUnHall" "KDUnderArea8".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (180 - 120) "SecondEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SecondEnd]
+    break "Second".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Third]
+    regengroup "KDUnHall" "KDUnderArea9".
+    regengroup "KDUnHall" "KDUnderArea10".
+    regengroup "KDUnHall" "KDUnderArea11".
+    regengroup "KDUnHall" "KDUnderArea12".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (240 - 180) "ThirdEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ThirdEnd]
+    break "Third".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Forth]
+    regengroup "KDUnHall" "KDUnderArea13".
+    regengroup "KDUnHall" "KDUnderArea14".
+    regengroup "KDUnHall" "KDUnderArea15".
+    regengroup "KDUnHall" "KDUnderArea16".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (360 - 240) "ForthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ForthEnd]
+    break "Forth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fifth]
+    regengroup "KDUnHall" "KDUnderArea17".
+    regengroup "KDUnHall" "KDUnderArea18".
+    regengroup "KDUnHall" "KDUnderArea19".
+    regengroup "KDUnHall" "KDUnderArea20".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (480 - 360) "FifthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FifthEnd]
+    break "Fifth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Sixth]
+    regengroup "KDUnHall" "KDUnderArea21".
+    regengroup "KDUnHall" "KDUnderArea22".
+    regengroup "KDUnHall" "KDUnderArea23".
+    regengroup "KDUnHall" "KDUnderArea24".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (600 - 480) "SixthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SixthEnd]
+    break "Sixth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Seventh]
+    regengroup "KDUnHall" "KDUnderArea25".
+    regengroup "KDUnHall" "KDUnderArea26".
+    regengroup "KDUnHall" "KDUnderArea27".
+    regengroup "KDUnHall" "KDUnderArea28".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (720 - 600) "SeventhEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SeventhEnd]
+    break "Seventh".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eighth]
+    regengroup "KDUnHall" "KDUnderArea29".
+    regengroup "KDUnHall" "KDUnderArea30".
+    regengroup "KDUnHall" "KDUnderArea31".
+    regengroup "KDUnHall" "KDUnderArea32".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (840 - 720) "EighthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EighthEnd]
+    break "Eighth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Nineth]
+    regengroup "KDUnHall" "KDUnderArea33".
+    regengroup "KDUnHall" "KDUnderArea34".
+    regengroup "KDUnHall" "KDUnderArea35".
+    regengroup "KDUnHall" "KDUnderArea36".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1040 - 840) "NinethEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [NinethEnd]
+    break "Nineth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Tenth]
+    regengroup "KDUnHall" "KDUnderArea37".
+    regengroup "KDUnHall" "KDUnderArea38".
+    regengroup "KDUnHall" "KDUnderArea39".
+    regengroup "KDUnHall" "KDUnderArea40".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1320 - 1040) "TenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [TenthEnd]
+    break "Tenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eleventh]
+    regengroup "KDUnHall" "KDUnderArea41".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1350 - 1320) "EleventhEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EleventhEnd]
+    break "Eleventh".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Twelveth]
+    regengroup "KDUnHall" "KDUnderArea42".
+    regengroup "KDUnHall" "KDUnderArea43".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1360 - 1350) "TwelvethEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [TwelvethEnd]
+    break "Twelveth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Thirteenth]
+    regengroup "KDUnHall" "KDUnderArea44".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1370 - 1360) "ThirteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ThirteenthEnd]
+    break "Thirteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Forteenth]
+    regengroup "KDUnHall" "KDUnderArea45".
+    regengroup "KDUnHall" "KDUnderArea46".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1380 - 1370) "ForteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ForteenthEnd]
+    break "Forteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fifteenth]
+    regengroup "KDUnHall" "KDUnderArea47".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1390 - 1380) "FifteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FifteenthEnd]
+    break "Fifteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Sixteenth]
+    regengroup "KDUnHall" "KDUnderArea48".
+    regengroup "KDUnHall" "KDUnderArea49".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1400 - 1390) "SixteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SixteenthEnd]
+    break "Sixteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Seventeenth]
+    regengroup "KDUnHall" "KDUnderArea50".
+    regengroup "KDUnHall" "KDUnderArea51".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1410 - 1400) "SeventeenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SeventeenthEnd]
+    break "Seventeenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eighteenth]
+    regengroup "KDUnHall" "KDUnderArea52".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "" 1 (1440 - 1410) "EighteenthEnd".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EighteenthEnd]
+    break "Eighteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Nineteenth]
+
+    regengroup "KDUnHall" "KDUnderArea53".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestSuc".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuc]
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close

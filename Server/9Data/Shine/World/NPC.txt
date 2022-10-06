@@ -1,0 +1,1134 @@
+	;	Shine NPC table(ShineNPC.txt)																										
+	#ignore	\o042				; 인용부호 무시																						
+	#exchange	#	\x20			; # => space																						
+	#delimiter	\x20				; Space is delimiter																						
+																												
+	#Table	ShineNPC																										
+	#ColumnType		STRING[33]	STRING[20]	DWRD	DWRD	WORD	BYTE	INDEX	INDEX																		
+	#ColumnName		MobName	Map	Coord-X	Coord-Y	Direct	NPCMenu	Role	RoleArg0																		
+																												
+	#Table	LinkTable																										
+	#ColumnType									Index	String[33]	String[33]	DWRD	DWRD	WORD	BYTE												
+	#ColumnName									argument	MapServer	MapClient	Coord-X	Coord-Y	Direct	Party												
+																												
+																												
+;	루맨 npc																											
+	#recordin	ShineNPC	RouSmithJames	RouN	5645	8824	-62	1	Merchant	Weapon																		
+	#recordin	ShineNPC	RouSoulMctJulia	RouN	7305	8999	60	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	RouTownChiefRoumenus	RouN	6208	6405	-74	1	ClientMenu	-																		
+	#recordin	ShineNPC	RouWeaponTitleMctZach	RouN	5709	8541	215	1	Merchant	WeaponTitle																		
+	#recordin	ShineNPC	RouGaianMaria	RouN	5769	6787	-176	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouSkillRubi	RouN	6307	7147	-74	1	Merchant	Skill																		
+	#recordin	ShineNPC	RouItemMctPey	RouN	6992	6571	-120	1	Merchant	Item																		
+	#recordin	ShineNPC	GuildItemMct	RouN	6845	5466	-153	1	Merchant	Guild																		
+	#recordin	ShineNPC	RouStoreRaina	RouN	5231	7416	-19	1	StoreManager	-																		
+;	#recordin	ShineNPC	RouFurnitureMctZzing	Rou				1	-	-																		
+	#recordin	ShineNPC	RouRookieGuideRaemi	RouN	6885	7141	24	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	RouDiggerPalmers	Rou				1	-	-																		
+	#recordin	ShineNPC	RouGrandfatherRobin	RouN	6907	8389	-156	1	QuestNpc	Quest																		
+;	자동 길찾기 관련 기존 게이트 NPC 분리																											
+	#recordin	ShineNPC	RouGaianMaria	Rou	4932	4107	-157	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerPalmers	RouCos01	12992	14264	-80	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldDiggerRoyquin	RouCos02	19858	10083	90	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldGaianBjurin	RouCos03	6819	14834	-119	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerDolTurn	RouCos03	19282	3388	-165	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerPalmers	EldCem01	528	7598	-98	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldDiggerRoyquin	EldGbl01	11095	6327	39	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerPalmers	Urg	1979	2436	175	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerPalmers	EchoCave	2946	2462	166	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldDiggerRoyquin	EchoCave	22252	24065	-15	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerDolTurn	EchoCave	8631	21171	-20	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerPalmers	WindyCave	3326	2769	137	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldDiggerRoyquin	WindyCave	23562	22850	136	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	RouDiggerPalmers	GoldCave	2948	2678	154	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	EldDiggerRoyquin	GoldCave	23063	22905	155	1	QuestNpc	Quest																		
+;	루멘 마을 가구상인 NPC																											
+	#recordin	ShineNPC	RouFurnitureForestTom	RouN	6031	8477	127	1	Merchant	Item																		
+;	루멘 마을이동 NPC																											
+;	#recordin	ShineNPC	Gate_Town	RouN	5874	6530	0	1	QuestNpc	Quest																		
+;	루멘 2층에 사는 투명인간들																											
+;	#recordin	ShineNPC	InvisibleMan	Rou	3507	6973	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	4269	6423	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	5064	6214	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	5799	6223	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	6686	6338	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	8528	5795	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	8027	6030	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	7564	6336	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	7480	6563	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	6606	6365	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	6048	6251	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	5670	5976	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	5515	6446	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	4616	6291	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	4130	6409	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	3997	6768	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	3673	6448	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	6413	6757	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	8124	5670	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	4066	5951	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	5624	5648	0	0	QuestNpc	-																		
+;	루멘 1층에 사는 투명인간																											
+;	#recordin	ShineNPC	InvisibleMan	Rou	8743	1345	0	0	QuestNpc	-																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	8664	5268	-116	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	8115	5105	-116	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	7696	4746	-116	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	7328	4377	-116	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	8126	4345	-116	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	8463	3960	-116	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	InvisibleMan	Rou	7283	4767	-116	1	QuestNpc	Quest																		
+;	루맨 헤어샵 npc																											
+	#recordin	ShineNPC	Vietree	RouN	5158	6766	-64	1	QuestNpc	Quest																		
+;	루맨 길드 npc																											
+	#recordin	ShineNPC	RouGuildBrom	RouN	6713	5495	-153	0	NPCMenu	Guild																		
+;	안내 표지판 																											
+	#recordin	ShineNPC	PostCos01	RouN	6088	5237	-178	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	PostCos02	RouN	6599	10461	15	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	PostCos03	RouN	7329	5357	-178	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	PostRoumenus	RouN	6318	8648	-89	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	PostRemi	RouN	6963	7149	0	1	QuestNpc	Quest																		
+;	초보자 사냥터 안내 표지판																											
+	#recordin	ShineNPC	PostBeg01	Rou	7928	4561	137	0	QuestNpc	Quest																		
+	#recordin	ShineNPC	PostBeg01	Rou	5657	6516	0	0	QuestNpc	Quest																		
+;	크리스마스 트리																											
+;	#recordin	ShineNPC	ChristmasTree	Rou	5664	4510	0	0	QuestNpc	Quest																		
+;	엘더린 npc																											
+	#recordin	ShineNPC	EldSmithKarls	Eld	16734	14837	0	1	Merchant	Weapon																		
+	#recordin	ShineNPC	EldWeaponTitleMctBran	Eld	15613	15123	39	1	Merchant	WeaponTitle																		
+	#recordin	ShineNPC	EldSoulMctAvon	Eld	16175	14938	0	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	EldStoreKyle	Eld	14357	12086	-171	1	StoreManager	-																		
+	#recordin	ShineNPC	EldItemMctNina	Eld	17382	12362	173	1	Merchant	Item																		
+;	엘더린 가구상인 NPC																											
+	#recordin	ShineNPC	EldFurnitureForestTall	Eld	14331	14780	56	1	Merchant	Item																		
+;	엘더린 창고지기 주변 투명 NPC																											
+	#recordin	ShineNPC	InvisibleMan	Eld	14504	12447	-116	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	InvisibleMan	Eld	14179	12439	-116	1	QuestNpc	Quest																		
+;	엘더린 마을이동 NPC																											
+;	#recordin	ShineNPC	Gate_Town	Eld	11788	10395	-164	1	QuestNpc	Quest																		
+;	엘더린 스킬 npc 위치 임시적용																											
+	#recordin	ShineNPC	EldWarSkillMarty	Eld	12893	12729	-143	1	Merchant	Skill																		
+	#recordin	ShineNPC	EldPalSkillKeest	Eld	13529	12692	135	1	Merchant	Skill																		
+	#recordin	ShineNPC	EldScoSkillDeikid	Eld	13520	14180	46	1	Merchant	Skill																		
+	#recordin	ShineNPC	EldWizSkillWishis	Eld	12934	14189	-46	1	Merchant	Skill																		
+;	엘더린 스킬 npc 위치 																											
+;	#recordin	ShineNPC	EldWarSkillMarty	Eld	16901	10406	-88	1	Merchant	Skill																		
+;	#recordin	ShineNPC	EldPalSkillKeest	Eld	10746	16068	-90	1	Merchant	Skill																		
+;	#recordin	ShineNPC	EldScoSkillDeikid	Eld	10634	10040	-153	1	Merchant	Skill																		
+;	#recordin	ShineNPC	EldWizSkillWishis	Eld	15119	15694	0	1	Merchant	Skill																		
+	#recordin	ShineNPC	EldGuardCaptainShutian	Eld	13571	13412	-91	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldGuardNus	Eld	17973	10584	-10	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldKidWorze	Eld	16445	13378	89	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldMrsMisen	Eld	16629	12068	147	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	EldFurnitureMctBiette	Eld	16970	15825	0	1	Merchant	Quest																		
+;	#recordin	ShineNPC	EldGuild	Eld	13865	10181	0	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	EldGaianBjurin	Eld	10310	11169	-96	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldCastleLordElderiss	Eld	10659	16064	-91	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	EldItemMctKenton	Eld	14630	14613	-14	1	Merchant	Item																		
+;	#recordin	ShineNPC	EldDiggerRoyquin	Eld	12916	10930	-175	1	Gatenpc	Gate																		
+;	#recordin	ShineNPC	Rachel	Eld	16562	13436	89	1	JobMaster	Job																		
+;	#recordin	ShineNPC	EldItemMctNina	Eld					JobMaster	Job																		
+;	엘더린 길드 npc																											
+	#recordin	ShineNPC	EldGuildPredrick	Eld	10266	13436	-92	0	NPCMenu	Guild																		
+;	엘더린 조커 관련 npc 																											
+	#recordin	ShineNPC	Joker	Eld	13453	13445	-68	1	Merchant	Skill																		
+	#recordin	ShineNPC	Edge	Eld	13453	13353	-68	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Ring	Eld	13453	13539	-68	1	QuestNpc	Quest																		
+;	탐욕의 해안 포털 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Eld	16709	9195	175	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	16499	9195	175	0	Guard	Quest																		
+;	붕괴된 감옥 터 포털 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Eld	13321	9110	-179	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	13113	9110	-179	0	Guard	Quest																		
+;	달빛묘지 포털 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Eld	13652	16755	0	0	Guard	Quest																		
+	#recordin	ShineNPC	EldArcGuard02	Eld	13442	16755	0	0	Guard	Quest																		
+;	메마른 안개숲 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Eld	18476	13589	90	0	Guard	Quest																		
+	#recordin	ShineNPC	EldArcGuard02	Eld	18476	13210	90	0	Guard	Quest																		
+;	건물 입구 근위병 																											
+	#recordin	ShineNPC	EldSpeGuard02	Eld	11008	13147	-124	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	11147	12944	-124	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard01	Eld	11008	13685	-48	1	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	11147	13877	-48	0	Guard	Quest																		
+;	건물 입구 아처 																											
+	#recordin	ShineNPC	EldArcGuard01	Eld	10505	13608	-90	1	Guard	Quest																		
+	#recordin	ShineNPC	EldArcGuard02	Eld	10505	13234	-90	0	Guard	Quest																		
+;	움직이는 풍선앞 아처																											
+	#recordin	ShineNPC	EldArcGuard02	Eld	17595	13693	83	0	Guard	Quest																		
+	#recordin	ShineNPC	EldArcGuard02	Eld	17595	13133	86	0	Guard	Quest																		
+;	경기장 경비병																											
+;	#recordin	ShineNPC	EldArcGuard02	Eld	15665	10311	-92	0	Guard	Quest																		
+;	#recordin	ShineNPC	EldArcGuard02	Eld	16448	10319	94	0	Guard	Quest																		
+;	경기장 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Eld	16188	11829	178	0	Guard	Quest																		
+;	#recordin	ShineNPC	EldSpeGuard02	Eld	15935	11833	177	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	16194	10772	0	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	15925	10764	0	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	15844	9787	-179	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Eld	16268	9787	-179	0	Guard	Quest																		
+;	동영상 촬영용 npc																											
+;	승급 npc																											
+	#recordin	ShineNPC	GrandMasterShone	RouVal01	12842	6467	134	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	EldCastleLordElderiss	RouVal01	11842	6467	134	1	Merchant	SoulStone																		
+;	크리스마스 트리																											
+;	#recordin	ShineNPC	ChristmasTree	Eld	16208	13247	-61	0	QuestNpc	Quest																		
+;	결혼 진행 엔피씨																											
+	#recordin	ShineNPC	WeddingDreian	Eld	10901	14942	-111	1	Merchant	Item																		
+;	우르가 npc																											
+	#recordin	ShineNPC	UruSmithHans	Urg	6837	7418	54	1	Merchant	Weapon																		
+	#recordin	ShineNPC	UruItemMctVellon	Urg	6337	5022	0	1	Merchant	Item																		
+	#recordin	ShineNPC	UruTownChiefAdrien	Urg	7966	6638	76	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	UruSoulPooring	Urg	5603	5399	0	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	UruGuildLump	Urg	5496	7526	-45	0	NPCMenu	Guild																		
+	#recordin	ShineNPC	UruFurnitureForestTeem	Urg	5897	5189	0	1	Merchant	Item																		
+	#recordin	ShineNPC	UruStoreCurly	Urg	6778	5067	-9	1	StoreManager	-																		
+	#recordin	ShineNPC	UruSkillChyburn	Urg	7909	8083	44	1	Merchant	Skill																		
+	#recordin	ShineNPC	Q_Kassandra	Urg	11232	6519	122	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Keroll	Urg	11157	6625	118	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Lino	Urg	11123	6733	0	1	QuestNpc	Quest																		
+;	비행선 왼쪽 경비병																											
+;	#recordin	ShineNPC	EldSpeGuard02	Urg	7968	4901	-23	0	Guard	Quest																		
+;	#recordin	ShineNPC	EldSpeGuard02	Urg	7774	4790	-29	0	Guard	Quest																		
+;	비행선 오른쪽 경비병																											
+;	#recordin	ShineNPC	EldSpeGuard02	Urg	5126	5209	50	0	Guard	Quest																		
+;	#recordin	ShineNPC	EldSpeGuard02	Urg	5002	5350	38	0	Guard	Quest																		
+;	우루가 뒤쪽길 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Urg	4898	7634	136	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Urg	4687	7451	136	0	Guard	Quest																		
+;	킹퀘 npc 쪽 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Urg	7308	6371	79	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Urg	7247	6651	81	0	Guard	Quest																		
+;	킹퀘 npc 쪽 경비병																											
+	#recordin	ShineNPC	EldSpeGuard02	Urg	5537	6178	-98	0	Guard	Quest																		
+	#recordin	ShineNPC	EldSpeGuard02	Urg	5501	6414	-95	0	Guard	Quest																		
+;	크리스마스 트리																											
+;	#recordin	ShineNPC	ChristmasTree	Urg	7757	6776	0	0	QuestNpc	Quest																		
+;	모래바람 캠프 npc																											
+	#recordin	ShineNPC	HednisSkillGrunt	EldGbl02	9837	8621	131	1	Merchant	Skill																		
+	#recordin	ShineNPC	HednisSmithRohan	EldGbl02	9491	8688	113	1	Merchant	Weapon																		
+	#recordin	ShineNPC	HednisSoulKeroll	EldGbl02	9608	8179	54	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	HednisStoreDrein	EldGbl02	9472	8355	64	1	StoreManager	-																		
+;	모래바람 언덕 마을이동 NPC																											
+;	#recordin	ShineNPC	Gate_Town	EldGbl02	9039	9312	-26	1	QuestNpc	Quest																		
+;	모래바람 캠프 경비병																											
+	#recordin	ShineNPC	HednisArcGuard01	EldGbl02	8727	9989	147	0	Guard	Quest																		
+	#recordin	ShineNPC	HednisFigGuard01	EldGbl02	8404	9761	141	0	Guard	Quest																		
+	#recordin	ShineNPC	HednisArcGuard01	EldGbl02	10140	6903	0	0	Guard	Quest																		
+	#recordin	ShineNPC	HednisFigGuard01	EldGbl02	10409	6947	0	0	Guard	Quest																		
+;	모래바람 캠프 사절단																											
+	#recordin	ShineNPC	HednisMageWoman	EldGbl02	10219	8891	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	HednisClericMan	EldGbl02	10226	8830	157	1	QuestNpc	Quest																		
+;	불타는 돌 이동 상단																											
+	#recordin	ShineNPC	MctMasterMaxUtter	UrgFire01	23408	2215	101	1	Guard	Quest																		
+	#recordin	ShineNPC	ItemMctJelluin	UrgFire01	23558	2454	114	1	Merchant	Item																		
+	#recordin	ShineNPC	StoneMctTomson	UrgFire01	23630	2625	109	1	Merchant	SoulStone																		
+;	#recordin	ShineNPC	mercenary01	UrgFire01	23260	2190	132	0	Guard	Quest																		
+;	#recordin	ShineNPC	mercenary02	UrgFire01	23225	2169	155	0	Guard	Quest																		
+;	불타는 돌 창고지기																											
+	#recordin	ShineNPC	EldStoreFranz	UrgFire01	23205	2022	155	1	StoreManager	-																		
+;	불타는 돌 빛의 기둥																											
+	#recordin	ShineNPC	PillarofLight	UrgFire01	2602	12731	0	1	Guard	Quest																		
+;	여명의 늪 필드 npc																											
+	#recordin	ShineNPC	DustAdventurer04	UrgSwa01	19887	15437	76	1	Guard	Quest																		
+	#recordin	ShineNPC	SecretaryCleo	UrgSwa01	10986	4052	0	1	Guard	Quest																		
+	#recordin	ShineNPC	DustAdventurer03	UrgSwa01	20536	12766	140	1	Guard	Quest																		
+	#recordin	ShineNPC	PriestMediang	UrgSwa01	20091	21870	0	1	Guard	Quest																		
+	#recordin	ShineNPC	UrgSwaItemMct	UrgSwa01	19296	7406	100	1	Merchant	Item																		
+	#recordin	ShineNPC	SoulMctChloe	UrgSwa01	17362	4183	38	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	Pie	UrgSwa01	5151	4195	-79	1	QuestNpc	Quest																		
+;	고블린 캠프 npc																											
+	#recordin	ShineNPC	VegetarianGoblin	EldGbl01	6918	3076	0	1	Guard	Quest																		
+	#recordin	ShineNPC	SpyGoblin	EldGbl01	8117	1347	0	1	Guard	Quest																		
+;	단두대 형장 npc																											
+	#recordin	ShineNPC	PatrolGuardianPolmon	EldPri02	2868	6142	49	1	Guard	Quest																		
+;	올버스톨 폐허 npc																											
+	#recordin	ShineNPC	AlruinChiefKiera	Urg_Alruin	6810	10138	71	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	AlruinSmithMacurdos	Urg_Alruin	6593	7599	-175	1	Merchant	Weapon																		
+	#recordin	ShineNPC	AlruinStoreRel	Urg_Alruin	5655	11620	-31	1	StoreManager	-																		
+	#recordin	ShineNPC	AlruinSoulRunadilla	Urg_Alruin	7009	10967	145	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	AlruinItemMctGeric	Urg_Alruin	8160	9248	118	1	Merchant	Item																		
+	#recordin	ShineNPC	AlruinSkillPaela	Urg_Alruin	8847	12731	23	1	Merchant	Skill																		
+	#recordin	ShineNPC	AlruinTeiler	Urg_Alruin	6149	10470	98	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	AlruinRick	Urg_Alruin	8330	10790	4	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Alruin_EarthStone	Urg_Alruin	10330	5820	147	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Alruin_FireStone	Urg_Alruin	4621	15332	-35	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Alruin_TreeStone	Urg_Alruin	10890	10364	114	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Alruin_WaterStone	Urg_Alruin	5158	5764	-28	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Alruin_WindStone	Urg_Alruin	9197	15114	35	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Hugues	UrgSwa01	19202	6819	100	1	Guard	Quest																		
+	#recordin	ShineNPC	Q_Como	UrgSwa01	19067	7189	100	1	Guard	Quest																		
+	#recordin	ShineNPC	Q_Tiara	UrgSwa01	19077	7326	100	1	Guard	Quest																		
+	#recordin	ShineNPC	UruGuildGump	Urg_Alruin	7388	8356	160	0	NPCMenu	Guild																		
+;	베라 npc																											
+	#recordin	ShineNPC	BeraChiefValiere	Bera	2218	4606	-87	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	BeraMargentia	Bera	6455	6215	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	BeraEtty	Bera	6699	6223	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	BeraDuskin	Bera	12231	10925	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	BeraAmelie	Bera	4928	3615	-77	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	BeraItemMilly	Bera	5209	2109	-114	1	Merchant	Item																		
+	#recordin	ShineNPC	BeraItemEdmong	Bera	6964	3371	3	1	Merchant	Item																		
+	#recordin	ShineNPC	BeraSmithMcDilan	Bera	5631	4626	-31	1	Merchant	Weapon																		
+	#recordin	ShineNPC	BeraSkillHal	Bera	7911	4138	59	1	Merchant	Skill																		
+	#recordin	ShineNPC	BeraStoreShane	Bera	6857	4242	118	1	StoreManager	Quest																		
+	#recordin	ShineNPC	BeraSoulOlivia	Bera	7655	1894	168	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	BeraVillager	Bera	11391	4612	53	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	BeraGuardArcher	Bera	6404	1295	-172	1	Merchant	WeaponTitle																		
+;	갬블 하우스 NPC																											
+	#recordin	ShineNPC	GB_MasterRoan	GBHouse	1597	1919	-178	1	Merchant	Item																		
+	#recordin	ShineNPC	GB_Store	GBHouse	1134	2413	-35	1	StoreManager	-																		
+;	#recordin	ShineNPC	GB_CoinStore	GBHouse	2066	2418	32	1	Merchant	Item																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	1351	1601	89	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	789	1131	-170	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	789	2074	-9	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	1836	1595	-87	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	2408	2078	9	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	2407	1127	174	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	1592	1376	0	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	2073	795	97	0	NPCMenu	ExchangeCoin																		
+	#recordin	ShineNPC	GB_CoinMachine	GBHouse	1129	791	-100	0	NPCMenu	ExchangeCoin																		
+;	겜블하우스 딜러 (주사위 & 텍사스 홀덤)																											
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1102	1437	-123	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	953	1339	-121	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	793	1391	-17	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	802	1523	73	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	805	1689	104	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	800	1813	-168	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	954	1854	-53	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1095	1763	-56	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2098	1762	50	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2245	1854	56	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2402	1811	166	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2404	1681	-104	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2410	1519	-78	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2394	1387	9	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2241	1340	125	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	2106	1435	128	1	QuestNpc	Quest																		
+;	"겜블하우스 딜러 (슬롯머신, 슬롯머신 업뎃 후 재배치 해야함)"																											
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1783	1048	-120	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1827	905	-67	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1724	795	-10	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1476	796	17	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1376	904	73	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	GB_Dealer	GBHouse	1419	1051	121	1	QuestNpc	Quest																		
+;	갬블 하우스 주사위 게임기																											
+	#recordin	ShineNPC	GB_Game_Dice01	GBHouse	1154	1471	-123	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice02	GBHouse	1003	1371	-121	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice03	GBHouse	815	1340	-17	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice04	GBHouse	746	1509	76	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice05	GBHouse	749	1703	104	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice06	GBHouse	816	1866	-169	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice07	GBHouse	1000	1818	-54	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice08	GBHouse	1147	1725	-58	1	QuestNpc	GBDice																		
+;	갬블 하우스 텍사스 홀덤 게임기 (주사위 게임 임시 배치)																											
+	#recordin	ShineNPC	GB_Game_Dice09	GBHouse	2055	1726	52	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice10	GBHouse	2198	1823	58	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice11	GBHouse	2388	1865	169	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice12	GBHouse	2457	1696	-104	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice13	GBHouse	2464	1504	-77	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice14	GBHouse	2382	1333	11	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice15	GBHouse	2194	1372	125	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_Game_Dice16	GBHouse	2060	1471	130	1	QuestNpc	GBDice																		
+;	갬블 하우스 슬롯머신 게임기																											
+	#recordin	ShineNPC	GB_SlotMachine_01_01	GBHouse	1813	1107	-127	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_02	GBHouse	1782	1147	-127	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_03	GBHouse	1750	1188	-127	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_04	GBHouse	1448	1182	-52	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_05	GBHouse	1415	1141	-52	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_06	GBHouse	1384	1100	-52	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_07	GBHouse	1327	749	10	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_08	GBHouse	1378	739	10	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_09	GBHouse	1429	730	10	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_10	GBHouse	1767	729	-10	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_11	GBHouse	1820	739	-10	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_01_12	GBHouse	1872	748	-10	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_01	GBHouse	1954	886	-121	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_02	GBHouse	1927	931	-121	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_03	GBHouse	1901	977	-121	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_04	GBHouse	1876	1022	-121	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_05	GBHouse	1325	1023	-59	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_06	GBHouse	1297	979	-59	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_07	GBHouse	1271	934	-59	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_02_08	GBHouse	1245	890	-59	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_03_01	GBHouse	1624	1211	0	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_03_02	GBHouse	1570	1211	0	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_03_03	GBHouse	1574	726	0	1	QuestNpc	GBDice																		
+	#recordin	ShineNPC	GB_SlotMachine_03_04	GBHouse	1626	726	0	1	QuestNpc	GBDice																		
+;	럭키 캡슐 이벤트																											
+;	#recordin	ShineNPC	LC_Machine	RouN	5643	5333	-178	1	Merchant	Item																		
+;	#recordin	ShineNPC	LC_Machine	Eld	13136	13082	0	1	Merchant	Item																		
+;	#recordin	ShineNPC	LC_Machine	Urg	6359	6148	22	1	Merchant	Item																		
+;	럭키 캡슐 다양화																											
+	#recordin	ShineNPC	LC_MachineRed	GBHouse	1538	2250	-8	1	Merchant	Item																		
+	#recordin	ShineNPC	LC_MachineBlue	GBHouse	1651	2250	-8	1	Merchant	Item																		
+;	필드 게이트 위치 																											
+;	루맨																											
+	#recordin	ShineNPC	MapLinkGate	RouN	6477	10579	0	0	Gate	GateRou1																		
+	#recordin	LinkTable								GateRou1	RouCos02	RouCos02	17418	13832	80	1												
+	#recordin	ShineNPC	MapLinkGate	RouN	5983	4454	-178	0	Gate	GateRou2																		
+	#recordin	LinkTable								GateRou2	RouCos01	RouCos01	8927	13504	17	1												
+	#recordin	ShineNPC	MapLinkGate	RouN	7222	4370	-178	0	Gate	GateRou4																		
+	#recordin	LinkTable								GateRou4	RouCos03	RouCos03	7514	15412	0	1												
+	#recordin	ShineNPC	MapLinkGate01	RouCos02	8230	6660	158	0	Gate	GateRou5																		
+	#recordin	LinkTable								GateRou5	IDGate01	IDGate01	389	1370	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouN	4801	4643	86	0	Gate	GateRou6																		
+	#recordin	LinkTable								GateRou6	EventF	EventF	12450	7485	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouN	5311	4428	-178	0	Gate	GateRou7																		
+	#recordin	LinkTable								GateRou7	EventF01	EventF01	10289	7178	0	1												
+;	모래바다																											
+	#recordin	ShineNPC	MapLinkGate	RouCos01	8989	13667	17	0	Gate	GateRouCos011																		
+	#recordin	LinkTable								GateRouCos011	RouN	RouN	5983	4622	-75	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos01	16476	11039	-27	0	Gate	GateRouCos012																		
+	#recordin	LinkTable								GateRouCos012	RouCos02	RouCos02	8423	10635	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos01	12658	13373	-49	0	Gate	GateRouCos013																		
+	#recordin	LinkTable								GateRouCos013	EchoCave	EchoCave	2182	2703	-133	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos01	9520	19658	0	0	Gate	GateRouCos022																		
+	#recordin	LinkTable								GateRouCos022	RouVal01	RouVal01	14571	4442	139	1												
+;	파도숲																											
+	#recordin	ShineNPC	MapLinkGate	RouCos02	17607	13887	76	0	Gate	GateRouCos021																		
+	#recordin	LinkTable								GateRouCos021	RouN	RouN	6477	10435	-51	1												
+;	#recordin	ShineNPC	MapLinkGate	RouCos02	16191	20334	74	0	Gate	GateRouCos022																		
+;	#recordin	LinkTable								GateRouCos022	RouVal01	RouVal01	14571	4442	139	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos02	19953	9944	90	0	Gate	GateRouCos023																		
+	#recordin	LinkTable								GateRouCos023	EchoCave	EchoCave	23343	23541	47	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos02	8300	10655	-72	0	Gate	GateRouCos024																		
+	#recordin	LinkTable								GateRouCos024	RouCos01	RouCos01	16371	11133	-37	1												
+;	메마른 안개숲																											
+	#recordin	ShineNPC	MapLinkGate	RouVal01	14679	4327	-33	0	Gate	GateRouVal011																		
+	#recordin	LinkTable								GateRouVal011	RouCos01	RouCos01	9522	19589	57	1												
+;	#recordin	ShineNPC	MapLinkGate	RouVal01	14679	4327	-33	0	Gate	GateRouVal012																		
+;	#recordin	LinkTable								GateRouVal012	RouCos02	RouCos02	15555	20332	67	1												
+	#recordin	ShineNPC	MapLinkGate	RouVal01	15247	21011	25	0	Gate	GateRouVal013																		
+	#recordin	LinkTable								GateRouVal013	Eld	Eld	18309	13407	89	1												
+	#recordin	ShineNPC	MapLinkGate	RouVal01	12606	11850	0	0	Gate	GateRouVal014																		
+	#recordin	LinkTable								GateRouVal014	RouTemDn01	RouTemDn01	6252	1156	-178	1												
+	#recordin	ShineNPC	MapLinkGate	RouVal01	6293	3371	54	0	Gate	GateRouVal015																		
+	#recordin	LinkTable								GateRouVal015	RouCos03	RouCos03	19815	7323	-178	1												
+	#recordin	ShineNPC	T_Gate01	RouVal01	4370	8180	-134	0	IDGate	GateRouVal016																		
+	#recordin	LinkTable								GateRouVal016	Tower01	Tower01	1182	7218	0	1												
+;	탐욕의 해안																											
+	#recordin	ShineNPC	MapLinkGate	RouCos03	13388	2070	-7	0	Gate	GateRouCos031																		
+	#recordin	LinkTable								GateRouCos031	Eld	Eld	16609	9334	-179	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos03	16182	17461	48	0	Gate	GateRouCos032																		
+	#recordin	LinkTable								GateRouCos032	RouVal02	RouVal02	2435	3359	-103	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos03	7494	15671	0	0	Gate	GateRouCos033																		
+	#recordin	LinkTable								GateRouCos033	RouN	RouN	7222	4610	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos03	20640	3833	98	0	Gate	GateRouCos034																		
+	#recordin	LinkTable								GateRouCos034	EchoCave	EchoCave	9240	21838	34	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos03	4301	5192	-59	0	Gate	GateRouCos035																		
+	#recordin	LinkTable								GateRouCos035	EldGbl02	EldGbl02	1366	3195	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouCos03	19909	7325	-85	0	Gate	GateRouCos036																		
+	#recordin	LinkTable								GateRouCos036	RouVal01	RouVal01	6366	3444	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouVal02	4914	9319	0	0	Gate	GateRouVal021																		
+	#recordin	LinkTable								GateRouVal021	EldCem01	EldCem01	11478	11478	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouVal02	2195	3313	-114	0	Gate	GateRouVal022																		
+	#recordin	LinkTable								GateRouVal022	RouCos03	RouCos03	15570	16925	49	1												
+	#recordin	ShineNPC	MapLinkGate	RouVal02	2622	7938	98	0	Gate	GateRouVal023																		
+	#recordin	LinkTable								GateRouVal023	ValDn01	ValDn01	1159	11349	-25	1												
+	#recordin	ShineNPC	MapLinkGate	RouVal02	10724	4318	-82	0	Gate	GateRouVal024																		
+	#recordin	LinkTable								GateRouVal024	EldGbl02	EldGbl02	6486	11164	0	1												
+;	빛나는 돌 1층																											
+	#recordin	ShineNPC	MapLinkGate	RouTemDn01	6260	732	179	0	Gate	GateRouTemDn011																		
+	#recordin	LinkTable								GateRouTemDn011	RouVal01	RouVal01	12605	11495	0	1												
+	#recordin	ShineNPC	MapLinkGate	RouTemDn01	8999	4936	0	0	Gate	GateRouTemDn012																		
+	#recordin	LinkTable								GateRouTemDn012	RouTemDn02	RouTemDn02	5203	828	0	1												
+;	#recordin	ShineNPC	EldSpeGuard03	RouTemDn01	5446	6642	0	0	Gate	GateRouTemDn013																		
+;	#recordin	LinkTable								GateRouTemDn013	ElfDn02	ElfDn02	5230	3846	0	0												
+;	#recordin	ShineNPC	EldSpeGuard03	RouTemDn01	1146	4319	0	0	Gate	GateRouTemDn014																		
+;	#recordin	LinkTable								GateRouTemDn014	PriDn02	PriDn02	5154	5059	0	0												
+;	빛나는 돌 2층																											
+	#recordin	ShineNPC	MapLinkGate	RouTemDn02	5206	483	0	0	Gate	GateRouTemDn021																		
+	#recordin	LinkTable								GateRouTemDn021	RouTemDn01	RouTemDn01	8961	5389	0	1												
+;	#recordin	ShineNPC	EldSpeGuard03	RouTemDn02	5211	8555	180	0	Gate	GateRouTemDn022																		
+;	#recordin	LinkTable								GateRouTemDn022	CemDn02	CemDn02	9791	6907	0	1												
+;	엘더린 																											
+	#recordin	ShineNPC	MapLinkGate	Eld	18525	13403	-89	0	Gate	GateEld1																		
+	#recordin	LinkTable								GateEld1	RouVal01	RouVal01	15247	20843	0	1												
+	#recordin	ShineNPC	MapLinkGate	Eld	13221	8958	0	0	Gate	GateEld2																		
+	#recordin	LinkTable								GateEld2	EldPri01	EldPri01	1463	2561	-150	1												
+	#recordin	ShineNPC	MapLinkGate	Eld	16606	8972	0	0	Gate	GateEld3																		
+	#recordin	LinkTable								GateEld3	RouCos03	RouCos03	13361	2378	172	1												
+	#recordin	ShineNPC	MapLinkGate	Eld	13547	16820	0	0	Gate	GateEld4																		
+	#recordin	LinkTable								GateEld4	EldCem01	EldCem01	11468	1229	123	1												
+	#recordin	ShineNPC	EldSpeGuard03	Eld	17684	11564	94	0	Gate	GateEld5																		
+	#recordin	LinkTable								GateEld5	BFGate01	BFGate01	1589	301	0	1												
+;	ox 퀴즈맵 게이트																											
+	#recordin	ShineNPC	OX_GateSpeGuard	Eld	15935	11833	177	0	Gate	GateEld6																		
+	#recordin	LinkTable								GateEld6	OX_field	OX_field	6467	4771	0	1												
+;	달빛묘지																											
+	#recordin	ShineNPC	MapLinkGate	EldCem01	11509	11829	12	0	Gate	GateEldCem011																		
+	#recordin	LinkTable								GateEldCem011	RouVal02	RouVal02	4918	9043	0	1												
+;	#recordin	ShineNPC	MapLinkGate	EldCem01	982	12298	-58	0	Gate	GateEldCem012																		
+;	#recordin	LinkTable								GateEldCem012	EldCem02	EldCem02	1218	855	-128	1												
+	#recordin	ShineNPC	MapLinkGate	EldCem01	11829	1135	-72	0	Gate	GateEldCem013																		
+	#recordin	LinkTable								GateEldCem013	Eld	Eld	13560	16571	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldCem01	862	8528	-20	0	Gate	GateEldCem014																		
+	#recordin	LinkTable								GateEldCem014	WindyCave	WindyCave	2182	2703	-133	1												
+	#recordin	ShineNPC	MapLinkGate	EldCem01	2557	2430	-38	0	Gate	GateEldCem015																		
+	#recordin	LinkTable								GateEldCem015	CemDn01	CemDn01	8029	1765	33	1												
+	#recordin	ShineNPC	MapLinkGate	EldCem01	4019	668	0	0	Gate	GateEldCem016																		
+	#recordin	LinkTable								GateEldCem016	EldGbl02	EldGbl02	10461	3429	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldCem01	982	12298	-58	0	Gate	GateEldCem017																		
+	#recordin	LinkTable								GateEldCem017	Linkfield01	Linkfield01	3823	3087	0	1												
+;	덩굴무덤																											
+	#recordin	ShineNPC	MapLinkGate	EldCem02	11896	12189	0	0	Gate	GateEldCem021																		
+	#recordin	LinkTable								GateEldCem021	EldGbl01	EldGbl01	6580	7467	41	1												
+;	#recordin	ShineNPC	MapLinkGate	EldCem02	958	674	57	0	Gate	GateEldCem022																		
+;	#recordin	LinkTable								GateEldCem022	EldCem01	EldCem01	1249	12145	-67	1												
+;	#recordin	ShineNPC	MapLinkGate	EldCem02	4474	11896	0	0	Gate	GateEldCem023																		
+;	#recordin	LinkTable								GateEldCem023	CemDn02	CemDn02	5678	15617	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldCem02	958	674	57	0	Gate	GateEldCem024																		
+	#recordin	LinkTable								GateEldCem024	Linkfield01	Linkfield01	9817	10895	0	1												
+;	고블린 캠프																											
+	#recordin	ShineNPC	MapLinkGate	EldGbl01	6015	7004	51	0	Gate	GateEldGbl011																		
+	#recordin	LinkTable								GateEldGbl011	EldPri01	EldPri01	2575	1686	152	1												
+	#recordin	ShineNPC	MapLinkGate	EldGbl01	6752	7642	56	0	Gate	GateEldGbl012																		
+	#recordin	LinkTable								GateEldGbl012	EldCem02	EldCem02	11984	11883	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldGbl01	11514	5792	84	0	Gate	GateEldGbl013																		
+	#recordin	LinkTable								GateEldGbl013	WindyCave	WindyCave	23343	23541	47	1												
+	#recordin	ShineNPC	MapLinkGate	EldGbl01	684	6867	86	0	Gate	GateEldGbl014																		
+	#recordin	LinkTable								GateEldGbl014	GblDn01	GblDn01	5091	548	0	1												
+;	#recordin	ShineNPC	MapLinkGate	EldGbl01	4334	1092	-140	0	Gate	GateEldGbl015																		
+;	#recordin	LinkTable								GateEldGbl015	GblDn02	GblDn02	5081	6146	0	1												
+;	붕괴된 감옥 터																											
+	#recordin	ShineNPC	MapLinkGate	EldPri01	1280	2198	24	0	Gate	EldPri011																		
+	#recordin	LinkTable								EldPri011	Eld	Eld	13221	9175	178	1												
+	#recordin	ShineNPC	MapLinkGate	EldPri01	9428	10076	46	0	Gate	EldPri012																		
+	#recordin	LinkTable								EldPri012	EldPriDn01	EldPriDn01	3127	8715	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldPri01	2662	1415	-23	0	Gate	EldPri013																		
+	#recordin	LinkTable								EldPri013	EldGbl01	EldGbl01	6157	7131	-131	1												
+;	#recordin	ShineNPC	MapLinkGate	EldPri01	1078	11129	-10	0	Gate	EldPri014																		
+;	#recordin	LinkTable								EldPri014	Urg	Urg	1807	11270	-57	1												
+	#recordin	ShineNPC	MapLinkGate	EldPri01	5504	1259	93	0	Gate	EldPri015																		
+	#recordin	LinkTable								EldPri015	PriDn01	PriDn01	12208	4514	-90	1												
+	#recordin	ShineNPC	MapLinkGate	EldPri01	480	2800	-10	0	Gate	EldPri016																		
+	#recordin	LinkTable								EldPri016	EldPri02	EldPri02	1663	3602	-57	1												
+	#recordin	ShineNPC	MapLinkGate	EldPri01	1078	11129	-10	0	Gate	EldPri017																		
+	#recordin	LinkTable								EldPri017	Linkfield02	Linkfield02	2763	6479	0	1												
+;	숨겨진 감옥 1층																											
+	#recordin	ShineNPC	MapLinkGate	EldPriDn01	3124	9042	-2	0	Gate	GateEldPriDn011																		
+	#recordin	LinkTable								GateEldPriDn011	EldPri01	EldPri01	9935	10604	-134	1												
+	#recordin	ShineNPC	MapLinkGate	EldPriDn01	12540	8038	0	0	Gate	GateEldPriDn012																		
+	#recordin	LinkTable								GateEldPriDn012	EldPriDn02	EldPriDn02	370	5055	87	1												
+;	숨겨진 감옥2층																											
+	#recordin	ShineNPC	MapLinkGate	EldPriDn02	206	5062	92	0	Gate	GateEldPriDn021																		
+	#recordin	LinkTable								GateEldPriDn021	EldPriDn01	EldPriDn01	12535	7808	0	1												
+;	#recordin	ShineNPC	MapLinkGate	EldPriDn02				0	Gate	GateEldPriDn022																		
+;	#recordin	LinkTable								GateEldPriDn022	고대엘프숲	고대엘프숲				1												
+;	화염광산																											
+	#recordin	ShineNPC	MapLinkGate	UrgFireDn01	2447	11386	-84	0	Gate	UrgFireDn001																		
+	#recordin	LinkTable								UrgFireDn001	UrgFire01	UrgFire01	2253	3215	-134	1												
+;	영혼의 신전																											
+;	#recordin	ShineNPC	MapLinkGate	UrgSwaDn01	5666	6808	0	0	Gate	UrgFireDn001																		
+;	#recordin	LinkTable								UrgFireDn001	EldPri01	EldPri01	9935	10604	-134	1												
+;	우루가 																											
+;	#recordin	ShineNPC	MapLinkGate	Urg	1603	11498	-49	0	Gate	Urg01																		
+;	#recordin	LinkTable								Urg01	EldPri01	EldPri01	1133	10955	-13	1												
+	#recordin	ShineNPC	MapLinkGate	Urg	1175	2343	-129	0	Gate	Urg02																		
+	#recordin	LinkTable								Urg02	GoldCave	GoldCave	2182	2703	-133	1												
+	#recordin	ShineNPC	MapLinkGate	Urg	11591	2686	-66	0	Gate	Urg03																		
+	#recordin	LinkTable								Urg03	EldFor01	EldFor01	7448	19822	-19	1												
+	#recordin	ShineNPC	MapLinkGate	Urg	10709	12119	-33	0	Gate	Urg04																		
+	#recordin	LinkTable								Urg04	ElfDn01	ElfDn01	2660	6901	-89	1												
+	#recordin	ShineNPC	MapLinkGate	Urg	1528	9368	-49	0	Gate	Urg05																		
+	#recordin	LinkTable								Urg05	EldPri02	EldPri02	9942	2893	-13	1												
+	#recordin	ShineNPC	EldSpeGuard03	Urg	8450	6765	78	0	Gate	Urg06																		
+	#recordin	LinkTable								Urg06	BFGate02	BFGate02	1589	301	0	1												
+	#recordin	ShineNPC	MapLinkGate	Urg	1603	11498	-49	0	Gate	Urg07																		
+	#recordin	LinkTable								Urg07	Linkfield02	Linkfield02	2400	9241	0	1												
+	#recordin	ShineNPC	MapLinkGate	Urg	2004	4962	-90	0	Gate	Urg09																		
+	#recordin	LinkTable								Urg09	EldSleep01	EldSleep01	11620	17868	48	1												
+;	#recordin	ShineNPC	MapLinkGate	Urg	7861	11135	-60	0	Gate	Urg10																		
+;	#recordin	LinkTable								Urg10	UrgFire01	UrgFire01	15373	1851	48	1												
+;	크리스탈 성																											
+	#recordin	ShineNPC	C_Gate01	Urg	9705	758	225	0	IDGate	Urg12																		
+	#recordin	LinkTable								Urg12	Tower02	Tower02	1182	7218	0	1												
+;	엘프 숲																											
+	#recordin	ShineNPC	MapLinkGate	EldFor01	7376	20092	-15	0	Gate	EldFor011																		
+	#recordin	LinkTable								EldFor011	Urg	Urg	11355	2770	-67	1												
+	#recordin	ShineNPC	MapLinkGate	EldFor01	16051	16585	21	0	Gate	EldFor012																		
+	#recordin	LinkTable								EldFor012	EldSleep01	EldSleep01	8590	8806	52	1												
+	#recordin	ShineNPC	MapLinkGate	EldFor01	19331	8608	-130	0	Gate	EldFor013																		
+	#recordin	LinkTable								EldFor013	ForDn01	ForDn01	5825	6128	-90	1												
+;	#recordin	ShineNPC	MapLinkGate	EldFor01	19262	8558	45	0	Gate	EldFor012																		
+;	#recordin	LinkTable								EldFor012	서광의 늪	서광의 늪				1												
+	#recordin	ShineNPC	MapLinkGate	EldFor01	7277	6650	0	0	Gate	EldFor015																		
+	#recordin	LinkTable								EldFor015	UrgFire01	UrgFire01	10908	23620	0	1												
+;	잠자는 숲																											
+	#recordin	ShineNPC	MapLinkGate	EldSleep01	8323	8704	54	0	Gate	EldSleep011																		
+	#recordin	LinkTable								EldSleep011	EldFor01	EldFor01	16035	16333	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldSleep01	17437	7144	94	0	Gate	EldSleep012																		
+	#recordin	LinkTable								EldSleep012	UrgFire01	UrgFire01	2411	24635	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldSleep01	7226	11631	22	0	Gate	EldSleep013																		
+	#recordin	LinkTable								EldSleep013	R_Helga01	R_Helga01	3279	1201	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldSleep01	11670	17918	-134	0	Gate	EldSleep014																		
+	#recordin	LinkTable								EldSleep014	Urg	Urg	2054	4962	0	1												
+;	채집동굴																											
+	#recordin	ShineNPC	MapLinkGate	EchoCave	1997	2501	-136	0	Gate	EchoCave1																		
+	#recordin	LinkTable								EchoCave1	RouCos01	RouCos01	12707	13200	-63	1												
+	#recordin	ShineNPC	MapLinkGate	EchoCave	23605	23768	49	0	Gate	EchoCave2																		
+	#recordin	LinkTable								EchoCave2	RouCos02	RouCos02	20404	9873	48	1												
+	#recordin	ShineNPC	MapLinkGate	EchoCave	9435	22125	41	0	Gate	EchoCave3																		
+	#recordin	LinkTable								EchoCave3	RouCos03	RouCos03	20422	3877	101	1												
+;	채집동굴2																											
+	#recordin	ShineNPC	MapLinkGate	WindyCave	1997	2501	-136	0	Gate	WindyCave1																		
+	#recordin	LinkTable								WindyCave1	EldCem01	EldCem01	753	8310	-63	1												
+	#recordin	ShineNPC	MapLinkGate	WindyCave	23605	23768	49	0	Gate	WindyCave2																		
+	#recordin	LinkTable								WindyCave2	EldGbl01	EldGbl01	11382	5758	83	1												
+;	채집동굴3																											
+	#recordin	ShineNPC	MapLinkGate	GoldCave	1997	2501	-136	0	Gate	GoldCave1																		
+	#recordin	LinkTable								GoldCave1	Urg	Urg	1255	2371	-114	1												
+;	#recordin	ShineNPC	MapLinkGate	GoldCave	23605	23768	49	0	Gate	GoldCave2																		
+;	#recordin	LinkTable								GoldCave2	EldGbl01	EldGbl01	11382	5758	83	1												
+;	숨겨진 봉우리																											
+	#recordin	ShineNPC	MapLinkGate	GblDn01	5086	458	0	0	Gate	GblDn011																		
+	#recordin	LinkTable								GblDn011	EldGbl01	EldGbl01	895	6882	82	1												
+;	망자의 무덤																											
+	#recordin	ShineNPC	MapLinkGate	CemDn01	7892	1520	33	0	Gate	CemDn011																		
+	#recordin	LinkTable								CemDn011	EldCem01	EldCem01	2408	2623	-41	1												
+;	#recordin	ShineNPC	MapLinkGate	GblDn01					Gate	CemDn012																		
+;	#recordin	LinkTable								CemDn012	숨겨진 봉우리 2층	숨겨진 봉우리 2층																
+;	시련의 땅 																											
+	#recordin	ShineNPC	MapLinkGate	ElfDn01	2481	6894	90	0	Gate	ElfDn011																		
+	#recordin	LinkTable								ElfDn011	Urg	Urg	10842	11948	-33	1												
+;	#recordin	ShineNPC	MapLinkGate	ElfDn01					Gate	ElfDn013																		
+;	#recordin	LinkTable								ElfDn013	숨겨진 봉우리 2층	숨겨진 봉우리 2층				1												
+;	말론클랜 소굴																											
+	#recordin	ShineNPC	MapLinkGate	ValDn01	1038	11590	-17	0	Gate	ValDn011																		
+	#recordin	LinkTable								ValDn011	RouVal02	RouVal02	2440	7947	68	1												
+;	#recordin	ShineNPC	MapLinkGate	ValDn01					Gate	ValDn012																		
+;	#recordin	LinkTable								ValDn012	숨겨진 봉우리 2층	숨겨진 봉우리 2층				1												
+;	어둠의 굴레																											
+	#recordin	ShineNPC	MapLinkGate	PriDn01	12384	4508	-90	0	Gate	PriDn001																		
+	#recordin	LinkTable								PriDn001	EldPri01	EldPri01	5654	1253	-87	1												
+;	#recordin	ShineNPC	MapLinkGate	PriDn01					Gate	PriDn002																		
+;	#recordin	LinkTable								PriDn002	숨겨진 봉우리 2층	숨겨진 봉우리 2층				1												
+;	트럼피의 유적																											
+	#recordin	ShineNPC	MapLinkGate	ForDn01	5960	6127	90	0	Gate	ForDn001																		
+	#recordin	LinkTable								ForDn001	EldFor01	EldFor01	19223	8503	46	1												
+;	#recordin	ShineNPC	MapLinkGate	PriDn01					Gate	ForDn002																		
+;	#recordin	LinkTable								ForDn002	숨겨진 봉우리 2층	숨겨진 봉우리 2층				1												
+;																												
+;	가디언의 성지																											
+	#recordin	ShineNPC	MapLinkGate	FireDn01	6358	6854	0	0	Gate	FireDn001																		
+	#recordin	LinkTable								FireDn001	UrgFire01	UrgFire01	23716	8574	158	1												
+;	눈물의 늪																											
+	#recordin	ShineNPC	MapLinkGate	SwaDn01	6068	11314	0	0	Gate	SwaDn011																		
+	#recordin	LinkTable								SwaDn011	UrgSwa01	UrgSwa01	9177	12881	0	1												
+;	심연의 봉우리																											
+	#recordin	ShineNPC	LevelGuard40	GblDn02	5083	6038	-179	0	Gate	EldGbl001																		
+	#recordin	LinkTable								EldGbl001	BFGate01	BFGate01	1272	2114	0	1												
+;	심연의 땅																											
+	#recordin	ShineNPC	LevelGuard60	ElfDn02	5230	3846	0	0	Gate	ElfDn021																		
+	#recordin	LinkTable								ElfDn021	BFGate02	BFGate02	1650	1630	133	1												
+;	심연의 굴레																											
+	#recordin	ShineNPC	LevelGuard50	PriDn02	5243	5059	90	0	Gate	PriDn021																		
+	#recordin	LinkTable								PriDn021	BFGate01	BFGate01	1002	1817	0	1												
+;	불타는 돌																											
+	#recordin	ShineNPC	MapLinkGate	UrgFire01	2030	24767	-76	0	Gate	UrgFire011																		
+	#recordin	LinkTable								UrgFire011	EldSleep01	EldSleep01	17152	7152	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgFire01	23800	8367	-13	0	Gate	UrgFire012																		
+	#recordin	LinkTable								UrgFire012	FireDn01	FireDn01	6372	6659	176	1												
+	#recordin	ShineNPC	MapLinkGate	UrgFire01	2138	3161	54	0	Gate	UrgFire013																		
+	#recordin	LinkTable								UrgFire013	UrgFireDn01	UrgFireDn01	2625	11402	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgFire01	18683	24578	45	0	Gate	UrgFire014																		
+	#recordin	LinkTable								UrgFire014	UrgSwa01	UrgSwa01	5733	4075	0	1												
+;	#recordin	ShineNPC	MapLinkGate	UrgFire01	15323	1802	22	0	Gate	UrgFire015																		
+;	#recordin	LinkTable								UrgFire015	Urg	Urg	7911	11085	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgFire01	10958	23670	19	0	Gate	UrgFire016																		
+	#recordin	LinkTable								UrgFire016	EldFor01	EldFor01	7277	6700	0	1												
+;	인던-용의무덤( 불타는 돌에서 연결되는 게이트 )																											
+	#recordin	ShineNPC	IDMapLinkGate01	UrgFire01	22281	22973	81	0	ModeIDGate	UrgFire017																		
+	#recordin	LinkTable								UrgFire017	UrgDragon	UrgDragon	1040	5882	0	1												
+;	메마른 안개숲 임시 상인																											
+	#recordin	ShineNPC	EldArcGuard03	RouVal01	13429	7839	0	1	Merchant	Item																		
+	#recordin	ShineNPC	TempSoul	RouVal01	13055	7862	0	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	TempSkill	RouVal01	12776	7862	0	1	Merchant	Skill																		
+;	매마른 안개숲 마을이동 NPC																											
+;	#recordin	ShineNPC	Gate_Town	RouVal01	13660	7862	0	1	QuestNpc	Quest																		
+;	탐욕의 해안 임시 상인																											
+;	#recordin	ShineNPC	EldArcGuard03	RouCos03	7010	15732	-41	1	Merchant	Item																		
+;	#recordin	ShineNPC	TempSoul	RouCos03	7088	16054	-41	1	Merchant	SoulStone																		
+;	#recordin	ShineNPC	TempSkill	RouCos03	7574	16040	-41	1	Merchant	Skill																		
+;	대련장 입구																											
+	#recordin	ShineNPC	FbattleGate	RouN	7538	5470	-178	0	Gate	Fbattle011																		
+	#recordin	LinkTable								Fbattle011	Fbattle01	Fbattle01	923	3305	0	1												
+	#recordin	ShineNPC	FbattleGate	Eld	10223	11180	-89	0	Gate	Fbattle021																		
+	#recordin	LinkTable								Fbattle021	Fbattle02	Fbattle02	3666	4363	0	1												
+	#recordin	ShineNPC	FbattleGate	Urg	4405	6439	49	0	Gate	Fbattle031																		
+	#recordin	LinkTable								Fbattle031	Fbattle03	Fbattle03	2744	3085	0	1												
+	#recordin	ShineNPC	FbattleGate	Bera	7078	4812	40	0	Gate	Fbattle041																		
+	#recordin	LinkTable								Fbattle041	Fbattle04	Fbattle04	1768	2391	0	1												
+;	대련장 출구																											
+	#recordin	ShineNPC	FbattleGate	Fbattle01	783	3506	0	0	Gate	Fbattle012																		
+	#recordin	LinkTable								Fbattle012	RouN	RouN	7538	5610	0	1												
+	#recordin	ShineNPC	FbattleGate	Fbattle02	3845	4368	0	0	Gate	Fbattle022																		
+	#recordin	LinkTable								Fbattle022	Eld	Eld	17214	13445	0	1												
+	#recordin	ShineNPC	FbattleGate	Fbattle03	2902	3092	49	0	Gate	Fbattle032																		
+	#recordin	LinkTable								Fbattle032	Urg	Urg	6293	5477	0	1												
+	#recordin	ShineNPC	FbattleGate	Fbattle04	1323	2628	180	0	Gate	Fbattle042																		
+	#recordin	LinkTable								Fbattle042	Bera	Bera	6969	4626	0	1												
+;	대련장 회복스톤																											
+	#recordin	ShineNPC	FbattleSoul	Fbattle01	1104	1810	-105	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	FbattleSoul	Fbattle02	2496	4440	0	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	FbattleSoul	Fbattle03	32	2218	-88	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	FbattleSoul	Fbattle04	5065	3757	0	1	Merchant	SoulStone																		
+;	메마른 안개숲 캐릭터 npc																											
+	#recordin	ShineNPC	GodEnide	RouVal01	5749	20511	-116	1	QuestNpc	Quest																		
+;	모래바람 언덕																											
+	#recordin	ShineNPC	MapLinkGate	EldGbl02	6484	11270	-5	0	Gate	EldGbl021																		
+	#recordin	LinkTable								EldGbl021	RouVal02	RouVal02	10546	4329	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldGbl02	1250	3151	69	0	Gate	EldGbl022																		
+	#recordin	LinkTable								EldGbl022	RouCos03	RouCos03	4450	5230	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldGbl02	10469	3612	0	0	Gate	EldGbl023																		
+	#recordin	LinkTable								EldGbl023	EldCem01	EldCem01	4013	818	0	1												
+;	심연의 무덤(30배틀필드)																											
+	#recordin	ShineNPC	LevelGuard30	CemDn02	5606	15618	-88	0	Gate	CemDn021																		
+	#recordin	LinkTable								CemDn021	BFGate01	BFGate01	1648	2039	0	1												
+;	#recordin	ShineNPC	EldSpeGuard03	CemDn02	9781	6813	-176	0	Gate	CemDn022																		
+;	#recordin	LinkTable								CemDn022	RouTemDn02	RouTemDn02	5211	8617	0	1												
+;	단두대 형장																											
+	#recordin	ShineNPC	MapLinkGate	EldPri02	1524	3565	78	0	Gate	EldPri021																		
+	#recordin	LinkTable								EldPri021	EldPri01	EldPri01	595	2949	0	1												
+	#recordin	ShineNPC	MapLinkGate	EldPri02	10005	2808	-28	0	Gate	EldPri022																		
+	#recordin	LinkTable								EldPri022	Urg	Urg	1675	9291	0	1												
+;	OX퀴즈																											
+	#recordin	ShineNPC	MapLinkGate	OX_field	7519	4927	0	0	Gate	OX_field01																		
+	#recordin	LinkTable								OX_field01	Eld	Eld	15937	11905	0	1												
+;	여명의 늪																											
+	#recordin	ShineNPC	MapLinkGate	UrgSwa01	5695	3980	17	0	Gate	UrgSwa011																		
+	#recordin	LinkTable								UrgSwa011	UrgFire01	UrgFire01	18535	24470	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgSwa01	20310	22387	12	0	Gate	UrgSwa012																		
+	#recordin	LinkTable								UrgSwa012	UrgSwaDn01	UrgSwaDn01	5655	11439	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgSwa01	9028	12890	90	0	Gate	UrgSwa013																		
+	#recordin	LinkTable								UrgSwa013	SwaDn01	SwaDn01	6067	11124	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgSwa01	6865	22065	0	0	Gate	UrgSwa015																		
+	#recordin	LinkTable								UrgSwa015	Urg_Alruin	Urg_Alruin	16479	3515	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgSwa01	3160	10279	90	0	Gate	UrgSwa016																		
+	#recordin	LinkTable								UrgSwa016	QField01	QField01	1521	2067	180	1												
+	#recordin	ShineNPC	MapLinkGate	UrgSwa01	14558	22319	90	0	Gate	UrgSwa017																		
+	#recordin	LinkTable								UrgSwa017	QField02	QField02	589	665	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgSwa01	22317	21291	88	0	Gate	UrgSwa018																		
+	#recordin	LinkTable								UrgSwa018	BH_Helga	BH_Helga	1593	2913	0	1												
+;	미국 헬가는 잠자는 숲에 있음																											
+;	#recordin	ShineNPC	MapLinkGate	UrgSwa01	11546	15781	0	0	Gate	UrgSwa014																		
+;	#recordin	LinkTable								UrgSwa014	R_Helga01	R_Helga01	2318	2675	0	1												
+;	#recordin	ShineNPC	MapLinkGate	UrgSwa01	6865	22065	0	0	Gate	UrgSwa015																		
+;	#recordin	LinkTable								UrgSwa015	Urg_Alruin	Urg_Alruin	16479	3515	0	1												
+;	영혼의 신전																											
+	#recordin	ShineNPC	MapLinkGate	UrgSwaDn01	5649	11237	2	0	Gate	UrgSwaDn011																		
+	#recordin	LinkTable								UrgSwaDn011	UrgSwa01	UrgSwa01	20290	22302	0	1												
+;	결계의 숲1																											
+	#recordin	ShineNPC	EldSpeGuard03	BFGate01	1585	162	177	0	Gate	BFGate011																		
+	#recordin	LinkTable								BFGate011	Eld	Eld	17511	11551	0	1												
+	#recordin	ShineNPC	LevelGuard20	BFGate01	1799	1622	96	0	Gate	BFGate012																		
+	#recordin	LinkTable								BFGate012	ValDn02	ValDn02	1592	11159	0	1												
+	#recordin	ShineNPC	LevelGuard30	BFGate01	1709	2159	0	0	Gate	BFGate013																		
+	#recordin	LinkTable								BFGate013	CemDn02	CemDn02	5678	15617	0	1												
+	#recordin	ShineNPC	LevelGuard40	BFGate01	1274	2250	0	0	Gate	BFGate014																		
+	#recordin	LinkTable								BFGate014	GblDn02	GblDn02	5081	6146	0	1												
+	#recordin	ShineNPC	LevelGuard50	BFGate01	1019	1963	0	0	Gate	BFGate015																		
+	#recordin	LinkTable								BFGate015	PriDn02	PriDn02	5154	5059	0	1												
+;	결계의 숲2																											
+	#recordin	ShineNPC	EldSpeGuard03	BFGate02	1585	162	177	0	Gate	BFGate021																		
+	#recordin	LinkTable								BFGate021	Urg	Urg	8339	6738	0	1												
+	#recordin	ShineNPC	LevelGuard60	BFGate02	1799	1622	96	0	Gate	BFGate022																		
+	#recordin	LinkTable								BFGate022	ElfDn02	ElfDn02	5230	3728	89	1												
+	#recordin	ShineNPC	LevelGuard70	BFGate02	1709	2159	0	0	Gate	BFGate023																		
+	#recordin	LinkTable								BFGate023	ForDn02	ForDn02	5825	6128	0	1												
+	#recordin	ShineNPC	LevelGuard80	BFGate02	1274	2250	0	0	Gate	BFGate024																		
+	#recordin	LinkTable								BFGate024	FireDn02	FireDn02	6351	6712	90	1												
+	#recordin	ShineNPC	LevelGuard90	BFGate02	1019	1963	0	0	Gate	BFGate025																		
+	#recordin	LinkTable								BFGate025	SwaDn02	SwaDn02	6067	11124	0	1												
+;	결계의 숲3																											
+	#recordin	ShineNPC	EldSpeGuard03	BFGate03	1585	162	177	0	Gate	BFGate031																		
+	#recordin	LinkTable								BFGate031	Urg_Alruin	Urg_Alruin	6375	9986	0	1												
+	#recordin	ShineNPC	LevelGuard100	BFGate03	1019	1963	0	0	Gate	BFGate032																		
+	#recordin	LinkTable								BFGate032	AlDn02	AlDn02	11353	1855	0	1												
+;	올버스톨 폐허																											
+	#recordin	ShineNPC	MapLinkGate	Urg_Alruin	16486	3365	0	0	Gate	Urg_Alruin1																		
+	#recordin	LinkTable								Urg_Alruin1	UrgSwa01	UrgSwa01	6865	22000	0	1												
+;	#recordin	ShineNPC	KarenGate	Urg_Alruin	21530	18911	-93	0	Gate	BerKal012																		
+;	#recordin	LinkTable								BerKal012	AdlThorn01	AdlThorn01	11602	11719	0	1												
+	#recordin	ShineNPC	MapLinkGate	Urg_Alruin	11333	22013	0	0	Gate	Urg_Alruin2																		
+	#recordin	LinkTable								Urg_Alruin2	UrgDark01	UrgDark01	2436	11999	0	1												
+	#recordin	ShineNPC	MapLinkGate	Urg_Alruin	17072	15209	131	0	Gate	Urg_Alruin3																		
+	#recordin	LinkTable								Urg_Alruin3	AlDn01	AlDn01	11356	1898	0	1												
+	#recordin	ShineNPC	EldSpeGuard03	Urg_Alruin	6325	9880	-134	0	Gate	Urg_Alruin4																		
+	#recordin	LinkTable								Urg_Alruin4	BFGate03	BFGate03	1589	301	0	1												
+;	심연의 유적																											
+	#recordin	ShineNPC	LevelGuard70	ForDn02	5960	6127	90	0	Gate	ForDn021																		
+	#recordin	LinkTable								ForDn021	BFGate02	BFGate02	1801	2083	0	1												
+;	심연의 성지																											
+	#recordin	ShineNPC	LevelGuard80	FireDn02	6358	6854	0	0	Gate	FireDn021																		
+	#recordin	LinkTable								FireDn021	BFGate02	BFGate02	1264	2056	91	1												
+;	심연의 늪																											
+	#recordin	ShineNPC	LevelGuard90	SwaDn02	6068	11314	0	0	Gate	SwaDn021																		
+	#recordin	LinkTable								SwaDn021	BFGate02	BFGate02	1023	1791	90	1												
+;	심연의 동굴(20레벨)																											
+	#recordin	ShineNPC	LevelGuard20	ValDn02	1479	11336	0	0	Gate	ValDn021																		
+	#recordin	LinkTable								ValDn021	BFGate01	BFGate01	1665	1600	0	1												
+;	심연의 나무(100레벨 이상)																											
+	#recordin	ShineNPC	LevelGuard100	AlDn02	11303	1895	0	0	Gate	AlDn021																		
+	#recordin	LinkTable								AlDn021	BFGate03	BFGate03	1059	1913	0	1												
+;	덩굴무덤가는길																											
+	#recordin	ShineNPC	MapLinkGate	Linkfield01	3815	2897	3	0	Gate	Linkfield011																		
+	#recordin	LinkTable								Linkfield011	EldCem01	EldCem01	1249	12145	-67	1												
+	#recordin	ShineNPC	MapLinkGate	Linkfield01	9831	11256	0	0	Gate	Linkfield012																		
+	#recordin	LinkTable								Linkfield012	EldCem02	EldCem02	1218	855	0	1												
+;	우루가 가는 길																											
+	#recordin	ShineNPC	MapLinkGate	Linkfield02	2677	6620	-27	0	Gate	Linkfield021																		
+	#recordin	LinkTable								Linkfield021	EldPri01	EldPri01	1133	10955	0	1												
+	#recordin	ShineNPC	MapLinkGate	Linkfield02	2227	9310	-83	0	Gate	Linkfield022																		
+	#recordin	LinkTable								Linkfield022	Urg	Urg	1807	11270	0	1												
+;	헬가의 무덤																											
+	#recordin	ShineNPC	MapLinkGate	R_Helga01	3279	1131	0	0	Gate	R_Helga011																		
+	#recordin	LinkTable								R_Helga011	EldSleep01	EldSleep01	7274	11721	0	1												
+;	크리스마스 트리(모래바람언덕/올버스톨폐허)																											
+;	#recordin	ShineNPC	ChristmasTree	EldGbl02	9048	8280	0	0	QuestNpc	Quest																		
+;	#recordin	ShineNPC	ChristmasTree	Urg_Alruin	6825	11564	-55	0	QuestNpc	Quest																		
+;	지하실 통로																											
+	#recordin	ShineNPC	IDMapLinkGate03	IDGate01	1027	1412	0	0	ModeIDGate	IDGate011																		
+	#recordin	LinkTable								IDGate011	Leviathan	Leviathan	3006	5422	0	1												
+	#recordin	ShineNPC	MapLinkGate	IDGate01	389	1420	0	0	Gate	IDGate012																		
+	#recordin	LinkTable								IDGate012	RouCos02	RouCos02	8230	6510	0	1												
+	#recordin	ShineNPC	Raphael	IDGate01	1066	198	135	1	QuestNpc	Quest																		
+;	가시나무 동굴																											
+	#recordin	ShineNPC	KarenGate	AdlThorn01	11459	11393	225	0	Gate	Karen001																		
+	#recordin	LinkTable								Karen001	BerKal01	BerKal01	9541	3097	-121	1												
+;	퀘스트필드																											
+	#recordin	ShineNPC	MapLinkGate	QField01	1520	2158	180	0	Gate	QField011																		
+	#recordin	LinkTable								QField011	UrgSwa01	UrgSwa01	3549	10271	135	1												
+	#recordin	ShineNPC	MapLinkGate	QField02	399	667	-67	0	Gate	QField022																		
+	#recordin	LinkTable								QField022	UrgSwa01	UrgSwa01	14482	22115	90	1												
+;	비밀의 실험실																											
+	#recordin	ShineNPC	Gate_Lab	Urg_Alruin	22150	6750	111	0	ModeIDGate	LabGate00																		
+	#recordin	LinkTable								LabGate00	Tower03	Tower03	8765	11255	0	1												
+;	베라																											
+;	#recordin	ShineNPC	MapLinkGate	Bera	9201	561	103	0	Gate	Bera001																		
+;	#recordin	LinkTable								Bera001	UrgDark01	UrgDark01	23655	13163	0	1												
+	#recordin	ShineNPC	MapLinkGate	Bera	445	6048	-56	0	Gate	Bera002																		
+	#recordin	LinkTable								Bera002	BerKal01	BerKal01	21113	19637	-55	1												
+	#recordin	ShineNPC	MapLinkGate	Bera	12300	3167	-90	0	Gate	Bera003																		
+	#recordin	LinkTable								Bera003	BerFrz01	BerFrz01	6063	23011	180	1												
+	#recordin	ShineNPC	EldSpeGuard03	Bera	8073	2701	117	0	Gate	Bera004																		
+	#recordin	LinkTable								Bera004	BFGate04	BFGate04	1589	301	0	1												
+;	카할평원																											
+	#recordin	ShineNPC	MapLinkGate	BerKal01	21274	19875	52	0	Gate	BerKal011																		
+	#recordin	LinkTable								BerKal011	Bera	Bera	638	5930	-55	1												
+	#recordin	ShineNPC	KarenGate	BerKal01	9398	2821	205	0	Gate	BerKal012																		
+	#recordin	LinkTable								BerKal012	AdlThorn01	AdlThorn01	11602	11719	0	1												
+	#recordin	ShineNPC	MapLinkGate	BerKal01	6161	3884	0	0	Gate	BerKal013																		
+	#recordin	LinkTable								BerKal013	AdlVal01	AdlVal01	30169	14036	-90	1												
+	#recordin	ShineNPC	MapLinkGate	BerKal01	4483	13158	-80	0	Gate	BerKal014																		
+	#recordin	LinkTable								BerKal014	PsyOut	PsyOut	11787	7993	180	1												
+;	어둠의 대지																											
+	#recordin	ShineNPC	MapLinkGate	UrgDark01	2259	11995	-84	0	Gate	UrgDark011																		
+	#recordin	LinkTable								UrgDark011	Urg_Alruin	Urg_Alruin	11357	21862	0	1												
+;	#recordin	ShineNPC	IDMapLinkGate01	UrgDark01	21515	1851	169	0	IDGate	UrgDark012																		
+;	#recordin	LinkTable								UrgDark012	UrgDragon	UrgDragon	700	5795	0	1												
+;	#recordin	ShineNPC	MapLinkGate	UrgDark01	23715	13172	88	0	Gate	UrgDark013																		
+;	#recordin	LinkTable								UrgDark013	Bera	Bera	8993	478	0	1												
+	#recordin	ShineNPC	MapLinkGate	UrgDark01	22890	3895	80	0	Gate	UrgDark015																		
+	#recordin	LinkTable								UrgDark015	AdlVal01	AdlVal01	26689	18161	-110	1												
+;	생명의 나무(100목적형)																											
+	#recordin	ShineNPC	MapLinkGate	AlDn01	11440	1832	131	0	Gate	AlDn001																		
+	#recordin	LinkTable								AlDn001	Urg_Alruin	Urg_Alruin	16991	15130	0	1												
+;보스필드-파멸자의 터																												
+	#recordin	ShineNPC	MapLinkGate	B_Cracker	2395	1297	16	0	Gate	B_Cracker01																		
+	#recordin	LinkTable								B_Cracker01	UrgDark01	UrgDark01	21438	1995	65	1												
+	#recordin	ShineNPC	MapLinkGate	UrgDark01	21486	1926	-8	0	Gate	UrgDark014																		
+	#recordin	LinkTable								UrgDark014	B_Cracker	B_Cracker	2470	1434	45	1												
+	#recordin	LinkTable								UrgDark014	BH_Cracker	BH_Cracker	2744	2172	-167	1												
+;	불타는 돌 리뉴얼 열기의 동굴																											
+	#recordin	ShineNPC	MapLinkGate	UrgFire01	1431	17092	30	0	Gate	UrgFire018																		
+	#recordin	LinkTable								UrgFire018	QField03	QField03	1294	1221	15	1												
+	#recordin	ShineNPC	MapLinkGate	UrgFire01	23170	20400	75	0	Gate	UrgFire019																		
+	#recordin	LinkTable								UrgFire019	QField04	QField04	610	1355	60	1												
+;	불타는 돌 리뉴얼 불타는 동굴																											
+	#recordin	ShineNPC	MapLinkGate	QField03	1384	1293	15	0	Gate	GateQField03																		
+	#recordin	LinkTable								GateQField03	UrgFire01	UrgFire01	1612	16654	30	1												
+	#recordin	ShineNPC	MapLinkGate	QField04	537	1359	60	0	Gate	GateQField04																		
+	#recordin	LinkTable								GateQField04	UrgFire01	UrgFire01	23111	20301	90	1												
+;	갬블하우스 이동 게이트 npc																											
+	#recordin	ShineNPC	GB_Touter	Eld	17264	15805	12	0	RandomGate	GBHouse01																		
+	#recordin	LinkTable								GBHouse01	GBHouse	GBHouse	2319	886	134	1												
+	#recordin	LinkTable								GBHouse01	GBHouse	GBHouse	2301	2301	42	1												
+	#recordin	LinkTable								GBHouse01	GBHouse	GBHouse	893	2305	-48	1												
+	#recordin	LinkTable								GBHouse01	GBHouse	GBHouse	898	896	-136	1												
+	#recordin	ShineNPC	GB_Touter	Urg	5858	7171	-45	0	RandomGate	GBHouse02																		
+	#recordin	LinkTable								GBHouse02	GBHouse	GBHouse	2319	886	134	1												
+	#recordin	LinkTable								GBHouse02	GBHouse	GBHouse	2301	2301	42	1												
+	#recordin	LinkTable								GBHouse02	GBHouse	GBHouse	893	2305	-48	1												
+	#recordin	LinkTable								GBHouse02	GBHouse	GBHouse	898	896	-136	1												
+	#recordin	ShineNPC	GB_Touter	Urg_Alruin	6530	9072	56	0	RandomGate	GBHouse03																		
+	#recordin	LinkTable								GBHouse03	GBHouse	GBHouse	2319	886	134	1												
+	#recordin	LinkTable								GBHouse03	GBHouse	GBHouse	2301	2301	42	1												
+	#recordin	LinkTable								GBHouse03	GBHouse	GBHouse	893	2305	-48	1												
+	#recordin	LinkTable								GBHouse03	GBHouse	GBHouse	898	896	-136	1												
+	#recordin	ShineNPC	GB_Touter	Bera	6232	2187	-60	0	RandomGate	GBHouse04																		
+	#recordin	LinkTable								GBHouse04	GBHouse	GBHouse	2319	886	134	1												
+	#recordin	LinkTable								GBHouse04	GBHouse	GBHouse	2301	2301	42	1												
+	#recordin	LinkTable								GBHouse04	GBHouse	GBHouse	893	2305	-48	1												
+	#recordin	LinkTable								GBHouse04	GBHouse	GBHouse	898	896	-136	1												
+;	헬가의 무덤 (Hard)																											
+	#recordin	ShineNPC	MapLinkGate	BH_Helga	1592	3092	0	0	Gate	BH_Helga01																		
+	#recordin	LinkTable								BH_Helga01	UrgSwa01	UrgSwa01	22163	21293	88	1												
+;	파멸의 터 (Hard)																											
+	#recordin	ShineNPC	MapLinkGate	BH_Cracker	2716	2059	-167	0	Gate	BH_Cracker01																		
+	#recordin	LinkTable								BH_Cracker01	UrgDark01	UrgDark01	21438	1995	65	1												
+;	프시켄의 정원																											
+	#recordin	ShineNPC	MapLinkGate	PsyOut	11787	7461	180	0	Gate	PsyOut001																		
+	#recordin	LinkTable								PsyOut001	BerKal01	BerKal01	4784	12824	-80	1												
+	#recordin	ShineNPC	MapLinkGate	PsyOut	11787	15417	0	0	Gate	PsyOut002																		
+	#recordin	LinkTable								PsyOut002	PsyIn	PsyIn	11877	14307	180	1												
+;	프시켄의 저택																											
+	#recordin	ShineNPC	MapLinkGate	PsyIn	11877	14179	180	0	Gate	PsyIn001																		
+	#recordin	LinkTable								PsyIn001	PsyOut	PsyOut	11787	15299	0	1												
+;	아델리아 숲 게이트																											
+	#recordin	ShineNPC	MapLinkGate	AdlVal01	29000	19620	170	0	Gate	AdlVal010																		
+	#recordin	LinkTable								AdlVal010	Adl	Adl	15030	12170	135	1												
+	#recordin	ShineNPC	MapLinkGate	AdlVal01	26566	18105	-110	0	Gate	AdlVal011																		
+	#recordin	LinkTable								AdlVal011	UrgDark01	UrgDark01	22720	3859	80	1												
+	#recordin	ShineNPC	MapLinkGate	AdlVal01	30058	13986	-115	0	Gate	AdlVal012																		
+	#recordin	LinkTable								AdlVal012	BerKal01	BerKal01	6163	3973	0	1												
+;	아델리아 NPC																											
+	#recordin	ShineNPC	AdlLantesUp	AdlVal01	28228	20053	-30	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Claude	AdlVal01	28348	20085	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Claude	AdlVal01	28142	19962	-60	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	AdlSoulAngela	Adl	13017	12176	162	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	AdlSkillEdwina	Adl	10492	13263	-113	1	Merchant	Skill																		
+	#recordin	ShineNPC	AdlSmithAlexia	Adl	12000	11866	165	1	Merchant	Weapon																		
+	#recordin	ShineNPC	AdlStoreKaruha	Adl	13062	14645	70	1	StoreManager	-																		
+	#recordin	ShineNPC	QM_Bunis	Adl	12883	13940	88	1	NPCMenu	Guild																		
+	#recordin	ShineNPC	AdlSpeGuiltian	Adl	12433	13137	282	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	AdlGuardNell	AdlVal01	45076	14273	145	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	AdlMarlene	AdlVal01	32944	15660	40	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	AdlLoussier	Adl	12762	12221	187	1	Merchant	Item																		
+	#recordin	ShineNPC	AdlAertsina	Adl	12167	12124	0	1	Merchant	WeaponTitle																		
+	#recordin	ShineNPC	AdlLantesDown	Adl	15400	12030	115	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Claude	Adl	15296	11903	140	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Claude	Adl	15425	12186	80	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	QM_Brown	Adl	10544	13918	275	1	Merchant	Item																		
+	#recordin	ShineNPC	GB_Touter	Adl	10889	14372	-7	0	RandomGate	GBHouse05																		
+	#recordin	LinkTable								GBHouse05	GBHouse	GBHouse	2319	886	134	1												
+	#recordin	LinkTable								GBHouse05	GBHouse	GBHouse	2301	2301	42	1												
+	#recordin	LinkTable								GBHouse05	GBHouse	GBHouse	893	2305	-48	1												
+	#recordin	LinkTable								GBHouse05	GBHouse	GBHouse	898	896	-136	1												
+;	카할평원 NPC																											
+	#recordin	ShineNPC	Q_Rourke	BerKal01	9644	8992	-5	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Joanna	BerKal01	9332	9071	-20	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Huey	BerKal01	9800	8833	95	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Dalian	BerKal01	10564	14964	160	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Polan	BerKal01	9734	3366	171	1	QuestNpc	Quest																		
+;	이벤트 필드 게이트																											
+	#recordin	ShineNPC	MapLinkGate	EventF	12365	7442	77	0	Gate	Event001																		
+	#recordin	LinkTable								Event001	RouN	RouN	6445	8630	0	1												
+	#recordin	ShineNPC	MapLinkGate	EventF01	10254	7414	88	0	Gate	Event002																		
+	#recordin	LinkTable								Event002	RouN	RouN	6445	8630	0	1												
+;	아델리아 																											
+	#recordin	ShineNPC	MapLinkGate	Adl	15033	11724	-170	0	Gate	Adl001																		
+	#recordin	LinkTable								Adl001	AdlVal01	AdlVal01	29003	19397	20	1												
+	#recordin	ShineNPC	EldSpeGuard03	Adl	12431	14870	15	0	Gate	Adl002																		
+	#recordin	LinkTable								Adl002	BFGate04	BFGate04	1589	301	0	1												
+;	결계의 숲4																											
+	#recordin	ShineNPC	EldSpeGuard03	BFGate04	1585	162	177	0	Gate	BFGate041																		
+	#recordin	LinkTable								BFGate041	Adl	Adl	12337	14800	0	1												
+	#recordin	ShineNPC	LevelGuardH8	BFGate04	1019	1963	0	0	Gate	BFGate042																		
+	#recordin	LinkTable								BFGate042	PsyInDn02	PsyInDn02	11877	14307	180	1												
+	#recordin	ShineNPC	LevelGuard120	BFGate04	1738	1949	30	0	Gate	BFGate043																		
+	#recordin	LinkTable								BFGate043	ArkDn02	ArkDn02	2482	6861	90	1												
+	#recordin	ShineNPC	EldSpeGuard03	BFGate04	1907	573	177	0	Gate	BFGate044																		
+	#recordin	LinkTable								BFGate044	Bera	Bera	7966	2742	90	1												
+;	심연의 저택																											
+	#recordin	ShineNPC	EldSpeGuard03	PsyInDn02	11877	14179	180	0	Gate	PsyInDn021																		
+	#recordin	LinkTable								PsyInDn021	BFGate04	BFGate04	1234	1959	0	1												
+;	불타는 아델리아 게이트																											
+	#recordin	ShineNPC	Gate_AdlF	AdlVal01	31644	1984	-151	0	IDGate	AdlFGate00																		
+	#recordin	LinkTable								AdlFGate00	AdlF	AdlF	2312	9961	0	1												
+;	점령당한 아델리아 게이트																											
+	#recordin	ShineNPC	AdlFH_Gate	AdlVal01	25998	6182	-40	0	IDGate	AdlFHGate00																		
+	#recordin	LinkTable								AdlFHGate00	AdlFH	AdlFH	2312	9961	0	0												
+;	카할평원 NPC																											
+	#recordin	ShineNPC	Q_W_Chapman	EldGbl01	6224	7796	20	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_W_Jacks	EldGbl01	6290	7836	19	1	QuestNpc	Quest																		
+;	디펜스KQ-마그리트의 숨겨진 광산																											
+	#recordin	ShineNPC	MineDigger	KDMine	6895	5283	0	1	Merchant	Item																		
+;	일일퀘스트 명성치 상인(엘더린)																											
+	#recordin	ShineNPC	Daliy_Merchant	Eld	13683	14642	-68	1	Merchant	Item																		
+;	중급마계인던 - 마계영지																											
+	#recordin	ShineNPC	DT_EntranceGate	EldFor01	15731	7576	-120	0	IDGate	WarN01																		
+	#recordin	LinkTable								WarN01	WarN	WarN	4102	1159	0	1												
+;	2012 유럽 크리스마스 이벤트 NPC																											
+;	#recordin	ShineNPC	XmasWorze	Rou	5650	4404	15	0	QuestNpc	Quest																		
+;	2012 크리스마스 이벤트 NPC (루아)																											
+;	#recordin	ShineNPC	E_SantaClaus	Eld	13126	13148	1	1	QuestNpc	Quest																		
+;	크리스마스 트리																											
+;	#recordin	ShineNPC	ChristmasTree	Adl	15243	12485	38	1	QuestNpc	Quest																		
+;	최하급마계인던 - 마계광산																											
+	#recordin	ShineNPC	WarBL_EntranceGate	Linkfield01	2054	9928	-73	0	IDGate	WarBL01																		
+	#recordin	LinkTable								WarBL01	WarBL	WarBL	1314	1366	179	1												
+;	하급마계인던 - 마계병영																											
+	#recordin	ShineNPC	WarL_EntranceGate	EldGbl02	9762	6003	-180	0	IDGate	WarL01																		
+	#recordin	LinkTable								WarL01	WarL	WarL	2769	6919	-90	1												
+;	발렌타인 이벤트 NPC																											
+;	#recordin	ShineNPC	E_DadNPC	Eld	16200	13400	90	1	Merchant	Quest																		
+;	#recordin	ShineNPC	E_MomNPC	Eld	13160	12950	-90	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	E_DanielNPC	Eld	15500	12950	180	1	QuestNpc	Quest																		
+;	부활절이벤트_달걀지키기																											
+	#recordin	ShineNPC	Egg_Digger	KDEgg	12829	13464	128	1	Merchant	Item																		
+;	봄의 전장 NPC																											
+	#recordin	ShineNPC	KQSpring_Rman	KDSpring	610	3697	-55	1	Merchant	Item																		
+	#recordin	ShineNPC	KQSpring_Bman	KDSpring	852	1692	-142	1	Merchant	Item																		
+;	게이트 필드																											
+	#recordin	ShineNPC	MapLinkGate_Rou	Gate	1455	2294	179	0	Gate	Rou																		
+	#recordin	LinkTable								Rou	RouN	RouN	5604	6519	90	1												
+	#recordin	ShineNPC	MapLinkGate_Eld	Gate	1737	2082	90	0	Gate	Eld																		
+	#recordin	LinkTable								Eld	Eld	Eld	17214	1344	90	1												
+	#recordin	ShineNPC	MapLinkGate_EldGbl02	Gate	1745	1769	90	0	Gate	EldGbl02																		
+	#recordin	LinkTable								EldGbl02	EldGbl02	EldGbl02	9129	8213	90	1												
+	#recordin	ShineNPC	MapLinkGate_Urg	Gate	1864	1327	90	0	Gate	Urg																		
+	#recordin	LinkTable								Urg	Urg	Urg	6293	5477	90	1												
+	#recordin	ShineNPC	MapLinkGate_Urg_Alruin	Gate	1482	1210	179	0	Gate	Urg_Alruin																		
+	#recordin	LinkTable								Urg_Alruin	Urg_Alruin	Urg_Alruin	6721	12036	90	1												
+	#recordin	ShineNPC	MapLinkGate_Adl	Gate	1230	1543	90	0	Gate	Adl																		
+	#recordin	LinkTable								Adl	Adl	Adl	15181	12132	90	1												
+	#recordin	ShineNPC	MapLinkGate_Bera	Gate	1087	1846	90	0	Gate	Bera005																		
+	#recordin	LinkTable								Bera005	Bera	Bera	6532	1529	0	1												
+;	상급마계인던 - 아바란요새																											
+	#recordin	ShineNPC	WarH_EntranceGate	UrgSwa01	17166	4511	218	0	IDGate	WarH01																		
+	#recordin	LinkTable								WarH01	WarH	WarH	1269	12325	-90	1												
+;	튜토리얼 NPC																											
+	#recordin	ShineNPC	RouT_Smith	RouT	5606	8852	-59	1	Merchant	Weapon																		
+	#recordin	ShineNPC	RouT_Soul	RouT	7341	9030	96	1	Merchant	SoulStone																		
+	#recordin	ShineNPC	RouT_Skill	RouT	6311	7149	-59	1	Merchant	Skill																		
+;	센티넬 스킬 NPC																											
+	#recordin	ShineNPC	Tiros	Eld	12180	13431	-68	1	Merchant	Skill																		
+;	101~108Lv NPC																											
+	#recordin	ShineNPC	DigGrifin	UrgSwa01	16364	18773	316	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	DigWebster	UrgSwa01	16452	18770	42	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	DigGregory	UrgSwa01	16465	18678	124	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	DigChavez	UrgDark01	16546	13623	354	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	DigKupers	UrgDark01	16791	13544	286	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	DigRoss	UrgDark01	16534	13452	188	1	QuestNpc	Quest																		
+;	2013_할로윈																											
+;	#recordin	ShineNPC	E_HwinQuest	Eld	13165	13747	178	1	Merchant	Item																		
+;	#recordin	ShineNPC	E_HwinReturn	E_Hwin	749	236	272	0	Gate	Eld02																		
+;	#recordin	LinkTable								Eld02	Eld	Eld	13059	13815	8	1												
+;	#recordin	ShineNPC	E_HwinIn	Eld	13065	13747	178	0	Gate	Eld03																		
+;	#recordin	LinkTable								Eld03	E_Hwin	E_Hwin	914	238	152	1												
+;	우루가 아레나 npc																											
+	#recordin	ShineNPC	IM_Arena01	Urg	7024	8555	90	1	Merchant	Weapon																		
+	#recordin	ShineNPC	IM_Arena02	Urg	7024	8455	90	1	Merchant	Weapon																		
+	#recordin	ShineNPC	IM_Arena_TE	Urg	7044	8350	90	1	Merchant	Item																		
+;	2013_미국 6주년 기념																											
+;	#recordin	ShineNPC	E_SixYear_Dance	Eld	11485	13440	0	0	QuestNpc	-																		
+;	2013 크리스마스 이벤트																											
+;	#recordin	ShineNPC	E_XXiaoming	Eld	15407	13327	93	1	Merchant	Item																		
+;	동계올림픽이벤트_카할스키																											
+;	#recordin	ShineNPC	E_Ski_MerchantNPC	Eld	13165	13747	178	1	Merchant	Item																		
+;	#recordin	ShineNPC	E_Ski_GateIn	Eld	13065	13747	178	0	Gate	Eld03																		
+;	#recordin	LinkTable								Eld03	E_Olympic	E_Olympic	5463	22711	45	1												
+;	#recordin	ShineNPC	E_Ski_GateOut	E_Olympic	5663	22811	45	0	Gate	E_Olympic01																		
+;	#recordin	LinkTable								E_Olympic01	Eld	Eld	13068	13907	10	1												
+;	#recordin	ShineNPC	E_Ski_GateOut	E_Olympic	12064	7894	45	0	Gate	E_Olympic02																		
+;	#recordin	LinkTable								E_Olympic02	Eld	Eld	13068	13907	10	1												
+;	#recordin	ShineNPC	E_Ski_QuestNPC	E_Olympic	11866	7966	45	1	QuestNpc	Quest																		
+;	#recordin	ShineNPC	E_Ski_RentMachine	E_Olympic	4920	22492	132	1	Merchant	Item																		
+;	랜덤옵션변경																											
+	#recordin	ShineNPC	Anvil	RouN	5645	8924	-62	0	NPCMenu	RandomOption																		
+	#recordin	ShineNPC	Anvil	Eld	16676	14829	94	0	NPCMenu	RandomOption																		
+	#recordin	ShineNPC	Anvil	Urg	6793	7468	119	0	NPCMenu	RandomOption																		
+	#recordin	ShineNPC	Anvil	Adl	12082	11899	170	0	NPCMenu	RandomOption																		
+	#recordin	ShineNPC	Anvil	Bera	5688	4662	0	0	NPCMenu	RandomOption																		
+;	부활절이벤트_2014																											
+;	#recordin	ShineNPC	Egg2014_HoshemingNPC	Eld	15390	13395	89	1	Merchant	Item																		
+;	축구킹퀘(KDSoccer_월드컵이벤트)																											
+	#recordin	ShineNPC	KDSoccer_MctNPC	Eld	13165	13747	178	1	Merchant	Item																		
+;	물풍선 전쟁(여름이벤트)																											
+;	#recordin	ShineNPC	Swimming	Eld	16445	13478	89	1	Merchant	Item																		
+;	#recordin	ShineNPC	SwimmingR	KDWater	6311	5530	0	1	Merchant	Item																		
+;	#recordin	ShineNPC	SwimmingB	KDWater	4607	5273	178	1	Merchant	Item																		
+;	기능성아이템_클래스체인지(ClassChange)																											
+	#recordin	ShineNPC	ClassChangeMaster01	Urg_Alruin	4517	10336	165	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	ClassChangeMaster02	Adl	9834	10626	-91	1	QuestNpc	Quest																		
+;	카할설원 NPC																											
+	#recordin	ShineNPC	Nagro	BerFrz01	4891	18706	45	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Hilda	BerFrz01	10458	12807	270	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Akisha	BerFrz01	17931	18524	270	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	SirenStatue	BerFrz01	16680	17999	30	1	QuestNpc	Quest																		
+;	카할설원 게이트																											
+	#recordin	ShineNPC	MapLinkGate	BerFrz01	6287	23262	45	0	Gate	BerFrz011																		
+	#recordin	LinkTable								BerFrz011	Bera	Bera	12113	3137	90	1												
+	#recordin	ShineNPC	MapLinkGate	BerFrz01	11211	1843	75	0	Gate	BerFrz012																		
+	#recordin	LinkTable								BerFrz012	ArkDn01	ArkDn01	2482	6861	90	1												
+	#recordin	ShineNPC	MapLinkGate	BerFrz01	25310	510	130	0	ModeIDGate	BerFrz013																		
+	#recordin	LinkTable								BerFrz013	Siren	Siren	521	10793	90	1												
+	#recordin	ShineNPC	MapLinkGate	BerFrz01	17544	4382	8	0	Gate	BerFrz014																		
+	#recordin	LinkTable								BerFrz014	BerVale01	BerVale01	1286	11171	180	1												
+;	아크루트 NPC																											
+	#recordin	ShineNPC	Cuero	BerFrz01	7220	3106	-90	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Gerta	ArkDn01	5367	6127	286	1	QuestNpc	Quest																		
+;	아크루트 게이트																											
+	#recordin	ShineNPC	MapLinkGate	ArkDn01	2419	7213	0	0	Gate	ArkDn011																		
+	#recordin	LinkTable								ArkDn011	BerFrz01	BerFrz01	11044	1760	90	1												
+	#recordin	ShineNPC	MapLinkGate	ArkDn01	5440	5259	0	0	Gate	ArkDn012																		
+	#recordin	LinkTable								ArkDn012	B_Albi	B_Albi	1600	264	180	1												
+	#recordin	ShineNPC	MapLinkGate	ArkDn01	7247	6998	0	0	Gate	ArkDn013																		
+	#recordin	LinkTable								ArkDn013	BH_Albi	BH_Albi	1600	264	180	1												
+;	세이렌의 성 NPC																											
+	#recordin	ShineNPC	Chaoming	Siren	11348	11874	106	1	Merchant	Item																		
+;	심연의 아크루트																											
+	#recordin	ShineNPC	EldSpeGuard03	ArkDn02	2419	7213	0	0	Gate	ArkDn021																		
+	#recordin	LinkTable								ArkDn021	BFGate04	BFGate04	1234	1959	0	1												
+;	카할협곡 NPC																											
+	#recordin	ShineNPC	Nicole	BerVale01	3771	2840	-160	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Basilone	BerVale01	9132	9600	32	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Q_Jey	BerVale01	1318	9745	-31	1	QuestNpc	Quest																		
+;	카할협곡 게이트																											
+	#recordin	ShineNPC	MapLinkGate	BerVale01	1244	11307	-10	0	Gate	BerVale011																		
+	#recordin	LinkTable								BerVale011	BerFrz01	BerFrz01	17567	4492	180	1												
+;	#recordin	ShineNPC	MapLinkGate	BerVale01	11257	1691	155	0	Gate	BerVale012																		
+;	#recordin	LinkTable								BerVale012	BerFrz01	BerFrz01	17567	4492	180	1												
+;	알비레오왕의 아지트 게이트																											
+	#recordin	ShineNPC	MapLinkGate	B_Albi	1602	143	180	0	Gate	B_Albi011																		
+	#recordin	LinkTable								B_Albi011	ArkDn01	ArkDn01	5519	5407	0	1												
+;	알비레오 하드모드																											
+	#recordin	ShineNPC	MapLinkGate	BH_Albi	1602	143	180	0	Gate	BH_Albi011																		
+	#recordin	LinkTable								BH_Albi011	ArkDn01	ArkDn01	7153	6927	0	1												
+;	베라 추가 NPC																											
+	#recordin	ShineNPC	ClassChangeMaster03	Bera	9561	8142	45	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	BeraGuildLucas	Bera	5370	2805	90	0	NPCMenu	Guild																		
+;	마을이동 NPC																											
+	#recordin	ShineNPC	Gate_Town	RouN	5874	6530	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Gate_Town	RouVal01	13660	7862	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Gate_Town	Eld	11788	10395	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Gate_Town	EldGbl02	9039	9312	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Gate_Town	Urg	3882	5884	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Gate_Town	Adl	11688	9379	0	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Gate_Town	Bera	7553	7365	0	1	QuestNpc	Quest																		
+;	크리스마스 트리(신루멘)																											
+;	#recordin	ShineNPC	ChristmasTree	RouN	6869	8702	0	0	QuestNpc	Quest																		
+;	크리스마스 트리(베라)																											
+;	#recordin	ShineNPC	ChristmasTree	Bera	6754	6922	145	1	QuestNpc	Quest																		
+;	임시게이트																											
+	#recordin	ShineNPC	MapLinkGate_Rou	Rou	5322	4500	179	0	Gate	Rou																		
+	#recordin	LinkTable								Rou	RouN	RouN	5604	6519	90	1												
+;	겨울이벤트 윈터컵																											
+;	#recordin	ShineNPC	KDSoccer_MctNPC_14	Eld	13165	13747	178	1	Merchant	Item																		
+;	[S_3948] 불길한 협곡																											
+	#recordin	ShineNPC	SD_Gate_KDPrtShip	RouN	5059	5191	-177	0	IDGate	SD_Vale011																		
+	#recordin	LinkTable								SD_Vale011	SD_Vale01	SD_Vale01	5556	5802	0	1												
+	#recordin	ShineNPC	SD_Futureming	RouN	5182	5195	-177	1	Merchant	Item																		
+;	울버스톨 폐허 타운 포탈																											
+	#recordin	ShineNPC	Gate_Town	Urg_Alruin	4962	9227	26	1	QuestNpc	Quest																		
+;	뷰티샵 NPC 추가 배치																											
+	#recordin	ShineNPC	Meily	Eld	14636	15800	1	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Bellen	Urg	6120	7316	-18	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Hermosia	Urg_Alruin	5737	8331	218	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Ayollar	Adl	10934	12460	204	1	QuestNpc	Quest																		
+	#recordin	ShineNPC	Salyon	Bera	6257	2976	209	1	QuestNpc	Quest																		
+;	7주년 기념 이벤트																											
+;	#recordin	ShineNPC	Xiaoming_7th	Eld	16445	13478	89	1	Merchant	Item																		
+;	#recordin	ShineNPC	XiaomingR_7th	KDCake	7464	6070	160	1	Merchant	Item																		
+;	#recordin	ShineNPC	XiaomingB_7th	KDCake	6339	7199	-20	1	Merchant	Item																		
+	#End																											

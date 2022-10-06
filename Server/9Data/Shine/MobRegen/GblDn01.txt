@@ -1,0 +1,145 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Room1	Y	1655	2815	0	0	51									
+#record		Room01_02	N	1671	2846	0	0	500									
+#record		Room01_03	Y	2018	3273	0	0	51									
+#record		Room01_04	Y	2019	2420	0	0	51									
+#record		Room2	Y	8546	2815	0	0	51									
+#record		Room02_02	N	8499	2830	0	0	500									
+#record		Room02_03	Y	8136	3178	0	0	51									
+#record		Room02_04	Y	8119	2436	0	0	51									
+#record		Room3	Y	1710	7358	0	0	51									
+#record		Room03_02	N	1695	7342	0	0	500									
+#record		Room03_03	Y	2106	7707	0	0	51									
+#record		Room03_04	Y	1378	6993	0	0	51									
+#record		Room4	Y	8542	7374	0	0	51									
+#record		Room04_02	N	8526	7374	0	0	500									
+#record		Room04_03	Y	8162	7707	0	0	51									
+#record		Room04_04	Y	8874	6977	0	0	51									
+#record		Room5	Y	813	5115	0	0	65									
+#record		Room05_02	N	1146	5543	0	0	500									
+#record		Room05_03	N	1147	4612	0	0	500									
+#record		Room05_04	Y	1121	5609	0	0	72									
+#record		Room05_05	Y	1133	4586	0	0	72									
+#record		Room6	Y	9280	5065	0	0	65									
+#record		Room06_02	N	9024	5529	0	0	500									
+#record		Room06_03	N	9011	4609	0	0	500									
+#record		Room06_04	Y	9050	5555	0	0	72									
+#record		Room06_05	Y	9037	4609	0	0	72									
+#record		Room07_01	N	5114	7427	0	0	500									
+#record		Room)7_02	N	5093	7393	176	245	0									
+#record		Room07_03	N	5107	7442	0	0	500									
+#record		Room08_01	N	5590	8996	0	0	500									
+#record		Room08_02	N	4677	9005	0	0	500									
+#record		Room08_03	N	5133	9001	0	0	717									
+#record		Room08_04	N	4577	9034	0	0	86									
+#record		Room08_05	N	5676	9010	0	0	86									
+#record		Hall1	Y	5102	3971	0	0	149									
+#record		Hall2	Y	3167	2900	0	0	149									
+#record		Hall3	Y	7043	2921	0	0	149									
+#record		Hall4	Y	3272	5108	0	0	149									
+#record		Hall5	Y	6912	5075	0	0	149									
+#record		Hall6	Y	3280	7008	0	0	149									
+#record		Hall7	Y	6906	6995	0	0	149									
+#record		Hall8	Y	5125	6129	0	0	149									
+#record		Hall9	N	5119	1645	947	161	0									
+#record		Hall10	N	5094	5942	0	0	759									
+#record		Hall11	N	5109	3870	0	0	766									
+#record		Hall12	N	3296	5003	188	1753	0									
+#record		Hall13	N	6873	5044	184	1920	0									
+#record		Hall14	N	2797	9035	783	149	0									
+#record		Hall15	N	7532	9007	856	153	0									
+#record		Hall16	N	5355	2933	5039	833	0									
+#record		Hall17	N	5349	7964	5020	1564	0									
+#record		Hall18	N	5354	5097	5031	1239	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Room1	D_GiantGobleKing	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room1	D_BoneImp	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room01_02	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room01_03	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room01_04	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room2	D_GiantGobleKing	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room2	D_BoneImp	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room02_02	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room02_03	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room02_04	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room3	D_GiantGobleKing	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room3	D_BoneImp	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room03_02	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room03_03	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room03_04	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room4	D_GiantGobleKing	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room4	D_BoneImp	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room04_02	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room04_03	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room04_04	D_Goblin	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room5	D_GiantGobleKing	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room5	D_BoneImp	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room05_02	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room05_03	D_Goblin	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room05_04	D_Prock	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room05_05	D_Prock	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room6	D_GiantGobleKing	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room6	D_BoneImp	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room06_02	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room06_03	D_Goblin	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room06_04	D_Prock	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room06_05	D_Prock	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room07_01	D_GiantGobleKing	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Room)7_02	D_GoblinSwordman	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room07_03	D_GoblinMage	2	0	660	656	664	-4	5	-2	8	0	10	2	13	4
+#record		Room08_01	D_WereBear	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room08_02	D_WereBear	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room08_03	D_GoblinSwordman	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Room08_04	D_GoblinMage	1	0	660	656	664	-4	5	-2	8	0	10	2	13	4
+#record		Room08_05	D_GoblinMage	1	0	660	656	664	-4	5	-2	8	0	10	2	13	4
+#record		Hall1	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall1	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall2	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall2	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall3	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall3	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall4	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall4	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall5	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall5	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall6	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall6	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall7	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall7	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall8	D_GoblinMage	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall8	D_BoneImp	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall9	D_BoneImp	6	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall9	D_Goblin	6	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall10	D_BoneImp	6	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall10	D_Goblin	6	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall11	D_BoneImp	6	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall11	D_Goblin	6	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall12	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall12	D_Goblin	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall13	D_BoneImp	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall13	D_Goblin	8	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall14	D_BoneImp	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall14	D_Goblin	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall15	D_BoneImp	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall15	D_Goblin	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Hall16	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		Hall17	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		Hall18	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

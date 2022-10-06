@@ -1,0 +1,21 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;아이템 상점(우르가)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Grade6	-	-	-	-	-
+#Record	1	FlyStone	-	-	-	-	-
+#Record	2	House_MushRoom01	House_MushRoom02	House_MushRoom03	House_MushRoom04	-	-
+#Record	3	Converter1	Converter2	Converter3	Converter4	Converter5	-
+#Record	4	HighMagicCrystal	HighBeastTooth	HighMeat	HighSkin	HighSpiritDust	HighBrokenBone
+#Record	5	HighCleanWater	HighKylinLeather	HighPledge	HighGemDust	HighSoulDust	HighBeastLeather
+#Record	6	EnM_Undead_Hp04	EnM_Undead_AddDmg04	EnM_Beast_Hp04	EnM_Beast_AddDmg04	EnM_Elementa_Hp04	EnM_Elementa_AddDmg04
+#Record	7	EnM_Magic_Hp04	EnM_Magic_AddDmg04	EnM_Spirit_Hp04	EnM_Spirit_AddDmg04	EnM_Human_Hp04	EnM_Human_AddDmg04
+#Record	8	EnS_WC04	EnS_MA04	EnS_AtkSpd04	-	-	-
+#Record	9	EnM_Undead_Hp05	EnM_Undead_AddDmg05	EnM_Beast_Hp05	EnM_Beast_AddDmg05	EnM_Elementa_Hp05	EnM_Elementa_AddDmg05
+#Record	10	EnM_Magic_Hp05	EnM_Magic_AddDmg05	EnM_Spirit_Hp05	EnM_Spirit_AddDmg05	EnM_Human_Hp05	EnM_Human_AddDmg05
+#Record	11	EnS_WC05	EnS_MA05	EnS_AtkSpd05	-	-	-
+#End							

@@ -1,0 +1,309 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		RouVal02Area01	N	3603	3074	737	473	38									
+#record		RouVal02Area02	N	4797	2559	0	0	760									
+#record		RouVal02Area03	N	7704	2506	0	0	556									
+#record		RouVal02Area04	N	6449	2638	0	0	746									
+#record		RouVal02Area05	N	2165	7306	777	327	92									
+#record		RouVal02Area06	N	2240	4689	400	831	-17									
+#record		RouVal02Area07	N	2255	8564	253	615	6									
+#record		RouVal02Area08	N	2435	9706	499	317	104									
+#record		RouVal02Area09	N	9002	2689	436	715	72									
+#record		RouVal02Area10	N	3177	10404	378	508	53									
+#record		RouVal02Area11	N	4070	10890	529	410	-20									
+#record		RouVal02Area12	N	5132	11001	542	274	-1									
+#record		RouVal02Area13	N	6733	11072	1035	203	-2									
+#record		RouVal02Area14	N	8314	11252	480	175	3									
+#record		RouVal02Area15	N	9143	10929	332	352	-157									
+#record		RouVal02Area16	N	9828	10447	551	219	2									
+#record		RouVal02Area17	N	10741	9727	132	655	-29									
+#record		RouVal02Area18	N	10919	8566	329	596	2									
+#record		RouVal02Area19	N	10878	7362	365	586	0									
+#record		RouVal02Area20	N	11170	6376	0	0	392									
+#record		RouVal02Area21	N	11008	5394	344	612	15									
+#record		RouVal02Area22	N	10130	4239	197	603	28									
+#record		RouVal02Area23	N	9992	3477	0	0	584									
+#record		RouVal02Area24	N	7051	5268	461	214	-4									
+#record		RouVal02Area25	N	7713	7083	197	621	-1									
+#record		RouVal02Area26	N	4067	5849	175	375	1									
+#record		RouVal02Area27	N	5652	6142	268	439	0									
+#record		RouVal02Area28	N	6961	6064	374	164	-74									
+#record		RouVal02Area29	N	6352	6378	328	157	2									
+#record		RouVal02Area30	N	6246	5874	0	0	190									
+#record		RouVal02Area31	N	8239	7175	177	616	0									
+#record		RouVal02Area32	N	8700	7168	240	677	0									
+#record		RouVal02Area33	N	8655	5933	203	434	7									
+#record		RouVal02Area34	N	7966	5525	603	263	40									
+#record		RouVal02Area35	N	4354	7617	437	205	0									
+#record		RouVal02Area36	N	4367	7228	147	419	89									
+#record		RouVal02Area37	N	4362	6690	423	240	0									
+#record		RouVal02Area38	N	6223	7280	1179	279	0									
+#record		RouVal02Area39	N	6057	8166	145	202	-44									
+#record		RouVal02Area40	N	6558	8482	883	196	0									
+#record		RouVal02Area41	N	7109	8421	153	400	0									
+#record		RouVal02Area42	N	7895	8201	0	0	245									
+#record		RouVal02Area43	N	8736	8715	236	314	0									
+#record		RouVal02Area44	N	7909	8945	0	0	408									
+#record		RouVal02Area45	N	6593	9244	553	108	0									
+#record		RouVal02Area46	N	4446	8245	533	246	0									
+#record		RouVal02Area47	N	5338	8478	276	766	0									
+#record		RouVal02Area48	N	5282	4572	250	691	90									
+#record		RouVal02Area49	N	7295	4481	817	274	0									
+#record		RouVal02Area50	N	5781	5277	543	157	0									
+#record		RouVal02Area51	N	4702	5495	0	0	483									
+#record		RouVal02AreaW1	N	7032	5245	364	306	0									
+#record		RouVal02AreaW2	N	8621	6130	0	0	100									
+#record		RouVal02AreaW3	N	6074	7627	0	0	100									
+#record		RouVal02AreaW4	N	4779	6255	0	0	100									
+#record		RouVal02AreaW5	N	5316	6829	0	0	100									
+#record		RouVal02AreaW6	N	7359	8405	0	0	100									
+#record		RouVal02AreaW7	N	8599	8018	0	0	100									
+#record		RouVal02AreaW8	N	8630	8948	0	0	100									
+#record		RouVal02AreaW9	N	8877	7790	0	0	100									
+#record		RouVal02AreaW10	N	5486	8722	0	0	100									
+#record		RouVal02AreaH1	N	5433	5017	566	50	0									
+#record		RouVal02AreaH2	N	5600	5311	391	241	0									
+#record		RouVal02AreaH3	N	6853	4679	0	0	100									
+#record		RouVal02AreaH4	N	5788	4423	0	0	50									
+#record		RouVal02AreaH5	N	6855	7645	0	0	100									
+#record		RouVal02AreaH6	N	7495	7600	0	0	100									
+#record		RouVal02AreaH7	N	4713	7774	0	0	100									
+#record		RouVal02AreaH8	N	3962	7214	0	0	100									
+#record		RouVal02AreaH9	N	5988	9100	0	0	100									
+#record		RouVal02AreaH10	N	5617	6482	0	0	100									
+#record		RouVal02AreaF1	N	4691	4802	0	0	100									
+#record		RouVal02AreaF2	N	7763	5073	0	0	100									
+#record		RouVal02AreaF3	N	7684	6673	0	0	100									
+#record		RouVal02AreaF4	N	6873	6986	0	0	100									
+#record		RouVal02AreaF5	N	5582	7642	0	0	100									
+#record		RouVal02AreaF6	N	4684	7340	0	0	100									
+#record		RouVal02AreaF7	N	4065	7684	0	0	100									
+#record		RouVal02AreaF8	N	7067	8233	0	0	100									
+#record		RouVal02AreaF9	N	8111	6205	0	0	100									
+#record		RouVal02AreaF10	N	5978	8827	0	0	100									
+#record		RouVal02AreaM1	N	6965	5526	422	55	0									
+#record		RouVal02AreaM2	N	5113	6592	0	0	100									
+#record		RouVal02AreaM3	N	8260	5349	0	0	100									
+#record		RouVal02AreaM4	N	7680	9075	0	0	100									
+#record		RouVal02AreaM5	N	8173	7754	0	0	100									
+#record		RouVal02AreaM6	N	6887	6524	0	0	100									
+#record		RouVal02AreaM7	N	7745	6502	0	0	100									
+#record		RouVal02AreaM8	N	8280	4937	0	0	100									
+#record		RouVal02AreaM9	N	7072	5792	0	0	100									
+#record		RouVal02AreaM10	N	4215	10821	0	0	359									
+#record		RouVal02AreaM11	N	2222	5234	222	932	-4									
+#record		RouVal02AreaM12	N	2586	9899	0	0	499									
+#record		RouVal02AreaM13	N	6282	11196	1148	80	-1									
+#record		RouVal02AreaM14	N	9138	10955	916	134	20									
+#record		RouVal02AreaM15	N	11018	7155	109	1580	6									
+#record		RouVal02AreaM16	N	9111	2395	483	137	-17									
+#record		RouVal02AreaM17	N	6368	2120	1257	50	-4									
+#record		RouVal02AreaG1	Y	6879	10796	0	0	115									
+#record		RouVal02AreaPbox01	N	6648	9391	5209	2367	0									
+#record		RouVal02AreaPbox02	N	6691	4484	5183	2513	0									
+#record		RouVal02Area06_1	N	2074	5986	0	0	429									
+;		Halloween01	N	6203	9528	4168	1206	0									
+;		Halloween02	N	6102	6670	4858	1598	0									
+;		Halloween03	N	6235	3630	4746	1424	0									
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		RouVal02Area01	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area02	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area03	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area03	BabyBat	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area04	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area04	BabyBat	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area05	TombRaider	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area05	BabyBat	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area06	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area06	KebingSpeeder	1	0	180	165	195	-15	8	-10	15	0	60	10	120	15
+#record		RouVal02Area07	BabyBat	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area08	GoldrySlime	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area08	BabyBat	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area09	BabyBat	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area10	GoldrySlime	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area10	BabyBat	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area11	GoldrySlime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area12	GoldrySlime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area13	GoldrySlime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area14	GoldrySlime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area14	GlowWolf	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area15	GoldrySlime	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area15	GlowWolf	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area16	GoldrySlime	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area16	GlowWolf	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area17	GlowWolf	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area18	GlowWolf	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area19	GlowWolf	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area20	GlowWolf	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area20	GoldrySlime	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area21	GoldrySlime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area22	GoldrySlime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area23	GoldrySlime	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area23	BabyBat	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area24	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area25	MarloneFighter	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area25	MarloneCaptain	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area26	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area27	MarloneArcher	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area27	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area28	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area28	MarloneArcher	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area29	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area30	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area31	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area31	MarloneFighter	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area31	MarloneSoldier	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area32	MarloneCaptain	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area32	MarloneFighter	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area33	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area34	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area35	MarloneFighter	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area35	MarloneCaptain	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area36	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area36	MarloneFighter	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area37	MarloneFighter	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area38	MarloneFighter	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area38	MarloneCaptain	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area38	MarloneSoldier	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area39	MarloneFighter	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area39	MarloneCaptain	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area40	Marlone	1	0	360	345	375	-15	8	-10	15	0	60	10	120	15
+#record		RouVal02Area40	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area40	MarloneSoldier	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area41	MarloneFighter	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area41	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area42	MarloneFighter	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area42	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area43	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area43	MarloneSoldier	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area44	MarloneFighter	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area44	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area45	MarloneCaptain	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area45	MarloneFighter	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area45	MarloneSoldier	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area46	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area46	MarloneFighter	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area46	MarloneSoldier	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area47	MarloneFighter	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area47	MarloneCaptain	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area47	MarloneSoldier	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area48	MarloneArcher	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area48	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area49	MarloneArcher	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area49	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area50	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area51	MarloneMegaton	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02AreaW1	MarloneArcher	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02AreaW2	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW3	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW4	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW5	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW6	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW7	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW8	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW9	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaW10	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH1	HERB2	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH2	MarloneArcher	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02AreaH3	HERB2	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH4	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH5	HERB3	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH6	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH7	HERB3	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH8	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH9	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaH10	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF1	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF2	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF3	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF4	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF5	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF6	HERB1	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF7	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF8	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF9	HERB1	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaF10	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM1	MUSHROOM1	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM2	MUSHROOM1	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM3	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM4	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM5	MUSHROOM2	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM6	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM7	MUSHROOM2	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM8	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM9	MUSHROOM3	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM10	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM11	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM12	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM12	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM12	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM13	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM13	FLOWER2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM13	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM13	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM13	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM13	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM13	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM14	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM15	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM16	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM17	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM17	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM17	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM17	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM17	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaM17	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal02AreaG1	S_Kebing	1	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		RouVal02AreaG1	Kebing	3	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		RouVal02AreaPbox01	PresentBox6	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		RouVal02AreaPbox02	PresentBox6	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		RouVal02Area06_1	BabyBat	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal02Area06_1	TombRaider	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+;		Halloween01	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+#end																	

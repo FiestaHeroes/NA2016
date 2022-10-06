@@ -1,0 +1,29 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00	;대양의 결정 보상 아이템					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Siren_FG120Helmet01	Siren_FG120Armor01	Siren_FG120Pants01	Siren_FG120Boots01	-	SirenEar01
+#Record	1	Siren_FK120Helmet02	Siren_FK120Armor02	Siren_FK120Pants02	Siren_FK120Boots02	-	SirenNeck01
+#Record	2	-	-	-	-	-	SirenRing01
+#Record	3	Siren_CG120Helmet01	Siren_CG120Armor01	Siren_CG120Pants01	Siren_CG120Boots01	-	SirenRing02
+#Record	4	Siren_CH120Helmet02	Siren_CH120Armor02	Siren_CH120Pants02	Siren_CH120Boots02	-	-
+#Record	5	-	-	-	-	-	-
+#Record	6	Siren_AR120Hat01	Siren_AR120Armor01	Siren_AR120Pants01	Siren_AR120Boots01	-	-
+#Record	7	Siren_AS120Hat02	Siren_AS120Armor02	Siren_AS120Pants02	Siren_AS120Boots02	-	-
+#Record	8	-	-	-	-	-	-
+#Record	9	Siren_MWo120Hat01	Siren_MWo120Shirt01	Siren_MWo120Pants01	Siren_MWo120Boots01	-	-
+#Record	10	Siren_MWi120Hat02	Siren_MWi120Shirt02	Siren_MWi120Pants02	Siren_MWi120Boots02	-	-
+#Record	11	-	-	-	-	-	-
+#Record	12	Siren_JC120Hood01	Siren_JC120Armor01	Siren_JC120Pants01	Siren_JC120Boots01	-	-
+#Record	13	Siren_JA120Goggle02	Siren_JA120Armor02	Siren_JA120Pants02	Siren_JA120Boots02	-	-
+#Record	14	Siren_S120Helmet01	Siren_S120Armor01	Siren_S120Pants01	Siren_S120Boots01	-	-
+#Record	15	-	-	-	-	-	-
+#Record	16	-	-	-	-	-	-
+#Record	17	-	-	-	-	-	-
+#Record	18	-	-	-	-	-	-
+#Record	19	-	-	-	-	-	-
+#End							

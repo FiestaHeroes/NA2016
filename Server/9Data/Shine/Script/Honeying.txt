@@ -1,0 +1,26 @@
+;	Shine NPC table(ShineNPC.txt)	
+#ignore	\o042	
+#exchange	#	
+;#delimiter	\x20	
+#Table	Script	
+#ColumnType	INDEX	
+#ColumnName	ScrIndex	
+#Record	KQReturn60	자이언트 하닝이 쓰러졌습니다.
+#Record	KQReturn50	50초 후 엘더린으로 귀환합니다.
+#Record	KQReturn40	40초 후 엘더린으로 귀환합니다.
+#Record	KQReturn30	30초 후 엘더린으로 귀환합니다.
+#Record	KQReturn20	20초 후 엘더린으로 귀환합니다.
+#Record	KQReturn10	10초 후 엘더린으로 귀환합니다.
+#Record	KQReturn50	5초 후 엘더린으로 귀환합니다.
+
+#Record	KQFReturn30	30초 후 엘더린으로 귀환합니다.
+#Record	KQFReturn20	20초 후 엘더린으로 귀환합니다.
+#Record	KQFReturn10	10초 후 엘더린으로 귀환합니다.
+#Record	KQFReturn5	5초 후 엘더린으로 귀환합니다.
+
+#Record	Honeying01	여기가 어디라고 와!
+#Record	Honeying02	너희같은 놈들은 따끔한 내 침맛을 봐야해!
+
+#Record	Summon01	친구들아! 저 하찮은 놈들을 모조리 공격해!! 
+
+#End		

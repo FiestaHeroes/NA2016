@@ -1,0 +1,30 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	ForasC_01	Many Foras people are disappearing around here. Please investigate the cause.	
+#Record	ForasC_02	Monsters are coming! Please be careful!	
+#Record	Notice_01	Devilish monsters are coming.	
+#Record	Notice_02	You have defeated the devilish monsters.	
+#Record	ForasC_03	Something is coming again. Watch out!	
+#Record	ForasC_04	Oh... They're our people!! What's with those creepy swords and amor? Why is this happening??	
+#Record	ForasC_05	Strong monsters are heading our way. Be careful.	
+#Record	ForasC_06	That huge structure is protected by a powerful force. Let's follow the power line.	
+#Record	ForasC_07	"Can you feel that? A fearsome power, right in front of where our people were captured."	
+#Record	Notice_03	The power line has been destroyed.	
+#Record	ForasC_08	There must be more of them protecting the structure. We should check the other sides.	
+#Record	ForasC_09	The protective force around the brainwashing device has disappeared. Destroy it quickly!	
+#Record	ForasC_10	"Thanks to you, our Foras people have been saved."	
+#Record	ForasC_11	Thank you again. I hope to have the chance to repay this debt in the future.	
+#Record	ForasC_12	"Foras people, this way! It's time to go home. Don't fall behind!"	
+#Record	KQReturn60	You will be moved in 1 minute.	
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+			
+#End			

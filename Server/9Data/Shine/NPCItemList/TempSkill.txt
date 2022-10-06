@@ -1,0 +1,125 @@
+;		ItemList in NPC								
+#ignore	\o042			; 인용부호 무시						
+#exchange	#	\x20		; # => space						
+;		2006.01.25								
+										
+#Table	Tab00	;파이터 액티브								
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]			
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05			
+#Record	0 	TripleHit01	TripleHit02	-	-	-	-			
+#Record	1 	SeverBone01	SeverBone02	-	-	-	-			
+#Record	2 	SnearKick01	-	-	-	-	-			
+#Record	3 	RedSlash01	RedSlash02	-	-	-	-			
+#Record	4 	BattleBlow01	-	-	-	-	-			
+										
+#Table	Tab01	;파이터 패시브								
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]			
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05				
+#Record	0 	BraveMastery01	-	-	-	-	-				
+#Record	1 	OHSwdMastery01	OHSwdMastery02	-	-	-	-				
+											
+#Table	Tab02	;클레릭 액티브									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05				
+#Record	0 	Heal01	Heal02	Heal03	-	-	-				
+#Record	1 	Wield01	Wield02	-	-	-	-				
+#Record	2 	Blessing01	-	-	-	-	-				
+#Record	3 	MentalShout01	-	-	-	-	-				
+											
+#Table	Tab03	;클레릭 패시브									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05				
+#Record	0 	MaceMastery01	MaceMastery02	-	-	-	-				
+#Record	1 	HolySpirit01	-	-	-	-	-						
+													
+#Table	Tab04	;아처 액티브											
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]						
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05						
+#Record	0 	AimingShot01	AimingShot02	-	-	-	-						
+#Record	1 	PowerShot01	PowerShot02	-	-	-	-						
+#Record	2 	PuryImpact01	-	-	-	-	-						
+#Record	3 	BoneArrow01	-	-	-	-	-						
+													
+#Table	Tab05	;아처 패시브											
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]						
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05						
+#Record	0 	BowMastery01	BowMastery02	-	-	-	-						
+#Record	1 	DodgeMastery01	-	-	-	-	-						
+													
+#Table	Tab06	;메이지 액티브																																																																																																					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																																																
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																																																
+#Record	0 	MagicMissile02	MagicMissile03	MagicMissile04	-	-	-																																																																																																
+#Record	1 	IceBolt01	IceBolt02	IceBolt03	-	-	-																																																																																																
+#Record	2 	FireBolt01	FireBolt02	FireBolt03	-	-	-																																																																																																
+#Record	3 	LightningBolt01	LightningBolt02	LightningBolt03	-	-	-																																																																																																
+																																																																																																							
+#Table	Tab07	;메이지 패시브																																																																																																					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																																																
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																																																
+#Record	0 	StaffMastery01	StaffMastery02	-	-	-	-																																																																																																
+#Record	1 	WisdomMastery01	-	-	-	-	-																																																																																																
+																																																																																																							
+#Table	Tab08	;조커 액티브																																																																																																					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																																																
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0 	BenTear01	BenTear02	-	-	-	-
+#Record	1 	NorthTear01	NorthTear02	-	-	-	-
+#Record	2 	PowerBenTear01	PowerBenTear02	-	-	-	-
+#Record	3 	PowerNorthTear01	PowerNorthTear02	-	-	-	-
+#Record	4 	FitBlood01	-	-	-	-	-
+							
+#Table	Tab09	;조커 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0 	ClawMastery01	ClawMastery02	-	-	-	-
+#Record	1 	CleaveMastery01	-	-	-	-	-
+							
+#Table	Tab10	;연금술 					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0 	Mining	UseRide	-	-	-	-																																																																																						
+#Record	1 	Recipe_El1	Recipe_El2	Recipe_C_NorCopperOre	Recipe_C_HighCopperOre	Recipe_R_LowCopperOre	Recipe_R_LowMushrooms																																																																																						
+#Record	2 	Recipe_Lix1	Recipe_Lix2	Recipe_C_NorMushrooms	Recipe_C_NorToadStool	Recipe_R_LowToadStool	Recipe_R_LowWoodSab																																																																																						
+#Record	3 	Recipe_Xir1	Recipe_Xir2	Recipe_C_LowSilverOre	Recipe_C_NorWoodSab	Recipe_R_LowBeastLeather	Recipe_R_LowBeastTooth																																																																																						
+#Record	4 	Recipe_BestLowHpPotion	Recipe_LowHpPotion	Recipe_C_Violet	Recipe_C_Rosemary	Recipe_R_LowBrokenBone	Recipe_R_LowSpiritDust																																																																																						
+#Record	5 	Recipe_BestLowSpPotion	Recipe_LowSpPotion	Recipe_C_NorBeastLeather	Recipe_C_NorBeastTooth	Recipe_R_LowMagicCrystal	Recipe_R_LowSoulDust																																																																																						
+#Record	6 	Recipe_BestLowConHPPotion	Recipe_LowConHPPotion	Recipe_C_NorMeat	Recipe_C_NorSpiritDust	Recipe_R_LowGemDust	Recipe_R_LowMeat																																																																																						
+#Record	7 	Recipe_BestLowConSPPotion	Recipe_LowConSPPotion	Recipe_C_NorSkin	Recipe_C_NorSilverOre	Recipe_R_LowSkin	Recipe_R_LowCleanWater																																																																																						
+#Record	8 	Recipe_BestLowTHScroll	Recipe_LowTHScroll	Recipe_C_NorCleanWater	-	-	-																																																																																						
+#Record	9 	Recipe_BestLowTBScroll	Recipe_LowTBScroll	-	-	-	-																																																																																						
+#Record	10 	Recipe_BestLowMRScroll	Recipe_LowMRScroll	-	-	-	-																																																																																						
+#Record	11 	Recipe_BestLowACScroll	Recipe_LowACScroll	-	-	-	-																																																																																						
+#Record	12 	Recipe_BestLowMaxHPScroll	Recipe_LowMaxHPScroll	-	-	-	-																																																																																						
+#Record	13 	Recipe_BestLowMaxSPScroll	Recipe_LowMaxSPScroll	-	-	-	-																																																																																						
+#Record	14 	Recipe_BestLowMSScroll	Recipe_LowMSScroll	-	-	-	-																																																																																						
+#Record	15 	Recipe_LowPsnResiPotion	-	-	-	-	-																																																																																						
+#Record	16 	Recipe_LowDssResiPotion	-	-	-	-	-
+#Record	17 	Recipe_LowCurResiPotion	-	-	-	-	-
+#Record	18 	Recipe_LowPsnCurPotion	-	-	-	-	-
+#Record	19 	Recipe_LowDssCurPotion	-	-	-	-	-
+#Record	20 	Recipe_BestLowCurScroll	Recipe_LowCurScroll	-	-	-	-
+							
+#End							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							
+																																																																																																							

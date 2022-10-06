@@ -1,0 +1,547 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		UrgSwa01	N	9025	4754	0	0	450									
+#record		UrgSwa02	N	8452	4107	0	0	450									
+#record		UrgSwa03	N	5902	5224	0	0	450									
+#record		UrgSwa04	N	7975	5090	0	0	450									
+#record		UrgSwa05	N	7260	4245	0	0	450									
+#record		UrgSwa06	N	6933	5241	0	0	450									
+#record		UrgSwa07	N	5025	5825	0	0	450									
+#record		UrgSwa08	N	6910	7198	0	0	450									
+#record		UrgSwa09	N	8555	8509	0	0	450									
+#record		UrgSwa10	N	8005	7592	0	0	450									
+#record		UrgSwa11	N	17201	4853	0	0	450									
+#record		UrgSwa12	N	7765	6220	0	0	450									
+#record		UrgSwa13	N	4020	4811	0	0	450									
+#record		UrgSwa14	N	12738	4615	0	0	450									
+#record		UrgSwa15	N	17787	3775	0	0	450									
+#record		UrgSwa16	N	18818	4729	0	0	450									
+#record		UrgSwa17	N	12888	6111	0	0	450									
+#record		UrgSwa18	N	14007	6085	0	0	450									
+#record		UrgSwa19	N	3412	5950	0	0	450									
+#record		UrgSwa20	N	8831	5707	0	0	450									
+#record		UrgSwa21	N	12272	5437	0	0	450									
+#record		UrgSwa22	N	13413	5217	0	0	450									
+#record		UrgSwa23	N	13829	4243	0	0	450									
+#record		UrgSwa24	N	4288	9051	0	0	450									
+#record		UrgSwa25	N	6912	9820	0	0	450									
+#record		UrgSwa26	N	6334	10802	0	0	450									
+#record		UrgSwa27	N	4381	7796	0	0	450									
+#record		UrgSwa28	N	4753	9913	0	0	450									
+#record		UrgSwa29	N	5357	6982	0	0	450									
+#record		UrgSwa30	N	9393	7839	0	0	450									
+#record		UrgSwa31	N	8702	6740	0	0	450									
+#record		UrgSwa32	N	9677	6408	0	0	450									
+#record		UrgSwa33	N	14527	5017	0	0	450									
+#record		UrgSwa34	N	14817	3911	0	0	450									
+#record		UrgSwa35	N	15997	4123	0	0	450									
+#record		UrgSwa36	N	15864	5256	0	0	450									
+#record		UrgSwa37	N	7368	10808	0	0	450									
+#record		UrgSwa38	N	7576	8962	0	0	450									
+#record		UrgSwa39	N	13213	7015	0	0	450									
+#record		UrgSwa40	N	9328	9223	0	0	450									
+#record		UrgSwa41	N	3348	8969	0	0	450									
+#record		UrgSwa42	N	5304	8587	0	0	450									
+#record		UrgSwa43	N	5796	9722	0	0	450									
+#record		UrgSwa44	N	4498	11343	0	0	450									
+#record		UrgSwa45	N	6076	7744	0	0	450									
+#record		UrgSwa46	N	6340	6223	0	0	450									
+#record		UrgSwa47	N	3474	6900	0	0	450									
+#record		UrgSwa48	N	4416	6686	0	0	450									
+#record		UrgSwa49	N	16821	9704	0	0	450									
+#record		UrgSwa50	N	17778	8491	0	0	450									
+#record		UrgSwa51	N	18017	9502	0	0	450									
+#record		UrgSwa52	N	17130	6624	0	0	450									
+#record		UrgSwa53	N	17873	7394	0	0	450									
+#record		UrgSwa54	N	16867	7626	0	0	450									
+#record		UrgSwa55	N	16696	8605	0	0	450									
+#record		UrgSwa56	N	13377	10485	0	0	450									
+#record		UrgSwa57	N	12714	9110	0	0	450									
+#record		UrgSwa58	N	12386	11206	0	0	450									
+#record		UrgSwa59	N	12167	10225	0	0	450									
+#record		UrgSwa60	N	9293	10781	0	0	450									
+#record		UrgSwa61	N	10833	6485	0	0	450									
+#record		UrgSwa62	N	8440	10052	0	0	450									
+#record		UrgSwa63	N	5718	11778	0	0	450									
+#record		UrgSwa64	N	3102	7970	0	0	450									
+#record		UrgSwa65	N	5339	10718	0	0	450									
+#record		UrgSwa66	N	6978	12054	0	0	450									
+#record		UrgSwa67	N	19125	9140	0	0	450									
+#record		UrgSwa68	N	18681	8091	0	0	450									
+#record		UrgSwa69	N	20244	8758	0	0	450									
+#record		UrgSwa70	N	19890	9981	0	0	450									
+#record		UrgSwa71	N	12321	12402	0	0	450									
+#record		UrgSwa72	N	11059	12953	0	0	450									
+#record		UrgSwa73	N	12855	13279	0	0	450									
+#record		UrgSwa74	N	13798	12538	0	0	450									
+#record		UrgSwa75	N	11087	9837	0	0	450									
+#record		UrgSwa76	N	13779	9395	0	0	450									
+#record		UrgSwa77	N	11518	11965	0	0	450									
+#record		UrgSwa78	N	11286	10877	0	0	450									
+#record		UrgSwa79	N	8237	11493	0	0	450									
+#record		UrgSwa80	N	10933	7800	0	0	450									
+#record		UrgSwa81	N	11871	6368	0	0	450									
+#record		UrgSwa82	N	18600	10393	0	0	450									
+#record		UrgSwa83	N	17401	10612	0	0	450									
+#record		UrgSwa84	N	15965	10766	0	0	450									
+#record		UrgSwa85	N	20893	10725	0	0	450									
+#record		UrgSwa86	N	20856	9706	0	0	450									
+#record		UrgSwa87	N	14117	13538	0	0	450									
+#record		UrgSwa88	N	14963	12541	0	0	450									
+#record		UrgSwa89	N	13228	14378	0	0	450									
+#record		UrgSwa90	N	15363	13531	0	0	450									
+#record		UrgSwa91	N	15753	9649	0	0	450									
+#record		UrgSwa92	N	14787	11323	0	0	450									
+#record		UrgSwa93	N	14498	10150	0	0	450									
+#record		UrgSwa94	N	13451	11559	0	0	450									
+#record		UrgSwa95	N	16291	13939	0	0	450									
+#record		UrgSwa96	N	19772	12360	0	0	450									
+#record		UrgSwa97	N	15761	14755	0	0	450									
+#record		UrgSwa98	N	18616	12668	0	0	450									
+#record		UrgSwa99	N	15629	17559	0	0	450									
+#record		UrgSwa100	N	13963	17928	0	0	450									
+#record		UrgSwa101	N	15303	15561	0	0	450									
+#record		UrgSwa102	N	14459	15347	0	0	450									
+#record		UrgSwa103	N	15093	16439	0	0	450									
+#record		UrgSwa104	N	16062	16726	0	0	450									
+#record		UrgSwa105	N	14096	16184	0	0	450									
+#record		UrgSwa106	N	16067	11915	0	0	450									
+#record		UrgSwa107	N	16477	12982	0	0	450									
+#record		UrgSwa108	N	17174	12043	0	0	450									
+#record		UrgSwa109	N	14749	14480	0	0	450									
+#record		UrgSwa110	N	17507	13156	0	0	450									
+#record		UrgSwa111	N	18359	11629	0	0	450									
+#record		UrgSwa112	N	19610	11298	0	0	450									
+#record		UrgSwa113	N	17500	15699	0	0	450									
+#record		UrgSwa114	N	17257	14148	0	0	450									
+#record		UrgSwa115	N	16919	16469	0	0	450									
+#record		UrgSwa116	N	16234	15728	0	0	450									
+#record		UrgSwa117	N	16677	14890	0	0	450									
+#record		UrgSwa118	N	18311	13839	0	0	450									
+#record		UrgSwa119	N	19486	13511	0	0	450									
+#record		UrgSwa120	N	17966	14859	0	0	450									
+#record		UrgSwa121	N	14494	18615	0	0	450									
+#record		UrgSwa122	N	16150	18377	0	0	450									
+#record		UrgSwa123	N	13813	17076	0	0	450									
+#record		UrgSwa124	N	14795	17382	0	0	450									
+#record		UrgSwa125	N	18485	17453	0	0	450									
+#record		UrgSwa126	N	19043	14694	0	0	450									
+#record		UrgSwa127	N	18584	15561	0	0	450									
+#record		UrgSwa128	N	18179	16458	0	0	450									
+#record		UrgSwa129	N	19118	16402	0	0	450									
+#record		UrgSwa130	N	22678	15590	0	0	450									
+#record		UrgSwa131	N	19953	16786	0	0	450									
+#record		UrgSwa132	N	21151	15699	0	0	450									
+#record		UrgSwa133	N	20208	14371	0	0	450									
+#record		UrgSwa134	N	21813	14909	0	0	450									
+#record		UrgSwa135	N	13036	18253	0	0	450									
+#record		UrgSwa136	N	13597	18971	0	0	450									
+#record		UrgSwa137	N	15283	18355	0	0	450									
+#record		UrgSwa138	N	15264	19336	0	0	450									
+#record		UrgSwa139	N	11036	20610	0	0	450									
+#record		UrgSwa140	N	11392	19198	0	0	450									
+#record		UrgSwa141	N	10513	19774	0	0	450									
+#record		UrgSwa142	N	10704	21605	0	0	450									
+#record		UrgSwa143	N	9918	20770	0	0	450									
+#record		UrgSwa144	N	9335	19819	0	0	450									
+#record		UrgSwa145	N	18960	20136	0	0	450									
+#record		UrgSwa146	N	20428	20214	0	0	450									
+#record		UrgSwa147	N	21439	22410	0	0	450									
+#record		UrgSwa148	N	18151	21149	0	0	450									
+#record		UrgSwa149	N	21394	20387	0	0	450									
+#record		UrgSwa150	N	12426	20938	0	0	450									
+#record		UrgSwa151	N	13224	20666	0	0	450									
+#record		UrgSwa152	N	14299	20319	0	0	450									
+#record		UrgSwa153	N	12716	21783	0	0	450									
+#record		UrgSwa154	N	10075	22472	0	0	450									
+#record		UrgSwa155	N	9372	21704	0	0	450									
+#record		UrgSwa156	N	7916	20335	0	0	450									
+#record		UrgSwa157	N	8754	20731	0	0	450									
+#record		UrgSwa158	N	23217	19473	0	0	450									
+#record		UrgSwa159	N	22494	20426	0	0	450									
+#record		UrgSwa160	N	23473	20437	0	0	450									
+#record		UrgSwa161	N	5930	21198	0	0	450									
+#record		UrgSwa162	N	4994	21479	0	0	450									
+#record		UrgSwa163	N	5425	20426	0	0	450									
+#record		UrgSwa164	N	4481	20620	0	0	450									
+#record		UrgSwa165	N	13465	19771	0	0	450									
+#record		UrgSwa166	N	14351	19475	0	0	450									
+#record		UrgSwa167	N	12607	19954	0	0	450									
+#record		UrgSwa168	N	12722	19063	0	0	450									
+#record		UrgSwa169	N	10850	18459	0	0	450									
+#record		UrgSwa170	N	9739	18084	0	0	450									
+#record		UrgSwa171	N	10448	17588	0	0	450									
+#record		UrgSwa172	N	9953	18977	0	0	450									
+#record		UrgSwa173	N	20970	19386	0	0	450									
+#record		UrgSwa174	N	22098	19547	0	0	450									
+#record		UrgSwa175	N	4045	21589	0	0	450									
+#record		UrgSwa176	N	4826	19842	0	0	450									
+#record		UrgSwa177	N	3557	20432	0	0	450									
+#record		UrgSwa178	N	4761	18754	0	0	450									
+#record		UrgSwa179	N	2510	18294	0	0	450									
+#record		UrgSwa180	N	2548	19226	0	0	450									
+#record		UrgSwa181	N	3431	18540	0	0	450									
+#record		UrgSwa182	N	4166	18161	0	0	450									
+#record		UrgSwa183	N	15446	20191	0	0	450									
+#record		UrgSwa184	N	16098	20732	0	0	450									
+#record		UrgSwa185	N	15696	21367	0	0	450									
+#record		UrgSwa186	N	14988	20808	0	0	450									
+#record		UrgSwa187	N	2734	20300	0	0	450									
+#record		UrgSwa188	N	4115	19383	0	0	450									
+#record		UrgSwa189	N	2997	21355	0	0	450									
+#record		UrgSwa190	N	3340	19535	0	0	450									
+#record		UrgSwa191	N	6365	19069	0	0	450									
+#record		UrgSwa192	N	4991	17851	0	0	450									
+#record		UrgSwa193	N	6291	18237	0	0	450									
+#record		UrgSwa194	N	7117	18535	0	0	450									
+#record		UrgSwa195	N	2420	16323	0	0	450									
+#record		UrgSwa196	N	3393	15868	0	0	450									
+#record		UrgSwa197	N	3293	16703	0	0	450									
+#record		UrgSwa198	N	4238	16034	0	0	450									
+#record		UrgSwa199	N	2183	17231	0	0	450									
+#record		UrgSwa200	N	4768	16968	0	0	450									
+#record		UrgSwa201	N	3072	17552	0	0	450									
+#record		UrgSwa202	N	4092	17240	0	0	450									
+#record		UrgSwa203	N	8750	17242	0	0	450									
+#record		UrgSwa204	N	9478	16228	0	0	450									
+#record		UrgSwa205	N	7027	16043	0	0	450									
+#record		UrgSwa206	N	7886	16678	0	0	450									
+#record		UrgSwa207	N	3461	14264	0	0	450									
+#record		UrgSwa208	N	3471	15084	0	0	450									
+#record		UrgSwa209	N	4362	15153	0	0	450									
+#record		UrgSwa210	N	2533	15393	0	0	450									
+#record		UrgSwa211	N	9460	15096	0	0	450									
+#record		UrgSwa212	N	8539	15876	0	0	450									
+#record		UrgSwa213	N	8605	14625	0	0	450									
+#record		UrgSwa214	N	5104	13584	0	0	450									
+#record		UrgSwa215	N	4084	13549	0	0	450									
+#record		UrgSwa216	N	5296	15022	0	0	450									
+#record		UrgSwa217	N	4421	14331	0	0	450									
+#record		UrgSwa218	N	6896	14995	0	0	450									
+#record		UrgSwa219	N	7743	15408	0	0	450									
+#record		UrgSwa220	N	7675	14466	0	0	450									
+#record		UrgSwa221	N	12074	7643	0	0	450									
+#record		UrgSwa222	N	14371	7124	0	0	450									
+#record		UrgSwa223	N	14378	8312	0	0	450									
+#record		UrgSwa224	N	11596	8826	0	0	450									
+#record		UrgSwa225	N	15897	7525	0	0	450									
+#record		UrgSwa226	N	15366	6970	0	0	450									
+#record		UrgSwa227	N	13250	8075	0	0	450									
+#record		UrgSwa228	N	15531	8549	0	0	450									
+#record		UrgSwaB01	N	5634	14234	0	0	344									
+#record		UrgSwaB02	N	21727	11171	0	0	182									
+#record		UrgSwaB03	N	12405	14394	0	0	154									
+#record		UrgSwaB04	N	17304	17591	0	0	126									
+#record		UrgSwaB05	N	12031	14191	0	0	133									
+#record		UrgSwaB06	N	11560	14223	0	0	154									
+#record		UrgSwaB07	N	9823	17210	0	0	154									
+#record		UrgSwaH01	N	21185	6317	444	1885	22									
+#record		UrgSwaH02	N	8287	10830	578	1395	124									
+#record		UrgSwaH03	N	17966	4776	869	2224	88									
+#record		UrgSwaM01	N	21244	14734	1603	299	105									
+#record		UrgSwaM02	N	22396	21722	1340	263	-145									
+#record		UrgSwaW01	N	8666	15516	1505	690	-62									
+#record		Waypoint01	N	21551	16594	0	0	420									
+#record		Waypoint02	N	21514	15603	0	0	420									
+#record		Waypoint03	N	21500	14305	0	0	420									
+#record		Waypoint04	N	19118	20918	0	0	420									
+#record		Waypoint05	N	19101	20965	0	0	420									
+#record		Waypoint06	N	19210	21839	0	0	420									
+#record		Waypoint07	N	20824	20180	0	0	420									
+#record		Waypoint08	N	21126	20720	0	0	420									
+#record		Waypoint09	N	21129	21257	0	0	420									
+#record		Waypoint10	N	17963	21879	0	0	420									
+#record		Waypoint11	N	17317	22025	0	0	420									
+#record		Waypoint12	N	16673	22157	0	0	420									
+#record		Waypoint13	N	17339	19216	0	0	420									
+#record		Waypoint14	N	6389	11432	0	0	420									
+#record		Waypoint15	N	4869	6111	0	0	420									
+;		Halloween01	N	6639	18193	0	0	4921									
+;		Halloween02	N	7150	8251	0	0	5068									
+;		Halloween03	N	16650	13399	4592	9237	0									
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		UrgSwa01	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa02	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa03	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa04	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa05	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa06	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa07	CaimanJunior	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa08	CaimanJunior	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa09	CaimanJunior	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa10	CaimanJunior	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa11	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa12	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa13	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa14	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa15	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa16	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa17	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa18	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa19	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa20	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa21	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa22	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa23	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa24	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa25	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa26	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa27	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa28	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa29	CaimanJuniorA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa30	CaimanJuniorA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa31	CaimanJuniorA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa32	CaimanJuniorA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa33	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa34	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa35	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa36	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa37	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa38	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa39	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa40	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa41	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa42	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa43	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa44	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa45	CaimanJuniorB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa46	CaimanJuniorB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa47	CaimanJuniorB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa48	CaimanJuniorB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa49	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa50	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa51	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa52	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa53	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa54	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa55	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa56	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa57	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa58	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa59	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa60	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa61	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa62	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa63	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa64	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa65	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa66	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa67	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa68	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa69	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa70	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa71	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa72	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa73	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa74	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa75	MudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa76	MudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa77	MudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa78	MudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa79	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa80	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa81	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa82	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa83	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa84	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa85	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa86	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa87	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa88	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa89	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa90	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa91	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa92	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa93	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa94	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa95	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa96	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa97	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa98	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa99	LivingTotem	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa100	LivingTotem	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa101	LivingTotem	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa102	LivingTotem	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa103	LivingTotem	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa104	LivingTotem	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa105	LivingTotem	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa106	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa107	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa108	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa109	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa110	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa111	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa112	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa113	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa114	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa115	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa116	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa117	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa118	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa119	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa120	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa121	LivingTotemA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa122	LivingTotemA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa123	LivingTotemA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa124	LivingTotemA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa125	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa126	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa127	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa128	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa129	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa130	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa131	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa132	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa133	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa134	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa135	LivingTotemB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa136	LivingTotemB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa137	LivingTotemB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa138	LivingTotemB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa139	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa140	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa141	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa142	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa143	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa144	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa145	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa146	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa147	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa148	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa149	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa150	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa151	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa152	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa153	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa154	RhinoceLordA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa155	RhinoceLordA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa156	RhinoceLordA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa157	RhinoceLordA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa158	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa159	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa160	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa161	BigMudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa162	BigMudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa163	BigMudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa164	BigMudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa165	RaplanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa166	RaplanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa167	RaplanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa168	RaplanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa169	RhinoceLordB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa170	RhinoceLordB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa171	RhinoceLordB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa172	RhinoceLordB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa173	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa174	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa175	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa176	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa177	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa178	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa179	Phouch	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa180	Phouch	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa181	Phouch	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa182	Phouch	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa183	RaplanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa184	RaplanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa185	RaplanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa186	RaplanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa187	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa188	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa189	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa190	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa191	PhouchA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa192	PhouchA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa193	PhouchA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa194	PhouchA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa195	Weasel	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa196	Weasel	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa197	Weasel	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa198	Weasel	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa199	PhouchB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa200	PhouchB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa201	PhouchB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa202	PhouchB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa203	RhinoceHunter	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa204	RhinoceHunter	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa205	RhinoceHunter	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa206	RhinoceHunter	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa207	WeaselA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa208	WeaselA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa209	WeaselA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa210	WeaselA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa211	RhinoceHunterA	2	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa212	RhinoceHunterA	2	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa213	RhinoceHunterA	2	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa214	WeaselB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa215	WeaselB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa216	WeaselB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa217	WeaselB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa218	RhinoceHunterA	2	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa219	RhinoceHunterA	2	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa220	RhinoceHunterA	2	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa221	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa222	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa223	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa224	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa225	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa226	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa227	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwa228	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		UrgSwaB01	CaimanGiant	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		UrgSwaB02	LittleMimic	1	0	35	30	40	60	10	120	15	0	0	0	0	0
+#record		UrgSwaB03	TameMimic	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		UrgSwaB04	CrazyMimic	1	0	65	55	80	60	10	120	15	0	0	0	0	0
+#record		UrgSwaB05	TameMimic	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		UrgSwaB06	TameMimic	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		UrgSwaB07	RhinoceKing	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		UrgSwaH01	HERB7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH01	HERB8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH01	HERB9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH02	HERB7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH02	HERB8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH02	HERB9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH03	HERB7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH03	HERB8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaH03	HERB9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaM01	MUSHROOM7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaM01	MUSHROOM8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaM01	MUSHROOM9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaM02	MUSHROOM7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaM02	MUSHROOM8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaM02	MUSHROOM9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaW01	WOOD7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaW01	WOOD8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		UrgSwaW01	WOOD9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Waypoint01	MandrakeA	5	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint02	MandrakeA	5	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint03	MandrakeA	5	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint04	SlugA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint05	SlugA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint06	SlugA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint07	SlugA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint08	SlugA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint09	SlugA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint10	MadSlugB	6	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint11	MadSlugB	6	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint12	MadSlugB	6	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint13	RhinoceKing	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		Waypoint14	RhinoceKing	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		Waypoint15	RhinoceKing	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+;		Halloween01	E_JackO05	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO05	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO05	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+#end																	

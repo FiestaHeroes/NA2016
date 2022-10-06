@@ -1,0 +1,71 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	-			
+#Record	1	-			
+#Record	2	B_Albireo_Skill02_W			
+#Record	3	B_Albireo_Skill02_W			
+#Record	4	B_Albireo_Skill01_W			
+#Record	5	-			
+#Record	6	B_Albireo_Skill03_W			
+#Record	7	B_Albireo_Skill02_W			
+#Record	8	B_Albireo_Skill01_W			
+#Record	9	B_Albireo_Skill01_W			
+#Record	10	-			
+#Record	11	B_Albireo_Skill03_W			
+#Record	12	B_Albireo_Skill01_W			
+#Record	13	B_Albireo_Skill02_W			
+#Record	14	-			
+#Record	15	-			
+#Record	16	B_Albireo_Skill02_W			
+#Record	17	B_Albireo_Skill02_W			
+#Record	18	B_Albireo_Skill03_W			
+#Record	19	B_Albireo_Skill01_W			
+					
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우	
+#ColumnType	Index	Index	String[33]	String[33]	
+#ColumnName	Condition	Value	From	To	
+#Record	HPLow_ChangeOrder	500	0	B_Albireo_Skill04_W	
+#Record	HPLow_ChangeOrder	500	5	B_Albireo_Skill04_W	
+#Record	HPLow_ChangeOrder	500	10	B_Albireo_Skill04_W	
+#Record	HPLow_ChangeOrder	500	15	B_Albireo_Skill04_W	
+#Record	HPLow_ChangeOrder	250	2	B_Albireo_Skill05_W	
+#Record	HPLow_ChangeOrder	250	9	B_Albireo_Skill05_W	
+#Record	HPLow_ChangeOrder	250	14	B_Albireo_Skill05_W	
+#Record	HPLow_ChangeOrder	250	16	B_Albireo_Skill05_W	
+#End					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+#End					

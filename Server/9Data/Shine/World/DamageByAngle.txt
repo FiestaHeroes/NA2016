@@ -1,0 +1,35 @@
+;		Damage By Attack Angle	
+
+#Ignore	\o042		
+#Exchange	#	\x20	
+;#delimeter	\x20		
+#Table	DamageByAngle_Chr		
+;			
+#ColumnType	WORD	WORD	WORD
+;			
+
+;	비어있는 각도는 보간법으로 계산		
+;	"0, 180도는 반드시 있어야 함"		
+;	"몹이 캐릭터를, 캐릭터가 캐릭터를 공격할 때"		
+#ColumnName	DamagedAngle	DamageRate	CheckSum
+#Record	0 	1000 	0 
+#Record	45 	1040 	45 
+#Record	90 	1100 	90 
+#Record	135 	1120 	135 
+#Record	170 	1140 	170 
+#Record	180 	1200 	180 
+
+
+
+#Table	DamageByAngle_Mob		
+;			
+#ColumnType	WORD	WORD	WORD
+;	캐릭터가 몹을 공격할 때		
+#ColumnName	DamagedAngle	DamageRate	CheckSum
+#Record	0 	1000 	0 
+#Record	45 	1040 	45 
+#Record	90 	1100 	90 
+#Record	135 	1120 	135 
+#Record	170 	1140 	170 
+#Record	180 	1200 	180 
+#end			

@@ -1,0 +1,122 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KDTravelerDnArea01	N	1031	1195	0	0	54									
+#record		KDTravelerDnArea02	N	849	1503	0	0	54									
+#record		KDTravelerDnArea03	N	1195	1503	0	0	54									
+#record		KDTravelerDnArea04	N	851	1741	0	0	54									
+#record		KDTravelerDnArea05	N	1196	1753	0	0	54									
+#record		KDTravelerDnArea06	N	1027	2278	0	0	53									
+#record		KDTravelerDnArea07	N	1051	2701	0	0	54									
+#record		KDTravelerDnArea10	N	1410	3300	0	0	54									
+#record		KDTravelerDnArea11	N	1078	3349	0	0	54									
+#record		KDTravelerDnArea12	N	1410	3040	0	0	54									
+#record		KDTravelerDnArea13	N	3137	3309	0	0	54									
+#record		KDTravelerDnArea14	N	2872	3816	0	0	53									
+#record		KDTravelerDnArea16	N	2997	3814	0	0	54									
+#record		KDTravelerDnArea17	N	3125	3804	0	0	54									
+#record		KDTravelerDnArea19	N	2856	2847	0	0	54									
+#record		KDTravelerDnArea20	N	2981	2842	0	0	54									
+#record		KDTravelerDnArea21	N	3097	2849	0	0	54									
+#record		KDTravelerDnArea24	N	3782	3259	0	0	50									
+#record		KDTravelerDnArea25	N	4669	3274	0	0	50									
+#record		KDTravelerDnArea26	N	4916	3664	0	0	56									
+#record		KDTravelerDnArea27	N	5208	3360	0	0	54									
+#record		KDTravelerDnArea28	N	5155	4575	0	0	54									
+#record		KDTravelerDnArea29	N	5083	5466	0	0	54									
+#record		KDTravelerDnArea30	N	5076	5919	0	0	54									
+#record		KDTravelerDnArea31	N	4584	5423	0	0	54									
+#record		KDTravelerDnArea32	N	5140	4976	0	0	54									
+#record		KDTravelerDnArea33	N	5649	5411	0	0	50									
+#record		KDTravelerDnArea34	N	4794	5130	0	0	54									
+#record		KDTravelerDnArea35	N	5462	5147	0	0	54									
+#record		KDTravelerDnArea36	N	5492	5774	0	0	54									
+#record		KDTravelerDnArea37	N	4785	5710	0	0	54									
+#record		KDTravelerDnArea39	N	3878	5461	0	0	54									
+#record		KDTravelerDnArea40	N	3419	5458	0	0	51									
+#record		KDTravelerDnArea41	N	3019	5407	0	0	54									
+#record		KDTravelerDnArea42	N	3279	5149	0	0	54									
+#record		KDTravelerDnArea43	N	2611	4701	0	0	54									
+#record		KDTravelerDnArea44	N	2082	4530	0	0	54									
+#record		KDTravelerDnArea45	N	1445	4539	0	0	53									
+#record		KDTravelerDnArea47	N	903	5007	0	0	54									
+#record		KDTravelerDnArea49	N	418	4535	0	0	54									
+#record		KDTravelerDnArea51	N	911	3989	0	0	54									
+#record		KDTravelerDnArea53	N	1384	4539	0	0	54									
+#record		KDTravelerDnArea54	N	462	4679	0	0	54									
+#record		KDTravelerDnArea55	N	256	4518	0	0	54									
+#record		KDTravelerDnArea56	N	487	4376	0	0	54									
+#record		KDTravelerDnArea57	N	389	4538	0	0	54									
+#record		KDTravelerDnArea58	N	1267	4531	0	0	54									
+#record		KDTravelerDnArea59	N	1078	1006	0	0	54									
+#record		KDTravelerDnArea60	N	1078	1006	0	0	54									
+#record		KDTravelerDnArea61	N	1078	1006	0	0	54									
+#record		KDTravelerDnArea62	N	1078	1006	0	0	54									
+#record		KDTravelerDnArea63	N	1078	1006	0	0	54									
+#record		KDTravelerDnArea64	N	1078	1006	0	0	54									
+#record		KDTravelerDnArea65	N	1078	1006	0	0	54									
+#record		KDTravelerDnArea66	N	1078	1006	0	0	54									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KDTravelerDnArea01	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea02	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea03	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea04	KQ_Slime	2	0	1	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea05	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea06	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea07	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea10	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea11	KQ_Slime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea12	KQ_Slime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea13	KQ_MushRoom	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea14	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea16	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea17	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea19	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea20	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea21	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea24	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea25	KQ_MushRoom	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea26	KQ_MushRoom	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea27	KQ_MushRoom	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea28	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea29	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea30	KQ_MushRoom	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea31	KQ_MushRoom	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea32	KQ_MushRoom	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea33	KQ_MushRoom	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea34	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea35	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea36	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea37	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea39	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea40	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea41	KQ_Imp	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea42	KQ_Imp	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea43	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea44	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea45	KQ_Slime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea47	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea49	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea51	KQ_Slime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea53	KQ_Imp	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea54	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea55	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea56	KQ_Slime	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea57	KQ_FireSlime	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDTravelerDnArea58	KQ_RookieSkeleton	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

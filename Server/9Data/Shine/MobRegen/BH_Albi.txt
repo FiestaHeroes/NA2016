@@ -1,0 +1,45 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		BossAlbireo	N	1597	2868	0	0	10									
+#record		MineKN01	N	2096	1886	366	281	0									
+#record		MineKN02	N	1096	1886	366	281	0									
+#record		MineKN03	N	1096	781	366	549	0									
+#record		MineKN04	N	2096	781	366	549	0									
+#record		MineKN05	N	1163	2639	0	0	189									
+#record		MineKN06	N	2037	2639	0	0	203									
+#record		MineKN07	N	1590	377	0	0	50									
+#record		MineKN08	N	1603	1473	0	0	50									
+#record		MineF01	N	2694	1468	0	0	10									
+#record		MineF02	N	502	1464	0	0	10									
+#record		MineF03	N	2694	1468	0	0	10									
+#record		MineF04	N	502	1464	0	0	10									
+#record		MineF05	N	2694	1468	0	0	10									
+#record		MineF06	N	502	1464	0	0	10									
+#record		BH_AlbiBox	N	3060	3126	303	494	4									
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		BossAlbireo	BH_Albireo	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		MineKN01	FireTotem	2	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		MineKN02	FireTotem	2	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		MineKN03	FireTotem	2	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		MineKN04	FireTotem	2	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		MineKN05	FireTotem	2	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		MineKN06	FireTotem	2	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		MineKN07	FireTotem	1	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		MineKN08	FireTotem	1	0	10	9	11	5	-2	8	0	10	2	13	4	0
+#record		BH_AlbiBox	BH_Albireo_Box	1	0	10	9	11	5	-2	8	0	10	2	13	4	0
+																	
+#end																	

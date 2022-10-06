@@ -1,0 +1,211 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		RGN_C1_1	N	1198	4484	0	0	366									
+#record		RGN_C1_2	N	1198	4484	0	0	366									
+#record		RGN_C2_1	N	1198	4484	0	0	366									
+#record		RGN_C2_2	N	1198	4484	0	0	366									
+#record		RGN_C3_1	N	1198	4484	0	0	366									
+#record		RGN_C3_2	N	1198	4484	0	0	366									
+#record		RGN_C4_1	N	1198	4484	0	0	366									
+#record		RGN_C4_2	N	1198	4484	0	0	366									
+#record		RGN_C5_1	N	1198	4484	0	0	366									
+#record		RGN_C5_2	N	1198	4484	0	0	366									
+#record		RGN_C6_1	N	1198	4484	0	0	366									
+#record		RGN_C6_2	N	1198	4484	0	0	366									
+#record		RGN_C7_1	N	1198	4484	0	0	366									
+#record		RGN_C7_2	N	1198	4484	0	0	366									
+#record		RGN_C8_1	N	1198	4484	0	0	366									
+#record		RGN_C8_2	N	1198	4484	0	0	366									
+#record		RGN_C9_1	N	1198	4484	0	0	366									
+#record		RGN_C9_2	N	1198	4484	0	0	366									
+#record		RGN_C10_1	N	1198	4484	0	0	366									
+#record		RGN_C10_2	N	1198	4484	0	0	366									
+#record		RGN_C11_1	N	1198	4484	0	0	366									
+#record		RGN_C11_2	N	1198	4484	0	0	366									
+#record		RGN_C12_1	N	1198	4484	0	0	366									
+#record		RGN_C12_2	N	1198	4484	0	0	366									
+#record		RGN_C13_1	N	1198	4484	0	0	366									
+#record		RGN_C13_2	N	1198	4484	0	0	366									
+#record		RGN_C14_1	N	1198	4484	0	0	366									
+#record		RGN_C14_2	N	1198	4484	0	0	366									
+#record		RGN_C15_1	N	1198	4484	0	0	366									
+#record		RGN_C15_2	N	1198	4484	0	0	366									
+#record		RGN_C16_1	N	1198	4484	0	0	366									
+#record		RGN_C16_2	N	1198	4484	0	0	366									
+#record		RGN_C17_1	N	1198	4484	0	0	366									
+#record		RGN_C17_2	N	1198	4484	0	0	366									
+#record		RGN_C18_1	N	1198	4484	0	0	366									
+#record		RGN_C18_2	N	1198	4484	0	0	366									
+#record		RGN_C19_1	N	1198	4484	0	0	366									
+#record		RGN_C19_2	N	1198	4484	0	0	366									
+#record		RGN_C20_1	N	1198	4484	0	0	366									
+#record		RGN_C20_2	N	1198	4484	0	0	366									
+#record		RGN_C21_1	N	1198	4484	0	0	50									
+#record		RGN_C21_2	N	1198	4484	0	0	366									
+#record		RGN_C22_1	N	1198	4484	0	0	50									
+#record		RGN_C22_2	N	1198	4484	0	0	366									
+#record		RGN_C23_1	N	1198	4484	0	0	50									
+#record		RGN_C23_2	N	1198	4484	0	0	366									
+#record		RGN_C24_1	N	1198	4484	0	0	366									
+#record		RGN_C25_1	N	1198	4484	0	0	366									
+#record		RGN_C25_2	N	1198	4484	0	0	366									
+#record		RGN_C26_1	N	1198	4484	0	0	366									
+#record		RGN_C26_2	N	1198	4484	0	0	366									
+#record		RGN_C26_3	N	1198	4484	0	0	366									
+#record		RGN_C27_1	N	1198	4484	0	0	366									
+#record		RGN_C27_2	N	1198	4484	0	0	366									
+#record		RGN_C27_3	N	1198	4484	0	0	366									
+#record		RGN_C27_4	N	1198	4484	0	0	366									
+#record		RGN_C28_1	N	1198	4484	0	0	366									
+#record		RGN_C28_2	N	1198	4484	0	0	366									
+#record		RGN_C28_3	N	1198	4484	0	0	366									
+#record		RGN_C28_4	N	1198	4484	0	0	366									
+#record		RGN_C29_1	N	1198	4484	0	0	366									
+#record		RGN_C29_2	N	1198	4484	0	0	366									
+#record		RGN_C30_1	N	1198	4484	0	0	366									
+#record		RGN_C30_2	N	1198	4484	0	0	366									
+#record		RGN_C31_1	N	1198	4484	0	0	366									
+#record		RGN_C31_2	N	1198	4484	0	0	366									
+#record		RGN_C31_3	N	1198	4484	0	0	366									
+#record		RGN_C32_1	N	8800	11213	0	0	30									
+#record		RGN_C32_2	N	8800	11213	0	0	366									
+#record		RGN_C32_3	N	8800	11213	0	0	366									
+#record		RGN_C32_4	N	8923	11189	182	177	27									
+#record		RGN_C32_5	N	8923	11189	182	177	27									
+#record		RGN_C32_6	N	8923	11189	182	177	27									
+#record		RGN_C33_1	N	8800	11213	0	0	30									
+#record		RGN_C33_2	N	8800	11213	0	0	366									
+#record		RGN_C33_3	N	8800	11213	0	0	366									
+#record		RGN_C33_4	N	8923	11189	182	177	27									
+#record		RGN_C33_5	N	8923	11189	182	177	27									
+#record		RGN_C33_6	N	8923	11189	182	177	27									
+#record		RGN_C34_1	N	8800	11213	0	0	30									
+#record		RGN_C34_2	N	8800	11213	0	0	366									
+#record		RGN_C34_3	N	8800	11213	0	0	366									
+#record		RGN_C34_4	N	9026	11116	0	0	10									
+#record		RGN_C34_5	N	9094	11259	0	0	20									
+#record		RGN_C34_6	N	8746	11481	0	0	20									
+#record		RGN_C34_7	N	8578	11156	0	0	20									
+#record		RGN_C34_8	N	8922	10969	0	0	20									
+#record		RGN_C34_9	N	8923	11189	182	177	27									
+#record		RGN_C34_10	N	8923	11189	182	177	27									
+#record		RGN_C34_11	N	8923	11189	182	177	27									
+#record		RGN_C35_1	N	1198	4484	0	0	366									
+#record		RGN_C35_2	N	1198	4484	0	0	366									
+#record		RGN_C35_3	N	1198	4484	0	0	366									
+#record		RGN_C35_4	N	1198	4484	0	0	366									
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		RGN_C1_1	C_TombRaider	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C1_2	C_DefGoblinSwordman	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C2_1	C_DarkBat	8	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C2_2	C_DarkVampireBat	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C3_1	C_DarkSoulSkeleton	9	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C3_2	C_DarkSkelWarrior	4	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C4_1	C_DarkPinky	10	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C4_2	C_DarkPixy	3	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C5_1	C_DarkSkeletonKnight	6	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C5_2	C_DarkSkeletonCom	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C6_1	C_DarkLizardMan	6	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C6_2	C_DarkComLizardMan	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C7_1	C_DarkGreenky	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C7_2	C_DarkShylph	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C8_1	C_DarkStonie	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C8_2	C_DarkStonieCom	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C9_1	C_DarkJewelKeeper	6	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C9_2	C_BigJewelKeeper	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C10_1	C_DarkArchon	4	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C10_2	C_BigDarkArchon	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C11_1	C_DarkLips	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C11_2	C_BigDarkLips	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C12_1	C_DarkOrc	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C12_2	C_CurseDarkOrc	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C13_1	C_DarkNavar	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C13_2	C_CurseDarkNavar	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C14_1	C_DarkSpakeDog	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C14_2	C_BigDarkSpakeDog	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C15_1	C_GoldJewelKeeper	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C15_2	C_BigGoldJewelKeeper	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C16_1	C_DarkKingMushRoom	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C16_2	C_KingMushRoom	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C17_1	C_MagTombRaider	7	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C17_2	C_MagGoblinSwordman	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C18_1	C_MasicBat	7	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C18_2	C_MagVampireBat	4	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C19_1	C_SkinStonie	8	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C19_2	C_SkinRedStonie	3	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C20_1	C_SkinLips1	9	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C20_2	C_SkinLips2	2	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C21_1	C_KQ_Kamaris	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C21_2	C_DarkZombie	13	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C22_1	C_KQ_Kamaris	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C22_2	C_DarkMasFlyingStaff	13	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C23_1	C_KQ_Kamaris	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C23_2	C_DarkLegendaryTree	13	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C24_1	C_DarkMarloneArcher	13	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C25_1	C_DarkSkelArcher	10	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C25_2	C_DarkOneSkelArcher	4	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C26_1	C_DarkSkelArcher	8	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C26_2	C_DarkOneSkelArcher	4	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C26_3	C_RangerSkelArcher	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C27_1	C_DarkPresentBox01	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C27_2	C_DarkPresentBox02	7	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C27_3	C_DarkZombie	13	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C27_4	C_DarkPresentBox03	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C28_1	C_DarkMine1	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C28_2	C_DarkMine2	7	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C28_3	C_DarkMarloneArcher	13	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C28_4	C_DarkMine3	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C29_1	C_FugitiveOrc	8	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C29_2	C_FugitiveComOrc	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C30_1	C_ChaseOrc	9	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C30_2	C_ChaseComOrc	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C31_1	C_FugitiveOrc	8	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C31_2	C_ChaseOrc	9	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C31_3	C_AssMarlone	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C32_1	C_LizardManGuardian	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C32_2	C_LizardManIyzel	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C32_3	C_DarkLizardManIyzel	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C32_4	C_IyzenPresentBox01	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C32_5	C_MineBoxIyzel3	15	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C32_6	C_MineBoxIyzel4	4	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C33_1	C_HeavyOrc	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C33_2	C_OrcIyzel	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C33_3	C_CurseOrcIyzel	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C33_4	C_IyzenPresentBox02	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C33_5	C_MineBoxIyzel3	20	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C33_6	C_MineBoxIyzel4	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_1	C_JewelGolem	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_2	C_SkelArcherIyzel	5	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_3	C_OneSkelArcherIyzel	3	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_4	C_IyzenClPresentBox	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_5	C_PillarofLight	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_6	C_PillarofLight	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_7	C_PillarofLight	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_8	C_PillarofLight	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_9	C_IyzenClPresentBox	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_10	C_IyzenBox1	15	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C34_11	C_IyzenBox2	4	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C35_1	DarkCoffin01	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C35_2	DarkCoffin02	7	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C35_3	DarkCoffin03	1	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#record		RGN_C35_4	C_DarkZombie	13	0	1	15	-4	5	-2	8	0	10	2	13	4	0
+#end																	

@@ -1,0 +1,74 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KQ_H_MiniDragon_Boss1	N	4270	1926	0	0	51									
+#record		KQ_H_MiniDragon_1_1	Y	3881	2466	147	533	28									
+#record		KQ_H_MiniDragon_1_2	N	3385	2624	0	0	268									
+#record		KQ_H_MiniDragon_1_3	N	3597	2817	0	0	281									
+#record		KQ_H_MiniDragon_1_4	N	3491	2329	0	0	274									
+#record		KQ_H_MiniDragon_1_5	Y	4060	2355	328	540	26									
+#record		KQ_H_MiniDragon_Boss2	N	9022	2832	0	0	51									
+#record		KQ_H_MiniDragon_2_1	N	7810	2873	120	535	-8									
+#record		KQ_H_MiniDragon_2_2	N	7664	2800	161	399	-8									
+#record		KQ_H_MiniDragon_2_3	Y	8233	2506	250	302	0									
+#record		KQ_H_MiniDragon_2_4	Y	8491	3343	251	372	10									
+#record		KQ_H_MiniDragon_2_5	N	8363	2952	255	717	0									
+#record		KQ_H_MiniDragon_Boss3	N	2920	8076	0	0	64									
+#record		KQ_H_MiniDragon_3_1	N	4841	6541	886	212	-55									
+#record		KQ_H_MiniDragon_3_2	N	4049	7145	952	1298	35									
+#record		KQ_H_MiniDragon_3_3	Y	4193	6992	746	1083	26									
+#record		KQ_H_MiniDragon_3_4	Y	4477	7668	506	506	0									
+#record		KQ_H_MiniDragon_3_5	Y	3467	6478	485	485	0									
+#record		KQ_H_MiniDragon_3_6	N	4228	6976	295	1160	32									
+#record		KQ_H_MiniDragon_3_7	Y	3705	7382	830	472	35									
+#record		KQ_H_MiniDragon_Boss4	N	6356	10742	0	0	58									
+#record		KQ_H_MiniDragon_4_1	N	7874	9738	477	145	6									
+#record		KQ_H_MiniDragon_4_2	N	7482	9767	517	154	6									
+#record		KQ_H_MiniDragon_4_3	N	6820	9873	327	158	16									
+#record		KQ_H_MiniDragon_4_4	Y	6448	10068	559	215	38									
+#record		KQ_H_MiniDragon_4_5	Y	6493	10048	377	158	41									
+#record		KQ_MiniDragon_MINE1	N	11233	11520	0	0	500									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KQ_H_MiniDragon_Boss1	KQ_H_Werebear	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_1_1	KQ_H_SmallProck	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_1_2	KQ_H_Bat2	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_1_3	KQ_H_KissLips	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_1_4	KQ_H_Spider	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_1_5	KQ_H_SandRatman	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_Boss2	KQ_H_BossTombRaider2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_2_1	KQ_H_SmallProck	9	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_2_2	KQ_H_Bat2	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_2_3	KQ_H_KissLips	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_2_4	KQ_H_Spider	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_2_5	KQ_H_HardboneImp	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_Boss3	KQ_H_BossRobo2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_3_1	KQ_H_Bat2	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_3_2	KQ_H_KissLips	30	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_3_3	KQ_H_Spider	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_3_4	KQ_H_SandRatman	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_3_5	KQ_H_MadHob	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_3_6	KQ_H_HardboneImp	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_3_7	KQ_H_HeavyOgre	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_Boss4	KQ_H_GobleKing	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_4_1	KQ_H_Spider	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_4_2	KQ_H_SandRatman	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_4_3	KQ_H_MadHob	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_4_4	KQ_H_HardboneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_H_MiniDragon_4_5	KQ_H_HeavyOgre	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQ_MiniDragon_MINE1	KQ_MINE1	250	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

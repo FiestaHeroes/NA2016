@@ -1,0 +1,1652 @@
+;	몹의 잡담							
+#Ignore	\o042		; 인용부호 무시					
+;#Exchange	#	\x20	; # => space					
+;#delemeter	\x20		스페이스는 Delimiter 아님					
+#Table	PIECE							
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3
+								
+#Table	ATTACK							
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3
+								
+#Table	DAMAGED							
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3
+								
+#Table	DEAD							
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3
+								
+#Table	HELPMAIN							
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3
+								
+#Table	HELPSUB							
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3
+								
+#Table	RACERESCUE							
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3
+								
+								
+								
+								
+								
+								
+#RecordIn	PIECE	Slime	1800000	3400000	Press Q to recover your HP and E for your SP.	Welcome to the world of Fiesta!	I am Slime!	"Welcome, nice to meet you."
+#RecordIn	ATTACK	Slime	50	0	Every level up gives you 1 free stat point hehe..	Hi-ya!	*slurk* *slurk* *slurk*	Slippery attack! Hehehe.
+#RecordIn	DAMAGED	Slime	50	0	Press C to find out what free stat point is~~	Welcome to... ouch.. that hurts.	Ow...it hurts...it really hurts!	I can bounce back from your attacks...it's a unique skill of mine!
+#RecordIn	DEAD	Slime	50	0	You can view the map larger by pressing M.	-	Oh no--so soon?	I will tell the king about this! He'll get you for sure!
+#RecordIn	PIECE	HeroSlime	1800000	3400000	You will suffer if you think I'm weak!	You think I'm pretty? You have good taste.	I'm so cute~heh.	"What is this ""named"" item I'm holding?"
+#RecordIn	ATTACK	HeroSlime	50	0	"Muhahaha, give it your best shot.! I will prevail!"	I will avenge my Slime comrades!	The cute ones can be dangerous too!	How do you like that? Slimes aren't weaklings!
+#RecordIn	DAMAGED	HeroSlime	50	0	"Ha, can't get me!!"	"Ouch! It hurts, but I am still alive."	Haha--this is far from being over!	"Look at my name, I'm a Slime Hero!"
+#RecordIn	DEAD	HeroSlime	50	0	Ouch...	You've received 5000 experience points.	Gather all the Slimes!	It was a good fight while it lasted.
+#RecordIn	PIECE	MushRoom	2000000	3600000	The Skills are sold by skill master Ruby in town.	"This the first time we've met.  Nice to meet you, my friend!"	"If you look carefully, I am actually cute!"	I don't like the Slimes...they crush all the mushrooms.
+#RecordIn	ATTACK	MushRoom	50	0	Kill me after getting a quest. It will be more rewarding. 	How do you like my one-two punch?	"Here come the punches--one, two!"	"What's one plus one? Wrong, it's three! Hehe."
+#RecordIn	DAMAGED	MushRoom	50	0	Go see NPCs with Q mark in the map for new quests.	"Wow, you pack quite a punch."	Hehe... doesn't hurt at all!	"Well, perhaps one plus one is two afterall."
+#RecordIn	DEAD	MushRoom	50	0	"At level 3 you can learn new skills, silly! Hehe.."	I should've used the De..dempsi rol...	Fiesta isn't SciFi!	"Bury me in a sunny place, so I can regrow into a Mushroom legend!"
+#RecordIn	PIECE	SpeedySlime	1800000	3400000	Wow! There are too many of your kind around here!	I'm Fiesta's mascot! Everyone adores me!	Welcome to the world of Fiesta!	"On behalf of all the monsters in Fiesta, we welcome you!"
+#RecordIn	ATTACK	SpeedySlime	50	0	"Come, we will see who is the strongest!"	Alright... I'll go easy on you.	This is my way of welcoming you!	"Tell me about yourself, I'm curious."
+#RecordIn	DAMAGED	SpeedySlime	50	0	Ouch! Why did you hit me?!	What! You want to kill me?	This can't be your first time! How else could you be this strong?	Aaaacckk! This is not funny!
+#RecordIn	DEAD	SpeedySlime	50	0	Gulp!	Ack!	Aaakkk!	Oh no...I'm dying.
+#RecordIn	PIECE	MushRoomFighter	2000000	3600000	I am a born fighter!	"Our family is a great, noble family."	How long have you been in the world of Fiesta?	I'm a Mushroom Fighter... strong and powerful..
+#RecordIn	ATTACK	MushRoomFighter	50	0	"That's it? Come on, you're making this easy!"	Can you sense my charisma? Ha! You're already nervous.	Do you know that monsters have different levels?	I can feel my fellow Mushroom's dislike of you.
+#RecordIn	DAMAGED	MushRoomFighter	50	0	You look dreadful 	Ugh!  You must come from  a notable clan.	I'm the greatest monster--being evil is second nature!	You are worse than the filthy slimes!
+#RecordIn	DEAD	MushRoomFighter	50	0	I ... lost?	Ugh...	Ugh!  You're not from around here...how can you defeat me?	Ack. Shameful!
+#RecordIn	PIECE	Imp	2000000	3600000	Hard to run isn't it? Get a mover from store and ride it. 	Let's be friends!	Krrooom!  Krrooom!	Hi! I am an Imp...the fairy of Fiesta.
+#RecordIn	ATTACK	Imp	40	0	Go find Zach. He'll tell you about weapon license.	"If you haven't reached level 5, you're gonna be hurting."	"My eyes are my best feature, don't you think?"	What! You think I don't look like a fairy? Why not?
+#RecordIn	DAMAGED	Imp	40	0	Press K to enhance skills with skill point every 2 level up.	Ack! Forgive me please!	Did you come here for the quest?	"OK, OK...you're right...I'm too ugly to be a fairy."
+#RecordIn	DEAD	Imp	40	0	"With production skill you can make scrolls, potions, stones."	Ack! This quest is killing us.	I don't like quests that require senseless killing of imps!	I want to go home...
+#RecordIn	PIECE	FireMushRoom	2000000	3600000	How can you eat mushrooms?  Yuk!	I like being in the shade. I don't like strong sunlight.	Here it is--the sea of sand... or is this the forest of waves?	"You are my sunshine, my only sunshine..."
+#RecordIn	ATTACK	FireMushRoom	50	0	I'll teach you to eat mushrooms!! En garde!	Take this!	"If this caught you off guard, you've got some growing to do!"	Giant Mushroom power!
+#RecordIn	DAMAGED	FireMushRoom	50	0	Oh no... am I going to get eaten?	This might be the crisis of my life.	Seems like you need more training!	"You know, if you run out of strength, you can use HP stones."
+#RecordIn	DEAD	FireMushRoom	50	0	I knew this day would come...	It is hard for me to admit that this is my end.	Whoa... whoa! Oh no!	"They should give monsters HP stones, too!"
+#RecordIn	PIECE	gangImp	2000000	3600000	I just dare someone to get near me today.	Where is everyone?  Are they all hiding?	You will not live to see another day if you try to attack me!	Why is everyone bothering me lately?
+#RecordIn	ATTACK	gangImp	40	0	Do you really think you can take on all of us by yourself?  Ha!	Is your coffin prepared! This is your last chance to say goodbye.	My victory is imminent!	Are you sure you can defeat all of us?
+#RecordIn	DAMAGED	gangImp	40	0	"Uh oh, you're pretty good."	Is that all you've got?	Would you like to join my gang? I could use your strength!	Please forgive me!  I'll be a good Imp!
+#RecordIn	DEAD	gangImp	40	0	Whoa...unbelievable!  Who are you?	How can this be?	I thought two of us would be enough... we need more recruits!	Well...this imp is dying...
+#RecordIn	PIECE	Crab	2200000	3800000	You don't know what you're getting into!	I don't like steamer pots!	Who's using my claws as clothes pin?	"Ugh...if it wasn't for my pincers, I wouldn't be here now..."
+#RecordIn	ATTACK	Crab	40	0	Feel my wrath!	You should be careful around me.	You!  Stop there!	"Play rock, paper, pincers with me. If you win, I'll let you go."
+#RecordIn	DAMAGED	Crab	40	0	Oh no...	"If you let me go, I'll give you a secret quest, ok?"	Beware! You'll pay for that!	"If you don't try harder, I will cut you in half with my claws."
+#RecordIn	DEAD	Crab	40	0	Help me!!	No...	What happened? I had you beaten!	This is a tough loss to accept.
+#RecordIn	PIECE	SlowSlime	2200000	3800000	la la la ~	You were born to be loved.	One thing about me: I always take my time...	Don't be fooled by my name! I'm actually pretty quick!
+#RecordIn	ATTACK	SlowSlime	50	0	You shouldn't have bothered me...	"By the time you regret something, it's already too late."	"Here, take this!"	"Hahaha!  See, I'm quicker than I look."
+#RecordIn	DAMAGED	SlowSlime	50	0	"Stop, stop...it really hurts"	Defense!	"At times like this, I envy the Speedy Slimes' agility."	Get away...shoo...get away from me!
+#RecordIn	DEAD	SlowSlime	50	0	So this is how it all ends?	Oh...this isn't what I want...	I want to be a Slime in my next life...	Aaaacckk!
+#RecordIn	PIECE	SpeedyHoneying	2200000	3800000	You are the fastest amongst us!	"Faster, higher, stronger..."	Did you know I was once a Bee?	I want to wear fashionable clothes! I'd look so much prettier.
+#RecordIn	ATTACK	SpeedyHoneying	30	0	Attack!	Take this!	Think you can handle the sting of a mighty bee?	Hummm...Hummm...Hummm...
+#RecordIn	DAMAGED	SpeedyHoneying	30	0	Haha--is that supposed to hurt? I can't even feel it!	You don't have to hit me so hard!	Let me go...ahh help me!	Yikes!  Someone help me!
+#RecordIn	DEAD	SpeedyHoneying	30	0	You will hear from me again...	I'll be back!	Next time I'll shoot my stinger at you!	It hurt so much!  I was squealing like a pig...
+#RecordIn	PIECE	blueCrab	2200000	3800000	Aaaah... don't you just love that ocean smell?	"Oh, it's so hot. I feel like I'm being boiled alive!"	Do you know why crabs walk sideways?	"I'd prefer you not tell them, but steamed lobster is my favorite."
+#RecordIn	ATTACK	blueCrab	40	0	How's that? Does it hurt?!	Get ready... 	La...la...la....ooooff!  I've been discovered!	I will pinch you with my fearsome claws!
+#RecordIn	DAMAGED	blueCrab	40	0	Stop! Stop! Ouch!	Stop! You won't gain anything by killing me!	Do you think you can defeat me easily?	Hahaha!  Stop tickling me.  You're making me laugh.
+#RecordIn	DEAD	blueCrab	40	0	I don't think you'll want to eat me.	I have heat stroke...	I give up...stop attacking me!	Mark my words--you will be punished one day by my crab friends!
+#RecordIn	PIECE	LittleHob	2200000	3800000	I'm pretty cute!	Can I show you my beautiful smile?	-	-
+#RecordIn	ATTACK	LittleHob	30	0	-	-	-	-
+#RecordIn	DAMAGED	LittleHob	30	0	"Even if I call for help, no one will come..."	-	-	-
+#RecordIn	DEAD	LittleHob	30	0	-	-	-	-
+#RecordIn	PIECE	Honeying	2200000	3800000	"Hey, what's over there?"	I hope I get to visit someday...	"Me too, me too, me too!"	Smelling the flowers makes me feel stronger.
+#RecordIn	ATTACK	Honeying	30	0	Feel the pain!	Bzzz...Bzzz...Bzzz...	Don't count me out just because I'm small!	"Float like a butterfly, sting like a bee... hmm... it's strange."
+#RecordIn	DAMAGED	Honeying	30	0	"Wow, impressive!"	How can you harm a cute Honeying like me?  Help!	What? Is this because I had some of the honey?	No! No! No!
+#RecordIn	DEAD	Honeying	30	0	I wonder... what's on the other side?	Ouch!	"I ate all the honey, but I won't do it again!"	Don't hate me! An unpopular Honeying is a sad Honeying.
+#RecordIn	PIECE	HungryWolf	2400000	4000000	That shepherd boy is a liar.	Where is Little Red Riding Hood hiding?	"Oooh, I'm hungry."	Why am I always so hungry...
+#RecordIn	ATTACK	HungryWolf	30	0	Muhahaha.	Thanks for being my next meal!	You think I'm gonna let you give up?	Wow! Food! Eating you will satisfy my hunger.
+#RecordIn	DAMAGED	HungryWolf	30	0	This is not joke!	I should've picked on Little Red Riding Hood instead.	My judgment has failed me...	"Hey, if you aren't going to eat me, then don't kill me!"
+#RecordIn	DEAD	HungryWolf	30	0	How can this be?	Didn't you read Little Red Riding Hood...this isn't the end...	"I just wanted to eat you, because I was hungry!"	Why didn't you listening to me?
+#RecordIn	PIECE	AngryWolf	2400000	4000000	I'm always angry! You better watch it!	I haven't been happy lately. I wonder why?	Don't get me wrong: I'm not angry because I'm hungry!	Why am I always angry?
+#RecordIn	ATTACK	AngryWolf	30	0	You!  A challenge? Don't make me laugh!	You seem like a good way to waste some time.	You will make a nice punching bag!	It's because of you. You're the one making me angry!
+#RecordIn	DAMAGED	AngryWolf	30	0	I underestimated your strength!	Uh oh...you're going to kick my butt.	Wow! Appearances can be deceiving!	It feels like you're hitting me with a rubber mallet!
+#RecordIn	DEAD	AngryWolf	30	0	I have not shown you all my skills...so...	Aaaakkk!!	My skin will be all that's left of me...	Aaarrgghh! Makes me so mad!
+#RecordIn	PIECE	Phino	2400000	4000000	"Oh my love, Phinopoly!"	I'm lucky to be in Fiesta since I met Phinoply here.	"Actually, I don't like Phinoply. Now you know my true feelings!"	People think we're getting married...Hmm...should just propose?
+#RecordIn	ATTACK	Phino	20	0	Come watch me.	Phinoply and I will come back soon and teach you a lesson!	Phino power! DIE!	I should increase my stamina if I'm to be married.
+#RecordIn	DAMAGED	Phino	20	0	Phinopoly!  Help me!	"You're pretty good, but Phinoply is even stronger."	"If I think about my love, Phinoply, I feel no pain."	"Harder please, and faster!"
+#RecordIn	DEAD	Phino	20	0	Oh no...Phinopoly!	Ugh...Phinoply...good bye...I will love you forever.	Please leave us in peace!	"But, but... I won't be able to propose!"
+#RecordIn	HELPMAIN	Phino	800	800	-	-	-	-
+#RecordIn	HELPSUB	Phino	800	800	-	-	-	-
+#RecordIn	RACERESCUE	Phino	800	800	-	-	-	-
+#RecordIn	PIECE	MiniGreenky	2400000	4000000	"If you know a good way to shed some pounds, let me know!"	-	-	-
+#RecordIn	ATTACK	MiniGreenky	30	0	-	-	-	-
+#RecordIn	DAMAGED	MiniGreenky	30	0	-	-	-	-
+#RecordIn	DEAD	MiniGreenky	30	0	I'm ready to sacrifice myself for you.	-	-	-
+#RecordIn	PIECE	PhinoFlie	2600000	4200000	You're so cool!	My makeup looks great today! I should show Phino...	Have you seen Phino?	Is Phino trying to propose? He's so bashful it's hard to tell.
+#RecordIn	ATTACK	PhinoFlie	20	0	I see you!	"It hurts, doesn't it?  I'll have to brag to Phino."	Did you bother my friend Phino?	"Phino, I'm ready to be your bride.  How does that sound?"
+#RecordIn	DAMAGED	PhinoFlie	20	0	That really hurts! Stop!	I am upset! Boohoo...	Back off!	Hah! I feel no pain.. I'm so happy right now.
+#RecordIn	DEAD	PhinoFlie	20	0	Oh no..!  	"Phino, please avenge my death!"	Let us be... let us be together...	This can't be...this can't be happening.
+#RecordIn	HELPMAIN	PhinoFlie	800	800	-	-	-	-
+#RecordIn	HELPSUB	PhinoFlie	800	800	-	-	-	-
+#RecordIn	RACERESCUE	PhinoFlie	800	800	-	-	-	-
+#RecordIn	PIECE	Ratman	2600000	4200000	Hmm... what is that smell?	That Boar seems to have an alterior motive.  Should I follow him?	Do I look like a gutter rat?	Did you hear that Phino is going to propose to Phinoply?
+#RecordIn	ATTACK	Ratman	15	0	"Ah, so that's it! The smell was you."	"Give me food, and I'll let you go!"	I don't eat garbage!	"You smell foul! Take a shower, please!"
+#RecordIn	DAMAGED	Ratman	15	0	Ouch! That really hurts...	Stop! Stop! You're killing me!	Ouch...you're hurting me!	It's too early for you to have hurt me like this!
+#RecordIn	DEAD	Ratman	15	0	No! I really didn't mean to...	I wish I could find a hole to hide in.	Will you revive me? Please?	"Be careful out there, the rats will be watching..."
+#RecordIn	PIECE	RatmanFighter	2600000	4200000	I won't tolerate being interrupted!	Everyone is afraid of the Ratman!	Welcome to the Forest of Mist.	Lots of adventurers around recently... I wonder why?
+#RecordIn	ATTACK	RatmanFighter	15	0	What? I don't think you're good enough to hunt here!	I'm special... I'm the BIG CHEESE!	"I am observant, and sensitive too."	I caught you!  Don't think you can run away so easily from me!
+#RecordIn	DAMAGED	RatmanFighter	15	0	You're just a mouse!  How dare you!	Whoa! Not bad.	"At times like this I have to admit, it hurts."	Ah ha!  You are pretty strong!  This could be an exciting fight!
+#RecordIn	DEAD	RatmanFighter	15	0	Can't stand it!	I didn't think you'd be this strong...	Don't let my enemies know I'm dead!	"From now on, you are my leader."
+#RecordIn	PIECE	Boar	2800000	4400000	I heard that Elderrin City was near by...	There's a lot of delicious food there.	I should hurry  before the Ratman comes looking for me. 	Do I look like a bear? Sometimes even I get confused.
+#RecordIn	ATTACK	Boar	15	0	Grrr... Grr...	How do you like my claw attack?	"If you think I am the same as Ratman, you are gravely mistaken!"	"Are you a human, or an elf?"
+#RecordIn	DAMAGED	Boar	15	0	Grrr...not bad!	There's still a long way to go...	I can barely feel your attacks...	Ugh! You hit me where it hurts most!
+#RecordIn	DEAD	Boar	15	0	I'm hungry...	If only I wasn't hungry...	I don't know why Ratman is on my mind... all we ever do is fight.	No!  I can't die like a simple pig...
+#RecordIn	PIECE	SharpBoar	2800000	4400000	It's best not to mess with me when I'm hungry.	How dare you compare me to a boar!	My spider-like agility is my strength.	"We aren't related, but we are loyal nonetheless."
+#RecordIn	ATTACK	SharpBoar	15	0	You're dead meat without your friends!	You've been spotted. Don't even try to hide...	Don't even think about slinking off!	"Ah hahaha... Once you're in my sights, you cannot escape!"
+#RecordIn	DAMAGED	SharpBoar	15	0	Don't make me angry!	Oh! You are quite strong!	"Wow, you're pretty good!"	You're all looks... no real skill!
+#RecordIn	DEAD	SharpBoar	15	0	I didn't think it would end this way.	-	This is the most shameful moment since our pledge of brotherhood!	I've been killed by a weakling!
+#RecordIn	PIECE	Boogy	2800000	4400000	"I want to walk on soft sand, it's so wet here!"	"I hate to say it, but Boars are too brutal. "	My arch enemy is the sea otter. They like clams too.	"The ""The Tortoise and the Hare"" moral is the triumph of turtles!"
+#RecordIn	ATTACK	Boogy	15	0	Launching body armor! Ha ha...just kidding!	"If you give me a clam, I'll let you go."	"If I defeat you, the clams are all mine."	"If you beat me, I'll let you enjoy everything life has to offer."
+#RecordIn	DAMAGED	Boogy	15	0	"As you can see, I am pretty strong."	I think I should make a run for it.	"Wow--you're hellbent on this, aren't you?"	This is... I think is the Boogy license...
+#RecordIn	DEAD	Boogy	15	0	Don't display me as a trophy somewhere!	My short legs are too slow...aaahhh....	"When you bury me, please bury me with some clams."	I hope someone will replace me at my post...
+#RecordIn	PIECE	BoogyKnight	2800000	4400000	So you think I'm a Boogy? Think again!	"As you can see, I'm no ordinary monster."	My size alone makes people nervous.	Food in the sea comes just as I like it... well-salted!
+#RecordIn	ATTACK	BoogyKnight	15	0	"I'm much stronger! Come here, I dare you..."	I believe in myself!	Hahaha...you're scared of me too... don't run away.	Strange!  My attacks seem to have no effect!
+#RecordIn	DAMAGED	BoogyKnight	15	0	I thought my armor was the strongest... I guess not.	Man...you need more practice!	"You're not cheating, are you?"	Ugh! My body is falling apart!
+#RecordIn	DEAD	BoogyKnight	15	0	I want to see the sea again.	I can't believe I was beaten by someone like you! Shameful!	I always wanted to die at sea!	I've been defeated... how sad!
+#RecordIn	PIECE	MaraCrew	2800000	4800000	Let's see... you got anything shiny?	I'll be in big trouble if the instructor knows I missed training!	I'm good at handling a knife! I never miss my target.	"These shores, once conquered by us, have become the Sea of Greed."
+#RecordIn	ATTACK	MaraCrew	10	0	Hand over all of your money.	Take that! And that! Hehe.	Watch and weep...ahh I'm so good with my knife.	You dare enter these shores of war?
+#RecordIn	DAMAGED	MaraCrew	10	0	Oh no..!  	"Man, you're so strong! Can't take anything from you!"	Please forgive me...ouch!  It hurts!	You remind me of a mighty sailor I once fought.
+#RecordIn	DEAD	MaraCrew	10	0	-	I'm only doing what Mara commands me to do..have mercy on me!	"Let me live, and I will show you the way to Mara."	But I just got here a week ago...
+#RecordIn	HELPMAIN	MaraCrew	800	800	-	-	-	-
+#RecordIn	HELPSUB	MaraCrew	800	800	"I've come to help you, sailor."	"You don't think much of us pirates, do you?"	Did you call me?	Hold on... coming! Whoa...
+#RecordIn	RACERESCUE	MaraCrew	800	800	-	-	-	-
+#RecordIn	PIECE	MiniPinky	3000000	5000000	La la la ♬~ I feel so good...	-	-	-
+#RecordIn	ATTACK	MiniPinky	10	0	You thought I looked weak didn't you?	-	-	-
+#RecordIn	DAMAGED	MiniPinky	10	0	-	-	-	-
+#RecordIn	DEAD	MiniPinky	10	0	I'll hate you for this.	-	-	-
+#RecordIn	PIECE	SpeedyBoogy	3000000	5000000	All right! Doing my best today!	"Today, I want to go to the sea.."	"Mara is the captain of the Mara Pirates, and boy is she scary!"	Should I ask for lessons from Captain Mara?
+#RecordIn	ATTACK	SpeedyBoogy	10	0	"Did you see that? No? Hah, I'm just too fast for you!"	You're brave to challenge me to a duel!	"I'll defeat you, and end your lucky streak."	"I may be small, but I pack a mighty punch!"
+#RecordIn	DAMAGED	SpeedyBoogy	10	0	Wow! You are good...very fast. 	Ugh!  You're quite skilled...	-	I'll spare your life in exchange for some giant clams.
+#RecordIn	DEAD	SpeedyBoogy	10	0	Oh no! It looks like it's game over for me!	"I have to admit, you are stronger than me."	"Brothers, avenge my death!"	Ugh!  Please teach me...I'll be your pupil...
+#RecordIn	PIECE	MaraElite	3000000	5000000	"If they find out I can't swim, I am in BIG trouble!"	"One, two, one...!  One, two, two...!...Nine!  Ten!..."	Give me all your money and I'll let you go!	I skipped training yesterday. I wonder if the instructor noticed.
+#RecordIn	ATTACK	MaraElite	10	0	I have trained for this day. I'll show you!	"If you give me all of your money, I'll let you live."	You can't even handle me and think you're a match for Mara? Ha!	Hey! What are you doing here?
+#RecordIn	DAMAGED	MaraElite	10	0	Ah ha! I can beat anyone!	Ouch... ouch! It hurts! Should I just flee?	I can't let you get away with that!	I've forgotten the defensive move I need to counter this...
+#RecordIn	DEAD	MaraElite	10	0	-	"If I knew it would be this hard, I would have practiced more..."	"You...an apprentice, unbelievable."	Can we just pretend this fight didn't happen?
+#RecordIn	HELPMAIN	MaraElite	800	800	"Please, no more, I can't take it..."	Hey everyone! To arms!	It's getting dangerous!  Let's show the true might of the Maras!	Hey you!  New kid!  Come here right now and help!
+#RecordIn	HELPSUB	MaraElite	800	800	-	-	-	-
+#RecordIn	RACERESCUE	MaraElite	800	800	-	-	-	-
+#RecordIn	PIECE	MaraSailor	3000000	5000000	"Hey you, come here you pirate!"	Time to work out. I'll start with ten jumping jacks.	Let's ask Mara to hurry! I want to attack the village now!	"You're living large, aren't you...bold enough to skip practice!!"
+#RecordIn	ATTACK	MaraSailor	10	0	You need to be taught a lesson.	How do you like the results of my training?	I can't let you live now you've seen our hideout!	I was in a foul mood...I can take it out of you!
+#RecordIn	DAMAGED	MaraSailor	10	0	You have strange powers!	"Wow, you are better than I expected."	We need more help!  Gather the pirates!	I can easily deal with attacks like this...
+#RecordIn	DEAD	MaraSailor	10	0	-	There are all those training classes I will miss...	I'm sorry Mara!	"Man, I'll have to learn from this battle..."
+#RecordIn	HELPMAIN	MaraSailor	800	800	-	-	-	-
+#RecordIn	HELPSUB	MaraSailor	800	800	Ha! How dare you challenge Captain Mara. I'll take care of this.	How dare you disturb Mara!  Do you want to die?	Fool! How dare you fight Mara?	Your wish is my command.
+#RecordIn	RACERESCUE	MaraSailor	800	800	-	-	-	-
+#RecordIn	PIECE	Mara	3200000	5200000	Hand over the money... it belongs to me now!	"I'm Mara, the fearsome pirate in control of the sea!"	"I'm restless, and haunted by old memories."	"If you can beat me with one blow, I'll grant you a title!"
+#RecordIn	ATTACK	Mara	10	0	This is your unlucky day!	Don't think you'll walk out of here alive!	I wish my brother could see me now...	It's disappointing to have to waste my time with such a child.
+#RecordIn	DAMAGED	Mara	10	0	Hmm...you are pretty good!	You're pretty good. Why don't you join us?	"I loathe you all...because of your crimes, my familly and I..."	Come on!  Give it your best shot!
+#RecordIn	DEAD	Mara	10	0	Don't think this is the end.	You fight well...I will not go easy on you next time.	How can you do this to me?	Brother...
+#RecordIn	HELPMAIN	Mara	800	800	"You are skilled...but we'll show you!  Hey guys, attack!!"	Ahahaha... You're no match for me.	To me Mara pirates! Unite!	Can anyone help me? 
+#RecordIn	HELPSUB	Mara	800	800	-	-	-	-
+#RecordIn	RACERESCUE	Mara	800	800	-	-	-	-
+#RecordIn	PIECE	smartPhino	3200000	5200000	"Good thing we have gravity, otherwise we would be floating..."	Phino and Phinoply seem very close.  I want to meet someone too.	Cooperation is the key to survival in this tough world.	I'm not like other Phinos. I'm made of wood from ancient trees!
+#RecordIn	ATTACK	smartPhino	30	0	You should mentally prepare yourself...I am a strong opponent.	-	Do you want to be my partner?	I'm much stronger than the others--don't be upset when you lose!
+#RecordIn	DAMAGED	smartPhino	30	0	Is this all you have to show me?	It doesn't seem like you can defeat me.	Ahhh...you're turning me down.	You're worthy of taking on the great Phino!
+#RecordIn	DEAD	smartPhino	30	0	You've proven you're stronger than I am.	What happened? We definitely had the advantage.	"On my tombstone it should say ""Smart Phino died alone""."	Results speak for themselves...
+#RecordIn	PIECE	JokeKebing	3200000	5200000	"I'm so bored. Somebody please play with me, please!"	"Yesterday, I played with Kebing's hat.  It was so much fun."	I hear that funny people are very popular... is that true?	"You're won't hit someone as frail and pretty as myself, will you?"
+#RecordIn	ATTACK	JokeKebing	10	0	Hey you!  Play with me!!	Is that a jewel on the ground?...Fooled you! Haha.	Don't you think I'm the funniest person in Fiesta?	I'm so upset!  I overheard someone saying I'm a spineless Kebing!
+#RecordIn	DAMAGED	JokeKebing	10	0	Ouch!  It really hurts... 	Woah! You are not joking around.	"In battle, you don't need to be funny!"	"Hehehe...you're just joking with me, right?"
+#RecordIn	DEAD	JokeKebing	10	0	Are you going to put me in a grave?	"Hey, this is no fun..."	"If it's my time to go, then it's my time to go..."	"Your jokes are awful, I'm not playing with you again."
+#RecordIn	PIECE	Kebing	3200000	5200000	Just cuz you wish it....	"Purrrr, purrrrr."	Bzzz...Bzzz...Bzzz	We Kebings will defend the entrance to the Luminous Stone!
+#RecordIn	ATTACK	Kebing	10	0	Zoom~ power!	Kebing attack!	Kebing's skill does not compare...	"Kebing kick!  Wait, I don't have legs."
+#RecordIn	DAMAGED	Kebing	10	0	Look at me. How can you harm such beauty?	I don't think much of that!	Did you even hit me? I don't feel any pain.	Wow! You are the strongest foe I've met!
+#RecordIn	DEAD	Kebing	10	0	Oh no!	I lost to a mere human.  I'm so ashamed.	"Please, someone give me air!"	I can't die now... I'm the hero of this story...
+#RecordIn	PIECE	KebingSpeeder	3400000	5400000	Always keep your hopes and dreams with you.	"Objectively speaking, Kebings are very cute."	I'd like to go out with the other Kebings.	Just so that everyoneis clear. I'm the fastest of them all!
+#RecordIn	ATTACK	KebingSpeeder	10	0	You're quite driven!  That's great!	"You could say, I am so cool. "	"Did you think that was the ""rolling pumpkin heads"" attack?"	"If you win this challenge, I will give you something special."
+#RecordIn	DAMAGED	KebingSpeeder	10	0	A little more gusto!  A little more passion!	Aaaacckk!  You are too strong!	Don't get in the way!	"You are talented, but you don't stand a chance."
+#RecordIn	DEAD	KebingSpeeder	10	0	Wow!  	You're cramping my style.	I guess I'll have time to play after I'm dead.	I'm just pretending to be dead!
+#RecordIn	PIECE	LittleLizardMan	3200000	5200000	Should we head to the ocean to see some pirates?	-	-	-
+#RecordIn	ATTACK	LittleLizardMan	10	0	-	-	-	-
+#RecordIn	DAMAGED	LittleLizardMan	10	0	-	-	-	-
+#RecordIn	DEAD	LittleLizardMan	10	0	That wasn't what I wanted.	-	-	-
+#RecordIn	PIECE	ProckZone	3400000	5400000	-	-	-	-
+#RecordIn	ATTACK	ProckZone	10	0	-	-	-	-
+#RecordIn	DAMAGED	ProckZone	10	0	-	-	-	-
+#RecordIn	DEAD	ProckZone	10	0	-	-	-	-
+#RecordIn	PIECE	TombRaider	3400000	5400000	I have this strange urge to dig a hole.	"Me too, me too, me too!!"	"Ok, let's get started."	I heard there are glowing weapons. Those must be worth a lot!
+#RecordIn	ATTACK	TombRaider	10	0	Don't interfere with my work!	What do you think about my shovel skills?	Taste the edge of my super shovel!	I've been digging for 20 years. No one is better than me!
+#RecordIn	DAMAGED	TombRaider	10	0	"Come on... don't be mad, talk to me."	Please let me go. How much do you want? How much?	"I'll give you all the treasures I have--please, just let me go!!"	You can't beat me with glancing blows like that.
+#RecordIn	DEAD	TombRaider	10	0	I left too many graves untouched!!	Can't believe it...to end like this...	-	Just as I'd learned something interesting about this place...
+#RecordIn	PIECE	MageBook	3400000	5400000	"Page one is about the origins of the Fire Ball, its structure..."	Magic can't be learned by anyone. You have to be smart--like me!	It's a misconception to think sorcerers are weak.	I envy the elves. They are always learning new magic.
+#RecordIn	ATTACK	MageBook	10	0	What? My greatness surprises you?	"Magic Missile! Fire Bolt! Don't think I'll use it, do ya?"	I'll show you a great trick. Poof! You're a mayfly!	"Teach me a new spell, and I'll let you go!"
+#RecordIn	DAMAGED	MageBook	10	0	Ah!  I didn't think you'd be quite like this.	Ugh! Did you register a license?	I have great endurance!	"Wait, wait! Let's talk instead of fighting!"
+#RecordIn	DEAD	MageBook	10	0	"You've got a trick or two in your bag of secrets, eh?"	You must be really good to defeat someone like me.	It's just death... 	My last wish is to be on a nice bookshelf!
+#RecordIn	PIECE	PunchMageBook	3400000	5400000	Does anyone want to duel me?! Anyone?	Two hundred push ups.  That is my goal today!	I'd like to step into the ring someday.	I want to demonstrate everything I know.
+#RecordIn	ATTACK	PunchMageBook	10	0	"One, two! One, two!.."	Jab! Body blow! Upper cut!	Will you cheer for me when that time comes? No? DIE!!	My steel fists will knock you out! Watch and see!
+#RecordIn	DAMAGED	PunchMageBook	10	0	It's been a while since I've met my match.	Be sure to keep your guard up.	I don't like to pick on weaklings like you.	"Refined weapons? The more advanced they are, the more they shine."
+#RecordIn	DEAD	PunchMageBook	10	0	One more round?	Oh no...I need to train more.	Good bye...	I will go on fighting...I have to lose three times to be defeated.
+#RecordIn	PIECE	BabyBat	3400000	5400000	I wonder what it's like to fly... maybe I can try with these wings?	Today is my day off from pre-school. I'll play with you all day!	Boo...there's no one here to play with me.  Will you play with me?	Am I a bat or a pig? I wonder...
+#RecordIn	ATTACK	BabyBat	10	0	"Look at me, I'm strong!"	This is ticklish...isn't it?	Let's be friends! No? Why?	What! Did you just say that I was a stupid pig?
+#RecordIn	DAMAGED	BabyBat	10	0	Stop... don't hit me. Mommy!	This is child abuse!  Waaaa.	"If you don't want to be friends, just say so.  No need to hit me!"	"You're not strong at all. In fact, you're a weakling!"
+#RecordIn	DEAD	BabyBat	10	0	I wanted to fly... 	"Now, at least I don't feel any pain...sigh."	Mo..mm..mmy!	Aaaahng.
+#RecordIn	PIECE	GoldrySlime	3400000	5400000	Maybe there's a SilverySlime somewhere...haha.	-	-	-
+#RecordIn	ATTACK	GoldrySlime	10	0	-	-	-	-
+#RecordIn	DAMAGED	GoldrySlime	10	0	-	-	-	-
+#RecordIn	DEAD	GoldrySlime	10	0	-	-	-	-
+#RecordIn	PIECE	MarloneArcher	3400000	5400000	No one can escape my arrows!	My left hand acts only as support.	No one can defeat the Marlone clan!	Long live the Marlones!
+#RecordIn	ATTACK	MarloneArcher	10	0	You're just standing there!	I never miss my target.	You think you are better then me? How dare you!	Mine is a legendary bow used by a master archer!
+#RecordIn	DAMAGED	MarloneArcher	10	0	Ugh! I didn't expect your counterattack!	Quickly! Sound the alarm! Intruders are attacking!	You shouldn't have done that!	What? My bow's not working!
+#RecordIn	DEAD	MarloneArcher	10	0	Marlone!  The enemy has come to attack!	Marlone...	Long live the Marl..one cl..an...	Oh no. The fighters will laugh at me...
+#RecordIn	HELPMAIN	MarloneArcher	700	700	-	-	-	-
+#RecordIn	HELPSUB	MarloneArcher	800	800	I will strike you down with one shot!	You're so stupid. I told you not to eat so much.	Hold on... I'm coming!	This is for the Marlone Archers!
+#RecordIn	RACERESCUE	MarloneArcher	800	800	-	-	-	-
+#RecordIn	PIECE	MarloneMegaton	3600000	5600000	There's not much to being a bandit--just take things by force!	We're not ordinary bandits. Watch out!	No one can defeat the Marlone clan!	"Marlones, hip hip hurray! Hip hip hurray!"
+#RecordIn	ATTACK	MarloneMegaton	10	0	~whoosh~ ~whoosh~ That sound--it's not me!	Time for you to experience Megaton power!	Many people consider my body a deadly weapon!	I'll show you how great the Marlone clan is!
+#RecordIn	DAMAGED	MarloneMegaton	10	0	I'm not joking!!	Ack! You're too strong.	Stop...I said st..op!	I can defend against that just by breathing in.
+#RecordIn	DEAD	MarloneMegaton	10	0	Ugh! Marlone!	"Emergency, emergency! Enemy attack!"	How is this possible?	Marlone...be careful...
+#RecordIn	HELPMAIN	MarloneMegaton	800	800	"You seemed so weak, but I underestimated you. Someone Help!"	"If I didn't eat meat yesterday, I wouldn't be so slow."	Hey! Come here and help me kill this thing!	I need help! Can anyone assist me?
+#RecordIn	HELPSUB	MarloneMegaton	800	800	-	-	-	-
+#RecordIn	RACERESCUE	MarloneMegaton	800	800	-	-	-	-
+#RecordIn	PIECE	MarloneFighter	3600000	5600000	"I was an apprentice, and wanted to be a knight someday."	Does Marlone really think that's possible?	No one can defeat the Marlone clan!	Power to the Marlones!
+#RecordIn	ATTACK	MarloneFighter	10	0	Witness the strength of the Marlone Clan!	You have fallen into the jaws of death! Haha.	Do you think you can escape my deadly attacks?	Your injuries will demonstrate the power of my mighty sword?
+#RecordIn	DAMAGED	MarloneFighter	10	0	Where are all our enemies?	"You're strong, but I can feel the situation changing."	Your attacks are weak--I can take anything you throw at me!	Ugh! You are too strong...this could be my end...
+#RecordIn	DEAD	MarloneFighter	10	0	Captain!  Let's hurry to Marlone!	We're under attack!	Help! Anyone!	Marlone...be careful...
+#RecordIn	HELPMAIN	MarloneFighter	800	800	-	-	-	-
+#RecordIn	HELPSUB	MarloneFighter	800	800	"Alright Captain, I'll take care of this!"	Finally! A chance to repay the boss and show him what I'm made of	"Don't worry, boss! I've got your back!"	I will show you the true power of the Marlone Clan.
+#RecordIn	RACERESCUE	MarloneFighter	800	800	-	-	-	-
+#RecordIn	PIECE	GlowWolf	3600000	5600000	"You like my name? Cool, isn't it?"	-	-	-
+#RecordIn	ATTACK	GlowWolf	10	0	-	-	-	-
+#RecordIn	DAMAGED	GlowWolf	10	0	-	-	-	-
+#RecordIn	DEAD	GlowWolf	10	0	-	-	-	-
+#RecordIn	PIECE	MarloneSoldier	3600000	5600000	No doubt about it: the Marlone Clan is the best!	"Without the Marlone Clan, nothing would make me happy."	I'm proud to be a soldier in the Marlone clan!	Marlone! Marlone! Marlone!
+#RecordIn	ATTACK	MarloneSoldier	10	0	For the Marlone Clan!	Witness the power of the Marlone Clan!	"Here, let's see if you can withstand this attack!"	I don't think you understand where you've ended up.
+#RecordIn	DAMAGED	MarloneSoldier	10	0	You are not an easy foe!	Hahaha!! You've got to be kidding...	"Please, someone help me!"	I'm too advanced for you..
+#RecordIn	DEAD	MarloneSoldier	10	0	Ugh!  Mar...lon...	Who taught you that trick?	Long live the Marl..one cl..an...	Ugh...be..care...ful...
+#RecordIn	PIECE	MarloneCaptain	3800000	5800000	I'm three times quicker than other fighters.	Why are we gathering? Are we attacking another village? Hehe.	No one can defeat the Marlone clan!	Long live the Marlones!
+#RecordIn	ATTACK	MarloneCaptain	10	0	You dare defy the Marlone Clan? You will regret it!	Burning Hill is the domain of the Marlone Clan and Marlone King.	"I see everything, including you! Die!"	I've seen you. Don't think you can pass quietly.
+#RecordIn	DAMAGED	MarloneCaptain	10	0	"You are hurting me, stop! It hurts!"	You will never understand...the Marlone Clan honor.	Do you really think you can beat a soldier from the Marlone clan?	"You're strong, alright. I have to be extra careful with you!"
+#RecordIn	DEAD	MarloneCaptain	10	0	Marlone Clan! Forever! 	"Marlone, please avenge my death."	Marlone...I have only brought you shame!	I have only brought shame to you Marlone.
+#RecordIn	HELPMAIN	MarloneCaptain	800	800	I am better than this...	"Oh no!  I have to leave. Marlone Clan Fighter, fight for me."	"Please, someone help me with this one!"	No need to waste my energy needlessly.
+#RecordIn	HELPSUB	MarloneCaptain	800	800	"Hold on, Marlone! The Captain will be there soon!"	You dare challenge Marlone? Face my sword first!	"Marlone, there's no need for you to waste time with this."	"Just give me your orders, Marlone."
+#RecordIn	RACERESCUE	MarloneCaptain	800	800	-	-	-	-
+#RecordIn	PIECE	Marlone	4000000	6000000	"I can't forgive you, I really can't!"	Shout the Marlone Clan motto! Shout Marlone's name!	Gather all the captains! Its party time!	No one can match the power of the Marlone Clan!
+#RecordIn	ATTACK	Marlone	10	0	You were the one who picked on my brother.	"The strong don't always survive, but survivors are always strong."	You think you can take my fast attacks?	I'll tell you who I am only if you defeat me with one hit.
+#RecordIn	DAMAGED	Marlone	10	0	"Was that an attack, or a tickle?"	-	"Don't get cocky, there's more where this came from!"	You seem weak. I'm willing to bet you're no match for me 1 on 1!
+#RecordIn	DEAD	Marlone	10	0	I can't die now.. I have too many things to do!	Don't think this is the end. I will have my revenge!	Ah is this the end...how sad.	Marlone clan! Avenge me!
+#RecordIn	HELPMAIN	Marlone	800	800	"Hahaha...you think can beat me, rookie?"	"Marlone Clan, I am under attack!"	"I need help, someone help me!"	Marlone clan!  To arms!
+#RecordIn	HELPSUB	Marlone	800	800	-	-	-	-
+#RecordIn	RACERESCUE	Marlone	800	800	-	-	-	-
+#RecordIn	PIECE	SilverySlime	4000000	6000000	Do you think there are gold slimes out there somewhere?	I prefer a dark and gloomy area like this.	-	-
+#RecordIn	ATTACK	SilverySlime	10	0	-	-	-	-
+#RecordIn	DAMAGED	SilverySlime	10	0	-	-	-	-
+#RecordIn	DEAD	SilverySlime	10	0	-	-	-	-
+#RecordIn	PIECE	Skeleton	4000000	6000000	I'm growing a belly. Can you see it? Hehe.	I can smell blood somewhere. Hehe.	"Yes sir, my captain!"	I have to grease my joints...my bones make so much noise!
+#RecordIn	ATTACK	Skeleton	10	0	How dare you break into Shining Stone? You must be crazy!	Everyone! Defend Shiny Stone from invaders!	What do you think? You know...I was once a respected captain...	There's no reason to talk. Fight!
+#RecordIn	DAMAGED	Skeleton	10	0	I'm sorry we didn't meet when I was alive!	Ooof! I'm reminded of the pain of being alive.  	Your attack is quite fierce.	You think I fear you? I fear no living thing!
+#RecordIn	DEAD	Skeleton	10	0	This is my end...	This mercenary has lost his edge...	I can finally rest in peace.	Why should I fear anything? I'm already dead!
+#RecordIn	HELPMAIN	Skeleton	800	800	-	-	-	-
+#RecordIn	HELPSUB	Skeleton	800	800	I will face you...	"Haha...as usual, archers are the weakest."	"Hey, don't you run away! Now it's my turn!"	I'll do what you want...just respect me.
+#RecordIn	RACERESCUE	Skeleton	800	800	-	-	-	-
+#RecordIn	PIECE	SkelArcher	4200000	6200000	The air here is really bad.	The weather is getting colder...I'm chilled to the bone.	Polluted air is bad for the skin.	"Aye, aye Captain!"
+#RecordIn	ATTACK	SkelArcher	10	0	Taste my arrows!	This isn't a place you just wander into.	"Fellows of the Shiny Stone, defend our land!"	My arrows will rip your heart out!
+#RecordIn	DAMAGED	SkelArcher	10	0	"How can you be so fast, did you level up?"	Aaacckk!  I've been spotted!	I ache all over...	You'll give them quite a fight..
+#RecordIn	DEAD	SkelArcher	10	0	I can't face him like this...	Thank you for letting me rest in peace.	Did I do everything I could?	Wat..ch..out...
+#RecordIn	HELPMAIN	SkelArcher	800	800	Hmm...my body is coming apart...I will not let you go so easily.	"OK. I'll show you some respect, but it won't be easy..."	Uh oh!  There's trouble.	Hey!  Come here!
+#RecordIn	HELPSUB	SkelArcher	800	800	-	-	-	-
+#RecordIn	RACERESCUE	SkelArcher	800	800	-	-	-	-
+#RecordIn	PIECE	SkeletonSoldier	4200000	6200000	Do you recognize me?	Why are there so many adventurers about?	"Hey, is anyone nearby? I smell something in the air..."	I'm so tired of waiting for the enemy. Let's attack first!
+#RecordIn	ATTACK	SkeletonSoldier	10	0	"If you think I'm easy prey, you've got another thing coming."	Are you one of the adventurers?	Your end is near.	It's time to get serious...
+#RecordIn	DAMAGED	SkeletonSoldier	10	0	I can handle this easily.	Ugh!  You're quite skilled...	Ridiculous!	Uh oh!  I have a bad feeling about this...
+#RecordIn	DEAD	SkeletonSoldier	10	0	How can this be? I'm tougher than this!	Beating me doesn't make you special!	Is this the end?	"I am an undead. Technically, you cannot kill me."
+#RecordIn	PIECE	SkelWarrior	4200000	6200000	I know what you did last night.	"Master of Darkness, give me peace once more.."	Where? Where are the intruders?	Yes Captain.
+#RecordIn	ATTACK	SkelWarrior	10	0	This is making my blood boil! Hahaha~	"Cheer up, there's more fighting to be done!"	"Yes, you set foot in the wrong place. Prepare for battle!"	You must think you are skilled enough to challenge me.
+#RecordIn	DAMAGED	SkelWarrior	10	0	"You're pretty good, but that is going to end now!"	"Hit me harder, you aren't even scratching me..."	You can't let your guard down in war.	Undead never retreat.
+#RecordIn	DEAD	SkelWarrior	10	0	I don't have any fight left in me!	This is...the end...once again...	I need help.. Attack!	"A long time ago, I led a normal life..."
+#RecordIn	HELPMAIN	SkelWarrior	800	800	-	-	-	-
+#RecordIn	HELPSUB	SkelWarrior	800	800	Wait for me...sir Knight!	I will teach you to fear us..	You'll regret your stupidity! It's death for you!	You dare fight this mighty knight?
+#RecordIn	RACERESCUE	SkelWarrior	800	800	-	-	-	-
+#RecordIn	PIECE	SkelKnight	4400000	6400000	I will give my life to my new master.	"Skeletal Warriors, take up your positions."	Let all of us defend the Shiny Stone!	Calling all undead in Luminous Stone! Follow me!
+#RecordIn	ATTACK	SkelKnight	10	0	Are you scared now?!	I cannot forgive anyone who insults my master!	I'll test this new skill on you. Don't try to evade.	We will see how long you can stay standing.
+#RecordIn	DAMAGED	SkelKnight	10	0	You're a worthy opponent.	You can't defeat me with your half-hearted attacks!	Your strength is remarkable... I can't believe it.	Where are my fellows?
+#RecordIn	DEAD	SkelKnight	10	0	"Have I disappointed you, master?"	I'll be in waiting for you in hell.	I refuse to believe this is the end...	I'm almost out of fight...
+#RecordIn	HELPMAIN	SkelKnight	800	800	Who's there? Who dares interrupt my sweet dreams?	Warriors...Defend me!	"I need help, teach my attacker a lesson!"	Who...are you?
+#RecordIn	HELPSUB	SkelKnight	800	800	-	-	-	-
+#RecordIn	RACERESCUE	SkelKnight	800	800	-	-	-	-
+#RecordIn	PIECE	Bat	4200000	6000000	Give me your blood!	I will be able to fly someday! 	What did you think I was--a pig?	*flap flap* My wings are just for show. Hehe...
+#RecordIn	ATTACK	Bat	10	0	Die!	You smell delicious!	I will make you pay with my poison...	Try this on for size!
+#RecordIn	DAMAGED	Bat	10	0	Enough of the games! Take this!	I want to fly away...but I'm too chubby.	Hah! Can't even feel that!	Your puny attacks can't harm my tough skin!
+#RecordIn	DEAD	Bat	10	0	Yikes~!	I should have gone on a diet...	I will never die!	-
+#RecordIn	PIECE	IceViVi	4200000	6000000	"I hate this climate... hot sun, burning ground!"	"There are others, similar to me."	I saw some people running around together...is that called a party?	-
+#RecordIn	ATTACK	IceViVi	10	0	Which season do you like best?	"The others are ill-natured, so be careful."	"Come on! Let's fight fairly, one on one!"	-
+#RecordIn	DAMAGED	IceViVi	10	0	"Your skills are great, just like mine."	You're doing well. This should be a good fight!	Yikes!  I am losing!	-
+#RecordIn	DEAD	IceViVi	10	0	I'm melting!	I'm sorry it ended so quickly.	"No, please don't let me die!"	-
+#RecordIn	PIECE	ArchMageBook	4400000	6400000	Beware! I'll show you no mercy!	Who would dare to cross my territory?	"*sniff sniff* I smell humans! Wait, I don't have a nose..."	I'm a fascinating read...you can learn a lot.
+#RecordIn	ATTACK	ArchMageBook	10	0	I know everything about you!	There is no limit to the power of magic.	Your're already a goner.	"Hmm...chapter seven, fireball attack!"
+#RecordIn	DAMAGED	ArchMageBook	10	0	Now you know everything about me!	Your attacks are most efficient.	"Your attacks are useless, but I understand you still have to try..."	"This should do it, page forty, the perfect shield!"
+#RecordIn	DEAD	ArchMageBook	10	0	I will never d..ie~	Don't let me die.. Let me live once more...	I can see my life flashing before my eyes...	Now you will never learn the skills chronicled in my pages.
+#RecordIn	PIECE	Spider	4600000	6600000	Hmm.. Hmm...	I thought I felt something move...	I wonder what will I find in my web today...	They say the most colorful spiders have the deadliest poisons!
+#RecordIn	ATTACK	Spider	10	0	I dare you to tread on my webs.	I'll eat you alive!	You will never escape my web.	You won't last long with my poison coursing through your veins?
+#RecordIn	DAMAGED	Spider	10	0	Help me!!	Woah!...I may have made a mistake...	"Haha! That tickles! Stop it--no, really!"	Are you the spider collecter everyone has been talking about?
+#RecordIn	DEAD	Spider	10	0	My friends will avenge me.	I didn't get a chance to use my web...	How did I lose today? This can't be!	I felt forboding...
+#RecordIn	HELPMAIN	Spider	800	800	-	-	-	-
+#RecordIn	HELPSUB	Spider	800	800	Who dares to touch the Wild Fox?	I'm always ready to help you.	"Hang on, help is on the way!"	"Whoever you are, your luck has run out."
+#RecordIn	RACERESCUE	Spider	800	800	-	-	-	-
+#RecordIn	PIECE	ScareImp	4600000	6600000	-	-	-	-
+#RecordIn	ATTACK	ScareImp	10	0	-	-	-	-
+#RecordIn	DAMAGED	ScareImp	10	0	-	-	-	-
+#RecordIn	DEAD	ScareImp	10	0	-	-	-	-
+#RecordIn	PIECE	FlyingStaff	4600000	6600000	Friendship and faith is important for all relationships!	No matter how much time passes...one human I will never forget.	I shine like the sun.	"Why are moths drawn to fire, even though they know they will die?"
+#RecordIn	ATTACK	FlyingStaff	10	0	I would have preferred to be friends!	Aren't I great?	One hit and you will be dead.. You will see!	Lots of people die at my hands... like moths to the flame!
+#RecordIn	DAMAGED	FlyingStaff	10	0	"You'd better try harder, or else!"	You are similar to someone I knew long ago.	"What... this can't be, not with my skills!"	"You are good, really good."
+#RecordIn	DEAD	FlyingStaff	10	0	I can handle this. Good luck to you!	It was nice meeting you...truly...	I don't want to die! Help!	I have no regrets about dying like this...
+#RecordIn	PIECE	MasicStaff	4600000	6600000	How long will I have to wait...	It's exciting to meet so many new people ...	Any way I could be a human's friend? Sometimes I am lonely.	-
+#RecordIn	ATTACK	MasicStaff	10	0	Let the judgment begin!	How tough would you say I am?	Let's see just how strong I am.	-
+#RecordIn	DAMAGED	MasicStaff	10	0	Is that all you can do?	Ugh ~ You've hurt me... 	Ha! This is a waste of both of our time!	-
+#RecordIn	DEAD	MasicStaff	10	0	"You are quite good, but still missing something."	What a meaningless death...	You are stronger then me.. Stop.. It hurts!	-
+#RecordIn	PIECE	KingStaff	4600000	6600000	The air is too stuffy! I need fresh air! I need to walk!	It's lonely at the top.	There are many who would like the power of a King!	"If someone wants to fight, step up!"
+#RecordIn	ATTACK	KingStaff	10	0	You shouldn't be here.	Insignificant wretch!	Are you one of them?	You don't belong here.
+#RecordIn	DAMAGED	KingStaff	10	0	"You do know who I am, right? How rude!"	I won't forgive you for these scars...	I think you have the strength to become a King someday!	I will not beg for my life if this is to be my last chapter.
+#RecordIn	DEAD	KingStaff	10	0	I'll get you someday!	Aaaacckk!	Aaaahhhhhh!	"I've fought death for so long, it's hard to accept..."
+#RecordIn	PIECE	Zombie	4600000	6600000	Muhahahha~	I thought I was dead. How can I be walking around like this?	*panting* Awww...hungry...I need something to eat...	Damn the Templers. They made me like this on a whim.
+#RecordIn	ATTACK	Zombie	10	0	Who are you? Did you attack me?	Who are you? 	I need blood! Give me your blood!	I'll make you a zombie too.
+#RecordIn	DAMAGED	Zombie	10	0	I will not forget what you've done here today.	I no longer feel pain... 	This doen't look good! Help!	If you don't expect to die..you should look happier.
+#RecordIn	DEAD	Zombie	10	0	"I need blood..., bloood..."	Time to sleep once more.	What is this strange feeling?	I'll return to the ground once more.
+#RecordIn	HELPMAIN	Zombie	800	800	-	-	-	-
+#RecordIn	HELPSUB	Zombie	800	800	I'll drink your blood!	Hahaha... do you need assistance?	I'm coming to help you... Hold on...	My help will make the difference.
+#RecordIn	RACERESCUE	Zombie	800	800	-	-	-	-
+#RecordIn	PIECE	OldFox	4800000	6800000	I see dead people.	"When they are close to me, it is  cold and I can see my breath."	People who don't know where they're headed usually get lost!	Don't you just love the sight of a full moon in a clear sky?
+#RecordIn	ATTACK	OldFox	10	0	Listen to yourself. Utter nonsense!	It's impossible to control one's nature.	Come here...I will eat you alive!	You have no choice. Behold the moon in its glory!
+#RecordIn	DAMAGED	OldFox	10	0	Hit me! I dare you!	Do you have the courage to face who you are?	"You're not a pushover, but you're still no match for me!"	The strong ones have the tastiest livers.
+#RecordIn	DEAD	OldFox	10	0	Time for a quick nap.	This is unfair...but victory is yours.	Watch your back--he hits hard!	The full moon will rise again...soon...
+#RecordIn	HELPMAIN	OldFox	800	800	I shouldn't have underestimated you.	Friend! Help me!	I can't do this alone...someone please help!	Please...help me for a moment.
+#RecordIn	HELPSUB	OldFox	800	800	-	-	-	-
+#RecordIn	RACERESCUE	OldFox	800	800	-	-	-	-
+#RecordIn	PIECE	CemWolf	4800000	6800000	There's something in the cave that compels you to dig.	-	-	-
+#RecordIn	ATTACK	CemWolf	10	0	-	-	-	-
+#RecordIn	DAMAGED	CemWolf	10	0	-	-	-	-
+#RecordIn	DEAD	CemWolf	10	0	-	-	-	-
+#RecordIn	PIECE	Fox	4800000	6800000	I want fresh meat! Let's go kill something weak.	There's not much to hunt today.	I'm lucky to have a friend who thinks like me.	Don't confuse me with the fox in the tomb. We're very different!
+#RecordIn	ATTACK	Fox	10	0	"The more I see you, the more hungry I get..."	"I'm surprised, you're tougher than you look."	"You see, my friend, I never fail to catch my prey."	I can say for sure that I'm superior in every way!
+#RecordIn	DAMAGED	Fox	10	0	I can't believe you beat me. How is this possible?	It's like shooting fish in a barrel!	"You hit pretty hard, but it doesn't hurt me!"	Whoever was your master? He taught you well.
+#RecordIn	DEAD	Fox	10	0	I won't let this be my end!	You'd better think twice... another fox will come...oh...maybe not.	I can't believe I'm going to die like this!	I was not sly enough.
+#RecordIn	PIECE	BabyWereBear	4800000	6800000	My father is the strongest Werebear on the continent of Isya.	"When I grow up, I want to be a Werebear like my Dad!"	Daddy bear is  fat--Mommy bear is  skinny--Baby bear is cute!	-
+#RecordIn	ATTACK	BabyWereBear	10	0	Don't look at me that way!	Don't worry...it's OK to express pain.	Aren't I cute?	-
+#RecordIn	DAMAGED	BabyWereBear	10	0	"Ouch, it hurts! I can't stand this kind of pain!"	"You are strong, but you're no match for my Dad."	"It usually doesn't hurt like this, who trained you? "	-
+#RecordIn	DEAD	BabyWereBear	10	0	"Father, where are you?"	I'm struggling to understand...	Aaaah! I can't avenge mom or dad!	-
+#RecordIn	PIECE	FireViVi	4800000	6800000	"Come on, just tell me... are you hungry?"	I scorch the land and cook my enemies.	"Burning, I am burning!"	"Fire is a gift, but it comes with a price."
+#RecordIn	ATTACK	FireViVi	10	0	Take that! And that!	Can you feel the heat? Am I getting to you?	My fire will consume you!	I'm in the mood to roast some meat. Come here!
+#RecordIn	DAMAGED	FireViVi	10	0	I won't let you extinguish my fire!	Hehehe... my fire is hotter than the flames of hell...	"Soon, you will be completely consumed by fire!"	Who gave you that fire extinguisher?
+#RecordIn	DEAD	FireViVi	10	0	"Oh no, my fire is dwindling!"	I curse you!	No~!  My flame is vanishing!	"If my flame is extinguished, I will surely perish!"
+#RecordIn	PIECE	Ghost	5000000	7000000	Can anyone see me?	Humans don't know the evil truth.	Can you see me?	The living world is just a small part of reality.
+#RecordIn	ATTACK	Ghost	10	0	I will show you hell itself!	Ha! Your confusion is amusing.	"Avoid this, if you can!"	You can't win. You can barely see me.
+#RecordIn	DAMAGED	Ghost	10	0	Your attack won't even scratch me!	What happened? 	Ahhh... this is painful! 	But...I'm invisible. Aren't I?
+#RecordIn	DEAD	Ghost	10	0	I will lurk in the shadows and wait for my chance.	Oh no...oh no...I am g..one...	"In the end, we all pay for our mistakes."	I'm drifting...
+#RecordIn	PIECE	Robo	5000000	7000000	"Ah, more of the same..."	Damn it all!	Why am I always alone?	I will terrorize all humankind!
+#RecordIn	ATTACK	Robo	10	0	Feel my pain!	Do you feel pain...? This is nothing...	Take this cursed power!	"If you rid me of this curse, I'll make you great among your kind!"
+#RecordIn	DAMAGED	Robo	10	0	Try me! I dare you!	Pathetic...	Hahaha...is that all?	You are not easy to defeat!
+#RecordIn	DEAD	Robo	10	0	"It may be my time to go, but you're next!"	This isn't over...	Can you see the burn..ing hou..se?  Could that be...	It's hard to admit that I lost.
+#RecordIn	PIECE	Hob	5200000	7200000	Ok! Let's go!	Ok...ok...Hahahaha...	Don't take it...you don't have rights!	Am I handsome or what? See.. Now I'm blushing!
+#RecordIn	ATTACK	Hob	10	0	One.. Two.. Three.. Boom!	"What do you think...not bad, huh? There's more..."	Come on! One on one! I bet you will lose!	"Please, just not in the face."
+#RecordIn	DAMAGED	Hob	10	0	"Please boss, this really hurts, stop!"	What are you doing? It hurts!	Stop that! 	I think the best thing I can do at this point is run!
+#RecordIn	DEAD	Hob	10	0	"Ouch... hey, ouch! Wow!"	My short life comes to an end here...	Aaaacckk!!	You win!
+#RecordIn	PIECE	BoneImp	5200000	7200000	Come... see through these eyes! Feel my pain!	All these foolhardy idiots...rampaging around.	I get ten times stronger in the dark!	You can tell from my name that I'm beautiful.
+#RecordIn	ATTACK	BoneImp	10	0	"Oh, so it's playtime?"	"Am I weak, or are you just strong?"	There's nothing more fun than playing with humans.	"One, two, three. I'm counting how many times you hit me."
+#RecordIn	DAMAGED	BoneImp	10	0	I've got tough skin. Your attacks won't hurt me.	"Easy, easy... you'll give me scars!"	You're not skilled enough yet...	I think I've seen you before. Are you stalking me?
+#RecordIn	DEAD	BoneImp	10	0	"I will miss this place, with its ocean breeze and green trees."	No! You murderer.  Wait a minute...I'm not a human...	I knew there was someone stronger than me.	I'm useless with this broken armor!
+#RecordIn	PIECE	earthSpider	4600000	6600000	"One, two, three, four... I have way too many legs!"	"I've built my house with blood, sweat and tears...don't damage it."	"You know, I have a critical weakpoint."	"Do  you know the phrase ""United we stand, divided we fall""?"
+#RecordIn	ATTACK	earthSpider	10	0	"See, that hurts? So, why did you attack me?"	I will guarantee that today will be the worst day of your life.	What makes you think I'm going to tell you what my weakpoint is?	Killing you alone isn't much of a challenge.
+#RecordIn	DAMAGED	earthSpider	10	0	"You are dangerous, I can tell!"	You challenged me with this? You're really brave...	I think you have found my weak point...how?	"You should go and get more friends, you're too weak alone."
+#RecordIn	DEAD	earthSpider	10	0	Today wasn't my lucky day...	I can't admit defeat!	Avenge me!	Help! Please...
+#RecordIn	PIECE	Goblin	5200000	7200000	For the honor of the Goblins!	I will do anything for the King! His wish is my command.	To the village! Time to kill humans!	All cheer the Goblin King!
+#RecordIn	ATTACK	Goblin	10	0	You dare to invade our land? How dare you!	I will take you prisoner.	The Goblin Kingdom is under attack! To arms!	"Goblins, attack! Get the invaders!"
+#RecordIn	DAMAGED	Goblin	10	0	Yikes~!	Aaaacckk!  I need back up!	How dare you attack the Goblin Kingdom?	"Your hits are useless, they have no effect on me!"
+#RecordIn	DEAD	Goblin	10	0	Long live our Goblin Kingdom!	What did I drink last night? 	A brave Goblin...dies fighting!	"Friends, take my place."
+#RecordIn	HELPMAIN	Goblin	800	800	-	-	-	-
+#RecordIn	HELPSUB	Goblin	800	800	"Hang on, I'm on my way! Whoa~"	"You should have practiced, now you need help!"	I'm here my master!	Now it's my turn! Let's see what you've got.
+#RecordIn	RACERESCUE	Goblin	800	800	-	-	-	-
+#RecordIn	PIECE	Prock	5200000	7200000	This garden is the only thing that makes me happy.	Goblins and Werebears are rude!	I heard there's some kind of plant that can cure that illness... hmm...	"Do you know nepenthez? I've heard of it, but not sure what it is."
+#RecordIn	ATTACK	Prock	10	0	You're the one who ruined my garden. Now you shall pay!	Prepare for battle!	Did my mouth catch you by surprise?	"I'm able to chew through stone, you will be soft by comparison."
+#RecordIn	DAMAGED	Prock	10	0	Don't think you will leave this place alive!	I will eat you...I will eat all of you. 	You are just one bite away from dying!	Hey stop hitting me...you should look after plants!
+#RecordIn	DEAD	Prock	10	0	My..gar...den..!	I didn't prepare any last words...	You saw my ugly side...	The only thing I gained...was failure.
+#RecordIn	PIECE	GoblinSwordman	5400000	7400000	I am a Goblin Swordman! Fear me!	My King! Your wish is my command.	No one knows the secret of our swordsmanship!	All hail the Goblin King!
+#RecordIn	ATTACK	GoblinSwordman	10	0	Did you hear that? The sound of a cold wind!	What do you think of my swordsmanship?	"Hah, you will be the tribe's sacrifice!"	Where did you come from? How dare you step into our domain?
+#RecordIn	DAMAGED	GoblinSwordman	10	0	"Wow, your power is stronger than mine! How can this be?"	I'm intimidated by your level of skill.	How did you find the courage to attack us?	Did you really think you can survive all alone?
+#RecordIn	DEAD	GoblinSwordman	10	0	Your powers are impressive.	I...invaders!	Long live the Goblin Kingdom!	My brethren will avenge me!
+#RecordIn	HELPMAIN	GoblinSwordman	800	800	"You're strong, but I will win!"	I need help...too strong for me.	Someone please help! Help!	Hurry! I need help!
+#RecordIn	HELPSUB	GoblinSwordman	800	800	-	-	-	-
+#RecordIn	RACERESCUE	GoblinSwordman	800	800	-	-	-	-
+#RecordIn	PIECE	WereBear	5400000	7400000	I can't control the urge within!	I need to find some blood... blood...	It's been so long since I've seen my son... I'd love to see him.	You dummy. Who told you that bears were cute?
+#RecordIn	ATTACK	WereBear	10	0	You will regret the full moon! Die!	I can crush stone with my paws.	You would make a perfect meal for my son!	We are the most savage creatures alive.
+#RecordIn	DAMAGED	WereBear	10	0	Your strength...makes me hesitate.	I doubt you can harm a hair on my head.	"Try harder.  You are not even scratching me, you weakling!"	Ugh... I didn't think there was anyone who could hurt me.
+#RecordIn	DEAD	WereBear	10	0	Will I finally be rid of this curse?	It's been a long time since I've felt such peace...	I can't believe I was slain by someone like you!	I don't want to die...
+#RecordIn	PIECE	GoblinMage	5600000	7600000	I sense that today will bring misfortune.	"Yes, King. Your wish is my command."	Hmm... something's wrong here. I should call the captain over.	There have been many adventurers attacking us. Why?
+#RecordIn	ATTACK	GoblinMage	10	0	I call on my powers to attack our enemies!	"God of Death, I call on you! Deal our foes a mighty blow!"	"Dark forces, cast evil curses on our enemies!"	See how the God of death enjoys your anger.
+#RecordIn	DAMAGED	GoblinMage	10	0	I must focus my powers for protection!	How did you break through my defensive wall...	"Dark forces, infuse me with your power!"	Dark forces are working to weaken me.
+#RecordIn	DEAD	GoblinMage	10	0	"Ancestors, revive me!"	Damn you...someone inform the king!	My king... I have failed you...	Our camp is in danger!
+#RecordIn	HELPMAIN	GoblinMage	800	800	-	-	-	-
+#RecordIn	HELPSUB	GoblinMage	800	800	-	-	-	-
+#RecordIn	RACERESCUE	GoblinMage	800	800	-	-	-	-
+#RecordIn	PIECE	SandMushroom	5600000	7600000	-	My full name is Sand Mushroom Swordman..	-	-
+#RecordIn	ATTACK	SandMushroom	10	0	-	-	-	-
+#RecordIn	DAMAGED	SandMushroom	10	0	-	-	-	-
+#RecordIn	DEAD	SandMushroom	10	0	-	-	-	-
+#RecordIn	PIECE	GoblinCaptain	5600000	7600000	I bring orders from the King. Every goblin must listen!	"Yes King, your wish is my command."	I wonder what's making my blood run cold.	I can't imagine the King daydreaming like this...
+#RecordIn	ATTACK	GoblinCaptain	10	0	Taste my sword! Hahaha...	You are brave to attack Goblin Kingdom!  You won't leave alive!	I will chop you in two. Wait and see!	You are already dead.
+#RecordIn	DAMAGED	GoblinCaptain	10	0	That's it?	This certainly can't be my demise ..	The Goblin Kingdom is forever!	"Unless you kill me, you'll go no further."
+#RecordIn	DEAD	GoblinCaptain	10	0	This is a bad sign.	You are a great swordsman... I admit defeat...	Oh... my plan... was foiled.	My...King...
+#RecordIn	HELPMAIN	GoblinCaptain	800	800	So embarrassing to be beaten by this weakling...	It's been a while since I've faced someone like you...I need help.	All Goblin soldiers should fight...To arms!	-
+#RecordIn	HELPSUB	GoblinCaptain	800	800	-	-	-	-
+#RecordIn	RACERESCUE	GoblinCaptain	800	800	-	-	-	-
+#RecordIn	PIECE	GobleKing	5800000	7800000	The dark force will always be with us Goblins!	Long live the Goblins!	The Goblin Kingdom is forever!	Gwahahaha~ We will conquer the filthy humans!
+#RecordIn	ATTACK	GobleKing	10	0	It's hard to believe you have come this far!	I'll let no one interrupt my plans!	I'm the King. Feel my wrath!	"If you defeat me with one blow, you will earn quite a reputation!"
+#RecordIn	DAMAGED	GobleKing	10	0	"You're good, but I'm only getting started!"	Even with a large party...you've a long way to go to kill me. 	Is this all you have? You are one sorry excuse for a human!	"You are good, but not good enough."
+#RecordIn	DEAD	GobleKing	10	0	Oh no...this can't be...No~	My plans are not finished...we will meet again.	I've never met anyone like you. So strong and quick.	Celebrate your victory while you still can.
+#RecordIn	HELPMAIN	GobleKing	800	800	I need help! Someone protect me~	Ugh...this is proving difficult.	Punish my attacker... I command you!	I will show you the true power of the Goblins!
+#RecordIn	HELPSUB	GobleKing	800	800	-	-	-	-
+#RecordIn	RACERESCUE	GobleKing	800	800	-	-	-	-
+#RecordIn	PIECE	MiniLips	5800000	7800000	-	"I'm tiny, but my lips take up half of my face!"	-	-
+#RecordIn	ATTACK	MiniLips	10	0	-	-	-	-
+#RecordIn	DAMAGED	MiniLips	10	0	-	-	-	-
+#RecordIn	DEAD	MiniLips	10	0	-	-	-	-
+#RecordIn	PIECE	Harkan	6200000	8200000	What beautiful eyes you have.	Hey cutie! Stop what you're doing and play with me!	"Hey, what are you doing sweetheart?"	"Where is my twin? Where, I wonder..."
+#RecordIn	ATTACK	Harkan	10	0	This is how I truly feel~	Please accept my feelings for you.	"Don't be surprised, I love you."	Wait. What's happening?
+#RecordIn	DAMAGED	Harkan	10	0	Hey... isn't that a bit forward?	I don't like aggressive moves...I'm not that easy.	"Don't worry, I forgive you."	Why are you so hostile?
+#RecordIn	DEAD	Harkan	10	0	I thought we had a connection.	"I, I was... just kidding... didn't think you'd be so upset..."	Every rose has its thorns.	You are just cruel. I did nothing to provoke you.
+#RecordIn	PIECE	WeakenedOgre	5800000	7800000	I heard one of my distant cousins married a princess.	I wish I could find a wife...	"Marriage, children, happiness... what do these things mean to me?"	I wish I was a teenager again.
+#RecordIn	ATTACK	WeakenedOgre	10	0	How stupid of you to underestimate my strength. You'll regret it.	Whoa! I'm not a coward!	Uh oh!	"Don't judge me by how I look, or you'll be sorely surprised."
+#RecordIn	DAMAGED	WeakenedOgre	10	0	"Oh, Is that all you have?"	I'm stronger than people think!	You can't overcome destiny. You will die!	I'm not as powerful as I used to be...
+#RecordIn	DEAD	WeakenedOgre	10	0	Oh no... how was this possible?	"If I was ten years younger, you would have been dead..."	"Ogres, please avenge me!"	Old age weakened me too much.
+#RecordIn	PIECE	KingCall	6000000	8000000	Crush them all!	I'm going to eat everything in sight!	"Smash 'em all, eat 'em all!"	Smash 'em all! Eat 'em all!
+#RecordIn	ATTACK	KingCall	10	0	I will crush you!	It's feeding time! Come here...	"Smash, smash.. Bash..!"	"Crush, bash!"
+#RecordIn	DAMAGED	KingCall	10	0	Ahhhhh....	"Oh, it hurts... stop that!"	You will suffer for your insolence.	Crrr...ack. 
+#RecordIn	DEAD	KingCall	10	0	S..ma..sh..them~	Aaaahhh 	I'm dying!	Cru..sh....em...
+#RecordIn	PIECE	LightingViVi	6200000	8200000	Can dreams really come true?	"I love it, when the air crackles around me!"	I like Ice Vivi more than Fire Vivi.	-
+#RecordIn	ATTACK	LightingViVi	10	0	"Hey, what are your dreams? Hopes? Desires?"	Our meeting is no coincidence... it was meant to be!	I deliver when I have to!	-
+#RecordIn	DAMAGED	LightingViVi	10	0	It's a sad day when merely asking questions can get you killed.	"I'm sorry to say, but your are a weakling."	What's happening? I thought I had you beaten!	-
+#RecordIn	DEAD	LightingViVi	10	0	Not fair... I had so much to do!	I will admit my defeat... it is my fate.	You of all people... how did you defeat me?	-
+#RecordIn	PIECE	VampireBat	6200000	8200000	"Young blood is the best, but it's so hard to come by."	Aha! A fresh source of blood. Welcome!	I hear vampires wear black capes. Maybe I should wear one too.	-
+#RecordIn	ATTACK	VampireBat	10	0	"Hey, keep your neck clean for me! Hahah"	Gross! Your blood tastes awful!	"Now, this is definitely something different..."	-
+#RecordIn	DAMAGED	VampireBat	10	0	Stand still. I can't get a clean bite.	"Can't you see I'm busy? I'm eating, here!"	"Garlic, crosses, holy water. None have any effect on me."	-
+#RecordIn	DEAD	VampireBat	10	0	No...not yet...	How can you kill me on an empty stomache?	Aaaacckk!!	-
+#RecordIn	PIECE	Prisoner	6200000	8200000	I ate nothing but scraps for fifteen years.	"My, I've been pardoned! Should I go back?"	I have to succeed! I mustn't be caught!	"Run away, or you will be caught by the torturer!"
+#RecordIn	ATTACK	Prisoner	10	0	Who do you think you are?	I trained a lot in prison...and am ready to fight!	I don't have time for games!	You resemble a torturer. Are you related?
+#RecordIn	DAMAGED	Prisoner	10	0	I can't waste my time with you.	This power...the torturer must be nearby.	Hey lets talk this out!  I don't want to die!	I've been trained by the Torturer for years! You can't hurt me!
+#RecordIn	DEAD	Prisoner	10	0	If only I was able to escape from this place.	I can finally be free...	You should run now!  The Torturer is much stronger than I am!	I guess I'll never taste ice cream again.
+#RecordIn	PIECE	Torturer	6400000	8400000	Who said I'm an amateur? I'm an expert... at torture!	La la la...who can I torture today? Hehe.	I want to test out a skill I learned last night...who'll be first?	I love hearing prisoner's screams!
+#RecordIn	ATTACK	Torturer	10	0	I'll show you all of my many painful techniques.	We've only just begun! I have new techniques I want to try out!	Hah! I have found someone to practice on!	"Hey, have you seen any escapees? If not, I'll just torture you."
+#RecordIn	DAMAGED	Torturer	10	0	"You have talent. As my student, I will teach you everything."	What kind of torture is this? I should add it to my repertoire!	"Good, good. That's the spirit!"	I have to admit your skills are pretty good.
+#RecordIn	DEAD	Torturer	10	0	"Please, forgive me, I'll never torture again!"	I was just following orders! Forgive me!	I don't want to die.. Please forgive me.	So many interrogations left unfinished...
+#RecordIn	PIECE	DeadTreeSoul	6400000	8400000	"Always, always be careful of fires!"	-	-	-
+#RecordIn	ATTACK	DeadTreeSoul	10	0	-	-	-	-
+#RecordIn	DAMAGED	DeadTreeSoul	10	0	-	-	-	-
+#RecordIn	DEAD	DeadTreeSoul	10	0	-	-	-	-
+#RecordIn	PIECE	SeniorTorturer	6400000	8400000	Life is boring here...I need a change!	"When I was a torturer, I had drive..."	I really enjoy seeing others suffer! Don't you?	I really should get out into the daylight.
+#RecordIn	ATTACK	SeniorTorturer	10	0	Do you want to die? What do you want?	You are such a weakling!	Watch and learn! This is how to go about torturing someone!	You are begging for mercy already? I haven't even begun!
+#RecordIn	DAMAGED	SeniorTorturer	10	0	Is this all you can do? 	Whoa!	Where did you learn those moves? Were you a torturer?	Take your best shot! 
+#RecordIn	DEAD	SeniorTorturer	10	0	Maybe I am too old?	It seems that my checkered life ends here...	But... but... no one is supposed to know who I am!	My life has been a waste...
+#RecordIn	PIECE	DisHarkan	6400000	8400000	I miss my tea and cheesecake.	I am one of the great Harkans.	I don't like this place...it's stuffy and smells like mold.	-
+#RecordIn	ATTACK	DisHarkan	10	0	"Hey, nice to see you. Got any tea for me?"	How about these curves? Love at first sight?	The air here is posion to my delicate skin.	-
+#RecordIn	DAMAGED	DisHarkan	10	0	"OK, OK... that hurts. Can we talk this through?"	Stop that!	Hahaha...is that all you can do? So pathetic.	-
+#RecordIn	DEAD	DisHarkan	10	0	No...!	Is this what you wanted? My death?	You managed to turn things around...	-
+#RecordIn	PIECE	KaraSolider	6400000	8400000	Templer is too scary. Way too scary!	"Should I hunt for animals in the mountains, or for humans at sea?"	I want to master magic too...then I can be strong like Templer.	I'm tired. I had to deliver a big package earlier.
+#RecordIn	ATTACK	KaraSolider	10	0	You are going to die by my hand!	"If I take you to Templer, I'll get a promotion."	Die! You foul beast!	"After all my hard work, killing you will be my reward."
+#RecordIn	DAMAGED	KaraSolider	10	0	Ouch! You are dangerous!	Aaaacckk! Oh no! I've been taken by surprise!	Hah...Stop tickling me...	You think I'm an easy target? We will see.
+#RecordIn	DEAD	KaraSolider	10	0	Tell Templer that I am sorry~	"Templer, avenge me.."	"I slipped, and you took advantage..."	Not the reward I was expecting...
+#RecordIn	HELPMAIN	KaraSolider	800	800	-	-	-	-
+#RecordIn	HELPSUB	KaraSolider	800	800	I'm coming to help you Templer!	It's your turn now... come here!	"I'm here for you, Templer."	I'm here! Hold on!
+#RecordIn	RACERESCUE	KaraSolider	800	800	-	-	-	-
+#RecordIn	PIECE	KaraTempler	6400000	8400000	Our soldiers aren't doing well these days.	"Somewhere, there is a legendary magic book. I must find it."	"Karasian soldiers are stupid, but their loyalty is unmatched."	What are the soldiers doing? I need more items.
+#RecordIn	ATTACK	KaraTempler	10	0	"You've got two choices: fire, or curses. Which do you prefer?"	What are you looking at?	You will suffer for your insolence.	"For you, I'll use my most powerful magic."
+#RecordIn	DAMAGED	KaraTempler	10	0	I'll test my powers on you.	Making your last ditch effort? Give it your best shot!	You're harder to deal with than I thought.	What? Are you trying to make me laugh? Try harder!
+#RecordIn	DEAD	KaraTempler	10	0	Aaaakkkk~	I was over confident.	No! How? I didn't think you were that strong!	I will have my revenge on you.
+#RecordIn	HELPMAIN	KaraTempler	800	800	I can't let this happen~	My magic isn't working!  Someone help me!	Come quickly--help!	Please... anyone... I need help here.
+#RecordIn	HELPSUB	KaraTempler	800	800	Hey! I can help you!	I'm coming... just hold on...	I can easily handle this.	-
+#RecordIn	RACERESCUE	KaraTempler	800	800	-	-	-	-
+#RecordIn	PIECE	KingSpider	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	KingSpider	10	0	-	-	-	-
+#RecordIn	DAMAGED	KingSpider	10	0	-	-	-	-
+#RecordIn	DEAD	KingSpider	10	0	Somebody help me up!	-	-	-
+#RecordIn	PIECE	Pixy	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	Pixy	10	0	I'll carve you up with my trident! Haha	-	-	-
+#RecordIn	DAMAGED	Pixy	10	0	"Ouch, my head hurts!"	-	-	-
+#RecordIn	DEAD	Pixy	10	0	-	-	-	-
+#RecordIn	PIECE	ArchonJuinor	7800000	8800000	"Welcome everyone, this is the town of Uruga!"	-	-	-
+#RecordIn	ATTACK	ArchonJuinor	10	0	-	-	-	-
+#RecordIn	DAMAGED	ArchonJuinor	10	0	Cree..aaak.	-	-	-
+#RecordIn	DEAD	ArchonJuinor	10	0	"I believed in you, how could you do this to me? I hate you."	-	-	-
+#RecordIn	PIECE	Orc	7800000	8800000	Uuurgg.	-	-	-
+#RecordIn	ATTACK	Orc	10	0	-	-	-	-
+#RecordIn	DAMAGED	Orc	10	0	-	-	-	-
+#RecordIn	DEAD	Orc	10	0	How could I have been defeated.	-	-	-
+#RecordIn	PIECE	Pinky	7800000	8800000	Woohoo! This is great weather!	-	-	-
+#RecordIn	ATTACK	Pinky	10	0	-	-	-	-
+#RecordIn	DAMAGED	Pinky	10	0	-	-	-	-
+#RecordIn	DEAD	Pinky	10	0	"Oh no, the world is spinning..."	-	-	-
+#RecordIn	PIECE	MiniJewelKeeper	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	MiniJewelKeeper	10	0	-	-	-	-
+#RecordIn	DAMAGED	MiniJewelKeeper	10	0	-	-	-	-
+#RecordIn	DEAD	MiniJewelKeeper	10	0	-	-	-	-
+#RecordIn	PIECE	LittleRunningBas	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	LittleRunningBas	10	0	-	-	-	-
+#RecordIn	DAMAGED	LittleRunningBas	10	0	-	-	-	-
+#RecordIn	DEAD	LittleRunningBas	10	0	-	-	-	-
+#RecordIn	PIECE	KingMushRoom	7800000	8800000	I need food. Can anyone hear me?	-	-	-
+#RecordIn	ATTACK	KingMushRoom	10	0	I threw three punches in less than a second. Did you see 'em?	-	-	-
+#RecordIn	DAMAGED	KingMushRoom	10	0	-	-	-	-
+#RecordIn	DEAD	KingMushRoom	10	0	-	-	-	-
+#RecordIn	PIECE	GoldenBat	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	GoldenBat	10	0	-	-	-	-
+#RecordIn	DAMAGED	GoldenBat	10	0	-	-	-	-
+#RecordIn	DEAD	GoldenBat	10	0	-	-	-	-
+#RecordIn	PIECE	OrcHunter	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	OrcHunter	10	0	-	-	-	-
+#RecordIn	DAMAGED	OrcHunter	10	0	-	-	-	-
+#RecordIn	DEAD	OrcHunter	10	0	-	-	-	-
+#RecordIn	PIECE	Nox	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	Nox	10	0	Great! I'll test my new moves on you!	-	-	-
+#RecordIn	DAMAGED	Nox	10	0	-	-	-	-
+#RecordIn	DEAD	Nox	10	0	-	-	-	-
+#RecordIn	PIECE	Lips	7800000	8800000	"Oh no! Where are you, my love?"	-	-	-
+#RecordIn	ATTACK	Lips	10	0	Who are you? You're not the one I love!	-	-	-
+#RecordIn	DAMAGED	Lips	10	0	"It's me, the love of your life!"	-	-	-
+#RecordIn	DEAD	Lips	10	0	-	-	-	-
+#RecordIn	PIECE	Incubus	7800000	8800000	Whose dreams shall I play in today?	-	-	-
+#RecordIn	ATTACK	Incubus	10	0	I can make you dream anything I want!	-	-	-
+#RecordIn	DAMAGED	Incubus	10	0	"Don't waste your time, it'll just make us both tired."	-	-	-
+#RecordIn	DEAD	Incubus	10	0	-	-	-	-
+#RecordIn	PIECE	Greenky	7800000	8800000	-	It won't be so easy to find me in the bushes.	-	-
+#RecordIn	ATTACK	Greenky	10	0	-	-	-	-
+#RecordIn	DAMAGED	Greenky	10	0	-	-	-	-
+#RecordIn	DEAD	Greenky	10	0	-	-	-	-
+#RecordIn	PIECE	Archon	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	Archon	10	0	-	-	-	-
+#RecordIn	DAMAGED	Archon	10	0	-	-	-	-
+#RecordIn	DEAD	Archon	10	0	-	-	-	-
+#RecordIn	PIECE	NaiadSoul	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	NaiadSoul	10	0	-	-	-	-
+#RecordIn	DAMAGED	NaiadSoul	10	0	-	-	-	-
+#RecordIn	DEAD	NaiadSoul	10	0	-	-	-	-
+#RecordIn	PIECE	Stonie	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	Stonie	10	0	-	-	-	-
+#RecordIn	DAMAGED	Stonie	10	0	"No matter how sharp your sword, you cannot hurt me."	-	-	-
+#RecordIn	DEAD	Stonie	10	0	-	-	-	-
+#RecordIn	PIECE	CloverTrumpy	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	CloverTrumpy	10	0	My sword will show no mercy.	-	-	-
+#RecordIn	DAMAGED	CloverTrumpy	10	0	-	-	-	-
+#RecordIn	DEAD	CloverTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	RatmanKnight	7800000	8800000	"I like this red armor, but it's a bit heavy."	-	-	-
+#RecordIn	ATTACK	RatmanKnight	10	0	-	-	-	-
+#RecordIn	DAMAGED	RatmanKnight	10	0	-	-	-	-
+#RecordIn	DEAD	RatmanKnight	10	0	-	-	-	-
+#RecordIn	PIECE	LizardMan	7800000	8800000	Once I walked on four legs...how am I walking on two legs now?	-	-	-
+#RecordIn	ATTACK	LizardMan	10	0	haha...Die!...haha...who are you?	-	-	-
+#RecordIn	DAMAGED	LizardMan	10	0	-	-	-	-
+#RecordIn	DEAD	LizardMan	10	0	-	-	-	-
+#RecordIn	PIECE	SparkDog	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	SparkDog	10	0	-	-	-	-
+#RecordIn	DAMAGED	SparkDog	10	0	-	-	-	-
+#RecordIn	DEAD	SparkDog	10	0	-	-	-	-
+#RecordIn	PIECE	JewelKeeper	7800000	8800000	I can feel it...can feel it.	-	-	-
+#RecordIn	ATTACK	JewelKeeper	10	0	I think I can get what I want from you.	-	-	-
+#RecordIn	DAMAGED	JewelKeeper	10	0	-	-	-	-
+#RecordIn	DEAD	JewelKeeper	10	0	My jewels...	-	-	-
+#RecordIn	PIECE	ElvenTree	7800000	8800000	"A long, long time ago the Elf tribe lived here."	-	-	-
+#RecordIn	ATTACK	ElvenTree	10	0	I can't forgive anyone who interrupts my peace. You shall perish!	-	-	-
+#RecordIn	DAMAGED	ElvenTree	10	0	-	-	-	-
+#RecordIn	DEAD	ElvenTree	10	0	-	-	-	-
+#RecordIn	PIECE	HeartTrumpy	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	HeartTrumpy	10	0	-	-	-	-
+#RecordIn	DAMAGED	HeartTrumpy	10	0	You are just wasting your energy attacking me...foolish one!	-	-	-
+#RecordIn	DEAD	HeartTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	ElfKnightSoul	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	ElfKnightSoul	10	0	-	-	-	-
+#RecordIn	DAMAGED	ElfKnightSoul	10	0	-	-	-	-
+#RecordIn	DEAD	ElfKnightSoul	10	0	-	-	-	-
+#RecordIn	PIECE	RedStonie	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	RedStonie	10	0	-	-	-	-
+#RecordIn	DAMAGED	RedStonie	10	0	-	-	-	-
+#RecordIn	DEAD	RedStonie	10	0	-	-	-	-
+#RecordIn	PIECE	BlueCloverTrumpy	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	BlueCloverTrumpy	10	0	-	-	-	-
+#RecordIn	DAMAGED	BlueCloverTrumpy	10	0	-	-	-	-
+#RecordIn	DEAD	BlueCloverTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	Navar	7800000	8800000	"Have you ever been a mercenary? Hah, it's not easy, eh?"	-	It hurts! This is hard to take... I'm almost dead.	Only strong men survive wars.
+#RecordIn	ATTACK	Navar	10	0	If you defeat me I will let you go...	Ha! It's been a long time since we've had a proper battle.	What makes you so proud?	I have spotted you... there is no way to evade me now.
+#RecordIn	DAMAGED	Navar	10	0	Are you even attacking?  I don't feel it!	Which mercenary team do you belong to?	I don't know why I waste my time with you..	You are weak... you attacks couldn't even kill a fly.
+#RecordIn	DEAD	Navar	10	0	Yikes~!	It used to be peaceful here...a long time ago.	"Old soldiers never die, they just fade away...*poof*"	-
+#RecordIn	HELPMAIN	Navar	800	800	I didn't expect you to be so strong... 	I must be getting old...I can't keep this up.	"Hey, come here and clean this up."	Someone help me... please!
+#RecordIn	HELPSUB	Navar	800	800	-	-	-	-
+#RecordIn	RACERESCUE	Navar	800	800	-	-	-	-
+#RecordIn	PIECE	GiantSparkDog	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	GiantSparkDog	10	0	-	-	-	-
+#RecordIn	DAMAGED	GiantSparkDog	10	0	-	-	-	-
+#RecordIn	DEAD	GiantSparkDog	10	0	-	-	-	-
+#RecordIn	PIECE	GiantPixy	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	GiantPixy	10	0	-	-	-	-
+#RecordIn	DAMAGED	GiantPixy	10	0	-	-	-	-
+#RecordIn	DEAD	GiantPixy	10	0	-	-	-	-
+#RecordIn	PIECE	GoldJewelKeeper	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	GoldJewelKeeper	10	0	-	-	-	-
+#RecordIn	DAMAGED	GoldJewelKeeper	10	0	-	-	-	-
+#RecordIn	DEAD	GoldJewelKeeper	10	0	-	-	-	-
+#RecordIn	PIECE	OrcCaptain	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	OrcCaptain	10	0	-	-	-	-
+#RecordIn	DAMAGED	OrcCaptain	10	0	-	-	-	-
+#RecordIn	DEAD	OrcCaptain	10	0	-	-	-	-
+#RecordIn	PIECE	SpadeGuardTrumpy	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	SpadeGuardTrumpy	10	0	-	-	-	-
+#RecordIn	DAMAGED	SpadeGuardTrumpy	10	0	-	-	-	-
+#RecordIn	DEAD	SpadeGuardTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	NaiadDemon	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	NaiadDemon	10	0	-	-	-	-
+#RecordIn	DAMAGED	NaiadDemon	10	0	-	-	-	-
+#RecordIn	DEAD	NaiadDemon	10	0	-	-	-	-
+#RecordIn	PIECE	NavarHenter	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	NavarHenter	10	0	-	-	-	-
+#RecordIn	DAMAGED	NavarHenter	10	0	-	-	-	-
+#RecordIn	DEAD	NavarHenter	10	0	-	-	-	-
+#RecordIn	PIECE	GreedyLizardMan	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	GreedyLizardMan	10	0	-	-	-	-
+#RecordIn	DAMAGED	GreedyLizardMan	10	0	-	-	-	-
+#RecordIn	DEAD	GreedyLizardMan	10	0	-	-	-	-
+#RecordIn	PIECE	Shylph	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	Shylph	10	0	-	-	-	-
+#RecordIn	DAMAGED	Shylph	10	0	-	-	-	-
+#RecordIn	DEAD	Shylph	10	0	-	-	-	-
+#RecordIn	PIECE	NoxHunter	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	NoxHunter	10	0	-	-	-	-
+#RecordIn	DAMAGED	NoxHunter	10	0	-	-	-	-
+#RecordIn	DEAD	NoxHunter	10	0	-	-	-	-
+#RecordIn	PIECE	OldArchon	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	OldArchon	10	0	Don't you have any respect for the elderly?	-	-	-
+#RecordIn	DAMAGED	OldArchon	10	0	-	-	-	-
+#RecordIn	DEAD	OldArchon	10	0	Can't believe I am getting beaten by a youngster!	-	-	-
+#RecordIn	PIECE	DiaTrumpy	7800000	8800000	The world's most valuable treasure is a diamond.	-	-	-
+#RecordIn	ATTACK	DiaTrumpy	10	0	I destroy anyone who gets in my way. I'll break you into pieces!	-	-	-
+#RecordIn	DAMAGED	DiaTrumpy	10	0	What? My arrows aren't working!	-	-	-
+#RecordIn	DEAD	DiaTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	RunningBas	7800000	8800000	You don't want to start anything with me. You'll regret it!	-	-	-
+#RecordIn	ATTACK	RunningBas	10	0	Let's see if you can defeat me.	-	-	-
+#RecordIn	DAMAGED	RunningBas	10	0	-	-	-	-
+#RecordIn	DEAD	RunningBas	10	0	-	-	-	-
+#RecordIn	PIECE	SpadeTrumpy	7800000	8800000	Let me introduce myself.  I am Spade...the gentleman among cards.	-	-	-
+#RecordIn	ATTACK	SpadeTrumpy	10	0	-	-	-	-
+#RecordIn	DAMAGED	SpadeTrumpy	10	0	-	-	-	-
+#RecordIn	DEAD	SpadeTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	ElfKnightDemon	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	ElfKnightDemon	10	0	-	-	-	-
+#RecordIn	DAMAGED	ElfKnightDemon	10	0	-	-	-	-
+#RecordIn	DEAD	ElfKnightDemon	10	0	-	-	-	-
+#RecordIn	PIECE	AncientStonie	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	AncientStonie	10	0	-	-	-	-
+#RecordIn	DAMAGED	AncientStonie	10	0	"If you attack without a plan, your weapon will break."	-	-	-
+#RecordIn	DEAD	AncientStonie	10	0	-	-	-	-
+#RecordIn	PIECE	BlackIncubus	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	BlackIncubus	10	0	-	-	-	-
+#RecordIn	DAMAGED	BlackIncubus	10	0	-	-	-	-
+#RecordIn	DEAD	BlackIncubus	10	0	-	-	-	-
+#RecordIn	PIECE	LizardManKnight	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	LizardManKnight	10	0	-	-	-	-
+#RecordIn	DAMAGED	LizardManKnight	10	0	-	-	-	-
+#RecordIn	DEAD	LizardManKnight	10	0	-	-	-	-
+#RecordIn	PIECE	JokerTrumpy	7800000	8800000	Who's the man? I am! Hah!	-	-	-
+#RecordIn	ATTACK	JokerTrumpy	10	0	Do you want to feel my power? No? There is no turning back now!!	-	-	-
+#RecordIn	DAMAGED	JokerTrumpy	10	0	-	-	-	-
+#RecordIn	DEAD	JokerTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	D_Kebing	3400000	5400000	Why am I always guarding the entrance? Am I a gatekeeper?	"If you're alone, I suggest you return and help your people first."	-	-
+#RecordIn	ATTACK	D_Kebing	10	0	"I'm not a normal Kebing, you can't evade me!"	-	-	-
+#RecordIn	DAMAGED	D_Kebing	10	0	"If I were you, I would go back and level up. Hahaha!"	-	-	-
+#RecordIn	DEAD	D_Kebing	10	0	What? Who taught you how to fight like that?	-	-	-
+#RecordIn	PIECE	D_TombRaider	3400000	5400000	I'm bored. Wanna dig around here for buried treasure?	Hmm...should I go looking for treasure chests?	-	-
+#RecordIn	ATTACK	D_TombRaider	10	0	"Don't touch anything here, it's all mine!"	-	-	-
+#RecordIn	DAMAGED	D_TombRaider	10	0	"Hey hey, let's talk this out. We don't need to fight."	-	-	-
+#RecordIn	DEAD	D_TombRaider	10	0	-	-	-	-
+#RecordIn	PIECE	D_MageBook	3400000	5400000	Try and catch me...come on....	-	-	-
+#RecordIn	ATTACK	D_MageBook	10	0	You're boring me. Is that all you can do? Weak!	-	-	-
+#RecordIn	DAMAGED	D_MageBook	10	0	All your attacks are pathetic.	-	-	-
+#RecordIn	DEAD	D_MageBook	10	0	Hold on.. I still have energy to fight!	-	-	-
+#RecordIn	PIECE	D_MarloneArcher	3400000	5400000	It's a great honor to assist King Marlone!	-	-	-
+#RecordIn	ATTACK	D_MarloneArcher	10	0	No one can escape my aim!	-	-	-
+#RecordIn	DAMAGED	D_MarloneArcher	10	0	I'm a master archer!	-	-	-
+#RecordIn	DEAD	D_MarloneArcher	10	0	-	-	-	-
+#RecordIn	PIECE	D_MarloneMegaton	3400000	5400000	I wonder whats inside the box!	I'm hungry...there's never enough food around here!	-	-
+#RecordIn	ATTACK	D_MarloneMegaton	10	0	"Hey, give me something to eat!"	-	-	-
+#RecordIn	DAMAGED	D_MarloneMegaton	10	0	-	-	-	-
+#RecordIn	DEAD	D_MarloneMegaton	10	0	"If I wasn't so hungry, you'd be a cinch."	-	-	-
+#RecordIn	PIECE	D_MarloneFighter	3400000	5400000	Curiosity killed the cat.	-	-	-
+#RecordIn	ATTACK	D_MarloneFighter	10	0	What are you here for?	-	-	-
+#RecordIn	DAMAGED	D_MarloneFighter	10	0	Whoa! You're pretty strong!	-	-	-
+#RecordIn	DEAD	D_MarloneFighter	10	0	I have brought shame to King Marlone!	-	-	-
+#RecordIn	PIECE	D_kingMarlone	3400000	5400000	"Muhahaha, Don't be a chicken...come get me."	-	-	-
+#RecordIn	ATTACK	D_kingMarlone	10	0	"Are you brave or merely foolish? Either way, you're in trouble!"	-	-	-
+#RecordIn	DAMAGED	D_kingMarlone	10	0	Muhaha...don't you think you need more help!	-	-	-
+#RecordIn	DEAD	D_kingMarlone	10	0	This is shameful!  I'm so embarrassed.	-	-	-
+#RecordIn	PIECE	D_ArchMageBook	4400000	6400000	I like this cave more then I like shiny stones!	-	-	-
+#RecordIn	ATTACK	D_ArchMageBook	10	0	"Hey, wow! Finally, food!"	-	-	-
+#RecordIn	DAMAGED	D_ArchMageBook	10	0	"Heh, you're not that strong. Such a disappointment."	-	-	-
+#RecordIn	DEAD	D_ArchMageBook	10	0	Good bye...	-	-	-
+#RecordIn	PIECE	D_Spider	4400000	6400000	I felt like someone was watching me just now.. 	-	-	-
+#RecordIn	ATTACK	D_Spider	10	0	Were you the one looking at me? How dare you disturb my peace!	-	-	-
+#RecordIn	DAMAGED	D_Spider	10	0	How is this possible? My cobweb shield failed me!	-	-	-
+#RecordIn	DEAD	D_Spider	10	0	I'm not gonna die alone like this. I'm taking you with me!...Kapow!!	-	-	-
+#RecordIn	PIECE	D_FlyingStaff	4400000	6400000	-	-	-	-
+#RecordIn	ATTACK	D_FlyingStaff	10	0	"You didn't come here alone, did you? No, you can't be that dumb."	-	-	-
+#RecordIn	DAMAGED	D_FlyingStaff	10	0	You're worthless... you deserve to be laughed at!	-	-	-
+#RecordIn	DEAD	D_FlyingStaff	10	0	Are you proud of this? Look at me! Are you proud?	-	-	-
+#RecordIn	PIECE	D_Zombie	4400000	6400000	"Do you smell that? Humans..Come out, come out where ever you are!"	-	-	-
+#RecordIn	ATTACK	D_Zombie	10	0	Don't be afraid...I will make you a Zombie too!  Come here...	-	-	-
+#RecordIn	DAMAGED	D_Zombie	10	0	"Nice try, but I'm already dead! Fool, you will die!!"	-	-	-
+#RecordIn	DEAD	D_Zombie	10	0	-	-	-	-
+#RecordIn	PIECE	D_OldFox	4400000	6400000	-	-	-	-
+#RecordIn	ATTACK	D_OldFox	10	0	I didn't know I could be so forceful...	-	-	-
+#RecordIn	DAMAGED	D_OldFox	10	0	I'll make a tomb for you here...	-	-	-
+#RecordIn	DEAD	D_OldFox	10	0	Watch your back. This place has many eyes.	-	-	-
+#RecordIn	PIECE	D_Zombieking	4400000	6400000	-	-	-	-
+#RecordIn	ATTACK	D_Zombieking	10	0	I can't let you leave now that you've seen me here.	-	-	-
+#RecordIn	DAMAGED	D_Zombieking	10	0	How did you get this far with such a lack of skill?	-	-	-
+#RecordIn	DEAD	D_Zombieking	10	0	-	-	-	-
+#RecordIn	PIECE	D_BoneImp	5200000	7200000	How in the world did you get here? This place isn't easy to find!	-	-	-
+#RecordIn	ATTACK	D_BoneImp	10	0	You must really want to see me if you've come all the way here...	-	-	-
+#RecordIn	DAMAGED	D_BoneImp	10	0	I have no ill will towards you! Stop this senseless fighting!	-	-	-
+#RecordIn	DEAD	D_BoneImp	10	0	Whoa...I'm going to tell the Giant Goblin about you.	-	-	-
+#RecordIn	PIECE	D_Goblin	5200000	7200000	I think riding a cart on rails will be fun!	-	-	-
+#RecordIn	ATTACK	D_Goblin	10	0	"Hey, I'll get in the cart...can you push me? I want to go fast!"	-	-	-
+#RecordIn	DAMAGED	D_Goblin	10	0	Whoa...you are so violent!	-	-	-
+#RecordIn	DEAD	D_Goblin	10	0	-	-	-	-
+#RecordIn	PIECE	D_Prock	5200000	7200000	-	-	-	-
+#RecordIn	ATTACK	D_Prock	10	0	You seem happy to see me!	-	-	-
+#RecordIn	DAMAGED	D_Prock	10	0	I'm not the same Prock you knew.  You will learn to fear me!	-	-	-
+#RecordIn	DEAD	D_Prock	10	0	-	-	-	-
+#RecordIn	PIECE	D_GoblinSwordman	5200000	7200000	-	-	-	-
+#RecordIn	ATTACK	D_GoblinSwordman	10	0	Where are you trying to go?	-	-	-
+#RecordIn	DAMAGED	D_GoblinSwordman	10	0	You lack the skill to face off against the Giant Goblin King.	-	-	-
+#RecordIn	DEAD	D_GoblinSwordman	10	0	-	-	-	-
+#RecordIn	PIECE	D_WereBear	5200000	7200000	This place is so isolated!	-	-	-
+#RecordIn	ATTACK	D_WereBear	10	0	I've been waiting for you...for a long time.	-	-	-
+#RecordIn	DAMAGED	D_WereBear	10	0	"If you defeat me, I will tell you where the Giant Goblin is."	-	-	-
+#RecordIn	DEAD	D_WereBear	10	0	"Oh no, I'm dying...well...the Giant Goblin King is just there!"	-	-	-
+#RecordIn	PIECE	D_GoblinMage	5200000	7200000	"Hey, Goblins! Stop jumping around--the ground is shaking!"	-	-	-
+#RecordIn	ATTACK	D_GoblinMage	10	0	You are between a rock and a hard place.	-	-	-
+#RecordIn	DAMAGED	D_GoblinMage	10	0	What will you do with nowhere to run?	-	-	-
+#RecordIn	DEAD	D_GoblinMage	10	0	-	-	-	-
+#RecordIn	PIECE	D_GiantGobleKing	5200000	7200000	-	-	-	-
+#RecordIn	ATTACK	D_GiantGobleKing	10	0	Everyone attack! Let's teach them a lesson they'll never forget!	-	-	-
+#RecordIn	DAMAGED	D_GiantGobleKing	10	0	Try and run! You won't get far!	-	-	-
+#RecordIn	DEAD	D_GiantGobleKing	10	0	"For now, I will let you go...let's set a time to face off again!"	-	-	-
+#RecordIn	PIECE	D_Pinky	7800000	8800000	"Don't you think I'm pretty? My eyes, nose..."	-	-	-
+#RecordIn	ATTACK	D_Pinky	10	0	"Oh, you came all this way to see me? How sweet!!"	-	-	-
+#RecordIn	DAMAGED	D_Pinky	10	0	"Hey, stop! What are you doing?"	-	-	-
+#RecordIn	DEAD	D_Pinky	10	0	-	-	-	-
+#RecordIn	PIECE	D_Pixy	7800000	8800000	Have you ever wondered why this is called 'The Land of Trials?'	-	-	-
+#RecordIn	ATTACK	D_Pixy	10	0	"So you're the troublemaker, eh?"	-	-	-
+#RecordIn	DAMAGED	D_Pixy	10	0	-	-	-	-
+#RecordIn	DEAD	D_Pixy	10	0	-	-	-	-
+#RecordIn	PIECE	D_Greenky	7800000	8800000	There isn't even any grass here. How barren!	-	-	-
+#RecordIn	ATTACK	D_Greenky	10	0	"I'm so bored... Oh, I know, I'll bite off your head for fun!"	-	-	-
+#RecordIn	DAMAGED	D_Greenky	10	0	-	-	-	-
+#RecordIn	DEAD	D_Greenky	10	0	-	-	-	-
+#RecordIn	PIECE	D_Nox	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	D_Nox	10	0	No one can stand the wrath of my sword!	-	-	-
+#RecordIn	DAMAGED	D_Nox	10	0	Hmm... this isn't as fun as I thought it would be. 	-	-	-
+#RecordIn	DEAD	D_Nox	10	0	-	-	-	-
+#RecordIn	PIECE	D_OrcCaptain	7800000	8800000	"Waiting around for others... sorry, it's just not my style."	-	-	-
+#RecordIn	ATTACK	D_OrcCaptain	10	0	-	-	-	-
+#RecordIn	DAMAGED	D_OrcCaptain	10	0	-	-	-	-
+#RecordIn	DEAD	D_OrcCaptain	10	0	We'll ruin your village!	-	-	-
+#RecordIn	PIECE	D_GiantOrcCaptain	7800000	8800000	-	-	-	-
+#RecordIn	ATTACK	D_GiantOrcCaptain	10	0	How can you still be alive!	-	-	-
+#RecordIn	DAMAGED	D_GiantOrcCaptain	10	0	"Enjoy this moment, you'll have plenty of time to regret it."	-	-	-
+#RecordIn	DEAD	D_GiantOrcCaptain	10	0	-	-	-	-
+#RecordIn	PIECE	D_WeakenedOgre	4800000	6800000	Don't judge a book by its cover... I'm actually a nice guy.	-	-	-
+#RecordIn	ATTACK	D_WeakenedOgre	10	0	-	-	-	-
+#RecordIn	DAMAGED	D_WeakenedOgre	10	0	"Easy, easy...can't you see I am weak?"	-	-	-
+#RecordIn	DEAD	D_WeakenedOgre	10	0	-	-	-	-
+#RecordIn	PIECE	D_KingCall	4800000	6800000	I can feel someone watching me.	-	-	-
+#RecordIn	ATTACK	D_KingCall	10	0	Bring it! I'll destroy anyone who dares fight me?	-	-	-
+#RecordIn	DAMAGED	D_KingCall	10	0	-	-	-	-
+#RecordIn	DEAD	D_KingCall	10	0	-	-	-	-
+#RecordIn	PIECE	D_Harkan	4800000	6800000	Count me in...I want to level up too!	-	-	-
+#RecordIn	ATTACK	D_Harkan	10	0	Today's goal: kill twenty of you!	-	-	-
+#RecordIn	DAMAGED	D_Harkan	10	0	-	-	-	-
+#RecordIn	DEAD	D_Harkan	10	0	I've died so many times... I've lost count!	-	-	-
+#RecordIn	PIECE	D_VampireBat	4800000	6800000	I can feel it...feel it...	-	-	-
+#RecordIn	ATTACK	D_VampireBat	10	0	You came all the way here to meet your end at my hands.	-	-	-
+#RecordIn	DAMAGED	D_VampireBat	10	0	-	-	-	-
+#RecordIn	DEAD	D_VampireBat	10	0	"I can't believe this, the world is spinning."	-	-	-
+#RecordIn	PIECE	D_Prisoner	4800000	6800000	"I don't have people chasing me, or places to run to..."	"My hero, Captain Papillon! I'd like to meet you just once."	-	-
+#RecordIn	ATTACK	D_Prisoner	10	0	"How does it feel, attacking with a spoon? "	-	-	-
+#RecordIn	DAMAGED	D_Prisoner	10	0	"Hit me once, get hit twice! That's my motto!"	-	-	-
+#RecordIn	DEAD	D_Prisoner	10	0	One more round! I'm not done with you yet!	-	-	-
+#RecordIn	PIECE	D_Torturer	4800000	6800000	Which torture is good for the torturer and the tortured?	-	-	-
+#RecordIn	ATTACK	D_Torturer	10	0	Attack!  I'm tickling your feet! Hehe...	-	-	-
+#RecordIn	DAMAGED	D_Torturer	10	0	-	-	-	-
+#RecordIn	DEAD	D_Torturer	10	0	-	-	-	-
+#RecordIn	PIECE	D_Torturerking	4800000	6800000	I hear there are people trying to hunt me down.	-	-	-
+#RecordIn	ATTACK	D_Torturerking	10	0	I'll make sure you remain here forever..hehehe.	-	-	-
+#RecordIn	DAMAGED	D_Torturerking	10	0	Punish them!	-	-	-
+#RecordIn	DEAD	D_Torturerking	10	0	-	-	-	-
+#RecordIn	PIECE	D_CloverTrumpy	8000000	9000000	I miss the grand days of the Trumphy Kingdom!	-	-	-
+#RecordIn	ATTACK	D_CloverTrumpy	10	0	Have we met before? You look familiar.	-	-	-
+#RecordIn	DAMAGED	D_CloverTrumpy	10	0	-	-	-	-
+#RecordIn	DEAD	D_CloverTrumpy	10	0	Everyone knows about you now.	-	-	-
+#RecordIn	PIECE	D_BlueCloverTrumpy	8000000	9000000	Someone got wind of our plans.	-	-	-
+#RecordIn	ATTACK	D_BlueCloverTrumpy	10	0	You must be Brave to come here!	I can no longer allow you to move freely!	-	-
+#RecordIn	DAMAGED	D_BlueCloverTrumpy	10	0	I won't let you take what remains of the Trumphy Kingdom!	-	-	-
+#RecordIn	DEAD	D_BlueCloverTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	D_HeartTrumpy	8000000	9000000	I'm a medic--I treat Trumphy soldiers.	-	-	-
+#RecordIn	ATTACK	D_HeartTrumpy	10	0	"Please, don't get in my way..."	-	-	-
+#RecordIn	DAMAGED	D_HeartTrumpy	10	0	Hah...easy as cake to treat these wounds.	-	-	-
+#RecordIn	DEAD	D_HeartTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	D_SpadeGuardTrumpy	8000000	9000000	I'm always ready to fight off invaders!	-	-	-
+#RecordIn	ATTACK	D_SpadeGuardTrumpy	10	0	Stand up and fight!	-	-	-
+#RecordIn	DAMAGED	D_SpadeGuardTrumpy	10	0	This will teach you not to mess with us ever again..	-	-	-
+#RecordIn	DEAD	D_SpadeGuardTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	D_SpadeTrumpy	8000000	9000000	My purpose in life is to defend the Great Kingdom of Trumphy!	-	-	-
+#RecordIn	ATTACK	D_SpadeTrumpy	10	0	I wonder if you're even worthy of being here...	-	-	-
+#RecordIn	DAMAGED	D_SpadeTrumpy	10	0	Hmm... you all are not as easy to defeat as I thought you'd be.	-	-	-
+#RecordIn	DEAD	D_SpadeTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	D_DiaTrumpy	8000000	9000000	The Trumphy Kingdom will rise again!	-	-	-
+#RecordIn	ATTACK	D_DiaTrumpy	10	0	No shield or armor can withstand my arrows!	-	-	-
+#RecordIn	DAMAGED	D_DiaTrumpy	10	0	"Just remember, there's more like me out there. I will be avenged!"	-	-	-
+#RecordIn	DEAD	D_DiaTrumpy	10	0	-	-	-	-
+#RecordIn	PIECE	D_Harpy	8000000	9000000	Bow down at my feet!	-	-	-
+#RecordIn	ATTACK	D_Harpy	10	0	Haha...I wonder how long you will last?	-	-	-
+#RecordIn	DAMAGED	D_Harpy	10	0	How dare you harm me?	It's very foolish of you to anger me...	-	-
+#RecordIn	DEAD	D_Harpy	10	0	-	-	-	-
+;	PIECE	FireNix	8000000	9000000	Kek!  Eeeeck!!!	-	-	-
+;	ATTACK	FireNix	10	0	Kiya!!	-	-	-
+;	DAMAGED	FireNix	10	0		-	-	-
+;	DEAD	FireNix	10	0	Keeeee...	-	-	-
+;	PIECE	FireSpirit	8000000	9000000	Kagh!	-	-	-
+;	ATTACK	FireSpirit	10	0	Kueh?	-	-	-
+;	DAMAGED	FireSpirit	10	0	Kek! Keck!!!	-	-	-
+;	DEAD	FireSpirit	10	0	Ku...Kwe...	-	-	-
+;	PIECE	FlameHoneying	8000000	9000000	Burn up Honeying!!!	-	-	-
+;	ATTACK	FlameHoneying	10	0	Blaze up Honeying Brass!	-	-	-
+;	DAMAGED	FlameHoneying	10	0	Oh... wha...?  No fun?	-	-	-
+;	DEAD	FlameHoneying	10	0	All burnt up...	-	-	-
+;	PIECE	CoreGuardian-U	8000000	9000000	He he...	-	-	-
+;	ATTACK	CoreGuardian-U	10	0	You got some nerve coming over here...	-	-	-
+;	DAMAGED	CoreGuardian-U	10	0		-	-	-
+;	DEAD	CoreGuardian-U	10	0	This can't be...	-	-	-
+;	PIECE	MineMole	8000000	9000000	Huh?	-	-	-
+;	ATTACK	MineMole	10	0	Wha..?	-	-	-
+;	DAMAGED	MineMole	10	0	Kang?	-	-	-
+;	DEAD	MineMole	10	0	Woops.	-	-	-
+;	PIECE	RubyGuardian-U	8000000	9000000	Shoo shoot!	-	-	-
+;	ATTACK	RubyGuardian-U	10	0	shoo shoo shoot!  I'm not making this noise with my mouth.	-	-	-
+;	DAMAGED	RubyGuardian-U	10	0		-	-	-
+;	DEAD	RubyGuardian-U	10	0	Darn it...	-	-	-
+;	PIECE	FlameSpirit	8000000	9000000	Wooo waaa!!!	-	-	-
+;	ATTACK	FlameSpirit	10	0	I'll kill you all!!!	-	-	-
+;	DAMAGED	FlameSpirit	10	0	Hey be afraid.	-	-	-
+;	DEAD	FlameSpirit	10	0		-	-	-
+;	PIECE	KidMon	8000000	9000000	Yah ap!	-	-	-
+;	ATTACK	KidMon	10	0		-	-	-
+;	DAMAGED	KidMon	10	0	Hurts right?	-	-	-
+;	DEAD	KidMon	10	0		-	-	-
+;	PIECE	Miner	8000000	9000000	He het!	-	-	-
+;	ATTACK	Miner	10	0	Jewels are all mine!	-	-	-
+;	DAMAGED	Miner	10	0	Mine I tell you!	-	-	-
+;	DEAD	Miner	10	0	You are mine...	-	-	-
+;	PIECE	UndeadMiner	8000000	9000000	Yay yeah!	-	-	-
+;	ATTACK	UndeadMiner	10	0	Look at all my muscle.	-	-	-
+;	DAMAGED	UndeadMiner	10	0	I'm a best on this mine!	-	-	-
+;	DEAD	UndeadMiner	10	0		-	-	-
+;	PIECE	KartMiner	8000000	9000000	Ka ka kat!	-	-	-
+;	ATTACK	KartMiner	10	0	You think you can see this at your supermarket?	-	-	-
+;	DAMAGED	KartMiner	10	0	I'm going to die here!	-	-	-
+;	DEAD	KartMiner	10	0	Darn it...	-	-	-
+;	PIECE	LavaVivi	8000000	9000000	Grrrr...	-	-	-
+;	ATTACK	LavaVivi	10	0	Kya!!!	-	-	-
+;	DAMAGED	LavaVivi	10	0	Kyang!!	-	-	-
+;	DEAD	LavaVivi	10	0		-	-	-
+;	PIECE	JewelTree	8000000	9000000	Look at me! Yay!	-	-	-
+;	ATTACK	JewelTree	10	0	You want some jewel on your body too?	-	-	-
+;	DAMAGED	JewelTree	10	0	I can grow jewel everywhere!	-	-	-
+;	DEAD	JewelTree	10	0		-	-	-
+;	PIECE	MagmaTon	8000000	9000000	Was that hot enough?	-	-	-
+;	ATTACK	MagmaTon	10	0	I'll melt you like a butter!	-	-	-
+;	DAMAGED	MagmaTon	10	0	Hahahaha!!!  Ha?	-	-	-
+;	DEAD	MagmaTon	10	0		-	-	-
+;	PIECE	FlameMinemole	8000000	9000000	"Yap, yap, ya"	-	-	-
+;	ATTACK	FlameMinemole	10	0	Hurty? Scratchy?	-	-	-
+;	DAMAGED	FlameMinemole	10	0	Ha ha Scratchy?	-	-	-
+;	DEAD	FlameMinemole	10	0		-	-	-
+;	PIECE	RedNix	8000000	9000000	Kiya!!	-	-	-
+;	ATTACK	RedNix	10	0		-	-	-
+;	DAMAGED	RedNix	10	0	Ki ya ya ya!	-	-	-
+;	DEAD	RedNix	10	0		-	-	-
+;	PIECE	CrystalGuardian-U	8000000	9000000	You'll get hurt.	-	-	-
+;	ATTACK	CrystalGuardian-U	10	0	Why.. Did.. You come...	-	-	-
+;	DAMAGED	CrystalGuardian-U	10	0		-	-	-
+;	DEAD	CrystalGuardian-U	10	0	Want... to..go.. Back...	-	-	-
+;	PIECE	LavaMagmaton	8000000	9000000	I'm stronger then you.	-	-	-
+;	ATTACK	LavaMagmaton	10	0		-	-	-
+;	DAMAGED	LavaMagmaton	10	0	I'm no match for weakling like you.	-	-	-
+;	DEAD	LavaMagmaton	10	0		-	-	-
+;	PIECE	GuardianMaster	8000000	9000000	Foolish...	-	-	-
+;	ATTACK	GuardianMaster	10	0	Don't be greedy	-	-	-
+;	DAMAGED	GuardianMaster	10	0		-	-	-
+;	DEAD	GuardianMaster	10	0	You cannot avoid my curse...	-	-	-
+;	PIECE	Gagoyle	8000000	9000000	Grrrr...	-	-	-
+;	ATTACK	Gagoyle	10	0	I'm not a beast...	-	-	-
+;	DAMAGED	Gagoyle	10	0		-	-	-
+;	DEAD	Gagoyle	10	0		-	-	-
+;	PIECE	GiantMagmaton	8000000	9000000	Laughable...	-	-	-
+;	ATTACK	GiantMagmaton	10	0	Such amateurs.	-	-	-
+;	DAMAGED	GiantMagmaton	10	0		-	-	-
+;	DEAD	GiantMagmaton	10	0	How come...	-	-	-
+;	PIECE	BellowKnight	8000000	9000000	Man...	-	-	-
+;	ATTACK	BellowKnight	10	0	What an idiot.	-	-	-
+;	DAMAGED	BellowKnight	10	0	Ha...	-	-	-
+;	DEAD	BellowKnight	10	0		-	-	-
+;	PIECE	BellowKnight-S	8000000	9000000		-	-	-
+;	ATTACK	BellowKnight-S	10	0	Kugh...	-	-	-
+;	DAMAGED	BellowKnight-S	10	0	"Hugh, lungs... kidney..."	-	-	-
+;	DEAD	BellowKnight-S	10	0		-	-	-
+;	PIECE	BellowKnight-G	8000000	9000000	You are...	-	-	-
+;	ATTACK	BellowKnight-G	10	0		-	-	-
+;	DAMAGED	BellowKnight-G	10	0	Who... are ... you!!	-	-	-
+;	DEAD	BellowKnight-G	10	0		-	-	-
+;	PIECE	BellowknightRord	8000000	9000000	You'll be sorry...	-	-	-
+;	ATTACK	BellowknightRord	10	0	Such foolishness...	-	-	-
+;	DAMAGED	BellowknightRord	10	0	So...	-	-	-
+;	DEAD	BellowknightRord	10	0	Going back are we...	-	-	-
+;	PIECE	D_FlameHoneying	8000000	9000000	Aren't you glad to see me?	-	-	-
+;	ATTACK	D_FlameHoneying	10	0	Didn't we met before?	-	-	-
+;	DAMAGED	D_FlameHoneying	10	0	You told me I was cute!	-	-	-
+;	DEAD	D_FlameHoneying	10	0		-	-	-
+;	PIECE	D_LavaVivi	8000000	9000000	Kigh... Betrayer!	-	-	-
+;	ATTACK	D_LavaVivi	10	0	Vivi... Vivi.. Family...	-	-	-
+;	DAMAGED	D_LavaVivi	10	0		-	-	-
+;	DEAD	D_LavaVivi	10	0		-	-	-
+;	PIECE	D_CoreGuardian-U	8000000	9000000	Are you here for jewels too?	-	-	-
+;	ATTACK	D_CoreGuardian-U	10	0	There isn't such thing here!	-	-	-
+;	DAMAGED	D_CoreGuardian-U	10	0	Go back!	-	-	-
+;	DEAD	D_CoreGuardian-U	10	0		-	-	-
+;	PIECE	D_RubyGuardian-U	8000000	9000000	Shoo shoo shoot!   	-	-	-
+;	ATTACK	D_RubyGuardian-U	10	0		-	-	-
+;	DAMAGED	D_RubyGuardian-U	10	0	Do you know Kickboxing?	-	-	-
+;	DEAD	D_RubyGuardian-U	10	0		-	-	-
+;	PIECE	D_CrystalGuardian-U	8000000	9000000	Master is watching...	-	-	-
+;	ATTACK	D_CrystalGuardian-U	10	0		-	-	-
+;	DAMAGED	D_CrystalGuardian-U	10	0	That's him...	-	-	-
+;	DEAD	D_CrystalGuardian-U	10	0		-	-	-
+;	PIECE	D_GuardianMaster	8000000	9000000	I'm king of dark force...	-	-	-
+;	ATTACK	D_GuardianMaster	10	0	So sad...	-	-	-
+;	DAMAGED	D_GuardianMaster	10	0	Light...	-	-	-
+;	DEAD	D_GuardianMaster	10	0	I so a light in you.	-	-	-
+;	PIECE	CaimanJunier	8000000	9000000	Krrrrr...	-	-	-
+;	ATTACK	CaimanJunier	10	0	Kwang!	-	-	-
+;	DAMAGED	CaimanJunier	10	0		-	-	-
+;	DEAD	CaimanJunier	10	0	Krrrr.  I'll be back...	-	-	-
+;	PIECE	Kaiman	8000000	9000000		-	-	-
+;	ATTACK	Kaiman	10	0		-	-	-
+;	DAMAGED	Kaiman	10	0		-	-	-
+;	DEAD	Kaiman	10	0	Kiya!!	-	-	-
+;	PIECE	LivingTotem	8000000	9000000	Oink Oink	-	-	-
+;	ATTACK	LivingTotem	10	0	Oink?	-	-	-
+;	DAMAGED	LivingTotem	10	0	What's up?	-	-	-
+;	DEAD	LivingTotem	10	0	Oink? Oink!	-	-	-
+;	PIECE	Slug	8000000	9000000	Shoong Shoong...	-	-	-
+;	ATTACK	Slug	10	0		-	-	-
+;	DAMAGED	Slug	10	0		-	-	-
+;	DEAD	Slug	10	0	Chirp...	-	-	-
+;	PIECE	Shadow	8000000	9000000	I hate the dark...	-	-	-
+;	ATTACK	Shadow	10	0	I'm not dark...	-	-	-
+;	DAMAGED	Shadow	10	0		-	-	-
+;	DEAD	Shadow	10	0	I can see the light...	-	-	-
+;	PIECE	RhinoceLoad	8000000	9000000	"Kugh, pugh..."	-	-	-
+;	ATTACK	RhinoceLoad	10	0	This is my swamp!	-	-	-
+;	DAMAGED	RhinoceLoad	10	0		-	-	-
+;	DEAD	RhinoceLoad	10	0		-	-	-
+;	PIECE	MadSlug	8000000	9000000	Kiwooooo...	-	-	-
+;	ATTACK	MadSlug	10	0		-	-	-
+;	DAMAGED	MadSlug	10	0		-	-	-
+;	DEAD	MadSlug	10	0	Phick!  Phing...	-	-	-
+;	PIECE	RedShadow	8000000	9000000	I'm not the darkne..ss....	-	-	-
+;	ATTACK	RedShadow	10	0		-	-	-
+;	DAMAGED	RedShadow	10	0		-	-	-
+;	DEAD	RedShadow	10	0	Th...an..k you...	-	-	-
+;	PIECE	Raplan	8000000	9000000	Aren't I beautiful?	-	-	-
+;	ATTACK	Raplan	10	0	I'm something huh?	-	-	-
+;	DAMAGED	Raplan	10	0	My sweet scent are intoxicating no?	-	-	-
+;	DEAD	Raplan	10	0	Ang...	-	-	-
+;	PIECE	BigMudMan	8000000	9000000	Kururu..	-	-	-
+;	ATTACK	BigMudMan	10	0	Kuru...	-	-	-
+;	DAMAGED	BigMudMan	10	0		-	-	-
+;	DEAD	BigMudMan	10	0	Kooooo...	-	-	-
+;	PIECE	LivingStatue	8000000	9000000	"Oh, ohhhh..."	-	-	-
+;	ATTACK	LivingStatue	10	0		-	-	-
+;	DAMAGED	LivingStatue	10	0		-	-	-
+;	DEAD	LivingStatue	10	0	Urgh...	-	-	-
+;	PIECE	Phouch	8000000	9000000	Ouchy Ouchy.	-	-	-
+;	ATTACK	Phouch	10	0	Ong Ong Ouchy	-	-	-
+;	DAMAGED	Phouch	10	0		-	-	-
+;	DEAD	Phouch	10	0	Moooo	-	-	-
+;	PIECE	LivingStone	8000000	9000000		-	-	-
+;	ATTACK	LivingStone	10	0		-	-	-
+;	DAMAGED	LivingStone	10	0		-	-	-
+;	DEAD	LivingStone	10	0		-	-	-
+;	PIECE	Weasel	8000000	9000000	Shiek	-	-	-
+;	ATTACK	Weasel	10	0	Kiya!!	-	-	-
+;	DAMAGED	Weasel	10	0		-	-	-
+;	DEAD	Weasel	10	0	Sheeek!	-	-	-
+;	PIECE	RhinoceHunter	8000000	9000000	There is only battle for me!	-	-	-
+;	ATTACK	RhinoceHunter	10	0	Come on!  I'll take you all on!	-	-	-
+;	DAMAGED	RhinoceHunter	10	0		-	-	-
+;	DEAD	RhinoceHunter	10	0	Why you little...	-	-	-
+;	PIECE	CaimanGiant	8000000	9000000	Kugh!	-	-	-
+;	ATTACK	CaimanGiant	10	0		-	-	-
+;	DAMAGED	CaimanGiant	10	0		-	-	-
+;	DEAD	CaimanGiant	10	0	I'll take every single one of you.	-	-	-
+;	PIECE	ShadowMaster	8000000	9000000	Who..am I?	-	-	-
+;	ATTACK	ShadowMaster	10	0	Why are you attacking me?	-	-	-
+;	DAMAGED	ShadowMaster	10	0	Why...	-	-	-
+;	DEAD	ShadowMaster	10	0	Finally..	-	-	-
+;	PIECE	BlackShadow	8000000	9000000	I want to get away...	-	-	-
+;	ATTACK	BlackShadow	10	0	Please free me...	-	-	-
+;	DAMAGED	BlackShadow	10	0		-	-	-
+;	DEAD	BlackShadow	10	0	"Ha, Ha ha ha..."	-	-	-
+#RecordIn	PIECE	Helga	8000000	9000000	I am the king of Hellgate!	-	-	-
+#RecordIn	ATTACK	Helga	10	0	Kugh...	It's not my fault!	-	-
+#RecordIn	DAMAGED	Helga	10	0	I'm back again?	I didn't know... I really didn't...	-	-
+#RecordIn	DEAD	Helga	10	0	I can go back now...	Ah...	-	-
+#RecordIn	PIECE	B_SubHel01	8000000	9000000	I didn't kill them.	-	-	-
+#RecordIn	ATTACK	B_SubHel01	10	0	-	-	-	-
+#RecordIn	DAMAGED	B_SubHel01	10	0	I was foolish...	-	-	-
+#RecordIn	DEAD	B_SubHel01	10	0	Those who seek power... will not escape death.	-	-	-
+#RecordIn	PIECE	B_SubHel02	8000000	9000000	What are you?	-	-	-
+#RecordIn	ATTACK	B_SubHel02	10	0	Who am I?	-	-	-
+#RecordIn	DAMAGED	B_SubHel02	10	0	-	-	-	-
+#RecordIn	DEAD	B_SubHel02	10	0	-	-	-	-
+#RecordIn	PIECE	B_SubHel03	8000000	9000000	Who am I?	-	-	-
+#RecordIn	ATTACK	B_SubHel03	10	0	What are you?	-	-	-
+#RecordIn	DAMAGED	B_SubHel03	10	0	-	-	-	-
+#RecordIn	DEAD	B_SubHel03	10	0	-	-	-	-
+#RecordIn	PIECE	B_SubHel04	8000000	9000000	How did I living again?	-	-	-
+#RecordIn	ATTACK	B_SubHel04	10	0	-	-	-	-
+#RecordIn	DAMAGED	B_SubHel04	10	0	-	-	-	-
+#RecordIn	DEAD	B_SubHel04	10	0	I've already choose death...	-	-	-
+#RecordIn	PIECE	B_SubHel05	8000000	9000000	-	-	-	-
+#RecordIn	ATTACK	B_SubHel05	10	0	-	-	-	-
+#RecordIn	DAMAGED	B_SubHel05	10	0	-	-	-	-
+#RecordIn	DEAD	B_SubHel05	10	0	He cannot revive.. Again...	-	-	-
+#RecordIn	PIECE	B_SubHel06	8000000	9000000	-	-	-	-
+#RecordIn	ATTACK	B_SubHel06	10	0	-	-	-	-
+#RecordIn	DAMAGED	B_SubHel06	10	0	-	-	-	-
+#RecordIn	DEAD	B_SubHel06	10	0	-	-	-	-
+#RecordIn	PIECE	B_SubHel07	8000000	9000000	-	-	-	-
+#RecordIn	ATTACK	B_SubHel07	10	0	-	-	-	-
+#RecordIn	DAMAGED	B_SubHel07	10	0	-	-	-	-
+#RecordIn	DEAD	B_SubHel07	10	0	He...must...	-	-	-
+#RecordIn	PIECE	B_SubHel08	8000000	9000000	-	-	-	-
+#RecordIn	ATTACK	B_SubHel08	10	0	-	-	-	-
+#RecordIn	DAMAGED	B_SubHel08	10	0	-	-	-	-
+#RecordIn	DEAD	B_SubHel08	10	0	be... destroyed.	-	-	-
+;	아이젤의 탑	-	-	-	-	-	-	-
+#RecordIn	PIECE	T_Imp	2000000	3600000	What a surprise! Did I scare you?	Come here! Let's be friends.	Gollum! Gollum!! Gollum!!	"Hi, I'm an elf of the Fiesta, Imp!"
+#RecordIn	ATTACK	T_Imp	40	0	"You're taking me easy, right? That's a mistake~"	It'll be a bit painful if you are not a level 5.	This is my charming beautiful big eye~	What!! I don't look Iike a sprite?? Why? What makes you think like that?!!
+#RecordIn	DAMAGED	T_Imp	40	0	Are you kidding? You're just alone! Don't be so hasty!	He-he.. Please forgive me...	"You came because of the quest, too?"	Ah!! Sorry!! You're right. I'm ugly...
+#RecordIn	DEAD	T_Imp	40	0	My...precious...	"Ah, the Quest is killing monster~~"	I hate the quest that gets the Imps~~	I'll go back!!
+#RecordIn	PIECE	T_GangImp	2000000	3600000	"Let anybody be caught, that person is dead!"	Everyone is scared. I can't see even an ant.	I'm different from the Imps who are na?ve. You better know about this!	"Spit-spit!! Lately, so many guys are distressing me."
+#RecordIn	ATTACK	T_GangImp	40	0	Are you kidding? You're just alone! Don't be so hasty!	Did you prepare your grave? Now is the time to say goodbye to your life.	I can feel my victory from the beginning.	Hah! Do you think you can beat us all?
+#RecordIn	DAMAGED	T_GangImp	40	0	Well...You're quite good.	Is that all?	Wow! Don't you want to work under me?	I'm sorry!! I'll be a good Imp!!
+#RecordIn	DEAD	T_GangImp	40	0	I can't believe it. Who are you?	How could this happen...	"Oops, it's a shame. I thought two would be enough. I need to recruit some more."	Gosh~ Help the Imp~ I'm going to get killed~
+#RecordIn	PIECE	T_HungryWolf	2400000	4000000	You're annoying...	Where did this Red Riding Hood hide?	Oh~~~ I'm hungry~~	Why am I always hungry...?
+#RecordIn	ATTACK	T_HungryWolf	30	0	Hahaha~	Thank you for the daily bread.	"Well, just give up right now~ Ha!"	Wow~ Food~ Behave yourself!!
+#RecordIn	DAMAGED	T_HungryWolf	30	0	Man...he's strong...	I should have aimed at the Red Riding Hood...	You need to be ready to suffer if you really want to hunt.	"Hey, if you are not going to eat it, then don't kill!"
+#RecordIn	DEAD	T_HungryWolf	30	0	No...not this...	What are you doing?!!!	"I was just going to eat it, I am really hungry..."	"How come you ignore my words? It's me, a Hungry Wolf!!"
+#RecordIn	PIECE	T_Ratman	2600000	4200000	Hey...don't be so hard upon me...	"This is the year of the rat, you know?!"	Hey...don't be so hard upon me...	"This is the year of the rat, you know?!"
+#RecordIn	ATTACK	T_Ratman	15	0	"You know, I'm precious."	This year is the year of what?	"You know, I'm precious."	This year is the year of what?
+#RecordIn	DAMAGED	T_Ratman	15	0	This is the year of Ratman!!	Someone's trying to kill the rat~ Help me~	This is the year of Ratman!!	Someone's trying to kill the rat~ Help me~
+#RecordIn	DEAD	T_Ratman	15	0	How could you...kill me...	Hey...control yourself...	How could you...kill me...	Hey...control yourself...
+#RecordIn	PIECE	T_Boar	2800000	4400000	I heard there's a city called Elderine or something around here...	"When I get there, there will be lots of food."	I should get going before the Ratman comes after smelling this.	"You thought I was a bear, right? Sometimes I feel I am a bear, too. Ha-ha."
+#RecordIn	ATTACK	T_Boar	15	0	(Snoring)	How is it? Does it hurt? Huh?	Don't think Ratman and I are the same level. 	"Hm-hm. Are you a mortal, elf, or a dark elf?"
+#RecordIn	DAMAGED	T_Boar	15	0	I go crazy when I get angry...	I didn't even start~! Ha-ha!	It was a foxy attack.	Yuck!! You hit a fatal spot!!
+#RecordIn	DEAD	T_Boar	15	0	I'm hungry...	If I were not hungry...	"Ratman, a little rascal...Why does he come to my mind right now?"	"No, I'm not that easy pig, I can't lose like this..."
+#RecordIn	PIECE	T_Kebing	3200000	5200000	Who do it? Kebing do it~	Pop!	(groaning...)	"We, Kebings, are guarding the entrance of the Tower!"
+#RecordIn	ATTACK	T_Kebing	10	0	Kebing super power~	Kebing punch!	Kebing Death Blo...Uh-uh...there's no death blow...	"Kebing Kick!! Oops, do I have legs at all?"
+#RecordIn	DAMAGED	T_Kebing	10	0	Take my attack!!!	Ah! No~~~ It hurts~~~	Did you hit me? I didn't even feel the touch~	Krr...you are dead strong...krr...
+#RecordIn	DEAD	T_Kebing	10	0	That's not fair~~	It's a shame that you got beaten by a mortal. Are you an elf?	CPR~~ Hurry~~	I can't be dead!! I am a hero!!
+#RecordIn	PIECE	T_SkelArcher00	4200000	6200000	The air is not fresh here.	"It's getting colder, really. The weather chilled me to the bone."	Impure air is the enemy of the skin...	"Plearsure to see you, offering."
+#RecordIn	ATTACK	T_SkelArcher00	10	0	Take this skeleton arrow!!	This place cannot be entered without permission.	Skeletons of the Tower! Let's defeat the enemies!!	My arrow will aim at your heart.
+#RecordIn	DAMAGED	T_SkelArcher00	10	0	You're so fast! What did you do?	Burning~!	"Oh, every joint aches."	It won't be a dull game. That's good.
+#RecordIn	DEAD	T_SkelArcher00	10	0	You've lost all your items.	Thank you for giving me back the peaceful sleep.	I've done my share.	You...you little one...
+#RecordIn	HELPMAIN	T_SkelArcher00	800	800	"Huh, look here."	"OK, I recognize you. But it won't be that easy~"	"Hey, there's a problem here."	Hey!! Come here!! Quick!! Hurry!!
+#RecordIn	HELPSUB	T_SkelArcher00	800	800	-	-	-	-
+#RecordIn	RACERESCUE	T_SkelArcher00	800	800	-	-	-	-
+#RecordIn	PIECE	T_SkelArcher01	4200000	6200000	The air is not fresh here.	"It's getting colder, really. The weather chilled me to the bone."	Impure air is the enemy of the skin...	"Plearsure to see you, offering."
+#RecordIn	ATTACK	T_SkelArcher01	10	0	Take this skeleton arrow!!	This place cannot be entered without permission.	Skeletons of the Tower! Let's defeat the enemies!!	My arrow will aim at your heart.
+#RecordIn	DAMAGED	T_SkelArcher01	10	0	You're so fast! What did you do?	Burning~!	"Oh, every joint aches."	It won't be a dull game. That's good.
+#RecordIn	DEAD	T_SkelArcher01	10	0	You've lost all your items.	Give me the rest...	All items are disappeared.	You...you little one...
+#RecordIn	HELPMAIN	T_SkelArcher01	800	800	"Huh, look here."	I can't adimit it!	"Hey, there's a problem here."	Hey!! Come here!! Quick!! Hurry!!
+#RecordIn	HELPSUB	T_SkelArcher01	800	800	-	-	-	-
+#RecordIn	RACERESCUE	T_SkelArcher01	800	800	-	-	-	-
+#RecordIn	PIECE	T_SkelArcher02	4200000	6200000	The air is not fresh here.	"It's getting colder, really. The weather chilled me to the bone."	Impure air is the enemy of the skin...	"Plearsure to see you, offering."
+#RecordIn	ATTACK	T_SkelArcher03	10	0	Take this skeleton arrow!!	This place cannot be entered without permission.	Skeletons of the Tower! Let's defeat the enemies!!	My arrow will aim at your heart.
+#RecordIn	DAMAGED	T_SkelArcher04	10	0	You're so fast! What did you do?	Burning~!	"Oh, every joint aches."	It won't be a dull game. That's good.
+#RecordIn	DEAD	T_SkelArcher05	10	0	You've lost all your items.	Thank you for giving me back the peaceful sleep.	I've done my share.	You...you little one...
+#RecordIn	HELPMAIN	T_SkelArcher06	800	800	Krrr~ my precious body is breaking into pieces. I'll never let you go easily.	"OK, I recognize you. But it won't be that easy~"	"Hey, there's a problem here."	Hey!! Come here!! Quick!! Hurry!!
+#RecordIn	HELPSUB	T_SkelArcher07	800	800	-	-	-	-
+#RecordIn	RACERESCUE	T_SkelArcher08	800	800	-	-	-	-
+#RecordIn	PIECE	T_Skeleton	4000000	6000000	I'm getting fat lately.	I smell the blood around here...Ha-ha...	"Yes, sir! Captain!"	"I need oiling, gosh! It's so annoying to hear every joint's creaking sound."
+#RecordIn	ATTACK	T_Skeleton	10	0	How reckless you are! You dare to invade the Tower!	Ah...last night was of bad omen...	How was my attack? I was once a famous mercenary! Ha-ha!	Say no more!! Let's fight!
+#RecordIn	DAMAGED	T_Skeleton	10	0	It makes me unhappy that I couldn't meet you when I was a mercenary.	It was a powerful attack...I could even hit upon my former life...	What a sharp attack!	Living things won't threaten me anymore.
+#RecordIn	DEAD	T_Skeleton	10	0	I...I...like... this...	Talents of a mercenary...must become rusted...	This is the real eternal rest...	I cannot feel any fear even in this moment...
+#RecordIn	HELPMAIN	T_Skeleton	800	800	-	-	-	-
+#RecordIn	HELPSUB	T_Skeleton	800	800	Come and get me!	What! Hello! Are you out of your mind?	I had an itch for fighting. I'm coming!	"I'll get it done for sure, just entertain me after that."
+#RecordIn	RACERESCUE	T_Skeleton	800	800	-	-	-	-
+#RecordIn	PIECE	T_SkelWarrior	4200000	6200000	I know what I did at lastnight.	"Oh, the Lord of Darkness...please give us your peace again..."	What? Where did the enemy turn up?	This is nothing at all!!
+#RecordIn	ATTACK	T_SkelWarrior	10	0	"Oh, that thrills me again!! Ha-ha!"	Let's fight more! Put out your strength!	"Right, this is the battlefield! Ha-hah!"	"You're my match. Since you stimulated me, you'll be above the average..."
+#RecordIn	DAMAGED	T_SkelWarrior	10	0	"Yeah, that's right! You're quite good."	"Hey, put out your strength! More!"	Danger comes when you least expect it! Be alert at the battlefield!	"We, Undead, have no words like retreat."
+#RecordIn	DEAD	T_SkelWarrior	10	0	This moment in my life....	It is...not...over...Do... it again...	"Everyone, bring it on!!"	I...was an ordinary warrior...in the past...
+#RecordIn	HELPMAIN	T_SkelWarrior	800	800	Ugh.	-	-	-
+#RecordIn	HELPSUB	T_SkelWarrior	800	800	Hah!	How dare you challenge the Knight...you must be insane~	Curse your foolishness.	Who challenged the Knight? You must be indiscreet!!
+#RecordIn	RACERESCUE	T_SkelWarrior	800	800	-	-	-	-
+#RecordIn	PIECE	T_ArchMageBook00	4400000	6400000	I'm not a merciful person. So be careful.	Someone broke into my territory. Who are you?	"I can smell the mortals...Hm...Right, I don't have a nose...Oops..."	Read me~! You can get amazing finformation~!!
+#RecordIn	ATTACK	T_ArchMageBook00	10	0	I already have a good grasp of you!	Magic has the infinite potential.	You are already dead!	"Magic Book page 245, Attack with Immortal Inferno magic!!"
+#RecordIn	DAMAGED	T_ArchMageBook00	10	0	You already know all about me?	It was a nice attack!	You better try even though your attack cannot hurt me.	"Then, Perfect Shield of page 366!!"
+#RecordIn	DEAD	T_ArchMageBook00	10	0	I will never die!	Someone give me a life again...please...	Old memories come and go in my mind's eye.	"Tigers leave only their skins when they die, and books leave their cover when..."
+#RecordIn	PIECE	T_ArchMageBook01	4400000	6400000	I'm not a merciful person. So be careful.	Someone broke into my territory. Who are you?	"I can smell the mortals...Hm...Right, I don't have a nose...Oops..."	Read me~! You can get amazing finformation~!!
+#RecordIn	ATTACK	T_ArchMageBook01	10	0	I already have a good grasp of you!	Magic has the infinite potential.	You are already dead!	"Magic Book page 245, Attack with Immortal Inferno magic!!"
+#RecordIn	DAMAGED	T_ArchMageBook01	10	0	You already know all about me?	It was a nice attack!	You better try even though your attack cannot hurt me.	"Then, Perfect Shield of page 366!!"
+#RecordIn	DEAD	T_ArchMageBook01	10	0	I will never die!	Someone give me a life again...please...	Old memories come and go in my mind's eye.	"Tigers leave only their skins when they die, and books leave their cover when..."
+#RecordIn	PIECE	T_FlyingStaff00	4600000	6600000	Friendship and loyalty are very valuable in every relationship.	There is one mortal who I can never forget in my life.	Is my body's splendor as bright as it can even make one's eyesight blind? 	Why does a garden tiger moth go into the fire even though it knows it will die there...?
+#RecordIn	ATTACK	T_FlyingStaff00	10	0	It would be better if we met as a friend...	"Objectively, I am so great! Don't you agree?"	This attack will strike you a fatal blow.	Many ones get nearer to see my splendor even though they know they will die...
+#RecordIn	DAMAGED	T_FlyingStaff00	10	0	You'll be dangeroud if you don't put forth your strength a litte more...	You...look familiar with that one...	This will be a boring battle.	You...are special...very special...
+#RecordIn	DEAD	T_FlyingStaff00	10	0	I can accept it. I wish you good luck.	I'm so happy to know you...really...	What can I say...at the end of the moment...	I don't regret to be vanished like this...never...
+#RecordIn	PIECE	T_OldFox	4800000	6800000	I see the dead.	"If they stand by the side, we can feel the signs of cold spirit...we even have a chill..."	You're annoying...	Do you know how beautiful it is to see the moon in the very dark blue night sky?
+#RecordIn	ATTACK	T_OldFox	10	0	Do you see the steam of your breath?	I am alright!	Liver!! Give me a liver!! Uh-uh. Sorry to show you this shameful conduct. I was in excitement.	"On the day a full moon comes up, will you go out with me to see it?"
+#RecordIn	DAMAGED	T_OldFox	10	0	Go on.	You...have the courage to look back?	You were...a tought fellow...	Your liver must be very tasty because you are this strong. I want to taste it so bad.
+#RecordIn	DEAD	T_OldFox	10	0	I'll go get some sleep.	I didn't even get married!	You...behind...behind you...	A full moon comes up...a little...later...
+#RecordIn	HELPMAIN	T_OldFox	800	800	Oops~ I thought you're an easy man?	"Hey, friend~ Help me~"	It's impossilbe to work alone.	Wait...a little while...help me...a little...
+#RecordIn	HELPSUB	T_OldFox	800	800	"Oh, you're scaring me."	Please...take my hand...	-	-
+#RecordIn	RACERESCUE	T_OldFox	800	800	-	-	-	-
+#RecordIn	PIECE	T_Zombie	4400000	6400000	"I can smell you. Don't hide, come out mortals..."	-	-	-
+#RecordIn	ATTACK	T_Zombie	10	0	Don't be afraid. I'll make you zombie.	-	-	-
+#RecordIn	DAMAGED	T_Zombie	10	0	I'ma zombie. I don't feel any pain.	-	-	-
+#RecordIn	DEAD	T_Zombie	10	0	It's strange...something's wrong...	-	-	-
+#RecordIn	PIECE	T_Ghost	5000000	7000000	Will I be seen?	Mortals never know what the truth of the darkness is...	Do you see me?	What you see is not everything. Did you know that?
+#RecordIn	ATTACK	T_Ghost	10	0	I'll bury you in the dark!!	"Look at you, who are thrown into confusion! It's ridiculous! Ha!"	Dodge if you can!	"How can you beat me, you can't even see me!! Ha-ha."
+#RecordIn	DAMAGED	T_Ghost	10	0	Your attack is useless to me.	Ah...What happened...	Ah! It's painful!	How can it be!! You can't see me...How...
+#RecordIn	DEAD	T_Ghost	10	0	"I'll live in your shadow, and watch you."	"Oh, no...I...I am going... to be vanished..."	The price for the guilt shall be paid at last.	No!! No!! It' can't be!!!
+#RecordIn	PIECE	T_IceViVi	4200000	6000000	Hot sun and blazing earth are very attractive!	Did you know that there are some more who look like me?	"Sometime I see a crowd of mortals, is it a party?"	-
+#RecordIn	ATTACK	T_IceViVi	10	0	Which season do you like?	"They are all tough, so you better be careful."	"If you really want to do a match, let's do a man-to-man fight."	-
+#RecordIn	DAMAGED	T_IceViVi	10	0	It is boring to be locked up in the Tower.	"Ah, you are quite good. This one must be a good match."	Uh-uh...I'm inferior in strength.	-
+#RecordIn	DEAD	T_IceViVi	10	0	Am I going to melt?	I feel sorry for this is an end.	No. I don't want to disappear like this!	-
+#RecordIn	PIECE	T_Prock	5200000	7200000	My only joy is gardening.	Goblin or Werebear is very rude.	WA-Doo-Wariwari- Boom-Boom...	"Do you know what Nefendes is? I'm familiar with this name, but I can't remember what this is..."
+#RecordIn	ATTACK	T_Prock	10	0	You're the one who ruined my garden.	You better be ready for this!	Are you surprised to see my big mouth?	I can even swallow the stone. But I don't think you're harder than stone.
+#RecordIn	DAMAGED	T_Prock	10	0	Don't ever think you'll go alive!	No! I'll eat you! I'll swallow you guys all~!!	You are a bite to me.	"Hey, hey! You should protect the plant! Stop attacking!!"
+#RecordIn	DEAD	T_Prock	10	0	My...my...garden...	...there's nothing to say at the end...	Yuck...I made an ugly scene.	Only disgraceful scars left.
+#RecordIn	PIECE	T_Spider00	7800000	8800000	Get out! This is mine!!	Shoo~ this sound is not made from the mouth.	-	-
+#RecordIn	ATTACK	T_Spider01	10	0	Gosh...did I get caught?	Shoo! Isn't it good?	-	-
+#RecordIn	DAMAGED	T_Spider02	10	0	-	-	-	-
+#RecordIn	DEAD	T_Spider03	10	0	Somebody...please make me stand...	-	-	-
+#RecordIn	PIECE	T_Spider01	7800000	8800000	Get out! This is mine!!	-	-	-
+#RecordIn	ATTACK	T_Spider02	10	0	Gosh...did I get caught?	-	-	-
+#RecordIn	DAMAGED	T_Spider03	10	0	-	-	-	-
+#RecordIn	DEAD	T_Spider04	10	0	Somebody...please make me stand...	-	-	-
+#RecordIn	PIECE	T_KingSpider	7800000	8800000	Get out! This is mine!!	Sh~ Sh~	-	-
+#RecordIn	ATTACK	T_KingSpider	10	0	Gosh...did I get caught?	Take my cobweb~!!	-	-
+#RecordIn	DAMAGED	T_KingSpider	10	0	-	-	-	-
+#RecordIn	DEAD	T_KingSpider	10	0	Somebody...please make me stand...	-	-	-
+#RecordIn	PIECE	T_KingCall	4800000	6800000	Someone is seeking my life.	Come on! Get me!	-	-
+#RecordIn	ATTACK	T_KingCall	10	0	Iyzel is my father!	-	-	-
+#RecordIn	DAMAGED	T_KingCall	10	0	It's us!!! Yah!!!	"No, no, no! It was a lie! Don't! Don't come!!"	-	-
+#RecordIn	DEAD	T_KingCall	10	0	I can't die like this...	Bye...	-	-
+#RecordIn	PIECE	T_FlyingStaff01	4600000	6600000	Friendship and loyalty are very valuable in every relationship.	There is one mortal who I can never forget in my life.	Is my body's splendor as bright as it can even make one's eyesight blind? 	Why does a garden tiger moth go into the fire even though it knows it will die there...?
+#RecordIn	ATTACK	T_FlyingStaff02	10	0	"Long ago, I thinke there was a master named Wishis."	"Objectively, I am so great! Don't you agree?"	This attack will strike you a fatal blow.	Many ones get nearer to see my splendor even though they know they will die...
+#RecordIn	DAMAGED	T_FlyingStaff03	10	0	You'll be dangeroud if you don't put forth your strength a litte more...	You...look familiar with that one...	This will be a boring battle.	You...are special...very special...
+#RecordIn	DEAD	T_FlyingStaff04	10	0	I want to go back to Wishis...	I'm so happy to know you...really...	What can I say...at the end of the moment...	I don't regret to be vanished like this...never...
+#RecordIn	PIECE	T_DustGolem	7800000	8800000	I will kill you...you...	Krr!! Kyak..!!	Shoo~ Shoo~	-
+#RecordIn	ATTACK	T_DustGolem	10	0	(Crying...)	-	Krr! Ka-hap!	-
+#RecordIn	DAMAGED	T_DustGolem	10	0	Ah! It hurts...I don't want to die...	Meow? Meow?	I...I...I am strange...I feel strange...	-
+#RecordIn	DEAD	T_DustGolem	10	0	Mom...mo...ther...	Meow...	-	-
+#RecordIn	PIECE	T_StoneGolem	7800000	8800000	Whoo!! Yuk!!	Krr!!! Ah!!!	-	-
+#RecordIn	ATTACK	T_StoneGolem	10	0	Whoo!!	"Come on! You, disgusting creature!"	Woo...	-
+#RecordIn	DAMAGED	T_StoneGolem	10	0	Woo...	Krr...	Help...me...	-
+#RecordIn	DEAD	T_StoneGolem	10	0	......krr......	...now...I can...disapea...	Thank...you...	-
+#RecordIn	PIECE	T_PoisonGolem	7800000	8800000	Ugh......	Krr...	-	-
+#RecordIn	ATTACK	T_PoisonGolem	10	0	You...you...want...to...die... in my poison...	Don't! Don't come!	-	-
+#RecordIn	DAMAGED	T_PoisonGolem	10	0	Don't...don't get... closer...	I'm scared...	-	-
+#RecordIn	DEAD	T_PoisonGolem	10	0	Ah....... 	Ah...I...Disapear.... 	Now...barely...	-
+#RecordIn	PIECE	T_IronGolem	7800000	8800000	You'll die...You...will die...you...	Don't come closer. You'll die. You'll get hurt. It'll be painful.	Don't come. Don't come!	-
+#RecordIn	ATTACK	T_IronGolem	10	0	Don't come...don't get closer...	You'll get hurt. You. You'll get hurt.	"It hurts, it really hurts."	-
+#RecordIn	DAMAGED	T_IronGolem	10	0	"Ah, it hurts...It's so painful...I don't want to feel pain..."	-	-	-
+#RecordIn	DEAD	T_IronGolem	10	0	i...can...go...back.......	I'm going back... now...	Thank you...You made me go back to the rest...	-
+;	크리스탈성	-	-	-	-	-	-	-
+#RecordIn	PIECE	C_DarkArchon	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Monsters of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkArchon	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkArchon	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkArchon	50	0	Should... Kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_BigDarkArchon	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Monsters of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_BigDarkArchon	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_BigDarkArchon	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_BigDarkArchon	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkBat	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_DarkBat	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_DarkBat	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_DarkBat	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_MasicBat	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_MasicBat	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_MasicBat	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_MasicBat	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_DarkMasFlyingStaff	1800000	1800000	Woo.......	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkMasFlyingStaff	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkMasFlyingStaff	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkMasFlyingStaff	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DefGoblinSwordman	1800000	1800000	Woo.......	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DefGoblinSwordman	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DefGoblinSwordman	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DefGoblinSwordman	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_MagGoblinSwordman	1800000	1800000	Woo.......	Mortals cannot be forgiven.	Monsters of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_MagGoblinSwordman	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_MagGoblinSwordman	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_MagGoblinSwordman	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkGreenky	1800000	1800000	"Iyzel, please give us the strength!"	Mortals cannot be forgiven.	"Fellows, let's defend the Crystal Tower together!"	For Iyzel!
+#RecordIn	ATTACK	C_DarkGreenky	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkGreenky	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How strong mortals are!
+#RecordIn	DEAD	C_DarkGreenky	50	0	Shoud...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkJewelKeeper	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	"Go back, all of you mortals!"	For Iyzel!
+#RecordIn	ATTACK	C_DarkJewelKeeper	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	For Iyzel!
+#RecordIn	DAMAGED	C_DarkJewelKeeper	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkJewelKeeper	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_BigJewelKeeper	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	"Go back, all of you mortals!"	For Iyzel!
+#RecordIn	ATTACK	C_BigJewelKeeper	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	For Iyzel!
+#RecordIn	DAMAGED	C_BigJewelKeeper	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_BigJewelKeeper	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_GoldJewelKeeper	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_GoldJewelKeeper	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_GoldJewelKeeper	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_GoldJewelKeeper	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_BigGoldJewelKeeper	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_BigGoldJewelKeeper	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_BigGoldJewelKeeper	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_BigGoldJewelKeeper	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkKingMushRoom	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkKingMushRoom	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkKingMushRoom	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkKingMushRoom	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_KingMushRoom	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_KingMushRoom	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_KingMushRoom	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_KingMushRoom	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkLegendaryTree	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Monsters of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkLegendaryTree	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkLegendaryTree	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkLegendaryTree	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkLips	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_DarkLips	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_DarkLips	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_DarkLips	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_BigDarkLips	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_BigDarkLips	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_BigDarkLips	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_BigDarkLips	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_SkinLips1	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_SkinLips1	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_SkinLips1	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_SkinLips1	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_SkinLips2	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_SkinLips2	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_SkinLips2	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_SkinLips2	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkLizardMan	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkLizardMan	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkLizardMan	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkLizardMan	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkComLizardMan	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_DarkComLizardMan	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_DarkComLizardMan	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_DarkComLizardMan	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_LizardManGuardian	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_LizardManGuardian	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_LizardManGuardian	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_LizardManGuardian	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_DarkMarloneArcher	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_DarkMarloneArcher	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_DarkMarloneArcher	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_DarkMarloneArcher	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_DarkNavar	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_DarkNavar	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_DarkNavar	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_DarkNavar	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_CurseDarkNavar	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_CurseDarkNavar	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_CurseDarkNavar	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_CurseDarkNavar	50	0	Mortals cannot be forgiven at all!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_DarkOrc	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkOrc	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkOrc	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkOrc	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_CurseDarkOrc	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_CurseDarkOrc	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_CurseDarkOrc	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_CurseDarkOrc	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_HeavyOrc	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_HeavyOrc	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_HeavyOrc	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_HeavyOrc	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkPinky	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkPinky	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkPinky	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkPinky	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkPixy	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkPixy	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkPixy	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkPixy	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkShylph	1800000	1800000	All we want is only peace!	I want to enjoy eternity in the Tower of liberal Iyzel.	"Time will flow, but emortality won't change."	Is there an intruder?
+#RecordIn	ATTACK	C_DarkShylph	50	0	Mortals!	Cursed be the mortals who disturb our peace.	Woo...Intruders!	Foolish mortals!
+#RecordIn	DAMAGED	C_DarkShylph	50	0	"Finally, we are going back to the time of Eternity!"	Shall I be vanished like this?	I want to stay a bit more.	How come we couldn't defend the Crystal Tower...
+#RecordIn	DEAD	C_DarkShylph	50	0	All we want is only peace!	Disrupters of peace! You will be doomed.	Should...kill them all...	"You beat me, but do you guys think that you can go back alive?"
+#RecordIn	PIECE	C_DarkSkelArcher	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkSkelArcher	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkSkelArcher	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkSkelArcher	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkOneSkelArcher	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkOneSkelArcher	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkOneSkelArcher	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkOneSkelArcher	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_RangerSkelArcher	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_RangerSkelArcher	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_RangerSkelArcher	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_RangerSkelArcher	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkSoulSkeleton	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkSoulSkeleton	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkSoulSkeleton	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkSoulSkeleton	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkSkeletonKnight	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkSkeletonKnight	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkSkeletonKnight	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkSkeletonKnight	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkSkeletonCom	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkSkeletonCom	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkSkeletonCom	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkSkeletonCom	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkSkelWarrior	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkSkelWarrior	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkSkelWarrior	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkSkelWarrior	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkSpakeDog	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkSpakeDog	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkSpakeDog	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkSpakeDog	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_BigDarkSpakeDog	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_BigDarkSpakeDog	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_BigDarkSpakeDog	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_BigDarkSpakeDog	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkStonie	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkStonie	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkStonie	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkStonie	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkStonieCom	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkStonieCom	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkStonieCom	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkStonieCom	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_SkinStonie	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_SkinStonie	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_SkinStonie	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_SkinStonie	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_SkinRedStonie	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_SkinRedStonie	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_SkinRedStonie	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_SkinRedStonie	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_TombRaider	1800000	1800000	"Gosh, we got caught!"	Mortals cannot be forgiven.	I didn't even find the jewel!	Where will the jewel of Iyzel be hidden?
+#RecordIn	ATTACK	C_TombRaider	50	0	"Mortals, you are unexcusable!"	We can easily eject mortals at anytime!	I have the power!	You better run away quickly!
+#RecordIn	DAMAGED	C_TombRaider	50	0	Krrr......	How feeble mortals' efforts are!	Oh!	Attack harder!
+#RecordIn	DEAD	C_TombRaider	50	0	Should...kill them all...	No! The jewel is in front of my eyes...	I can't go back to the time of eternity like this~~ oh no~~~	Oh...How can it be my last moment in front of the jewel of Iyzel...? 
+#RecordIn	PIECE	C_MagTombRaider	1800000	1800000	"Gosh, we got caught!"	Mortals cannot be forgiven.	I didn't even find the jewel!	Where will the jewel of Iyzel be hidden?
+#RecordIn	ATTACK	C_MagTombRaider	50	0	"Mortals, you are unexcusable!"	We can easily eject mortals at anytime!	I have the power!	You better run away quickly!
+#RecordIn	DAMAGED	C_MagTombRaider	50	0	Krrr......	How feeble mortals' efforts are!	Oh!	Attack harder!
+#RecordIn	DEAD	C_MagTombRaider	50	0	Should...kill them all...	No! The jewel is in front of my eyes...	I can't go back to the time of eternity like this~~ oh no~~~	Oh...How can it be my last moment in front of the jewel of Iyzel...? 
+#RecordIn	PIECE	C_DarkVampireBat	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkVampireBat	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkVampireBat	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkVampireBat	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_MagVampireBat	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_MagVampireBat	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_MagVampireBat	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_MagVampireBat	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkZombie	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkZombie	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkZombie	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkZombie	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_JewelGolem	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_JewelGolem	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_JewelGolem	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_JewelGolem	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_LizardManIyzel	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_LizardManIyzel	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_LizardManIyzel	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_LizardManIyzel	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_DarkLizardManIyzel	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_DarkLizardManIyzel	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_DarkLizardManIyzel	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_DarkLizardManIyzel	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_OrcIyzel	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_OrcIyzel	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_OrcIyzel	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_OrcIyzel	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_CurseOrcIyzel	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_CurseOrcIyzel	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_CurseOrcIyzel	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_CurseOrcIyzel	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_SkelArcherIyzel	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_SkelArcherIyzel	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_SkelArcherIyzel	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_SkelArcherIyzel	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_OneSkelArcherIyzel	1800000	1800000	Protect the Holy Relic of Iyzel!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_OneSkelArcherIyzel	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_OneSkelArcherIyzel	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_OneSkelArcherIyzel	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	C_BigSpakeDogIyzel	1800000	1800000	We can never be beaten by spiritless mortals!	Mortals cannot be forgiven.	Fellows of the Crystal Tower!	For Iyzel!
+#RecordIn	ATTACK	C_BigSpakeDogIyzel	50	0	"Go back, mortals!"	"Let mortals go back to their territory, please!"	This is the Holy place of Iyzel!	Go back!
+#RecordIn	DAMAGED	C_BigSpakeDogIyzel	50	0	"Iyzel, please help us!"	Is the power of mortals that much?	Oh!	How incomprehensible mortals are!
+#RecordIn	DEAD	C_BigSpakeDogIyzel	50	0	Should...kill them all...	Shall I be vanished like this for sure?	I can't go back to the time of eternity like this~~ oh no~~~	I will never forgive!
+#RecordIn	PIECE	E_JackO01	1800000	3400000	I wish I could remember where set my body... All this hopping around is making my head hurt.	"When witches go riding, and black cats are seen, the moon laughs and whispers, ‘tis near Halloween."	There is something haunting in the light of the moon.	-
+#RecordIn	ATTACK	E_JackO01	10	0	-	-	-	-
+#RecordIn	DAMAGED	E_JackO01	10	0	-	-	-	-
+#RecordIn	DEAD	E_JackO01	10	0	-	-	-	-
+#RecordIn	PIECE	E_JackO02	1800000	3400000	I wish I could remember where set my body... All this hopping around is making my head hurt.	"When witches go riding, and black cats are seen, the moon laughs and whispers, ‘tis near Halloween."	There is something haunting in the light of the moon.	-
+#RecordIn	ATTACK	E_JackO02	10	0	-	-	-	-
+#RecordIn	DAMAGED	E_JackO02	10	0	-	-	-	-
+#RecordIn	DEAD	E_JackO02	10	0	-	-	-	-
+#RecordIn	PIECE	E_JackO03	1800000	3400000	I wish I could remember where set my body... All this hopping around is making my head hurt.	"When witches go riding, and black cats are seen, the moon laughs and whispers, ‘tis near Halloween."	There is something haunting in the light of the moon.	-
+#RecordIn	ATTACK	E_JackO03	10	0	-	-	-	-
+#RecordIn	DAMAGED	E_JackO03	10	0	-	-	-	-
+#RecordIn	DEAD	E_JackO03	10	0	-	-	-	-
+#RecordIn	PIECE	E_JackO04	1800000	3400000	I wish I could remember where set my body... All this hopping around is making my head hurt.	"When witches go riding, and black cats are seen, the moon laughs and whispers, ‘tis near Halloween."	There is something haunting in the light of the moon.	-
+#RecordIn	ATTACK	E_JackO04	10	0	-	-	-	-
+#RecordIn	DAMAGED	E_JackO04	10	0	-	-	-	-
+#RecordIn	DEAD	E_JackO04	10	0	-	-	-	-
+#RecordIn	PIECE	E_JackO05	1800000	3400000	I wish I could remember where set my body... All this hopping around is making my head hurt.	"When witches go riding, and black cats are seen, the moon laughs and whispers, ‘tis near Halloween."	There is something haunting in the light of the moon.	-
+#RecordIn	ATTACK	E_JackO05	10	0	-	-	-	-
+#RecordIn	DAMAGED	E_JackO05	10	0	-	-	-	-
+#RecordIn	DEAD	E_JackO05	10	0	-	-	-	-
+#RecordIn	PIECE	BSpikeHorn	10000	20000	-	-	-	-
+#RecordIn	ATTACK	BSpikeHorn	100	5000	-	-	-	-
+#RecordIn	DAMAGED	BSpikeHorn	100	5000	-	-	-	-
+#RecordIn	DEAD	BSpikeHorn	100	5000	-	-	-	-
+#RecordIn	PIECE	DApe	10000	20000	I need to get stronger!	How could such a small human hope to defeat me?	-	-
+#RecordIn	ATTACK	DApe	100	5000	"I will smash you into dust. Don't worry, it will be a quick death!"	It won't even take all my strength to smash you.	-	-
+#RecordIn	DAMAGED	DApe	100	5000	Is that all you've got?	Fights are only fun if the opponent fights back!	-	-
+#RecordIn	DEAD	DApe	100	5000	I wasn't strong enough...	How is this possible...	-	-
+#RecordIn	PIECE	DLich	10000	20000	The eternal darkness empowers me.	You will never break free from the darkness.	The era of darkness will come soon.	-
+#RecordIn	ATTACK	DLich	100	5000	You will give me your soul for all eternity!	Your soul will beg to be freed from my grasp.	"If you die by my hands, you will find rest in the darkness."	-
+#RecordIn	DAMAGED	DLich	100	5000	This pain only cleanses me!	Do not resist the darkness!	Devote your life to me.	-
+#RecordIn	DEAD	DLich	100	5000	"You may have defeated me, but your time will come..."	Greater horrors still await you...	The power of darkness will bring me back...	-
+#RecordIn	PIECE	DNepilim	10000	20000	I am a creature of the darkness. Only death awaits those who defy me!	This continent will be destroyed when the vortex of chaos opens.	Impure creatures must be purified.	-
+#RecordIn	ATTACK	DNepilim	100	5000	I will give you the gift of death.	"Try as you might, human, you will never defeat me."	"Resistance is futile, human!"	-
+#RecordIn	DAMAGED	DNepilim	100	5000	Make it easier on yourself by giving up now!	Your efforts are in vain!	Now this is fun!	-
+#RecordIn	DEAD	DNepilim	100	5000	How could I have been defeated by the likes of you...	Impossible...	I underestimated the strength of humans...	-
+#RecordIn	PIECE	FElfArc	10000	20000	Surrender to the power of darkness.	No prey is better to hunt than humans!	-	-
+#RecordIn	ATTACK	FElfArc	100	5000	I will pierce your heart with my crossbow!	The hunt begins.	-	-
+#RecordIn	DAMAGED	FElfArc	100	5000	It's going to take more than that to defeat me!	"You're quite resilient, for prey!"	-	-
+#RecordIn	DEAD	FElfArc	100	5000	I go now to be consumed by the darkness...	My crossbow has failed me...	-	-
+#RecordIn	PIECE	FElfCle	10000	20000	Only death can cleanse the light.	We are here to bring darkness to Isya.	-	-
+#RecordIn	ATTACK	FElfCle	100	5000	My mace calls for your destruction!	No mere human can stop us!	-	-
+#RecordIn	DAMAGED	FElfCle	100	5000	It is not too late to submit to death.	"Finally, a human with some spirit!"	-	-
+#RecordIn	DEAD	FElfCle	100	5000	"No, I cannot die..."	We are but pawns in this great mission...	-	-
+#RecordIn	PIECE	FElfFig	10000	20000	"Do not worry, your death will be painless."	"Does anyone want to play? My game is deadly, though."	-	-
+#RecordIn	ATTACK	FElfFig	100	5000	Death will be swift upon you!	My dagger is quick! Death might find you when you don't expect it!	-	-
+#RecordIn	DAMAGED	FElfFig	100	5000	I can all the pain you wish to deliver.	You're good at this game!	-	-
+#RecordIn	DEAD	FElfFig	100	5000	I was just starting to have some fun...	"Beaten at my own game, but I regret nothing..."	-	-
+#RecordIn	PIECE	FElfMag	10000	20000	Nothing compares to the power of darkness.	"Power of darkness, fill me with strength!"	-	-
+#RecordIn	ATTACK	FElfMag	100	5000	I'll still enjoy killing you though!	I will absorb your magic!	-	-
+#RecordIn	DAMAGED	FElfMag	100	5000	The darkness is leaving me...	"My magic is fading, why won't you fall?"	-	-
+#RecordIn	DEAD	FElfMag	100	5000	This can't be the end...	I have no place in a world without magic...	-	-
+#RecordIn	PIECE	FElfSage	10000	20000	Weak humans all need to be punished.	My will is absolute! No one can escape from me!	The dark will be upon this land soon.	-
+#RecordIn	ATTACK	FElfSage	100	5000	"Prepare to die, human!"	"Is that all you've brought to this battle? Don’t make me laugh, worm!"	"Concede, and we will take you as a slave."	-
+#RecordIn	DAMAGED	FElfSage	100	5000	Can't you fight any harder than this?	I must find the strength to destroy this vermin!	Your resistance angers us.	-
+#RecordIn	DEAD	FElfSage	100	5000	"No, not at a human's hands..."	My will has failed me...	Another shall replace me...	-
+#RecordIn	PIECE	FKnight	10000	20000	No opponent stays alive for long against me.	I trust no one but my sword.	-	-
+#RecordIn	ATTACK	FKnight	100	5000	Beg for mercy and your life!	This fight will end before it begins.	-	-
+#RecordIn	DAMAGED	FKnight	100	5000	"This is fun, but it's time for the real fight to start!"	I didn't expect you to be so strong!	-	-
+#RecordIn	DEAD	FKnight	100	5000	"Ah, finally a good battle..."	My trust has deceived me...	-	-
+#RecordIn	PIECE	FKnuckleman	10000	20000	Destruction is my specialty!	I take good care of my fists.	-	-
+#RecordIn	ATTACK	FKnuckleman	100	5000	"You should have brought stronger armor, this will be easy!"	Flee if you are scared; you do not want me to catch you.	-	-
+#RecordIn	DAMAGED	FKnuckleman	100	5000	You're no match for me!	"Are my skills slipping, or are yours just superior?"	-	-
+#RecordIn	DEAD	FKnuckleman	100	5000	Maybe I was too confident...	I should have taken better care of my fists...	-	-
+#RecordIn	PIECE	FRanger	10000	20000	Luck favors the strong.	My arrows always find their mark.	-	-
+#RecordIn	ATTACK	FRanger	100	5000	"Does this hurt, human?"	"This will be fun, just don't give up!"	-	-
+#RecordIn	DAMAGED	FRanger	100	5000	I must shoot faster!	You're doing much better than I expected.	-	-
+#RecordIn	DEAD	FRanger	100	5000	My luck seems to have ended here...	"No, I'm not the best after all..."	-	-
+#RecordIn	PIECE	FSpearman	10000	20000	We train with the threat of death!	Effectively wielding a spear in battle requires skill and finesse.	-	-
+#RecordIn	ATTACK	FSpearman	100	5000	You cannot avoid my spear!	"Watch my spear closely, it may strike you at any time!"	-	-
+#RecordIn	DAMAGED	FSpearman	100	5000	"I grow annoyed at your resistance, my spear will find you yet!"	I did not think you would be so challenging of an opponent!	-	-
+#RecordIn	DEAD	FSpearman	100	5000	"No, my spear has failed me..."	My spear is broken...	-	-
+#RecordIn	PIECE	GTornado	10000	20000	"We're the air elementals, protectors of the black smoke."	I will never tell this secret.	-	-
+#RecordIn	ATTACK	GTornado	100	5000	We cannot allow humans to defile this place!	"You should not be here, human."	-	-
+#RecordIn	DAMAGED	GTornado	100	5000	"Elementals, give me your power!"	I will not allow you to learn this secret!	-	-
+#RecordIn	DEAD	GTornado	100	5000	There are still others...	The vortex will destroy you eventually...	-	-
+#RecordIn	PIECE	Chimera	10000	20000	"Horror, chaos, death..."	This will all end soon.	We share the spoils from the game we hunt.	-
+#RecordIn	ATTACK	Chimera	100	5000	Despair will consume your hopes.	Fair warning: you will not leave here alive.	"I'm happy to see humans here, they're delicious!"	-
+#RecordIn	DAMAGED	Chimera	100	5000	Do not fight destiny!	"Accept your death, human."	Life only becomes more painful the longer you live.	-
+#RecordIn	DEAD	Chimera	100	5000	"I will return to destroy you, human..."	It cannot be! How did a human defeat me...	"Don't relish in your victory just yet, this is not over..."	-
+#RecordIn	PIECE	Psy_LeoPard	10000	20000	-	-	-	-
+#RecordIn	ATTACK	Psy_LeoPard	100	5000	-	-	-	-
+#RecordIn	DAMAGED	Psy_LeoPard	100	5000	-	-	-	-
+#RecordIn	DEAD	Psy_LeoPard	100	5000	-	-	-	-
+#RecordIn	PIECE	Psy_Mist	10000	20000	I need new sacrifices.	"I may not have a body, but I am still powerful."	-	-
+#RecordIn	ATTACK	Psy_Mist	100	5000	Your soul will be mine!	Your pain will echo in the breeze!	-	-
+#RecordIn	DAMAGED	Psy_Mist	100	5000	Human fate is sealed.	You're not even worth the fight.	-	-
+#RecordIn	DEAD	Psy_Mist	100	5000	I will still have your soul one day...	I fade into eternity...	-	-
+#RecordIn	PIECE	Psy_Pergy	10000	20000	-	-	-	-
+#RecordIn	ATTACK	Psy_Pergy	100	5000	-	-	-	-
+#RecordIn	DAMAGED	Psy_Pergy	100	5000	-	-	-	-
+#RecordIn	DEAD	Psy_Pergy	100	5000	-	-	-	-
+#RecordIn	PIECE	Psy_Psyken	10000	20000	Welcome to my home! May I offer you some death?	"Darn, I killed my pet human again. Time to get a new one."	"I wish my knife was bigger, like a dagger."	-
+#RecordIn	ATTACK	Psy_Psyken	100	5000	You should never enter someone's home and then try to fight them.	Prepare for pain!	Die!	-
+#RecordIn	DAMAGED	Psy_Psyken	100	5000	This pain is making me angry!	That hurts! I'm going to hurt you back!	"I'm giving my best, but it might not be enough."	-
+#RecordIn	DEAD	Psy_Psyken	100	5000	"No, not in my own home..."	I guess you wouldn't make a good pet...	I only wanted to play...	-
+#RecordIn	PIECE	Psy_PsykenDog	10000	20000	-	-	-	-
+#RecordIn	ATTACK	Psy_PsykenDog	100	5000	-	-	-	-
+#RecordIn	DAMAGED	Psy_PsykenDog	100	5000	-	-	-	-
+#RecordIn	DEAD	Psy_PsykenDog	100	5000	-	-	-	-
+#RecordIn	PIECE	Ruga	10000	20000	-	-	-	-
+#RecordIn	ATTACK	Ruga	100	5000	-	-	-	-
+#RecordIn	DAMAGED	Ruga	100	5000	-	-	-	-
+#RecordIn	DEAD	Ruga	100	5000	-	-	-	-
+#RecordIn	PIECE	Psy_Wraith	10000	20000	They will kill every living human.	Do not fear death.	-	-
+#RecordIn	ATTACK	Psy_Wraith	100	5000	Maybe death will make you realize your wrong doings.	I will destroy your body and consume your soul.	-	-
+#RecordIn	DAMAGED	Psy_Wraith	100	5000	Can you feel the pain?	Your efforts are for nothing.	-	-
+#RecordIn	DEAD	Psy_Wraith	100	5000	I guess I am the one to die...	I put a curse on you...	-	-
+#RecordIn	PIECE	SElfFig	10000	20000	"We made a bet, who can kill the most humans."	"I'm bored, will anyone play with me?"	-	-
+#RecordIn	ATTACK	SElfFig	100	5000	This should help me become stronger!	I like you human! Let's play!	-	-
+#RecordIn	DAMAGED	SElfFig	100	5000	You're nothing but vermin to me!	"You play rough, human."	-	-
+#RecordIn	DEAD	SElfFig	100	5000	"No, I cannot be dying..."	I lost the game...	-	-
+#RecordIn	PIECE	SElfMag	10000	20000	I want to test my power.	"I need to test my magic, but on what?"	-	-
+#RecordIn	ATTACK	SElfMag	100	5000	There's not much that pleases me more than seeing terrified humans!	The perfect target! Stand still!	-	-
+#RecordIn	DAMAGED	SElfMag	100	5000	Do think I will be defeated so easily? Fool!	Maybe I should have practiced on a weaker target.	-	-
+#RecordIn	DEAD	SElfMag	100	5000	This the end for me...	Now I will never become powerful...	-	-
+#RecordIn	PIECE	Tornado	10000	20000	The strength of our power derives from the dust of the void.	No humans allowed in here!	-	-
+#RecordIn	ATTACK	Tornado	100	5000	Have you come to die? Let me grant that wish.	"I have never seen a human before, let's see what you're made of!"	-	-
+#RecordIn	DAMAGED	Tornado	100	5000	I will not be defeated by a human!	I never knew humans were so reckless!	-	-
+#RecordIn	DEAD	Tornado	100	5000	Everything is going dark...	Defeat...	-	-
+#RecordIn	PIECE	Wape	10000	20000	-	-	-	-
+#RecordIn	ATTACK	WApe	100	5000	-	-	-	-
+#RecordIn	DAMAGED	WApe	100	5000	-	-	-	-
+#RecordIn	DEAD	WApe	100	5000	-	-	-	-
+#RecordIn	PIECE	WLeoPard	10000	20000	-	-	-	-
+#RecordIn	ATTACK	WLeoPard	100	5000	-	-	-	-
+#RecordIn	DAMAGED	WLeoPard	100	5000	-	-	-	-
+#RecordIn	DEAD	WLeoPard	100	5000	-	-	-	-
+#RecordIn	PIECE	Psy_Spider	10000	20000	-	-	-	-
+#RecordIn	ATTACK	Psy_Spider	100	5000	-	-	-	-
+#RecordIn	DAMAGED	Psy_Spider	100	5000	-	-	-	-
+#RecordIn	DEAD	Psy_Spider	100	5000	-	-	-	-
+#RecordIn	PIECE	IncubusG	10000	20000	"Welcome to my party, everyone!"	Luxury is what I strive to achieve.	-	-
+#RecordIn	ATTACK	IncubusG	100	5000	"I hate dishonorable, disgusting people like you!"	"Nothing will delay my party, so you must die!"	-	-
+#RecordIn	DAMAGED	IncubusG	100	5000	You've ruined my clothes! How dare you!	What a weak human.	-	-
+#RecordIn	DEAD	IncubusG	100	5000	The party is over for me...	"No, my party isn't even over yet..."	-	-
+#RecordIn	PIECE	Psy_Statue	10000	20000	I guard the house from intruders.	My will... control... obedience...	-	-
+#RecordIn	ATTACK	Psy_Statue	100	5000	Intruder alert! Destroy!	If I get rid of you... my life will continue.	-	-
+#RecordIn	DAMAGED	Psy_Statue	100	5000	"Defenses failing, backup requested."	My life... is slipping...	-	-
+#RecordIn	DEAD	Psy_Statue	100	5000	Task... Failed...	"Goodbye, world..."	-	-
+#RecordIn	PIECE	E_XKebing_Chat	60000	60000	"Argh, those humans are starting again."	This time we'll stop them!	"We have reinforcement this time, so it won't be easy!"	-
+#RecordIn	ATTACK	E_XKebing_Chat	50	0	-	-	-	-
+#RecordIn	DAMAGED	E_XKebing_Chat	50	0	-	-	-	-
+#RecordIn	DEAD	E_XKebing_Chat	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_Honeying	3000	6000	Red team go!! Blue team is nothing!!	I won't forgive you if you lose!!!!	-	-
+#RecordIn	ATTACK	KDSoccer_Honeying	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_Honeying	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_Honeying	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_Kebing	6000	9000	Don't lose to the Red Team!!	B~~lu~~~e team!! Fighting!!	-	-
+#RecordIn	ATTACK	KDSoccer_Kebing	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_Kebing	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_Kebing	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_DadNPC	10000	15000	It's good to come outside for sometime!!	Shoot!! Shoot!! Ah~~~~what ..the..	-	-
+#RecordIn	ATTACK	KDSoccer_DadNPC	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_DadNPC	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_DadNPC	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_MomNPC	12000	17000	Is this sports called Football?	I have seen this for first time but it's pretty fun. It's worth comeing out here.	-	-
+#RecordIn	ATTACK	KDSoccer_MomNPC	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_MomNPC	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_MomNPC	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_DanielNPC	5000	9000	Wow! So cool! I want to be a football Slime also!!	"I don't know, anybody win!!!"	-	-
+#RecordIn	ATTACK	KDSoccer_DanielNPC	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_DanielNPC	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_DanielNPC	50	0	-	-	-	-
+#RecordIn	PIECE	WindyWitch	1800000	1800000	What a beautiful blizzard.	-	-	-
+#RecordIn	ATTACK	WindyWitch	50	0	"Die, intruder! Die!"	-	-	-
+#RecordIn	DAMAGED	WindyWitch	50	0	-	-	-	-
+#RecordIn	DEAD	WindyWitch	50	0	Turned into the blizzard winds…	-	-	-
+#RecordIn	PIECE	WindyGiant	1800000	1800000	"Wolf, elephant, bear; which shall I have for dinner?"	-	-	-
+#RecordIn	ATTACK	WindyGiant	50	0	I'll send you crying to you mommy!	-	-	-
+#RecordIn	DAMAGED	WindyGiant	50	0	Haha! Is that all you've got?!	-	-	-
+#RecordIn	DEAD	WindyGiant	50	0	"You have defeated me, but more will take my place!"	-	-	-
+#RecordIn	PIECE	ArkGuard	1800000	1800000	I'm bored. Let's cause some trouble tonight.	-	-	-
+#RecordIn	ATTACK	ArkGuard	50	0	"Haha! King Albireo, grant me your power!"	-	-	-
+#RecordIn	DAMAGED	ArkGuard	50	0	-	-	-	-
+#RecordIn	DEAD	ArkGuard	50	0	-	-	-	-
+#RecordIn	PIECE	ArkNovice	1800000	1800000	"Whew, when will this training finally be over?"	-	-	-
+#RecordIn	ATTACK	ArkNovice	50	0	It hurts but you gotta stay strong!	-	-	-
+#RecordIn	DAMAGED	ArkNovice	50	0	-	-	-	-
+#RecordIn	DEAD	ArkNovice	50	0	-	-	-	-
+#RecordIn	PIECE	ArkArch	1800000	1800000	3.1415926534... 5? Hmm.	-	-	-
+#RecordIn	ATTACK	ArkArch	50	0	Here's Pi in your eye!	-	-	-
+#RecordIn	DAMAGED	ArkArch	50	0	-	-	-	-
+#RecordIn	DEAD	ArkArch	50	0	-	-	-	-
+#RecordIn	PIECE	ArkMech	1800000	1800000	Another night shift. *sigh*	-	-	-
+#RecordIn	ATTACK	ArkMech	50	0	Where is the guard?? All I have is a screwdriver!	-	-	-
+#RecordIn	DAMAGED	ArkMech	50	0	-	-	-	-
+#RecordIn	DEAD	ArkMech	50	0	-	-	-	-
+#RecordIn	PIECE	ArkMaster	1800000	1800000	He's been meditating a lot these days.	-	-	-
+#RecordIn	ATTACK	ArkMaster	50	0	This would be easier if we used a rocket!	-	-	-
+#RecordIn	DAMAGED	ArkMaster	50	0	Are you really going to beat up an old man??	-	-	-
+#RecordIn	DEAD	ArkMaster	50	0	-	-	-	-
+#RecordIn	PIECE	ValeArkGuard	5000	9000	He left his colleagues.	I can't?rest in peace until I kill him and Garuda	-	-
+#RecordIn	ATTACK	ValeArkGuard	200	0	I cannot die twice.	-	-	-
+#RecordIn	DAMAGED	ValeArkGuard	200	0	My grudge is stronger than your attack.	-	-	-
+#RecordIn	DEAD	ValeArkGuard	1000	0	I haven't had revenge yet…	-	-	-
+#RecordIn	PIECE	KDSoccer_Honeying_14	3000	6000	Go Red team! The Blue team doesn't stand a chance!	"I came all the way out here to watch in the freezing weather, so don't lose or I'll never forgive you"	-	-
+#RecordIn	ATTACK	KDSoccer_Honeying_14	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_Honeying_14	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_Honeying_14	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_Kebing_14	6000	9000	Don't lose to the Red team!!	"Brrr, it's freezing. Go Red team!"	-	-
+#RecordIn	ATTACK	KDSoccer_Kebing_14	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_Kebing_14	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_Kebing_14	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_DadNPC_14	10000	15000	...The field is soooooo cold	Come on! Shoot! Ah... What... the...	-	-
+#RecordIn	ATTACK	KDSoccer_DadNPC_14	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_DadNPC_14	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_DadNPC_14	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_MomNPC_14	12000	17000	Is this what you call soccer?!	"This is my first time watching, but it's worth seeing!"	-	-
+#RecordIn	ATTACK	KDSoccer_MomNPC_14	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_MomNPC_14	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_MomNPC_14	50	0	-	-	-	-
+#RecordIn	PIECE	KDSoccer_DanielNPC_14	5000	9000	Wow! This is so cool!	I don't really get what's going on but somebody win!	-	-
+#RecordIn	ATTACK	KDSoccer_DanielNPC_14	50	0	-	-	-	-
+#RecordIn	DAMAGED	KDSoccer_DanielNPC_14	50	0	-	-	-	-
+#RecordIn	DEAD	KDSoccer_DanielNPC_14	50	0	-	-	-	-
+#End								

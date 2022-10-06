@@ -1,0 +1,117 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;아이템 상점(아델리아)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Grade6	-	-	-	-	-
+#Record	1	FlyStone	-	-	-	-	-
+#Record	2	House_MushRoom01	House_MushRoom02	House_MushRoom03	House_MushRoom04	-	-
+#Record	3	Converter1	Converter2	Converter3	Converter4	Converter5	-
+#Record	4	HighMagicCrystal	HighBeastTooth	HighMeat	HighSkin	HighSpiritDust	HighBrokenBone
+#Record	5	HighCleanWater	HighKylinLeather	HighPledge	HighGemDust	HighSoulDust	HighBeastLeather
+#Record	6	Q_MeatDry	Q_MilkSweety	-	-	-	-
+#End							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+	0						
+	1						
+	2						
+	3						

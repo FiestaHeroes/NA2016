@@ -1,0 +1,44 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Job2_Dice1-1	N	558	920	0	0	51									
+#record		Job2_Dice1-2	N	558	920	0	0	51									
+#record		Job2_Dice2-1	N	922	736	0	0	51									
+#record		Job2_Dice2-2	N	922	736	0	0	51									
+#record		Job2_Dice3-1	N	925	373	0	0	51									
+#record		Job2_Dice3-2	N	925	373	0	0	51									
+#record		Job2_Dice4-1	N	557	189	0	0	51									
+#record		Job2_Dice4-2	N	557	189	0	0	51									
+#record		Job2_Dice5-1	N	184	372	0	0	51									
+#record		Job2_Dice5-2	N	184	372	0	0	51									
+#record		Job2_Dice6-1	N	186	736	0	0	51									
+#record		Job2_Dice6-2	N	186	736	0	0	51									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Job2_Dice1-1	Job2_CloverT	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice1-2	Job2_DiaT	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice2-1	Job2_CloverT	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice2-2	Job2_DiaT	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice3-1	Job2_CloverT	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice3-2	Job2_DiaT	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice4-1	Job2_CloverT	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice4-2	Job2_DiaT	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice5-1	Job2_CloverT	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice5-2	Job2_DiaT	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice6-1	Job2_CloverT	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Job2_Dice6-2	Job2_DiaT	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

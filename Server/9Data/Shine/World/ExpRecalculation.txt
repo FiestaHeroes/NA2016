@@ -1,0 +1,67 @@
+;	경험치보정									
+#ignore	\o042				; 인용부호 무시					
+#exchange	#	\x20			; # => space					
+#delimiter	\x20				; Space is delimiter					
+										
+#Table	ByPartyMem									
+#ColumnType	BYTE	WORD								
+#ColumnName	PartyMember	Bonus								
+#Record	0	1000		;일본의 경우	1000					
+#Record	1	1000		;	1000					
+#Record	2	1200		;	1150					
+#Record	3	1400		;	1300					
+#Record	4	1600		;	1500					
+#Record	5	1800		;	1800					
+										
+										
+#Table	ByLevelDiff									
+#ColumnType	WORD	WORD								
+#ColumnName	LevelDiff	Bonus								
+;	plylev-moblev									
+#Record	-150	0								
+;	이 사이 생략	바로 위의 값 그대로 가져옴								
+#Record	-30	0								
+#Record	-29	200								
+#Record	-28	400								
+#Record	-27	600								
+#Record	-26	800								
+#Record	-25	1000								
+#Record	-24	1200								
+;	이 사이 생략	바로 위의 값 그대로 가져옴								
+#Record	-10	1200								
+#Record	-9	1200								
+#Record	-8	1200								
+#Record	-7	1200								
+#Record	-6	1200								
+#Record	-5	1200								
+#Record	-4	1150								
+#Record	-3	1100								
+#Record	-2	1050								
+#Record	-1	1000								
+#Record	0	1000								
+#Record	1	1000								
+#Record	2	950								
+#Record	3	850								
+#Record	4	750								
+#Record	5	650								
+#Record	6	500								
+#Record	7	350								
+#Record	8	150								
+#Record	9	10								
+#Record	10	5								
+#Record	11	0								
+;	이 사이 생략	바로 위의 값 그대로 가져옴								
+#Record	150	0								
+										
+										
+#Table	StandardDeviation									
+#ColumnType	WORD	WORD								
+#ColumnName	LowerBound100	HandicapRate								
+#Record	0	1000	; 0~15.00까지 100%							
+#Record	1501	800	; 15.01~16.00까지 80%							
+#Record	1601	600								
+#Record	1701	400								
+#Record	1801	200								
+#Record	1901	0	; 19.01~Inf까지는 0%							
+										
+#end										

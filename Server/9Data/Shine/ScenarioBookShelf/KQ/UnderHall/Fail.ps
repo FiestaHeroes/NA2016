@@ -1,0 +1,13 @@
+; 킹덤퀘스트가 끝난후 맵에 있는 모든 사람들을 루멘으로 쫓아내기 위한 스크립트
+
+open [main]
+    broadcast all "30초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "20초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "10초후 루멘으로 이동합니다.".
+    wait sec 5.
+    broadcast all "5초후 루멘으로 이동합니다.".
+    wait sec 5.
+    linkto all "Rou" "Rou" 7907 8572.
+close

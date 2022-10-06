@@ -1,0 +1,43 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; ÀÎ¿ëºÎÈ£ ¹«½Ã
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+;	City		
+#Record	Roumen	·ç¸à	
+#Record	Elderin	¿¤´õ¸°	
+#Record	Uruga	¿ì·ç°¡	
+#Record	Allston	¿Ã½ºÅæ	
+#Record	Ferra	Æä¶ó	
+#Record	Kassha	Ä«»þ	
+#Record	Sadiin	»çµò	
+#Record	Korika	ÄÚ¸®Ä«	
+#Record	Igen	¾ÆÀÌ°Õ
+#Record	Venucia	º£´©½Ã¾Æ
+#Record	Myslen	¹Ì½º·»
+#Record	Rou	·ç¸à
+#Record	Eld	¿¤´õ¸°
+#Record	Urg	¿ì·ç°¡
+#Record	All	¿Ã½ºÅæ
+#Record	Fer	Æä¶ó
+#Record	Kas	Ä«»þ
+#Record	Sad	»çµò
+#Record	Kor	ÄÚ¸®Ä«
+#Record	Ige	¾ÆÀÌ°Õ
+#Record	Ven	º£´©½Ã¾Æ
+#Record	Mys	¹Ì½º·»
+
+;	Field	
+#Record	RouCos01	¸ð·¡ ¹Ù´Ù
+#Record	RouCos02	ÆÄµµ½£
+#Record	RouCos03	Å½¿åÀÇ ÇØ¾È
+#Record	RouCos04	???
+#Record	RouVal01	¸Þ¸¶¸¥ ¾È°³½£
+#Record	RouVal02	ºÒÅ¸´Â ¾ð´ö
+#Record	RouTemDn01	ºû³ª´Â µ¹
+#Record	EldCem01	´Þºû ¹¦Áö
+#Record	EchoCave	¸Þ¾Æ¸® µ¿±¼
+		
+#End		

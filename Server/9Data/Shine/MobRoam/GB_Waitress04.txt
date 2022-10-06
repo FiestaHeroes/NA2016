@@ -1,0 +1,12 @@
+;	Shine Monster Roaming Table			
+;	Monster Roaming			
+#ignore	\o042			
+#exchange	#	\x20		
+#table	Roaming			
+#columntype	WORD	DWRD	DWRD	STRING[32]
+#columnname	ID	X	Y	EventIndex
+#record	0	1769	1435	-
+#record	1	2269	942	-
+#record	2	1769	1435	-
+#record	3	0	0	rotate
+#end				

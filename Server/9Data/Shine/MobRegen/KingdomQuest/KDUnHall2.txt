@@ -1,0 +1,127 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		KDUnderArea1	N	2210	949	0	0	79
+#record		KDUnderArea2	N	602	2861	0	0	93
+#record		KDUnderArea3	N	2500	4465	0	0	65
+#record		KDUnderArea4	N	4174	2668	0	0	79
+#record		KDUnderArea5	N	2426	981	0	0	79
+#record		KDUnderArea6	N	684	2617	0	0	100
+#record		KDUnderArea7	N	2404	4486	0	0	65
+#record		KDUnderArea8	N	4157	2885	0	0	107
+#record		KDUnderArea9	N	2208	790	0	0	163
+#record		KDUnderArea10	N	457	2815	0	0	128
+#record		KDUnderArea11	N	2343	4420	0	0	107
+#record		KDUnderArea12	N	4115	2619	0	0	79
+#record		KDUnderArea13	N	2141	1041	0	0	51
+#record		KDUnderArea14	N	728	2945	0	0	51
+#record		KDUnderArea15	N	2151	4405	0	0	51
+#record		KDUnderArea16	N	4035	2499	0	0	51
+#record		KDUnderArea17	N	2556	1033	0	0	51
+#record		KDUnderArea18	N	746	2496	0	0	51
+#record		KDUnderArea19	N	2602	4400	0	0	51
+#record		KDUnderArea20	N	4051	2931	0	0	51
+#record		KDUnderArea21	N	2332	1009	0	0	58
+#record		KDUnderArea22	N	669	2721	0	0	58
+#record		KDUnderArea23	N	2275	4423	0	0	65
+#record		KDUnderArea24	N	4105	2733	0	0	65
+#record		KDUnderArea25	N	2528	870	0	0	51
+#record		KDUnderArea26	N	543	2552	0	0	51
+#record		KDUnderArea27	N	2143	4617	0	0	51
+#record		KDUnderArea28	N	4228	2967	0	0	51
+#record		KDUnderArea29	N	2139	848	0	0	51
+#record		KDUnderArea30	N	511	2949	0	0	51
+#record		KDUnderArea31	N	2554	4625	0	0	51
+#record		KDUnderArea32	N	4226	2517	0	0	51
+#record		KDUnderArea33	N	2372	810	0	0	51
+#record		KDUnderArea34	N	513	2736	0	0	51
+#record		KDUnderArea35	N	2372	4647	0	0	51
+#record		KDUnderArea36	N	4283	2788	0	0	65
+#record		KDUnderArea37	N	2479	798	0	0	51
+#record		KDUnderArea38	N	470	2650	0	0	51
+#record		KDUnderArea39	N	2254	4615	0	0	58
+#record		KDUnderArea40	N	4349	2648	0	0	51
+#record		KDUnderArea41	N	2683	1775	0	0	128
+#record		KDUnderArea42	N	2164	1790	0	0	149
+#record		KDUnderArea43	N	2729	3708	0	0	121
+#record		KDUnderArea44	N	1818	3631	0	0	128
+#record		KDUnderArea45	N	3239	2765	0	0	149
+#record		KDUnderArea46	N	1373	2862	0	0	142
+#record		KDUnderArea47	N	3115	2182	0	0	128
+#record		KDUnderArea48	N	1667	1988	0	0	149
+#record		KDUnderArea49	N	3041	3343	0	0	128
+#record		KDUnderArea50	N	1462	3300	0	0	121
+#record		KDUnderArea51	N	2241	3807	0	0	121
+#record		KDUnderArea52	N	1381	2411	0	0	135
+#record		KDUnderArea53	N	2397	2555	0	0	51
+#record		KDUnderArea54	N	2400	2700	0	0	1150
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KDUnderArea1	KQ_U_Spider01	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea2	KQ_U_Spider01	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea3	KQ_U_Spider01	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea4	KQ_U_Spider01	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea5	KQ_U_Spider02	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea6	KQ_U_Spider02	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea7	KQ_U_Spider02	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea8	KQ_U_Spider02	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea9	KQ_U_Spider03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea10	KQ_U_Spider03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea11	KQ_U_Spider03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea12	KQ_U_Spider03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea13	KQ_U_AMageBook	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea14	KQ_U_AMageBook	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea15	KQ_U_AMageBook	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea16	KQ_U_AMageBook	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea17	KQ_U_Spider05	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea18	KQ_U_Spider05	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea19	KQ_U_Spider05	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea20	KQ_U_Spider05	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea21	KQ_U_Lvivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea22	KQ_U_Lvivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea23	KQ_U_Lvivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea24	KQ_U_Lvivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea25	KQ_U_Greenky	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea26	KQ_U_Greenky	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea27	KQ_U_Greenky	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea28	KQ_U_Greenky	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea29	KQ_U_Spider04	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea30	KQ_U_Spider04	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea31	KQ_U_Spider04	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea32	KQ_U_Spider04	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea33	KQ_U_Ivivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea34	KQ_U_Ivivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea35	KQ_U_Ivivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea36	KQ_U_Ivivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea37	KQ_U_TombRaider	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea38	KQ_U_TombRaider	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea39	KQ_U_TombRaider	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea40	KQ_U_TombRaider	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea41	KQ_U_AMageBook	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea42	KQ_U_Spider05	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea43	KQ_U_Spider05	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea44	KQ_U_AMageBook	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea45	KQ_U_Greenky	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea46	KQ_U_Greenky	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea47	KQ_U_Spider04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea48	KQ_U_Lvivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea49	KQ_U_Lvivi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea50	KQ_U_Greenky	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea51	KQ_U_Uspider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea52	KQ_U_Uspider	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea53	KQ_U_BabyDragon	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDUnderArea54	KQ_MINE1	150	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+
+#end																	

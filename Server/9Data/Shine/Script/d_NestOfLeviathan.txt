@@ -1,0 +1,32 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Start0	Soldiers, be careful!
+#Record	Start1	I know you want to see how Leviathan looks like, but don't push it.  This is a dangerous place...	
+#Record	Start2	Gather some valuable artifacts and come back safe.  Although it won't be easy.....	
+			
+#Record	KingBoogy0	We captured King Boogy!	
+#Record	KingBoogy1	Well dong, soldiers!	
+#Record	KingBoogy2	Now that we have found good artifacts, how about going back now?	
+#Record	KingBoogy3	Going back safe would be more important than finding valuables…	
+#Record	KingBoogy4	I can't stop you from risking your lives to go in farther, but be careful!						
+								
+#Record	KingCrap0	Wow, you defeated King Crab.  Nice job. 						
+#Record	KingCrap1	You have already found a lot of valuables.  Let's go back.  It is too dangerous to proceed!						
+#Record	KingCrap2	What?  You want to go in farther?  You are stubborn.  Let me tell you one more thing!		
+#Record	KingCrap3	Some of the parties have gone farther in, but none of them have returned alive.  Got it?						
+#Record	KingCrap4	If you won't blame me after your deaths... Be my guest!  That is all that I can tell you!						
+								
+#Record	Leviathan0	Unbelievable!						
+#Record	Leviathan1	I can't believe it!  Did you really defeat that Vicious Leviathan? 			
+#Record	Leviathan2	So, what did that evil monster have?  It must be a priceless artifact.  Let me have a look. 						
+#Record	Leviathan3	Magnificent!  You are truly blessed!					
+#Record	Leviathan4	I didn't think I would see the day... Congratulations.  I hope you have wonderful lives!	
+								
+#End								
+;	2009-01-16 추가							

@@ -1,0 +1,21 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+;	Anti_Henis_M80								
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+#Record	0	-							
+#Record	1	MasicStaffSk1							
+#Record	2	-							
+#Record	3	MasicStaffSk1							
+									
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우					
+#ColumnType	Index	Index	String[33]	String[33]							
+#ColumnName	Condition	Value	From	To							
+#Record	OutOfRange	-	-	MasicStaffSk1	; 근거리 평타 사용 시 사거리 밖에 있으면 HeartTrumpySk1 시전						
+											
+#End											

@@ -1,0 +1,132 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		AntiHenisArea01	N	7254	6179	0	0	64									
+#record		AntiHenisArea02	N	7259	5984	0	0	63									
+#record		AntiHenisArea03	Y	6296	4793	0	0	253									
+#record		AntiHenisArea04	Y	5368	6512	126	409	0									
+#record		AntiHenisArea05	Y	4202	9001	670	234	-4									
+#record		AntiHenisArea06	Y	4377	8673	0	0	368									
+#record		AntiHenisArea07	Y	3442	9468	243	647	127									
+#record		AntiHenisArea08	Y	3724	9141	0	0	339									
+#record		AntiHenisArea09	Y	7889	9119	338	955	-75									
+#record		AntiHenisArea10	Y	8973	8930	0	0	277									
+#record		AntiHenisArea11	Y	10472	5763	0	0	394									
+#record		AntiHenisArea12	Y	6458	9142	1000	273	1									
+#record		AntiHenisArea13	Y	9308	8334	166	1353	-49									
+#record		AntiHenisArea14	Y	10179	6928	232	769	-7									
+#record		AntiHenisArea15	Y	7982	9093	0	0	381									
+#record		AntiHenisArea16	Y	9586	8304	0	0	274									
+#record		AntiHenisArea17	Y	9132	6019	0	0	330									
+#record		AntiHenisArea18	Y	8342	4452	945	156	-44									
+#record		AntiHenisArea19	Y	8543	7449	155	641	-27									
+#record		AntiHenisArea20	Y	4670	6090	226	1018	2									
+#record		AntiHenisArea21	Y	4858	4746	691	147	60									
+#record		AntiHenisArea22	Y	6671	4617	0	0	190									
+#record		AntiHenisArea23	Y	7465	7240	456	160	13									
+#record		AntiHenisArea24	Y	5460	8863	727	209	0									
+#record		AntiHenisArea25	Y	5457	5447	97	417	-16									
+#record		AntiHenisArea26	Y	8033	5868	164	624	0									
+#record		AntiHenisArea27	Y	5869	7221	355	181	-29									
+#record		AntiHenisArea28	Y	7452	3969	600	236	0									
+#record		AntiHenisArea29	Y	8004	6749	398	131	82									
+#record		AntiHenisArea30	Y	7102	4831	0	0	303									
+#record		AntiHenisArea31	Y	7245	6453	0	0	65									
+#record		AntiHenisArea32	Y	7001	6073	0	0	79									
+#record		AntiHenisArea33	Y	7035	6447	0	0	65									
+#record		AntiHenisArea34	Y	7209	5729	0	0	86									
+#record		AntiHenisArea35	Y	6976	5702	0	0	79									
+#record		AntiHenisArea36	Y	6819	6441	0	0	86									
+#record		AntiHenisArea37	Y	6785	5708	0	0	79									
+#record		AntiHenisArea38	Y	6826	6117	0	0	55									
+#record		AntiHenisArea39	Y	6169	6076	0	0	268									
+#record		AntiHenisArea40	Y	6579	6613	0	0	275									
+#record		AntiHenisArea41	Y	6444	5583	0	0	303									
+#record		AntiHenisArea42	Y	6447	6267	0	0	177									
+#record		AntiHenisArea43	Y	6472	5983	0	0	240									
+#record		AntiHenisArea44	Y	5607	6883	355	143	-41									
+#record		AntiHenisArea45	Y	5864	4936	0	0	317									
+#record		AntiHenisArea46	Y	7615	5021	0	0	303									
+#record		AntiHenisArea47	Y	7640	6976	371	176	38									
+#record		AntiHenisArea48	Y	5698	4065	728	256	16									
+#record		AntiHenisArea49	Y	7911	8027	538	162	13									
+#record		AntiHenisArea50	Y	5022	7601	139	570	41									
+#record		AntiHenisArea51	Y	6653	8114	872	218	0									
+#record		AntiHenisArea52	Y	7526	8100	569	219	5									
+#record		AntiHenisArea53	Y	5687	8115	482	145	-8									
+#record		AntiHenisArea54	Y	6659	6093	0	0	86									
+#record		AntiHenisArea56	Y	8972	6666	0	0	317									
+#record		AntiHenisArea57	Y	8907	5380	0	0	352									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		AntiHenisArea01	Anti_Henis_G_F90	1	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea02	Anti_Henis_G_F90	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea03	Anti_Henis_F96	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea04	Anti_Henis_C96	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea05	Anti_Henis_M91	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea06	Anti_Henis_F90	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea07	Anti_Henis_C90	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea08	Anti_Henis_A94	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea09	Anti_Henis_M92	4	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea10	Anti_Henis_F94	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea11	Anti_Henis_C96	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea12	Anti_Henis_A94	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea13	Anti_Henis_M91	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea14	Anti_Henis_F95	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea15	Anti_Henis_C95	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea16	Anti_Henis_A92	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea17	Anti_Henis_M92	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea18	Anti_Henis_F94	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea19	Anti_Henis_C94	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea20	Anti_Henis_A95	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea21	Anti_Henis_M95	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea22	Anti_Henis_F97	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea23	Anti_Henis_C98	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea24	Anti_Henis_A95	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea25	Anti_Henis_M98	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea26	Anti_Henis_F97	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea27	Anti_Henis_C97	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea28	Anti_Henis_A92	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea29	Anti_Henis_M97	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea30	Anti_Henis_F97	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea31	Anti_Henis_C99	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea32	Anti_Henis_A98	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea33	Anti_Henis_M97	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea34	Anti_Henis_F95	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea35	Anti_Henis_C94	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea36	Anti_Henis_A90	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea37	Anti_Henis_M90	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea38	Anti_Henis_F90	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea39	Anti_Henis_C97	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea40	Anti_Henis_A96	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea41	Anti_Henis_M96	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea42	Anti_Henis_F99	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea43	Anti_Henis_C99	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea44	Anti_Henis_A99	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea45	Anti_Henis_M99	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea46	Anti_Henis_F99	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea47	Anti_Henis_C99	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea48	Anti_Henis_A92	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea49	Anti_Henis_M92	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea50	Anti_Henis_F92	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea51	Anti_Henis_C94	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea52	Anti_Henis_A95	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea53	Anti_Henis_M92	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea54	Anti_Henis_F100	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea56	Anti_Henis_C97	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		AntiHenisArea57	Anti_Henis_F98	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

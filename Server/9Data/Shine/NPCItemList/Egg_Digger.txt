@@ -1,0 +1,11 @@
+;		ItemList in NPC					
+#ignore	\o042			; ÀÎ¿ëºÎÈ£ ¹«½Ã			
+#exchange	#	\x20		; # => space			
+;		2010.03.17					
+							
+#Table	Tab00	;±ê¹ß »¯±â Å·Äù »óÁ¡					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BallEgg01	-	-	-	-	-
+#Record	1	Egg_Melee	Egg_Range	-	-	-	-
+#End							

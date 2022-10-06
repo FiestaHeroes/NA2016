@@ -1,0 +1,22 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00	;크리스마스 이벤트 2013 보상 아이템					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	E_SkiIglooHouse	-	-	-	-	-
+#Record	1	E_SkiSnowmanHouse	-	-	-	-	-
+#Record	2	E_SkiCos_Boader	-	-	-	-	-
+#Record	3	E_SkiHat_Boader	-	-	-	-	-
+#Record	4	E_SkiGlas_Boader	-	-	-	-	-
+#Record	5	E_SkiMiniSnowy	-	-	-	-	-
+#Record	6	-	-	-	-	-	-
+#Record	7	-	-	-	-	-	-
+#Record	8	-	-	-	-	-	-
+#Record	9	-	-	-	-	-	-
+#Record	10	-	-	-	-	-	-
+#Record	11	-	-	-	-	-	-
+#Record	12	-	-	-	-	-	-
+#End							

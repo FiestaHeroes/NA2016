@@ -1,0 +1,40 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		GB_Waitress01	N	2399	2298	0	0	10									
+#record		GB_Waitress02	N	1592	522	0	0	10									
+#record		GB_Waitress03	N	2257	2257	0	0	10									
+#record		GB_Waitress04	N	1769	1435	0	0	10									
+#record		GB_Waitress05	N	966	968	0	0	10									
+#record		GB_Waitress06	N	1435	1751	0	0	10									
+#record		GB_Waitress07	N	1644	2239	0	0	10									
+#record		GB_Waitress08	N	2330	1752	0	0	10									
+#record		GB_Waitress09	N	1797	858	0	0	10									
+#record		GB_Waitress10	N	862	1447	0	0	10									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		GB_Waitress01	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress02	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress03	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress04	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress05	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress06	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress07	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress08	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress09	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+#record		GB_Waitress10	GB_Waitress	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0
+																	
+#end																	

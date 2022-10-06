@@ -1,0 +1,103 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	GuardAlber01_01	I don't think I can make it on time...	
+#Record	Marlene01_01	Oh!  I see Loussier there.  She is surrounded by monster.  We must hurry. 	
+#Record	GuardAlber01_02	Yes.  She is there.  Let's hurry.	
+#Record	Salare01_S01	"Eglack, I think that kid is alive."	
+#Record	Eglack01_S01	Oh?  Really?  How did she survive?	
+#Record	Salare01_S02	I think some people saved her. 	
+#Record	Eglack01_S02	Really?  There are people after us?  Let's ignore them for now and go to Adealia. 	
+#Record	Marlene01_S01	"Loussier, I am glad you are safe. "	
+#Record	Loussier01_S01	You saved me.  Thank you. 	
+#Record	GuardAlber01_S01	I am glad you are safe.  What happened?	
+#Record	Loussier01_S02	"Eglack appeared... and tried to take my grandmother's ""Deity of Star Necklace."" "	
+#Record	Loussier01_S03	I was safe because the necklace protected me. 	
+#Record	Loussier01_S04	But... Eglack's body changed when he tried to take the necklace. 	
+#Record	Loussier01_S05	"The pattern around his body disappeared... and he said, ""Now I can go to the village.""  He is heading to the village with Salare. "	
+#Record	GuardAlber01_S02	That's a problem.  Salare and Eglack have gone to destroy Adealia Village. 	
+#Record	Marlene01_S02	"Loussier, go with the adventurers.  We will gather more people to help us. "	
+#Record	Loussier01_S06	"OK, we will go first. "	
+#Record	Marlene01_S03	"Oh!  Loussier, the power of this necklace seems to weaken Karen's magic. "	
+#Record	Marlene01_S04	I think that is why Eglack thought he can go through Adealia's magic barrier. 	
+#Record	Marlene01_S05	"If that's true, the power of this necklace could change Eglack and Salare to their original forms..."	
+#Record	Loussier01_S07	What?  Really?  That's why he came after me....  I will try to help you.  Let's go. 	
+#Record	Salare01_F01	"Eglack, that kid has been removed. "	
+#Record	Salare01_F01N	"Sir, though I couldn’t handle the little boy, there will not be no any problem to keep me from working on my plan!"	
+#Record	Eglack01_F01	Really?  Ha ha.  Good.  Let's go and destroy Adealia. 	
+#Record	Salare03_01	"Oh, Eglack.  That kid and the adventurers have chased us. "	
+#Record	Eglack03_01	"Oh my.  They can't ruin our plan.  Salare, you should take care of them. "	
+#Record	Salare03_02	"Yes, sir.  You should go ahead, Eglack.  I will be right after you. "	
+#Record	Eglack03_02	OK.  I will wait for you.	
+#Record	Salare03_S01	"You fools, have you any idea who we are?  You must not want to live. "	
+#Record	Loussier03_S01	Salare!  We will not let you get away with it.  I will purify Karen's magic with my grandmother's necklace. 	
+#Record	Salare03_S02	Worthless child.  Do you really think it will work on me?	
+#Record	Loussier03_S02	We will see. 	
+#Record	Salare03_F01	"You fools, have you any idea who we are?  You must not want to live. "	
+#Record	Salare03_F02	"Huh, I can't believe you got me...  But Eglack will never be defeated.  It will be your grave.  Ha ha...'"	
+#Record	Salare03_F02N	"Leave, for now! I will wipe off this disgrace the next time for sure!"	
+#Record	Salare03_S03	"Huh, I can't believe you got me...  But Eglack will never be defeated.  It will be your grave.  Ha ha...'"	
+#Record	Loussier03_S03	"Salare, I will purify Karen's magic in you...  Wait a moment. "	
+#Record	Salare03_S04	What... what are you doing?  Arrrgh~!  Arrrgh~	
+#Record	Loussier03_S04	Have you awakened?  I am Loussier. 	
+#Record	SalareMan03_S01	"Oh... I see,.. "	
+#Record	Loussier03_S05	You and Eglack were captured by Karen's magic while trying to protect Adealia. 	
+#Record	Loussier03_S06	I used my grandmother's necklace to purify you.	
+#Record	SalareMan03_S02	Oh......  I see...  I... I should have died then....	
+#Record	SalareMan03_S03	"Oh, thank you for bringing me back...."	
+#Record	Loussier03_S07	Salare...	
+#Record	SalareMan03_S04	"Loussier, was it?..  Please go after Eglack...  Please save him..."	
+#Record	Loussier03_S08	"OK, Salare.  I will save Eglack, too. "	
+#Record	SalareMan03_S05	OK.... Good...  You should go...  Don't be late.	
+#Record	Loussier03_S09	" .. .. We have to go.  You should rest here, Salare.  Marlene will be here soon. "	
+#Record	Loussier03_S03N	Salare! Please stop. Please come back as a human and prevent Karen from conspiring against us!	
+#Record	Salare03_S04N	"How dare you! I step back this time. But, I will have my revenge!"	
+#Record	Loussier03_S05N	He is gone.. I will save you again next time.	
+#Record	Eglack04_01	"Salare, how could you be defeated by such worthless junks...  You are so weak! "	
+#Record	Eglack04_01N	"Salare, how stupid are you!? You have been defeated by them...  You are so pathetic!"	
+#Record	Eglack04_02	Ha ha ha...  I am already in Adealia Village.  My dream will come true. 	
+#Record	Eglack05_S01	What?  It's too late.  Arrg...  The village is already burning. 	
+#Record	Loussier05_S01	Oh!  The village...  The village... 	
+#Record	Eglack05_S02	"Now that you are here, I will take you myself.  Come to the world of death."	
+#Record	EglackMan05_S01	"Oh, where am I?  Why am I here...  Who are you?"	
+#Record	Loussier05_S02	"Eglack, are you OK?  I am Loussier and these people helped me. "	
+#Record	Loussier05_S03	You were enticed by Karen's magic and tried to destroy Adealia. 	
+#Record	Loussier05_S04	But the village was under protection...  He's destroyed now. 	
+#Record	EglackMan05_S02	"Oh!  I have destroyed the village... with my own hands...  Loussier, I have a request. "	
+#Record	Loussier05_S05	What?  Oh...  OK.  If it is anything I can do...	
+#Record	EglackMan05_S03	I can't return to the village like this.	
+#Record	EglackMan05_S04	Everyone will...  Even if it wasn't my real self...	
+#Record	EglackMan05_S05	I want to leave.  Can you keep the secret for me? 	
+#Record	Loussier05_S06	What?!  Oh.. well... OK.  If that's what you want...	
+#Record	EglackMan05_S06	"Thank you, Loussier. "	
+#Record	EglackMan05_S07	"Well, so long...."	
+#Record	Loussier05_S07	I won't forget what you've done for me...	
+#Record	Eglack05_S01N	Ugh! I cannot fight because of the weird aura from that girl!	
+#Record	Eglack05_S02N	"I am so furious, but I am leaving for now. However, next time I will burn all of Adealia down with you!"	
+#Record	Loussier05_S02N	I have to wait for the next chance... Thank you for helping me.	
+#Record	Eglack05_F01	What?  It's too late.  Arrg...  The village is already burning. 	
+#Record	Eglack05_F02	"Now that you are here, I will take you myself.  Come to the world of death."	
+#Record	Eglack05_F03	Huh.  Oh... You....  How could I be defeated by those junks...  I need... more power...	
+#Record	Karen05_F01	"Ha ha ha...  Eglack, do you need more power? "	
+#Record	Eglack05_F04	"Yes, I need greater power!"	
+#Record	Karen05_F02	"Wait, I will make you stronger...  Get rid of them."	
+#Record	Eglack05_F04	... Yes...  Give me greater power... 	
+#Record	Karen05_F03	Don't be hasty.  I will revive you. 	
+#Record	Eglack05_F05	Arrrrgh!!!	
+#Record	EglackMad05_F01	"Oh, ha... Arrgh.  Arrrgh.  Ha ha ha.  I am full of power!  Now, let's do it again, shall we? "	
+#Record	EglackMad05_F02	I can't believe it.  How..  How..!  Arrrgh. 	
+#Record	EglackMad05_F02N	"I am so furious, but I am leaving for now. However, next time I will burn all of Adealia down with you!"	
+#Record	Karen05_F04	I must have underestimated you.  It won't be so easy next time.... 	
+#Record	Loussier_Dead	I can't believe it...  I can't hold on.  I am sorry....	
+#Record	Marlene_Dead	This is it for me..  I am sorry I can't help you more...  Please take care of the rest...	
+#Record	KQReturn30	"After 30sec, move to Adelia"	
+#Record	KQReturn20	"After 20sec, move to Adelia"	
+#Record	KQReturn10	"After 10sec, move to Adelia"	
+#Record	KQReturn5	"After 5sec, move to Adelia"	
+			
+#End			

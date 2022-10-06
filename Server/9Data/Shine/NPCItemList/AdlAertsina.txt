@@ -1,0 +1,131 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2011.11.11					
+							
+#Table	Tab00	;인첸트 상점					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	WTL_LeoPard	WTL_Ape	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	-	-	-	-	-	-
+#Record	4	-	-	-	-	-	-
+							
+#Table	Tab01	;인첸트 상점					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	EnM_Undead_Hp04	EnM_Undead_AddDmg04	EnM_Beast_Hp04	EnM_Beast_AddDmg04	EnM_Elementa_Hp04	EnM_Elementa_AddDmg04
+#Record	1	EnM_Magic_Hp04	EnM_Magic_AddDmg04	EnM_Spirit_Hp04	EnM_Spirit_AddDmg04	EnM_Human_Hp04	EnM_Human_AddDmg04
+#Record	2	EnS_WC04	EnS_MA04	EnS_AtkSpd04	-	-	-
+#End							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+	0						
+	1						
+	2						
+	3						

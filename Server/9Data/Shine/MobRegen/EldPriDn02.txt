@@ -1,0 +1,106 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		EldPriDn02Area01	N	1804	4389	618	170	45									
+#record		EldPriDn02Area02	N	3761	4033	625	192	0									
+#record		EldPriDn02Area03	N	3729	8615	146	1023	0									
+#record		EldPriDn02Area04	N	3878	6742	322	190	47									
+#record		EldPriDn02Area05	N	5032	1261	0	0	737									
+#record		EldPriDn02Area06	N	8442	589	371	512	0									
+#record		EldPriDn02Area07	N	10159	2499	776	618	0									
+#record		EldPriDn02Area08	N	11825	2560	131	535	75									
+#record		EldPriDn02Area09	N	11256	4812	818	172	0									
+#record		EldPriDn02Area10	N	7283	4304	1093	778	0									
+#record		EldPriDn02Area11	N	9467	4428	427	170	-13									
+#record		EldPriDn02Area12	N	9856	5945	151	565	0									
+#record		EldPriDn02Area13	N	8152	6571	0	0	779									
+#record		EldPriDn02Area14	N	10273	8171	184	910	0									
+#record		EldPriDn02Area15	N	8632	10086	1205	189	0									
+#record		EldPriDn02Area16	N	6879	8340	0	0	653									
+#record		EldPriDn02Area17	N	6967	11853	789	625	0									
+#record		EldPriDn02Area18	N	4746	5324	197	595	0									
+#record		EldPriDn02Area19	N	12335	3772	164	482	176									
+#record		EldPriDn02Area20	N	3076	2669	130	902	0									
+#record		EldPriDn02Area21	N	5131	10070	963	190	0									
+#record		EldPriDn02Area22	N	7003	12223	0	0	303									
+#record		EldPriDn02Area23	N	6841	907	779	122	28									
+#record		EldPriDn02Area24	N	9933	812	138	479	39									
+#record		EldPriDn02Area25	N	6428	3261	6025	2894	0									
+#record		Pbox01	N	6925	9389	5058	3174	0									
+#record		Waypoint01	N	10176	9915	0	0	420									
+#record		Waypoint02	N	3932	10000	0	0	420									
+#record		Waypoint03	N	6944	6944	0	0	420									
+#record		Waypoint04	N	6921	8457	0	0	420																										
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EldPriDn02Area01	GiantSparkDog	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area01	Navar	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area02	GoldJewelKeeper	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area02	GiantSparkDog	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area03	GiantSparkDog	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area03	GoldJewelKeeper	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area04	GoldJewelKeeper	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area04	GiantSparkDog	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area05	OrcCaptain	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area06	OrcCaptain	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area07	NavarHenter	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area07	NaiadDemon	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area08	NaiadDemon	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area08	NavarHenter	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area09	NoxHunter	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area09	BlueArchon	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area10	MINE7	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area10	MINE8	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area10	MINE9	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area10	NoxHunter	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area10	S_Stonie	1	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		EldPriDn02Area10	BlueArchon	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area11	NoxHunter	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area12	OldArchon	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area12	RunningBas	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area12	BlueArchon	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area13	OldArchon	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area13	RunningBas	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area14	OldArchon	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area14	RunningBas	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area15	MINE7	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area15	MINE8	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area15	MINE9	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area15	ElfKnightDemon	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area16	BlackIncubus	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area16	AncientStonie	6	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area17	AncientStonie	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area17	BlackIncubus	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area18	GoldJewelKeeper	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area18	GiantSparkDog	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area19	NaiadDemon	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area19	NavarHenter	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area20	GoldJewelKeeper	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area21	ElfKnightDemon	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area22	GhostKnight	1	0	360	345	375	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area23	MINE7	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area23	MINE8	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area23	MINE9	1	0	200	196	204	-4	5	-2	8	0	10	2	13	4
+#record		EldPriDn02Area23	OrcCaptain	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area24	NavarHenter	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area24	NaiadDemon	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn02Area25	PresentBox12	1	0	14400	14385	14415	-15	8	-10	15	0	60	10	120	15
+#record		Pbox01	PresentBox12	1	0	14400	14385	14415	-15	8	-10	15	0	60	10	120	15
+#record		Waypoint01	BlackIncubus	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		Waypoint02	BlackIncubus	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		Waypoint03	BlackIncubus	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		Waypoint04	GhostKnight	1	0	360	345	375	-15	8	-10	15	0	60	10	120	15
+																	
+#end																	

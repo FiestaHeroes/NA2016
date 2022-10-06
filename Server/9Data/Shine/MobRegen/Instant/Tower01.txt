@@ -1,0 +1,94 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		201	N	1161	4477	0	0	393									
+#record		202	N	1165	4477	0	0	393									
+#record		301	N	2182	2334	0	0	71									
+#record		302	N	2135	2382	0	0	92									
+#record		401	N	4360	1240	11	228	15									
+#record		402	N	4490	1196	12	95	14									
+#record		501	N	6863	967	0	0	99									
+#record		502	N	6776	963	0	0	50									
+#record		601	N	9296	981	0	0	288									
+#record		701	N	10245	3118	0	0	57									
+#record		801	N	11090	5387	76	126	-45									
+#record		802	N	10968	5256	10	74	-43									
+#record		901	N	11734	7673	108	10	-48									
+#record		902	N	11852	7545	0	0	14									
+#record		903	N	11622	7585	0	0	14									
+#record		904	N	11419	7826	10	129	-55									
+#record		905	N	11624	7597	0	0	14									
+#record		906	N	11872	7557	0	0	14									
+#record		1001	N	10709	9808	0	0	50									
+#record		1002	N	10804	9761	70	230	22									
+#record		1101	N	8742	11263	0	0	50									
+#record		1102	N	8752	11261	0	0	204									
+#record		1201	N	6394	11806	0	0	85									
+#record		1202	N	6317	11810	0	0	85									
+#record		1301	N	4178	10961	0	0	239									
+#record		1401	N	3254	8839	0	0	203									
+#record		1402	N	3248	8867	0	0	351									
+#record		1403	N	3262	8795	0	0	14									
+#record		1501	N	3258	6358	213	20	0									
+#record		1502	N	3262	6118	0	0	295									
+#record		1601	N	4709	4743	0	0	197									
+#record		1701	N	7127	4433	0	0	393									
+#record		1801	N	8742	5807	0	0	92									
+#record		1901	N	7739	7620	0	0	56									
+#record		2001	N	5023	7606	235	121	0									
+#record		2002	N	5013	7773	0	0	14									
+#record		2003	N	5041	7429	246	108	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		201	T_Imp	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		202	T_GangImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		301	T_HungryWolf	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		302	T_Ratman	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		401	T_Boar	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		402	T_Kebing	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		501	T_IronSlime00	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		502	T_DustGolem	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		601	T_SkelArcher00	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		701	T_Kamaris00	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		801	T_Skeleton	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		802	T_SkelArcher01	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		901	T_SkelWarrior	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		902	T_SkelArcher02	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		903	T_ArchMageBook00	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		904	T_SkelWarrior	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		905	T_SkelArcher02	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		906	T_ArchMageBook00	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1001	T_StoneGolem	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1002	T_ArchMageBook01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1101	T_Kamaris01	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1102	T_FlyingStaff00	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1201	T_OldFox	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1202	T_DesertWolf	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1301	T_Zombie	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1401	T_Ghost	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1402	T_IceViVi	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1403	T_PoisonGolem	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1501	T_Prock	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1502	T_Spider00	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1601	T_KingSpider	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1701	T_Spider01	20	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1801	T_KingCall	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		1901	T_Kamaris02	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		2001	T_IronSlime01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		2002	T_IronGolem	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		2003	T_FlyingStaff01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

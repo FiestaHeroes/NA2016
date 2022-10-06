@@ -1,0 +1,20 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	DefenseStart	My soldiers! Catch the king of slime!	
+#Record	DefenseSucc	Isyans !! I will not forget your kindness. I will send the present out of gratitude soon.	
+#Record	DefenseFail	HaHaHaHa... This is only the first step to conquer Isya.	
+#Record	CastleDie01	Iron Slime fell over ! Isyans! Please cheer up !	
+#Record	CastleDie02	Prince Slime has been captured ! My prince !	
+#Record	CastleDie03	Even Queen Slime.. This is over....	
+#Record	WaveStart01	Your struggle is in vain... Be my man...	
+#Record	WaveStart02	Nothing will be changed by the struggle of a few useless creatures. HaHa..	
+#Record	WaveEnd01	Isyans ! Cheer up !	
+#Record	WaveEnd02	The one comming next is not an easy target ! Prepare yourself !	
+#Record	WaveEnd03	This is the last one ! Please try your best until the end !	
+#End			

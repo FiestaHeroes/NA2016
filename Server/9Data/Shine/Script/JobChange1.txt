@@ -1,0 +1,39 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	StartDear0	Who am I? I am who you think I am.	
+#Record	StartDear1	This world doesn't need Incompetent people like you.	
+#Record	StartDear2	I will eliminate you and become the true hope of this world.	
+			
+#Record	ShadowFlie	It is so boring to face the poor hand...follow me slowly.	
+			
+#Record	SkellBreed0	"I really want to have some time with you, but is it just not fun."	
+#Record	SkellBreed1	"Have some time with these kids, and catch up with me later."	
+#Record	SkellBreed2	"If you follow the blue light in the dark, you will reach me."
+		
+#Record	Last0	Do you like this place? I hope you like it...
+#Record	Last1	For this is where you will sleep forever...
+#Record	Last2	Be prepared.
+		
+#Record	GoblinBreed	I don't like you...I will kill you..
+		
+#Record	ShadowDead0	You have so much more ability than you think.
+#Record	ShadowDead1	I will be much stronger if you can find that power inside you.
+
+#Record	KQReturn30	Move to Grandmaster Sean in 30 seconds.
+#Record	KQReturn20	Move to Grandmaster Sean in 20 seconds.
+#Record	KQReturn10	Move to Grandmaster Sean in 10 seconds.
+#Record	KQReturn5	Move to Grandmaster Sean in 5 seconds.
+		
+#Record	RouReturn30	Move to Roumen in 30 seconds.
+#Record	RouReturn20	Move to Roumen in 20 seconds.
+#Record	RouReturn10	Move to Roumen in 10 seconds.
+#Record	RouReturn5	Move to Roumen in 5 seconds.
+		
+		
+#End		

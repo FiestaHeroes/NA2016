@@ -1,0 +1,86 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	Lab_25_Poison_Atk			
+#Record	1	-			
+#Record	2	-			
+#Record	3	Lab_25_Poison_Wide			
+#Record	4	-			
+#Record	5	-			
+#Record	6	Lab_25_Knock_Atk			
+#Record	7	-			
+#Record	8	-			
+#Record	9	-			
+#Record	10	Lab_25_Poison_Atk			
+#Record	11	-			
+#Record	12	-			
+#Record	13	-			
+#Record	14	Lab_25_Paralysis_Atk			
+#Record	15	-			
+#Record	16	-			
+#Record	17	-			
+#Record	18	-			
+#Record	19	-			
+#Record	20	Lab_25_Paralysis_Wide			
+#Record	21	-			
+#Record	22	Lab_25_Angry_Buf			
+#Record	23	-			
+#Record	24	-			
+#Record	25	-			
+#Record	26	Lab_25_Angry_Buf			
+#Record	27	-			
+#Record	28	-			
+#Record	29	-			
+#Record	30	-			
+#Record	31	-			
+#Record	32	Lab_25_Poison_Atk			
+#Record	33	Lab_25_Poison_Wide			
+#Record	34	-			
+#Record	35	-			
+#Record	36	-			
+#Record	37	-			
+#Record	38	-			
+#Record	39	-			
+#Record	40	-			
+#Record	41	Lab_25_Angry_Buf			
+#Record	42	-			
+#Record	43	-			
+#Record	44	-			
+#Record	45	-			
+#Record	46	-			
+#Record	47	-			
+#Record	48	Lab_25_Poison_Atk			
+#Record	49	Lab_25_Knock_Atk			
+#Record	50	Lab_25_Knock_Wide			
+#Record	51	Lab_25_Paralysis_Atk			
+#Record	52	Lab_25_Angry_Buf			
+#Record	53	-			
+#Record	54	-			
+#Record	55	-			
+#Record	56	Lab_25_Angry_Buf			
+#Record	57	-			
+#Record	58	-			
+#Record	59	Lab_25_Poison_Atk			
+#Record	60	-			
+#Record	61	-			
+#Record	62	Lab_25_Knock_Atk			
+#Record	63	-			
+#Record	64	-			
+#Record	65	Lab_25_Knock_Wide			
+#Record	66	-			
+#Record	67	-			
+#Record	68	Lab_25_Paralysis_Atk			
+#Record	69	-			
+#Record	70	-			
+#Record	71	Lab_25_Angry_Buf			
+#Record	72	-			
+#Record	73	-			
+#End					

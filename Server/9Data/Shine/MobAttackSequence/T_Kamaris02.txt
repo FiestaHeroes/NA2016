@@ -1,0 +1,20 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	T_Kamaris02_Wide0							
+#Record	1	T_Kamaris02_Wide0							
+#Record	2	T_Kamaris02_Wide0							
+#Record	3	T_Kamaris02_Wide0							
+#Record	4	T_Kamaris02_Wide0							
+#Record	5	T_Kamaris02_Wide0							
+#Record	6	-							
+#End									
+									

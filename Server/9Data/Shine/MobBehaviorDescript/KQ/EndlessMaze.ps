@@ -1,0 +1,198 @@
+open [RegenZaco]
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea01" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea02" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea03" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea04" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea05" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea07" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea08" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea10" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea11" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea12" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea13" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea14" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea15" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea16" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea17" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea18" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea19" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea20" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea21" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea22" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea24" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea25" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea26" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEnMaze" "KDEndless_MiroArea32" "Breeder" "EventManagerA".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [main]
+    var MyName.
+    var MyHandle.
+    myname MyName.
+    myhandle MyHandle.
+
+    var KQResult.
+
+    call MyName "DefRoutine".
+close
+
+open [DefRoutine]
+close
+
+open [WaitPlayerEntry]
+    var InitRest.
+    var CurRest.
+    kqrestminute InitRest.                ; 남은 시간을 분단위로 얻어옴
+
+    var Ply.
+    Ply = 0.
+    while Ply == 0
+    open
+        howmanymob Ply "Player".           ; 들어온 플레이어들 확인
+
+        kqrestminute CurRest.                ; 남은 시간을 분단위로 얻어옴
+        if InitRest - CurRest > 5       ; 5분간 대기
+        then
+        open
+            print "Room vanish".
+            endofevent KingdomQuest 0.       ; 킹덤퀘스트 실패로 마무리
+            break "main".
+        close
+    close
+close
+
+open [IsTimeUp]            ; 시간제한이 다 되었는지 확인
+    print "IsTimeUp".
+    var TimeUp.
+    kqrestminute TimeUp.                ; 남은 시간을 분단위로 얻어옴
+    print "EventManagerAIsTimeUp : " % TimeUp % "Minute left".
+    if TimeUp == 0                      ; 시간오버
+    then
+    open
+        print "IsTimeUp : Exit 0".
+        KQResult = "Fail".
+        break "MainLoop".
+    close
+
+    var Ply.
+    howmanymob Ply "Player".           ; 남아있는 플레이어들 확인
+    print "EventManagerAIsTimeUp : " % Ply % "Player left".
+    if Ply == 0
+    then
+    open
+        print "IsTimeUp : Exit 1".
+        KQResult = "Fail".
+        break "MainLoop".
+    close
+
+    var NumGoden.
+
+    howmanymob NumGoden "KQ_GorDonMaster".
+    if NumGoden == 0
+    then
+    open
+        print "IsTimeUp : Exit 2".
+        KQResult = "Success".
+        break "MainLoop".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [EventManagerA]
+
+    print "EventManagerA : Entry".
+
+    var CurMap.
+    currentmap CurMap.                  ; 현재 주인몹이 있는 맵 리턴
+
+    ; 플레이어가 들어오기를 기다림
+    call "WaitPlayerEntry".
+
+
+
+    ; 모든 몹 리젠
+    call "RegenZaco".
+
+    open [MainLoop]
+        infinite
+        open
+            call "IsTimeUp".
+        close
+    close
+
+    wait sec 3.
+    if KQResult === "Success"   ; 성공
+    then
+    open
+        reward KingdomQuest.         ; 리워드를 줌
+        broadcast all "고든마스터의 습격을 성공적으로 막아냈습니다.".
+        endofevent KingdomQuest 1.  ; 킹덤퀘스트 성공으로 마무리
+    close
+    else
+    open
+        broadcast all "고든마스터의 습격을 막는데 실패하였습니다.".
+        endofevent KingdomQuest 0.       ; 킹덤퀘스트 실패로 마무리
+    close
+
+    broadcast all "30초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "20초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "10초후 루멘으로 이동합니다.".
+    wait sec 5.
+    broadcast all "5초후 루멘으로 이동합니다.".
+    wait sec 5.
+    linkto all "Rou" "Rou" 7907 8572.
+
+    mapclear all.
+
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [KQ_GorDonMaster]
+    var MaxHP.
+    currenthp MaxHP.   ; 맥스 HP 측정
+
+    var NextSummonHPRate.
+    var NextTeleportHPRate.
+
+    NextSummonHPRate = 910.
+    NextTeleportHPRate = 800.
+
+    var CurHP.
+    var CurHPRate.
+    open [MainLoop]
+        infinite
+        open
+            currenthp CurHP.
+            CurHPRate = (CurHP * 1000) / MaxHP.   ; 주의 : 이런 수식은 뒤에서부터 실행됨!!!!
+
+            ; 소환체크
+            if CurHPRate < NextSummonHPRate
+            then
+            open
+                shout all "" "깨어나거라, 어둠의 존재들이여..".
+                mobsummon Aggressive "KQ_GorDon" 5 "Breeder" "KQ_GorDonMaster".
+                NextSummonHPRate = NextSummonHPRate - 91.
+            close
+
+            ; 텔레포트 체크
+            if CurHPRate < NextTeleportHPRate
+            then
+            open
+                shout all "" "어리석은 것들 같으니, 능력이 되면 날 찾아봐라.".
+                skillblast me "GoMasterTeleportStart".
+                NextTeleportHPRate = NextTeleportHPRate - 200.
+            close
+            call "IsTimeUp".
+        close
+    close
+
+    if KQResult === "Success"   ; 성공
+    then
+    open
+        shout All "" "안돼!!!!".
+    close
+    else
+    open
+        shout All "" "후후후, 오랜만에 질좋은 영혼들을 잔뜩 모았군...".
+    close
+close

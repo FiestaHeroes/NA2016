@@ -1,0 +1,129 @@
+; InitFlag = "CharName CharHandle StartBlockNumber"
+
+open [main]
+    var CharName            ""
+        CharHandle          ""
+        StartBlock          ""
+        InterruptBlock      ""
+        InterruptArg        "".
+
+    CharName = @RemoveFirst("InitFlag" " ").
+    CharHandle = @RemoveFirst("InitFlag" " ").
+    StartBlock = "Block" % InitFlag.
+
+    call StartBlock.
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Block121]     ; Mara
+    var Mara        0.
+
+    interruptset Sec "" 1 300 "Block121TimeOut".    ; 300초 후 발생하는 이벤트
+
+    ; 테스트용 좌표 
+      mobregen Mara "Mara" 4227 9327 0 1000 "Normal".  
+
+    ; 실테이타 
+    ; mobregen Mara "Mara" 3619 3786 0 1000 "Normal".   ; 마라 리젠
+
+    chatwinrange Mara 1000 "Scenario" "Mara01".                    ; 마라대사 범위 Mara로부터 1000 이내
+    pause Sec 3.                                               ; 3초간 대기한다.
+    chatwinrange Mara 1000 "Scenario" "Mara02".                    ; 마라대사 범위 Mara로부터 1000 이내
+
+    interruptset DeadHandle "" 1 Mara "Block121MaraDead".
+    interruptset DeadHandle "" 1 CharHandle "Block121PlayerDead".   ; 플레이어가 튕겼을 경우 퀘스트 실패(다시 들어올 경우 핸들이 바뀌므로 안됨)
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Block121TimeOut]    ; 300초 후 발생하는 이벤트
+    chatwinrange Mara 1000 "Scenario" "Mara00".                    ; 시간을 너무 지체했군. 잘있어라
+    vanish Mara.
+    returnvalue CharHandle 0.
+    break "main".
+close
+
+open [Block121MaraDead]
+    chatwinrange Mara 1000 "Scenario" "Mara03".
+    pause sec 2.
+    chatwinrange Robin 1000 "Scenario" "Robin01". 
+    pause sec 2.
+    chatwinrange Mara 1000 "Scenario" "Mara04".
+    pause sec 2.
+    chatwinrange Robin 1000 "Scenario" "Robin02". 
+    pause sec 2.
+    chatwinrange Mara 1000 "Scenario" "Mara05".
+    pause sec 2.
+    chatwinrange Mara 1000 "Scenario" "Mara06".
+    pause sec 2.
+    chatwinrange Robin 1000 "Scenario" "Robin03". 
+    pause sec 2.
+
+    returnvalue CharHandle 1. 
+    break "main".
+close
+
+open [Block121PlayerDead]
+    chatwinrange Mara 1000 "Scenario" "Mara20".                    ; 분수를 모르는 녀석, 죽어라!!
+    vanish Mara.
+    returnvalue CharHandle 0.
+    break "main".
+close
+
+ ; ---------------------------------------------------------- ;
+
+
+
+
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Block122]     ; Marlone
+    var Marlone        0.
+
+    interruptset Sec "" 1 300 "Block122TimeOut".    ; 300초 후 발생하는 이벤트
+
+    mobregen Marlone "Marlone"   3619 3786 0 1000 "Normal".   
+
+    chatwinrange Marlone 1000 "Scenario" "Marlone02".                    
+    pause Sec 2.     
+
+    ; chatwinrange User 1000 "Scenario" "User01".                  
+    ; pause Sec 2.     
+
+    interruptset DeadHandle "" 1 Marlone "Block122MarloneDead".
+    interruptset DeadHandle "" 1 CharHandle "Block122PlayerDead".       ; 플레이어가 튕겼을 경우 퀘스트 실패(다시 들어올 경우 핸들이 바뀌므로 안됨)
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Block122TimeOut]    ; 300초 후 발생하는 이벤트
+    chatwinrange Marlone 1000 "Scenario" "Marlone01".                    ; 시간을 너무 지체했군. 잘있어라
+    vanish Marlone.
+    returnvalue CharHandle 0.
+    break "main".
+close
+
+open [Block122MarloneDead]
+    chatwinrange Marlone 1000 "Scenario" "Marlone01".                    ; 내가 지다니...
+    returnvalue CharHandle 1.
+    break "main".
+close
+
+open [Block122PlayerDead]
+    chatwinrange Marlone 1000 "Scenario" "Marlone01".                    ; 분수를 모르는 녀석, 죽어라!!
+    vanish Marlone.
+    returnvalue CharHandle 0.
+    break "main".
+close

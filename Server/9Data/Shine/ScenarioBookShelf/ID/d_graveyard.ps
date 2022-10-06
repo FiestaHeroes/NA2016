@@ -1,0 +1,451 @@
+open [main]
+	var	Door1_1		""
+		Door1_2		""
+		Door2		""
+		Door3		""
+		Door4_1		""
+		Door4_2		""
+		DoorBoss	""
+		
+		InterruptBlock	""
+		InterruptArg	""
+		
+		SilverKey		"SilverKey"
+		GoldKey			"GoldKey"
+		
+		Opener	""
+		Slot	""
+		
+    ReturnGate  ""
+		Gate	""
+		
+		GiantMagmaton01	""
+		BigMudMan02		""
+		FireTaitan03	""
+		Weasel04		""
+		Boss			"".
+
+	doorbuild	Door1_1		"DBossDoor01"	4368	10143	5	2500	"Normal".
+	doorclose	Door1_1		"DoorBlock01".
+	doorbuild	Door1_2		"DBossDoor01_1"	5690	10122	0	2500	"Normal".
+	doorclose	Door1_2		"DoorBlock01_1".
+	doorbuild	Door2		"DBossDoor02"	7861	9793	60	2800	"Normal".
+	doorclose	Door2		"DoorBlock02".
+	doorbuild	Door3		"DBossDoor03"	4102	2251	72	2800	"Normal".
+	doorclose	Door3		"DoorBlock03".
+	doorbuild	Door4_1		"DBossDoor04"	6262	1810	345	2500	"Normal".
+	doorclose	Door4_1		"DoorBlock04".
+	doorbuild	Door4_2		"DBossDoor04_1"	7411	2383	338	2500	"Normal".
+	doorclose	Door4_2		"DoorBlock04_1".
+	
+	doorbuild	DoorBoss	"DBossDoor00"	10589	5269	338	2500	"Normal".
+	doorclose	DoorBoss	"DoorBlock05".
+	
+	scriptfile	"D_Graveyard".
+
+  npcstand		ReturnGate			"IDMapLinkGate02" 626 5783 270	1000	"Normal".
+	
+	call "RegenMob".
+	call "SetInterrupt".
+	call "MainLoop".
+close
+
+open [RegenMob]
+	regengroup	"UrgDragon"	"ID_DragonNomal01".
+	regengroup	"UrgDragon"	"ID_DragonNomal02".
+	regengroup	"UrgDragon"	"ID_DragonNomal03".
+	regengroup	"UrgDragon"	"ID_DragonNomal04".
+	regengroup	"UrgDragon"	"ID_DragonNomal05".
+	regengroup	"UrgDragon"	"ID_DragonNomal06".
+	regengroup	"UrgDragon"	"ID_DragonNomal07".
+	regengroup	"UrgDragon"	"ID_DragonNomal08".
+	regengroup	"UrgDragon"	"ID_DragonNomal09".
+	regengroup	"UrgDragon"	"ID_DragonNomal10".
+	regengroup	"UrgDragon"	"ID_DragonNomal11".
+	regengroup	"UrgDragon"	"ID_DragonNomal12".
+	regengroup	"UrgDragon"	"ID_DragonNomal13".
+	regengroup	"UrgDragon"	"ID_DragonNomal14".
+	regengroup	"UrgDragon"	"ID_DragonNomal15".
+	regengroup	"UrgDragon"	"ID_DragonNomal16".
+	regengroup	"UrgDragon"	"ID_DragonNomal17".
+	regengroup	"UrgDragon"	"ID_DragonNomal18".
+	regengroup	"UrgDragon"	"ID_DragonNomal19".
+	regengroup	"UrgDragon"	"ID_DragonNomal20".
+	regengroup	"UrgDragon"	"ID_Dragon01".
+	regengroup	"UrgDragon"	"ID_Dragon02".
+	regengroup	"UrgDragon"	"ID_Dragon03".
+	regengroup	"UrgDragon"	"ID_Dragon04".
+	regengroup	"UrgDragon"	"ID_Dragon06".
+	regengroup	"UrgDragon"	"ID_Dragon07".
+	regengroup	"UrgDragon"	"ID_Dragon08".
+	regengroup	"UrgDragon"	"ID_Dragon09".
+	regengroup	"UrgDragon"	"ID_Dragon11".
+	regengroup	"UrgDragon"	"ID_Dragon12".
+	regengroup	"UrgDragon"	"ID_Dragon13".
+	regengroup	"UrgDragon"	"ID_Dragon15".
+	regengroup	"UrgDragon"	"ID_Dragon16".
+	regengroup	"UrgDragon"	"ID_Dragon17".
+	regengroup	"UrgDragon"	"ID_Dragon18".
+	regengroup	"UrgDragon"	"ID_Dragon19".
+	regengroup	"UrgDragon"	"ID_Dragon21".
+	regengroup	"UrgDragon"	"ID_Dragon22".
+	regengroup	"UrgDragon"	"ID_Dragon23".
+	regengroup	"UrgDragon"	"ID_Dragon25".
+	regengroup	"UrgDragon"	"ID_Dragon26".
+	regengroup	"UrgDragon"	"ID_Dragon27".
+	regengroup	"UrgDragon"	"ID_Dragon28".
+	regengroup	"UrgDragon"	"ID_Dragon29".
+	regengroup	"UrgDragon"	"ID_Dragon30".
+	regengroup	"UrgDragon"	"ID_Dragon31".
+	regengroup	"UrgDragon"	"ID_Dragon32".
+	regengroup	"UrgDragon"	"ID_Dragon33".
+	regengroup	"UrgDragon"	"ID_Dragon34".
+	regengroup	"UrgDragon"	"ID_Dragon36".
+	regengroup	"UrgDragon"	"ID_Dragon37".
+	regengroup	"UrgDragon"	"ID_Dragon42".
+	regengroup	"UrgDragon"	"ID_Dragon43".
+	regengroup	"UrgDragon"	"ID_Dragon44".
+	regengroup	"UrgDragon"	"ID_Dragon45".
+	regengroup	"UrgDragon"	"ID_Dragon48".
+	regengroup	"UrgDragon"	"ID_Dragon49".
+	regengroup	"UrgDragon"	"ID_Dragon50".
+	regengroup	"UrgDragon"	"ID_PresentBox01".
+	regengroup	"UrgDragon"	"ID_PresentBox02".
+	regengroup	"UrgDragon"	"ID_PresentBox03".
+	regengroup	"UrgDragon"	"ID_PresentBox04".
+	regengroup	"UrgDragon"	"ID_PresentBox05".
+	regengroup	"UrgDragon"	"ID_MINE01".
+
+;	mobregen GiantMagmaton01	"ID_GiantMagmaton"		5047	10144	53	1000	"Normal".
+;	mobregen BigMudMan02		"ID_BigMudMan"			8213	9051	53	1000	"Normal".
+;	mobregen FireTaitan03		"ID_FireTaitan"			3916	3043	53	1000	"Normal".
+;	mobregen Weasel04			"ID_Weasel"				6832	2225	53	1000	"Normal".
+;	mobregen Boss				"ID_FandomCornelius"	11330	4194	53	1000	"Normal".
+
+close
+
+open [SetInterrupt]
+	interruptclear.
+  
+	interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+	
+	interruptset	NPCClickHandle	"Door1_1Click"	99999	Door1_1			"onDoor1Click".
+	interruptset	NPCClickHandle	"Door1_2Click"	99999	Door1_2			"onDoor1Click".
+
+	interruptset	NPCClickHandle	"Door2Click"	99999	Door2			"onDoor2Click".
+	
+	interruptset	NPCClickHandle	"Door3Click"	99999	Door3			"onDoor3Click".
+	
+	interruptset	NPCClickHandle	"Door4_1Click"	99999	Door4_1			"onDoor4Click".
+	interruptset	NPCClickHandle	"Door4_2Click"	99999	Door4_2			"onDoor4Click".
+	
+	interruptset	NPCClickHandle	"DoorBossClick"	99999	DoorBoss		"onDoorBossClick".
+close
+
+open [onDoor1Click]
+	whoclickme Opener InterruptArg.
+	invensearch Slot Opener SilverKey.
+	if Slot =!= ""
+	then open
+		itemerase		Opener	SilverKey	1.
+		interrupterase	"Door1_1Click".
+		interrupterase	"Door1_2Click".
+;		interruptset	AreaEntry		"Area1Enter"	1	"ID_UrgDragonArea"	"onArea1Enter".
+		dooropen Door1_1	"DoorBlock01".
+		dooropen Door1_2	"DoorBlock01_1".
+		
+		regengroup	"UrgDragon"	"ID_Boss1".
+		regengroup	"UrgDragon"	"ID_Dragon24".
+		regengroup	"UrgDragon"	"ID_Dragon41".
+		
+		pause sec 10.
+		findhandle  GiantMagmaton01 "ID_GiantMagmaton"    0.
+		interruptset	HPLow	"GiantMagmaton01HPLow"	1	GiantMagmaton01		200	"onGiantMagmaton01_HP20Percent".
+	close
+  else open
+    broadcast handle  "NoKey" Opener.
+  close
+close
+
+open [onArea1Enter]
+	interruptset	Sec		"Area1Leave"	99999	10	"onArea1Loop".
+close
+
+open [onArea1Loop]
+	if @PlayerInArea("player" "ID_UrgDragonArea") <= 0
+	then open
+		interrupterase	"Area1Leave".
+		interruptset	Sec		"Area1Leave2"	1	20	"onArea1Loop2".
+	close
+close
+
+open [onArea1Loop2]
+	if @PlayerInArea("player" "ID_UrgDragonArea") <= 0
+	then open
+		doorclose Door1_1 "DoorBlock01".
+		doorclose Door1_2 "DoorBlock01_1".
+		interruptset	NPCClickHandle	"Door1_1Click"	99999	Door1_1			"onDoor1Click".
+		interruptset	NPCClickHandle	"Door1_2Click"	99999	Door1_2			"onDoor1Click".
+	close
+	else open
+		call	"onArea1Enter".
+	close
+close
+
+open [onDoor2Click]
+	whoclickme Opener InterruptArg.
+	invensearch Slot Opener SilverKey.
+	if Slot =!= ""
+	then open
+		itemerase		Opener	SilverKey	1.
+		interrupterase	"Door2Click".
+;		interruptset	AreaEntry		"Area2Enter"	1	"ID_UrgDragonArea1"	"onArea2Enter".
+		dooropen Door2	"DoorBlock02".
+		
+		regengroup	"UrgDragon"	"ID_Boss2".
+		regengroup	"UrgDragon"	"ID_Dragon14".
+		regengroup	"UrgDragon"	"ID_Dragon35".
+		
+		pause sec 10.
+		findhandle  BigMudMan02     "ID_BigMudMan"        0.
+		interruptset	HPLow	"BigMudMan02HPLow"		1	BigMudMan02			200	"onBigMudMan02_HP20Percent".
+	close
+  else open
+    broadcast handle  "NoKey" Opener.
+  close
+close
+
+open [onArea2Enter]
+	interruptset	Sec		"Area2Leave"	99999	10	"onArea2Loop".
+close
+
+open [onArea2Loop]
+	if @PlayerInArea("player" "ID_UrgDragonArea1") <= 0
+	then open
+		interrupterase	"Area2Leave".
+		interruptset	Sec		"Area2Leave2"	1	20	"onArea2Loop2".
+	close
+close
+
+open [onArea2Loop2]
+	if @PlayerInArea("player" "ID_UrgDragonArea1") <= 0
+	then open
+		doorclose Door2 "DoorBlock02".
+		interruptset	NPCClickHandle	"Door2Click"	99999	Door2			"onDoor2Click".
+	close
+	else open
+		call	"onArea2Enter".
+	close
+close
+
+open [onDoor3Click]
+	whoclickme Opener InterruptArg.
+	invensearch Slot Opener SilverKey.
+	if Slot =!= ""
+	then open
+		itemerase		Opener	SilverKey	1.
+		interrupterase	"Door3Click".
+;		interruptset	AreaEntry		"Area3Enter"	1	"ID_UrgDragonArea2"	"onArea3Enter".
+		dooropen Door3	"DoorBlock03".
+		
+		regengroup	"UrgDragon"	"ID_Boss3".
+		regengroup	"UrgDragon"	"ID_Dragon05".
+		regengroup	"UrgDragon"	"ID_Dragon38".
+		
+		pause sec 10.
+		findhandle  FireTaitan03    "ID_FireTaitan"       0.
+		interruptset	HPLow	"FireTaitan03HPLow"		1	FireTaitan03		200	"onFireTaitan03_HP20Percent".
+	close
+  else open
+    broadcast handle  "NoKey" Opener.
+  close
+close
+
+open [onArea3Enter]
+	interruptset	Sec		"Area3Leave"	99999	10	"onArea3Loop".
+close
+
+open [onArea3Loop]
+	if @PlayerInArea("player" "ID_UrgDragonArea2") <= 0
+	then open
+		interrupterase	"Area3Leave".
+		interruptset	Sec		"Area3Leave2"	1	20	"onArea3Loop2".
+	close
+close
+
+open [onArea3Loop2]
+	if @PlayerInArea("player" "ID_UrgDragonArea2") <= 0
+	then open
+		doorclose Door3 "DoorBlock03".
+		interruptset	NPCClickHandle	"Door3Click"	99999	Door3			"onDoor3Click".
+	close
+	else open
+		call	"onArea3Enter".
+	close
+close
+
+open [onDoor4Click]
+	whoclickme Opener InterruptArg.
+	invensearch Slot Opener SilverKey.
+	if Slot =!= ""
+	then open
+		itemerase		Opener	SilverKey	1.
+		interrupterase	"Door4_1Click".
+		interrupterase	"Door4_2Click".
+;		interruptset	AreaEntry		"Area4Enter"	1	"ID_UrgDragonArea3"	"onArea4Enter".
+		dooropen Door4_1	"DoorBlock04".
+		dooropen Door4_2	"DoorBlock04_1".
+		
+		regengroup	"UrgDragon"	"ID_Boss4".
+		regengroup	"UrgDragon"	"ID_Dragon20".
+		regengroup	"UrgDragon"	"ID_Dragon39".
+		regengroup	"UrgDragon"	"ID_Dragon46".
+		
+		pause sec 10.
+		findhandle  Weasel04        "ID_Weasel"           0.
+		interruptset	HPLow	"Weasel04HPLow"			1	Weasel04			200	"onWeasel04_HP20Percent".
+	close
+  else open
+    broadcast handle  "NoKey" Opener.
+  close
+close
+
+open [onArea4Enter]
+	interruptset	Sec		"Area4Leave"	99999	10	"onArea4Loop".
+close
+
+open [onArea4Loop]
+	if @PlayerInArea("player" "ID_UrgDragonArea3") <= 0
+	then open
+		interrupterase	"Area4Leave".
+		interruptset	Sec		"Area4Leave2"	1	20	"onArea4Loop2".
+	close
+close
+
+open [onArea4Loop2]
+	if @PlayerInArea("player" "ID_UrgDragonArea3") <= 0
+	then open
+		doorclose Door4_1 "DoorBlock04".
+		doorclose Door4_2 "DoorBlock04_1".
+		interruptset	NPCClickHandle	"Door4_1Click"	99999	Door4_1			"onDoor4Click".
+		interruptset	NPCClickHandle	"Door4_2Click"	99999	Door4_2			"onDoor4Click".
+	close
+	else open
+		call	"onArea4Enter".
+	close
+close
+
+open [onDoorBossClick]
+	whoclickme Opener InterruptArg.
+	invensearch Slot Opener GoldKey.
+	if Slot =!= "" then
+	open
+		itemerase		Opener	GoldKey	1.
+		interrupterase	"DoorBossClick".
+;		interruptset	AreaEntry		"AreaBossEnter"	1	"ID_UrgDragonArea4"	"onAreaBossEnter".
+		dooropen DoorBoss	"DoorBlock05".
+		
+		regengroup	"UrgDragon"	"ID_Boss5".
+		regengroup	"UrgDragon"	"ID_Dragon10".
+		regengroup	"UrgDragon"	"ID_Dragon40".
+		regengroup	"UrgDragon"	"ID_Dragon47".
+		
+		pause sec 10.
+		findhandle  Boss            "ID_FandomCornelius"  0.
+		interruptset	HPLow	"BossHPLow"				1	Boss				500	"onBoss_HP50Percent".
+	close
+  else open
+    broadcast handle  "NoKey" Opener.
+  close
+close
+
+open [onAreaBossEnter]
+	interruptset	Sec		"AreaBossLeave"	99999	10	"onAreaBossLoop".
+close
+
+open [onAreaBossLoop]
+	if @PlayerInArea("player" "ID_UrgDragonArea4") <= 0
+	then open
+		interrupterase	"AreaBossLeave".
+		interruptset	Sec		"AreaBossLeave2"	1	20	"onAreaBossLoop2".
+	close
+close
+
+open [onAreaBossLoop2]
+	if @PlayerInArea("player" "ID_UrgDragonArea4") <= 0
+	then open
+		doorclose DoorBoss "DoorBlock05".
+		interruptset	NPCClickHandle	"DoorBossClick"	99999	DoorBoss		"onDoorBossClick".
+	close
+	else open
+		call	"onAreaBossEnter".
+	close
+close
+
+
+open [onGiantMagmaton01_HP20Percent]
+  waitidle.
+  animate GiantMagmaton01  "GiantMagmaTon_skill01".
+  summonmob		GiantMagmaton01	"ID_EarthCalerben"	2.
+close
+
+open [onBigMudMan02_HP20Percent]
+  waitidle.
+  animate BigMudMan02  "BigMudMan_skill".
+  summonmob		BigMudMan02		"ID_EarthCalerben"	2.
+close
+
+open [onFireTaitan03_HP20Percent]
+  waitidle.
+  animate FireTaitan03  "FireTaitan_skill".
+  summonmob		FireTaitan03	"ID_EarthCalerben"	2.
+close
+
+open [onWeasel04_HP20Percent]
+  waitidle.
+  animate Weasel04  "Weasel_skill".
+  summonmob		Weasel04		"ID_EarthCalerben"	2.
+close
+
+open [onBoss_HP50Percent]
+  waitidle.
+  animate Boss  "Dragonneut_Skill3".
+  summonmob		Boss			"ID_FireShella"	3.
+	interruptset	HPLow			"BossHPLow2"	1	Boss	300	"onBoss_HP30Percent".
+close
+
+open [onBoss_HP30Percent]
+  waitidle.
+  animate Boss  "Dragonneut_Skill3".
+  summonmob		Boss			"ID_EarthNerpa"	3.
+	interruptset	DeadHandle		"BossDead"		1	Boss	"onBoss_Dead".
+close
+
+open [onBoss_Dead]
+	chatwin	"ID_FandomCornelius"	"DeathCry".
+	npcstand		Gate			"C_Gate01"	11564	3804	151	1000	"Normal".
+	interruptset	NPCClickHandle	"GateClick"		1	Gate		"onGateClick".
+        questmobkill 2665 "Daliy_Check_d_graveyard" 5.
+close
+
+open [onGateClick]
+  var mclicker 0.
+  whoclickme mclicker InterruptArg.
+	linkto	mclicker	"UrgFire01"	"UrgFire01"	22181 22973.
+  interruptset	NPCClickHandle	"GateClick"		1	Gate		"onGateClick".
+close
+
+open [onReturnGateClick]
+  var mclicker 0.
+  whoclickme mclicker InterruptArg.
+	linkto	mclicker	"UrgFire01"	"UrgFire01"	22181 22973.
+  interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+close
+
+open [MainLoop]
+	infinite
+	open
+		waitinterrupt InterruptBlock "InterruptArg".
+		call InterruptBlock.
+	close
+close

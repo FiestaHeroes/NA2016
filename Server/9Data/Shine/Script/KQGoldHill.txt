@@ -1,0 +1,35 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Intro0	"You, stupid and covetous fool, there is no such gold that you are looking for."	
+#Record	Intro1	It was just a trick to make Haness show up.	
+#Record	Intro2	"Muhaha, since killing you all now seems boring, I'll give you a chance. I hid a key in ore. You go find it and bring to be."	
+			
+#Record	FirstGateOpen	"It isn't easy to find the key. But if you look carefully among the minerals, you will find it. No need to hurry."	
+			
+#Record	SecondGateOpen	"Are my soldiers disturbing you? They will take real good care of you, Hahahah!"	
+			
+#Record	ThirdGateOpen	I grow tiresome of waiting for you.  Are you still on the top floor?? You are not even worth the name of Heneath expedition.
+		
+#Record	LastGateOpen0	Hurry up and get down here…Huh? When did you get here?
+#Record	LastGateOpen1	"As long as I am standing here, you cannot leave."
+		
+;	2005년 5월 26일 추가	
+#Record	ItemDrop	The hidden key has been discovered.
+		
+;	KQ 임시	
+#Record	KQReturn30	Move to Elderine in 30 seconds.
+#Record	KQReturn20	Move to Elderine in 20 seconds.
+#Record	KQReturn10	Move to Elderine in 10 seconds.
+#Record	KQReturn5	Move to Elderine in 5 seconds.
+
+#End		
+
+
+		
+		

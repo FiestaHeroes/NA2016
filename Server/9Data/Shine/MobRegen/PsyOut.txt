@@ -1,0 +1,468 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		PsyOut_001	N	9392	13763	0	0	300									
+#record		PsyOut_002	N	10324	14666	0	0	300									
+#record		PsyOut_003	N	9619	14449	0	0	300									
+#record		PsyOut_004	N	8921	15059	0	0	300									
+#record		PsyOut_005	N	8240	14486	0	0	300									
+#record		PsyOut_006	N	7400	14489	0	0	300									
+#record		PsyOut_007	N	7836	13849	0	0	300									
+#record		PsyOut_008	N	8893	15774	0	0	300									
+#record		PsyOut_009	N	8195	15251	0	0	300									
+#record		PsyOut_010	N	7452	15299	0	0	300									
+#record		PsyOut_011	N	8177	15986	0	0	300									
+#record		PsyOut_012	N	7792	16636	0	0	300									
+#record		PsyOut_013	N	7471	16003	0	0	300									
+#record		PsyOut_014	N	10108	13946	0	0	300									
+#record		PsyOut_015	N	10821	14046	0	0	300									
+#record		PsyOut_016	N	8962	14355	0	0	300									
+#record		PsyOut_017	N	8571	13790	0	0	300									
+#record		PsyOut_018	N	8317	13155	0	0	300									
+#record		PsyOut_019	N	9021	13189	0	0	300									
+#record		PsyOut_020	N	9859	13246	0	0	300									
+#record		PsyOut_021	N	10570	13320	0	0	300									
+#record		PsyOut_022	N	8780	12524	0	0	300									
+#record		PsyOut_023	N	9406	12573	0	0	300									
+#record		PsyOut_024	N	10151	12598	0	0	300									
+#record		PsyOut_025	N	10864	12655	0	0	300									
+#record		PsyOut_026	N	10598	11969	0	0	300									
+#record		PsyOut_027	N	9861	11943	0	0	300									
+#record		PsyOut_028	N	9182	11868	0	0	300									
+#record		PsyOut_029	N	10072	11329	0	0	300									
+#record		PsyOut_030	N	10740	11230	0	0	300									
+#record		PsyOut_031	N	6449	14650	0	0	300									
+#record		PsyOut_032	N	5480	14574	0	0	300									
+#record		PsyOut_033	N	7230	12815	0	0	300									
+#record		PsyOut_034	N	6503	12273	0	0	300									
+#record		PsyOut_035	N	8491	11139	0	0	300									
+#record		PsyOut_036	N	7823	10392	0	0	300									
+#record		PsyOut_037	N	10194	10154	0	0	300									
+#record		PsyOut_038	N	10209	9224	0	0	300									
+#record		PsyOut_039	N	4707	14441	0	0	300									
+#record		PsyOut_040	N	4630	13729	0	0	300									
+#record		PsyOut_041	N	4830	13021	0	0	300									
+#record		PsyOut_042	N	5094	12374	0	0	300									
+#record		PsyOut_043	N	5541	11704	0	0	300									
+#record		PsyOut_044	N	5867	11068	0	0	300									
+#record		PsyOut_045	N	6327	10526	0	0	300									
+#record		PsyOut_046	N	6821	9988	0	0	300									
+#record		PsyOut_047	N	7259	9451	0	0	300									
+#record		PsyOut_048	N	7909	9055	0	0	300									
+#record		PsyOut_049	N	8646	8752	0	0	300									
+#record		PsyOut_050	N	9303	8506	0	0	300									
+#record		PsyOut_051	N	9981	8286	0	0	300									
+#record		PsyOut_052	N	7952	7917	0	0	300									
+#record		PsyOut_053	N	8692	7620	0	0	300									
+#record		PsyOut_054	N	8440	6936	0	0	300									
+#record		PsyOut_055	N	7711	7220	0	0	300									
+#record		PsyOut_056	N	5717	9562	0	0	300									
+#record		PsyOut_057	N	5169	9047	0	0	300									
+#record		PsyOut_058	N	5200	10123	0	0	300									
+#record		PsyOut_059	N	4698	9674	0	0	300									
+#record		PsyOut_060	N	3654	13138	0	0	300									
+#record		PsyOut_061	N	3902	12423	0	0	300									
+#record		PsyOut_062	N	2997	12956	0	0	300									
+#record		PsyOut_063	N	3211	12209	0	0	300									
+#record		PsyOut_064	N	2736	13766	0	0	300									
+#record		PsyOut_065	N	3449	13974	0	0	300									
+#record		PsyOut_066	N	3456	11362	0	0	300									
+#record		PsyOut_067	N	4148	11620	0	0	300									
+#record		PsyOut_068	N	4180	10366	0	0	300									
+#record		PsyOut_069	N	4772	10824	0	0	300									
+#record		PsyOut_070	N	5702	8509	0	0	300									
+#record		PsyOut_071	N	6261	8944	0	0	300									
+#record		PsyOut_072	N	9392	7334	0	0	300									
+#record		PsyOut_073	N	9106	6618	0	0	300									
+#record		PsyOut_074	N	7226	8114	0	0	300									
+#record		PsyOut_075	N	6853	7464	0	0	300									
+#record		PsyOut_076	N	6982	8812	0	0	300									
+#record		PsyOut_077	N	6464	8245	0	0	300									
+#record		PsyOut_078	N	6006	7691	0	0	300									
+#record		PsyOut_079	N	10094	7491	0	0	300									
+#record		PsyOut_080	N	9979	6788	0	0	300									
+#record		PsyOut_081	N	9807	6214	0	0	300									
+#record		PsyOut_082	N	4882	11483	0	0	300									
+#record		PsyOut_083	N	4165	10993	0	0	300									
+#record		PsyOut_084	N	3568	10691	0	0	300									
+#record		PsyOut_085	N	3931	14445	0	0	300									
+#record		PsyOut_086	N	2959	14331	0	0	300									
+#record		PsyOut_087	N	2052	13879	0	0	300									
+#record		PsyOut_088	N	13355	10119	0	0	300									
+#record		PsyOut_089	N	13355	9158	0	0	300									
+#record		PsyOut_090	N	15071	11032	0	0	300									
+#record		PsyOut_091	N	15754	10349	0	0	300									
+#record		PsyOut_092	N	16467	12747	0	0	300									
+#record		PsyOut_093	N	17234	12182	0	0	300									
+#record		PsyOut_094	N	17153	14671	0	0	300									
+#record		PsyOut_095	N	18186	14604	0	0	300									
+#record		PsyOut_096	N	18982	14530	0	0	300									
+#record		PsyOut_097	N	18946	13838	0	0	300									
+#record		PsyOut_098	N	18773	13092	0	0	300									
+#record		PsyOut_099	N	18495	12432	0	0	300									
+#record		PsyOut_100	N	18126	11837	0	0	300									
+#record		PsyOut_101	N	17689	11261	0	0	300									
+#record		PsyOut_102	N	17253	10659	0	0	300									
+#record		PsyOut_103	N	16825	10096	0	0	300									
+#record		PsyOut_104	N	16335	9551	0	0	300									
+#record		PsyOut_105	N	15757	9102	0	0	300									
+#record		PsyOut_106	N	15073	8833	0	0	300									
+#record		PsyOut_107	N	14361	8585	0	0	300									
+#record		PsyOut_108	N	13610	8382	0	0	300									
+#record		PsyOut_109	N	14900	7657	0	0	300									
+#record		PsyOut_110	N	15625	7871	0	0	300									
+#record		PsyOut_111	N	15176	6989	0	0	300									
+#record		PsyOut_112	N	15958	7226	0	0	300									
+#record		PsyOut_113	N	17827	9572	0	0	300									
+#record		PsyOut_114	N	18403	10154	0	0	300									
+#record		PsyOut_115	N	18443	9062	0	0	300									
+#record		PsyOut_116	N	18903	9661	0	0	300									
+#record		PsyOut_117	N	19738	12384	0	0	300									
+#record		PsyOut_118	N	19954	13178	0	0	300									
+#record		PsyOut_119	N	20674	13044	0	0	300									
+#record		PsyOut_120	N	20435	12234	0	0	300									
+#record		PsyOut_121	N	20113	13909	0	0	300									
+#record		PsyOut_122	N	20847	13755	0	0	300									
+#record		PsyOut_123	N	19551	11644	0	0	300									
+#record		PsyOut_124	N	20210	11480	0	0	300									
+#record		PsyOut_125	N	18919	10670	0	0	300									
+#record		PsyOut_126	N	19426	10262	0	0	300									
+#record		PsyOut_127	N	17354	8965	0	0	300									
+#record		PsyOut_128	N	17897	8509	0	0	300									
+#record		PsyOut_129	N	16407	8138	0	0	300									
+#record		PsyOut_130	N	16628	7487	0	0	300									
+#record		PsyOut_131	N	14262	7440	0	0	300									
+#record		PsyOut_132	N	14512	6642	0	0	300									
+#record		PsyOut_133	N	13662	7516	0	0	300									
+#record		PsyOut_134	N	13847	6727	0	0	300									
+#record		PsyOut_135	N	14013	5873	0	0	300									
+#record		PsyOut_136	N	16602	8838	0	0	300									
+#record		PsyOut_137	N	17136	8179	0	0	300									
+#record		PsyOut_138	N	17558	7594	0	0	300									
+#record		PsyOut_139	N	18778	11482	0	0	300									
+#record		PsyOut_140	N	19509	11014	0	0	300									
+#record		PsyOut_141	N	20082	10666	0	0	300									
+#record		PsyOut_142	N	19704	14430	0	0	300									
+#record		PsyOut_143	N	20526	14355	0	0	300									
+#record		PsyOut_144	N	21515	13822	0	0	300									
+#record		PsyOut_145	N	15833	16462	0	0	300									
+#record		PsyOut_146	N	16193	15834	0	0	300									
+#record		PsyOut_147	N	15422	15881	0	0	300									
+#record		PsyOut_148	N	14746	15839	0	0	300									
+#record		PsyOut_149	N	14706	15075	0	0	300									
+#record		PsyOut_150	N	15488	15111	0	0	300									
+#record		PsyOut_151	N	16271	15079	0	0	300									
+#record		PsyOut_152	N	13328	14616	0	0	300									
+#record		PsyOut_153	N	14155	14384	0	0	300									
+#record		PsyOut_154	N	14883	14377	0	0	300									
+#record		PsyOut_155	N	15502	14339	0	0	300									
+#record		PsyOut_156	N	16292	14330	0	0	300									
+#record		PsyOut_157	N	15784	13611	0	0	300									
+#record		PsyOut_158	N	14995	13652	0	0	300									
+#record		PsyOut_159	N	14317	13666	0	0	300									
+#record		PsyOut_160	N	13555	13885	0	0	300									
+#record		PsyOut_161	N	12808	13894	0	0	300									
+#record		PsyOut_162	N	12973	13153	0	0	300									
+#record		PsyOut_163	N	13770	13144	0	0	300									
+#record		PsyOut_164	N	14613	13000	0	0	300									
+#record		PsyOut_165	N	15410	13004	0	0	300									
+#record		PsyOut_166	N	14861	12427	0	0	300									
+#record		PsyOut_167	N	14154	12460	0	0	300									
+#record		PsyOut_168	N	13446	12494	0	0	300									
+#record		PsyOut_169	N	12740	12478	0	0	300									
+#record		PsyOut_170	N	14513	11737	0	0	300									
+#record		PsyOut_171	N	13760	11766	0	0	300									
+#record		PsyOut_172	N	12996	11797	0	0	300									
+#record		PsyOut_173	N	13388	11148	0	0	300									
+#record		PsyOut_174	N	12683	11157	0	0	300									
+#record		WOOD1	N	3010	11806	0	0	300									
+#record		WOOD2	N	3237	13417	0	0	300									
+#record		WOOD3	N	2576	13253	0	0	300									
+#record		WOOD4	N	4119	12889	0	0	300									
+#record		WOOD5	N	3509	12623	0	0	300									
+#record		WOOD6	N	2834	12497	0	0	300									
+#record		WOOD7	N	4296	12151	0	0	300									
+#record		WOOD8	N	3723	11917	0	0	300									
+#record		WOOD9	N	5209	10616	0	0	300									
+#record		WOOD10	N	5184	8548	0	0	300									
+#record		WOOD11	N	5754	10052	0	0	300									
+#record		WOOD12	N	6315	9514	0	0	300									
+#record		WOOD13	N	4745	10238	0	0	300									
+#record		WOOD14	N	5283	9591	0	0	300									
+#record		WOOD15	N	5722	9020	0	0	300									
+#record		WOOD16	N	4163	9722	0	0	300									
+#record		WOOD17	N	4690	9173	0	0	300									
+#record		WOOD18	N	7731	8295	0	0	300									
+#record		WOOD19	N	8456	8042	0	0	300									
+#record		WOOD20	N	8630	6421	0	0	300									
+#record		WOOD21	N	7423	7659	0	0	300									
+#record		WOOD22	N	8147	7429	0	0	300									
+#record		WOOD23	N	8883	7166	0	0	300									
+#record		WOOD24	N	7237	7000	0	0	300									
+#record		WOOD25	N	7983	6704	0	0	300									
+#record		WOOD26	N	15368	7428	0	0	300									
+#record		WOOD27	N	15896	8315	0	0	300									
+#record		WOOD28	N	16210	7734	0	0	300									
+#record		WOOD29	N	15161	8085	0	0	300									
+#record		WOOD30	N	14629	7144	0	0	300									
+#record		WOOD31	N	14989	6480	0	0	300									
+#record		WOOD32	N	15691	6765	0	0	300									
+#record		WOOD33	N	16506	7011	0	0	300									
+#record		WOOD34	N	17327	9486	0	0	300									
+#record		WOOD35	N	17843	10078	0	0	300									
+#record		WOOD36	N	18366	10658	0	0	300									
+#record		WOOD37	N	17863	9046	0	0	300									
+#record		WOOD38	N	18383	9601	0	0	300									
+#record		WOOD39	N	18906	10179	0	0	300									
+#record		WOOD40	N	18366	8613	0	0	300									
+#record		WOOD41	N	18979	9129	0	0	300									
+#record		WOOD42	N	19468	9818	0	0	300									
+#record		WOOD43	N	19332	12122	0	0	300									
+#record		WOOD44	N	19542	12929	0	0	300									
+#record		WOOD45	N	19957	11947	0	0	300									
+#record		WOOD46	N	20207	12694	0	0	300									
+#record		WOOD47	N	20364	13465	0	0	300									
+#record		WOOD48	N	20995	13311	0	0	300									
+#record		WOOD49	N	20858	12542	0	0	300									
+#record		WOOD50	N	20701	11777	0	0	300									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		PsyOut_001	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_002	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_003	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_004	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_005	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_006	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_007	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_008	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_009	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_010	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_011	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_012	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_013	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_014	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_015	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_016	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_017	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_018	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_019	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_020	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_021	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_022	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_023	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_024	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_025	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_026	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_027	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_028	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_029	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_030	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_031	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_032	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_033	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_034	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_035	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_036	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_037	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_038	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_039	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_040	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_041	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_042	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_043	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_044	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_045	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_046	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_047	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_048	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_049	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_050	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_051	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_052	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_053	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_054	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_055	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_056	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_057	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_058	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_059	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_060	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_061	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_062	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_063	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_064	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_065	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_066	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_067	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_068	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_069	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_070	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_071	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_072	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_073	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_074	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_075	Psy_LeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_076	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_077	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_078	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_079	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_080	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_081	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_082	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_083	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_084	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_085	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_086	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_087	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_088	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_089	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_090	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_091	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_092	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_093	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_094	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_095	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_096	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_097	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_098	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_099	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_100	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_101	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_102	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_103	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_104	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_105	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_106	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_107	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_108	Psy_Spider	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_109	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_110	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_111	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_112	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_113	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_114	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_115	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_116	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_117	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_118	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_119	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_120	Psy_Wraith	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_121	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_122	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_123	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_124	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_125	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_126	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_127	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_128	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_129	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_130	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_131	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_132	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_133	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_134	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_135	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_136	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_137	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_138	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_139	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_140	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_141	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_142	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_143	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_144	Psy_Spider	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_145	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_146	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_147	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_148	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_149	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_150	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_151	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_152	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_153	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_154	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_155	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_156	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_157	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_158	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_159	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_160	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_161	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_162	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_163	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_164	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_165	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_166	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_167	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_168	VehimothUndeath	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_169	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_170	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_171	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_172	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_173	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		PsyOut_174	Psy_Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD1	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD2	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD3	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD4	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD5	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD6	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD7	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD8	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD9	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD10	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD11	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD12	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD13	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD14	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD15	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD16	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD17	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD18	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD19	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD20	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD21	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD22	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD23	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD24	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD25	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD26	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD27	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD28	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD29	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD30	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD31	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD32	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD33	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD34	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD35	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD36	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD37	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD38	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD39	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD40	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD41	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD42	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD43	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD44	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD45	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD46	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD47	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD48	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD49	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		WOOD50	Q_Garden_Wood	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+																	
+#end																	

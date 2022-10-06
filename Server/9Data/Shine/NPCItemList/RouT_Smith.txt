@@ -1,0 +1,37 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;무기					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	ShortSword	-	-	-	-	-
+#Record	1	ShortMace	-	-	-	-	-
+#Record	2	ShortBow	-	-	-	-	-
+#Record	3	ShortStaff	-	-	-	-	-
+#Record	4	AbelClaw	-	-	-	-	-
+							
+#Table	Tab01	;방어구					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	LeatherBoots	LeatherHelmet	LeatherPants	LeatherShirt	-	-
+#Record	1	WoodenShield	-	-	-	-	-
+#Record	2	LitanyBoots	LitanyHelmet	LitanyPants	LitanyArmor	-	-
+#Record	3	FighterShield	-	-	-	-	-
+#Record	4	TrivialBoots	TrivialHat	TrivialPants	TrivialShirt	-	-
+#Record	5	NoviceBoots	NoviceHat	NovicePants	NoviceShirt	-	-
+#Record	6	MagicBoots	MagicHat	MagicPants	-	-	-
+#Record	7	ReoBoots	ReoHood	ReoPants	-	-	-
+#Record	8	-	-	-	-	-	-
+#Record	9	-	-	-	-	-	-
+#Record	10	-	-	-	-	-	-
+#Record	11	-	-	-	-	-	-
+							
+#Table	Tab02	;악세서리					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+							
+#End							

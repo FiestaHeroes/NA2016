@@ -1,0 +1,33 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		QField03_01	N	579	1062	0	0	67									
+#record		QField03_02	N	709	728	0	0	67									
+#record		QField03_03	N	727	354	0	0	67									
+#record		QField03_04	N	977	636	0	0	67									
+#record		QField03_05	N	386	733	0	0	67									
+#record		QField03_06	N	466	458	0	0	15									
+																	
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		QField03_01	MagmaTon	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField03_02	MagmaTon	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField03_03	MagmaTon	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField03_04	MagmaTon	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField03_05	MagmaTon	1	0	75	60	90	120	15	15	0	0	0	0	0	0
+#record		QField03_06	FireGolem	1	0	75	60	90	120	15	15	0	0	0	0	0	0
+																	
+#end																	

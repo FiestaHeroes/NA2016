@@ -1,0 +1,176 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Urg01	N	1860	7726	121	522	47									
+#record		Urg02	N	1458	7790	388	92	-60									
+#record		Urg03	N	2688	9007	137	292	20									
+#record		Urg04	N	1598	8565	211	399	0									
+#record		Urg05	N	2525	10255	114	387	0									
+#record		Urg06	N	2479	8374	359	69	110									
+#record		Urg07	N	3086	3577	0	0	531									
+#record		Urg08	N	1912	4376	0	0	450									
+#record		Urg09	N	8798	3164	202	308	58									
+#record		Urg10	N	2711	5146	0	0	299									
+#record		Urg11	N	1983	5697	276	460	-36									
+#record		Urg12	N	2490	2962	191	447	21									
+#record		Urg13	N	6335	3512	0	0	515									
+#record		Urg14	N	5314	1341	0	0	793									
+#record		Urg15	N	6881	986	103	681	82									
+#record		Urg16	N	9558	3579	0	0	552									
+#record		Urg17	N	8351	2892	0	0	168									
+#record		Urg19	N	5882	2447	0	0	445									
+#record		Urg20	N	10894	2197	0	0	372									
+#record		Urg21	N	8469	4435	381	71	94									
+#record		Urg22	N	10865	8218	680	172	-104									
+#record		Urg24	N	8687	5250	282	297	48									
+#record		Urg25	N	9245	5689	0	0	423									
+#record		Urg26	N	9825	6462	205	368	0									
+#record		Urg27	N	9709	10820	562	207	14									
+#record		Urg28	N	6327	2357	1744	6122	-90									
+#record		Urg29	N	8552	11179	676	203	19									
+#record		Urg30	N	10879	9413	879	245	-87									
+#record		Urg32	N	9134	8878	88	607	-141									
+#record		Urg33	N	10342	5094	524	121	-59									
+#record		Urg34	N	9197	10118	87	590	105									
+#record		Urg35	N	10042	4472	0	0	713									
+#record		Urg001	N	2501	4362	958	1688	-31									
+#record		Urg002	N	6636	1269	488	1875	83									
+#record		Urg003	N	9179	4026	519	1946	24									
+#record		Urg004	N	8867	10628	961	417	13									
+#record		Urg18	N	3619	4135	0	0	232									
+#record		Urg36	N	3849	4576	0	0	259									
+#record		Urg37	N	9658	2303	0	0	260									
+#record		Urg38	N	8952	5667	54	338	-41									
+#record		Urg29_1	N	8110	10676	0	0	455									
+#record		Town_Guard001	N	5116	5312	0	0	200									
+#record		Town_Guard002	N	7670	5053	0	0	150									
+#record		Town_Guard003	N	4888	10968	0	0	200									
+;#record		XmasTree	N	7208	6923	0	0	0									
+;		Halloween01	N	2193	6320	1068	3628	-6									
+;		Halloween02	N	8530	2814	3522	1652	-13									
+;		Halloween03	N	9018	8795	1314	3181	-10									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Urg01	Pixy	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg01	ArchonJuinor	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg02	Pixy	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg03	ArchonJuinor	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg04	Pixy	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg04	ArchonJuinor	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg05	ArchonJuinor	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg05	Pixy	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg06	ArchonJuinor	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg07	Orc	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg07	Pinky	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg08	Orc	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg08	Pinky	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg09	Orc	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg09	Pinky	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg10	Orc	3	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg11	Orc	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg11	Pinky	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg12	Pinky	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg12	Orc	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg13	Orc	4	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg13	Pinky	2	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg14	Orc	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg14	Pinky	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg15	Pinky	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg15	Orc	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg16	Orc	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg16	Pinky	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg17	Orc	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg19	Orc	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg19	Pinky	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg20	Orc	3	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg20	Pinky	1	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg21	KingMushRoom	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg21	OrcHunter	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg22	KingMushRoom	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg22	OrcHunter	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg24	OrcHunter	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg24	KingMushRoom	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg25	OrcHunter	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg25	KingMushRoom	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg26	OrcHunter	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg26	KingMushRoom	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg27	OrcHunter	3	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg27	KingMushRoom	3	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg28	PresentBox13	1	0	14400	14385	14415	-15	8	-10	15	0	60	1	120	2
+#record		Urg29	Nox	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg29	Q_NoxCaptain	2	0	170	155	185	-15	8	-10	15	0	60	1	120	2
+#record		Urg29	Lips	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg30	Nox	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg30	Q_NoxCaptain	1	0	170	155	185	-15	8	-10	15	0	60	1	120	2
+#record		Urg30	Lips	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg32	OrcHunter	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg32	Nox	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg32	Q_NoxCaptain	2	0	170	155	185	-15	8	-10	15	0	60	1	120	2
+#record		Urg33	OrcHunter	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg34	Lips	0	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg35	OrcHunter	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg35	KingMushRoom	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg001	HERB7	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	HERB8	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	HERB9	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	WOOD7	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	WOOD8	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	WOOD9	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	MUSHROOM7	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	MUSHROOM8	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg001	MUSHROOM9	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	HERB7	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	HERB8	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	HERB9	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	WOOD7	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	WOOD8	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	WOOD9	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	MUSHROOM7	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	MUSHROOM8	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg002	MUSHROOM9	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	WOOD7	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	WOOD8	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	WOOD9	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	HERB7	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	HERB8	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	HERB9	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	MUSHROOM7	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	MUSHROOM8	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg003	MUSHROOM9	3	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	MUSHROOM7	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	MUSHROOM8	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	MUSHROOM9	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	WOOD7	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	WOOD8	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	WOOD9	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	HERB7	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	HERB8	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg004	HERB9	2	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+#record		Urg18	Pinky	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg36	Pinky	1	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg36	Orc	3	0	25	23	27	-2	10	-1	20	0	60	1	120	2
+#record		Urg37	Orc	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg38	Orc	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Urg29_1	Nox	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Town_Guard001	Town_Safer	2	0	5	1	6	-2	8	-1	15	0	60	1	120	2
+#record		Town_Guard002	Town_Safer	2	0	5	1	6	-2	8	-1	15	0	60	1	120	2
+#record		Town_Guard003	Town_Safer	2	0	5	1	6	-2	8	-1	15	0	60	1	120	2
+;#record		XmasTree	ChristmasTree	1	0	300	200	310	-100	5	-50	15	0	150	1	300	2
+;		Halloween01	E_JackO03	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO03	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO03	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+																	
+#end																	

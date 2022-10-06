@@ -1,0 +1,128 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		HONY_F1_AREA01	N	4371	8815	206	526	-44
+#record		HONY_F1_AREA02	N	3880	9084	916	181	47
+#record		HONY_F1_AREA03	N	5024	8965	1183	78	-3
+#record		HONY_F1_AREA04	N	5428	9100	818	90	-8
+#record		HONY_F1_AREA05	N	7612	9179	0	0	267
+#record		HONY_F1_AREA07	N	8098	9118	490	199	0
+#record		HONY_F1_AREA08	N	8415	8993	594	105	0
+#record		HONY_F1_AREA10	N	8415	8925	598	108	10
+#record		HONY_F1_AREA11	N	10231	6993	0	0	408
+#record		HONY_F1_AREA12	N	10093	7582	0	0	372
+#record		HONY_F1_AREA13	N	10028	7541	100	617	-16
+#record		HONY_F1_AREA14	N	10287	6903	178	1032	-10
+#record		HONY_F1_AREA15	N	10388	6311	0	0	380
+#record		HONY_F1_AREA17	N	10470	6135	182	524	-7
+#record		HONY_F2_AREA01	N	8657	7558	177	548	-38
+#record		HONY_F2_AREA02	N	8863	6603	110	777	-2
+#record		HONY_F2_AREA03	N	8926	6983	577	154	74
+#record		HONY_F2_AREA04	N	8697	7520	0	0	232
+#record		HONY_F2_AREA05	N	8954	6637	0	0	281
+#record		HONY_F2_AREA06	N	6722	8271	420	104	-4
+#record		HONY_F2_AREA07	N	6212	8252	647	56	-11
+#record		HONY_F2_AREA08	N	5763	8124	476	101	-19
+#record		HONY_F2_AREA09	N	5984	8162	66	619	75
+#record		HONY_F2_AREA10	N	5419	7934	325	70	-32
+#record		HONY_F2_AREA11	N	4635	6242	113	862	0
+#record		HONY_F2_AREA12	N	4635	5752	114	949	0
+#record		HONY_F2_AREA13	N	4635	5960	156	838	0
+#record		HONY_F2_AREA14	N	4642	5943	133	860	-1
+#record		HONY_F2_AREA15	N	6325	3851	916	102	5
+#record		HONY_F2_AREA16	N	5377	4107	0	0	337
+#record		HONY_F2_AREA17	N	6040	3885	293	143	7
+#record		HONY_F2_AREA18	N	6649	3721	0	0	190
+#record		HONY_F2_AREA19	N	6007	3869	0	0	331
+#record		HONY_F3_AREA01	N	7185	4757	0	0	183
+#record		HONY_F3_AREA02	N	7476	4845	0	0	148
+#record		HONY_F3_AREA03	N	7768	5025	0	0	169
+#record		HONY_F3_AREA04	N	7978	5287	0	0	190
+#record		HONY_F3_AREA05	N	8088	6490	0	0	204
+#record		HONY_F3_AREA06	N	7901	6844	0	0	176
+#record		HONY_F3_AREA07	N	7723	7208	0	0	183
+#record		HONY_F3_AREA08	N	7308	7376	0	0	204
+#record		HONY_F3_AREA09	N	7604	7109	404	100	42
+#record		HONY_F3_AREA10	N	5984	7274	410	76	-20
+#record		HONY_F3_AREA11	N	5879	7267	291	82	-41
+#record		HONY_F3_AREA12	N	5892	7283	0	0	212
+#record		HONY_F3_AREA13	N	5623	7081	117	56	-27
+#record		HONY_F3_AREA14	N	5641	6847	93	367	28
+#record		HONY_F3_AREA15	N	5504	6815	0	0	240
+#record		HONY_F3_AREA16	N	5245	6442	0	0	113
+#record		HONY_F4_AREA01	N	6502	6468	0	0	128
+#record		HONY_F4_AREA02	N	6452	5682	0	0	114
+#record		HONY_F4_AREA03	N	6920	6519	0	0	128
+#record		HONY_F4_AREA04	N	6796	5638	0	0	163
+#record		HONY_F4_BOSS	N	7207	6087	0	0	100
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		HONY_F1_AREA01	KQ_H_Kebing	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA02	KQ_H_Mushroom	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA03	KQ_H_Boogy	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA04	KQ_H_Mushroom	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA05	KQ_H_Boogy	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA07	KQ_H_Kebing	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA08	KQ_H_Mushroom	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA10	KQ_H_Fox	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA11	KQ_H_Boogy	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA12	KQ_H_Fox	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA13	KQ_H_Boogy	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA14	KQ_H_Ratman	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA15	KQ_H_Fox	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F1_AREA17	KQ_H_Ratman	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA01	KQ_H_Boogy	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA02	KQ_H_Mushroom	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA03	KQ_H_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA04	KQ_H_Fox	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA05	KQ_H_BoneImp	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA06	KQ_H_Mushroom	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA07	KQ_H_Boogy	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA08	KQ_H_Ratman	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA09	KQ_H_BoneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA10	KQ_H_Prock	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA11	KQ_H_Boogy	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA12	KQ_H_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA13	KQ_H_Fox	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA14	KQ_H_BoneImp	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA15	KQ_H_Fox	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA16	KQ_H_BoneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA17	KQ_H_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA18	KQ_H_Prock	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F2_AREA19	KQ_H_Bat	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA01	KQ_H_Prock	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA02	KQ_H_BoneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA03	KQ_H_Prock	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA04	KQ_H_Bat	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA05	KQ_H_Fox	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA06	KQ_H_BoneImp	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA07	KQ_H_Prock	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA08	KQ_H_Bat	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA09	KQ_H_Wolf	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA10	KQ_H_Wolf	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA11	KQ_H_Ratman	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA12	KQ_H_Fox	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA13	KQ_H_BoneImp	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA14	KQ_H_Prock	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA15	KQ_H_Bat	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F3_AREA16	KQ_H_Wolf	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F4_AREA01	KQ_H_Honeying	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F4_AREA02	KQ_H_Honeying	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F4_AREA03	KQ_H_Honeying	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F4_AREA04	KQ_H_Honeying	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HONY_F4_BOSS	KQ_H_GHoneying	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+
+#end																	

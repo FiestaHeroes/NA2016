@@ -1,0 +1,220 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	ChatC1_1	"I was going to rob the Crystal Castle, but I got caught. I can't let you go alive."	
+			
+#Record	ChatC2_1	"Well, shall we go forward then?"	
+#Record	ChatC2_2	We'll leave as soon as we find the Crystal. Let' put forth our strength!	
+			
+#Record	ChatC3_1	"Well, shall we go forward then?"	
+#Record	ChatC3_2	We'll leave as soon as we find the Crystal. Let' put forth our strength!	
+			
+#Record	ChatC4_1	Adventurers!! Cheer up!! I know you can do it~
+#Record	ChatC4_2	You guys are very strong.
+#Record	ChatC4_3	May the Gods protect you!
+		
+#Record	ChatC5_1	Are you ready to go further?
+#Record	ChatC5_2	What things will be waiting for you further ahead?
+#Record	ChatC5_3	I can deal with the monsters easily!
+		
+#Record	ChatC6_1	"Let's go further, quickly!!"
+#Record	ChatC6_2	You'll be late.
+#Record	ChatC6_3	Other adventurers might have come already.
+#Record	ChatC6_4	Save your strength!
+		
+#Record	ChatC7_1	How about going back if you are scared?
+#Record	ChatC7_2	"I'll capture the Jewel Golem for sure, and I'll find the Crystal!"
+		
+#Record	ChatC8_1	"This time, let's break through stronger!"
+#Record	ChatC8_2	Great! Let's go!
+		
+#Record	ChatC9_1	"Again at this time, let's break through stronger!"
+#Record	ChatC9_2	Everyone!! Strain your every nerve!!
+		
+#Record	ChatC10_1	"Now is time to hunt, right?"
+#Record	ChatC10_2	"Today, Archon appeals to my appetite!"
+		
+#Record	ChatC11_1	Sweep out all the monsters!
+#Record	ChatC11_2	Do not hesitate!! Go forward!!
+		
+#Record	ChatC12_1	The Orc? I can even handle it with my left hand only! 
+#Record	ChatC12_2	"Are you guys scared? It's alright, I'll help you!"
+		
+#Record	ChatC13_1	"Guys, you are quite exhausted."
+#Record	ChatC13_2	It seems like we're almost there. Cheer up guys! I am still full of vigor!!
+		
+#Record	ChatC14_1	It's getting more interesting.
+#Record	ChatC14_2	"The Crystal Castle just suits me. I'm looking forward to see the Crystal, too!! Let’s move fast!!"
+		
+#Record	ChatC15_1	Be careful!! They are pretty strong!
+		
+#Record	ChatC16_1	They are stronger than they seem to be. Brace yourself up!
+		
+#Record	ChatC17_1	They are very strong with magic!
+#Record	ChatC17_2	"If you are brave enough, you can fight!"
+#Record	ChatC17_3	"So, let Mages be out for a moment!"
+#Record	ChatC17_4	"If you are brave enough, you can fight!"
+#Record	ChatC17_5	"It’s okay, I'll deal with them all!"
+#Record	ChatC17_6	"Come, let’s go!"
+		
+#Record	ChatC18_1	Ah! Their defense power level is very high!	
+#Record	ChatC18_2	"So, let Mages be out for a moment!"	
+#Record	ChatC18_3	"If you are brave enough, you can fight!"	
+#Record	ChatC18_4	"It's okay, I'll deal with them all!"	
+#Record	ChatC18_5	"Come, let's go!"	
+			
+#Record	ChatC19_1	Ah! Their defense power level is very high!	
+#Record	ChatC19_2	It will be difficult to make even a scratch with my small sword.	
+#Record	ChatC19_3	Don't worry!	
+#Record	ChatC19_4	"I, Maria, will handle this with magic!"	
+#Record	ChatC19_5	"Follow me, everyone!"	
+			
+#Record	ChatC20_1	Ah! Their defense power level is very high!	
+#Record	ChatC20_2	It will be difficult to make even a scratch with my small sword.	
+#Record	ChatC20_3	Don't worry!	
+#Record	ChatC20_4	"I, Maria, will handle this with magic!"	
+#Record	ChatC20_5	"Follow me, everyone!"
+		
+#Record	ChatC21_1	What is this? There's a mysterious thing!
+#Record	ChatC21_2	"Break it quickly, it might be the jewel!"
+#Record	ChatC21_3	"Oops! It's a trap of Zombies! Be careful, friends!"
+#Record	ChatC21_4	Keep away! Quick!
+#Record	ChatC21_5	Zombies are still running wild!
+#Record	ChatC21_6	"Ah, there are plenty of them. Let's retreat for the moment!"
+		
+#Record	ChatC22_1	What is this? There's a mysterious thing!
+#Record	ChatC22_2	"Break it quickly, it might be the jewel!"
+#Record	ChatC22_3	"Oh, my! This is a magic staff!"
+#Record	ChatC22_4	Keep away! Quick!
+#Record	ChatC22_5	Where did all they come from?
+#Record	ChatC22_6	Will they come out more?
+		
+#Record	ChatC23_1	What is this? There's a mysterious thing!
+#Record	ChatC23_2	"Break it quickly, it might be the jewel!"
+#Record	ChatC23_3	"Oh, my! It's a Tree of Darkness."
+#Record	ChatC23_4	Be careful!
+#Record	ChatC23_5	Gosh! How many are there?!
+#Record	ChatC23_6	"Anyway, we can take care of them!"
+		
+#Record	ChatC24_1	Be careful!! I think they are guys from the Marlone Clan of Darkness.
+#Record	ChatC24_2	"They aren't stronger than me, but still are tough fellows!"
+		
+#Record	ChatC25_1	They are back again!
+#Record	ChatC25_2	"They are simple-minded, but their archery skills are incredible! So be careful!"
+		
+#Record	ChatC26_1	Ha! They can't handle us with just archery!
+#Record	ChatC26_2	Let’s settle this quarrel in a flash!
+		
+#Record	ChatC27_1	Hah! What is this? How dare they play with us like this?
+#Record	ChatC27_2	Let's sweep out all the boxes and the monsters.
+#Record	ChatC27_3	"Oh, my! I opened the wrong box! Zombies are awake!"
+#Record	ChatC27_4	"Finally, we are done with those boxes of darkness!"
+#Record	ChatC27_5	"Let's get rid of rest of the monsters, and move forward!"
+		
+#Record	ChatC28_1	The Ore of Darkness? It stimulates my curiosity as a miner!
+#Record	ChatC28_2	"Well, then shall we dig up the Ore of Darkness?"
+#Record	ChatC28_3	"Gosh! Marlone Clans are here! How could they make a surprise attack like this? Keep away, everyone!"
+#Record	ChatC28_4	"Finally, we are done with those Ores of Darkness!"
+#Record	ChatC28_5	"Let's get rid of rest of the monsters, and move forward!"
+		
+#Record	ChatC29_1	"Great! We found them. Let’s get rid of the Orcs, and find the clue!"
+		
+#Record	ChatC30_1	"Great! The Orcs are here! Defeat them by all means, and get the evidence!"
+		
+#Record	ChatC31_1	Gosh! They finally found us!
+#Record	ChatC31_2	Come on! I'll kill all the adventurers! Ha-ha!
+#Record	ChatC31_3	Ha-ha! You're hiding in a place like this.
+#Record	ChatC31_4	"Today, you'll get paid for what you've done!"
+#Record	ChatC31_5	I'm mortified!
+#Record	ChatC31_6	How can I be caught in a place like this? It's so unfair!
+#Record	ChatC31_7	It wasn't that strong.
+#Record	ChatC31_8	"I captured the assassin, then shall I go to the village to get the reward? Great~"
+		
+#Record	ChatC32_1	"Finally, we almost came to the end."
+#Record	ChatC32_2	They are affected by the Pillar of Light. Let’s deal with the Pillar of Light first.
+#Record	ChatC32_3	The passage is about to close by the power of darkness! Quickly move to the next floor!
+#Record	ChatC32_4	"Oh, my! The gate is blocked."
+#Record	ChatC32_5	The gate of the passage is shut.
+#Record	ChatC32_6	"Adventurers, your skills are still not enough!"
+#Record	ChatC32_7	"Go, train more! Then come again!"
+#Record	ChatC32_8	Watch out! Enemies are summoning!
+#Record	ChatC32_9	"The Lizard Man, the guardian of the Castle, is defeated."
+#Record	ChatC32_10	Good job! I knew that you guys would easily defeat the Lizard Man.
+#Record	ChatC32_11	Congratulations! May your future be blessed!
+#Record	ChatC32_12	"Friends, I appreciate what you have done to come here."
+#Record	ChatC32_13	"Guardian Lizard Man is an easy monster, you can defeat easily."
+#Record	ChatC32_14	"Since you came here, seek my treasure if you can."
+#Record	ChatC32_15	You got the item.
+#Record	ChatC32_16	"So, what do you say after you opened my treasure box?"
+#Record	ChatC32_17	"And if given a chance, try to fight with my magic monster, Jewel Golem!"
+#Record	ChatC32_18	It’s not as easy as the Lizard Man though!
+#Record	ChatC32_19	"Farewell, adventurers! I hope to see you guys again!"
+		
+#Record	ChatC33_1	The Great Orc? That's as easy as pie!
+#Record	ChatC33_2	They are affected by the Pillar of Light. Let’s deal with the Pillar of Light first.
+#Record	ChatC33_3	"Let's defeat them fast, and go back to the village with the Crystal!"
+#Record	ChatC33_4	The passage is about to close by the power of darkness! Quickly move to the next floor!
+#Record	ChatC33_5	"Oh, my! The gate is blocked."
+#Record	ChatC33_6	All the gates of the passage are closed.
+#Record	ChatC33_7	"Adventurers, your skills are still not enough!"
+#Record	ChatC33_8	"Go, train more! Then come again!"
+#Record	ChatC33_9	Watch out! Enemies are summoning!
+#Record	ChatC33_10	"The Great Orc, the guardian of the Castle, is defeated."
+#Record	ChatC33_11	Great! I knew that you guys would easily defeat the Great Orc.
+#Record	ChatC33_12	Congratulations! May your future be blessed!
+#Record	ChatC33_13	"You defeated the Great Orc, too."
+#Record	ChatC33_14	"The Great Orc is just a bit stronger than the guardian Lizard Man, but I was amazed that you defeated it this easily."
+#Record	ChatC33_15	"Anyway, since you came here, open the treasure box."
+#Record	ChatC33_16	You got the item.
+#Record	ChatC33_17	"So, what do you say after you opened my treasure box?"
+#Record	ChatC33_18	I hope you could find something useful in the treasure box.
+#Record	ChatC33_19	"And if given a chance, try to fight with my magic monster, Jewel Golem!"
+#Record	ChatC33_20	It’s not as easy as the Great Orc though!
+#Record	ChatC33_21	"Farewell, adventurers! I hope to see you guys again!"
+		
+#Record	ChatC34_1	"Finally, this is our last moment!"
+#Record	ChatC34_2	You are the great adventurers for sure.
+#Record	ChatC34_3	I hope you can gain the victory and find the Crystal!
+#Record	ChatC34_4	They are affected by the Pillar of Light. Let’s deal with the Pillar of Light first.
+#Record	ChatC34_5	The passage is about to close by the power of darkness! Quickly move to the next floor!
+#Record	ChatC34_6	"Oh, my! The gate is blocked."
+#Record	ChatC34_7	"Adventurers, your skills are still not enough!"
+#Record	ChatC34_8	"Go, train more! Then come again!"
+#Record	ChatC34_9	Watch out! Enemies are summoning!
+#Record	ChatC34_10	Ah! Another summon! Are we going to lose here?
+#Record	ChatC34_11	"The Jewel Golem, the guardian of the Castle, is defeated!"
+#Record	ChatC34_12	Indeed! Great job! You've finally defeated the Jewel Golem!
+#Record	ChatC34_13	You are the excellent adventurers! I'll infrom the news of your victory to the village!
+#Record	ChatC34_14	"Oh, my! You defeated the Jewel Golem at last!"
+#Record	ChatC34_15	How great! You defeated all the monsters that I made of my magic.
+#Record	ChatC34_16	But keep this in your mind that this is not the end.
+#Record	ChatC34_17	"There will be more powerful monsters in the next tower, so think of this as a practice."
+#Record	ChatC34_18	"Anyway, congratulations! Please open my Crystal box."
+#Record	ChatC34_19	Ther will be something useful to you.
+#Record	ChatC34_20	You got the item.
+#Record	ChatC34_21	"So, what do you say after you opened my treasure box?"
+#Record	ChatC34_22	Think of this as a small gift of sincerity for the brave adventurers!
+#Record	ChatC34_23	"Farewell, friends! I hope to see you guys again!"
+#Record	ChatC34_24	All the gates of the passage are closed.
+#Record	ChatC34_25	"Oh, my! The Pillar of Light is summoned again! Let's get done with this Pillar of Light quickly!"
+		
+		
+#Record	ChatC35_1	What is this? How dare they threaten us with this?
+#Record	ChatC35_2	There's no reason to fear those old coffins!
+#Record	ChatC35_3	Gosh! Zombies are pouncing at us! Attack them all!
+#Record	ChatC35_4	"Finally, we are done with those coffins of darkness!"
+#Record	ChatC35_5	"Let's get rid of rest of the monsters, and move forward!"
+		
+#Record	ChatC36_1	Oh! What is that! Why is there no monsters in this room?
+#Record	ChatC36_2	A-ha! All the monsters must be gone because they are scared!
+#Record	ChatC36_3	I am so strong as expected!
+#Record	ChatC36_4	It's the trap of Zombies! Be careful!
+#Record	ChatC36_5	Zombies are flocking from all quarters! Watch out!
+		
+#End		
+;		

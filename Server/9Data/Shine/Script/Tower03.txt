@@ -1,0 +1,87 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	T3_01_01	You have entered the danger zone.  This place is filled with powerful experiment subjects!	
+#Record	T3_01_02	Be careful not to bother the monsters in the center.	
+#Record	T3_01_03	You have to get the job done fast before the monsters are awakened.	
+#Record	T3_01_04	"Oh!  And if you don't wake up any of the experiment subjects, you'd be able to find Box of Experiment Tools!"	
+#Record	T3_01_05	Be careful!  And move fast!	
+			
+#Record	T3_02_01	Hmm!  You've done it!	
+#Record	T3_02_02	There's an experiment in another room!	
+#Record	T3_02_03	Move fast and don't let any experiment subject wake up!	
+#Record	T3_02_TA01	I will not forgive anyone who wakes me up!	
+#Record	T3_02_TA02	Come together to attack the invaders!	
+			
+#Record	T3_03_01	Hmm!  You've done it!	
+#Record	T3_03_02	Move fast and don't let any experiment subject wake up!	
+#Record	T3_03_TA01	Grrrrrr!  Grrrrr!  I won't let you live!	
+			
+#Record	T3_04_01	How dare you to interrupt our experiment!  We won't forgive you!	
+#Record	T3_04_02	We will give you a chance to run away!	
+#Record	T3_04_03	Don't be scared!  Attack the monsters!	
+			
+#Record	T3_05_01	You've come this far already?	
+#Record	T3_05_02	But you'd better turn back now.  You will go extinct once you see me!	
+#Record	T3_05_03	Are you trying to scare us with that?	
+			
+#Record	T3_06_01	Grrrr!  You are stronger than I thought!	
+#Record	T3_06_02	But this isn't the end! 	
+#Record	T3_06_03	The most powerful of all experiment subjects will greet you!  I curse you for defeating me!	
+#Record	T3_06_SUMMON	Cursed beings!  Defeat the invaders!	
+#Record	T3_06_SUMMON_RE	Enemies are being summoned.  Be careful!	
+			
+#Record	T3_07_01	Welcome!  My prey!	
+#Record	T3_07_02	Grrrrr!  Let's have a feast tonight!	
+#Record	T3_07_03	Monster's prey?  I don't think so!  Let's go!	
+#Record	T3_07_TA01	You won't be forgiven for waking me up!	
+#Record	T3_07_TA02	"Weak humans, I'll sweep you up!"	
+			
+#Record	T3_08_01	Prey is coming closer!	
+#Record	T3_08_02	Grrrrr!  I can smell it!  Grrrrr!	
+			
+#Record	T3_09_01	Almost there!  Just a little more!	
+#Record	T3_09_02	"Go for it, soldiers!"	
+			
+#Record	T3_10_01	"My delicious dinner, come!"	
+#Record	T3_10_02	"Finally, it's dinner time.  Yum!"	
+#Record	T3_10_03	This is the last experiment subject!	
+#Record	T3_10_04	Let's defeat that one and save our children!	
+			
+#Record	T3_11_01	This is not fair!  I lost to my prey!	
+#Record	T3_11_02	Was this the outcome of our experiment?	
+#Record	T3_11_03	"Ha. Ha. Ha!  Magnificent, soldiers!"	
+#Record	T3_11_04	You saved our children.  You are the best soldiers!	
+#Record	T3_11_SUMMON01	Kill the invaders!	
+#Record	T3_11_SUMMON02	"Ha. Ha!  Enough.  Lab Ghosts, rise and help me!"	
+#Record	T3_11_SUMMON03	"Grrrrrr!  Spirit of Darkness, rise and attack the invaders!"	
+#Record	T3_11_SUMMON01_RE	Watch out!  They use Summon Skill!	
+#Record	T3_11_SUMMON02_RE	"Hmph, they can summon.  Defeat them all!"	
+#Record	T3_11_SUMMON03_RE	I bet this is all you've got!  I'll get to you once I eliminate all of the summoned monsters!	
+			
+#Record	T3_11_CHILD01	Help!	
+#Record	T3_11_CHILD02	Help us get out of here!	
+#Record	T3_11_CHILD03	We were captured by bad monsters.  Please help us.	
+#Record	T3_11_CHILD04	(Sobbing)  We want to go home!	
+#Record	T3_11_CHILD05	Please save us!	
+#Record	T3_11_CHILD06	Monsters are coming to eat us alive!	
+			
+#Record	T3_11_CHILD001	Thank you!	
+#Record	T3_11_CHILD002	We can go back to the village!	
+#Record	T3_11_CHILD003	Yahoo!  I'm so happy!	
+#Record	T3_11_CHILD004	"Thanks to you, we can go home!"	
+#Record	T3_11_CHILD005	Let's go!	
+#Record	T3_11_CHILD006	Phew!  Thank you.  I was so scared of those monsters…	
+#Record	T3_11_CHILD007	Hooray for the soldiers who saved us!	
+#Record	T3_11_CHILD008	Hooray!  Hooray!	
+#Record	T3_11_CHILD009	Hooray!  Hooray!	
+#Record	T3_11_CHILD010	We will watch out for monsters from now on!	
+#Record	T3_11_CHILD011	I want to be a brave soldier when I grow up!	
+#Record	T3_11_CHILD012	(Sobbing)  Thank you.  I was so scared.  Thank you so much. 	
+#End			
+;			

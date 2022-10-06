@@ -1,0 +1,97 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Link01	N	6369	2751	0	0	289									
+#record		Link02	N	6971	2899	0	0	289									
+#record		Link03	N	7599	3249	0	0	289									
+#record		Link04	N	5905	3839	0	0	324									
+#record		Link05	N	7249	4252	0	0	226									
+#record		Link06	N	6583	3999	0	0	254									
+#record		Link07	N	8172	3783	0	0	121									
+#record		Link08	N	8657	4260	0	0	142									
+#record		Link09	N	9708	4810	0	0	373									
+#record		Link10	N	5703	6356	0	0	114									
+#record		Link11	N	6458	7050	0	0	121									
+#record		Link12	N	5946	7341	0	0	100									
+#record		Link13	N	6610	9933	0	0	163									
+#record		Link14	N	6773	9332	0	0	324									
+#record		Link15	N	2372	9875	0	0	443									
+#record		Link16	N	3034	9362	0	0	289									
+#record		Link17	N	4652	9285	0	0	331									
+#record		Link18	N	4415	8261	0	0	268									
+#record		Link19	N	2557	7089	0	0	352									
+#record		Link20	N	2072	5355	0	0	240									
+#record		Link22	N	9281	5424	0	0	205									
+#record		Link23	N	9197	6061	0	0	170									
+#record		Link24	N	7615	8175	0	0	275									
+#record		Link25	N	8463	9501	0	0	240									
+#record		Link26	N	8520	8575	0	0	233									
+#record		Link274	N	4988	8501	0	0	170									
+#record		Link28	N	4883	2741	0	0	170									
+#record		Link29	N	4626	3355	0	0	177									
+#record		Link30	N	5217	3567	0	0	240									
+#record		Link31	N	5394	2790	0	0	163									
+#record		Link32	N	7606	4883	0	0	247									
+#record		Link33	N	9197	9880	0	0	274									
+#record		Secret_001	N	3438	5024	0	0	109									
+#record		Secret_002	N	3878	6120	0	0	116									
+#record		Secret_003	N	3652	5521	0	0	116									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Link01	CemWolf	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link02	CemWolf	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link03	CemWolf	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link04	CemWolf	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link05	CemWolf	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link06	CemWolf	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link07	CemWolf	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link08	CemWolf	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link09	CemWolf	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link09	FireViVi	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link10	BabyWereBear	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link10	FireViVi	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link11	BabyWereBear	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link12	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link13	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link13	FireViVi	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link14	BabyWereBear	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link14	FireViVi	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link15	BabyWereBear	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link15	FireViVi	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link16	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link17	BabyWereBear	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link17	FireViVi	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link18	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link19	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link20	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link22	CemWolf	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link23	CemWolf	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link24	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link25	BabyWereBear	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link26	BabyWereBear	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link274	BabyWereBear	2	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link28	CemWolf	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link29	CemWolf	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link30	CemWolf	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link31	CemWolf	3	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link32	CemWolf	4	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link33	BabyWereBear	5	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Link33	FireViVi	1	0	9	5	13	-4	5	-2	8	0	10	2	13	4
+#record		Secret_001	SecretChiefSub	2	0	15	13	17	-4	5	-2	8	0	10	2	13	4
+#record		Secret_002	SecretChiefSub	2	0	15	13	17	-4	5	-2	8	0	10	2	13	4
+#record		Secret_003	SecretChiefSub	3	0	15	13	17	-4	5	-2	8	0	10	2	13	4
+#record		Secret_003	SecretChief	1	0	60	58	62	-4	5	-2	8	0	10	2	13	4
+#end																	

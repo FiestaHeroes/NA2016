@@ -1,0 +1,14 @@
+;		Action			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	Trigger				
+#ColumnType	DWORD	DWORD			
+#ColumnName	ConditionID	ActionID			
+#Record	20	31			
+#Record	20	32			
+#Record	20	33			
+#End					

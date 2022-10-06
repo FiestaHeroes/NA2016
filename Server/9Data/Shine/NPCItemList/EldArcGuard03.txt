@@ -1,0 +1,41 @@
+;		ItemList in NPC								
+#ignore	\o042			; 인용부호 무시						
+#exchange	#	\x20		; # => space						
+;		2006.01.25								
+										
+#Table	Tab00	;아이템 상점								
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]			
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05			
+#Record	0 	ShortSword	LongSword	BroadSword	-	-	-			
+#Record	1 	ShortMace	LongMace	SpikedClub	-	-	-			
+#Record	2 	ShortBow	LongBow	LightBow	-	-	-			
+#Record	3 	ShortStaff	LongStaff	MagicStaff	-	-	-			
+#Record	4 	AbelClaw	BonoClaw	CrimsonClaw	-	-	-			
+#Record	5 	LeatherBoots	LeatherHelmet	LeatherPants	LeatherShirt	-	-			
+#Record	6 	ChainBoots	ChainHelmet	ChainPants	-	-	-			
+#Record	7 	WoodenShield	Buckler	-	-	-	-			
+#Record	8 	LitanyBoots	LitanyHelmet	LitanyPants	LitanyArmor	-	-																														
+#Record	9 	BlessBoots	BlessHelmet	BlessPants	-	-	-																														
+#Record	10 	FighterShield	RoundShield	-	-	-	-																														
+#Record	11 	TrivialBoots	TrivialHat	TrivialPants	TrivialShirt	-	-																														
+#Record	12 	HardLeatherBoots	HardLeatherHat	HardLeatherPants	-	-	-																														
+#Record	13 	NoviceBoots	NoviceHat	NovicePants	NoviceShirt	-	-																														
+#Record	14 	MagicBoots	MagicHat	MagicPants	-	-	-																														
+#Record	15 	ReoBoots	ReoHood	ReoPants	MarioArmor	-	-																														
+#Record	16 	MarioBoots	MarioHood	MarioPants	-	-	-																														
+#Record	17 	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-																														
+#Record	18 	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-																														
+																																					
+#End																																					
+																																					
+																																					
+																																					
+							
+							
+							
+							
+							
+							
+							
+							
+							

@@ -1,0 +1,197 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		1	N	4252	12635	0	0	2000									
+#record		2	N	3926	5594	0	0	1200									
+#record		2a	N	4843	6462	0	0	1200									
+#record		2b	N	6372	6996	0	0	1200									
+#record		3	N	12532	4292	0	0	1408									
+#record		4	N	3327	22636	0	0	2000									
+#record		5	N	7349	17291	0	0	2014									
+#record		7	N	16086	7477	0	0	700									
+#record		7a	N	16922	6044	0	0	700									
+#record		7b	N	18033	7520	0	0	700									
+#record		8	N	21587	2964	0	0	2200									
+#record		9	N	6895	23510	0	0	700									
+#record		9a	N	7797	22190	0	0	700									
+#record		9b	N	8988	23429	0	0	700									
+#record		10	N	12071	20969	0	0	1105									
+#record		11	N	16299	14938	0	0	610									
+#record		12	N	19793	12531	0	0	933									
+#record		13	N	22504	8024	0	0	1586									
+#record		14	N	22940	12719	0	0	1000									
+#record		15	N	14822	23017	0	0	1196									
+#record		15a	N	14966	23158	0	0	0									
+#record		16	N	18368	17735	0	0	1148									
+#record		16a	N	18435	17838	0	0	0									
+#record		17	N	23591	15351	0	0	1015									
+#record		17a	N	23306	15406	0	0	0									
+#record		18	N	19884	22857	0	0	1189									
+#record		18a	N	21921	23591	0	0	1259									
+#record		18b	N	23963	21860	0	0	1112									
+#record		18c	N	22478	22275	0	0	1070									
+#record		18d	N	2004	2040	0	0	607									
+#record		19	N	21196	21023	0	0	1308									
+#record		19a	N	23286	19415	0	0	1168									
+#record		21	Y	23884	23541	0	0	0									
+#record		21a	Y	23702	23362	0	0	0									
+#record		21b	Y	23708	23708	0	0	0									
+#record		21c	Y	24046	23349	0	0	0									
+#record		totem1	N	14900	23100	0	0	0									
+#record		totem2	N	18400	17800	0	0	0									
+#record		totem3	N	23700	15300	0	0	0									
+#record		totemA	N	22197	21871	0	0	0									
+#record		totemB	N	22119	23443	0	0	0									
+#record		totemC	N	23735	21727	0	0	0									
+#record		totemD	N	20297	23389	0	0	0									
+#record		totemE	N	23342	20176	0	0	0									
+#record		totemF	N	24391	24053	0	0	0									
+#record		path1	N	4184	9452	0	0	500									
+#record		path2	N	9235	4429	0	0	500									
+#record		path3	N	4555	19607	0	0	500									
+#record		path4	N	7922	20154	0	0	500									
+#record		path5	N	19047	4639	0	0	500									
+#record		path6	N	9130	14217	0	0	500									
+#record		path7	N	14037	9087	0	0	500									
+#record		path8	N	14071	13707	0	0	500									
+#record		AdlThornR01	Y	15807	15028	0	0	10									
+#record		AdlThornR02	Y	11501	21668	0	0	10									
+#record		AdlThornR03	Y	5167	11968	0	0	10									
+#record		AdlThornR04	Y	11760	4290	0	0	10									
+#record		AdlThornR05	Y	15748	5772	0	0	10									
+#record		AdlThornR06	Y	22032	23310	0	0	10									
+#record		AdlThornR07	Y	22032	23310	0	0	10									
+#record		AdlThornR08	Y	22032	23310	0	0	10									
+#record		AdlThornR09	Y	19672	22729	0	0	10									
+#record		AdlThornR10	Y	19672	22729	0	0	10									
+#record		AdlThornR11	Y	15092	15565	0	0	10									
+#record		AdlThornR12	Y	16045	15078	0	0	10									
+#record		30	N	24524	24206	0	0	303									
+#record		31	N	23221	24285	0	0	275									
+#record		32	N	24752	22936	0	0	289									
+#record		33	N	22983	23527	0	0	261									
+#record		34	N	23998	22687	0	0	289									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		1	FogViVi	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		1	FogBat	7	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		1	HungryZombie	7	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		2	FogBat	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		2	HungryZombie	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		2a	FogBat	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		2a	HungryZombie	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		2b	FogBat	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		2b	HungryZombie	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		3	FogBat	7	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		3	VampireViVi	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		3	HungryZombie	7	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		4	FogNepilim	11	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		4	Ape	11	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		5	VampireViVi	7	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		5	FogWeasel	7	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		7	FogNepilim	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		7	FogWeasel	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		7a	FogNepilim	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		7a	FogWeasel	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		7b	FogNepilim	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		7b	FogWeasel	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		8	FogNepilim	15	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		8	LeoPard	15	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		9	BloodShadow	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		9	FogNepilim	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		9a	FogWeasel	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		9a	FogNepilim	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		9b	BloodShadow	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		9b	FogNepilim	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		10	FogViVi	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		10	FogNepilim	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		10	BloodShadow	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		11	BloodShadow	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		11	DarkShadow	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		11	FogNepilim	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		11	VampireViVi	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		11	FogWeasel	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		12	FogViVi	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		12	FogNepilim	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		12	DarkShadow	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		13	FogWeasel	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		13	VampireViVi	4	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		13	BloodShadow	4	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		13	VampireViVi	6	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		14	FogViVi	10	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		14	FogBat	4	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		14	HungryZombie	4	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		15	FogBat	4	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		15	FogViVi	4	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		15a	KillerHide	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		16	FogNepilim	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		16	FogLence	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		16a	Silberk	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		17	FogBat	10	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		17	FogBat	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		17	VampireViVi	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		17a	BloodVampire	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		18	HungryZombie	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		18a	HungryZombie	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		18b	HungryZombie	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		18c	HungryZombie	5	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		18d	HungryZombie	7	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		19	HungryZombie	6	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		19a	HungryZombie	4	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		21	Karen	1	0	86395	86405	-5	5	-2	8	0	10	2	13	5	0
+#record		21	Firepamelia	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		21b	IncubusAgole	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		21c	IncubusRock	1	1	3395	3615	-5	5	-2	8	0	10	2	13	5	1
+#record		totem1	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totem2	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totem3	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totemA	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totemB	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totemC	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totemD	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totemE	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		totemF	FireTotem	1	0	4	6	-5	5	-2	8	0	10	2	13	5	0
+#record		path1	VampireViVi	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path2	FogBat	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path3	FogViVi	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path4	DarkShadow	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path4	FogBat	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path5	BloodShadow	1	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path5	FogBat	2	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path6	VampireViVi	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path7	FogViVi	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		path8	FogNepilim	3	0	296	304	-4	5	-2	8	0	10	2	13	4	0
+#record		AdlThornR01	FogNepilim	1	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR02	VampireViVi	2	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR03	FogViVi	2	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR04	VampireViVi	2	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR05	FogViVi	2	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR06	IncubusRock	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		AdlThornR07	Firepamelia	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		AdlThornR08	IncubusAgole	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		AdlThornR09	IncubusRock	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		AdlThornR10	IncubusAgole	1	0	3395	3615	-5	5	-2	8	0	10	2	13	5	0
+#record		AdlThornR11	FogNepilim	2	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR11	FogLence	1	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR12	FogNepilim	2	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		AdlThornR12	FogLence	1	0	597	602	-300	60	-150	120	0	180	150	240	300	0
+#record		30	HungryZombie	2	0	296	304	15	-4	5	-2	8	0	10	2	13	4
+#record		31	HungryZombie	2	0	296	304	15	-4	5	-2	8	0	10	2	13	4
+#record		32	HungryZombie	2	0	296	304	15	-4	5	-2	8	0	10	2	13	4
+#record		33	HungryZombie	2	0	296	304	15	-4	5	-2	8	0	10	2	13	4
+#record		34	HungryZombie	2	0	296	304	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

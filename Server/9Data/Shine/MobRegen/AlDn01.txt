@@ -1,0 +1,260 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		AlDn01A001	Y	9928	2714	52	251	42									
+#record		AlDn01A002	Y	9985	2096	0	0	135									
+#record		AlDn01A003	N	10692	3180	466	101	-22									
+#record		AlDn01A004	N	11567	2871	0	0	128									
+#record		AlDn01A005	N	10447	1695	0	0	163									
+#record		AlDn01A006	N	11887	4526	0	0	142									
+#record		AlDn007	N	11705	4825	0	0	142									
+#record		AlDn01A008	N	11412	5148	0	0	233									
+#record		AlDn01A009	N	10942	5297	0	0	212									
+#record		AlDn01A010	N	10521	5400	0	0	170									
+#record		AlDn01A011	N	10173	5629	0	0	149									
+#record		AlDnA012	N	10704	7726	0	0	51									
+#record		AlDn01A013	N	10544	7293	0	0	205									
+#record		AlDn01A014	N	10030	7144	0	0	240									
+#record		AlDn01A015	N	9850	7620	0	0	233									
+#record		AlDn01A016	N	10301	7880	0	0	226									
+#record		AlDn01A017	N	9542	9526	0	0	198									
+#record		AlDn01A018	N	9146	9925	0	0	275									
+#record		AlDn01A019	N	8604	9920	0	0	226									
+#record		AlDn01A020	N	8711	10320	88	234	-40									
+#record		AlDn01A021	N	6447	11669	0	0	51									
+#record		AlDn01A022	N	6950	11564	0	0	240									
+#record		AlDn01A023	N	7242	10551	0	0	170									
+#record		AlDn01A024	N	6493	10182	0	0	170									
+#record		AlDn01A025	N	6082	11348	0	0	240									
+#record		AlDn01A026	N	6645	10863	0	0	415									
+#record		AlDn01A027	N	5885	10789	0	0	261									
+#record		AlDn01A028	N	6065	10290	0	0	177									
+#record		AlDn01A029	N	6951	10241	0	0	156									
+#record		AlDn01A030	N	4662	10026	0	0	198									
+#record		AlDn01A031	N	4289	10115	117	271	1									
+#record		AlDn01A032	N	3867	10259	0	0	191									
+#record		AlDn01A033	N	3470	10155	0	0	205									
+#record		AlDn01A034	N	3441	9722	0	0	163									
+#record		AlDn01A035	N	7320	11127	0	0	191									
+#record		AlDn01A036	N	2616	8524	0	0	184									
+#record		AlDn01A037	N	1856	8104	0	0	261									
+#record		AlDn01A038	N	1494	7615	0	0	51									
+#record		AlDn01A039	N	2446	8082	0	0	219									
+#record		AlDn01A040	N	2995	8161	0	0	198									
+#record		AlDn01A041	N	1809	7224	0	0	149									
+#record		AlDn01A042	N	1812	7595	0	0	177									
+#record		AlDn01A043	N	2315	7073	0	0	226									
+#record		AlDn01A044	N	2378	7562	312	187	3									
+#record		AlDn01A045	N	3007	7606	0	0	268									
+#record		AlDn01A046	N	2829	7110	0	0	191									
+#record		AlDn01A047	N	2205	8436	0	0	149									
+#record		AlDn01A048	N	3176	6078	354	155	-3									
+#record		AlDn01A049	N	3903	6182	0	0	240									
+#record		AlDn01A050	N	4063	5716	0	0	198									
+#record		AlDn01A051	N	3805	5167	94	281	15									
+#record		AlDn01A052	N	5056	5307	0	0	233									
+#record		AlDn01A053	N	6444	3880	0	0	51									
+#record		AlDn01A054	N	5525	4783	358	153	1									
+#record		AlDn01A055	N	5436	4301	0	0	226									
+#record		AlDn01A056	N	6171	4393	295	203	29									
+#record		AlDn01A057	N	5708	5266	0	0	240									
+#record		AlDn01A058	N	6768	4256	0	0	177									
+#record		AlDn01A059	N	5862	3950	0	0	226									
+#record		AlDn01A060	N	6513	4847	0	0	184									
+#record		AlDn01A061	N	6312	5334	0	0	212									
+#record		AlDn01A067	N	5987	5759	0	0	226									
+#record		AlDn01A068	N	6930	4770	172	262	-4									
+#record		AlDn01A069	N	6539	5783	0	0	205									
+#record		AlDn01A070	N	6837	5345	0	0	212									
+#record		AlDn01A071	N	7328	5164	0	0	198									
+#record		AlDn01A072	N	8257	4296	0	0	226									
+#record		AlDn01A073	N	8600	3793	0	0	324									
+#record		AlDn01A074	N	8820	3243	0	0	191									
+#record		AlDn01A075	N	10976	2794	0	0	254									
+#record		AlDn01A076	N	10344	2533	0	0	254									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		AlDn01A001	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A001	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A001	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A002	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A002	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A002	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A003	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A003	D_MagriteHoneying	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A003	D_MagriteImp	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A004	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A004	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A004	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A005	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A005	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A005	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A006	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A006	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A006	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn007	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn007	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn007	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A010	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A010	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A010	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A011	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A011	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDnA012	D_Magrite	1	0	600	597	602	-300	60	-150	120	0	180	150	240	300
+#record		AlDn01A013	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A013	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A013	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	D_Seidwarrior	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	D_Seidwarrior	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A016	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A016	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A016	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A017	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A017	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A017	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A018	D_Seidstar	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A018	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A019	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A019	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A020	D_MagriteHoneying	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A020	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A021	D_Magrite	1	0	600	597	602	-300	60	-150	120	0	180	150	240	300
+#record		AlDn01A022	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A022	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A022	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A023	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A023	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A024	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A024	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A025	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A025	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A025	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A026	D_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A026	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A026	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A027	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A027	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A028	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A028	D_Seidwarrior	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A028	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A029	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A029	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A030	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A030	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A030	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A031	D_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A031	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A032	D_Seidstar	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A033	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A033	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A034	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A034	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A035	D_Seidwarrior	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A035	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A036	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A036	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A037	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A037	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A037	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A038	D_Magrite	1	0	600	597	602	-300	60	-150	120	0	180	150	240	300
+#record		AlDn01A039	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A039	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A040	D_Seidwarrior	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A040	D_Seidstar	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A041	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A041	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A042	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A042	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A043	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A043	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A044	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A044	D_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A044	D_Seidwarrior	4	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A045	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A045	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A046	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A046	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A047	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A047	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A048	D_MagriteImp	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A048	D_MagriteHoneying	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A048	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A049	D_Seidstar	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A049	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A050	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A050	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A051	D_MagriteHoneying	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A051	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A051	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A052	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A052	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A053	D_Magrite	1	0	600	597	602	-300	60	-150	120	0	180	150	240	300
+#record		AlDn01A054	D_Seidwarrior	4	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A054	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A055	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A055	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A056	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A056	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A056	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A057	D_Seidwarrior	5	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A058	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A058	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A059	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A059	D_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A060	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A060	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A061	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A061	D_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A067	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A067	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A068	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A068	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A069	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A069	D_Seidwarrior	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A070	D_Seidwarrior	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A070	D_Seidstar	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A071	D_MagriteHoneying	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A071	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A072	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A072	D_MagriteImp	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	D_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A074	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A074	D_MagriteImp	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A075	D_MagriteImp	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A075	D_MagriteHoneying	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A075	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A076	D_MagriteHoneying	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A076	D_MagriteImp	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A076	D_Seidstar	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+																	
+#end																	

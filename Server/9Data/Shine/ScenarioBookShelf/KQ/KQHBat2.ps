@@ -1,0 +1,215 @@
+open [main]
+	var InterruptBlock		""
+		InterruptArg		""
+
+		Players				""
+		Count				""
+		ResultList			""
+		PlayerHandle		""
+		PlayerList			""
+		LooterHandle		""
+
+		Winner0				""
+		Winner1				""
+		Winner2				""
+		
+		Maul				"KQ_InvincibleHammer".
+		
+	battlestop PK.
+
+	waitlogin Players.
+
+	if Players === 0
+	then open
+		call "QuestEnd".
+	close
+
+	pause Sec 10.
+
+	scriptfile "KQHBat2".
+
+	chatwin "RouTownChiefRoumenus" "Intro0".
+	pause Sec 4.
+	chatwin "RouTownChiefRoumenus" "Intro1".
+	pause Sec 4.
+	chatwin "RouTownChiefRoumenus" "Intro2".
+	pause Sec 4.
+	chatwin "RouTownChiefRoumenus" "Intro3".
+	pause Sec 4.
+	chatwin "EldSpeGuard01" "Intro4".
+	pause Sec 4.
+
+	; LSH - Insert ( 2008-09-18 )
+	chatwin "EldSpeGuard01" "Intro5".
+	pause Sec 3.
+	chatwin "EldSpeGuard01" "Intro6".
+
+	pause Sec 2.
+	chatwin "EldSpeGuard01" "DualStart".
+
+	; 1. 5분간 자유 PVP
+	
+	battlestart PK.
+	PlayerList = @KQTopList("NewConditionOfHero" 10 0).
+	timelimit Sec 30.
+	
+	interruptclear.
+	interruptset playerdead "PlayerDead" 1 "PlayerDead".
+	call "WaitTimeLimit".
+	
+	; 2. 얼음광석 리젠
+	; 3. 망치광석 리젠
+	; 4. 아이템 줍는 인터럽트 지정
+
+	interruptclear.
+	interruptset playerdead "PlayerDead" 1 "PlayerDead".
+	call "RegenMaul".
+	
+	; 5. 15분 제한걸고 대기
+	
+	timelimit Min 15.
+	call "WaitTimeLimit".
+
+	; 6. 끝
+	
+	interruptclear.
+	itemerase all Maul.
+	itemerase all "KQ_Ice01".
+	chatwin "RouTownChiefRoumenus" "DualStop".
+	battlestop PK.
+	
+	revival all.
+	
+	pause Sec 10.
+	
+	; 7. 등수체크
+	ResultList = @KQResultList("NewConditionOfHero" 0 5000).
+
+	open [RewardBlock]
+		Count = 0.
+		infinite
+		open
+			PlayerHandle = @RemoveFirst("ResultList" " ").
+
+			if PlayerHandle === ""
+			then open
+				break "RewardBlock".
+			close
+
+			if Count < 3
+			then open
+				sendquestresult Suc PlayerHandle.
+				invidualreward PlayerHandle "HERO_" % InitFlag % "_" % Count.
+				#("Winner" % Count) = @CharName(PlayerHandle).
+			close
+			else open
+				sendquestresult Fail PlayerHandle.
+				invidualreward PlayerHandle "HERO_" % InitFlag % "_3".
+			close
+
+			Count = Count + 1.
+
+		close
+	close
+	
+	; 8. 집으로 보내기
+
+	chatwin "RouTownChiefRoumenus" "DualResult" Winner0 Winner1 Winner2.
+
+	; LSH - Insert ( 2008-09-18 )
+	chatwin "RouTownChiefRoumenus" "DualResult1".
+	chatwin "EldSpeGuard01" "DualResult2".
+	chatwin "EldSpeGuard01" "DualResult3".
+	chatwin "RouTownChiefRoumenus" "DualResult4".
+
+
+	broadcast all "KQReturn30".
+	pause sec 10.
+	broadcast all "KQReturn20".
+	pause sec 10.
+	broadcast all "KQReturn10".
+	pause sec 5.
+	broadcast all "KQReturn5".
+	pause sec 5.
+	
+	linkto all "Eld" "Eld" 17214 13445.
+	
+	endofkq.	
+close
+
+open [PickUpMaulFirst]
+	interruptset Sec "RegenMaul" 1 90 "RegenMaul".
+	call "PickUpMaul".
+close
+
+open [PickUpMaul]
+	LooterHandle = InterruptArg.
+	
+	scriptfile "".
+	broadcast all @CharName(LooterHandle) % " has obtained Invincible Hammer.".
+	broadcast all "Everyone else will be immobilized for 3 seconds.".
+	scriptfile "KQHBat2".
+	
+	interruptset DeadHandle "LooterDead" 1 LooterHandle "LooterDead".
+	
+	abstateset all "StaCommonStun01" 1 3000 LooterHandle.
+	
+	interruptset pickupitemindex "PickUpMaul" 1 Maul "PickUpMaul".
+close
+
+open [RegenMaul]
+	regengroup "KDHBat1" "MINE_MAUL".
+	itemerase all Maul.
+	interrupterase "PickUpMaul".
+	interrupterase "LooterDead".
+	interruptset pickupitemindex "PickUpMaul" 1 Maul "PickUpMaulFirst".
+	
+	call "RegenIce".
+close
+
+open [RegenIce]
+	regengroup "KDHBat1" "MINE_ICE".
+close
+
+open [LooterDead]
+	itemerase all Maul.
+	itemdrop InterruptArg Maul 1000000.
+close
+
+open [WaitTimeLimit]
+	interruptset TimeOut "" 1 "LimitTimeOut".
+
+	infinite
+	open
+		waitinterrupt InterruptBlock "InterruptArg".
+		call InterruptBlock.
+	close
+close
+
+open [LimitTimeOut]
+	break "WaitTimeLimit".
+close
+
+open [PlayerDead]
+	PlayerList = @KQTopList("NewConditionOfHero" 10 0).
+	interruptset playerdead "PlayerDead" 1 "PlayerDead".
+close
+
+open [QuestEnd]
+	battlestop PK.
+	
+	broadcast all "KQReturn30".
+	pause sec 10.
+	broadcast all "KQReturn20".
+	pause sec 10.
+	broadcast all "KQReturn10".
+	pause sec 5.
+	broadcast all "KQReturn5".
+	pause sec 5.
+	
+	linkto all "Eld" "Eld" 17214 13445.
+	
+	endofkq.
+	
+	break "main".
+close

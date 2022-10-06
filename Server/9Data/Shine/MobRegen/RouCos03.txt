@@ -1,0 +1,345 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		RouCos03Area01	N	11472	3049	1081	84	6									
+#record		RouCos03Area02	N	9342	3848	0	0	595									
+#record		RouCos03Area04	N	7004	4628	554	442	18									
+#record		RouCos03Area05	N	7009	5871	0	0	743									
+#record		RouCos03Area06	N	6742	3864	894	277	31									
+#record		RouCos03Area07	N	6499	7461	794	235	66									
+#record		RouCos03Area08	N	10417	5873	0	0	749									
+#record		RouCos03Area11	N	6888	10204	307	384	23									
+#record		RouCos03Area12	N	9095	10511	579	315	7									
+#record		RouCos03Area13	N	10292	11165	623	874	0									
+#record		RouCos03Area14	N	9137	11520	536	430	2									
+#record		RouCos03Area15	N	6498	11905	0	0	400									
+#record		RouCos03Area16	N	8154	11502	0	0	456									
+#record		RouCos03Area17	N	7928	10600	0	0	455									
+#record		RouCos03Area18	N	11834	12282	0	0	667									
+#record		RouCos03Area19	N	12852	10072	0	0	716									
+#record		RouCos03Area20	N	13009	13043	0	0	716									
+#record		RouCos03Area21	N	14081	12077	0	0	688									
+#record		RouCos03Area22	N	14336	10238	673	303	-6									
+#record		RouCos03Area23	N	13385	15275	331	609	1									
+#record		RouCos03Area24	N	8382	14231	0	0	420									
+#record		RouCos03Area25	N	8912	15833	161	554	-49									
+#record		RouCos03Area26	N	9210	14761	0	0	421									
+#record		RouCos03Area27	N	9948	15358	623	222	55									
+#record		RouCos03Area28	N	11925	16770	387	440	50									
+#record		RouCos03Area29	N	12181	17988	0	0	681									
+#record		RouCos03Area31	N	13665	17725	0	0	485									
+#record		RouCos03Area33	N	13775	18419	967	261	14									
+#record		RouCos03Area34	N	13465	16549	677	188	16									
+#record		RouCos03Area35	N	12528	15971	0	0	554									
+#record		RouCos03Area36	N	14942	16587	0	0	456									
+#record		RouCos03Area37	N	13742	16676	0	0	925									
+#record		RouCos03Area38	N	9535	14351	236	817	62									
+#record		RouCos03Area39	N	7592	14093	586	287	53									
+#record		RouCos03Area40	N	15520	11140	502	246	28									
+#record		RouCos03Area41	N	17610	10525	0	0	582									
+#record		RouCos03Area42	N	17960	12021	0	0	667									
+#record		RouCos03Area43	N	17098	11401	0	0	498									
+#record		RouCos03Area44	N	19314	11720	0	0	686									
+#record		RouCos03Area45	N	18779	10561	0	0	519									
+#record		RouCos03Area46	N	19436	7012	250	584	25									
+#record		RouCos03Area47	N	18581	5839	0	0	491									
+#record		RouCos03Area48	N	16972	6419	744	309	37									
+#record		RouCos03Area49	N	19583	4294	576	513	20									
+#record		RouCos03Area50	N	16587	3956	801	392	15									
+#record		RouCos04Area51	N	16506	5409	0	0	597									
+#record		RouCos03Area52	N	17766	4906	0	0	841									
+#record		RouCos03Area53	N	15562	6642	603	282	-14									
+#record		RouCos03Area54	N	15622	5874	511	383	-15									
+#record		RouCos03Area55	N	14715	3667	670	75	-12									
+#record		RouCos03Area56	N	17653	9719	708	143	8									
+#record		RouCos03Area58	N	7154	11297	0	0	593									
+#record		RouCos03Area59	N	11722	10790	0	0	793									
+#record		RouCos03Area60	N	15822	10065	528	191	4									
+#record		RouCos03Area61	N	9614	4940	0	0	544									
+#record		RouCos03Area62	N	5903	4858	513	443	10									
+#record		RouCos03Area63	N	14936	15853	271	1175	81									
+#record		RouCos03Area64	N	14279	10995	0	0	512									
+#record		RouCos03Area68	N	16542	10593	0	0	477									
+#record		RouCos03Area69	N	19312	8711	120	834	-27									
+#record		RouCos03Area70	N	12931	11509	0	0	748									
+#record		RouCos03Area71	N	11370	17301	0	0	442									
+#record		RouCos03AreaW1	N	17392	4202	1567	363	-7									
+#record		RouCos03AreaW2	N	18250	5347	327	2310	-60									
+#record		RouCos03AreaW3	N	10783	6418	901	340	19									
+#record		RouCos03AreaW4	N	7984	3937	1911	460	0									
+#record		RouCos03AreaW5	N	6762	4852	1773	372	0									
+#record		RouCos03AreaW6	N	14592	12496	1122	117	44									
+#record		RouCos03AreaW7	N	19410	12607	656	99	0									
+#record		RouCos03AreaW8	N	10127	11982	1330	148	-25									
+#record		RouCos03AreaW9	N	9745	14033	974	113	-36									
+#record		RouCos03AreaW10	N	12783	15725	1507	116	19									
+#record		RouCos03AreaW11	N	17270	12119	1012	73	-41									
+#record		RouCos03Area72	N	8127	15143	769	543	-40									
+#record		RouCos03AreaG1	Y	20195	12251	0	0	190									
+#record		RouCos03Area73	N	9870	13988	0	0	225									
+#record		RouCos03AreaPbox01	N	13112	11528	0	0	1725									
+#record		RouCos03Area74	N	16866	4480	0	0	373									
+#record		RouCos03Area75	N	18799	4931	0	0	372									
+#record		RouCos03Area77	N	17267	5494	0	0	373									
+#record		RouCos03Area80	N	7806	4561	0	0	345									
+#record		RouCos03Area81	N	17992	3984	794	261	-22									
+#record		RouCos03Area84	N	14250	6196	562	327	15									
+#record		RouCos03Area85	N	11414	6236	0	0	457									
+#record		RouCos03Area86	N	12119	6648	0	0	527									
+#record		RouCos03Area87	N	7986	3865	0	0	772									
+#record		RouCos03Area88	N	8329	5041	705	465	24									
+#record		RouCos03Area89	N	11380	6788	584	307	4									
+#record		Cos03Mush01	N	13284	6573	0	0	422									
+#record		Cos03Mush02	N	12965	7164	0	0	492									
+#record		Cos03Mush03	N	8981	3807	0	0	500									
+#record		Cos03Mush04	N	8257	3818	0	0	478									
+;		Halloween01	N	13623	16901	1799	1072	0									
+;		Halloween02	N	7923	4233	1624	1080	0									
+;		Halloween03	N	17944	4516	1511	855	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		RouCos03Area01	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area02	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area02	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area04	Kebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area04	LittleLizardMan	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area05	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area05	JokeKebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area05	LittleLizardMan	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area06	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area06	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area07	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area07	JokeKebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area08	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area08	JokeKebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area11	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area11	SpeedyBoogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area12	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area12	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area13	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area13	MiniPinky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area14	MaraElite	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area14	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area14	SpeedyBoogy	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area15	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area15	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area16	MaraCrew	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area16	MaraElite	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area17	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area17	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area18	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area18	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area19	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area19	SpeedyBoogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area20	MaraSailor	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area20	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area20	SpeedyBoogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area21	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area21	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area22	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area22	MaraSailor	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area23	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area23	MaraSailor	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area23	SpeedyBoogy	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area24	MaraCrew	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area24	Boogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area24	MiniPinky	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area25	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area25	Boogy	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area26	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area26	MiniPinky	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area27	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area28	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area28	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area29	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area29	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area31	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area31	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area33	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area33	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area33	SpeedyBoogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area34	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area35	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area35	MaraElite	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area36	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area37	Mara	1	0	360	345	375	-15	3	-10	10	0	60	10	120	15
+#record		RouCos03Area37	MaraSailor	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area38	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area39	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area39	Boogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area39	MiniPinky	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area40	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area40	MaraSailor	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area40	SpeedyBoogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area41	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area42	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area42	SpeedyBoogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area43	MaraElite	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area43	SpeedyBoogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area44	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area44	SpeedyBoogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area45	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area46	Kebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area46	JokeKebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area46	SmartPhino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area47	Kebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area47	LittleLizardMan	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area48	Kebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area48	TombRaider	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area48	KebingSpeeder	1	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		RouCos03Area48	JokeKebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area49	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area49	ProckZone	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area49	KebingSpeeder	1	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		RouCos03Area50	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area50	LittleLizardMan	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area50	Kebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos04Area51	Kebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos04Area51	LittleLizardMan	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos04Area51	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area52	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area52	Kebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area52	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area52	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area53	JokeKebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area53	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area54	Kebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area54	JokeKebing	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area54	SmartPhino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area55	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area56	MaraSailor	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area56	SmartPhino	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area58	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area58	MiniPinky	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area59	MaraElite	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area59	MaraCrew	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area60	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area60	MaraSailor	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area61	SmartPhino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area61	JokeKebing	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area61	Kebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area62	SmartPhino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area62	JokeKebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area63	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area63	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area63	SpeedyBoogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area64	MaraElite	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area64	SpeedyBoogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area68	MaraSailor	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area68	MaraElite	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area69	JokeKebing	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area69	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area70	MaraElite	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area70	SpeedyBoogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area71	MaraElite	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area71	MaraSailor	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area71	SpeedyBoogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03AreaW1	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	HERB1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	HERB2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	MUSHROOM1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	WOOD1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	WOOD2	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	HERB3	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	MUSHROOM3	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	MUSHROOM2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW1	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	HERB1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	HERB2	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	HERB3	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	MUSHROOM1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	MUSHROOM2	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	MUSHROOM3	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	WOOD2	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW2	WOOD1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	HERB2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	HERB3	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	MUSHROOM2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	MUSHROOM3	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	WOOD2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW3	WOOD1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	HERB1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	HERB3	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	MUSHROOM3	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	MUSHROOM1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	WOOD2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW4	WOOD1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	HERB2	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	HERB3	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	MUSHROOM2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	MUSHROOM3	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	FLOWER1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	WOOD2	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW5	WOOD1	1	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW6	CLAM1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW6	STARFISH1	3	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW7	STARFISH1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW8	CLAM1	3	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW8	STARFISH1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW9	CLAM1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW9	STARFISH1	3	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW10	CLAM1	2	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW10	STARFISH1	3	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03AreaW11	CLAM1	3	0	180	80	190	-100	3	-50	10	0	150	5	300	10
+#record		RouCos03Area72	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03AreaG1	S_Boogy	1	0	21600	21590	21610	-10	3	-5	10	0	60	5	120	10
+#record		RouCos03AreaG1	Boogy	3	0	21600	21590	21610	-10	3	-5	10	0	60	5	120	10
+#record		RouCos03Area73	BoogyKnight	1	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		RouCos03AreaPbox01	PresentBox3	2	0	14400	14390	14410	-10	3	-5	10	0	60	5	120	10
+#record		RouCos03Area74	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area74	LittleLizardMan	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area75	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area77	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area77	LittleLizardMan	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area80	ProckZone	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area81	TombRaider	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area81	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area84	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area85	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area85	JokeKebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area86	SmartPhino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area86	JokeKebing	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area87	LittleLizardMan	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area87	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area88	Kebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area88	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area88	KebingSpeeder	1	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		RouCos03Area89	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouCos03Area89	JokeKebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Cos03Mush01	MUSHROOM1	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush01	MUSHROOM2	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush01	MUSHROOM3	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush02	MUSHROOM1	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush02	MUSHROOM2	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush02	MUSHROOM3	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush03	MUSHROOM1	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush03	MUSHROOM2	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush03	MUSHROOM3	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush04	MUSHROOM1	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush04	MUSHROOM2	3	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+#record		Cos03Mush04	MUSHROOM3	2	0	180	165	195	-15	3	-10	10	0	60	10	120	15
+;		Halloween01	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+																	
+#end																	

@@ -1,0 +1,50 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+																		
+;		Fbattle02HD001	N	4270	3184	44	625	14										
+;		Fbattle02HD002	N	2241	3653	39	704	0										
+;		Fbattle02HD003	N	3234	3427	68	684	0										
+#record		Fbattle02C01	N	3293	2938	73	158	175										
+#record		Fbattle02C02	N	3233	2476	66	87	178										
+#record		Fbattle02C03	N	4438	3363	66	87	178										
+#record		Fbattle02C04	N	4158	3768	66	87	178										
+#record		Fbattle02C05	N	3406	3214	66	87	178										
+#record		Fbattle02C06	N	2188	2935	66	87	178										
+#record		Fbattle02C07	N	2608	2400	66	87	178										
+#record		Fbattle02C08	N	2321	3301	66	87	178										
+#record		Fbattle02C09	N	4154	2789	66	87	178										
+#record		Fbattle02C10	N	3216	3423	66	87	178										
+#record		Fbattle02C11	N	3244	2655	66	87	178										
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+																		
+;		Fbattle02HD001	HalloWeenPhino02	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02HD002	HalloWeenPhino02	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02HD003	HalloWeenPhino02	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;#record		Fbattle02C01	SnowSlime02	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C05	E_JackO02	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C05	E_JackO02	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C10	E_JackO03	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C10	E_JackO03	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C02	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C03	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C04	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C06	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C07	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C08	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C09	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+;		Fbattle02C11	E_Box_Black02	3	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#end																		

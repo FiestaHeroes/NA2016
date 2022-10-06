@@ -1,0 +1,252 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		AlDn01A001	N	9928	2714	52	251	42									
+#record		AlDn01A002	N	9985	2096	0	0	135									
+#record		AlDn01A003	N	10692	3180	466	101	-22									
+#record		AlDn01A004	N	11567	2871	0	0	128									
+#record		AlDn01A005	N	10447	1695	0	0	163									
+#record		AlDn01A006	N	11887	4526	0	0	142									
+#record		AlDn007	N	11705	4825	0	0	142									
+#record		AlDn01A008	N	11412	5148	0	0	233									
+#record		AlDn01A009	N	10942	5297	0	0	212									
+#record		AlDn01A010	N	10521	5400	0	0	170									
+#record		AlDn01A011	N	10173	5629	0	0	149									
+#record		AlDn01A013	N	10544	7293	0	0	205									
+#record		AlDn01A014	N	10030	7144	0	0	240									
+#record		AlDn01A015	N	9850	7620	0	0	233									
+#record		AlDn01A016	N	10301	7880	0	0	226									
+#record		AlDn01A017	N	9542	9526	0	0	198									
+#record		AlDn01A018	N	9146	9925	0	0	275									
+#record		AlDn01A019	N	8604	9920	0	0	226									
+#record		AlDn01A020	N	8711	10320	88	234	-40									
+#record		AlDn01A022	N	6950	11564	0	0	240									
+#record		AlDn01A023	N	7242	10551	0	0	170									
+#record		AlDn01A024	N	6493	10182	0	0	170									
+#record		AlDn01A025	N	6082	11348	0	0	240									
+#record		AlDn01A026	N	6645	10863	0	0	415									
+#record		AlDn01A027	N	5885	10789	0	0	261									
+#record		AlDn01A028	N	6065	10290	0	0	177									
+#record		AlDn01A029	N	6951	10241	0	0	156									
+#record		AlDn01A030	N	4662	10026	0	0	198									
+#record		AlDn01A031	N	4289	10115	117	271	1									
+#record		AlDn01A032	N	3867	10259	0	0	191									
+#record		AlDn01A033	N	3470	10155	0	0	205									
+#record		AlDn01A034	N	3441	9722	0	0	163									
+#record		AlDn01A035	N	7320	11127	0	0	191									
+#record		AlDn01A036	N	2616	8524	0	0	184									
+#record		AlDn01A037	N	1856	8104	0	0	261									
+#record		AlDn01A039	N	2446	8082	0	0	219									
+#record		AlDn01A040	N	2995	8161	0	0	198									
+#record		AlDn01A041	N	1809	7224	0	0	149									
+#record		AlDn01A042	N	1812	7595	0	0	177									
+#record		AlDn01A043	N	2315	7073	0	0	226									
+#record		AlDn01A044	N	2378	7562	312	187	3									
+#record		AlDn01A045	N	3007	7606	0	0	268									
+#record		AlDn01A046	N	2829	7110	0	0	191									
+#record		AlDn01A047	N	2205	8436	0	0	149									
+#record		AlDn01A048	N	3176	6078	354	155	-3									
+#record		AlDn01A049	N	3903	6182	0	0	240									
+#record		AlDn01A050	N	4063	5716	0	0	198									
+#record		AlDn01A051	N	3805	5167	94	281	15									
+#record		AlDn01A052	N	5056	5307	0	0	233									
+#record		AlDn01A054	N	5525	4783	358	153	1									
+#record		AlDn01A055	N	5436	4301	0	0	226									
+#record		AlDn01A056	N	6171	4393	295	203	29									
+#record		AlDn01A057	N	5708	5266	0	0	240									
+#record		AlDn01A058	N	6768	4256	0	0	177									
+#record		AlDn01A059	N	5862	3950	0	0	226									
+#record		AlDn01A060	N	6513	4847	0	0	184									
+#record		AlDn01A061	N	6312	5334	0	0	212									
+#record		AlDn01A067	N	5987	5759	0	0	226									
+#record		AlDn01A068	N	6930	4770	172	262	-4									
+#record		AlDn01A069	N	6539	5783	0	0	205									
+#record		AlDn01A070	N	6837	5345	0	0	212									
+#record		AlDn01A071	N	7328	5164	0	0	198									
+#record		AlDn01A072	N	8257	4296	0	0	226									
+#record		AlDn01A073	N	8600	3793	0	0	324									
+#record		AlDn01A074	N	8820	3243	0	0	191									
+#record		AlDn01A075	N	10976	2794	0	0	254									
+#record		AlDn01A076	N	10344	2533	0	0	254									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		AlDn01A001	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A001	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A001	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A002	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A002	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A002	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A003	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A003	P_Seidwarrior1	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A003	P_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A004	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A004	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A004	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A005	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A005	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A005	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A006	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A006	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A006	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn007	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn007	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn007	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A008	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A009	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A010	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A010	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A010	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A011	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A011	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A013	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A013	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A013	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	P_Seidwarrior1	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A014	P_Archer9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	P_Archer9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	P_Seidwarrior2	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A015	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A016	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A016	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A016	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A017	P_Seidwarrior2	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A017	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A017	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A018	P_Fighter9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A018	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A019	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A019	P_Fighter9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A020	P_Seidwarrior2	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A020	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A022	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A022	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A022	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A023	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A023	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A024	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A024	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A025	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A025	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A025	P_Seidwarrior3	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A026	P_Seidwarrior4	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A026	P_Fighter9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A026	P_Archer9F	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A027	P_Archer9F	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A027	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A028	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A028	P_Archer9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A028	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A029	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A029	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A030	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A030	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A030	P_Seidwarrior2	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A031	P_Seidwarrior4	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A031	P_Fighter9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A032	P_Fighter9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A033	P_Fighter9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A033	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A034	P_Fighter9M	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A034	P_Seidwarrior2	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A035	P_Archer9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A035	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A036	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A036	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A037	P_Archer9F	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A037	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A037	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A039	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A039	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A040	P_Archer9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A040	P_Cleric9F	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A041	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A041	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A042	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A042	P_Archer9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A043	P_Mage9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A043	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A044	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A044	P_Seidwarrior4	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A044	P_Mage9M	4	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A045	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A045	P_Mage9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A046	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A046	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A047	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A047	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A048	P_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A048	P_Seidwarrior2	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A048	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A049	P_Cleric9F	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A049	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A050	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A050	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A051	P_Seidwarrior2	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A051	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A051	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A052	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A052	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A054	P_Mage9M	4	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A054	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A055	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A055	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A056	P_Mage9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A056	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A056	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A057	P_Mage9M	5	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A058	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A058	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A059	P_Mage9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A059	P_Seidwarrior4	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A060	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A060	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A061	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A061	P_Seidwarrior4	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A067	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A067	P_Mage9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A068	P_Mage9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A068	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A069	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A069	P_Mage9M	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A070	P_Mage9M	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A070	P_Cleric9F	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A071	P_Seidwarrior2	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A071	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A072	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A072	P_Seidhunter	3	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	P_Seidwarrior2	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	P_Seidwarrior4	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A073	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A074	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A074	P_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A075	P_Seidhunter	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A075	P_Seidwarrior2	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A075	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A076	P_Seidwarrior2	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A076	P_Seidhunter	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		AlDn01A076	P_Cleric9F	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+																	
+#end																	

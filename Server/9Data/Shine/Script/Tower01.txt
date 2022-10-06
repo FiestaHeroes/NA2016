@@ -1,0 +1,83 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Chat0101	"Friends, Welcome to the Tower of Iyzel."	
+#Record	Chat0102	Can you reach the final destination while defeating the monsters of this place?	
+#Record	Chat0103	"Anyway, eliminate the Imps first!"	
+			
+#Record	Chat0201	"Well then, shall we go to the next room?"	
+			
+#Record	Chat0301	"Well, shall we continue?"	
+			
+#Record	Chat0401	The Dust Golem appeared!
+		
+#Record	Chat0501	You defeated the Dust Golem!
+#Record	Chat0502	But you have a long way to go!
+#Record	Chat0503	Please hurry!
+		
+#Record	Chat0501Boss	The Dust Golem is summoning more enemies!
+#Record	Chat0502Boss	"Gosh, more monsters?"
+		
+#Record	Chat0601	Good job. Maybe we should rest here?
+#Record	Chat0602	"If not, move on to the next room!"
+		
+#Record	Chat0701	"I like your combative spirit! Good, keep forward."
+		
+#Record	Chat0801	The enemies are getting stronger... are you sure you want to continue?
+		
+#Record	Chat0901	The Stone Golem appeared!
+#Record	Chat0902	Go back if you are scared!
+		
+#Record	Chat1001	You defeated the Stone Golem at last!
+#Record	Chat1002	Nice! But don't be too happy with yourself. You have a long way to go!
+#Record	Chat1003	"Now, move on to the next room!"
+		
+#Record	Chat1001Boss	Be careful! The Stone Golem is summoning more tower monsters!
+#Record	Chat1002Boss	Watchout! The Stone Golem is summoning again!
+		
+#Record	Chat1101	"You have a long way to go, quickly step forward to the next room!"
+		
+#Record	Chat1201	Quick! Move quickly!
+		
+#Record	Chat1301	"Gosh, I guess the Poison Golem is awake!"
+#Record	Chat1302	"The Poison Golem's venom is very powerful, will it be okay?"
+		
+#Record	Chat1401	You finally defeated the Poison Golem!
+#Record	Chat1402	So what about preparing for leaving for a little bit?
+#Record	Chat1403	"If you want to see the Iron Golem, I say no more! "
+		
+#Record	Chat1401Boss	Be careful! The Poison Golem is summoning more lower monsters!
+#Record	Chat1402Boss	Watchout! The Poison Golem second summon!
+		
+#Record	Chat1501	Wow! Now it seems our journey's end is almost in sight!
+		
+#Record	Chat1601	We are getting closer to the end of this magic place. Good job.
+#Record	Chat1602	Careful up ahead!
+		
+#Record	Chat1701	"Well, what was next!"
+#Record	Chat1702	It’s been a long time since I've come here.
+#Record	Chat1703	I guess it was King Coll... move forward and check!
+		
+#Record	Chat1801	The final destination isn't that far. Move forward!
+#Record	Chat1802	You don’t say you want to go back at this point! Right?
+#Record	Chat1803	Move quickly!
+		
+#Record	Chat2001	Wow! Awesome!
+#Record	Chat2002	Your really defeated the Lord Iron Golem!
+#Record	Chat2003	You are really powerful!
+		
+#Record	Chat2001Boss	The Lord Iron Golem is summoning monsters!
+#Record	Chat2002Boss	The Lord Iron Golem's second summon!
+#Record	Chat2003Boss	The Lord Iron Golem's final summon!
+		
+#Record	Chat2001System	You will go back to the Forest of Mist in 1 minute.
+#Record	Chat2002System	You will go back to the Forest of Mist in 30 seconds.
+#Record	Chat2003System	You will go back to the Forest of Mist in 10 seconds.
+			
+#End			
+;	2009-02-16 추가		

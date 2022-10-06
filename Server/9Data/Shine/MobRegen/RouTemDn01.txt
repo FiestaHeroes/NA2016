@@ -1,0 +1,130 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		RouTemDn01Area01	N	5967	2621	105	303	0									
+#record		RouTemDn01Area02	N	5070	2644	108	302	0									
+#record		RouTemDn01Area03	N	5568	3290	493	95	0									
+#record		RouTemDn01Area04	N	5634	3784	216	126	0									
+#record		RouTemDn01Area05	N	5114	3786	201	131	0									
+#record		RouTemDn01Area06	N	5956	4285	57	154	-23									
+#record		RouTemDn01Area07	N	4654	3862	56	156	40									
+#record		RouTemDn01Area08	N	4772	2424	0	0	120									
+#record		RouTemDn01Area09	N	4648	2550	197	98	-50									
+#record		RouTemDn01Area10	N	4512	2887	272	64	1									
+#record		RouTemDn01Area12	N	5450	6070	168	338	0									
+#record		RouTemDn01Area13	N	5443	6603	158	158	0									
+#record		RouTemDn01Area14	N	5715	6466	0	0	107									
+#record		RouTemDn01Area15	N	5114	6439	0	0	107									
+#record		RouTemDn01Area16	N	6307	5049	242	83	0									
+#record		RouTemDn01Area17	N	6673	5636	101	292	0									
+#record		RouTemDn01Area18	N	8056	5847	433	120	0									
+#record		RouTemDn01Area19	N	8755	4365	456	323	0									
+#record		RouTemDn01Area20	N	9520	5381	279	402	0									
+#record		RouTemDn01Area21	N	8963	5524	160	171	0									
+#record		RouTemDn01Area22	N	4037	4130	407	75	0									
+#record		RouTemDn01Area23	N	3062	4654	110	366	0									
+#record		RouTemDn01Area24	N	2034	5221	384	135	0									
+#record		RouTemDn01Area25	N	675	4542	481	155	137									
+#record		RouTemDn01Area26	N	1244	3631	319	539	0									
+#record		RouTemQst01	N	3072	5273	0	0	107									
+#record		RouTemQst02	N	4675	3160	0	0	142									
+#record		RouTemQst03	N	4300	2461	0	0	100									
+#record		RouTemQst04	N	5404	3983	352	50	0									
+#record		RouTemQst05	N	5438	4660	152	229	-1									
+#record		RouTemDn01AreaPbox01	N	5223	4620	4912	2343	0									
+#record		RouTemDnArea27	N	991	5267	0	0	114									
+#record		RouTemDnArea28	N	1500	4611	0	0	107									
+#record		RouTemDnArea29	N	9750	4156	0	0	114									
+#record		RouTemDnArea30	N	8378	4127	0	0	114									
+#record		RouTemDnArea31	N	8459	5290	0	0	107									
+#record		RouTemDnArea32	N	369	3764	0	0	114									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		RouTemDn01Area01	Kebing	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area01	JokeKebing	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area02	Kebing	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area02	JokeKebing	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area03	Kebing	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area03	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area03	TombRaider	3	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area03	JokeKebing	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area04	Kebing	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area04	TombRaider	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area05	Kebing	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area05	TombRaider	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area05	JokeKebing	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area06	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area07	PunchMageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area08	TombRaider	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area08	KebingSpeeder	1	0	200	185	215	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area09	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area09	TombRaider	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area10	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area10	TombRaider	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area12	Skeleton	5	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area12	PunchMageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area13	Skeleton	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area13	SkelWarrior	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area14	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area15	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area16	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area16	Skeleton	3	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area17	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area17	Skeleton	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area17	SkelWarrior	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area17	PunchMageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area17	SkelSoldier	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area18	SkelWarrior	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area18	SkelSoldier	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area19	SkelArcher	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area19	SkelWarrior	3	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area19	SkelSoldier	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area20	SkelArcher	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area20	SkelWarrior	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area20	SkelSoldier	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area21	SkelArcher	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area22	Kebing	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area22	MageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area22	TombRaider	3	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area22	JokeKebing	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area23	Skeleton	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area23	SkelWarrior	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area23	PunchMageBook	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area24	SkelArcher	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area24	Skeleton	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area24	SkelWarrior	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area25	SkelArcher	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area25	Skeleton	3	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area25	SkelWarrior	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area25	SkelSoldier	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area26	SkelArcher	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area26	SkelWarrior	2	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01Area26	SkelSoldier	3	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemQst01	CaveKebing	1	0	80	65	95	-15	8	-10	15	0	60	10	120	15
+#record		RouTemQst01	JewelTombRaider	1	0	80	65	95	-15	8	-10	15	0	60	10	120	15
+#record		RouTemQst02	JewelTombRaider	1	0	80	65	95	-15	8	-10	15	0	60	10	120	15
+#record		RouTemQst03	CaveKebing	1	0	80	65	95	-15	8	-10	15	0	60	10	120	15
+#record		RouTemQst04	JewelTombRaider	1	0	80	65	95	-15	8	-10	15	0	60	10	120	15
+#record		RouTemQst05	CaveKebing	1	0	80	65	95	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn01AreaPbox01	PresentBox4	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		RouTemDnArea27	SilverySlime	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDnArea28	SilverySlime	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDnArea29	SilverySlime	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDnArea30	SilverySlime	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDnArea31	SilverySlime	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDnArea32	SilverySlime	1	0	40	25	55	-15	8	-10	15	0	60	10	120	15
+																	
+#end																	

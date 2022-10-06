@@ -1,0 +1,256 @@
+open [main]
+    var NPC                     ""
+        MiddleMara              ""
+        MiddleMarlone           ""
+        LastMara                ""
+        LastMarlone             ""
+        VirtualMara00           ""
+        VirtualMara01           ""
+        VirtualMarlone00        ""
+        VirtualMarlone01        ""
+        InterruptBlock          ""
+        InterruptArg            ""
+        Temp                    "".
+
+    waitlogin NPC.
+    if NPC == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    pause Sec 5.
+
+    scriptfile "KQMaraPirate".
+
+    regengroup "KDPrtShip" "KDPrtShipArea01".
+    regengroup "KDPrtShip" "KDPrtShipArea02".
+    regengroup "KDPrtShip" "KDPrtShipArea03".
+    regengroup "KDPrtShip" "KDPrtShipArea04".
+    regengroup "KDPrtShip" "KDPrtShipArea05".
+    regengroup "KDPrtShip" "KDPrtShipArea06".
+    regengroup "KDPrtShip" "KDPrtShipArea07".
+    regengroup "KDPrtShip" "KDPrtShipArea08".
+    regengroup "KDPrtShip" "KDPrtShipArea09".
+    regengroup "KDPrtShip" "KDPrtShipArea10".
+    regengroup "KDPrtShip" "KDPrtShipArea12".
+    regengroup "KDPrtShip" "KDPrtShipArea13".
+    regengroup "KDPrtShip" "KDPrtShipArea14".
+    regengroup "KDPrtShip" "KDPrtShipArea15".
+
+    npcstand NPC "EldSpeGuard01" 10443 8712 180 1000 "Normal".
+
+    npcchat NPC "SpyLie0".
+    pause Sec 5.                        ; 5초간 대기
+
+    npcchat NPC "SpyLie1".
+    pause Sec 5.                        ; 5초간 대기
+
+    npcchat NPC "SpyLie2".
+    pause Sec 5.                        ; 5초간 대기
+
+    npcchat NPC "SpyLie3".
+    pause Sec 3.                        ; 3초간 대기
+    
+    vanish NPC.
+
+    ; 중간보스 리젠
+    mobregen MiddleMara "KQ_Mara" 9249 17289 90 1000 "Normal".
+    mobregen MiddleMarlone "KQ_Marlone" 9565 17142 90 1000 "Normal".
+
+    chatwin "KQ_TrueMara" "SpyReport0".
+    pause Sec 1.                        ; 1초간 대기
+    chatwin "EldSpeGuard01" "SpyReport1".
+    pause MilliSec 500.                        ; 1초간 대기
+    chatwin "KQ_TrueMarlone" "SpyReport2".
+
+    timelimit Min 50.
+
+    regengroup "KDPrtShip" "KDPrtShipArea16".
+    regengroup "KDPrtShip" "KDPrtShipArea17".
+    regengroup "KDPrtShip" "KDPrtShipArea18".
+    regengroup "KDPrtShip" "KDPrtShipArea19".
+    regengroup "KDPrtShip" "KDPrtShipArea21".
+    regengroup "KDPrtShip" "KDPrtShipArea22".
+    regengroup "KDPrtShip" "KDPrtShipArea23".
+    regengroup "KDPrtShip" "KDPrtShipArea24".
+    regengroup "KDPrtShip" "KDPrtShipArea25".
+    regengroup "KDPrtShip" "KDPrtShipArea26".
+    regengroup "KDPrtShip" "KDPrtShipArea27".
+    regengroup "KDPrtShip" "KDPrtShipArea28".
+    regengroup "KDPrtShip" "KDPrtShipArea29".
+    regengroup "KDPrtShip" "KDPrtShipArea30".
+    regengroup "KDPrtShip" "KDPrtShipArea31".
+    regengroup "KDPrtShip" "KDPrtShipArea32".
+    regengroup "KDPrtShip" "KDPrtShipArea33".
+    regengroup "KDPrtShip" "KDPrtShipArea34".
+    regengroup "KDPrtShip" "KDPrtShipArea35".
+    regengroup "KDPrtShip" "KDPrtShipArea36".
+    regengroup "KDPrtShip" "KDPrtShipArea37".
+    regengroup "KDPrtShip" "KDPrtShipArea38".
+    regengroup "KDPrtShip" "KDPrtShipArea39".
+    regengroup "KDPrtShip" "KDPrtShipArea43".
+    regengroup "KDPrtShip" "KDPrtShipArea44".
+    regengroup "KDPrtShip" "KDPrtShipArea46".
+    regengroup "KDPrtShip" "KDPrtShipArea49".
+    regengroup "KDPrtShip" "KDPrtShipArea50".
+    regengroup "KDPrtShip" "KDPrtShipArea51".
+    regengroup "KDPrtShip" "KDPrtShipArea52".
+    regengroup "KDPrtShip" "KDPrtShipArea53".
+    regengroup "KDPrtShip" "KDPrtShipArea54".
+    regengroup "KDPrtShip" "KDPrtShipArea55".
+
+
+    chatwin "KQ_TrueMara" "SpyReport3".
+    pause MilliSec 1000.
+    chatwin "EldSpeGuard01" "SpyReport4".
+
+
+    call "BeforeFakeBoss".      ; 가짜보스까지 진행
+
+    ; 최종보스 리젠
+    mobregen LastMara       "KQ_TrueMara" 4338 19628 90 1000 "Normal".
+    mobregen VirtualMara00  "KQ_Mara"     4338 19628 90 1000 "Normal".
+    mobregen VirtualMara01  "KQ_Mara"     4338 19628 90 1000 "Normal".
+    mobregen Temp           "KQ_Mara"     4338 19628 90 1000 "Normal".
+
+
+    mobregen LastMarlone       "KQ_TrueMarlone" 4392 19295 90 1000 "Normal".
+    mobregen VirtualMarlone00  "KQ_Marlone"     4392 19295 90 1000 "Normal".
+    mobregen VirtualMarlone01  "KQ_Marlone"     4392 19295 90 1000 "Normal".
+    mobregen Temp              "KQ_Marlone"     4392 19295 90 1000 "Normal".
+ 
+    chatwin "KQ_TrueMarlone" "MiddleReport0".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMara" "MiddleReport1".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMarlone" "MiddleReport2".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMara" "MiddleReport3".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMara" "MiddleReport4".
+
+    call "LastStage".
+close
+
+open [BeforeFakeBoss]
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 MiddleMara "MiddleMaraDead".
+    interruptset DeadHandle "" 1 MiddleMarlone "MiddleMarloneDead".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [MiddleMaraDead]
+    npcchat MiddleMara "MidMaraDead".
+    MiddleMara = 0.
+    if MiddleMarlone == 0
+    then open       ; 말론이 이미 죽었으면...
+        break "BeforeFakeBoss".
+    close
+close
+
+open [MiddleMarloneDead]
+    npcchat MiddleMarlone "MidMarloneDead".
+    MiddleMarlone = 0.
+    if MiddleMara == 0
+    then open       ; 마라가 이미 죽었으면...
+        break "BeforeFakeBoss".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [LastStage]
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 VirtualMara00 "VirtualMaraDead".
+    interruptset DeadHandle "" 1 VirtualMarlone00 "VirtualMarloneDead".
+    interruptset DeadHandle "" 1 VirtualMara01 "VirtualMaraDead".
+    interruptset DeadHandle "" 1 VirtualMarlone01 "VirtualMarloneDead".
+    interruptset DeadHandle "" 1 LastMara "LastMaraDead".
+    interruptset DeadHandle "" 1 LastMarlone "LastMarloneDead".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [VirtualMaraDead]
+    mobregen VirtualMara00 "KQ_Mara" 4466 19237 0 1000 "Normal".
+close
+
+open [VirtualMarloneDead]
+    mobregen VirtualMarlone00 "KQ_Marlone" 4500 19436 0 1000 "Normal".
+close
+
+open [LastMaraDead]
+    npcchat LastMara "LastMaraDead".
+    LastMara = 0.
+    if LastMarlone == 0
+    then open
+        call "QuestSuccess".
+    close
+close
+
+open [LastMarloneDead]
+    npcchat LastMarlone "LastMarloneDead".
+    LastMarlone = 0.
+    if LastMara == 0
+    then open
+        call "QuestSuccess".
+    close
+close
+
+open [QuestSuccess]
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    chatwin "EldSpeGuard01" "Fail0".
+    pause MilliSec 5000.             ; 5초간 대기
+
+    chatwin "EldSpeGuard01" "Fail1".
+    pause MilliSec 5000.             ; 5초간 대기
+
+    chatwin "EldSpeGuard01" "Fail2".
+    pause MilliSec 5000.              ; 5초간 대기
+
+    chatwin "KQ_TrueMara" "Fail3".
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close

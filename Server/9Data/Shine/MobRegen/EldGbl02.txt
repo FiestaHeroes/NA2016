@@ -1,0 +1,177 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Mob01	N	10718	6376	0	0	230									
+#record		Mob02	N	10869	6843	0	0	251									
+#record		Mob03	N	7791	6512	0	0	279									
+#record		Mob04	N	6647	6556	0	0	272									
+#record		Mob05	N	8471	10737	0	0	350									
+#record		Mob06	N	7705	10907	0	0	350									
+#record		Mob07	N	7064	9687	0	0	250									
+#record		Mob08	N	7180	9203	0	0	250									
+#record		Mob09	N	6234	8857	0	0	265									
+#record		Mob10	N	6027	9341	0	0	251									
+#record		Mob11	N	4931	11164	0	0	251									
+#record		Mob12	N	4420	11209	0	0	286									
+#record		Mob13	N	2722	10686	0	0	265									
+#record		Mob14	N	2254	10370	0	0	314									
+#record		Mob15	N	3226	10677	0	0	236									
+#record		Mob16	N	3863	9648	66	243	-25									
+#record		Mob17	N	4943	9176	102	260	0									
+#record		Mob18	N	4902	8524	101	291	15									
+#record		Mob19	N	1855	9202	0	0	293									
+#record		Mob20	N	2088	7730	0	0	300									
+#record		Mob21	N	4216	7916	309	70	-25									
+#record		Mob22	N	3556	8706	249	93	-24									
+#record		Mob23	N	7226	7787	0	0	237									
+#record		Mob24	N	6321	6752	0	0	271									
+#record		Mob25	N	4871	6137	0	0	279									
+#record		Mob26	N	5604	5878	0	0	223									
+#record		Mob27	N	5166	5894	0	0	279									
+#record		Mob28	N	1994	9905	0	0	286									
+#record		Mob29	N	7982	4763	0	0	272									
+#record		Mob30	N	7436	3415	0	0	314									
+#record		Mob31	N	6243	3856	0	0	201									
+#record		Mob32	N	6466	3625	0	0	215									
+#record		Mob33	N	8081	3317	0	0	350									
+#record		Mob34	N	4972	4654	0	0	55									
+#record		Mob35	N	4760	4563	0	0	62									
+#record		Mob36	N	4613	4353	0	0	55									
+#record		Mob37	N	4411	3463	0	0	237									
+#record		Mob38	N	4389	3015	0	0	237									
+#record		Mob39	N	6590	1479	0	0	286									
+#record		Mob40	N	8247	4388	0	0	265									
+#record		Mob41	N	8371	3893	0	0	258									
+#record		Mob42	N	7186	1401	0	0	251									
+#record		Mob43	N	7834	1263	0	0	258									
+#record		Mob44	N	4530	1372	0	0	265									
+#record		Mob45	N	5016	1803	0	0	293									
+#record		Mob46	N	10594	2814	0	0	209									
+#record		Mob47	N	10348	3661	0	0	223									
+#record		Mob48	N	3837	2439	0	0	188									
+#record		Mob49	N	3088	1573	0	0	244									
+#record		Mob50	N	3679	3816	0	0	279									
+#record		Mob51	N	3571	4399	0	0	279									
+#record		Mob52	N	3441	4932	0	0	258									
+#record		Mob53	N	1457	3833	118	557	1									
+#record		Box01	N	6494	3885	1856	669	0									
+#record		Box02	N	518	7879	1540	1548	0									
+#record		Prod01	N	7949	10463	0	0	717									
+#record		Prod02	N	9725	6388	0	0	631									
+#record		Q_Mush01	N	5447	6318	0	0	632									
+#record		Q_Mush02	N	6592	8029	0	0	898									
+#record		Q_Mush03	N	5314	4128	526	656	93									
+#record		Secret_001	N	2636	7642	0	0	127									
+#record		Secret_002	N	3847	7944	0	0	127									
+#record		Secret_003	N	4455	8240	0	0	141									
+#record		Secret_004	N	2946	8572	0	0	141									
+#record		Secret_005	N	4654	9020	0	0	141									
+#record		Secret_006	N	3200	7885	0	0	135									
+;		Halloween01	N	3867	8952	0	0	2805									
+;		Halloween02	N	3771	3441	0	0	2665									
+;		Halloween03	N	8689	5877	1894	4716	0									
+#record		TownGuard001	N	8634	9822	0	0	200									
+#record		TownGuard002	N	10263	7066	0	0	200									
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Mob01	DesertTree	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob02	DesertTree	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob03	DesertTree	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob04	DesertTree	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob05	SpiderA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob06	SpiderA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob07	SpiderA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob08	SpiderA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob09	Spider	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob10	Spider	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob11	Spider	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob12	Spider	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob13	ScareImp	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob14	ScareImp	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob15	SpiderB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob16	SpiderB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob17	DesertArchon	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob18	DesertArchon	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob19	ScareImpA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob20	ScareImpA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob21	DesertArchonA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob22	DesertArchonA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob23	DesertWolf	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob24	DesertWolf	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob25	DesertWolfB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob26	DesertWolfB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob27	DesertWolfB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob28	DesertWolfB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob29	BabyWereBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob30	BabyWereBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob31	DesertWolfD	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob32	DesertWolfD	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob33	BabyWereBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob34	FireViVi	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob35	FireViVi	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob36	FireViVi	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob37	Fox	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob38	Ghost	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob39	HobA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob40	BabyWereBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob41	BabyWereBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob42	Hob	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob43	Hob	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob44	BoneImp	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob45	BoneImp	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob46	HobB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob47	HobB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob48	BoneImpA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob49	BoneImpA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob50	EarthSpider	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob51	EarthSpider	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob52	EarthSpiderA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Mob53	EarthSpiderA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Box01	PresentBox7	1	0	14400	14390	14410	-10	10	-5	20	0	60	5	120	10
+#record		Box02	PresentBox7	1	0	14400	14390	14410	-10	10	-5	20	0	60	5	120	10
+#record		Prod01	MUSHROOM4	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	MUSHROOM5	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	MUSHROOM6	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	HERB4	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	HERB5	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	HERB6	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	WOOD4	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	WOOD5	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	WOOD6	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	HERB4	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	HERB5	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	HERB6	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	WOOD4	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	WOOD5	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	WOOD6	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	MUSHROOM4	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	MUSHROOM5	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	MUSHROOM6	1	0	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Q_Mush01	Q_Desert_Mush	10	0	180	170	190	-10	3	-5	15	0	60	5	120	10
+#record		Q_Mush02	Q_Desert_Mush	5	0	180	170	190	-10	3	-5	15	0	60	5	120	10
+#record		Q_Mush03	Q_Desert_Mush	15	0	180	170	190	-10	3	-5	15	0	60	5	120	10
+#record		Secret_001	SecretFig	4	0	5	3	7	0	2	0	3	0	4	0	5	0
+#record		Secret_002	SecretFig	4	0	5	3	7	0	2	0	3	0	4	0	5	0
+#record		Secret_003	SecretFig	4	0	5	3	7	0	2	0	3	0	4	0	5	0
+#record		Secret_004	SecretMag	4	0	5	3	7	0	2	0	3	0	4	0	5	0
+#record		Secret_005	SecretMag	4	0	5	3	7	0	2	0	3	0	4	0	5	0
+#record		Secret_006	SecretMag	4	0	5	3	7	0	2	0	3	0	4	0	5	0
+;		Halloween01	E_JackO02	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO02	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO02	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+#record		TownGuard001	Town_Safer	2	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		TownGuard002	Town_Safer	2	0	5	1	5	0	2	0	3	0	4	0	5	0
+																	
+#end																	

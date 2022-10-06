@@ -1,0 +1,384 @@
+;보스 1  850 6060
+;보스 2 5410 1890
+;레비   2945 2748
+
+open [main]
+    var BossAInfo           "KingBoogy 819 2864 0"                    ;<@>;  첫째 보스 인덱스와 위치
+        BossBInfo           "EmperorCrab 5487 1959 0"                 ;<@>;  둘째 보스 인덱스와 위치
+        LeviMainInfo        "ViciousLeviathan 2948 2743 0"            ;<@>;  리바이어던 인덱스와 위치
+        LeviHeadInfo        "ViciousLeviathan01 2948 2743 90"          ;<@>;  리바이어던 머리만의 위치   ;!@#$%^&*();
+        NPCTargetCoord      "BombBoogySum01  650 3588 " %
+                            "BombBoogySum02  416 3185 " %
+                            "BombBoogySum02 1137 3197 " %
+                            "BombBoogySum03  806 2748 " %
+                            "0 0 0"
+        ExitInfo            "IDMapLinkGate02 2253 2627 270"              ;<@>;  보스 처치 후 문 인덱스와 위치, 방향
+        GateInfo            "IDMapLinkGate02 3019 5573 0"              ;<@>;  입구의 문 인덱스와 위치, 방향
+        BossAHandle         0
+        BossBHandle         0
+        LeviMainHandle      0
+        LeviHeadHandle      0
+        RestMiddleBoss      2
+        ReturnGate          ""
+        ExitGate            ""
+        InterruptBlock      ""
+        InterruptArg        "".
+
+    call "BossRegen".
+    
+    var MobIndex @RemoveFirst("GateInfo" " ")
+        CoordX   @RemoveFirst("GateInfo" " ")
+        CoordY   @RemoveFirst("GateInfo" " ")
+        Direct   @RemoveFirst("GateInfo" " ").
+    npcstand ReturnGate MobIndex CoordX CoordY Direct 1000 "Normal".
+    interruptset NPCClickHandle "" 999999 ReturnGate "ReturnToGate".
+    
+    scriptfile "d_NestOfLeviathan".
+
+    ; 리바이어던 동면상태
+    ;abstateset LeviMainHandle "StaImmortal" 1 4200000000.
+    ;abstateset LeviHeadHandle "StaImmortal" 1 4200000000.
+
+    ; 잡몹 세우기
+    call "Fellows".
+
+    interruptset HPLow "" 1 BossAHandle 950 "onHPLowMiddleBossA".
+    interruptset DeadHandle "" 1 BossAHandle "MiddleBossADead".
+    
+    pause Sec 15.
+    chatwin "RouTownChiefRoumenus" "Start0".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "Start1".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "Start2".
+
+	infinite
+	open
+		waitinterrupt InterruptBlock "InterruptArg".
+		call InterruptBlock.
+	close
+
+close
+
+open [Fellows]
+    regengroup "Leviathan" "Leviathan001".                      ;<@>;  잡몹들 리젠그룹
+    regengroup "Leviathan" "Leviathan002".
+    regengroup "Leviathan" "Leviathan003".
+    regengroup "Leviathan" "Leviathan004".
+    regengroup "Leviathan" "Leviathan005".
+    regengroup "Leviathan" "Leviathan006".
+    regengroup "Leviathan" "Leviathan007".
+    regengroup "Leviathan" "Leviathan008".
+    regengroup "Leviathan" "Leviathan009".
+    regengroup "Leviathan" "Leviathan010".
+    regengroup "Leviathan" "Leviathan011".
+    regengroup "Leviathan" "Leviathan012".
+    regengroup "Leviathan" "Leviathan013".
+    regengroup "Leviathan" "Leviathan014".
+    regengroup "Leviathan" "Leviathan015".
+    regengroup "Leviathan" "Leviathan016".
+    regengroup "Leviathan" "Leviathan017".
+    regengroup "Leviathan" "Leviathan018".
+    regengroup "Leviathan" "Leviathan019".
+    regengroup "Leviathan" "Leviathan020".
+    regengroup "Leviathan" "Leviathan021".
+    regengroup "Leviathan" "Leviathan022".
+    regengroup "Leviathan" "Leviathan023".
+    regengroup "Leviathan" "Leviathan024".
+    regengroup "Leviathan" "Leviathan025".
+    regengroup "Leviathan" "Leviathan026".
+    regengroup "Leviathan" "Leviathan027".
+    regengroup "Leviathan" "Leviathan028".
+    regengroup "Leviathan" "Leviathan029".
+    regengroup "Leviathan" "Leviathan030".
+    regengroup "Leviathan" "Leviathan031".
+    regengroup "Leviathan" "Leviathan032".
+    regengroup "Leviathan" "Leviathan033".
+    regengroup "Leviathan" "Leviathan034".
+    regengroup "Leviathan" "Leviathan038".
+    regengroup "Leviathan" "Leviathan039".
+    regengroup "Leviathan" "Leviathan040".
+    regengroup "Leviathan" "Leviathan041".
+    regengroup "Leviathan" "Leviathan042".
+    regengroup "Leviathan" "Leviathan043".
+    regengroup "Leviathan" "Leviathan044".
+    regengroup "Leviathan" "Leviathan045".
+    regengroup "Leviathan" "Leviathan046".
+    regengroup "Leviathan" "Leviathan047".
+    regengroup "Leviathan" "Leviathan048".
+    regengroup "Leviathan" "Leviathan049".
+    regengroup "Leviathan" "Leviathan050".
+    regengroup "Leviathan" "Leviathan051".
+    regengroup "Leviathan" "Leviathan052".
+    regengroup "Leviathan" "Leviathan053".
+    regengroup "Leviathan" "Leviathan054".
+    regengroup "Leviathan" "Leviathan055".
+    regengroup "Leviathan" "Leviathan056".
+    regengroup "Leviathan" "Leviathan057".
+    regengroup "Leviathan" "Leviathan058".
+    regengroup "Leviathan" "Leviathan059".
+    regengroup "Leviathan" "Leviathan060".
+    regengroup "Leviathan" "Leviathan061".
+    regengroup "Leviathan" "Leviathan062".
+    regengroup "Leviathan" "Leviathan063".
+    regengroup "Leviathan" "Leviathan064".
+    regengroup "Leviathan" "Leviathan065".
+    regengroup "Leviathan" "Leviathan066".
+    regengroup "Leviathan" "Leviathan067".
+    regengroup "Leviathan" "Leviathan068".
+    regengroup "Leviathan" "Leviathan069".
+    regengroup "Leviathan" "Leviathan070".
+    regengroup "Leviathan" "Leviathan071".
+    regengroup "Leviathan" "Leviathan072".
+    regengroup "Leviathan" "Leviathan073".
+    regengroup "Leviathan" "Leviathan074".
+close
+
+open [MiddleBossADead]
+;    RestMiddleBoss = RestMiddleBoss - 1.
+;    if RestMiddleBoss == 0
+;    then open
+;        call "LeviathanAwake".
+;    close
+    suicide BombBoogySum01.
+    suicide BombBoogySum02.
+    suicide BombBoogySum03.
+    interrupterase "BoogyTime".
+    
+    var BossString      ""
+        BossHandleVar   "".
+    BossString = BossBInfo.
+    BossHandleVar = "BossBHandle".
+    call "BossRegen2".
+    
+    interruptset DeadHandle "" 1 BossBHandle "MiddleBossBDead".
+
+    chatwin "EldSpeGuard01" "KingBoogy0".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingBoogy1".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingBoogy2".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingBoogy3".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingBoogy4".
+
+close
+
+open [MiddleBossBDead]
+;    RestMiddleBoss = RestMiddleBoss - 1.
+;    if RestMiddleBoss == 0
+;    then open
+;        call "LeviathanAwake".
+;    close
+    
+    var BossString      ""
+        BossHandleVar   "".
+    BossString = LeviMainInfo.
+    BossHandleVar = "LeviMainHandle".
+    call "BossRegen2".
+    BossString = LeviHeadInfo.
+    BossHandleVar = "LeviHeadHandle".
+    call "BossRegen2".
+    interruptset DeadHandle "" 1 LeviMainHandle  "MainDead".
+    interruptset DeadHandle "" 1 LeviHeadHandle  "HeadDead".
+    call "LeviathanAwake".
+
+    chatwin "EldSpeGuard01" "KingCrap0".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingCrap1".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingCrap2".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingCrap3".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "KingCrap4".
+close
+
+open [LeviathanAwake]
+    ;abstatereset LeviMainHandle "StaImmortal".
+    ;abstatereset LeviHeadHandle "StaImmortal".
+	
+	interruptset HPLow "HPLowLeviathan" 1 LeviMainHandle 950 "onHPLowLeviathan".
+	interruptset HPLow "HPLowLeviathan" 1 LeviHeadHandle 950 "onHPLowLeviathan".
+close
+
+open [TargetRegen]
+    var num     0
+        NPC     0.
+    while num < 30
+    open
+        var MobIndex @RemoveFirst("NPCTargetCoord" " ")
+            CoordX   @RemoveFirst("NPCTargetCoord" " ")
+            CoordY   @RemoveFirst("NPCTargetCoord" " ").
+        if CoordX === 0
+        then open
+            break "TargetRegen".
+        close
+        mobregen NPC MobIndex CoordX CoordY 0 1000 "Normal".
+        num = num + 1.
+    close
+close
+
+open [BossRegen]
+    var BossString      ""
+        BossHandleVar   "".
+    BossString = BossAInfo.
+    BossHandleVar = "BossAHandle".
+    call "BossRegen2".
+close
+
+open [BossRegen2]
+    var MobIndex @RemoveFirst("BossString" " ")
+        CoordX   @RemoveFirst("BossString" " ")
+        CoordY   @RemoveFirst("BossString" " ")
+        Angle    @RemoveFirst("BossString" " ").
+
+    mobregen #BossHandleVar MobIndex CoordX CoordY Angle 1000 "Normal".
+close
+
+open[MainDead]
+    if LeviHeadHandle =!= ""
+    then open
+        suicide LeviHeadHandle.
+        LeviHeadHandle = "".
+    close
+
+    var MobIndex @RemoveFirst("ExitInfo" " ")
+        CoordX   @RemoveFirst("ExitInfo" " ")
+        CoordY   @RemoveFirst("ExitInfo" " ")
+        Direct   @RemoveFirst("ExitInfo" " ")
+        Box      0.
+    mobregen Box "LeviathanEggBox" 2443 2662 0 1000 "Normal".
+    questmobkill 2666 "Daliy_Check_d_Leviathan" 5.
+    npcstand ExitGate MobIndex CoordX CoordY Direct 1000 "Normal".
+	interruptset NPCClickHandle "" 999999 ExitGate "ReturnToRoumen".
+	
+	interrupterase "EggRegen".
+	interrupterase "GuardianEggBroken".
+	interrupterase "GuardEggBroken".
+	interrupterase "BuffEggBroken".
+	interrupterase "EggBroken".
+	interrupterase "CheckStart".
+	interrupterase "CheckSnake".
+    
+	suicide ID_NestGuardianEgg.
+	suicide ID_NestGuardEgg.
+    suicide ID_NestGuardian.
+    suicide ID_NestGuard.
+    suicide ID_NestBuffEgg.
+    
+    chatwin "RouTownChiefRoumenus" "Leviathan0".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "Leviathan1".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "Leviathan2".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "Leviathan3".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "Leviathan4".
+close
+
+open[ReturnToRoumen]
+    var mclicker 0
+        MapIndex "IDGate01"
+        CoordX   "1004"
+        CoordY   "1306".
+    whoclickme mclicker InterruptArg.
+	linkto mclicker MapIndex MapIndex CoordX CoordY.              ;<@>; 돌아갈 위치
+close
+
+open[ReturnToGate]
+    var mclicker 0
+        MapIndex "IDGate01"
+        CoordX   "1004"
+        CoordY   "1306".
+    whoclickme mclicker InterruptArg.
+	linkto mclicker MapIndex MapIndex CoordX CoordY.              ;<@>; 돌아갈 위치
+close
+
+open[HeadDead]
+    LeviHeadHandle = "".
+close
+
+open [onHPLowLeviathan]
+	interrupterase "HPLowLeviathan".
+	interruptset Sec "EggRegen" 1 120 "onEggRegen".
+	interruptset Sec "CheckStart" 1 130 "onCheckStart".
+	interruptset DeadIndex "GuardianEggBroken" 99999 "ID_NestGuardianEgg" "onGuardianEggBroken".
+	interruptset DeadIndex "GuardEggBroken" 99999 "ID_NestGuardEgg" "onGuardEggBroken".
+	interruptset DeadIndex "BuffEggBroken" 99999 "ID_NestBuffEgg" "onBuffEggBroken".
+close
+
+open [onHPLowMiddleBossA]
+    ;call "TargetRegen".
+    ;call "onBoogyTime".
+close
+
+open [onBoogyTime]
+    summonmob BossAHandle "BombBoogy01" 1.
+    summonmob BossAHandle "BombBoogy02" 1.
+    summonmob BossAHandle "BombBoogy02" 1.
+    summonmob BossAHandle "BombBoogy03" 1.
+    
+    interruptset Sec "BoogyTime" 1 5 "onBoogyTime".
+close
+
+open [onEggRegen]
+	regengroup "Leviathan" "Leviathan035".
+	regengroup "Leviathan" "Leviathan036".
+	regengroup "Leviathan" "Leviathan037".
+	interruptset Sec "EggBroken" 1 60 "onEggBroken".
+close
+
+open [onCheckStart]
+	interruptset Sec "CheckSnake" 99 120 "onCheckSnake".
+close
+
+open [onCheckSnake]
+    var Guardian    @Count("ID_NestGuardian")
+        Guard       @Count("ID_NestGuard")
+        GuardianEgg @Count("ID_NestGuardianEgg")
+        GuardEgg    @Count("ID_NestGuardEgg").
+
+	if Guardian > 0 then
+	open
+		break "onCheckSnake".
+	close
+
+	if Guard > 0 then
+	open
+		break "onCheckSnake".
+	close
+
+	if GuardianEgg > 0 then
+	open
+		break "onCheckSnake".
+	close
+
+	if GuardEgg > 0 then
+	open
+		break "onCheckSnake".
+	close
+
+	call "onEggRegen".
+close
+
+open [onEggBroken]
+	suicide ID_NestGuardianEgg.
+	suicide ID_NestGuardEgg.
+close
+
+open [onGuardianEggBroken]
+	summonmob InterruptArg "ID_NestGuardian" 2.
+close
+
+open [onGuardEggBroken]
+	summonmob InterruptArg "ID_NestGuard" 10.
+close
+
+open [onBuffEggBroken]
+	var bufftarget 0.
+	whokillme bufftarget InterruptArg.
+	abstateset bufftarget "StaDeadlyBlessing" 1 15000.
+close

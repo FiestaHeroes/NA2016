@@ -1,0 +1,23 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+;	Anti_Henis_M99				
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+#Record	0	FireBall06			
+#Record	1	IceBlast07			
+#Record	2	MagicBurst08			
+#Record	3	ManaBurn07			
+#Record	4	FireBall06			
+#Record	5	IceBlast07			
+#Record	6	MagicBurst08
+#Record	7	ManaBurn07
+#Record	8	FireBall06
+#Record	9	IceBlast07
+#Record	10	MagicBurst08
+#Record	11	ManaBurn07
+#End		

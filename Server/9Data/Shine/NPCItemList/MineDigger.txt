@@ -1,0 +1,12 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;아이템 상점(우르가)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	MineMelee	MineRange	-	-	-	-
+#Record	1	MineIce	MineStun	-	-	-	-
+							
+#End							

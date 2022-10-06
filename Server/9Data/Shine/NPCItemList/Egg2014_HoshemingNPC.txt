@@ -1,0 +1,17 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00						
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Egg2014_Cos_EasterBunny	-	-	-	-	-
+#Record	1	Egg2014_Hat_EasterBunny01	-	-	-	-	-
+#Record	2	Egg2014_Hat_EasterBunny02	-	-	-	-	-
+#Record	3	Egg2014_Back_EasterBunny	-	-	-	-	-
+#Record	4	Egg2014_MiniEasterEgg	-	-	-	-	-
+#Record	5	Egg2014_MiniEasterBunny	-	-	-	-	-
+#Record	6	Egg2014_H_EasterEgg	-	-	-	-	-
+							
+#End							

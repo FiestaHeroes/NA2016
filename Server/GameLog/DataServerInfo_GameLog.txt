@@ -1,0 +1,12 @@
+#DEFINE MY_SERVER
+  <STRING>
+  <STRING>
+  <INTEGER>
+  <INTEGER>
+  <INTEGER>
+#ENDDEFINE
+
+MY_SERVER "_GameLog",	"_GameLog",	3,		0,		0
+          
+#include "../9Data/ServerInfo/ServerInfo.txt"
+#END

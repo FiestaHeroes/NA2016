@@ -1,0 +1,92 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		boss	Y	2913	5826	0	0	51									
+#record		mine1	N	2260	4150	132	511	0									
+#record		mine2	N	4067	4159	131	559	0									
+#record		etc	N	5118	4590	0	0	51									
+#record		etc3	N	5177	4123	0	0	51									
+#record		etc4	N	5183	3908	0	0	51									
+#record		etc2-1	N	1047	4405	0	0	51									
+#record		etc2-2	N	1057	4212	0	0	51									
+#record		etc2-3	N	1045	4024	0	0	51									
+#record		etc2-4	N	2197	3996	0	0	51									
+#record		sub1	N	3178	3739	0	0	134									
+#record		sum2	N	2664	4537	0	0	106									
+#record		sub3	N	3599	4600	0	0	106									
+#record		run1	N	4060	4019	0	0	51									
+#record		run2	N	2765	2878	0	0	177									
+#record		Party01	Y	2656	4108	0	0	198									
+#record		Party02	Y	3188	3256	0	0	198									
+#record		Party03	Y	2592	3532	0	0	177									
+#record		Party04	Y	3666	4180	0	0	184									
+#record		Party05	Y	3744	3612	0	0	177									
+#record		Party10	Y	3141	4402	0	0	170									
+#record		run3	N	3650	2901	0	0	184									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		boss	Helga	1	1	86400	86395	86405	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel01	1	0	86400	86395	86405	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel02	1	0	86400	86395	86405	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel03	1	0	86400	86395	86405	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel04	1	0	86400	86395	86405	-5	5	-2	8	0	10	2	13	5
+#record		mine1	MINE9	1	0	600	595	605	-5	5	-2	8	0	10	2	13	5
+#record		mine2	MINE9	1	0	600	595	605	-5	5	-2	8	0	10	2	13	5
+#record		etc	B_SubHel01	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc3	B_SubHel03	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc4	B_SubHel04	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-1	B_SubHel01	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-2	B_SubHel02	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-3	B_SubHel03	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-4	B_SubHel05	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub1	B_SubHel06	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub1	B_SubHel07	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub1	B_SubHel08	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sum2	B_SubHel06	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sum2	B_SubHel07	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sum2	B_SubHel08	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub3	B_SubHel06	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub3	B_SubHel07	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub3	B_SubHel08	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		run1	B_SubHel05	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		run2	B_SubHel05	1	0	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		run3	B_SubHel05	1	0	120	115	125	-4	5	-2	8	0	10	2	13	4
+#record		Party01	B_SubHel05	2	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party01	B_SubHel06	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party01	B_SubHel07	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party01	B_SubHel08	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party02	B_SubHel05	2	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party02	B_SubHel06	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party02	B_SubHel07	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party02	B_SubHel08	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party03	B_SubHel05	2	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party03	B_SubHel06	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party03	B_SubHel07	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party03	B_SubHel08	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party04	B_SubHel05	2	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party04	B_SubHel06	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party04	B_SubHel07	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party04	B_SubHel08	1	0	900	895	905	-5	5	-2	8	0	10	2	13	5
+#record		Party05	B_SubHel05	2	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party05	B_SubHel06	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party05	B_SubHel07	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party05	B_SubHel08	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party10	B_SubHel01	2	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party10	B_SubHel02	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party10	B_SubHel03	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+#record		Party10	B_SubHel04	1	0	1200	1195	1205	-5	5	-2	8	0	10	2	13	5
+																	
+#end																	

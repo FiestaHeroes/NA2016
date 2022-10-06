@@ -1,0 +1,50 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+;		KDSoccerW01	N	5286	2945	0	0	2									
+;		KDSoccerW02	N	5280	3284	0	0	0									
+;		KDSoccerW03	N	5271	3116	0	0	0									
+;		KDSoccerW041	N	7160	4585	223	17	0									
+;		KDSoccerW042	N	6702	4577	199	19	0									
+;		KDSoccerW051	N	7589	4118	37	178	0									
+;		KDSoccerW052	N	7597	3069	54	245	0									
+;		KDSoccerW061	N	5664	4573	199	19	0									
+;		KDSoccerW062	N	6275	4583	166	20	0									
+;		KDSoccerW071	N	7225	2812	153	23	0									
+;		KDSoccerW072	N	6656	2816	153	23	0									
+;		KDSoccerW081	N	5579	2806	181	21	0									
+;		KDSoccerW082	N	5265	4104	24	230	0									
+;		KDSoccerW091	N	6099	2824	0	0	0									
+;		KDSoccerW092	N	6275	2804	0	0	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+;		KDSoccerW01	KDSoccer_DadNPC_14	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW02	KDSoccer_MomNPC_14	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW03	KDSoccer_DanielNPC_14	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW041	KDSoccer_Honeying_14	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW042	KDSoccer_Honeying_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW051	KDSoccer_Kebing_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW052	KDSoccer_Kebing_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW061	KDSoccer_Honeying_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW062	KDSoccer_Honeying_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW071	KDSoccer_Kebing_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW072	KDSoccer_Kebing_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW081	KDSoccer_Honeying_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW082	KDSoccer_Honeying_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW091	KDSoccer_Kebing_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+;		KDSoccerW092	KDSoccer_Kebing_14	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

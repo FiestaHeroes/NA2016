@@ -1,0 +1,40 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	-							
+#Record	1	SilberkBlood							
+#Record	2	-							
+#Record	3	-							
+#Record	4	SilberkBlood							
+#Record	5	-
+#Record	6	-
+#Record	7	SilberkBlood
+#Record	8	-
+#Record	9	-
+#Record	10	SilberkBlood
+#Record	11	-
+#Record	12	-
+#Record	13	SilberkBlood
+#Record	14	-
+#Record	15	-
+#Record	16	SilberkBlood
+#Record	17	-
+#Record	18	-
+#Record	19	SilberkBlood
+#Record	20	-
+#Record	21	SilberkBlood									
+											
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우							
+#ColumnType	Index	Index	String[33]	String[33]							
+#ColumnName	Condition	Value	From	To							
+#Record	OutOfRange	-	-	SilberkDash	; 평타쓸 타이밍에 사정거리가 넘어가면 대쉬으로 바꿈						
+											
+#End											

@@ -1,0 +1,199 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		25.01.2006					
+							
+#Table	Tab00	;파이터 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	TripleHit07	TripleHit08	TripleHit09	TripleHit10	TripleHit11	-
+#Record	1	SeverBone06	SeverBone07	SeverBone08	-	-	-
+#Record	2	RedSlash07	RedSlash08	RedSlash09	RedSlash10	-	-
+#Record	3	SnearKick03	SnearKick04	-	-	-	-
+#Record	4	SnearShout03	-	-	-	-	-
+#Record	5	MightySoul05	MightySoul06	MightySoul07	MightySoul08	-	-
+#Record	6	PowerHit06	PowerHit07	PowerHit08	PowerHit09	PowerHit10	-
+#Record	7	MoraleDecrease05	MoraleDecrease06	MoraleDecrease07	MoraleDecrease08	-	-
+#Record	8	SpeedShield06	SpeedShield07	SpeedShield08	SpeedShield09	-	-
+#Record	9	HarmDefect05	HarmDefect06	HarmDefect07	HarmDefect08	-	-
+#Record	10	GreatSwing03	GreatSwing04	GreatSwing05	GreatSwing06	-	-
+#Record	11	PowerDrain03	PowerDrain04	PowerDrain05	PowerDrain06	-	-
+#Record	12	BashStrike01	BashStrike02	BashStrike03	BashStrike04	BashStrike05	-
+#Record	13	CrushStrike01	CrushStrike02	CrushStrike03	CrushStrike04	CrushStrike05	-
+#Record	14	WindyRaid02	WindyRaid03	WindyRaid04	WindyRaid05	-	-
+#Record	15	DegroSlash01	-	-	-	-	-
+#Record	16	Deeper01	-	-	-	-	-
+#Record	17	Release01	-	-	-	-	-
+							
+#Table	Tab01	;파이터 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BraveMastery07	BraveMastery08	BraveMastery09	BraveMastery10	-	-
+#Record	1	OHSwdMastery07	OHSwdMastery08	OHSwdMastery09	OHSwdMastery10	OHSwdMastery11	-
+#Record	2	THSwdMastery06	THSwdMastery07	THSwdMastery08	THSwdMastery09	-	-
+#Record	3	THAxeMastery06	THAxeMastery07	THAxeMastery08	THAxeMastery09	-	-
+							
+#Table	Tab02	;클레릭 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	ExplosionNova01	ExplosionNova02	ExplosionNova03	-	-	-
+#Record	1	Wield08	Wield09	Wield10	Wield11	Wield12	-
+#Record	2	Heal11	Heal12	Heal13	Heal14	Heal15	Heal16
+#Record	3	Heal17	-	-	-	-	-
+#Record	4	Blessing06	Blessing07	Blessing08	Blessing09	-	-
+#Record	5	MentalShout05	MentalShout06	MentalShout07	-	-	-
+#Record	6	DivineShield06	DivineShield07	DivineShield08	DivineShield09	DivineShield10	-
+#Record	7	Restore07	Restore08	Restore09	Restore10	Restore11	Restore12
+#Record	8	DarknessProtection03	DarknessProtection04	-	-	-	-
+#Record	9	HitProtection03	HitProtection04	HitProtection05	-	-	-
+#Record	10	PsychicBlunt04	PsychicBlunt05	PsychicBlunt06	PsychicBlunt07	-	-
+#Record	11	PsychicChop04	PsychicChop05	PsychicChop06	PsychicChop07	-	-
+#Record	12	GreatHeal05	GreatHeal06	GreatHeal07	GreatHeal08	GreatHeal09	GreatHeal10
+#Record	13	SafeProtection03	SafeProtection04	SafeProtection05	-	-	-
+#Record	14	GreatCure03	-	-	-	-	-
+#Record	15	SilverLining02	SilverLining03	SilverLining04	SilverLining05	SilverLining06	SilverLining07
+#Record	16	Sacrifice01	Sacrifice02	Sacrifice03	Sacrifice04	Sacrifice05	Sacrifice06
+#Record	17	CrossCasting01	-	-	-	-	-
+#Record	18	HolySmite01	HolySmite02	HolySmite03	HolySmite04	-	-
+#Record	19	MightyChop01	MightyChop02	-	-	-	-
+#Record	20	MightyPunch01	MightyPunch02	-	-	-	-
+							
+#Table	Tab03	;클레릭 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	MaceMastery07	MaceMastery08	MaceMastery09	MaceMastery10	MaceMastery11	-
+#Record	1	HammerMastery06	HammerMastery07	HammerMastery08	HammerMastery09	-	-
+#Record	2	HolySpirit07	HolySpirit08	HolySpirit09	HolySpirit10	-	-
+							
+#Table	Tab04	;아처 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	AimingShot07	AimingShot08	AimingShot09	-	-	-
+#Record	1	PowerShot06	PowerShot07	PowerShot08	-	-	-
+#Record	2	PuryImpact06	PuryImpact07	PuryImpact08	PuryImpact09	-	-
+#Record	3	BoneArrow06	BoneArrow07	BoneArrow08	BoneArrow09	-	-
+#Record	4	MultiShot06	MultiShot07	MultiShot08	MultiShot09	MultiShot10	-
+#Record	5	PoisonShot04	PoisonShot05	PoisonShot06	PoisonShot07	PoisonShot08	-
+#Record	6	SpiritFog03	SpiritFog04	SpiritFog05	SpiritFog06	SpiritFog07	-
+#Record	7	HawkTalon01	HawkTalon02	HawkTalon03	HawkTalon04	-	-
+#Record	8	PiercingGuard01	PiercingGuard02	PiercingGuard03	PiercingGuard04	PiercingGuard05	-
+#Record	9	WindCharge07	WindCharge08	WindCharge09	-	-	-
+#Record	10	MultiBloodShot01	-	-	-	-	-
+#Record	11	Deeper01	-	-	-	-	-
+#Record	12	Release01	-	-	-	-	-
+#Record	13	DaemonArrow01	DaemonArrow02	DaemonArrow03	DaemonArrow04	-	-
+							
+#Table	Tab05	;아처 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BowMastery07	BowMastery08	BowMastery09	BowMastery10	BowMastery11	-
+#Record	1	CBowMastery06	CBowMastery07	CBowMastery08	CBowMastery09	-	-
+#Record	2	DodgeMastery07	DodgeMastery08	DodgeMastery09	DodgeMastery10	-	-
+							
+#Table	Tab06	;메이지 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	VitalConversion06	VitalConversion07	VitalConversion08	VitalConversion09	-	-
+#Record	1	MagicBurst05	MagicBurst06	MagicBurst07	MagicBurst08	-	-
+#Record	2	DispelTrick03	DispelTrick04	-	-	-	-
+#Record	3	ManaBurn04	ManaBurn05	ManaBurn06	ManaBurn07	-	-
+#Record	4	MagicBall03	MagicBall04	MagicBall05	MagicBall06	MagicBall07	-
+#Record	5	IceBlast03	IceBlast04	IceBlast05	IceBlast06	IceBlast07	-
+#Record	6	FireBall02	FireBall03	FireBall04	FireBall05	FireBall06	FireBall07
+#Record	7	ChainLightning02	ChainLightning03	ChainLightning04	ChainLightning05	ChainLightning06	-
+#Record	8	DrainMind01	DrainMind02	DrainMind03	-	-	-
+#Record	9	Inferno01	Inferno02	Inferno03	Inferno04	Inferno05	-
+#Record	10	CurseMagic01	CurseMagic02	-	-	-	-
+#Record	11	StealEnchant01	-	-	-	-	-
+#Record	12	FrostNova01	FrostNova02	FrostNova03	FrostNova04	FrostNova05	FrostNova06
+#Record	13	FrostNova07	FrostNova08	FrostNova09	-	-	-
+							
+#Table	Tab07	;메이지 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	StaffMastery07	StaffMastery08	StaffMastery09	StaffMastery10	StaffMastery11	-
+#Record	1	WandMastery06	WandMastery07	WandMastery08	WandMastery09	WandMastery10	-
+#Record	2	WisdomMastery07	WisdomMastery08	WisdomMastery09	WisdomMastery10	-	-
+							
+#Table	Tab08	;조커 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BenTear07	BenTear08	BenTear09	BenTear10	BenTear11	-
+#Record	1	NorthTear06	NorthTear07	NorthTear08	-	-	-
+#Record	2	PowerBenTear07	PowerBenTear08	PowerBenTear09	PowerBenTear10	-	-
+#Record	3	PowerNorthTear06	PowerNorthTear07	PowerNorthTear08	-	-	-
+#Record	4	FitBlood06	FitBlood07	FitBlood08	FitBlood09	-	-
+#Record	5	NorthBreeze05	NorthBreeze06	NorthBreeze07	NorthBreeze08	-	-
+#Record	6	PowerNorthBreeze05	PowerNorthBreeze06	PowerNorthBreeze07	PowerNorthBreeze08	-	-
+#Record	7	FitPoison03	FitPoison04	FitPoison05	FitPoison06	-	-
+#Record	8	FragranceOfPoison02	FragranceOfPoison03	FragranceOfPoison04	-	-	-
+#Record	9	WeaponBlast01	WeaponBlast02	WeaponBlast03	WeaponBlast04	WeaponBlast05	-
+#Record	10	PowerWeaponBlast01	PowerWeaponBlast02	PowerWeaponBlast03	PowerWeaponBlast04	PowerWeaponBlast05	-
+#Record	11	ResistPoison01	ResistPoison02	ResistPoison03	ResistPoison04	-	-
+#Record	12	ResistBlood01	ResistBlood02	ResistBlood03	-	-	-
+#Record	13	DeepFire01	-	-	-	-	-
+#Record	14	Burden01	-	-	-	-	-
+#Record	15	PerfectBody03	PerfectBody04	-	-	-	-
+							
+#Table	Tab09	;조커 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	ClawMastery07	ClawMastery08	ClawMastery09	ClawMastery10	ClawMastery11	-
+#Record	1	DSwordMastery06	DSwordMastery07	DSwordMastery08	DSwordMastery09	-	-
+#Record	2	CleaveMastery07	CleaveMastery08	CleaveMastery09	CleaveMastery10	-	-
+							
+#Table	Tab10	;연금술 					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Mining	UseRide	-	-	-	-
+#Record	1	Recipe_El1	Recipe_El2	Recipe_El3	Recipe_El4	Recipe_C_HighCleanWater	Recipe_R_CommanderBadge
+#Record	2	Recipe_Lix1	Recipe_Lix2	Recipe_Lix3	Recipe_Lix4	Recipe_C_HighPledge	Recipe_R_HighSilverOre
+#Record	3	Recipe_Xir1	Recipe_Xir2	Recipe_Xir3	Recipe_Xir4	Recipe_C_NorGoldOre	Recipe_R_HighMushrooms
+#Record	4	Recipe_BestLowHpPotion	Recipe_LowHpPotion	Recipe_NorHpPotion	Recipe_HighHpPotion	Recipe_C_BestToadStool	Recipe_R_Ruby
+#Record	5	Recipe_BestLowSpPotion	Recipe_LowSpPotion	Recipe_NorSpPotion	Recipe_HighSpPotion	Recipe_C_HighGoldOre	Recipe_R_HighWoodSab
+#Record	6	Recipe_BestLowConHPPotion	Recipe_LowConHPPotion	Recipe_NorConHPPotion	Recipe_HighConHPPotion	Recipe_C_Marigold	Recipe_R_NorGemDust
+#Record	7	Recipe_BestLowConSPPotion	Recipe_LowConSPPotion	Recipe_NorConSPPotion	Recipe_HighConSPPotion	Recipe_C_HighMagicCrystal	Recipe_R_Ramsear
+#Record	8	Recipe_BestLowTHScroll	Recipe_LowTHScroll	Recipe_NorTHScroll	Recipe_HighTHScroll	Recipe_C_HighSoulDust	Recipe_R_HighToadStool
+#Record	9	Recipe_BestLowTBScroll	Recipe_LowTBScroll	Recipe_NorTBScroll	Recipe_HighTBScroll	Recipe_C_BestMushrooms	Recipe_R_LowGoldOre
+#Record	10	Recipe_BestLowMRScroll	Recipe_LowMRScroll	Recipe_NorMRScroll	Recipe_HighMRScroll	Recipe_C_Salvia	Recipe_R_Basil
+#Record	11	Recipe_BestLowACScroll	Recipe_LowACScroll	-	-	Recipe_C_BestWoodSab	-
+#Record	12	Recipe_BestLowMaxHPScroll	Recipe_LowMaxHPScroll	-	-	-	-
+#Record	13	Recipe_BestLowMaxSPScroll	Recipe_LowMaxSPScroll	Recipe_NorMaxSPScroll	Recipe_HighMaxSPScroll	-	-
+#Record	14	Recipe_BestLowMSScroll	Recipe_LowMSScroll	-	-	-	-
+#Record	15	Recipe_LowPsnResiPotion	Recipe_NorPsnResiPotion	Recipe_HighPsnResiPotion	-	-	-
+#Record	16	Recipe_LowDssResiPotion	Recipe_NorDssResiPotion	Recipe_HighDssResiPotion	-	-	-
+#Record	17	Recipe_LowCurResiPotion	Recipe_NorCurResiPotion	Recipe_HighCurResiPotion	-	-	-
+#Record	18	Recipe_LowPsnCurPotion	Recipe_NorPsnCurPotion	Recipe_HighPsnCurPotion	-	-	-
+#Record	19	Recipe_LowDssCurPotion	Recipe_NorDssCurPotion	Recipe_HighDssCurPotion	-	-	-
+#Record	20	Recipe_BestLowCurScroll	Recipe_LowCurScroll	Recipe_NorCurScroll	Recipe_HighCurScroll	-	-
+							
+#Table	Tab11	;센티넬 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	HeroStrike01	HeroStrike02	HeroStrike03	HeroStrike04	HeroStrike05	HeroStrike06
+#Record	1	HeroStrike07	HeroStrike08	-	-	-	-
+#Record	2	Advent01	Advent02	Advent03	Advent04	Advent05	Advent06
+#Record	3	Advent07	Advent08	-	-	-	-
+#Record	4	LightStrike01	LightStrike02	LightStrike03	LightStrike04	LightStrike05	LightStrike06
+#Record	5	FinalLight01	FinalLight02	-	-	-	-
+#Record	6	LightBlast01	LightBlast02	LightBlast03	LightBlast04	LightBlast05	LightBlast06
+#Record	7	LightBlast07	LightBlast08	-	-	-	-
+#Record	8	LightExplosion01	LightExplosion02	-	-	-	-
+#Record	9	Recoup01	Recoup02	Recoup03	Recoup04	Recoup05	Recoup06
+#Record	10	Recoup07	Recoup08	-	-	-	-
+#Record	11	LightTouch01	LightTouch02	LightTouch03	LightTouch04	LightTouch05	LightTouch06
+#Record	12	Treat01	Treat02	-	-	-	-
+#Record	13	LightShield01	-	-	-	-	-
+#Record	14	SunLight01	-	-	-	-	-
+#Record	15	MoonLight01	-	-	-	-	-
+#Record	16	LightJump01	-	-	-	-	-
+							
+#Table	Tab12	;센티넬 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	WCMastery01	WCMastery02	WCMastery03	WCMastery04	WCMastery05	WCMastery06
+#Record	1	WCMastery07	WCMastery08	-	-	-	-
+#Record	2	MAMastery01	MAMastery02	MAMastery03	MAMastery04	MAMastery05	MAMastery06
+#Record	3	MAMastery07	MAMastery08	-	-	-	-
+							
+#End							

@@ -1,0 +1,371 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		BerFrz01_Step1_01	N	2711	21495	0	0	427									
+#record		BerFrz01_Step1_02	N	4695	17895	0	0	141									
+#record		BerFrz01_Step1_03	N	5883	20351	0	0	365									
+#record		BerFrz01_Step1_04	N	3024	20244	0	0	296									
+#record		BerFrz01_Step1_05	N	3196	19382	0	0	338									
+#record		BerFrz01_Step1_06	N	3305	16549	0	0	421									
+#record		BerFrz01_Step1_07	N	2526	22250	0	0	351									
+#record		BerFrz01_Step1_08	N	3236	22111	0	0	380									
+#record		BerFrz01_Step1_09	N	6696	19830	0	0	500									
+#record		BerFrz01_Step1_10	N	3254	17357	0	0	352									
+#record		BerFrz01_Step2_01	N	3353	15666	0	0	302									
+#record		BerFrz01_Step2_02	N	5123	15290	162	429	-158									
+#record		BerFrz01_Step2_03	N	3220	11884	118	247	20									
+#record		BerFrz01_Step2_05	N	3715	7423	114	680	-24									
+#record		BerFrz01_Step2_07	N	4169	8416	152	198	-15									
+#record		BerFrz01_Step2_08	N	4721	5373	0	0	138									
+#record		BerFrz01_Step2_10	N	7691	3890	197	85	-10									
+#record		BerFrz01_Step2_11	N	2025	7268	0	0	309									
+#record		BerFrz01_Step2_12	N	2071	5779	0	0	303									
+#record		BerFrz01_Step2_13	N	2202	5019	0	0	267									
+#record		BerFrz01_Step2_14	N	2667	3850	0	0	344									
+#record		BerFrz01_Step2_15	N	3513	2632	0	0	259									
+#record		BerFrz01_Step2_16	N	4277	2203	0	0	393									
+#record		BerFrz01_Step2_17	N	5136	1989	0	0	386									
+#record		BerFrz01_Step2_18	N	5987	1754	0	0	351									
+#record		BerFrz01_Step2_19	N	8963	4734	0	0	203									
+#record		BerFrz01_Step2_24	N	16102	13793	0	0	365									
+#record		BerFrz01_Step2_25	N	15183	13869	0	0	584									
+#record		BerFrz01_Step2_27	N	18548	13444	0	0	239									
+#record		BerFrz01_Step2_28	N	19147	6116	0	0	329									
+#record		BerFrz01_Step2_29	N	21453	5401	0	0	371									
+#record		BerFrz01_Step2_30	N	19941	8002	0	0	372									
+#record		BerFrz01_Step2_31	N	21700	1698	0	0	224									
+#record		BerFrz01_Step2_32	N	22050	2913	0	0	182									
+#record		BerFrz01_Step2_35	N	11056	6667	0	0	217									
+#record		BerFrz01_Step2_36	N	21848	9793	0	0	274									
+#record		BerFrz01_Step2_37	N	22088	8249	0	0	387									
+#record		BerFrz01_Step2_39	N	15697	8806	0	0	387									
+#record		BerFrz01_Step2_40	N	11626	7903	0	0	168									
+#record		BerFrz01_Step2_41	N	5706	16159	0	0	366									
+#record		BerFrz01_Step2_42	N	6392	15775	0	0	352									
+#record		BerFrz01_Step2_43	N	6770	15119	0	0	282									
+#record		BerFrz01_Step2_45	N	4332	13188	132	375	24									
+#record		BerFrz01_Step2_46	N	6704	1884	0	0	252									
+#record		BerFrz01_Step3_01	N	9004	9882	0	0	288									
+#record		BerFrz01_Step3_02	N	9779	8637	198	225	-10									
+#record		BerFrz01_Step3_03	N	10305	8659	202	195	-10									
+#record		BerFrz01_Step3_04	N	8868	6576	536	214	0									
+#record		BerFrz01_Step3_05	N	9422	7256	0	0	225									
+#record		BerFrz01_Step3_06	N	8717	7697	0	0	232									
+#record		BerFrz01_Step3_07	N	8311	7242	0	0	225									
+#record		BerFrz01_Step3_08	N	7665	9425	0	0	225									
+#record		BerFrz01_Step3_09	N	10683	10577	0	0	435									
+#record		BerFrz01_Step3_11	N	9470	11952	0	0	343									
+#record		BerFrz01_Step3_12	N	8845	11304	0	0	296									
+#record		BerFrz01_Step3_13	N	8221	8947	0	0	176									
+#record		BerFrz01_Step4_01	N	12323	11556	0	0	323									
+#record		BerFrz01_Step4_02	N	8614	9310	0	0	245									
+#record		BerFrz01_Step4_03	N	7583	7916	385	105	-24									
+#record		BerFrz01_Step4_04	N	9146	9318	0	0	230									
+#record		BerFrz01_Step4_05	N	8125	9333	0	0	191									
+#record		BerFrz01_Step5_01	N	11423	21607	0	0	273									
+#record		BerFrz01_Step5_04	N	12905	23264	0	0	239									
+#record		BerFrz01_Step5_07	N	16050	23609	0	0	244									
+#record		BerFrz01_Step5_09	N	14291	19518	0	0	247									
+#record		BerFrz01_Step5_10	N	14645	20016	0	0	211									
+#record		BerFrz01_Step5_11	N	15356	20335	0	0	225									
+#record		BerFrz01_Step5_12	N	15579	19793	0	0	191									
+#record		BerFrz01_Step5_13	N	14937	19732	0	0	219									
+#record		BerFrz01_Step5_14	N	15820	20568	0	0	204									
+#record		BerFrz01_Step5_15	N	14013	19112	0	0	204									
+#record		BerFrz01_Step5_16	N	12596	14481	0	0	499									
+#record		BerFrz01_Step5_17	N	12097	15592	0	0	387									
+#record		BerFrz01_Step5_18	N	11464	14589	0	0	534									
+#record		BerFrz01_Step5_19	N	13124	13419	0	0	612									
+#record		BerFrz01_Step5_20	N	13839	14403	0	0	563									
+#record		BerFrz01_Step5_21	N	9153	15640	0	0	449									
+#record		BerFrz01_Step5_22	N	9211	14765	0	0	366									
+#record		BerFrz01_Step5_23	N	11229	16478	0	0	471									
+#record		BerFrz01_Step5_24	N	13178	15233	0	0	338									
+#record		BerFrz01_Step5_25	N	14824	10623	0	0	570									
+#record		BerFrz01_Step5_26	N	15815	11556	0	0	555									
+#record		BerFrz01_Step5_27	N	16730	12150	0	0	422									
+#record		BerFrz01_Step5_28	N	15948	9899	0	0	645									
+#record		BerFrz01_Step5_29	N	17284	10516	0	0	632									
+#record		BerFrz01_Step5_30	N	17828	11841	0	0	603									
+#record		BerFrz01_Step5_31	N	18326	9023	0	0	527									
+#record		BerFrz01_Step5_32	N	18840	8092	0	0	408									
+#record		BerFrz01_Step5_33	N	16490	8173	0	0	583									
+#record		BerFrz01_Step5_34	N	19536	9237	0	0	441									
+#record		BerFrz01_Step5_35	N	17101	9228	0	0	604									
+#record		BerFrz01_Step5_36	N	18609	10799	0	0	653									
+#record		BerFrz01_Step5_37	N	17509	7506	0	0	541									
+#record		BerFrz01_Step5_39	N	18423	6353	0	0	337									
+#record		BerFrz01_Step5_40	N	19260	7127	0	0	547									
+#record		BerFrz01_Step5_41	N	19197	19446	0	0	316									
+#record		BerFrz01_Step5_44	N	15366	17752	0	0	184									
+#record		BerFrz01_Step5_46	N	15633	17171	0	0	247									
+#record		BerFrz01_Step5_47	N	16508	16909	0	0	190									
+#record		BerFrz01_Step5_48	N	18980	18882	0	0	204									
+#record		BerFrz01_Step5_49	N	12801	15914	0	0	394									
+#record		BerFrz01_Step5_50	N	10895	18307	0	0	190									
+#record		BerFrz01_Step5_51	N	12066	16621	0	0	485									
+#record		BerFrz01_Step5_52	N	23067	14694	0	0	274									
+#record		BerFrz01_Step5_53	N	23702	13358	0	0	324									
+#record		BerFrz01_Step5_54	N	23621	11445	0	0	254									
+#record		BerFrz01_Step5_56	N	17602	19940	0	0	253									
+#record		BerFrz01_Step5_57	N	13767	12413	509	208	20									
+#record		BerFrz01_Step5_58	N	14365	13268	0	0	450									
+#record		BerFrz01_Step5_59	N	17132	16822	0	0	247									
+#record		BerFrz01_Step5_60	N	15105	18315	0	0	226									
+#record		GatherZ101	N	2590	21989	0	0	500									
+#record		GatherZ102	N	2968	20224	235	1035	-15									
+#record		GatherZ103	N	6625	19805	0	0	468									
+#record		GatherZ104	N	3463	16461	356	1140	-2									
+#record		GatherZ105	N	6620	15309	824	135	63									
+#record		GatherZ106	N	4986	15006	204	599	39									
+#record		GatherZ107	N	4459	13226	0	0	124									
+#record		GatherZ108	N	3032	11650	0	0	138									
+#record		GatherZ109	N	4399	7275	0	0	222									
+#record		GatherZ110	N	5259	5865	0	0	145									
+#record		GatherZ111	N	7110	2367	0	0	201									
+#record		GatherZ112	N	8949	4912	0	0	166									
+#record		GatherZ113	N	11018	6629	0	0	229									
+#record		GatherZ114	N	10818	10122	0	0	215									
+#record		GatherZ115	N	8770	11045	0	0	222									
+#record		GatherZ201	N	22194	8402	0	0	300									
+#record		GatherZ202	N	23890	11747	0	0	229									
+#record		GatherZ203	N	18458	13334	0	0	300									
+#record		GatherZ204	N	17604	17086	0	0	187									
+#record		GatherZ205	N	16654	16789	0	0	131									
+#record		GatherZ206	N	15430	17792	0	0	159									
+#record		GatherZ207	N	15187	19553	0	0	194									
+#record		GatherZ208	N	17625	20148	0	0	159									
+#record		GatherZ209	N	19057	19170	0	0	300									
+#record		GatherZ210	N	15421	23739	0	0	208									
+#record		GatherZ211	N	10924	22201	0	0	236									
+#record		GatherZ212	N	10033	17415	0	0	236									
+#record		GatherZ213	N	8949	15268	162	567	0									
+#record		GatherZ214	N	9781	13337	0	0	160									
+#record		GatherZ301	N	12870	15649	408	1463	-36									
+#record		GatherZ302	N	12952	13074	0	0	600									
+#record		GatherZ303	N	16842	9513	0	0	1200									
+#record		GatherZ304	N	19189	7073	382	1081	0									
+#record		P01	N	6997	8711	0	0	50									
+#record		P02	N	16838	9551	0	0	1000									
+#record		Waypoint01	N	17429	11957	300	0	420									
+#record		Waypoint02	N	18807	8989	300	0	420									
+#record		Waypoint03	N	19613	6867	300	0	420									
+#record		Waypoint04	N	17117	10424	300	0	420									
+#record		Waypoint05	N	5571	1846	300	0	420									
+#record		Waypoint06	N	2937	3083	300	0	420									
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		BerFrz01_Step1_01	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_01	SnowyPuggy	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_02	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_03	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_04	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_04	SnowyPuggy	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_05	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_05	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_06	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_06	SnowyPuggy	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_07	SnowyPuggy	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_08	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_08	SnowyPuggy	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_09	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_09	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_10	SnowyPuggy	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step1_10	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_01	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_01	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_02	WereBearSnow	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_03	WereBearSnow	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_03	Megan	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_05	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_05	Megan	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_07	Megan	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_08	Megan	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_10	Megan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_11	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_11	Megan	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_12	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_13	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_14	Megan	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_14	WereBearSnow	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_15	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_15	Megan	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_16	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_16	Megan	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_17	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_17	WereBearSnow	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_18	Megan	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_19	Megan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_24	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_25	Megan	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_27	Megan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_28	WereBearSnow	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_29	Megan	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_30	Megan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_31	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_32	Megan	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_35	Megan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_36	Megan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_37	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_39	Mastodons	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_40	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_41	WereBearSnow	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_42	WereBearSnow	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_43	Megan	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_45	Megan	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step2_46	WereBearSnow	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_01	SmartYeti	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_01	Yeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_02	Yeti	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_02	SmartYeti	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_03	Yeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_03	SmartYeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_04	Yeti	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_04	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_05	Yeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_05	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_06	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_07	Yeti	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_08	SmartYeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_08	SmartYeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_09	Yeti	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_09	Yeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_09	SmartYeti	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_09	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_11	Yeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_11	Yeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_11	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_12	SmartYeti	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_12	Yeti	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step3_13	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_01	AngryYeti	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_01	Yeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_02	AngryYeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_02	AngryYeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_03	AngryYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_03	AngryYeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_03	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_04	BigYeti	1	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_04	SmartYeti	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step4_05	AngryYeti	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_01	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_04	SnowyWolf	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_07	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_09	WindyWitch	1	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_09	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_10	WindyWitch	1	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_10	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_11	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_12	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_13	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_14	SnowyWolf	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_15	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_15	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_16	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_17	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_18	Mastodons	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_19	Mastodons	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_20	SnowyWolf	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_21	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_22	Mastodons	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_23	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_24	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_25	WindyGiant	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_26	Mastodons	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_27	Mastodons	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_28	WindyGiant	3	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_29	Mastodons	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_30	WindyGiant	3	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_31	Mastodons	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_32	WindyGiant	3	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_33	Mastodons	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_34	Mastodons	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_35	WindyGiant	4	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_36	WindyGiant	3	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_37	WindyGiant	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_39	WindyGiant	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_40	Mastodons	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_41	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_41	SnowyWolf	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_44	WindyWitch	1	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_44	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_46	SnowyWolf	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_46	WindyWitch	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_47	WindyWitch	1	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_48	SnowyWolf	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_49	SnowyWolf	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_50	SnowyWolf	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_51	SnowyWolf	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_52	WindyGiant	3	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_53	WindyGiant	3	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_54	WindyGiant	2	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_56	SnowyWolf	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_57	Mastodons	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_58	SnowyWolf	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_59	SnowyWolf	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		BerFrz01_Step5_60	WindyWitch	3	0	60	48	72	-4	5	-2	8	0	10	2	13	4
+#record		GatherZ101	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ101	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ101	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ102	Mushroom1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ102	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ103	Flower7_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ103	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ104	Herb1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ104	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ104	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ105	Herb1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ106	Flower7_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ107	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ108	Mushroom1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ109	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ109	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ110	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ111	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ112	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ113	Mushroom1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ114	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ115	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ201	Wood7_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ202	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ203	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ204	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ205	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ206	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ207	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ208	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ209	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ210	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ211	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ212	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ213	Wood7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ213	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ214	Mushroom1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ301	Wood7_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ301	Herb1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ301	Mushroom1_Snow	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ302	Flower7_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ303	Flower7_Snow	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		GatherZ304	Herb1_Snow	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		P01	PresentBox_Snow	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		P02	PresentBox_Snow	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint01	Mastodons	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint02	Mastodons	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint03	Mastodons	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint04	Mastodons	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint05	ArkTech	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Waypoint06	ArkTech	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

@@ -1,0 +1,41 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	-			
+#Record	1	GhostLumpSkill			
+#Record	2	-			
+#Record	3	-			
+#Record	4	Psy_Mist_Skill_N			
+#Record	5	-			
+#Record	6	-			
+#Record	7	Psy_Mist_Skill_W			
+#Record	8	-			
+#Record	9	Psy_Mist_Skill_N			
+#Record	10	-			
+#Record	11	GhostLumpSkill			
+#Record	12	-			
+#Record	13	-			
+#Record	14	Psy_Mist_Skill_N			
+#Record	15	-			
+#Record	16	-			
+#Record	17	Psy_Mist_Skill_W			
+#Record	18	-			
+#Record	19	Psy_Mist_Skill_N			
+#Record	20	-			
+#Record	21	GhostLumpSkill			
+					
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우	
+#ColumnType	Index	Index	String[33]	String[33]	
+#ColumnName	Condition	Value	From	To	
+#Record	OutOfRange	-	-	Psy_Mist_Skill_N	
+#Record	OutOfRange	-	Psy_Mist_Skill_W	Psy_Mist_Skill_N	
+#Record	OutOfRange	-	GhostLumpSkill	Psy_Mist_Skill_N	
+#End					

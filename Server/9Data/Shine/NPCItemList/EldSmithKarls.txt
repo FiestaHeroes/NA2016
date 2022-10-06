@@ -1,0 +1,59 @@
+;		ItemList in NPC																																			
+#ignore	\o042			; 인용부호 무시																																	
+#exchange	#	\x20		; # => space																																	
+;		2006.01.25																																			
+																																					
+#Table	Tab00	;무기																																			
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																														
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																														
+#Record	0	RoumenSword	BridgeSword	Cutlas	EdgedSword	-	-																														
+#Record	1	StealSword	Crusader	Zweihander	BastardSword	-	-																														
+#Record	2	StealAxe	HideAxe	TwoHandAxe	PoleAxe	-	-																														
+#Record	3	RoumenMace	StoutMace	HorsemansFlail	MorningStar	-	-																														
+#Record	4	HeavenHammer	StoutHammer	HorsemansHammer	Morgenstern	-	-																														
+#Record	5	RoumenBow	CloseBow	HeavyBow	CompositBow	-	-																														
+#Record	6	StealCrossBow	CloseCrossBow	HeavyCrossBow	CompositCrossBow	-	-																														
+#Record	7	RoumenStaff	ZestStaff	PowerStaff	SpiritStaff	-	-																														
+#Record	8	RuneWand	ZestWand	PowerWand	SpiritWand	-	-																														
+#Record	9	AvaClaw	SpinClaw	MonClaw	MidianClaw	-	-																														
+#Record	10	EvanDoubleSword	SpinDoubleSword	MonDoubleSword	MidianDoubleSword	-	-																														
+#Record	11	ElvenBlade	-	-	-	-	-																														
+																																					
+#Table	Tab01	;방어구																																			
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																														
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																														
+#Record	0	ChainArmor	-	-	-	-	-																														
+#Record	1	HideBoots	HideHelmet	HidePants	HideArmor	-	-																														
+#Record	2	ScailBoots	ScailHelmet	ScailPants	ScailArmor	-	-																														
+#Record	3	MithrilBoots	MithrilHelmet	MithrilPants	MithrilArmor	-	-																														
+#Record	4	BrigandineBoots	BrigandineHelmet	BrigandinePants	-	-	-																														
+#Record	5	FChainShield	HideShield	FKiteShield	FTargeShield	-	-																														
+#Record	6	BlessArmor	-	-	-	-	-																														
+#Record	7	RestoreBoots	RestoreHelmet	RestorePants	RestoreArmor	-	-																														
+#Record	8	SplintBoots	SplintHelmet	SplintPants	SplintArmor	-	-																														
+#Record	9	SacredBoots	SacredHelmet	SacredPants	SacredArmor	-	-																														
+#Record	10	PlateBoots	PlateHelmet	PlatePants	-	-	-																														
+#Record	11	ChainShield	Pelta	KiteShield	TargeShield	-	-																														
+#Record	12	HardLeatherArmor	-	-	-	-	-																														
+#Record	13	DisguiseBoots	DisguiseHat	DisguisePants	DisguiseArmor	-	-																														
+#Record	14	SneakBoots	SneakHat	SneakPants	SneakArmor	-	-																														
+#Record	15	RobberBoots	RobberHat	RobberPants	RobberArmor	-	-																														
+#Record	16	HunterBoots	HunterHat	HunterPants	-	-	-																														
+#Record	17	MagicShirt	-	-	-	-	-																														
+#Record	18	DelightBoots	DelightHat	DelightPants	DelightShirt	-	-																														
+#Record	19	SilkBoots	SilkHat	SilkPants	SilkShirt	-	-																														
+#Record	20	MentalBoots	MentalHat	MentalPants	MentalShirt	-	-																														
+#Record	21	NatureBoots	NatureHat	NaturePants	-	-	-																														
+#Record	22	NaiveArmor	NaiveBoots	NaiveHood	NaivePants	-	-																														
+#Record	23	TerraBoots	TerraHood	TerraPants	TerraArmor	TirasArmor	-																														
+#Record	24	MusicaBoots	MusicaHood	MusicaPants	MusicaArmor	-	-																														
+#Record	25	LupeBoots	LupeHood	LupePants	-	-	-																														
+#Record	26	FoliageShoes	FoliageHelmet	FoliagePants	FoliageArmor	-	-																														
+																																					
+#Table	Tab02	;악세서리																																			
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																														
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																														
+#Record	0	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-																														
+#Record	1	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-																														
+																																					
+#End																																					

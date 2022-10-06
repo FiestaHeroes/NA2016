@@ -1,0 +1,61 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;무기					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	VulcanSword	HellasSword	GedSword	-	-	-
+#Record	1	TitanicSword	ValorSword	GorgonSword	-	-	-
+#Record	2	TitanicAxe	ValorAxe	GorgonAxe	-	-	-
+#Record	3	TitanicMace	HolyMace	RudicMace	-	-	-
+#Record	4	TitanicHammer	HolyHammer	BillholyshionHammer	-	-	-
+#Record	5	TitanicBow	ShadowBow	PakahBow	-	-	-
+#Record	6	TitanicCrossBow	ShadowCrossBow	ShebaCrossBow	-	-	-
+#Record	7	TitanicStaff	IllusionStaff	ManoahStaff	-	-	-
+#Record	8	TitanicWand	IllusionWand	DinahWand	-	-	-
+#Record	9	GemClaw	HellClaw	DistClaw	-	-	-
+#Record	10	GemDoubleSword	HellDoubleSword	DistDoubleSword	-	-	-
+#Record	11	MasterBlade	VorpalBlade	DawnBlade	-	-	-
+							
+#Table	Tab01	;방어구					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	MightyPlateArmor	FuryBoots	FuryHelmet	FuryPants	FuryArmor	-
+#Record	1	HeaterShield	ElishaBoots	ElishaHelmet	ElishaPants	ElishaArmor	-
+#Record	2	CeresShield	RedcliffBoots	RedcliffHelmet	RedcliffPants	RedcliffArmor	-
+#Record	3	GloriaShield	BasileiaBoots	BasileiaHelmet	BasileiaPants	BasileiaArmor	-
+#Record	4	-	BasilersBoots	BasilersHelmet	BasilersPants	BasilersArmor	-
+#Record	5	HolyArmor	CharityBoots	CharityHelmet	CharityPants	CharityArmor	-
+#Record	6	HolyShield	EleazarBoots	EleazarHelmet	EleazarPants	EleazarArmor	-
+#Record	7	ClipeusShield	FloofBoots	FloofHelmet	FloofPants	FloofArmor	-
+#Record	8	HolyousShield	RudicBoots	RudicHelmet	RudicPants	RudicArmor	-
+#Record	9	-	HolyshionBoots	HolyshionHelmet	HolyshionPants	HolyshionArmor	-
+#Record	10	DarknessArmor	SpeedyBoots	SpeedyHat	SpeedyPants	SpeedyArmor	-
+#Record	11	-	OhelBoots	OhelHat	OhelPants	OhelArmor	-
+#Record	12	-	GreenStormBoots	GreenStormHelmet	GreenStormPants	GreenStormArmor	-
+#Record	13	-	MenesBoots	MenesHat	MenesPants	MenesArmor	-
+#Record	14	-	TanishuterBoots	TanishuterHat	TanishuterPants	TanishuterArmor	-
+#Record	15	wisdomShirt	WizardlyBoots	WizardlyHat	WizardlyPants	WizardlyShirt	-
+#Record	16	-	EliBoots	EliHat	EliPants	EliShirt	-
+#Record	17	-	MarineBloodBoots	MarineBloodHat	MarineBloodPants	MarineBloodShirt	-
+#Record	18	-	XharBoots	XharHat	XharPants	XharShirt	-
+#Record	19	-	ShebetBoots	ShebetHat	ShebetPants	ShebetShirt	-
+#Record	20	OrdoArmor	AliciaBoots	AliciaHood	AliciaPants	AliciaArmor	-
+#Record	21	-	LuciusBoots	LuciusGoggles	LuciusPants	LuciusArmor	-
+#Record	22	-	CaligoBoots	CaligoHood	CaligoPants	CaligoArmor	-
+#Record	23	-	RisioBoots	RisioGoggles	RisioPants	RisioArmor	-
+#Record	24	-	MistBoots	MistHood	MistPants	MistArmor	-
+#Record	25	VineArmor	RosariumShoes	RosariumHelmet	RosariumPants	RosariumArmor	-
+#Record	26	-	AmaranthineShoes	AmaranthineHelmet	AmaranthinePants	AmaranthineArmor	-
+#Record	27	-	StreamShoes	StreamHelmet	StreamPants	StreamArmor	-
+							
+#Table	Tab02	;악세서리					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-
+#Record	1	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-
+							
+#End							
+							

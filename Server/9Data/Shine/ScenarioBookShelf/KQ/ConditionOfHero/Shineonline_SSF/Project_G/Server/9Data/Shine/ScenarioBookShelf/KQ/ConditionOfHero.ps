@@ -1,0 +1,129 @@
+open [main]
+    var InterruptBlock      ""
+        InterruptArg        ""
+
+        Players             ""
+        Count               ""
+        ResultList          ""
+        PlayerHandle        "".
+
+    ;;;;;;;;;;;;;;;;;;;; printf InitFlag.        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+    freepk OFF.                                                 ; 새로운 명령어
+
+    printf "WaitPlayer".
+
+    waitlogin Players.
+
+    printf "Player : " % Players.
+
+    if Players == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+    pause Sec 10.
+
+    scriptfile "KQMiniDragon".
+
+
+
+    timelimit Min 5.
+
+
+
+    ; 광석 리젠
+    Count = 0.
+    while Count < 10
+    open
+        regengroup "KDHero" "HERO" % InitFlag.
+        Count = Count + 1.
+        pause Sec 3.
+    close
+
+
+
+    interruptclear.
+    call "WaitTimeLimit".
+
+    call "PKON".                                                ; PK 시작
+
+    timelimit Min 50.
+    interruptclear.
+
+    interruptset Sec "" 99999 10 "PKON".
+    interruptset PlayerDead "" 1 "PlayerDead".                  ; 인터럽트 인덱스 추가 - 코딩필요(InterruptArg에는 죽은 플레이어의 핸들)
+    call "WaitTimeLimit".
+
+    freepk OFF.
+
+    ; 등수체크
+    ResultList = @KQResultList("ConditionOfHero").              ; 점수순으로 소트해서 플레이어들에게 보낸 후 리스트에 저장
+
+    open [RewardBlock]
+        Count = 0.
+        infinite
+        open
+            PlayerHandle = @RemoveFirst("ResultList" " ").          ; 리스트형태인 ResultList에서 " "로 분리된 첫째원소를 x에 넣고 ResultList에서는 지움.
+
+            if PlayerHandle === ""
+            then open
+                break "RewardBlock".
+            close
+
+
+            if Count < 3
+            then open
+                sendquestresult Suc PlayerHandle.                   ; 개인에게만 성공패킷 날림
+                invidualreward PlayerHandle "HERO_" % InitFlag % "_" % Count.          ; 개인에게 따로 보상을 줌
+            close
+            else open
+                sendquestresult Fail PlayerHandle.                  ; 개인에게만 실패패킷 날림
+            close
+
+            Count = Count + 1.
+
+        close
+    close
+
+    endofkq.
+
+close
+
+open [PKON]
+    freepk ON.                                                  ; 새로운 명령어
+close
+
+open [WaitTimeLimit]
+    interruptset TimeOut "" 1 "LimitTimeOut".
+    interruptset PlayerEliminate "" 1 "QuestFail".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [LimitTimeOut]
+    break "WaitTimeLimit".
+close
+
+open [QuestFail]                ; 모두 나간 상태(죽은 사람이 있을 수도 있으므로)
+    broadcast all "KQFReturn30".
+    pause sec 10.
+    broadcast all "KQFReturn20".
+    pause sec 10.
+    broadcast all "KQFReturn10".
+    pause sec 5.
+    broadcast all "KQFReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    freepk OFF.
+    endofkq.
+    break "main".
+close
+
+open [PlayerDead]
+    sendquestresult Fail InterruptArg.                  ; 개인에게만 실패패킷 날림
+close

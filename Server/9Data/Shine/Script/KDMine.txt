@@ -1,0 +1,31 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	MineDigger_01	Shh!  Quiet...  I think the monsters have cast strange magic. 	
+#Record	MineDigger_02	You seem weak.  You can get what you need from me. 	
+#Record	MineDigger_03	I made a landmine that can be used as an explosive in the mine. 	
+#Record	MineDigger_04	You can install it as you would use other items. 	
+#Record	MineDigger_05	"If you have bought a landmind from me, add it to your Skill Quick Slot to use it. "	
+#Record	MineDigger_06	My colleagues are defending each defense position. 	
+#Record	MineSlime_01	Magritte tells you to work harder since there is not enough gold ores!	
+#Record	MineHoneying_01	I am working hard!  You are the one who is not!	
+#Record	MineSlime_02	What?  You don't even have fully-grown wings!	
+#Record	MineHoneying_02	"Shh.  Quiet!  Arrgh, what is the miner still doing here?!"	
+#Record	MineDigger_07	You!  I am back with the adventurers to get back at you!	
+#Record	MineDigger_08	You can't take the landmine out of the mine.	
+#Record	MineDigger_09	빠른 이동을 위한 이동 게이트가 배치되어 있습니다.	
+#Record	MineSlime_03	Ha ha ha!  Non-sense!  Try and stop us!	
+#Record	MineDigger_Success	You have protected the gold ores.  Thank you for defeating the monsters. 	
+#Record	MineHoneying_Fail	Ha ha ha!  You must have brought only the novice adventurers!  See you later.	
+#Record	MineDigger_Fail	I should bring other adventurers...  It's a hard life..	
+#Record	KQReturn30	Move to Roumen in 30 seconds.	
+#Record	KQReturn20	Move to Roumen in 20 seconds.	
+#Record	KQReturn10	Move to Roumen in 10 seconds.	
+#Record	KQReturn5	Move to Roumen in 5 seconds.	
+			
+#End			

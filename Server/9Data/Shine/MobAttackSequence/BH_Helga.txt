@@ -1,0 +1,38 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	B_HelgaHeal1			
+#Record	1	-			
+#Record	2	B_HelgaAtkskill2			
+#Record	3	-			
+#Record	4	B_HelgaAtkskill3			
+#Record	5	-			
+#Record	6	B_HelgaAtkskill4			
+#Record	7	-			
+#Record	8	B_HelgaAtkskill5			
+#Record	9	-			
+#Record	10	B_HelgaBufskill1			
+#Record	11	-			
+#Record	12	B_HelgaHeal1			
+#Record	13	-			
+#Record	14	B_HelgaAtkskill1			
+#Record	15	-			
+#Record	16	B_HelgaAtkskill2			
+#Record	17	-			
+#Record	18	B_HelgaAtkskill2			
+#Record	19	-			
+#Record	20	B_HelgaAtkskill3			
+#Record	21	-			
+#Record	22	B_HelgaAtkskill4			
+#Record	23	-			
+#End					
+					
+					

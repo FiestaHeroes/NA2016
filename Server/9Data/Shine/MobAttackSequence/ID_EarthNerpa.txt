@@ -1,0 +1,24 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	IDNerpaAtkSkill1			
+#Record	1	IDNerpaSlowShot01			
+#Record	2	IDNerpaSlowShot01			
+#Record	3	IDNerpaSlowShot01			
+#Record	4	-			
+#Record	5	-
+#Record	6	-
+#Record	7	IDNerpaSlowShot01
+#Record	8	-
+#Record	9	IDNerpaSlowShot01
+#Record	10	-
+#Record	11	-
+#End		

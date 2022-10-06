@@ -1,0 +1,109 @@
+	;	Shine Quest table(ShineQuest)											
+	#ignore	\o042				;인용부호무시							
+	#exchange	#	\x20			;#=>space							
+
+
+	#Table	Header				;	공통부분						
+	#ColumnType		WORD	STRING[33]	WORD	WORD	STRING[512]	STRING[192]	STRING[128]	STRING[192]	STRING[33]	STRING[33]	WORD
+	#ColumnName		QuestHandle	Title	LevLow	LevHigh	ReceiveScript	MissionScript	ProgressScript	CompleteScript	StartNPC	StopNPC	TimeLimit(min)
+													
+	#Table	Reward											
+	#ColumnType		WORD		BYTE	INDEX	DWRD	STRING[33]	BYTE				
+	#ColumnName		QuestHandle		Flag	Type	Quantity	ItemName	ItemUpgrade				
+													
+	#Table	Looting											
+	#ColumnType		WORD		STRING[33]	STRING[33]	BYTE	WORD					
+	#ColumnName		QuestHandle		Mob	Item	Number	Permill					
+
+	#Table	Hunting											
+	#ColumnType		WORD		STRING[33]	WORD							
+	#ColumnName		QuestHandle		Mob	Number							
+
+	#Table	Produce											
+	#ColumnType		WORD		STRING[33]	STRING[33]	STRING[33]	STRING[33]	STRING[33]	STRING[33]	DWRD	DWRD	DWRD
+	#ColumnName		QuestHandle		RawItem0	RawItem1	RawItem2	RawItem3	ToItem	Map	CenterX	CenterY	Region
+
+	#Table	Meeting											
+	#ColumnType		WORD										
+	#ColumnName		QuestHandle										
+													
+;	일반 퀘스트 테이블												
+;	멧돼지 사냥												
+	#recordin	Header	0	멧돼지#사냥	1	6	일부#사육하던#멧돼지들이#우리를#탈출하여#마을#터전#곳곳을#쑥대밭으로#만들고#다녀#마을#농부들의#성화가#말이#아닐세.#자네가#진정시켜#줄#수#있겠나?#내#사례는#톡톡히#치르겠네.	북쪽#및#남쪽#해안가의#멧돼지를#잡고#그#증표로#멧돼지의#송곳니#10개를#얻어#가이안#템플러에게#가져와라.	다#진정#시켰나?	고맙네.#자네#덕분에#농부들이#맘놓고#일할#수#있겠구먼.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	0		_Boar	BoarCanineTooth	10	9000					
+	#recordin	Reward	0		1	Experience	11	-	0				
+	#recordin	Reward	0		1	Cen	110	-	0				
+;	늑대의 마을 주민 습격												
+	#recordin	Header	1	늑대의#마을#주민#습격	3	8	"요즘#늑대#때문에#주민들이#불안에#떨고#있네,#자네가#늑대#20마리#정도#잡아다#주면#주민들이#좀#더#편하게#살#수#있을#텐데#말이야….#아#물론#많이#잡아오면#많이#잡아#올수록#좋지.#보상은#할테니#걱정#말고#많이#잡아오기나#하게나.#아#그리고,#자네를#못#믿어서#이러는#건#아니지만#잡았다는#증거로#늑대의#가죽#20개를#가져오게.#그럼#수고하게.##"	북쪽#및#남쪽#해안가에#있는#늑대#및#굶주린#늑대를#잡아#가죽#20개를#구해#가이안#템플러에게#가져와라.	늑대들이#없어져야#할#텐데…#다#구해왔나?	오#드디어#해냈군!#이거#마을을#대표해서#감사의#표시를#전하오.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	1		_Wolf	WolfLeather	20	800					
+	#recordin	Reward	1		1	Experience	15	-	0				
+	#recordin	Reward	1		1	Cen	150	-	0				
+;	마법사들의 부탁												
+	#recordin	Header	2	마법사들의#부탁	6	11	"무슨#생각을#하는지#도무지#알#수#없는#그#마법사#양반들이#이번에는#바다거북을#잡아서#바다거북#알을#가져오라는#구만.#그걸#가져다#무얼#하려는지는#모르지만#가격을#확실히#쳐#준다니까#잡아오기나#하게.#한#30개#정도는#있어야#된다#더구만.#아,#많으면#많을수록#좋다고#했으니#능력#되는대로#열심히#잡아오게!"	"북쪽#및#남쪽#해안가의#바다거북,#성난#바다거북,#분노한#바다거북을#잡아#바다거북#알#30개를#얻어#가이안#템플러에게#가져와라."	마법사들의#독촉이#심하군…#다#구해왔나?	수고했네.#이제#다리#뻗고#잘#수#있겠구먼.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	2		_SeaTurtle	SeaTurtleEgg	30	800					
+	#recordin	Reward	2		1	Experience	19	-	0				
+	#recordin	Reward	2		1	Cen	190	-	0				
+;	생필품을 구해와라												
+	#recordin	Header	3	생필품을#구해와라	9	14	이상해…#이상해…#빨래를#널어놓으면#누군가#옷을#가져#가는게#아니라#빨래#집게를#가져가니…#그래서#요즘#빨래#집게가#모자라다는#어이없는#현상이#일어나고#있네.#빨래#집게#대용으로#사용할#수#있는#게#모가#있을까…#음#우선#급한대로#크랩의#집게발을#이용해#봅세.#크랩#집게발#30개만#구해다#주게.#많으면#많을수록#좋으니까#능력#되는대로#열심히#잡아오게!	넓은#해안가에#있는#크랩을#잡아#집게발#30개를#구해#가이안#템플러에게#가져와라.	오늘도#마을#아낙네들이#다녀갔네.#집게좀#빌려달라고…	수고했네.#범인도#곧#잡힐#거라고#보네.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	3		_Crab	CrabClaw	30	700					
+	#recordin	Reward	3		1	Experience	29	-	0				
+	#recordin	Reward	3		1	Cen	290	-	0				
+;	마라해적단 소탕												
+	#recordin	Header	4	마라해적단#소탕	12	17	"요즘#해안가#주변에#해적들이#자주#드나들면서#어민들의#생사를#위협한다고#한다네.#그#해적#단의#정체가#마라#해적#단이라고#밝혀#졌는데#어민들을#괴롭히는#수법이#아주#악독#그#자체라#하더군…#마라#해적#단#시리즈들을#잡아#어민들이#맘#놓고#어업에#종사할#수#있도록#도와주게나.#아,그리고#증표로#마라#해적#단#배지를#가져오게.#내#후게#쳐줄테니."	넓은#해안가#및#마라#해적#단#소굴에#있는#마라#해적#단#시리즈를#잡아#배지#각각#8개씩을#가이안#템플러에게#가져와라.	아#요즘#생선#맛을#까먹을#지경이야.#해적#단들이#빨리#소탕되어야#할텐데…	고맙네.#드디어#생선#포식을#하겠군#그려!	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	4		MaraPiratesCrew	MaraPiratesCrewBadge	8	600					
+	#recordin	Looting	4		MaraPiratesSoldier	MaraPiratesSoldierBadge	8	600					
+	#recordin	Looting	4		MaraPiratesWarrior	MaraPiratesWarriorBadge	8	600					
+	#recordin	Looting	4		MaraPiratesCommander	MaraPiratesCommanderBadge	8	600					
+	#recordin	Looting	4		MaraPiratesViceCaptain	MaraPiratesViceCaptainBadge	8	600					
+	#recordin	Reward	4		1	Experience	44	-	0				
+	#recordin	Reward	4		1	Cen	440	-	0				
+;	임프 응징												
+	#recordin	Header	5	임프#응징	16	21	"이전#임프들은#인간,#엘프들과#좋은#공존#관계로#지냈었네.#그러나#카라스의#힘이#임프들에게까지#미쳐#임프들이#한#둘씩#악해지게되면서#인간과#엘프와의#공존관계를#깨버리는#무리들이#생기기#시작했네.#이제는#그#악한#무리들의#세력이#인간과#엘프에게#위협이#될#수#있을#정도로#커버렷네.#자의든#타의든#공존관계를#져#버린#임프#무리들을#응징해#주게."	음산한#계곡에#있는#임프#및#하이임프를#잡아#임프#목걸이#30개를#모아#가이안#템플러에게#가져와라.	임프들은#응징당해도#싸지…	수고했네.#남은#임프무리들도#시간나면#응징해#주게나.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	5		_Imp	ImpNeckLace	30	500					
+	#recordin	Reward	5		1	Experience	76	-	0				
+	#recordin	Reward	5		1	Cen	760	-	0				
+;	요리의 재료												
+	#recordin	Header	6	요리의#재료	18	23	무슨#요리를#하려는#지#알#수는#없지만#요리사#양반들이#요리에#필요한#재료#버섯을#30개#구해오라는#군.#근데#그#까다로운#양반들의#조건이#점핑#머쉬룸의#버섯으로#요리를#해야#맛이#난다나#모래나…#암튼#점핑#머쉬룸의#버섯을#구해오면#후하게#값을#쳐준다고#했으니까#구해오게나.#그리고#많으면#많을수록#좋다고#했으니#능력#되는대로#잡아#오게.	음산한#계곡에#있는#점핑#머쉬룸#및#빅#점핑#머쉬룸을#잡아#버섯#30개를#구해#가이안#템플러에게#가져와라.	다#구해왔나?#요리사#양반들#점핑#머쉬룸#버섯이#모가#맛있다고#그러는지#원…	수고했네.#요리사#양반들이#좋아하겠구려.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	6		_JumpingMushroom	JumpingMushroomMushroom	30	500					
+	#recordin	Reward	6		1	Experience	99	-	0				
+	#recordin	Reward	6		1	Cen	990	-	0				
+;	수집품												
+	#recordin	Header	7	수집품	20	25	우리#루멘#마을의#수집가들이#없는#물건이#없을#정도로#희귀한#물건들을#많이#가지고#있다고#정평이#나#있지.#헌데#그#들도#못#구한#물건들이#있는데#그것들을#말론클랜들이#가지고#있다고#하더군.#아마#그#물건들을#수집가들에게#구해다#주면#너도#나도#산다고#난리일거야.#이참에#돈좀#벌어보지#않겠나?	"음사한#계곡에#있는#말론#클랜#아쳐,#말론#클랜#파이터,#말론#클랜#솔져를#잡아#말론#클랜의#활#5개,#검#5개,#방패#3개를#모아#가이안#템플러에게#가져와라."	후후#말론클랜의#물건들#꽤#값이#나갈꺼야…	오#드디어#구해왔군!#그렇지#않아도#수집가들이#자네가#물건을#구해오면#바로#연락을#주라고#했네.#보상은#톡톡히#받을#수#있을#걸세.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	7		MaloneClanArcher	MaloneClanArcherBow	5	250					
+	#recordin	Looting	7		MaloneClanFighter	MaloneClanFighterSword	5	250					
+	#recordin	Looting	7		MaloneClanSolider	MaloneClanBuckler	3	200					
+	#recordin	Reward	7		1	Experience	131	-	0				
+	#recordin	Reward	7		1	Cen	1310	-	0				
+;	찡의 부탁												
+	#recordin	Header	8	찡의#부탁	22	27	마침#자네에게#부탁할#일이#생겼네.#마을#가구점#주인#찡을#아는가?#그가#가구제작을#하는데#가죽이#필요하다고#하는군.#이유인#즉#천#소재의#의자를#가죽#의자로#속여#팔아#부당이득을#챙긴#것이#양심에#걸려#이제야#정신을#차리려고#한다는#군.#때#늦은#감이#있지만#가죽을#구해다#줍세.#보어맨을#잡아#보어맨의#가죽을#구해오게.#많으면#많을수록#좋으니까#능력#되는대로#잡아오게.	말론클랜#아지트에#있는#보어맨#및#크레이지#보어맨을#잡아#가죽#40개를#얻어#가이안#템플러에게#가져와라.	다#구해왔나?#찡도#마음속#깊이#반성하고#있을걸세.	수고했네.#찡도#앞으로#정직하게#양식적으로#살아갈#것으로#믿네.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	8		_BoarMan	BoarManLeather	40	600					
+	#recordin	Reward	8		1	Experience	172	-	0				
+	#recordin	Reward	8		1	Cen	1720	-	0				
+;	용사의 시험												
+	#recordin	Header	9	용사의#시험	25	30	역전의#용사#기드#관리인#브롬은#몬스터들과의#전투로#인해#다리#한쪽을#잃어#더#이상#현역으로#싸울#수#없는#상태라네.#브롬은#자신을#대신해#몬스터들과#싸울#수#있는#용사의#자질이#있는#사람을#뽑아달라고#부탁했네.#자네를#보니#기상이#당차서#자질이#있어#보이는#군.#시험을#한#번#해보겠네.#랫맨을#잡아#랫맨의#꼬리#30개를#구해오게!	카라시안#템플#지하#1층에#있는#랫맨#및#랫맨#파이터를#잡고#그#증표로#랫맨#꼬리#30개를#모아#가이안#템플러에게#가져와라.	자넨#용사의#자질을#충분히#갖췄네.#시험을#통과하리라#믿네.	오#자네가#해낼#줄#믿고#있었네.#브롬에게#당장#이#사실을#말해줘야#겠군.#이젠#자넨#진정한#용사로써의#자질을#갖추게#된걸세.#축하하네.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	9		_RatMan	RatManTail	30	450					
+	#recordin	Reward	9		1	Experience	256	-	0				
+	#recordin	Reward	9		1	Cen	2560	-	0				
+;	새로운 사업												
+	#recordin	Header	10	새로운#사업	27	32	요즘#상인들은#마을#내#경기불황으로#인해#지속적인#적자를#면치#못하고#있네.#수익을#낼#수#있는#아이템이#부족하다고#들었는데…#내가#제안하나#하지.#요즘#뉴#아이템으로#부상하고#있는#젤리#사업을#같이#해보지#않으련가?#수익은#50대50으로#나누기로#하고…#허허#알았네.#40:60으로#하지.#물론#자네가#60이고.#설마#날#믿지#못하는#건#아니겠지?#자#부자#한번#돼#보자고!	카라시안#템플#지하#1층에#있는#슬라임을#잡아#젤리#40개를#얻어#가이안#템플러에게#가져와라.	아직도#날#의심하는#겐가?#분배는#확실히#해주겠네.	수고했네.#우린#부자가#될#걸세.#껄껄껄.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	10		_Slime	SlimeJelly	40	500					
+	#recordin	Reward	10		1	Experience	338	-	0				
+	#recordin	Reward	10		1	Cen	3380	-	0				
+;	스켈레톤 퇴치1												
+	#recordin	Header	11	스켈레톤#퇴치1	29	34	예전#아이샤#대전#이후#너무#오래되어#뼈만#남은#시체들은#카라스의#주술에#의해#스켈레톤으로#부활#되어졌다고#하네.#현재#그#스켈레톤#무리들은#카라스의#조종에#의해#세력을#아이샤#대륙#전#지역에#걸쳐#뻗어나가고#있네.#카라스가#죽기#전까진#스켈레톤들을#다#죽일#수#없다#하더라도#세력이#더#커지기#전에#스켈레톤#무리들이#뻗어나가는#것을#막아야#하네.#자네가#스켈레톤#무리들을#물리쳐#주게.	"카라시안#템플#지하#1층에#있는#스켈레톤,#스켈레톤#아쳐를#잡아#스켈레톤의#갈비뼈,#등뼈#각각#20개씩#구해#가이안#템플러에게#가져와라."	스켈레톤#세력들이#더#커지기#전에#막아야#할텐데…	완전히#뿌리뽑은#것은#아니지만#스켈레톤#무리들의#세력들이#뻗어나가는#것을#어느정도#막은#것#같네.#수고했네.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	11		Skeleton	SkeletonBackBone	20	300					
+	#recordin	Looting	11		SkeletonArcher	SkeletonArcherRib	20	300					
+	#recordin	Reward	11		1	Experience	447	-	0				
+	#recordin	Reward	11		1	Cen	4470	-	0				
+;	사원 유적 물 보존												
+	#recordin	Header	12	사원#유적#물#보존	30	35	요즘#도굴꾼들#때문에#사원에#남아있는#유적#물이#다#없어질판이야…#우리#마을의#유적지를#보존하는데#자네가#한#몫#해보지#않겠나?#도굴꾼의#삽을#뺏어와#아예#도굴#자체를#할#수#없게#만들어#버려주게.#내#사례는#톡톡히#치르겠네.	카라시안#템플#지하#1층에#있는#초보#도굴꾼과#능숙한#도굴꾼을#잡아#도굴꾼의#삽#30개를#얻어#가이안#템플러에게#가져와라.	도굴꾼들이#잽싸서#임무를#수행하기가#힘들겠지만#해낼#것이라#믿네.#우리#힘으로#마을#유적물을#보존해#봅세.#	고맙네.#마을을#대표해서#감사의#표시를#전하오.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	12		_GraveRobber	GraveRobberShovel	30	400					
+	#recordin	Reward	12		1	Experience	515	-	0				
+	#recordin	Reward	12		1	Cen	5150	-	0				
+;	스켈레톤 퇴치2												
+	#recordin	Header	13	스켈레톤#퇴치2	32	37	요번에#스켈레톤#워리어라는#녀석을#물리쳐줘야겠네.#스켈레톤이랑#비슷하게#생겼다고#깔보는#생각은#버리게.#한대#맞으면#정신이#번쩍#들걸#세.	카라시안#템플#지하#1층에#있는#스켈레톤#워리어를#잡아#두개골#30개를#얻어#가이안#템플러에게#가져와라.	한대#맞으니까#정신이#번쩍#들지?#정신차렸음#당장#임무를#완수하게!	잡는데#어려움이#많았을텐데#수고했네.	GaianTemplarMaria	GaianTemplarMaria	0
+	#recordin	Looting	13		SkeletonWarrior	SkeletonWarriorSkull	30	400					
+	#recordin	Reward	13		1	Experience	680	-	0				
+	#recordin	Reward	13		1	Cen	6800	-	0				
+													
+	#end												

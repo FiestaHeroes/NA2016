@@ -1,0 +1,21 @@
+;		Damage By Soul							
+
+#Ignore	\o042								
+#Exchange	#	\x20							
+;#delimeter	\x20								
+#Table	DamageBySoul								
+;									
+;	Soul의 누적 개수와 사용시 적용되는 데미지의 비율을 정의하는 테이블임								
+;	DemandSoul은 필요 소울 개수								
+;	Soul01~07은 누적된 소울의 개수를 말함								
+;									
+#ColumnType	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD
+#ColumnName	DemandSoul	Soul00	Soul01	Soul02	Soul03	Soul04	Soul05	Soul06	Soul07
+#Record	1 	1000 	1000 	1400 	1800 	2200 	2600 	3000 	3500 
+#Record	2 	1000 	1000 	1500 	1500 	2000 	2000 	2500 	2500 
+#Record	3 	1000 	1000 	1500 	1500 	2000 	2000 	2500 	2500 
+#Record	4 	1000 	1000 	1500 	1500 	2000 	2000 	2500 	2500 
+#Record	5 	1000 	1000 	1500 	1500 	2000 	2000 	2500 	2500 
+#Record	6 	1000 	1000 	1500 	1500 	2000 	2000 	2500 	2500 
+#Record	7 	1000 	1000 	1500 	1500 	2000 	2000 	2500 	2500 
+#End									

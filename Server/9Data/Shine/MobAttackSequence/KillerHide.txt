@@ -1,0 +1,40 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	-							
+#Record	1	-							
+#Record	2	KillerHideAtk							
+#Record	3	-							
+#Record	4	-							
+#Record	5	-
+#Record	6	KillerHideSum
+#Record	7	-
+#Record	8	-
+#Record	9	-
+#Record	10	-
+#Record	11	KillerHideAtk
+#Record	12	-
+#Record	13	-
+#Record	14	-
+#Record	15	KillerHideSum
+#Record	16	-
+#Record	17	-
+#Record	18	-
+#Record	19	KillerHideAtk
+#Record	20	-
+#Record	21	-									
+											
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우							
+#ColumnType	Index	Index	String[33]	String[33]							
+#ColumnName	Condition	Value	From	To							
+#Record	OutOfRange	-	-	KillerHideAtk	; 평타쓸 타이밍에 사정거리가 넘어가면 단검으로 바꿈						
+											
+#End											

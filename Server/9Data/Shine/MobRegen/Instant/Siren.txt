@@ -1,0 +1,260 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		S_01_CW_01	N	1832	10436	0	0	86									
+#record		S_01_CW_02	N	2650	10218	0	0	200									
+#record		S_01_CW_03	N	3431	9705	0	0	200									
+#record		S_01_CW_04	N	2696	9782	0	0	200									
+#record		S_01_CW_05	N	2939	10572	0	0	200									
+#record		S_01_SW_01	N	3375	10101	0	0	200									
+#record		S_01_SW_02	N	3091	9582	0	0	200									
+#record		S_01_SW_03	N	3359	10516	0	0	200									
+#record		S_02_CW_01	N	5538	10902	0	0	164									
+#record		S_02_CW_02	N	5891	11022	0	0	200									
+#record		S_02_CW_03	N	6748	11088	0	0	101									
+#record		S_02_CW_04	N	7711	10723	0	0	164									
+#record		S_02_SW_01	N	4553	10694	0	0	79									
+#record		S_02_SW_02	N	5570	11327	0	0	200									
+#record		S_02_SW_03	N	7378	10334	0	0	150									
+#record		S_03_CW_01	N	8746	11510	0	0	200									
+#record		S_03_CW_02	N	9625	11679	0	0	200									
+#record		S_03_SW_01	N	8853	11920	0	0	200									
+#record		S_03_SW_02	N	9289	12081	0	0	200									
+#record		S_03_SW_03	N	9432	11268	0	0	200									
+#record		S_03_SW_04	N	8926	11157	0	0	200									
+#record		S_04_CW_01	N	7079	9154	0	0	200									
+#record		S_04_CW_02	N	6727	8925	0	0	200									
+#record		S_04_CW_03	N	7728	8713	0	0	200									
+#record		S_04_CW_04	N	7371	8860	0	0	200									
+#record		S_04_CW_05	N	6678	8485	0	0	200									
+#record		S_04_SW_01	N	6802	8138	0	0	143									
+#record		S_04_SW_02	N	7205	8124	0	0	200									
+#record		S_04_SW_03	N	7587	8307	0	0	200									
+#record		S_04_SW_04	N	4830	8946	0	0	200									
+#record		S_04_SW_05	N	4911	8458	0	0	200									
+#record		S_05_CW_01	N	8872	9566	0	0	200									
+#record		S_05_CW_02	N	9195	8845	0	0	200									
+#record		S_05_CW_03	N	9298	9787	0	0	200									
+#record		S_05_SW_01	N	8821	9114	0	0	200									
+#record		S_05_SW_02	N	9589	9082	0	0	200									
+#record		S_05_SW_03	N	9656	9584	0	0	200									
+#record		S_05_CT_01	N	9285	9313	0	0	200									
+#record		S_05_CT_02	N	11035	9576	0	0	107									
+#record		S_05_CT_03	N	10643	8915	0	0	115									
+#record		S_05_CT_04	N	9308	7806	0	0	107									
+#record		S_05_CT_05	N	11129	8031	0	0	200									
+#record		S_05_CT_06	N	11035	7600	0	0	200									
+#record		S_05_CT_07	N	11756	7858	0	0	115									
+#record		S_05_CT_08	N	9682	5856	0	0	122									
+#record		S_05_CT_09	N	9496	6332	0	0	115									
+#record		S_05_CT_10	N	10607	6595	0	0	93									
+#record		S_05_CT_11	N	8904	6313	0	0	93									
+#record		S_05_CT_12	N	8090	6349	0	0	100									
+#record		S_05_CT_13	N	7535	6335	0	0	143									
+#record		S_05_ST_01	N	11398	7423	0	0	200									
+#record		S_05_ST_02	N	11795	7314	0	0	200									
+#record		S_05_ST_03	N	11480	8239	0	0	200									
+#record		S_05_ST_04	N	12083	7669	0	0	200									
+#record		S_05_ST_05	N	11855	8147	0	0	143									
+#record		S_05_ST_06	N	9909	6007	0	0	101									
+#record		S_05_ST_07	N	9436	6046	0	0	150									
+#record		S_05_ST_08	N	9832	6316	0	0	143									
+#record		S_05_ST_09	N	7267	6605	0	0	136									
+#record		S_05_ST_10	N	7234	6112	0	0	129									
+#record		SH_01_CW_01	N	1832	10436	0	0	86									
+#record		SH_01_CW_02	N	2650	10218	0	0	200									
+#record		SH_01_CW_03	N	3431	9705	0	0	200									
+#record		SH_01_CW_04	N	2696	9782	0	0	200									
+#record		SH_01_CW_05	N	2939	10572	0	0	200									
+#record		SH_01_SW_01	N	3375	10101	0	0	200									
+#record		SH_01_SW_02	N	3091	9582	0	0	200									
+#record		SH_01_SW_03	N	3359	10516	0	0	200									
+#record		SH_02_CW_01	N	5538	10902	0	0	164									
+#record		SH_02_CW_02	N	5891	11022	0	0	200									
+#record		SH_02_CW_03	N	6748	11088	0	0	101									
+#record		SH_02_CW_04	N	7711	10723	0	0	164									
+#record		SH_02_SW_01	N	4553	10694	0	0	79									
+#record		SH_02_SW_02	N	5570	11327	0	0	200									
+#record		SH_02_SW_03	N	7378	10334	0	0	150									
+#record		SH_03_CW_01	N	8746	11510	0	0	200									
+#record		SH_03_CW_02	N	9625	11679	0	0	200									
+#record		SH_03_SW_01	N	8853	11920	0	0	200									
+#record		SH_03_SW_02	N	9289	12081	0	0	200									
+#record		SH_03_SW_03	N	9432	11268	0	0	200									
+#record		SH_03_SW_04	N	8926	11157	0	0	200									
+#record		SH_04_CW_01	N	7079	9154	0	0	200									
+#record		SH_04_CW_02	N	6727	8925	0	0	200									
+#record		SH_04_CW_03	N	7728	8713	0	0	200									
+#record		SH_04_CW_04	N	7371	8860	0	0	200									
+#record		SH_04_CW_05	N	6678	8485	0	0	200									
+#record		SH_04_SW_01	N	6802	8138	0	0	143									
+#record		SH_04_SW_02	N	7205	8124	0	0	200									
+#record		SH_04_SW_03	N	7587	8307	0	0	200									
+#record		SH_04_SW_04	N	4830	8946	0	0	200									
+#record		SH_04_SW_05	N	4911	8458	0	0	200									
+#record		SH_05_CW_01	N	8872	9566	0	0	200									
+#record		SH_05_CW_02	N	9195	8845	0	0	200									
+#record		SH_05_CW_03	N	9298	9787	0	0	200									
+#record		SH_05_SW_01	N	8821	9114	0	0	200									
+#record		SH_05_SW_02	N	9589	9082	0	0	200									
+#record		SH_05_SW_03	N	9656	9584	0	0	200									
+#record		SH_05_CT_01	N	9285	9313	0	0	200									
+#record		SH_05_CT_02	N	11035	9576	0	0	107									
+#record		SH_05_CT_03	N	10643	8915	0	0	115									
+#record		SH_05_CT_04	N	9308	7806	0	0	107									
+#record		SH_05_CT_05	N	11129	8031	0	0	200									
+#record		SH_05_CT_06	N	11035	7600	0	0	200									
+#record		SH_05_CT_07	N	11756	7858	0	0	115									
+#record		SH_05_CT_08	N	9682	5856	0	0	122									
+#record		SH_05_CT_09	N	9496	6332	0	0	115									
+#record		SH_05_CT_10	N	10607	6595	0	0	93									
+#record		SH_05_CT_11	N	8904	6313	0	0	93									
+#record		SH_05_CT_12	N	8090	6349	0	0	100									
+#record		SH_05_CT_13	N	7535	6335	0	0	143									
+#record		SH_05_ST_01	N	11398	7423	0	0	200									
+#record		SH_05_ST_02	N	11795	7314	0	0	200									
+#record		SH_05_ST_03	N	11480	8239	0	0	200									
+#record		SH_05_ST_04	N	12083	7669	0	0	200									
+#record		SH_05_ST_05	N	11855	8147	0	0	143									
+#record		SH_05_ST_06	N	9909	6007	0	0	101									
+#record		SH_05_ST_07	N	9436	6046	0	0	150									
+#record		SH_05_ST_08	N	9832	6316	0	0	143									
+#record		SH_05_ST_09	N	7267	6605	0	0	136									
+#record		SH_05_ST_10	N	7234	6112	0	0	129									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		S_01_CW_01	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_01_CW_02	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_01_CW_03	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_01_CW_04	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_01_CW_05	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_01_SW_01	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_01_SW_02	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_01_SW_03	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_02_CW_01	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_02_CW_02	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_02_CW_03	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_02_CW_04	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_02_SW_01	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_02_SW_02	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_02_SW_03	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_03_CW_01	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_03_CW_02	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_03_SW_01	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_03_SW_02	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_03_SW_03	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_03_SW_04	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_CW_01	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_CW_02	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_CW_03	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_CW_04	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_CW_05	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_SW_01	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_SW_02	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_SW_03	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_SW_04	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_04_SW_05	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CW_01	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CW_02	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CW_03	S_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_SW_01	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_SW_02	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_SW_03	S_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_01	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_02	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_03	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_04	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_05	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_06	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_07	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_08	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_09	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_10	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_11	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_12	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_CT_13	S_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_01	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_02	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_03	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_04	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_05	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_06	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_07	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_08	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_09	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		S_05_ST_10	S_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_CW_01	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_CW_02	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_CW_03	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_CW_04	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_CW_05	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_SW_01	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_SW_02	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_01_SW_03	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_02_CW_01	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_02_CW_02	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_02_CW_03	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_02_CW_04	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_02_SW_01	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_02_SW_02	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_02_SW_03	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_03_CW_01	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_03_CW_02	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_03_SW_01	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_03_SW_02	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_03_SW_03	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_03_SW_04	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_CW_01	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_CW_02	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_CW_03	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_CW_04	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_CW_05	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_SW_01	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_SW_02	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_SW_03	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_SW_04	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_04_SW_05	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CW_01	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CW_02	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CW_03	SH_CyrusWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_SW_01	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_SW_02	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_SW_03	SH_SirenWave	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_01	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_02	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_03	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_04	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_05	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_06	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_07	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_08	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_09	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_10	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_11	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_12	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_CT_13	SH_CyrusTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_01	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_02	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_03	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_04	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_05	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_06	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_07	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_08	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_09	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+#record		SH_05_ST_10	SH_SirenTyphoon	2	0	300	296	7204	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

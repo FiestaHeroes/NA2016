@@ -1,0 +1,52 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	BH_Humar_Skill_DrainSP			
+#Record	1	BH_Humar_Skill_Heal			
+#Record	2	B_CrackerHumar_AC_Down_Atk			
+#Record	3	-			
+#Record	4	B_CrackerHumar_Normal_Wide			
+#Record	5	-			
+#Record	6	-			
+#Record	7	B_CrackerHumar_Normal_Atk			
+#Record	8	-			
+#Record	9	B_CrackerHumar_AC_Down_Atk			
+#Record	10	-			
+#Record	11	B_CrackerHumar_Normal_Wide			
+#Record	12	-			
+#Record	13	-			
+#Record	14	B_CrackerHumar_Normal_Atk			
+#Record	15	-			
+#Record	16	B_CrackerHumar_AC_Down_Atk			
+#Record	17	-			
+#Record	18	B_CrackerHumar_Normal_Wide			
+#Record	19	-			
+#Record	20	-			
+#Record	21	B_CrackerHumar_Normal_Atk			
+#Record	22	-			
+#Record	23	B_CrackerHumar_AC_Down_Atk			
+#Record	24	-			
+#Record	25	B_CrackerHumar_Normal_Wide			
+#Record	26	-			
+#Record	27	-			
+#Record	28	B_CrackerHumar_Normal_Atk			
+#Record	29	-			
+#Record	30	B_CrackerHumar_AC_Down_Atk			
+#Record	31	-			
+#Record	32	B_CrackerHumar_Normal_Wide			
+#Record	33	-			
+#Record	34	-			
+#Record	35	B_CrackerHumar_Normal_Atk			
+#Record	36	-			
+#Record	37	B_CrackerHumar_AC_Down_Atk			
+#Record	38	-			
+#Record	39	B_CrackerHumar_Normal_Wide			
+#End					

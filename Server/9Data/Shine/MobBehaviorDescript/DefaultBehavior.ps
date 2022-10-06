@@ -1,0 +1,39 @@
+open [main]
+    var Enemy.
+    var Perm.
+    var EnemyName.
+    infinite
+    open
+        whoistarget Enemy.                      ; 현재 타겟의 핸들을 얻어옴
+        if Enemy =!= ""                         ; 타겟이 있음
+        then
+        open
+            getname EnemyName Enemy.            ; 핸들(Enemy)의 이름을 EnemyName에 넣음
+
+            permillage Perm.
+
+            if Perm < 300
+            then
+            open
+                chat Enemy EnemyName % ", 게 섯거라!".
+            close
+            else if Perm < 700
+            then
+            open
+                chat Enemy "각오해라, " % EnemyName % "!".
+            close
+            else
+            open
+                chat Enemy "적이다!!".
+            close
+        close
+
+        whokillme Enemy.                        ; 내가 죽었을 경우 나를 죽인 캐릭의 핸들을 얻어옴
+        if Enemy =!= ""                         ; 나를 죽인 캐릭이 있음 - 난 죽어있는 상태
+        then
+        open
+            chat Enemy "억울하다!!!".
+            break "main".
+        close
+    close
+close

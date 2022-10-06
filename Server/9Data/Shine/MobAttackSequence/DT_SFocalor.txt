@@ -1,0 +1,16 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	DT_SFocalor_Skill01_W			
+#Record	1	DT_SFocalor_Skill02_N			
+#Record	2	DT_SFocalor_Skill03_W			
+#Record	3	DT_SFocalor_Skill04_W			
+#End					

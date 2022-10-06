@@ -1,0 +1,500 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Adl_001	N	32986	13517	0	0	420									
+#record		Adl_008	N	35391	12900	0	0	420									
+#record		Adl_009	N	35433	11957	0	0	420									
+#record		Adl_011	N	33955	13019	0	0	420									
+#record		Adl_012	N	34431	12201	0	0	420									
+#record		Adl_013	N	34452	11165	0	0	420									
+#record		Adl_014	N	34551	10178	0	0	420									
+#record		Adl_018	N	28004	9979	0	0	420									
+#record		Adl_019	N	33374	9840	0	0	420									
+#record		Adl_020	N	32668	10410	0	0	420									
+#record		Adl_022	N	31874	10481	0	0	420									
+#record		Adl_023	N	30390	9657	0	0	420									
+#record		Adl_024	N	30313	10593	0	0	420									
+#record		Adl_026	N	29607	11160	0	0	420									
+#record		Adl_027	N	29368	10298	0	0	420									
+#record		Adl_029	N	28211	11352	0	0	420									
+#record		Adl_030	N	27352	10997	0	0	420									
+#record		Adl_031	N	31091	10521	0	0	420									
+#record		Adl_032	N	26515	10699	0	0	420									
+#record		Adl_035	N	27285	8994	0	0	420									
+#record		Adl_036	N	27082	10048	0	0	420									
+#record		Adl_038	N	26130	9513	0	0	420									
+#record		Adl_039	N	26349	8743	0	0	420									
+#record		Adl_041	N	26851	8042	0	0	420									
+#record		Adl_042	N	27767	8093	0	0	420									
+#record		Adl_044	N	28384	7473	0	0	420									
+#record		Adl_046	N	27165	7256	0	0	420									
+#record		Adl_047	N	27931	6737	0	0	420									
+#record		Adl_049	N	29372	7498	0	0	420									
+#record		Adl_050	N	29131	6706	0	0	420									
+#record		Adl_052	N	30378	8704	0	0	420									
+#record		Adl_056	N	31266	9564	0	0	420									
+#record		Adl_057	N	31832	8680	0	0	420									
+#record		Adl_058	N	32517	8179	0	0	420									
+#record		Adl_060	N	32818	7492	0	0	420									
+#record		Adl_061	N	31996	7255	0	0	420									
+#record		Adl_062	N	31248	6788	0	0	420									
+#record		Adl_064	N	30256	6652	0	0	420									
+#record		Adl_065	N	30150	7646	0	0	420									
+#record		Adl_068	N	30708	5762	0	0	420									
+#record		Adl_072	N	29639	6034	0	0	420									
+#record		Adl_073	N	29192	5101	0	0	420									
+#record		Adl_074	N	28455	4918	0	0	420									
+#record		Adl_075	N	27553	5213	0	0	420									
+#record		Adl_077	N	27565	6018	0	0	350									
+#record		Adl_078	N	26925	5798	0	0	350									
+#record		Adl_079	N	25907	5091	0	0	420									
+#record		Adl_082	N	26884	4826	0	0	420									
+#record		Adl_084	N	26320	4409	0	0	420									
+#record		Adl_086	N	26136	3682	0	0	420									
+#record		Adl_088	N	26771	3140	0	0	420									
+#record		Adl_089	N	26337	2473	0	0	420									
+#record		Adl_091	N	27252	2316	0	0	420									
+#record		Adl_092	N	27764	3089	0	0	420									
+#record		Adl_094	N	27955	4176	0	0	420									
+#record		Adl_096	N	28448	3089	0	0	420									
+#record		Adl_098	N	29404	3531	0	0	420									
+#record		Adl_099	N	29214	2722	0	0	420									
+#record		Adl_100	N	29782	4375	0	0	420									
+#record		Adl_102	N	30132	5219	0	0	420									
+#record		Adl_104	N	31620	5536	0	0	420									
+#record		Adl_106	N	32493	5119	0	0	420									
+#record		Adl_108	N	31188	4283	0	0	420									
+#record		Adl_109	N	31940	3781	0	0	420									
+#record		Adl_110	N	31857	4650	0	0	420									
+#record		Adl_111	N	32627	4199	0	0	420									
+#record		Adl_113	N	33528	4674	0	0	420									
+#record		Adl_117	N	31224	3209	0	0	420									
+#record		Adl_118	N	33761	4084	0	0	420									
+#record		Adl_119	N	33249	3717	0	0	420									
+#record		Adl_120	N	32463	3126	0	0	420									
+#record		Adl_121	N	31751	2762	0	0	420									
+#record		Adl_122	N	36720	14009	0	0	420									
+#record		Adl_123	N	36316	12671	0	0	420									
+#record		Adl_125	N	37643	12725	0	0	420									
+#record		Adl_127	N	37563	14722	0	0	420									
+#record		Adl_130	N	38601	15069	0	0	420									
+#record		Adl_131	N	39720	15136	0	0	420									
+#record		Adl_132	N	40769	15152	0	0	420									
+#record		Adl_135	N	38837	12785	0	0	420									
+#record		Adl_136	N	40072	12863	0	0	420									
+#record		Adl_138	N	41005	13070	0	0	420									
+#record		Adl_140	N	41812	13854	0	0	420									
+#record		Adl_141	N	41651	14821	0	0	420									
+#record		Adl_144	N	42453	15288	0	0	420									
+#record		Adl_147	N	43132	15962	0	0	420									
+#record		Adl_148	N	44116	15827	0	0	420									
+#record		Adl_150	N	45276	17142	0	0	420									
+#record		Adl_151	N	42614	14334	0	0	420									
+#record		Adl_152	N	43319	14949	0	0	420									
+#record		Adl_153	N	45025	15558	0	0	420									
+#record		Adl_156	N	43858	13739	0	0	420									
+#record		Adl_158	N	42883	13382	0	0	420									
+#record		Adl_161	N	44284	14794	0	0	420									
+#record		Adl_162	N	41598	16316	0	0	420									
+#record		Adl_163	N	41937	17115	0	0	420									
+#record		Adl_164	N	42576	17752	0	0	420									
+#record		Adl_166	N	43432	19147	0	0	420									
+#record		Adl_167	N	43359	18282	0	0	420									
+#record		Adl_169	N	42944	19869	0	0	420									
+#record		Adl_170	N	42074	20001	0	0	420									
+#record		Adl_173	N	41206	19892	0	0	420									
+#record		Adl_174	N	40396	19353	0	0	420									
+#record		Adl_175	N	39751	18567	0	0	420									
+#record		Adl_177	N	39225	17764	0	0	420									
+#record		Adl_179	N	38387	17247	0	0	420									
+#record		Adl_180	N	37528	17123	0	0	420									
+#record		Adl_181	N	38478	18141	0	0	420									
+#record		Adl_182	N	37483	18120	0	0	420									
+#record		Adl_184	N	37982	18911	0	0	420									
+#record		Adl_185	N	38045	19829	0	0	420									
+#record		Adl_186	N	37062	19015	0	0	420									
+#record		Adl_187	N	37096	20093	0	0	420									
+#record		Adl_189	N	37319	21007	0	0	420									
+#record		Adl_190	N	38131	20782	0	0	420									
+#record		Adl_191	N	38837	21491	0	0	420									
+#record		Adl_192	N	39876	21675	0	0	420									
+#record		Adl_194	N	40986	21772	0	0	420									
+#record		Adl_196	N	41943	21819	0	0	420									
+#record		Adl_198	N	42939	21715	0	0	420									
+#record		Adl_199	N	43977	21506	0	0	420									
+#record		Adl_200	N	44853	21020	0	0	420									
+#record		Adl_202	N	45162	20052	0	0	420									
+#record		Adl_203	N	45220	19069	0	0	420									
+#record		Adl_205	N	45318	18097	0	0	420									
+#record		Adl_206	N	41923	12875	0	0	420									
+#record		Adl_207	N	43060	12500	0	0	420									
+#record		Adl_208	N	44030	12825	0	0	420									
+#record		Adl_210	N	42154	11332	0	0	420									
+#record		Adl_212	N	41829	10465	0	0	420									
+#record		Adl_213	N	40923	10006	0	0	420									
+#record		Adl_215	N	39998	9865	0	0	420									
+#record		Adl_216	N	39136	9663	0	0	420									
+#record		Adl_217	N	38293	9274	0	0	420									
+#record		Adl_219	N	37590	8492	0	0	420									
+#record		Adl_221	N	37086	7736	0	0	420									
+#record		Adl_223	N	41599	9533	0	0	420									
+#record		Adl_224	N	41262	8740	0	0	420									
+#record		Adl_226	N	40611	8019	0	0	420									
+#record		Adl_227	N	41586	7914	0	0	420									
+#record		Adl_229	N	39780	7651	0	0	420									
+#record		Adl_230	N	41672	7073	0	0	420									
+#record		Adl_232	N	41626	6245	0	0	420									
+#record		Adl_233	N	41461	5492	0	0	420									
+#record		Adl_235	N	42461	6011	0	0	420									
+#record		Adl_236	N	42461	5370	0	0	420									
+#record		Adl_238	N	41846	4796	0	0	420									
+#record		Adl_239	N	42462	4363	0	0	420									
+#record		Adl_240	N	42939	3555	0	0	420									
+#record		Adl_242	N	43045	2792	0	0	420									
+#record		Adl_243	N	42345	2414	0	0	420									
+#record		Adl_245	N	41046	2371	0	0	420									
+#record		Adl_246	N	41356	2918	0	0	420									
+#record		Adl_249	N	39838	2384	0	0	420									
+#record		Adl_250	N	39586	3186	0	0	420									
+#record		Adl_251	N	39251	3907	0	0	420									
+#record		Adl_253	N	38809	2525	0	0	420									
+#record		Adl_255	N	40508	2946	0	0	420									
+#record		Adl_256	N	38291	1956	0	0	420									
+#record		Adl_257	N	38413	3593	0	0	420									
+#record		Adl_259	N	38807	4649	0	0	420									
+#record		Adl_260	N	37856	2863	0	0	420									
+#record		Adl_261	N	37879	4364	0	0	420									
+#record		Adl_263	N	38696	5649	0	0	420									
+#record		Adl_264	N	37001	2575	0	0	420									
+#record		Adl_265	N	36686	3193	0	0	420									
+#record		Adl_267	N	37878	5250	0	0	420									
+#record		Adl_268	N	36928	4337	0	0	420									
+#record		Adl_269	N	36886	5159	0	0	420									
+#record		Adl_270	N	36776	6788	0	0	420									
+#record		Adl_271	N	44973	11410	0	0	420									
+#record		Adl_272	N	45141	10533	0	0	420									
+#record		Adl_274	N	45200	9670	0	0	420									
+#record		Adl_276	N	44937	8750	0	0	420									
+#record		Adl_277	N	44709	7889	0	0	420									
+#record		Adl_278	N	44172	7150	0	0	420									
+#record		Adl_280	N	43527	6599	0	0	420									
+#record		Adl_281	N	44225	6130	0	0	420									
+#record		Adl_282	N	43319	5765	0	0	420									
+#record		Adl_284	N	43156	4991	0	0	420									
+#record		Adl_DNepilim01	N	43647	14375	0	0	90									
+#record		Adl_DNepilim02	N	45346	16282	0	0	75									
+#record		Adl_DNepilim03	N	42118	14355	0	0	90									
+#record		Adl_DNepilim04	N	42185	12126	0	0	82									
+#record		Adl_DNepilim05	N	41402	15629	0	0	90									
+#record		Adl_hero01	N	26428	5145	0	0	54									
+#record		Adl_hero02	N	32996	3306	0	0	82									
+#record		Adl_hero03	N	43706	2295	0	0	496									
+#record		Adl_hero04	N	41926	8352	0	0	496									
+#record		Adl_hero05	N	37479	3594	0	0	398									
+#record		Adl_FlowerWoodHerb	N	27642	17566	203	1058	-66									
+#record		Adl_FlowerWoodHerb1	N	29983	6741	0	0	4443									
+#record		Adl_FlowerWoodHerb2	N	41048	5790	0	0	3905									
+#record		Adl_FlowerWoodHerb3	N	41155	17921	0	0	3876									
+#record		Adl_FlowerWoodHerb4	N	34806	12186	0	0	2370									
+#record		Adl_FlowerWoodHerb5	N	29848	20803	1206	265	30									
+#record		Adl_FlowerWoodHerb6	N	26972	20473	251	1076	29									
+#record		Waypoint01	N	41544	13336	0	0	420	
+#record		Waypoint02	N	44245	15238	0	0	420	
+#record		Waypoint03	N	42820	14783	0	0	420	
+#record		Waypoint04	N	28530	17441	0	0	420	
+#record		Waypoint05	N	30944	19089	0	0	420	
+#record		Waypoint06	N	28256	21280	0	0	420									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Adl_001	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_008	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_009	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_011	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_012	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_013	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_014	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_018	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_019	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_020	DApe	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_022	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_023	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_024	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_026	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_027	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_029	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_030	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_031	BSpikeHorn	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_032	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_035	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_036	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_038	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_039	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_041	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_042	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_044	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_046	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_047	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_049	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_050	FSpearman	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_052	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_056	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_057	FRanger	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_058	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_060	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_061	FRanger	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_062	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_064	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_065	FRanger	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_068	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_072	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_073	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_074	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_075	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_077	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_078	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_079	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_082	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_084	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_086	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_088	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_089	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_091	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_092	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_094	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_096	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_098	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_099	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_100	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_102	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_104	FSpearman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_106	FSpearman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_106	FRanger	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_108	FSpearman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_108	FRanger	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_109	FSpearman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_109	FKnuckleman	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_110	FSpearman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_110	FKnuckleman	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_111	FSpearman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_111	FKnuckleman	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_113	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_113	FRanger	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_117	FKnuckleman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_117	FRanger	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_118	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_119	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_120	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_121	FRanger	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_122	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_123	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_125	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_127	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_130	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_131	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_132	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_135	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_136	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_138	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_140	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_141	Tornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_144	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_147	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_148	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_150	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_151	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_152	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_153	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_156	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_158	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_161	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_162	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_163	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_164	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_166	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_167	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_169	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_170	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_170	SElfMag	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_173	SElfMag	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_173	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_174	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_175	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_177	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_179	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_180	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_181	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_181	SElfFig	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_182	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_184	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_185	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_186	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_186	SElfFig	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_187	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_189	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_190	SElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_190	SElfFig	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_191	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_191	SElfMag	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_192	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_194	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_196	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_198	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_198	SElfMag	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_199	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_200	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_202	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_203	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_205	SElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_206	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_207	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_208	GTornado	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_210	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_212	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_213	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_215	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_216	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_217	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_219	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_221	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_223	IceLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_224	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_224	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_226	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_226	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_227	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_227	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_229	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_229	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_230	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_230	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_232	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_232	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_233	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_233	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_235	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_235	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_236	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_236	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_238	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_238	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_239	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_239	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_240	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_240	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_242	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_242	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_243	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_243	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_245	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_245	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_246	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_246	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_249	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_249	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_250	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_250	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_251	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_251	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_253	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_253	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_255	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_255	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_256	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_256	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_257	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_257	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_259	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_259	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_260	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_260	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_261	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_261	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_263	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_263	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_264	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_264	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_265	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_265	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_267	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_267	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_268	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_268	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_269	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_269	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_270	FireLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_270	IceLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_271	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_272	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_274	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_276	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_277	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_278	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_280	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_281	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_282	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_284	FireLich	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_DNepilim01	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_DNepilim02	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_DNepilim03	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_DNepilim04	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_DNepilim05	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_hero01	FKnight	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_hero02	FKnight	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_hero03	DLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_hero04	DLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_hero05	DLich	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Adl_FlowerWoodHerb	FLOWER10	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb	HERB10	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb	MUSHROOM10	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb	WOOD10	1	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	FLOWER10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	HERB10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	MUSHROOM10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	WOOD10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	Q_Qura_Herb	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	Q_Qura_Herb	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	Q_Qura_Herb	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	Q_Qura_Herb	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	Q_Qura_Herb	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb1	Q_Qura_Herb	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb2	FLOWER10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb2	HERB10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb2	MUSHROOM10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb2	WOOD10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb3	FLOWER10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb3	HERB10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb3	MUSHROOM10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb3	WOOD10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb4	FLOWER10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb4	HERB10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb4	MUSHROOM10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb4	WOOD10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb5	FLOWER10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb5	HERB10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb5	MUSHROOM10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb5	WOOD10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb6	FLOWER10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb6	HERB10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb6	MUSHROOM10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Adl_FlowerWoodHerb6	WOOD10	2	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint01	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint02	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint03	DNepilim	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint04	HERB10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint05	HERB10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint06	HERB10	5	0	200	201	199	5	-1	8	0	10	1	13	2	0
+																	
+#end																	

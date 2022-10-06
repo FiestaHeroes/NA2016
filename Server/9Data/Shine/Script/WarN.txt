@@ -1,0 +1,31 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Airi_01	They just wouldn't stop coming...  The monsters have gone berserk because we have failed to seal the Devildom..	
+#Record	Airi_02	We will fall if the Henneath Alliance members don't come fast..	
+#Record	Notice_01	Help Iry who is fighting in the center of map to defeat monsters.	
+#Record	Success_01	Iry has survived!	
+#Record	Airi_03_A	You are right on time.  I would have been in serious trouble.  Thank you so much.	
+#Record	Failure_01	Iry has been injured..	
+#Record	Airi_03_B	"If you had come sooner, we would have saved more soldiers.."	
+#Record	Airi_04	There is no time to waste.  The monsters are still coming. 	
+#Record	Airi_05	I will stop the monsters from coming into our world.  Defeat the monsters inside.  Hurry!	
+#Record	Notice_02	Go into the doors that open and defeat the monsters. 	
+#Record	Airi_06	More monsters are coming.  Help!	
+#Record	Airi_07	I can feel a force more powerful than anything I've seen from behind that door.  Be careful!	
+#Record	Notice_03	Defeat the final boss monster. 	
+#Record	Airi_08	I can't believe there is such a powerful monster...  We are lucky we were able to stop it from coming into our world..	
+#Record	Airi_09	"If it wasn't for you, it would have been a great catastrophe. "	
+#Record	Airi_10	"This treasure!  Oh, my god.."	
+#Record	Airi_11	We will investigate this place more.	
+#Record	KQReturn30	You will be taken out after 30 seconds. 	
+#Record	KQReturn20	You will be taken out after 20 seconds. 	
+#Record	KQReturn10	You will be taken out after 10 seconds. 	
+#Record	KQReturn5	You will be taken out after 5 seconds. 	
+			
+#End			

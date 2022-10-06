@@ -1,0 +1,45 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	MissionObj	You should find the one in need in the limited time.	
+			
+#Record	FirstR0	"Huh, who are you?"	
+#Record	FirstR1	Did they send you to kill us?	
+#Record	FirstE2	"Calm down, this person seems to have to hostility."	
+#Record	FirstR3	"Are you sure? Then, you should get out of here. This is very dangerous place."	
+#Record	FirstE4	"As you could guess, we are on the run…and we are injured.."	
+#Record	FirstE5	Those chasers will arrive here soon.	
+#Record	FirstR6	They will back off when the reinforcements arrives in 5 minutes...	
+#Record	FirstR7	"Oh my, they are already here!"	
+			
+#Record	SecondR0	"Hey, we are injured. We cannot help you."	
+#Record	SecondE1	"Yes, you will be attacked if you are stay with us."	
+#Record	SecondE2	"Go and find somewhere safe before more enemies arrive!!!.OH, no, take cover!!"	
+			
+#Record	ThirdE0	"This is the opportunity when they are embarrassed,"	
+#Record	ThirdR1	What?	
+#Record	ThirdE2	"This is the golden opportunity for us to beat them, only if the reinforcements are with us."	
+			
+#Record	ForthE0	"Roumen, how's your wound? Are you alright?"	
+#Record	ForthR1	"Don't worry, Elderine, I can handle this for all day long by myself."	
+#Record	ForthE2	"Can you? That's good, there they are. Take it by yourself then."	
+			
+#Record	FifthR0	What's going on? Why are they withdrawing?	
+#Record	FifthE1	"Reinforcements, they attacked their military headquarter!"	
+#Record	FifthR2	"Good, we are alive!!"	
+#Record	FifthE3	"Thank you so much, you saved our lives."	
+#Record	FifthR4	You are the one this dark world needs.	
+#Record	FifthR5	Please visit us someday.	
+#Record	FifthR6	"Keep this necklace, and we will meet again."	
+			
+#Record	RouReturn30	Move to Roumen in 30 seconds.	
+#Record	RouReturn20	Move to Roumen in 20 seconds.	
+#Record	RouReturn10	Move to Roumen in 10 seconds.	
+#Record	RouReturn5	Move to Roumen in 5 seconds.	
+			
+#End			

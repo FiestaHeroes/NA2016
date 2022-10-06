@@ -1,0 +1,156 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		kid1	N	7454	6995	0	0	142									
+#record		kid1-1	N	6314	7753	0	0	100									
+#record		kid1-3	N	6455	5916	0	0	121									
+#record		kid1-4	N	6263	5516	0	0	93									
+#record		kid1-5	N	6321	8104	0	0	100									
+#record		kid1-6	N	5311	6378	0	0	86									
+#record		kid2	N	4619	5589	0	0	233									
+#record		kid2-1	N	4797	6375	0	0	240									
+#record		kid2-2	N	4901	7070	0	0	198									
+#record		kid2-3	N	4379	7207	0	0	65									
+#record		kid2-6	N	3804	6878	0	0	79									
+#record		kid3-2	N	3057	7625	0	0	128									
+#record		kid3-3	N	3321	8341	0	0	184									
+#record		kid3-6	N	2245	10702	0	0	521									
+#record		kid3-7	N	2756	10179	0	0	191									
+#record		kid3-8	N	1808	10166	0	0	170									
+#record		kid4	N	3579	5318	0	0	296									
+#record		kid4-4	N	3520	2500	0	0	500									
+#record		kid4-6	N	3387	1413	0	0	261									
+#record		kid4-7	N	2883	2299	0	0	170									
+#record		kid5	N	5753	3435	0	0	226									
+#record		kid5-1	N	5417	4468	0	0	233									
+#record		kid5-5	N	7268	4578	0	0	135									
+#record		kid5-6	N	7501	3691	0	0	233									
+#record		kid5-7	N	6570	3282	0	0	149									
+#record		kid5-11	N	10517	3953	0	0	296									
+#record		kid5-12	N	11233	3577	0	0	500									
+#record		kid5-13	N	10671	3089	0	0	240									
+#record		kid5-14	N	11278	2857	0	0	163									
+#record		kid6	N	9418	6154	0	0	240									
+#record		kid6-	N	7987	6486	0	0	240									
+#record		kid6-2	N	7810	7611	0	0	198									
+#record		kid6-3	N	8697	7858	0	0	107									
+#record		kid6-4	N	9286	7527	0	0	149									
+#record		kid6-5	N	9168	8002	0	0	177									
+#record		kid6-7	N	8931	9256	0	0	100									
+#record		kid6-10	N	10832	11211	0	0	500									
+#record		kid6-11	N	11497	10984	0	0	338									
+#record		kid6-13	N	10176	10736	0	0	170									
+#record		kid701	N	7223	8165	0	0	212									
+#record		kid7-1	N	7794	8986	0	0	149									
+#record		kid7-2	N	5769	10247	0	0	254									
+#record		kid7-3	N	5121	9978	0	0	163									
+#record		kid7-4	N	5416	7953	0	0	205									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		kid1	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid1-1	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid1-3	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid1-4	P_UndeadMiner2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid1-5	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid1-6	P_UndeadMiner2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-1	P_UndeadMiner2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-1	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-2	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-2	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-2	P_Fighter6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-3	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-6	P_UndeadMiner3	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid2-6	P_UndeadMiner4	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-2	P_KidMon	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-2	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-3	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-3	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-6	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-6	P_Mage6F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-6	P_Fighter6M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-7	P_KidMon	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-8	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-8	P_Mage6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid3-8	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4	P_UndeadMiner2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-4	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-4	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-4	P_UndeadMiner2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-4	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-4	P_UndeadMiner4	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-6	P_UndeadMiner3	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-6	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-7	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid4-7	P_Fighter6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-1	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-1	P_Fighter6M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-5	P_Mage6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-5	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-6	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-6	P_Fighter6F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-7	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-7	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-11	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-11	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-12	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-12	P_Fighter6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-12	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-12	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-13	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-13	P_Mage6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-13	P_UndeadMiner2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid5-14	P_UndeadMiner4	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6	P_UndeadMiner1	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-	P_UndeadMiner1	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-	P_UndeadMiner2	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-2	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-2	P_UndeadMiner2	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-2	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-3	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-3	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-4	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-4	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-4	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-5	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-5	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-7	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-10	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-10	P_Fighter6M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-11	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-11	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-11	P_Fighter6F	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-13	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid6-13	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid701	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-1	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-2	P_KidMon	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-2	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-2	P_Mage6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-3	P_UndeadMiner3	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-3	P_UndeadMiner4	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-4	P_Mage6M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-4	P_Mage6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		kid7-4	P_Fighter6F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+																	
+#end																	

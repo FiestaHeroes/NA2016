@@ -1,0 +1,254 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Normal_01	N	5254	6113	79	699	0									
+#record		Normal_02	N	7007	6060	80	698	0									
+#record		Normal_03	N	6137	5226	664	69	0									
+#record		Normal_04	N	6142	7047	722	80	0									
+#record		Normal_09	Y	5463	3863	0	0	181									
+#record		Normal_10	Y	6810	3849	0	0	177									
+#record		Normal_11	Y	5459	8465	0	0	177									
+#record		Normal_12	Y	6812	8447	0	0	184									
+#record		Normal_13	Y	3837	6814	0	0	177									
+#record		Normal_14	Y	3856	5511	0	0	184									
+#record		Normal_15	Y	8477	5454	0	0	177									
+#record		Normal_16	Y	8465	6771	0	0	198									
+#record		Normal_17	N	4855	3837	1190	139	0									
+#record		Normal_18	N	7385	3841	1165	127	0									
+#record		Normal_19	N	3848	5039	137	987	0									
+#record		Normal_20	N	3809	7174	151	969	0									
+#record		Normal_21	N	8432	5003	139	987	0									
+#record		Normal_22	N	8462	7221	146	1027	0									
+#record		Normal_23	N	4847	8445	1167	157	0									
+#record		Normal_24	N	7411	8464	1182	150	0									
+#record		Normal_09-1	Y	4783	3858	0	0	177									
+#record		Normal_10-1	Y	7512	3843	0	0	177									
+#record		Normal_15-1	Y	8462	4769	0	0	191									
+#record		Normal_16-1	Y	8447	7541	0	0	198									
+#record		Normal_12-1	Y	7506	8463	0	0	191									
+#record		Normal_11-1	Y	4706	8455	0	0	184									
+#record		Normal_13-1	Y	3845	7618	0	0	177									
+#record		Normal_14-1	Y	3865	4730	0	0	184									
+#record		Normal_25-1	Y	3343	2222	0	0	107									
+#record		Normal_25-3	Y	3333	1614	0	0	114									
+#record		Normal_25-4	N	3814	1863	143	467	0									
+#record		Normal_26	N	1855	3794	434	165	0									
+#record		Normal_26-2	Y	2134	3351	0	0	114									
+#record		Normal_26-3	Y	1616	3341	0	0	114									
+#record		Normal_27	N	1894	8511	404	200	0									
+#record		Normal_27-1	Y	2142	8922	0	0	114									
+#record		Normal_27-2	Y	1640	8927	0	0	114									
+#record		Normal_28	N	3764	10353	191	431	0									
+#record		Normal_28-3	Y	3358	10623	0	0	114									
+#record		Normal_28-4	Y	3372	10121	0	0	121									
+#record		Normal_29	N	8517	10336	170	413	0									
+#record		Normal_29-2	Y	8920	10629	0	0	114									
+#record		Normal_29-4	Y	8926	10134	0	0	114									
+#record		Normal_30	N	10394	8524	419	213	0									
+#record		Normal_30-1	Y	10140	8925	0	0	121									
+#record		Normal_30-2	Y	10640	8929	0	0	114									
+#record		Normal_31	N	10370	3755	423	215	0									
+#record		Normal_31-3	Y	10129	3347	0	0	100									
+#record		Normal_31-4	Y	10628	3333	0	0	100									
+#record		Normal_32	N	8459	1886	178	399	0									
+#record		Normal_32-1	Y	8931	2134	0	0	107									
+#record		Normal_32-3	Y	8931	1637	0	0	107									
+#record		Normal_33	N	5065	3128	51	220	13									
+#record		Normal_34	N	4612	2388	356	50	-25									
+#record		Normal_35	N	4822	2697	0	0	633									
+#record		Normal_38	N	3187	5071	51	220	77									
+#record		Normal_39	N	2502	4725	356	50	-49									
+#record		Normal_40	N	2802	4951	0	0	633									
+#record		Normal_41	N	3130	7185	51	220	103									
+#record		Normal_42	N	2459	7565	356	50	51									
+#record		Normal_43	N	2782	7294	0	0	633									
+#record		Normal_46	N	5027	9164	51	220	-10									
+#record		Normal_47	N	4652	9798	356	50	31									
+#record		Normal_48	N	4877	9509	0	0	633									
+#record		Normal_49	N	7147	9088	51	220	12									
+#record		Normal_50	N	7608	9798	356	50	-30									
+#record		Normal_51	N	7370	9557	0	0	633									
+#record		Normal_54	N	9154	7177	51	220	78									
+#record		Normal_55	N	9812	7630	356	50	-54									
+#record		Normal_56	N	9577	7396	0	0	633									
+#record		Normal_57	N	9142	5057	51	220	103									
+#record		Normal_58	N	9835	4581	356	50	-117									
+#record		Normal_59	N	9572	4861	0	0	633									
+#record		Normal_62	N	7201	3062	51	220	-19									
+#record		Normal_63	N	7621	2436	356	50	32									
+#record		Normal_64	N	7370	2652	0	0	633									
+#record		Chief_01	Y	6136	527	0	0	54									
+#record		Chief_01-1	Y	6134	1621	0	0	134									
+#record		Chief_01-2	Y	5578	1037	0	0	163									
+#record		Chief_01-3	Y	6694	1044	0	0	170									
+#record		Chief_01-5	Y	5567	365	0	0	226									
+#record		Chief_01-6	Y	6715	344	0	0	233									
+#record		Chief_01-7	N	6154	311	732	52	0									
+#record		Chief_02	Y	11736	6122	0	0	50									
+#record		Chief_02-1	N	10627	6095	51	724	0									
+#record		Chief_02-2	Y	11042	6515	0	0	149									
+#record		Chief_02-3	Y	11047	5744	0	0	149									
+#record		Chief_02-4	N	12058	6093	52	745	0									
+#record		Chief_02-5	Y	11700	6724	0	0	142									
+#record		Chief_02-6	Y	11724	5510	0	0	142									
+#record		Chief_03	Y	6126	11710	0	0	50									
+#record		Chief_03-1	N	6123	10626	725	54	0									
+#record		Chief_03-2	Y	6473	11077	0	0	135									
+#record		Chief_03-3	Y	5778	11083	0	0	142									
+#record		Chief_03-4	N	6123	12066	744	52	0									
+#record		Chief_03-5	Y	5531	11668	0	0	128									
+#record		Chief_03-6	Y	6715	11669	0	0	128									
+#record		Chief_04	Y	542	6138	0	0	50									
+#record		Chief_04-1	N	1646	6120	52	740	0									
+#record		Chief_04-3	Y	1244	6639	0	0	100									
+#record		Chief_04-4	Y	1260	5627	0	0	107									
+#record		Chief_04-5	N	207	6126	51	703	0									
+#record		Chief_04-6	N	888	6097	62	788	0									
+#record		Normal_65	N	6141	2710	103	735	0									
+#record		Normal_66	N	9570	6143	752	101	0									
+#record		Normal_67	N	6116	9557	97	742	0									
+#record		Normal_68	N	2669	6147	770	83	0									
+#record		Pbox01	N	6064	2289	5194	2058	0									
+#record		Pbox02	N	6073	6171	6082	1771	0									
+#record		Pbox03	N	6182	6788	4892	2147	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Normal_01	D_CloverTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_02	D_CloverTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_03	D_CloverTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_04	D_CloverTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_09	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_10	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_11	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_12	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_13	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_14	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_15	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_16	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_17	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_18	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_19	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_20	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_21	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_22	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_23	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_24	D_HeartTrumpy	3	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_09-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_10-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_15-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_16-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_12-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_11-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_13-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_14-1	D_BlueCloverTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_25-1	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_25-3	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_25-4	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_26	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_26-2	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_26-3	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_27	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_27-1	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_27-2	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_28	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_28-3	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_28-4	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_29	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_29-2	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_29-4	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_30	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_30-1	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_30-2	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_31	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_31-3	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_31-4	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_32	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_32-1	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_32-3	D_SpadeTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_33	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_34	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_35	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_38	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_39	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_40	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_41	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_42	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_43	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_46	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_47	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_48	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_49	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_50	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_51	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_54	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_55	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_56	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_57	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_58	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_59	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_62	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_63	D_SpadeGuardTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_64	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01	D_Harpy	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01	D_SpadeTrumpy	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-1	D_SpadeTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-2	D_SpadeTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-2	D_DiaTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-3	D_SpadeTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-3	D_DiaTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-5	D_SpadeTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-6	D_SpadeTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_01-7	D_DiaTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02	D_SpadeTrumpy	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02	D_Harpy	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02-1	D_SpadeGuardTrumpy	4	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02-2	D_SpadeTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02-3	D_SpadeTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02-4	D_DiaTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02-5	D_SpadeTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_02-6	D_SpadeTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03	D_Harpy	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03	D_SpadeTrumpy	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-1	D_HeartTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-2	D_SpadeTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-2	D_HeartTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-3	D_SpadeTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-3	D_HeartTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-4	D_HeartTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-5	D_SpadeTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_03-6	D_SpadeTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04	D_Harpy	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04	D_SpadeTrumpy	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04-1	D_BlueCloverTrumpy	4	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04-3	D_SpadeTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04-3	D_BlueCloverTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04-4	D_SpadeTrumpy	2	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04-4	D_BlueCloverTrumpy	1	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04-5	D_HeartTrumpy	3	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Chief_04-6	D_BlueCloverTrumpy	4	0	150	146	154	-4	5	-2	8	0	10	2	13	4
+#record		Normal_65	D_DiaTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_65	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_66	D_SpadeGuardTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_66	D_DiaTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_67	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_67	D_BlueCloverTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_68	D_HeartTrumpy	2	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Normal_68	D_BlueCloverTrumpy	4	0	120	116	124	-4	5	-2	8	0	10	2	13	4
+#record		Pbox01	PresentBox15	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		Pbox02	PresentBox15	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+#record		Pbox03	PresentBox15	1	0	7200	7196	7204	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

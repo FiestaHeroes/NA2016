@@ -1,0 +1,142 @@
+;	MobMiscData																			
+;																				
+																				
+;#Ignore	\o042	; 인용부호 무시																		
+;#Exchange	#	\x20	;	# => space																
+#Delimiter	\x20	;	나중에 space를 delimiter로 넣고 delimiter 제거기능 넣을것!!!!																	
+																				
+																				
+#Table	SkillBreedMob																			
+#ColumnType	Byte	String[33]	String[33]	BYTE	Index	Index	WORD	Index	DWRD	String[33]	Index	DWRD	WORD	WORD	String[33]	Index	Index	Index	Byte	
+#ColumnName	Serial	Skill	MobIndex	SummonNum	AI	RegenLoc	RegenDistance	MobRoam	LifeTime	AbState	TriggerObject	TriggerRange	Delay	ExplNo	Explosion	ExplosionWhere	Debuff	MultiTarget	CheckSum	
+#Record	0	Entrap01	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	EntrapFlowerWide01	MyObj	-	-	0	; 덫
+#Record	1	Entrap02	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	BlindFlowerWide01	MyObj	-	-	1	; 덫
+#Record	2	Entrap03	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	SlowFlowerWide01	MyObj	-	-	2	; 덫
+#Record	3	Entrap04	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	BloodFlowerWide01	MyObj	-	-	3	; 덫
+#Record	4	Entrap05	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	ShockFlowerWide01	MyObj	-	-	4	; 덫
+#Record	5	SlowShot01	SlowShot_arrow	1	Chase	Caster	0	-	60000	-	Target	30	0	1	SlowShot_arrow01	TargetObj	-	-	5	;유도화살
+#Record	6	Summon01	Skeleton_sum	3	Rampage	Target	0	-	60000	-	-	0	0	0	-	-	Dead	-	6	;소환물
+#Record	7	FirePole01	FirePole_sum	1	Roam	Target	0	-	150000	-	Always	0	7000	30000	ThunderBolt05	MyObj	Dead	-	7	
+;#Record	8	PsySumSkill01	PsykenDog	1	Rampage	Caster	0	-	0	-	-	0	10000	10000	-	-	-	-	8	
+#Record	9	IDNerpaSlowShot01	SlowShot_arrow	1	Chase	Caster	0	-	60000	-	Target	30	0	1	KQRoboAtkSk3	TargetObj	-	-	9	;유도화살
+#Record	10	IDFireSellPole01	FirePole_sum	1	Roam	Target	0	-	60000	-	Always	0	10000	10000	ThunderBolt05	MyObj	Dead	-	10	
+;#Record	11	KamaSummonSkill1	KQ_SK_Sudder	2	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	11	
+;#Record	12	KamaSummonSkill2	KQ_SK_Sudder2	3	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	12	
+;#Record	13	KamaSummonSkill3	KQ_SK_Elec	2	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	13	
+;#Record	14	KamaSummonSkill4	KQ_SK_Elec2	3	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	14	
+;#Record	15	KalBanSummonSkill1	KQ_SK_Elec2	5	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	15	
+;#Record	16	KamaSummonSkill100	KQ_SK_SkelArcher2	3	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	16	
+;#Record	17	KamaSummonSkill300	KQ_SK_SkelArcher3	3	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	17	
+;#Record	18	FireBombBoogy	BombBoogy	1	Chase	Caster	0	-	60000	-	Target	30	0	1	BBoogyBomb	TargetObj	-	-	18	;유도화살
+#Record	19	CallBoogyGuardian	BoogyGuardian	1	Rampage	Caster	0	-	150000	-	-	0	0	0	-	-	-	-	19	;소환물
+;	20	CallNestGuardian	ID_NestGuardian	2	Rampage	Caster	0	-	150000	-	-	0	0	0	-	-	-	-	20	;소환물
+;	21	CallNestGuard	ID_NestGuard	15	Rampage	Caster	0	-	150000	-	-	0	0	0	-	-	-	-	21	;소환물
+#Record	22	KBoogyEntangle	BombBoogy01	1	Roam	Target	0	-	15100	-	Always	0	15000	1	BombBoogy01Bomb	MyObj	Dead	-	22	;소환물
+#Record	23	KBoogyToggle01	BombBoogy02	1	Roam	Target	0	-	15100	-	Always	0	15000	1	BombBoogy02Bomb	MyObj	Dead	-	23	;소환물
+#Record	24	KBoogySumon04	BombBoogy04	2	Chase	Caster	0	-	60000	-	Enemy	30	0	1	CallBoogyGuardian	MyObj	-	-	24	;소환물
+#Record	25	ECrabSummon	ID_NestCrab	1	Rampage	Caster	0	-	180000	-	-	0	0	0	-	-	-	-	25	;소환물
+#Record	26	T_Kamaris00_Sum0	T_FirePole_sum	1	Chase	Caster	0	-	60000	-	Target	30	0	1	ThunderBolt05	TargetObj	-	-	26	;유도화살
+#Record	27	FirePameliaSum	DevilHoneying	5	Rampage	Target	0	-	1500000	-	-	0	0	0	-	-	Dead	-	27	;소환물
+#Record	28	KillerHideSum	KillerHideShadow	3	Rampage	Caster	0	-	1500000	-	-	0	0	0	-	-	Dead	-	28	;소환물
+;#Record	29	KebingXSummon	BombKebingX	2	Roam	Target	0	-	15100	-	Always	0	15000	1	KebingXBomb	MyObj	Dead	-	29	;소환물
+#Record	30	PsySumSkill01	Psy_PsykenDog	1	Rampage	Caster	0	-	0	-	-	0	10000	10000	-	-	-	-	30	
+#Record	31	MultiProtect01	MultiProtect	1	Root	Caster	0	-	0	-	-	0	0	0	-	-	-	-	31	
+#Record	32	Salare_Skill03_N	DBead	1	Chase	Caster	0	-	150000	-	Target	30	0	1	DBead_Skill01_W	TargetObj	Dead	Multi	32	;소환몹
+#Record	33	DT_FFocalor_Skill02_N	DT_S_FDHoneying	1	Chase	Caster	0	-	150000	-	Target	20	0	1	DT_S_FDHoneying_Skill01_N	MyObj	Dead	Multi	33	;소환몹
+#Record	34	DT_IFocalor_Skill02_N	DT_S_IDHoneying	1	Chase	Caster	0	-	150000	-	Target	20	0	1	DT_S_IDHoneying_Skill01_N	MyObj	Dead	Multi	34	;소환몹
+#Record	35	DT_SFocalor_Skill02_N	DT_S_SDHoneying	1	Chase	Caster	0	-	150000	-	Target	20	0	1	DT_S_SDHoneying_Skill01_N	MyObj	Dead	Multi	35	;소환몹
+#Record	36	DT_TFocalor_Skill02_N	DT_S_TDHoneying	1	Chase	Caster	0	-	150000	-	Target	20	0	1	DT_S_TDHoneying_Skill01_N	MyObj	Dead	Multi	36	;소환몹
+;	37	BallSnow01	BallSnow	1	Roam	Caster	0	Straight	1200	-	TargetAll	20	0	1	BallSnow_Skill01_N	MyLoc	Dead	-	37	
+;	38	BallCrush01	BallCrush	1	Roam	Caster	0	Straight	1200	-	TargetAll	20	0	1	BallCrush_Skill01_W	MyLoc	Dead	-	38	
+#Record	39	WarBL_ICitrie_Skill02_N	WarBL_IMurumuru	2	Roam	Caster	0	-	30000	-	Enemy	20	0	1	WarBL_IMurumuru_Skill01_N	MyObj	Dead	-	39	;소환몹
+#Record	40	WarBL_SCitrie_Skill02_N	WarBL_SMurumuru	2	Roam	Caster	0	-	30000	-	Enemy	20	0	1	WarBL_SMurumuru_Skill01_N	MyObj	Dead	-	40	;소환몹
+#Record	41	WarBL_SCitrie_Skill03_W	WarBL_Tornado	4	Roam	Caster	50	Random	30000	-	Enemy	50	0	1	WarBL_Tornado_Skill01_W	MyObj	Dead	-	41	;소환몹
+#Record	42	CacaoSeed01	E_CacaoBud	1	Root	Caster	10	-	0	-	-	0	0	0	-	-	Dead	-	42	;소환몹
+#Record	43	BallHive02	E_BallHive	1	Roam	Caster	0	Straight	1200	-	TargetAll	20	0	1	BallHive_Skill02_W	MyLoc	Dead	-	43	
+#Record	44	BallEgg01	BallEgg	1	Roam	Caster	0	Straight	1200	-	Enemy	20	0	1	BallEgg_Skill01_N	MyLoc	Dead	-	44	
+#Record	45	WarL_FCitrie_Skill02_N	WarL_S_FMurumuru	2	Roam	Caster	0	-	30000	-	Enemy	20	0	1	WarL_S_FMurumuru_Skill01_N	MyObj	Dead	-	45	;소환몹
+#Record	46	WarL_TCitrie_Skill02_N	WarL_S_TMurumuru	2	Roam	Caster	0	-	30000	-	Enemy	20	0	1	WarL_S_TMurumuru_Skill01_N	MyObj	Dead	-	46	;소환몹
+#Record	47	WarL_TCitrie_Skill03_W	WarL_TCircle	1	Roam	Caster	50	Straight	30000	-	Enemy	50	300	10000	WarL_TCircle_Skill01_W	MyObj	Dead	-	47	;소환몹
+#Record	48	LightField01	LightField01	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	48	
+#Record	49	LightField02	LightField02	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	49	
+#Record	50	LightField03	LightField03	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	50	
+#Record	51	LightField04	LightField04	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	51	
+#Record	52	LightField05	LightField05	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	52	
+#Record	53	LightOrb01	LightOrb01	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	53	
+#Record	54	LightOrb02	LightOrb02	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	54	
+#Record	55	LightOrb03	LightOrb03	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	55	
+#Record	56	LightOrb04	LightOrb04	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	56	
+#Record	57	LightOrb05	LightOrb05	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	57	
+#Record	58	BallHoney01	BallHoney	1	Roam	Caster	0	Straight	1200	-	TargetAll	20	0	1	BallHoney_Skill01_N	MyLoc	Dead	-	58	
+#Record	59	BallHive01	BallHive	1	Roam	Caster	0	Straight	1200	-	TargetAll	20	0	1	BallHive_Skill01_W	MyLoc	Dead	-	59	
+#Record	60	WarH_FCitrie_Skill02_N	WarH_S_FMurumuru	2	Roam	Caster	0	-	30000	-	Enemy	20	0	1	WarH_S_FMurumuru_Skill01_N	MyObj	Dead	-	60	
+#Record	61	WarH_ICitrie_Skill02_N	WarH_S_IMurumuru	2	Roam	Caster	0	-	30000	-	Enemy	20	0	1	WarH_S_IMurumuru_Skill01_N	MyObj	Dead	-	61	
+#Record	62	WarH_SCitrie_Skill02_N	WarH_S_SMurumuru	2	Roam	Caster	0	-	30000	-	Enemy	20	0	1	WarH_S_SMurumuru_Skill01_N	MyObj	Dead	-	62	
+#Record	63	WarH_SCitrie_Skill03_W	WarH_Tornado	4	Roam	Caster	50	Random	30000	-	Enemy	50	0	1	WarH_Tornado_Skill01_W	MyObj	Dead	-	63	
+#Record	64	WarH_FFocalor_Skill02_N	WarH_S_FDHoneying	1	Chase	Caster	0	-	150000	-	Target	20	0	1	WarH_S_FDHoneying_Skill01_N	MyObj	Dead	Multi	64	
+#Record	65	WarH_IFocalor_Skill02_N	WarH_S_IDHoneying	1	Chase	Caster	0	-	150000	-	Target	20	0	1	WarH_S_IDHoneying_Skill01_N	MyObj	Dead	Multi	65	
+#Record	66	WarH_SFocalor_Skill02_N	WarH_S_SDHoneying	1	Chase	Caster	0	-	150000	-	Target	20	0	1	WarH_S_SDHoneying_Skill01_N	MyObj	Dead	Multi	66	
+#Record	67	BallSnow02	BallSnow02	1	Roam	Caster	0	Straight	1200	-	TargetAll	20	0	1	BallSnow_Skill02_N	MyLoc	Dead	-	67	
+#Record	68	BallCrush02	BallCrush02	1	Roam	Caster	0	Straight	1200	-	TargetAll	20	0	1	BallCrush_Skill02_W	MyLoc	Dead	-	68	
+#Record	69	Entrap06	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	ShockFlowerWide02	MyObj	-	-	69	
+#Record	70	Entrap07	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	ShockFlowerWide03	MyObj	-	-	70	
+#Record	71	Entrap08	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	ShockFlowerWide04	MyObj	-	-	71	
+#Record	72	Entrap09	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	ShockFlowerWide05	MyObj	-	-	72	
+#Record	73	Entrap10	EntrapFlower	1	Root	Caster	0	-	150000	StaEntrapHide	Enemy	100	0	1	ShockFlowerWide06	MyObj	-	-	73	
+#Record	74	SlowShot02	SlowShot_arrow	1	Chase	Caster	0	-	60000	-	Target	30	0	1	SlowShot_arrow02	TargetObj	-	-	74	
+#Record	75	MultiProtect02	MultiProtect02	1	Root	Caster	0	-	0	-	-	0	0	0	-	-	-	-	75	
+#Record	76	MultiProtect03	MultiProtect03	1	Root	Caster	0	-	0	-	-	0	0	0	-	-	-	-	76	
+#Record	77	LightField06	LightField06	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	77	
+#Record	78	LightField07	LightField07	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	78	
+#Record	79	LightField08	LightField08	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	79	
+#Record	80	LightField09	LightField09	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	80	
+#Record	81	LightField10	LightField10	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	81	
+#Record	82	LightOrb06	LightOrb06	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	82	
+#Record	83	LightOrb07	LightOrb07	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	83	
+#Record	84	LightOrb08	LightOrb08	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	84	
+#Record	85	LightOrb09	LightOrb09	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	85	
+#Record	86	LightOrb10	LightOrb10	1	Root	Target	0	-	0	-	-	0	0	0	-	-	-	-	86	
+#Record	87	Summon02	Skeleton_sum2	3	Rampage	Target	0	-	60000	-	-	0	0	0	-	-	Dead	-	87	;소환물
+#Record	88	FirePole02	FirePole_sum	1	Roam	Target	0	-	150000	-	Always	0	7000	30000	ThunderBolt06	MyObj	Dead	-	88	
+#Record	89	BallWater	BallWater	1	Roam	Caster	0	Straight	700	-	-	0	0	0	-	-	-	-	89	
+#Record	90	BallCannon	BallCannon	1	Root	Target	0	-	1200	-	-	0	0	0	-	-	-	-	90	
+#Record	91	BallCake01	BallCake01	1	Roam	Caster	0	Straight	700	-	-	0	0	0	-	-	-	-	91	
+#Record	92	BallCannon02	BallCannon02	1	Root	Target	0	-	1200	-	-	0	0	0	-	-	-	-	92	
+;		SW_FFocalor_C_Skill02_N	DT_S_FDHoneying_C	1	Chase	Caster	0	-	150000	-	Target	20	0	1	SW_S_FDHoneying_Skill01_N	MyObj	Dead	Multi		;소환몹
+;		SW_IFocalor_C_Skill02_N	DT_S_IDHoneying_C	1	Chase	Caster	0	-	150000	-	Target	20	0	1	SW_S_IDHoneying_Skill01_N	MyObj	Dead	Multi		;소환몹
+;		SW_SFocalor_C_Skill02_N	DT_S_SDHoneying_C	1	Chase	Caster	0	-	150000	-	Target	20	0	1	SW_S_SDHoneying_Skill01_N	MyObj	Dead	Multi		;소환몹
+;		SW_TFocalor_C_Skill02_N	DT_S_TDHoneying_C	1	Chase	Caster	0	-	150000	-	Target	20	0	1	SW_S_TDHoneying_Skill01_N	MyObj	Dead	Multi		;소환몹
+																				
+#Table	Polymorph																			
+#ColumnType	Byte	String[33]	String[33]	BYTE	BYTE	Byte														
+#ColumnName	Serial	Skill	MobIndex	CanMove	CanAttack	CheckSum														
+#Record	0	Metamorphosis01	Metamorphosis_bird	1	0	0														
+																				
+																				
+#Table	Neutralization																			
+#ColumnType	Byte	String[33]	Word	Word	Word	Word	Byte													
+#ColumnName	Serial	Skill	Weapon	Shield	Body	Leg	CheckSum													
+#Record	0	Neutralization01	1000	0	0	0	0													
+#Record	1	IDCorneliusNeut01	1000	0	0	0	1													
+#Record	2	IDGMagmaNeut01	0	1000	0	0	2													
+#Record	3	IDFireTaiNeut01	0	1000	0	0	3													
+																				
+#Table	AbStateReset																			
+#ColumnType	Byte	String[33]	Byte	Byte	Byte	Byte	Index	Index	Byte											
+#ColumnName	Serial	AbState	Run	Walk	Attack	Attacked	EquipWhere	EquipClass	CheckSum											
+#Record	0	StaBuckler	0	0	0	0	LeftHand	Shield	0											
+#Record	1	StaNeglect	1	1	1	0	-	-	1											
+#Record	2	StaHide	0	0	1	1	-	-	2											
+#Record	3	StaMesmerize	0	0	0	1	-	-	3											
+#Record	4	StaEntrapHide	0	0	1	1	-	-	4											
+#Record	5	StaGTIConfusion	0	0	0	1	-	-	5											
+#Record	6	StaGTIHide	0	0	1	1	-	-	6											
+																				
+#Table	ExpandSkill																			
+#ColumnType	Byte	String[33]	String[33]	Word	String[33]	Word	Byte													
+#ColumnName	Serial	Skill	Condition	Dmg	AbState	Critical	CheckSum													
+#Record	0	PowerBenTear	Stun	1500	-	0	0													
+#Record	1	PowerWeaponBlast	Slow	1000	StaIceField	0	1													
+#Record	2	FinalSwordForce	ACMRMinus	1000	-	1000	2													
+#Record	3	WeaponBlast	Stun	1500	-	0	3													
+#End																				

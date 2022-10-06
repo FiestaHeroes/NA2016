@@ -1,0 +1,100 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KDGreenHillArea03	N	6296	4793	0	0	253									
+#record		KDGreenHillArea04	N	5368	6512	126	409	0									
+#record		KDGreenHillArea05	N	4211	8779	325	124	28									
+#record		KDGreenHillArea06	N	4180	8339	0	0	255									
+#record		KDGreenHillArea07	N	3303	9567	195	390	127									
+#record		KDGreenHillArea08	N	3730	9166	0	0	289									
+#record		KDGreenHillArea09	N	8310	9074	180	950	-77									
+#record		KDGreenHillArea10	N	8973	8930	0	0	277									
+#record		KDGreenHillArea11	N	10491	5527	0	0	394									
+#record		KDGreenHillArea12	N	6303	9171	1022	211	-3									
+#record		KDGreenHillArea13	N	9933	8064	208	1036	-33									
+#record		KDGreenHillArea14	N	10114	7217	226	670	-1									
+#record		KDGreenHillArea15	N	7982	9093	0	0	381									
+#record		KDGreenHillArea16	N	9586	8304	0	0	274									
+#record		KDGreenHillArea17	N	8808	6100	0	0	210									
+#record		KDGreenHillArea18	N	8293	4312	837	152	-44									
+#record		KDGreenHillArea19	N	8638	7451	155	641	-27									
+#record		KDGreenHillArea20	N	4639	6141	136	1031	1									
+#record		KDGreenHillArea21	N	4858	4746	691	147	60									
+#record		KDGreenHillArea22	N	6671	4617	0	0	190									
+#record		KDGreenHillArea23	N	7185	7330	468	120	13									
+#record		KDGreenHillArea24	N	4701	8686	400	160	-37									
+#record		KDGreenHillArea25	N	5457	5447	97	417	-16									
+#record		KDGreenHillArea26	N	7995	5955	99	637	4									
+#record		KDGreenHillArea27	N	6267	7372	332	107	-9									
+#record		KDGreenHillArea28	N	7510	3918	506	222	0									
+#record		KDGreenHillArea29	N	7973	6734	401	105	82									
+#record		KDGreenHillArea30	N	7102	4831	0	0	303									
+#record		KDGreenHillArea44	N	5578	6989	355	143	-41									
+#record		KDGreenHillArea45	N	5890	4918	0	0	239									
+#record		KDGreenHillArea46	N	7615	5021	0	0	303									
+#record		KDGreenHillArea47	N	7799	7011	306	118	38									
+#record		KDGreenHillArea48	N	5810	3883	518	186	10									
+#record		KDGreenHillArea49	N	7911	8027	559	156	13									
+#record		KDGreenHillArea50	N	5022	7601	139	570	41									
+#record		KDGreenHillArea51	N	6744	8178	875	151	0									
+#record		KDGreenHillArea52	N	7662	8086	582	114	4									
+#record		KDGreenHillArea53	N	5687	8115	482	145	-8									
+#record		KDGreenHillArea56	N	8863	6754	0	0	211									
+#record		KDGreenHillArea57	N	8935	5171	0	0	302									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KDGreenHillArea03	Emp_Ratman	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea04	Emp_Ratman	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea05	Emp_Imp	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea06	Emp_MushRoom	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea07	Emp_Slime	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea08	Emp_FireSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea09	Emp_Honeying	8	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea10	Emp_FireSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea11	Emp_Ratman	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea12	Emp_FireSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea13	Emp_Imp	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea14	Emp_IronSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea15	Emp_IronSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea16	Emp_Honeying	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea17	Emp_Honeying	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea18	Emp_FireSlime	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea19	Emp_FireSlime	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea20	Emp_IronSlime	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea21	Emp_IronSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea22	Emp_SilverSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea23	Emp_GoldSlime	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea24	Emp_IronSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea25	Emp_GoldSlime	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea26	Emp_SilverSlime	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea27	Emp_SilverSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea28	Emp_Honeying	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea29	Emp_Boar	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea30	Emp_Boar	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea44	Emp_PrinceSlime	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea45	Emp_PrinceSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea46	Emp_PrinceSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea47	Emp_PrinceSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea48	Emp_Honeying	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea49	Emp_Honeying	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea50	Emp_Honeying	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea51	Emp_FireSlime	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea52	Emp_IronSlime	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea53	Emp_Honeying	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea56	Emp_SilverSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGreenHillArea57	Emp_GoldSlime	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

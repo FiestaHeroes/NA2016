@@ -1,0 +1,522 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Fire01	N	3794	21844	0	0	380									
+#record		Fire02	N	4707	22282	0	0	380									
+#record		Fire03	N	9483	21811	0	0	380									
+#record		Fire04	N	6453	18769	0	0	380									
+#record		Fire05	N	6746	19800	0	0	380									
+#record		Fire06	N	7244	21413	0	0	380									
+#record		Fire07	N	5821	23358	0	0	380									
+#record		Fire08	N	6311	20747	0	0	380									
+#record		Fire09	N	7711	23043	0	0	380									
+#record		Fire10	N	8868	23854	0	0	380									
+#record		Fire11	N	8779	22906	0	0	380									
+#record		Fire12	N	9769	23162	0	0	380									
+#record		Fire13	N	6586	22253	0	0	380									
+#record		Fire14	N	10611	23244	0	0	380									
+#record		Fire15	N	11023	20904	0	0	380									
+#record		Fire16	N	11012	21831	0	0	380									
+#record		Fire17	N	11980	20724	0	0	380									
+#record		Fire18	N	16743	20779	0	0	380									
+#record		Fire19	N	11921	22002	0	0	380									
+#record		Fire20	N	17587	21066	0	0	380									
+#record		Fire21	N	14422	19290	0	0	380									
+#record		Fire22	N	13856	22146	0	0	380									
+#record		Fire23	N	15180	21096	0	0	380									
+#record		Fire24	N	14815	21986	0	0	380									
+#record		Fire25	N	14277	21320	0	0	380									
+#record		Fire26	N	14521	20342	0	0	380									
+#record		Fire27	N	15329	19815	0	0	380									
+#record		Fire28	N	15863	21550	0	0	380									
+#record		Fire29	N	16796	19605	0	0	380									
+#record		Fire30	N	12832	21205	0	0	380									
+#record		Fire31	N	13257	20311	0	0	380									
+#record		Fire32	N	14032	18242	0	0	380									
+#record		Fire33	N	16722	22039	0	0	380									
+#record		Fire34	N	13250	19051	0	0	380									
+#record		Fire35	N	18496	21058	0	0	380									
+#record		Fire36	N	17667	20117	0	0	380									
+#record		Fire37	N	16063	18774	0	0	380									
+#record		Fire38	N	15396	18220	0	0	380									
+#record		Fire39	N	16173	17922	0	0	380									
+#record		Fire40	N	16978	18607	0	0	380									
+#record		Fire41	N	13863	14406	0	0	380									
+#record		Fire42	N	14983	16121	0	0	380									
+#record		Fire43	N	14587	17059	0	0	380									
+#record		Fire44	N	13517	17233	0	0	380									
+#record		Fire45	N	14565	15105	0	0	380									
+#record		Fire46	N	17999	17277	0	0	380									
+#record		Fire47	N	13975	16213	0	0	380									
+#record		Fire48	N	17023	17628	0	0	380									
+#record		Fire49	N	16648	16698	0	0	380									
+#record		Fire50	N	12688	13990	0	0	380									
+#record		Fire51	N	13527	13474	0	0	380									
+#record		Fire52	N	9639	17722	0	0	380									
+#record		Fire53	N	13023	14987	0	0	380									
+#record		Fire54	N	13021	16107	0	0	380									
+#record		Fire55	N	18841	12704	0	0	380									
+#record		Fire56	N	18255	13871	0	0	380									
+#record		Fire57	N	16736	15097	0	0	380									
+#record		Fire58	N	10624	17182	0	0	380									
+#record		Fire59	N	8989	18621	0	0	380									
+#record		Fire60	N	10116	16321	0	0	380									
+#record		Fire61	N	15016	9291	0	0	380									
+#record		Fire62	N	13726	6870	0	0	380									
+#record		Fire63	N	14781	6745	0	0	380									
+#record		Fire64	N	14344	5945	0	0	380									
+#record		Fire65	N	15208	5361	0	0	380									
+#record		Fire66	N	15562	6269	0	0	380									
+#record		Fire67	N	16301	5423	0	0	380									
+#record		Fire68	N	17335	5762	0	0	380									
+#record		Fire69	N	18016	5161	0	0	380									
+#record		Fire70	N	17204	4741	0	0	380									
+#record		Fire71	N	18757	5651	0	0	380									
+#record		Fire72	N	19607	5722	0	0	380									
+#record		Fire73	N	14805	13925	0	0	380									
+#record		Fire74	N	15010	10506	0	0	380									
+#record		Fire75	N	14442	12826	0	0	380									
+#record		Fire76	N	15333	12801	0	0	380									
+#record		Fire77	N	15449	11957	0	0	380									
+#record		Fire78	N	15869	11208	0	0	380									
+#record		Fire79	N	16183	4206	0	0	380									
+#record		Fire80	N	17532	3887	0	0	380									
+#record		Fire81	N	8169	16843	0	0	380									
+#record		Fire82	N	9190	14816	0	0	380									
+#record		Fire83	N	8596	17658	0	0	380									
+#record		Fire84	N	8215	15764	0	0	380									
+#record		Fire85	N	17501	2921	0	0	380									
+#record		Fire86	N	17121	2034	0	0	90									
+#record		Fire87	N	9242	16860	0	0	380									
+#record		Fire88	N	16781	3521	0	0	380									
+#record		Fire89	N	11098	14361	0	0	380									
+#record		Fire90	N	9358	15741	0	0	380									
+#record		Fire91	N	15764	2075	0	0	380									
+#record		Fire92	N	16028	3071	0	0	380									
+#record		Fire93	N	14277	4513	0	0	380									
+#record		Fire94	N	10614	13525	0	0	380									
+#record		Fire95	N	13182	4919	0	0	380									
+#record		Fire96	N	11856	10072	0	0	380									
+#record		Fire97	N	12774	3854	0	0	380									
+#record		Fire98	N	12072	11758	0	0	380									
+#record		Fire99	N	10956	12035	0	0	380									
+#record		Fire100	N	12448	8445	0	0	380									
+#record		Fire101	N	11653	4177	0	0	380									
+#record		Fire102	N	12915	5985	0	0	380									
+#record		Fire103	N	12087	5242	0	0	380									
+#record		Fire104	N	14541	2586	0	0	380									
+#record		Fire105	N	13854	3473	0	0	380									
+#record		Fire106	N	15042	3731	0	0	380									
+#record		Fire107	N	20738	1261	0	0	380									
+#record		Fire108	N	23690	4149	0	0	380									
+#record		Fire109	N	19243	1937	0	0	380									
+#record		Fire110	N	19974	2385	0	0	380									
+#record		Fire111	N	20751	3064	0	0	380									
+#record		Fire112	N	18303	4346	0	0	380									
+#record		Fire113	N	19037	3844	0	0	380									
+#record		Fire114	N	21602	1679	0	0	380									
+#record		Fire115	N	21538	3607	0	0	380									
+#record		Fire116	N	19173	4775	0	0	380									
+#record		Fire117	N	19890	3431	0	0	380									
+#record		Fire118	N	19968	4312	0	0	380									
+#record		Fire119	N	19205	2849	0	0	380									
+#record		Fire120	N	18409	2409	0	0	380									
+#record		Fire121	N	18317	3322	0	0	380									
+#record		Fire122	N	19883	1314	0	0	380									
+#record		Fire123	N	20764	7221	0	0	380									
+#record		Fire124	N	21876	6879	0	0	380									
+#record		Fire125	N	20778	6072	0	0	380									
+#record		Fire126	N	21988	8224	0	0	380									
+#record		Fire127	N	22861	7500	0	0	380									
+#record		Fire128	N	20032	6498	0	0	380									
+#record		Fire129	N	22332	5357	0	0	380									
+#record		Fire130	N	20301	5183	0	0	380									
+#record		Fire131	N	21129	5022	0	0	380									
+#record		Fire132	N	21675	5968	0	0	380									
+#record		Fire133	N	21882	4590	0	0	380									
+#record		Fire134	N	20832	4072	0	0	380									
+#record		Fire135	N	23031	4847	0	0	380									
+#record		Fire136	N	15950	7891	0	0	380									
+#record		Fire137	N	18670	6958	0	0	380									
+#record		Fire138	N	16771	7518	0	0	380									
+#record		Fire139	N	16460	8734	0	0	380									
+#record		Fire140	N	17791	7277	0	0	380									
+#record		Fire141	N	17341	8366	0	0	380									
+#record		Fire142	N	18533	9701	0	0	380									
+#record		Fire143	N	16721	13450	0	0	380									
+#record		Fire144	N	18569	10641	0	0	380									
+#record		Fire145	N	17087	11807	0	0	380									
+#record		Fire146	N	17071	10697	0	0	380									
+#record		Fire147	N	16646	12578	0	0	380									
+#record		Fire148	N	17838	11235	0	0	380									
+#record		Fire149	N	17745	10126	0	0	380									
+#record		Fire150	N	21790	10021	0	0	380									
+#record		Fire151	N	16746	9848	0	0	380									
+#record		Fire152	N	17467	9299	0	0	380									
+#record		Fire153	N	23735	9834	0	0	380									
+#record		Fire154	N	22865	10399	0	0	380									
+#record		Fire155	N	21697	12986	0	0	380									
+#record		Fire156	N	21027	10647	0	0	380									
+#record		Fire157	N	19929	14048	0	0	380									
+#record		Fire158	N	20733	13554	0	0	380									
+#record		Fire159	N	21432	12037	0	0	380									
+#record		Fire160	N	20629	11651	0	0	380									
+#record		Fire161	N	21955	11116	0	0	380									
+#record		Fire162	N	20549	12620	0	0	380									
+#record		Fire163	N	21449	14458	0	0	380									
+#record		Fire164	N	19913	10796	0	0	380									
+#record		Fire165	N	4763	11171	0	0	380									
+#record		Fire166	N	3003	11105	0	0	380									
+#record		Fire167	N	4049	11714	0	0	380									
+#record		Fire168	N	2219	11456	0	0	380									
+#record		Fire169	N	3844	10893	0	0	380									
+#record		Fire170	N	3317	12011	0	0	90									
+#record		Fire171	N	4497	13663	0	0	380									
+#record		Fire172	N	3724	13051	0	0	380									
+#record		Fire173	N	5784	11062	0	0	380									
+#record		Fire174	N	5347	14312	0	0	380									
+#record		Fire175	N	7090	10292	0	0	380									
+#record		Fire176	N	5615	13307	0	0	380									
+#record		Fire177	N	2549	12293	0	0	380									
+#record		Fire178	N	6648	11129	0	0	380									
+#record		Fire179	N	6067	11935	0	0	380									
+#record		Fire180	N	5078	12189	0	0	380									
+#record		Fire181	N	8171	12181	0	0	380									
+#record		Fire182	N	7327	11723	0	0	380									
+#record		Fire183	N	7809	10929	0	0	380									
+#record		Fire184	N	3935	14805	0	0	380									
+#record		Fire185	N	3756	18532	0	0	380									
+#record		Fire186	N	1699	12472	0	0	380									
+#record		Fire187	N	2940	19302	0	0	380									
+#record		Fire188	N	2968	16458	0	0	380									
+#record		Fire189	N	2400	13185	0	0	380									
+#record		Fire190	N	3985	16699	0	0	380									
+#record		Fire191	N	3172	17360	0	0	380									
+#record		Fire192	N	4073	17573	0	0	380									
+#record		Fire193	N	2736	18288	0	0	380									
+#record		Fire194	N	3246	14011	0	0	380									
+#record		Fire195	N	8038	14428	0	0	380									
+#record		Fire196	N	7286	16415	0	0	380									
+#record		Fire197	N	7090	15273	0	0	380									
+#record		Fire198	N	4941	16059	0	0	380									
+#record		Fire199	N	20765	16148	0	0	380									
+#record		Fire200	N	23515	14263	0	0	380									
+#record		Fire201	N	23308	16945	0	0	380									
+#record		Fire202	N	22454	14625	0	0	380									
+#record		Fire203	N	23218	15590	0	0	380									
+#record		Fire204	N	21651	16518	0	0	380									
+#record		Fire205	N	20023	16888	0	0	380									
+#record		Fire206	N	19704	19439	0	0	380									
+#record		Fire207	N	18424	15752	0	0	380									
+#record		Fire208	N	19364	14841	0	0	380									
+#record		Fire209	N	20537	14873	0	0	380									
+#record		Fire210	N	19439	18121	0	0	380									
+#record		Fire211	N	22601	13536	0	0	380									
+#record		Fire212	N	18499	19054	0	0	380									
+#record		Fire213	N	20763	21941	0	0	190									
+#record		Fire214	N	21509	23132	0	0	190									
+#record		Fire215	N	19560	22293	0	0	190									
+#record		Fire216	N	24435	15330	0	0	190									
+#record		Fire217	N	24192	9069	0	0	190									
+#record		Fire218	N	23372	18150	0	0	190									
+#record		Fire219	N	24289	16422	0	0	190									
+#record		Fire220	N	6602	6751	0	0	380									
+#record		Fire221	N	10864	7166	0	0	380									
+#record		Fire222	N	5392	6772	0	0	380									
+#record		Fire223	N	3938	3742	0	0	380									
+#record		Fire224	N	9053	2803	0	0	380									
+#record		Fire225	N	9230	3925	0	0	380									
+#record		Fire226	N	3542	5072	0	0	380									
+#record		Fire227	N	10532	10799	0	0	380									
+#record		Fire228	N	8840	9932	0	0	380									
+#record		Fire229	N	9443	10770	0	0	380									
+#record		Fire230	N	8837	5991	0	0	380									
+#record		Fire231	N	8635	8588	0	0	380									
+#record		Fire232	N	9693	8932	0	0	380									
+#record		Fire233	N	10668	9388	0	0	380									
+#record		Fire234	N	9310	5023	0	0	380									
+#record		Fire235	N	7952	6573	0	0	380									
+#record		Fire236	N	10602	8334	0	0	380									
+#record		Fire237	N	2237	17318	0	0	90									
+#record		Fire238	N	16010	20333	0	0	380									
+#record		Fire239	N	20822	2170	0	0	380									
+#record		Fire240	N	10251	21309	0	0	380									
+#record		Fire241	N	11525	23215	0	0	380									
+#record		Waypoint01	N	18900	12746	0	0	420									
+#record		Waypoint02	N	18449	13493	0	0	420									
+#record		Waypoint03	N	17772	14367	0	0	420									
+#record		Waypoint04	N	4688	16094	0	0	420									
+#record		Waypoint05	N	4204	17207	0	0	420									
+#record		Waypoint06	N	3245	16141	0	0	420									
+#record		Waypoint07	N	17644	15838	0	0	420									
+#record		Waypoint08	N	16906	13167	0	0	420									
+;		Halloween01	N	8302	16927	0	0	5250									
+;		Halloween02	N	7891	6184	0	0	4479									
+;		Halloween03	N	18066	9752	3525	7210	0									
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Fire01	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire02	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire03	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire04	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire05	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire06	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire07	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire08	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire09	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire10	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire11	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire12	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire13	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire14	FireNix	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire15	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire16	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire17	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire18	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire19	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire20	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire21	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire22	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire23	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire24	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire25	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire26	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire27	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire28	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire29	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire30	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire31	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire32	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire33	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire34	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire35	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire36	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire37	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire38	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire39	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire40	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire41	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire42	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire43	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire44	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire45	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire46	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire47	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire48	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire49	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire50	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire51	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire52	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire53	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire54	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire55	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire56	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire57	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire58	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire59	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire60	CoreGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire61	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire62	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire63	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire64	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire65	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire66	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire67	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire68	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire69	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire70	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire71	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire72	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire73	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire74	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire75	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire76	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire77	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire78	MineMole	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire79	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire80	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire81	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire82	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire83	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire84	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire85	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire86	FireRubyGuardian-U	1	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire87	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire88	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire89	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire90	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire91	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire92	RubyGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire93	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire94	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire95	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire96	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire97	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire98	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire99	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire100	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire101	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire102	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire103	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire104	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire105	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire106	FlameSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire107	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire108	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire109	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire110	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire111	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire112	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire113	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire114	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire115	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire116	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire117	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire118	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire119	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire120	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire121	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire122	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire123	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire124	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire125	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire126	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire127	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire128	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire129	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire130	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire131	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire132	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire133	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire134	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire135	Miner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire136	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire137	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire138	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire139	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire140	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire141	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire142	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire143	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire144	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire145	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire146	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire147	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire148	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire149	KartMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire150	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire151	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire152	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire153	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire154	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire155	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire156	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire157	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire158	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire159	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire160	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire161	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire162	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire163	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire164	UndeadMiner	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire165	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire166	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire167	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire168	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire169	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire170	DiamondTree	1	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire171	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire172	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire173	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire174	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire175	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire176	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire177	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire178	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire179	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire180	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire181	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire182	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire183	JewelTree	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire184	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire185	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire186	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire187	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire188	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire189	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire190	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire191	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire192	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire193	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire194	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire195	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire196	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire197	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire198	MagmaTon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire199	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire200	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire201	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire202	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire203	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire204	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire205	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire206	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire207	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire208	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire209	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire210	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire211	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire212	CrystalGuardian-U	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire213	GuardianMaster	2	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire214	GuardianMaster	2	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire215	GuardianMaster	2	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire216	GuardianMaster	2	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire217	GuardianMaster	2	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire218	GuardianMaster	2	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire219	GuardianMaster	2	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire220	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire221	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire222	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire223	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire224	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire225	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire226	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire227	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire228	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire229	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire230	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire231	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire232	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire233	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire234	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire235	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire236	Gagoyle	2	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire237	GiantMagmaton	1	0	60	50	70	15	0	0	0	0	0	0	0	0
+#record		Fire238	FireSpirit	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire239	KidMon	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire240	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Fire241	FlameHoneying	3	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint01	MineMole	7	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint02	MineMole	7	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint03	MineMole	7	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint04	JewelTree	7	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint05	JewelTree	7	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint06	JewelTree	7	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint07	Rock	1	0	35	30	40	15	0	0	0	0	0	0	0	0
+#record		Waypoint08	Rock	1	0	35	30	40	15	0	0	0	0	0	0	0	0
+
+;		Halloween01	E_JackO04	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO04	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO04	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+#END																	

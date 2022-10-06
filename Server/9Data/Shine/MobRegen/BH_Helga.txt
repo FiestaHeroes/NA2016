@@ -1,0 +1,25 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Helga	N	1595	1595	0	0	16									
+#record		BH_HelgaBox	N	1605	1638	0	0	1032									
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Helga	BH_Helga	1	0	86400	86395	86405	-5	5	-2	8	0	10	2	13	5
+;#record		BH_HelgaBox	BH_Helga_O	1	0	60	59	61	5	-2	8	0	10	2	13	4	0
+;#record		BH_HelgaBox	BH_Helga_O_02	1	0	60	59	61	5	-2	8	0	10	2	13	4	0
+#record		BH_HelgaBox	BH_Helga_X	48	0	60	59	61	5	-2	8	0	10	2	13	4	0
+																	
+#end																	

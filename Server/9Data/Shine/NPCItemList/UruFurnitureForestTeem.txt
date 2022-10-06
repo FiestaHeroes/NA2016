@@ -1,0 +1,15 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;가구 상점(우르가)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	IN_NormalChair01	IN_NormalChair02	IN_NormalBookcase01	-	-	-
+#Record	1	IN_AntiqueChair01	IN_AntiqueDrawer01	IN_AntiqueBookcase01	IN_AntiqueBed01	-	-
+#Record	2	IN_SkyLaceBed01	IN_SkyMirror01	IN_SkyMirrorStand01	IN_SkySofa01	IN_SkyDoubleSofa01	IN_SkyWith3Drawers01
+#Record	3	IN_NormalTable01	IN_GardnChair01	IN_GardonParasol01	IN_AntiqueStatue01	-	-
+#Record	4	IN_EleganceTable01	IN_EleganceChair01	IN_EleganceSofa01	IN_EleganceBed01	IN_EleganceCloset01	IN_EleganceBirdcase01
+							
+#End							

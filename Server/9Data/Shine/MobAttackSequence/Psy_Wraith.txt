@@ -1,0 +1,34 @@
+				
+#Table	AttSeq			
+#ColumnType	WORD	STRING[33]		
+#ColumnName	Order	Attack		
+				
+#Record	0	-		
+#Record	1	GhostLumpSkill		
+#Record	2	-		
+#Record	3	Psy_Wraith_Skill_N		
+#Record	4	-		
+#Record	5	-		
+#Record	6	-		
+#Record	7	Psy_Wraith_Skill_N		
+#Record	8	-		
+#Record	9	GhostLumpSkill		
+#Record	10	-		
+#Record	11	-		
+#Record	12	GhostLumpSkill		
+#Record	13	-		
+#Record	14	Psy_Wraith_Skill_N		
+#Record	15	-		
+#Record	16	-		
+#Record	17	-		
+#Record	18	Psy_Wraith_Skill_N		
+#Record	19	-		
+#Record	20	GhostLumpSkill		
+#Record	21	-		
+				
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우
+#ColumnType	Index	Index	String[33]	String[33]
+#ColumnName	Condition	Value	From	To
+#Record	OutOfRange	-	-	Psy_Wraith_Skill_N
+#Record	OutOfRange	-	GhostLumpSkill	Psy_Wraith_Skill_N
+#End				

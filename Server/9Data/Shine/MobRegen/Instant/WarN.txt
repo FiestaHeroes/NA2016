@@ -1,0 +1,91 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		WarN_01	N	4245	10349	0	0	20									
+#record		WarN_02	N	3620	9549	0	0	20									
+#record		WarN_03	N	3584	9418	0	0	20									
+#record		WarN_04	N	3546	9666	0	0	12									
+#record		WarN_05	N	4153	10662	0	0	173									
+#record		WarN_06	N	4525	10391	0	0	194									
+#record		WarN_07	N	15731	7576	0	0	257									
+#record		WarN_08	N	4864	13311	0	0	300									
+#record		WarN_09	N	5351	13578	0	0	300									
+#record		WarN_10	N	4989	14330	0	0	300									
+#record		WarN_11	N	4936	15234	0	0	131									
+#record		WarN_12	N	4667	16965	0	0	300									
+#record		WarN_13	N	4188	16396	0	0	300									
+#record		WarN_14	N	3723	17038	0	0	300									
+#record		WarN_15	N	2461	16927	0	0	300									
+#record		WarN_16	N	3525	16058	0	0	201									
+#record		WarN_17	N	2975	16316	0	0	292									
+#record		WarN_18	N	3303	17536	0	0	243									
+#record		WarN_19	N	2177	16024	0	0	250									
+#record		WarN_20	N	3470	18802	0	0	300									
+#record		WarN_21	N	2987	18646	0	0	300									
+#record		WarN_22	N	1918	19135	0	0	300									
+#record		WarN_23	N	2244	19803	0	0	300									
+#record		WarN_24	N	1990	20712	0	0	208									
+#record		WarN_25	N	1928	21447	0	0	300									
+#record		WarN_26	N	3287	22055	0	0	300									
+#record		WarN_27	N	3412	21533	0	0	300									
+#record		WarN_28	N	5080	22412	0	0	300									
+#record		WarN_29	N	5290	21987	0	0	300									
+#record		WarN_30	N	5131	21553	0	0	300									
+#record		WarN_31	N	5014	19016	0	0	243									
+#record		WarN_32	N	1989	22316	0	0	257									
+#record		WarN_33	N	3445	20305	0	0	215									
+#record		WarN_34	N	5159	20960	0	0	20									
+#record		WarN_35	N	7754	20608	0	0	300									
+#record		WarN_36	N	7721	20050	0	0	300									
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		WarN_01	DT_StancherAiri	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_02	DT_StancherGuardian01	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_03	DT_StancherGuardian02	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_04	DT_StancherGuardian03	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_05	DT_RadionOre	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_06	DT_EntranceGate	4	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_07	DT_ExitGate	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_08	DT_Devildom	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_09	DT_FDevildom	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_10	DT_IDevildom	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_11	DT_SDevildom	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_12	DT_TDevildom	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_13	DT_FFocalor	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_14	DT_IFocalor	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_15	DT_SFocalor	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_16	DT_TFocalor	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_17	DT_S_FDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_18	DT_S_IDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_19	DT_S_SDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_20	DT_S_TDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_21	DT_FFocalor_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_22	DT_IFocalor_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_23	DT_SFocalor_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_24	DT_TFocalor_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_25	DT_S_FDHoneying_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_26	DT_S_IDHoneying_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_27	DT_S_SDHoneying_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_28	DT_S_TDHoneying_C	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_29	T_DT_S_FDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_30	T_DT_S_IDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_31	T_DT_S_SDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_32	T_DT_S_TDHoneying	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_33	DT_FDoor	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_34	DT_IDoor	1	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_35	DT_NDoor	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+#record		WarN_36	DT_TDoor	3	0	50	46	63	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

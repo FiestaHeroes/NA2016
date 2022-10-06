@@ -1,0 +1,25 @@
+open [main]
+
+    WaitPlayer Above 1.                 ; 플레이어가 한명 이상이 될때까지 대기
+
+    Terminate TimeOut "-" 10 "Fail".    ; 10분이 지나면 패배
+    Terminate Player "Below" 0 "Fail".  ; 사람이 없으면 패배
+
+    WaitTime MilliSec 5000.             ; 5초간 대기
+
+
+    SetPos All 1740 11070.
+
+    WaitTime MilliSec 1000.
+
+    var SlimeHandle.
+    Regen SlimeHandle "Slime" 1740 11070 30.
+
+    Terminate AllMob "Below" 0 "Suc".  ; 몹이 없으면 승리
+
+
+    infinite
+    open
+    close
+
+close

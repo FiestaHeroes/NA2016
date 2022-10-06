@@ -1,0 +1,39 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+#Record	KQReturn60	"Finally, Kingkong Phino is defeated."	
+#Record	KQReturn50	Move to Uruga in 50 seconds.	
+#Record	KQReturn40	Move to Uruga in 40 seconds.	
+#Record	KQReturn30	Move to Uruga in 30 seconds.	
+#Record	KQReturn20	Move to Uruga in 20 seconds.	
+#Record	KQReturn10	Move to Uruga in 10 seconds.	
+#Record	KQReturn50	Move to Uruga in 5 seconds.	
+			
+#Record	KQFReturn30	Move to Uruga in 30 seconds.	
+#Record	KQFReturn20	Move to Uruga in 20 seconds.	
+#Record	KQFReturn10	Move to Uruga in 10 seconds.	
+#Record	KQFReturn5	"Move to Uruga in 5 seconds. Everyone, you did a wonderful job."	
+			
+#Record	Kingkong01	What? Haness expedition team is bothering you?	
+#Record	Kingkong02	I cannot stand this any longer!	
+#Record	Kingkong03	"You, little Haness expedition team,"	
+#Record	Kingkong04	"if you touch a little fur on my wife,"	
+#Record	Kingkong05	you will have to pay for it.	
+			
+#Record	Phinoflie01	Darling~~King Kong Phino Darling~~	
+#Record	Phinoflie02	Something called the Haness expedition team..	
+#Record	Phinoflie03	they keep picking on me… T_T	
+#Record	Phinoflie04	Come and fight back if you have the courage!	
+#Record	Phinoflie05	"If you hit me, King Kong Phino will not tolerate it!!!!"	
+#Record	Phinoflie06	not tolerate. :-P	
+		
+		
+#Record	Heal01	Power up!!
+		
+#Record	Summon01	Followers!! Wake up and attack them!!
+		
+#End		

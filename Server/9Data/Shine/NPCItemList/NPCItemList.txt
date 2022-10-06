@@ -1,0 +1,38 @@
+;		ItemList in NPC								
+#ignore	\o042			; 인용부호 무시						
+#exchange	#	\x20		; # => space						
+;		2006.01.25								
+										
+#Table	Tab00	;아이템 상점(엘더린)								
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]			
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05			
+#Record	0 	Pickaxe	Hay	FlyStone	-	-	-			
+#Record	1 	El1	-	-	-	-	-			
+#Record	2 	ActiveFeathers03_2	-	-	-	-	-			
+#Record	3 	SkillReloadbundleOne	FreeStatusReloadOne	-	-	-	-			
+#Record	4 	AddInventory03_2	AddInventory01_2	-	-	-	-			
+#Record	5 	AddStorageBox03_1	AddStorageBox01_2	-	-	-	-			
+#Record	6 	SoulRelease01_2	SoulEvolution01_2	-	-	-	-			
+#Record	7 	ZebraColl01_2	TigerColl01_2	RedColl01_2	GoldColl01_2	ThoroColl01_2	FireColl01_2			
+#Record	8 	House_MushRoom01	House_MushRoom02	-	-	-	-
+#Record	9 	PyramidHouse05_1	IndianTent05_1	PumpkinHouse05_1	PyramidHouse03_2	IndianTent03_2	PumpkinHouse03_2
+#Record	10 	Dango03_3	RiceRab03_3	-	-	-	-
+#Record	11 	Menian_RedA01_4	Menian_RedA02_4	Menian_RedA03_4	Menian_RedA01_2	Menian_RedA02_2	Menian_RedA03_2
+#Record	12 	Menian_RedP01_4	Menian_RedP02_4	Menian_RedP03_4	Menian_RedP01_2	Menian_RedP02_2	Menian_RedP03_2
+#Record	13 	Menian_RedS01_4	Menian_RedS02_4	Menian_RedS03_4	Menian_RedS01_2	Menian_RedS02_2	Menian_RedS03_2
+#Record	14 	Menian_BlueA01_4	Menian_BlueA02_4	Menian_BlueA03_4	Menian_BlueA01_2	Menian_BlueA02_2	Menian_BlueA03_2
+#Record	15 	Menian_BlueP01_4	Menian_BlueP02_4	Menian_BlueP03_4	Menian_BlueP01_2	Menian_BlueP02_2	Menian_BlueP03_2
+#Record	16 	Menian_BlueS01_4	Menian_BlueS02_4	Menian_BlueS03_4	Menian_BlueS01_2	Menian_BlueS02_2	Menian_BlueS03_2
+#Record	17 	Menian_YellowA01_4	Menian_YellowA02_4	Menian_YellowA03_4	Menian_YellowA01_2	Menian_YellowA02_2	Menian_YellowA03_2
+#Record	18 	Menian_YellowP01_4	Menian_YellowP02_4	Menian_YellowP03_4	Menian_YellowP01_2	Menian_YellowP02_2	Menian_YellowP03_2
+#Record	19 	Menian_YellowS01_4	Menian_YellowS02_4	Menian_YellowS03_4	Menian_YellowS01_2	Menian_YellowS02_2	Menian_YellowS03_2
+#Record	20 	MiniLimp01_5	MiniCrap01_5	MiniKCrap01_5	MiniLimp01_2	MiniCrap01_2	MiniKCrap01_2
+#Record	21 	MiniPino01_5	MiniPinoP01_5	MiniBoogie01_5	MiniPino01_2	MiniPinoP01_2	MiniBoogie01_2
+#Record	22 	MiniKebingS01_5	MiniSkel01_5	MiniBat01_5	MiniKebingS01_2	MiniSkel01_2	MiniBat01_2
+#Record	23 	MiniFox01_5	MiniWolf01_5	MiniRatMan01_5	MiniFox01_2	MiniWolf01_2	MiniRatMan01_2
+#Record	24 	MiniBoar01_5	MiniVivi01_5	MiniGreenky01_5	MiniBoar01_2	MiniVivi01_2	MiniGreenky01_2
+#Record	25 	MiniPinky01_5	-	-	MiniPinky01_2	-	-
+#Record	26 	MiniSDog01_5	MiniStony01_5	MiniAkon01_5	MiniSDog01_2	MiniStony01_2	MiniAkon01_2
+#Record	27 	MiniDragon01_5	-	-	MiniDragon01_2	-	-
+							
+#End							

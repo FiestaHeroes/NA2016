@@ -1,0 +1,38 @@
+;	Sublayer Interact Definite																
+#ignore	\o042				; 인용부호 무시												
+#exchange	#	\x20			; # => space												
+#delimiter	\x20				; Space is delimiter												
+
+#Table	SendMyBrief																
+#ColumnType	BYTE	Index	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE								
+#ColumnName	CheckSumA	DoNotCare	Base	RangerStealth	Observer	AdminHide	GMDoor	GMPlayer	CheckSumB		;	Another					
+#Record	0	Base	1	1	1	1	0	1	0								
+#Record	1	RangerStealth	0	0	0	1	0	1	1								
+#Record	2	Observer	0	0	0	1	1	1	2								
+#Record	3	AdminHide	0	0	0	0	1	1	3								
+#Record	4	GMDoor	0	0	0	0	0	0	4								
+#Record	5	GMPlayer	1	0	0	0	1	1	5								
+																	
+;	Me																
+
+#Table	CanAttack											
+#ColumnType	BYTE	Index	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE			
+#ColumnName	CheckSumA	DoNotCare	Base	RangerStealth	Observer	AdminHide	GMDoor	GMPlayer	CheckSumB		;	Another
+#Record	0	Base	1	0	0	0	0	1	0			
+#Record	1	RangerStealth	1	0	0	0	0	1	1			
+#Record	2	Observer	0	0	0	0	0	0	2			
+#Record	3	AdminHide	0	0	0	0	0	0	3			
+#Record	4	GMDoor	0	0	0	0	0	0	4			
+#Record	5	GMPlayer	1	0	0	0	0	0	5			
+												
+;	Me											
+
+#End												
+;	GordonMaster		몹 : 0	문 : 4	플레이어 : 5							
+;		몹 : 0	1	0	1							
+;	view	문 : 4	0	0	0
+;		플레이어 : 5	1	1	1
+;					
+;		몹 : 0	0	1	1
+;	attack	문 : 4	0	0	0
+;		플레이어 : 5	1	0	0

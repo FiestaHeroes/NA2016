@@ -1,0 +1,228 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KDGold_1_Mine01	N	6646	6066	0	0	598									
+#record		KDGold_1_Mine02	N	6555	5985	0	0	500									
+#record		KDGold_1_Mine03	N	6665	6154	0	0	500									
+#record		KDGold_1_Mine04	N	6721	6299	0	0	500									
+#record		KDGold_1_Mob01	N	6608	5700	0	0	289									
+#record		KDGold_1_Mob02	N	6372	5974	0	0	226									
+#record		KDGold_1_Mob03	N	6631	6348	0	0	282									
+#record		KDGold_1_Mob04	N	6338	6529	0	0	177									
+#record		KDGold_2_Mine01	N	5459	6230	135	778	0									
+#record		KDGold_2_Mine02	N	5527	5424	548	160	69									
+#record		KDGold_2_Mine03	N	6515	4885	960	170	0									
+#record		KDGold_2_Mine04	N	7706	5234	213	487	0									
+#record		KDGold_2_Mine05	N	7403	5079	167	483	39									
+#record		KDGold_2_Mine07	N	7878	5685	554	146	-86									
+#record		KDGold_2_Mine08	N	7889	6557	168	612	-3									
+#record		KDGold_2_Mine09	N	6726	7292	321	150	0									
+#record		KDGold_2_Mine10	N	6356	7267	256	171	0									
+#record		KDGold_2_Mine11	N	5804	7087	489	165	-26									
+#record		KDGold_2_Mob01	N	5444	6037	151	466	0									
+#record		KDGold_2_Mob02	N	5651	5262	145	515	-3									
+#record		KDGold_2_Mob03	N	6470	4844	628	162	0									
+#record		KDGold_2_Mob04	N	7596	5031	617	157	-27									
+#record		KDGold_2_Mob05	N	7896	5911	200	799	0									
+#record		KDGold_2_Mob06	N	7875	6852	134	415	0									
+#record		KDGold_2_Mob07	N	6903	7268	0	0	142									
+#record		KDGold_2_Mob08	N	5936	5013	0	0	156									
+#record		KDGold_2_Mob09	N	5670	7120	0	0	163									
+#record		KDGold_2_Mob10	N	7122	4793	0	0	212									
+#record		KDGold_2_Mob11	N	7346	7190	0	0	184									
+#record		KDGold_2_Mob12	N	6176	7379	0	0	275									
+#record		KDGold_3_Mine01	N	5852	3983	200	972	-66									
+#record		KDGold_3_Mine02	N	7459	4097	285	1099	78									
+#record		KDGold_3_Mine03	N	8558	4822	155	612	14									
+#record		KDGold_3_Mine04	N	8720	5657	235	883	0									
+#record		KDGold_3_Mine05	N	8776	6569	281	489	0									
+#record		KDGold_3_Mine06	N	8705	6959	187	623	-24									
+#record		KDGold_3_Mine07	N	8449	7464	150	481	-72									
+#record		KDGold_3_Mine08	N	7762	7742	563	217	12									
+#record		KDGold_3_Mine09	N	5617	8028	989	183	0									
+#record		KDGold_3_Mine10	N	6251	8048	518	269	0									
+#record		KDGold_3_Mine11	N	5538	7830	600	265	-10									
+#record		KDGold_3_Mine12	N	4923	7398	515	279	-62									
+#record		KDGold_3_Mine13	N	4751	5972	258	590	0									
+#record		KDGold_3_Mine14	N	4685	5238	187	612	-16									
+#record		KDGold_3_Mine15	N	5778	4048	163	576	-57									
+#record		KDGold_3_Mob01	N	6490	3952	544	265	-1									
+#record		KDGold_3_Mob02	N	7275	4076	659	283	-2									
+#record		KDGold_3_Mob03	N	8495	4992	946	212	-80									
+#record		KDGold_3_Mob04	N	8578	5711	241	858	0									
+#record		KDGold_3_Mob05	N	8753	6705	296	677	0									
+#record		KDGold_3_Mob06	N	7534	7836	829	214	19									
+#record		KDGold_3_Mob07	N	6289	7950	1134	156	0									
+#record		KDGold_3_Mob08	N	5867	3968	149	760	-70									
+#record		KDGold_3_Mob09	N	5448	4175	148	547	-56									
+#record		KDGold_3_Mob10	N	4767	5095	238	526	-14									
+#record		KDGold_3_Mob11	N	4640	6154	233	867	0									
+#record		KDGold_3_Mob12	N	4687	6813	167	948	11									
+#record		KDGold_3_Mob13	N	5137	7583	155	638	55									
+#record		KDGold_3_Mob14	N	6639	7982	0	0	212									
+#record		KDGold_3_Mob15	N	8137	4130	0	0	149									
+#record		KDGold_4_Mine01	N	10351	5654	355	996	0									
+#record		KDGold_4_Mine02	N	10322	6714	473	1090	0									
+#record		KDGold_4_Mine03	N	9763	8122	402	825	-37									
+#record		KDGold_4_Mine04	N	9192	8414	333	1235	-70									
+#record		KDGold_4_Mine05	N	7810	8816	1087	325	18									
+#record		KDGold_4_Mine06	N	6847	9042	1064	316	0									
+#record		KDGold_4_Mine07	N	5835	8939	1161	393	0									
+#record		KDGold_4_Mine08	N	4294	8553	673	362	-36									
+#record		KDGold_4_Mine09	N	3759	7674	726	323	-61									
+#record		KDGold_4_Mine10	N	3471	6835	294	994	14									
+#record		KDGold_4_Mine11	N	3354	5910	427	795	0									
+#record		KDGold_4_Mine12	N	3490	5060	367	773	0									
+#record		KDGold_4_Mine13	N	3628	4425	307	876	-32									
+#record		KDGold_4_Mine14	N	4158	3703	328	859	-40									
+#record		KDGold_4_Mine15	N	4548	2954	984	440	55									
+#record		KDGold_4_Mine16	N	5560	2457	284	861	-67									
+#record		KDGold_4_Mine17	N	6959	2296	1151	398	0									
+#record		KDGold_4_Mine18	N	6136	2303	886	485	0									
+#record		KDGold_4_Mine19	N	7957	2656	1094	342	-26									
+#record		KDGold_4_Mine20	N	8828	3291	234	810	51									
+#record		KDGold_4_Mine21	N	9891	4342	269	966	31									
+#record		KDGold_4_Mine22	N	10155	5389	895	434	-83									
+#record		KDGold_4_Mine23	N	8735	8561	1364	435	12									
+#record		KDGold_4_Mine24	N	4356	8532	354	1405	52									
+#record		KDGold_4_Mine25	N	3858	3649	979	321	44									
+#record		KDGold_4_Mob01	N	6750	2331	1693	638	0									
+#record		KDGold_4_Mob02	N	8641	2981	392	1269	49									
+#record		KDGold_4_Mob03	N	9895	4642	1407	371	-67									
+#record		KDGold_4_Mob04	N	10403	4981	511	825	0									
+#record		KDGold_4_Mob05	N	10140	7198	412	1501	-26									
+#record		KDGold_4_Mob06	N	7924	9029	1574	309	0									
+#record		KDGold_4_Mob07	N	5859	8668	409	1653	-93									
+#record		KDGold_4_Mob08	N	3691	7184	354	1087	10									
+#record		KDGold_4_Mob09	N	3503	5840	208	1192	0									
+#record		KDGold_4_Mob10	N	3217	5493	404	1034	0									
+#record		KDGold_4_Mob11	N	3377	4733	426	697	-28									
+#record		KDGold_4_Mob12	N	3673	4384	371	877	-25									
+#record		KDGold_4_Mob13	N	3750	4212	318	1613	-28									
+#record		KDGold_4_Mob14	N	4770	2740	1553	413	21									
+#record		KDGold_4_Mob15	N	6705	2376	1382	379	0									
+#record		KDGold_4_Mob16	N	8831	3329	1231	287	-32									
+#record		KDGold_4_Mob17	N	10106	4737	351	828	24									
+#record		KDGold_4_Mob18	N	10534	6158	0	0	500									
+#record		KDGold_4_Mob19	N	4138	8625	0	0	500									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KDGold_1_Mine01	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_1_Mine02	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_1_Mine03	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_1_Mine04	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_1_Mob01	KQ_G_TombRaider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_1_Mob02	KQ_G_JewelKebing	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_1_Mob03	KQ_G_Magebook	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_1_Mob04	KQ_G_TombRaider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine01	KQ_Core01	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine02	KQ_Core02	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine03	KQ_Core03	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine04	KQ_Core04	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine05	KQ_Core01	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine07	KQ_Core02	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine08	KQ_Core03	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine09	KQ_Core04	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine10	KQ_Core01	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mine11	KQ_Core02	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob01	KQ_G_TombRaider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob02	KQ_G_JewelKebing	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob03	KQ_G_TombRaider	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob04	KQ_G_Magebook	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob05	KQ_G_JewelKebing	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob06	KQ_G_Magebook	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob07	KQ_G_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob08	KQ_G_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob09	KQ_G_MarloneMegaton	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob10	KQ_G_MarloneMegaton	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob11	KQ_G_MarloneMegaton	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_2_Mob12	KQ_G_TombRaider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine01	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine02	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine03	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine04	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine05	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine06	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine07	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine08	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine09	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine10	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine11	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine12	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine13	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine14	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mine15	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob01	KQ_G_TombRaider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob02	KQ_G_JewelKebing	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob03	KQ_G_Magebook	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob04	KQ_G_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob05	KQ_G_MarloneMegaton	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob06	KQ_G_Skeleton	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob07	KQ_G_Bat	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob08	KQ_G_TombRaider	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob09	KQ_G_JewelKebing	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob10	KQ_G_Magebook	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob11	KQ_G_MarloneArcher	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob12	KQ_G_MarloneMegaton	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob13	KQ_G_Skeleton	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob14	KQ_G_Bat	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_3_Mob15	KQ_G_Bat	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine01	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine02	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine03	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine04	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine05	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine06	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine07	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine08	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine09	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine10	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine11	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine12	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine13	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine14	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine15	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine16	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine17	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine18	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine19	KQ_Core03	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine20	KQ_Core04	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine21	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine22	KQ_Core02	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine23	KQ_Core03	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine24	KQ_Core04	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mine25	KQ_Core01	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob01	KQ_G_Magebook	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob02	KQ_G_MarloneArcher	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob03	KQ_G_MarloneMegaton	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob04	KQ_G_MarloneFighter	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob05	KQ_G_Skeleton	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob06	KQ_G_SkelArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob07	KQ_G_Bat	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob08	KQ_G_Bat	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob09	KQ_G_SkelArcher	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob10	KQ_G_Skeleton	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob11	KQ_G_MarloneFighter	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob12	KQ_G_MarloneMegaton	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob13	KQ_G_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob14	KQ_G_Magebook	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob15	KQ_G_JewelKebing	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob16	KQ_G_MarloneMegaton	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob17	KQ_G_Magebook	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob18	KQ_G_Marlone	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDGold_4_Mob19	KQ_G_BossTombRaider	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

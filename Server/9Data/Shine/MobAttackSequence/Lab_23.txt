@@ -1,0 +1,87 @@
+;		Mob Attack Sequence			
+
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+
+#Record	0	Lab_23_Knock_Wide			
+#Record	1	Lab_23_Dash_Atk			
+#Record	2	*RepeatStart			
+#Record	3	-			
+#Record	4	-			
+#Record	5	-
+#Record	6	Lab_23_Spirit_Buf
+#Record	7	-
+#Record	8	-
+#Record	9	-
+#Record	10	-
+#Record	11	Lab_23_Fear_Atk
+#Record	12	-
+#Record	13	-
+#Record	14	-
+#Record	15	-
+#Record	16	Lab_23_Paralysis_Atk
+#Record	17	-
+#Record	18	-
+#Record	19	-
+#Record	20	-
+#Record	21	-
+#Record	22	-
+#Record	23	-
+#Record	24	-
+#Record	25	-
+#Record	26	Lab_23_Fear_Atk
+#Record	27	-
+#Record	28	-
+#Record	29	-
+#Record	30	Lab_23_Paralysis_Atk
+#Record	31	Lab_23_Spirit_Buf
+#Record	32	-
+#Record	33	-
+#Record	34	-
+#Record	35	-
+#Record	36	-
+#Record	37	-
+#Record	38	-
+#Record	39	Lab_23_Fear_Atk
+#Record	40	-
+#Record	41	-
+#Record	42	-
+#Record	43	-
+#Record	44	-
+#Record	45	-
+#Record	46	-
+#Record	47	-
+#Record	48	-
+#Record	49	Lab_23_Paralysis_Atk
+#Record	50	Lab_23_Spirit_Buf
+#Record	51	-
+#Record	52	-
+#Record	53	-
+#Record	54	-
+#Record	55	-
+#Record	56	-
+#Record	57	-
+#Record	58	-
+#Record	59	-
+#Record	60	-
+#Record	61	-
+#Record	62	Lab_23_Paralysis_Atk
+#Record	63	Lab_23_Spirit_Buf
+#Record	64	Lab_23_Knock_Wide
+#Record	65	Lab_23_Dash_Atk
+#Record	66	-
+#Record	67	-
+#Record	68	-
+#Record	69	-
+#Record	70	-
+#Record	71	Lab_23_Paralysis_Atk
+#Record	72	-
+#Record	73	-
+#Record	74	-
+#End		

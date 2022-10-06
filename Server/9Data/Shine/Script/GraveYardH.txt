@@ -1,0 +1,11 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+;	;	고르넬리오가 죽을때 외칠 말	
+#Record	DeathCry	Insignificant humans...I curse you to oblivion...I shall...return...	
+#Record	NoKey	You do not have the correct key.	
+#END			

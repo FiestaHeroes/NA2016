@@ -1,0 +1,28 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+;#record		XTree	N	5598	5579	52	251	42									
+;#record		Snow	N	7969	5783	52	251	300									
+;#record		Snow1	N	4966	5603	52	251	300									
+;#record		Snow2	N	7636	7608	52	251	300									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+;#record		XTree	ChristmasTree	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+;#record		Snow	BH_SnowBall	6	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		Snow1	BH_SnowBall	6	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;#record		Snow2	BH_SnowBall	6	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+																	
+#end																	

@@ -1,0 +1,594 @@
+open [main]
+    var InterruptBlock  ""
+        InterruptArg    ""
+        LoginWait       ""
+        Door4th         ""  ; 가장 위
+        Door3rd         ""
+        Door2nd         ""
+        Door1st         ""
+        TotalCore       ""
+        KeyCore0        ""
+        KeyCore1        ""
+        KeyCore2        ""
+        KeyCore3        ""
+        CoreBreak       ""
+        Slot            ""
+        Opener          ""
+        GateHandle      ""
+        BossHandle      "".
+
+    ; 모든 문을 세움
+    doorbuild Door1st "KQ_Gate5" 6055  6090   88 1000 "Normal".      ; 3층과 4층 사이
+    doorbuild Door2nd "KQ_Gate5" 6703  4374    1 1000 "Normal".      ; 2층과 3층 사이
+    doorbuild Door3rd "KQ_Gate5" 9186  6099   89 1000 "Normal".      ; 1층과 2층 사이
+    doorbuild Door4th "KQ_Gate5" 2895  9962   90 2000 "Normal".      ; 입구
+
+    ; 모든 문을 닫음
+    doorclose Door1st "KDGOLDBLOCK01".
+    doorclose Door2nd "KDGOLDBLOCK02".
+    doorclose Door3rd "KDGOLDBLOCK03".
+    doorclose Door4th "KDGOLDBLOCK04".
+
+
+    ; 일정시간 지나도록 로긴 안함
+    waitlogin LoginWait.
+    if LoginWait == 0
+    then open
+        call "QuestFail".
+    close
+
+    pause Sec 5.
+    scriptfile "KQGoldHill".
+
+
+    chatwin "KQ_G_BossTombRaider" "Intro0".
+    pause Sec 3.                        ; 3초간 대기
+    chatwin "KQ_G_BossTombRaider" "Intro1".
+
+    call "Layer1st".
+    call "Layer2nd".
+    call "Layer3rd".
+    call "Layer4th".
+    call "LastBattle".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Layer1st]
+    deathcountclear.
+    regengroup "KDGoldHill" "KDGold_1_Mine01".
+    regengroup "KDGoldHill" "KDGold_1_Mine02".
+    regengroup "KDGoldHill" "KDGold_1_Mine03".
+    regengroup "KDGoldHill" "KDGold_1_Mine04".
+    regengroup "KDGoldHill" "KDGold_1_Mob01".
+    regengroup "KDGoldHill" "KDGold_1_Mob02".
+    regengroup "KDGoldHill" "KDGold_1_Mob03".
+    regengroup "KDGoldHill" "KDGold_1_Mob04".
+
+    chatwin "KQ_G_BossTombRaider" "Intro2".
+    timelimit Min 5.
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset NPCClickHandle "" 1 Door1st "Door1stClick".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core1stBreakA".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core1stBreakB".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core1stBreakC".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core1stBreakD".
+
+    CoreBreak = 0.
+    TotalCore = @Count("KQ_Core01") + @Count("KQ_Core02") + @Count("KQ_Core03") + @Count("KQ_Core04").
+
+    KeyCore0 = @Random(40 70).
+    KeyCore1 = @Random(60 80).
+    KeyCore2 = @Random(60 90).
+    KeyCore3 = @Random(70 95).
+
+    KeyCore0 = (KeyCore0 * TotalCore) / 100.        ; 수식은 뒤에서부터 계산되므로 () 필요
+    KeyCore1 = (KeyCore1 * TotalCore) / 100.
+    KeyCore2 = (KeyCore2 * TotalCore) / 100.
+    KeyCore3 = (KeyCore3 * TotalCore) / 100.
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Door1stClick]
+    whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+    invensearch Slot Opener "KQ_Key01".                 ; Opener의 인벤토리에서 KQ_Key01를 찾음
+    if Slot === ""                                      ; 찾지 못했음
+    then open
+        interruptset NPCClickHandle "" 1 Door1st "Door1stClick".   ; 한번 이벤트후 사라지므로 다시 인터럽트 세팅
+        break "Door1stClick".
+    close
+
+    dooropen Door1st "KDGOLDBLOCK01".
+    itemerase all "KQ_Key01".
+   ; suicide all.                                        ; 모든 몹을 죽이는 코드 빼버림
+    break "Layer1st".
+close
+
+open [Core1stBreakA]
+    call "Core1stBreak".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core1stBreakA".
+close
+
+open [Core1stBreakB]
+    call "Core1stBreak".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core1stBreakB".
+close
+
+open [Core1stBreakC]
+    call "Core1stBreak".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core1stBreakC".
+close
+
+open [Core1stBreakD]
+    call "Core1stBreak".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core1stBreakD".
+close
+
+open [Core1stBreak]
+    CoreBreak = @DeathNum("KQ_Core01") + @DeathNum("KQ_Core02") + @DeathNum("KQ_Core03") + @DeathNum("KQ_Core04").
+
+    if CoreBreak >= KeyCore0
+    then open
+        itemdrop InterruptArg "KQ_Key01" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore0 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore1
+    then open
+        itemdrop InterruptArg "KQ_Key01" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore1 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore2
+    then open
+        itemdrop InterruptArg "KQ_Key01" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore2 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore3
+    then open
+        itemdrop InterruptArg "KQ_Key01" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore3 = 100000.
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Layer2nd]
+    timelimit Min 8.
+    deathcountclear.
+    regengroup "KDGoldHill" "KDGold_2_Mine01".
+    regengroup "KDGoldHill" "KDGold_2_Mine02".
+    regengroup "KDGoldHill" "KDGold_2_Mine03".
+    regengroup "KDGoldHill" "KDGold_2_Mine04".
+    regengroup "KDGoldHill" "KDGold_2_Mine05".
+    regengroup "KDGoldHill" "KDGold_2_Mine07".
+    regengroup "KDGoldHill" "KDGold_2_Mine08".
+    regengroup "KDGoldHill" "KDGold_2_Mine09".
+    regengroup "KDGoldHill" "KDGold_2_Mine10".
+    regengroup "KDGoldHill" "KDGold_2_Mine11".
+    regengroup "KDGoldHill" "KDGold_2_Mob01".
+    regengroup "KDGoldHill" "KDGold_2_Mob02".
+    regengroup "KDGoldHill" "KDGold_2_Mob03".
+    regengroup "KDGoldHill" "KDGold_2_Mob04".
+    regengroup "KDGoldHill" "KDGold_2_Mob05".
+    regengroup "KDGoldHill" "KDGold_2_Mob06".
+    regengroup "KDGoldHill" "KDGold_2_Mob07".
+    regengroup "KDGoldHill" "KDGold_2_Mob08".
+    regengroup "KDGoldHill" "KDGold_2_Mob09".
+    regengroup "KDGoldHill" "KDGold_2_Mob10".
+    regengroup "KDGoldHill" "KDGold_2_Mob11".
+    regengroup "KDGoldHill" "KDGold_2_Mob12".
+
+    chatwin "KQ_G_BossTombRaider" "FirstGateOpen".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset NPCClickHandle "" 1 Door2nd "Door2ndClick".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core2ndBreakA".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core2ndBreakB".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core2ndBreakC".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core2ndBreakD".
+
+    CoreBreak = 0.
+    TotalCore = @Count("KQ_Core01") + @Count("KQ_Core02") + @Count("KQ_Core03") + @Count("KQ_Core04").
+
+    KeyCore0 = @Random(40 70).
+    KeyCore1 = @Random(60 80).
+    KeyCore2 = @Random(60 90).
+
+    KeyCore0 = (KeyCore0 * TotalCore) / 100.        ; 수식은 뒤에서부터 계산되므로 () 필요
+    KeyCore1 = (KeyCore1 * TotalCore) / 100.
+    KeyCore2 = (KeyCore2 * TotalCore) / 100.
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Door2ndClick]
+    whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+    invensearch Slot Opener "KQ_Key02".                 ; Opener의 인벤토리에서 KQ_Key01를 찾음
+    if Slot === ""                                      ; 찾지 못했음
+    then open
+        interruptset NPCClickHandle "" 1 Door2nd "Door2ndClick".   ; 한번 이벤트후 사라지므로 다시 인터럽트 세팅
+        break "Door2ndClick".
+    close
+
+    dooropen Door2nd "KDGOLDBLOCK02".
+    itemerase all "KQ_Key02".
+    ; suicide all.                                        ; 모든 몹을 죽이는 코드 빼버림
+    break "Layer2nd".
+close
+
+open [Core2ndBreakA]
+    call "Core2ndBreak".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core2ndBreakA".
+close
+
+open [Core2ndBreakB]
+    call "Core2ndBreak".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core2ndBreakB".
+close
+
+open [Core2ndBreakC]
+    call "Core2ndBreak".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core2ndBreakC".
+close
+
+open [Core2ndBreakD]
+    call "Core2ndBreak".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core2ndBreakD".
+close
+
+open [Core2ndBreak]
+    CoreBreak = @DeathNum("KQ_Core01") + @DeathNum("KQ_Core02") + @DeathNum("KQ_Core03") + @DeathNum("KQ_Core04").
+
+    if CoreBreak >= KeyCore0
+    then open
+        itemdrop InterruptArg "KQ_Key02" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore0 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore1
+    then open
+        itemdrop InterruptArg "KQ_Key02" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore1 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore2
+    then open
+        itemdrop InterruptArg "KQ_Key02" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore2 = 100000.
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Layer3rd]
+    timelimit Min 13.
+    deathcountclear.
+    regengroup "KDGoldHill" "KDGold_3_Mine01".
+    regengroup "KDGoldHill" "KDGold_3_Mine02".
+    regengroup "KDGoldHill" "KDGold_3_Mine03".
+    regengroup "KDGoldHill" "KDGold_3_Mine04".
+    regengroup "KDGoldHill" "KDGold_3_Mine05".
+    regengroup "KDGoldHill" "KDGold_3_Mine06".
+    regengroup "KDGoldHill" "KDGold_3_Mine07".
+    regengroup "KDGoldHill" "KDGold_3_Mine08".
+    regengroup "KDGoldHill" "KDGold_3_Mine09".
+    regengroup "KDGoldHill" "KDGold_3_Mine10".
+    regengroup "KDGoldHill" "KDGold_3_Mine11".
+    regengroup "KDGoldHill" "KDGold_3_Mine12".
+    regengroup "KDGoldHill" "KDGold_3_Mine13".
+    regengroup "KDGoldHill" "KDGold_3_Mine14".
+    regengroup "KDGoldHill" "KDGold_3_Mine15".
+    regengroup "KDGoldHill" "KDGold_3_Mob01".
+    regengroup "KDGoldHill" "KDGold_3_Mob02".
+    regengroup "KDGoldHill" "KDGold_3_Mob03".
+    regengroup "KDGoldHill" "KDGold_3_Mob04".
+    regengroup "KDGoldHill" "KDGold_3_Mob05".
+    regengroup "KDGoldHill" "KDGold_3_Mob06".
+    regengroup "KDGoldHill" "KDGold_3_Mob07".
+    regengroup "KDGoldHill" "KDGold_3_Mob08".
+    regengroup "KDGoldHill" "KDGold_3_Mob09".
+    regengroup "KDGoldHill" "KDGold_3_Mob10".
+    regengroup "KDGoldHill" "KDGold_3_Mob11".
+    regengroup "KDGoldHill" "KDGold_3_Mob12".
+    regengroup "KDGoldHill" "KDGold_3_Mob13".
+    regengroup "KDGoldHill" "KDGold_3_Mob14".
+    regengroup "KDGoldHill" "KDGold_3_Mob15".
+
+    chatwin "KQ_G_BossTombRaider" "SecondGateOpen".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset NPCClickHandle "" 1 Door3rd "Door3rdClick".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core3rdBreakA".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core3rdBreakB".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core3rdBreakC".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core3rdBreakD".
+
+    CoreBreak = 0.
+    TotalCore = @Count("KQ_Core01") + @Count("KQ_Core02") + @Count("KQ_Core03") + @Count("KQ_Core04").
+
+    KeyCore0 = @Random(40 70).
+    KeyCore1 = @Random(60 80).
+    KeyCore2 = @Random(60 90).
+
+    KeyCore0 = (KeyCore0 * TotalCore) / 100.        ; 수식은 뒤에서부터 계산되므로 () 필요
+    KeyCore1 = (KeyCore1 * TotalCore) / 100.
+    KeyCore2 = (KeyCore2 * TotalCore) / 100.
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Door3rdClick]
+    whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+    invensearch Slot Opener "KQ_Key03".                 ; Opener의 인벤토리에서 KQ_Key01를 찾음
+    if Slot === ""                                      ; 찾지 못했음
+    then open
+        interruptset NPCClickHandle "" 1 Door3rd "Door3rdClick".   ; 한번 이벤트후 사라지므로 다시 인터럽트 세팅
+        break "Door3rdClick".
+    close
+
+    dooropen Door3rd "KDGOLDBLOCK03".
+    itemerase all "KQ_Key03".
+   ;  suicide all.                                        ; 모든 몹을 죽이는 코드 빼버림
+    break "Layer3rd".
+close
+
+open [Core3rdBreakA]
+    call "Core3rdBreak".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core3rdBreakA".
+close
+
+open [Core3rdBreakB]
+    call "Core3rdBreak".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core3rdBreakB".
+close
+
+open [Core3rdBreakC]
+    call "Core3rdBreak".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core3rdBreakC".
+close
+
+open [Core3rdBreakD]
+    call "Core3rdBreak".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core3rdBreakD".
+close
+
+open [Core3rdBreak]
+    CoreBreak = @DeathNum("KQ_Core01") + @DeathNum("KQ_Core02") + @DeathNum("KQ_Core03") + @DeathNum("KQ_Core04").
+
+    if CoreBreak >= KeyCore0
+    then open
+        itemdrop InterruptArg "KQ_Key03" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore0 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore1
+    then open
+        itemdrop InterruptArg "KQ_Key03" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore1 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore2
+    then open
+        itemdrop InterruptArg "KQ_Key03" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore2 = 100000.
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Layer4th]
+    timelimit Min 15.
+    deathcountclear.
+    regengroup "KDGoldHill" "KDGold_4_Mine01".
+    regengroup "KDGoldHill" "KDGold_4_Mine02".
+    regengroup "KDGoldHill" "KDGold_4_Mine03".
+    regengroup "KDGoldHill" "KDGold_4_Mine04".
+    regengroup "KDGoldHill" "KDGold_4_Mine05".
+    regengroup "KDGoldHill" "KDGold_4_Mine06".
+    regengroup "KDGoldHill" "KDGold_4_Mine07".
+    regengroup "KDGoldHill" "KDGold_4_Mine08".
+    regengroup "KDGoldHill" "KDGold_4_Mine09".
+    regengroup "KDGoldHill" "KDGold_4_Mine10".
+    regengroup "KDGoldHill" "KDGold_4_Mine11".
+    regengroup "KDGoldHill" "KDGold_4_Mine12".
+    regengroup "KDGoldHill" "KDGold_4_Mine13".
+    regengroup "KDGoldHill" "KDGold_4_Mine14".
+    regengroup "KDGoldHill" "KDGold_4_Mine15".
+    regengroup "KDGoldHill" "KDGold_4_Mine16".
+    regengroup "KDGoldHill" "KDGold_4_Mine17".
+    regengroup "KDGoldHill" "KDGold_4_Mine18".
+    regengroup "KDGoldHill" "KDGold_4_Mine19".
+    regengroup "KDGoldHill" "KDGold_4_Mine20".
+    regengroup "KDGoldHill" "KDGold_4_Mine21".
+    regengroup "KDGoldHill" "KDGold_4_Mine22".
+    regengroup "KDGoldHill" "KDGold_4_Mine23".
+    regengroup "KDGoldHill" "KDGold_4_Mine24".
+    regengroup "KDGoldHill" "KDGold_4_Mine25".
+    regengroup "KDGoldHill" "KDGold_4_Mob01".
+    regengroup "KDGoldHill" "KDGold_4_Mob02".
+    regengroup "KDGoldHill" "KDGold_4_Mob03".
+    regengroup "KDGoldHill" "KDGold_4_Mob04".
+    regengroup "KDGoldHill" "KDGold_4_Mob05".
+    regengroup "KDGoldHill" "KDGold_4_Mob06".
+    regengroup "KDGoldHill" "KDGold_4_Mob07".
+    regengroup "KDGoldHill" "KDGold_4_Mob08".
+    regengroup "KDGoldHill" "KDGold_4_Mob09".
+    regengroup "KDGoldHill" "KDGold_4_Mob10".
+    regengroup "KDGoldHill" "KDGold_4_Mob11".
+    regengroup "KDGoldHill" "KDGold_4_Mob12".
+    regengroup "KDGoldHill" "KDGold_4_Mob13".
+    regengroup "KDGoldHill" "KDGold_4_Mob14".
+    regengroup "KDGoldHill" "KDGold_4_Mob15".
+    regengroup "KDGoldHill" "KDGold_4_Mob16".
+    regengroup "KDGoldHill" "KDGold_4_Mob17".
+    regengroup "KDGoldHill" "KDGold_4_Mob18".
+    ;regengroup "KDGoldHill" "KDGold_4_Mob19".  보스몹 빼기
+
+    chatwin "KQ_G_BossTombRaider" "ThirdGateOpen".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset NPCClickHandle "" 1 Door4th "Door4thClick".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core4thBreakA".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core4thBreakB".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core4thBreakC".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core4thBreakD".
+
+    CoreBreak = 0.
+    TotalCore = @Count("KQ_Core01") + @Count("KQ_Core02") + @Count("KQ_Core03") + @Count("KQ_Core04").
+
+    KeyCore0 = @Random(40 70).
+    KeyCore1 = @Random(60 80).
+
+    KeyCore0 = (KeyCore0 * TotalCore) / 100.        ; 수식은 뒤에서부터 계산되므로 () 필요
+    KeyCore1 = (KeyCore1 * TotalCore) / 100.
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Door4thClick]
+    whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+    invensearch Slot Opener "KQ_Key04".                 ; Opener의 인벤토리에서 KQ_Key01를 찾음
+    if Slot === ""                                      ; 찾지 못했음
+    then open
+        interruptset NPCClickHandle "" 1 Door4th "Door4thClick".   ; 한번 이벤트후 사라지므로 다시 인터럽트 세팅
+        break "Door4thClick".
+    close
+
+    dooropen Door4th "KDGOLDBLOCK04".
+    itemerase all "KQ_Key04".
+    ; suicide all.                                        ; 모든 몹을 죽이는 코드 빼버림
+    break "Layer4th".
+close
+
+open [Core4thBreakA]
+    call "Core4thBreak".
+    interruptset DeadIndex "" 1 "KQ_Core01" "Core4thBreakA".
+close
+
+open [Core4thBreakB]
+    call "Core4thBreak".
+    interruptset DeadIndex "" 1 "KQ_Core02" "Core4thBreakB".
+close
+
+open [Core4thBreakC]
+    call "Core4thBreak".
+    interruptset DeadIndex "" 1 "KQ_Core03" "Core4thBreakC".
+close
+
+open [Core4thBreakD]
+    call "Core4thBreak".
+    interruptset DeadIndex "" 1 "KQ_Core04" "Core4thBreakD".
+close
+
+open [Core4thBreak]
+    CoreBreak = @DeathNum("KQ_Core01") + @DeathNum("KQ_Core02") + @DeathNum("KQ_Core03") + @DeathNum("KQ_Core04").
+
+    if CoreBreak >= KeyCore0
+    then open
+        itemdrop InterruptArg "KQ_Key04" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore0 = 100000.
+    close
+
+    else if CoreBreak >= KeyCore1
+    then open
+        itemdrop InterruptArg "KQ_Key04" 1000000.       ; 열쇠드롭(100% 확률)
+        broadcast all "ItemDrop".
+        KeyCore1 = 100000.
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [LastBattle]
+    timelimit Min 5.
+    mobregen BossHandle "KQ_G_BossTombRaider" 1727 11068 180 1000 "Normal". ; 몹 만들어짐
+
+    chatwin "KQ_G_BossTombRaider" "LastGateOpen0".
+    pause Sec 2.
+    chatwin "KQ_G_BossTombRaider" "LastGateOpen1".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 BossHandle "BossDead".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [BossDead]
+    ; 게이트세움
+    npcstand GateHandle "MapLinkGate" 950 11299 140 1000 "Normal".
+    interruptset NPCClickHandle "" 1 GateHandle "QuestSuccess".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuccess]
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+
+;    npcchat GateHandle "Suc0".
+;    pause Sec 2.                        ; 2초간 대기
+;    npcchat GateHandle "Suc1".
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close

@@ -1,0 +1,56 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	-			
+#Record	1	Eglack_Skill01_N			
+#Record	2	-			
+#Record	3	Eglack_Skill01_N			
+#Record	4	-			
+#Record	5	Eglack_Skill01_N			
+#Record	6	Eglack_Skill02_N			
+#Record	7	Eglack_Skill02_N			
+#Record	8	Eglack_Skill01_N			
+#Record	9	Eglack_Skill01_N			
+#Record	10	Eglack_Skill02_N			
+#Record	11	Eglack_Skill02_N			
+#Record	12	Eglack_Skill01_N			
+#Record	13	Eglack_Skill01_N			
+#Record	14	Eglack_Skill02_N			
+#Record	15	Eglack_Skill02_N			
+#Record	16	-			
+#Record	17	Eglack_Skill01_N			
+#Record	18	Eglack_Skill01_N			
+#Record	19	Eglack_Skill02_N			
+					
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우	
+#ColumnType	Index	Index	String[33]	String[33]	
+#ColumnName	Condition	Value	From	To	
+#Record	HPLow_ChangeOrder	400	0	Eglack_Skill05_W	
+#Record	HPLow_ChangeOrder	400	1	Eglack_Skill04_N	
+#Record	HPLow_ChangeOrder	400	9	Eglack_Skill03_W	
+#Record	HPLow_ChangeOrder	400	10	Eglack_Skill05_W	
+#Record	HPLow_ChangeOrder	400	11	Eglack_Skill04_N	
+#Record	HPLow_ChangeOrder	400	13	Eglack_Skill02_N	
+#Record	HPLow_ChangeOrder	400	15	Eglack_Skill01_N	
+#Record	HPLow_ChangeOrder	400	16	Eglack_Skill03_W	
+#Record	HPLow_ChangeOrder	400	17	Eglack_Skill02_N	
+#Record	HPLow_ChangeOrder	400	18	Eglack_Skill02_N	
+#Record	HPLow_ChangeOrder	400	19	Eglack_Skill01_N	
+#Record	HPLow_ChangeOrder	700	0	Eglack_Skill04_N	
+#Record	HPLow_ChangeOrder	700	1	Eglack_Skill03_W	
+#Record	HPLow_ChangeOrder	700	6	Eglack_Skill03_W	
+#Record	HPLow_ChangeOrder	700	10	Eglack_Skill03_W	
+#Record	HPLow_ChangeOrder	700	11	Eglack_Skill04_N	
+#Record	HPLow_ChangeOrder	700	14	Eglack_Skill03_W	
+#Record	HPLow_ChangeOrder	700	15	Eglack_Skill01_N	
+#Record	HPLow_ChangeOrder	700	16	Eglack_Skill03_W	
+#Record	HPLow_ChangeOrder	700	19	Eglack_Skill03_W	
+#End					

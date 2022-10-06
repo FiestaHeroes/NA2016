@@ -1,0 +1,436 @@
+open [main]
+	var FlagCapture_1 			""
+		FlagCapture_2 			""
+		FlagCapture_3 			""
+		FlagCapture_4 			""
+		FlagCapture_5 			""
+		PortalCapture_1			""
+		PortalCapture_2			""
+		PortalCapture_3			""
+		PortalCapture_4			""
+		PortalCapture_5			""
+        Guild_A1_Gate			""
+        Guild_A1_Gate_Click     ""
+		Guild_B1_Gate			""
+        Guild_B1_Gate_Click     ""
+		Guild_A2_Gate			""
+        Guild_A2_Gate_Click     ""
+		Guild_B2_Gate			""
+        Guild_B2_Gate_Click     ""
+		Guild_A3_Gate			""
+        Guild_A3_Gate_Click     ""
+		Guild_B3_Gate			""
+        Guild_B3_Gate_Click     ""
+		Guild_A4_Gate			""
+        Guild_A4_Gate_Click     ""
+		Guild_B4_Gate			""
+        Guild_B4_Gate_Click     ""
+		Guild_A5_Gate			""
+        Guild_A5_Gate_Click     ""
+		Guild_B5_Gate			""
+        Guild_B5_Gate_Click     ""
+		Guild_A1_NPC			""
+		Guild_A2_NPC			""
+		Guild_A3_NPC			""
+		Guild_A4_NPC			""
+		Guild_A5_NPC			""
+		Guild_B1_NPC			""
+		Guild_B2_NPC			""
+		Guild_B3_NPC			""
+		Guild_B4_NPC			""
+		Guild_B5_NPC			""
+		Guild_SA1_NPC			""
+		Guild_SA2_NPC			""
+		Guild_SA3_NPC			""
+		Guild_SA4_NPC			""
+		Guild_SA5_NPC			""
+		Guild_SB1_NPC			""
+		Guild_SB2_NPC			""
+		Guild_SB3_NPC			""
+		Guild_SB4_NPC			""
+		Guild_SB5_NPC			""
+        IsValue        		 	""
+		InterruptBlock   		""
+		VictoryGuild			""
+		LoseGuild				""
+		VictoryGuildName		""
+		Opener					""
+        InterruptArg     		""
+		GuildA					""
+		GuildB					""
+		StoneA					""
+		DoorRed					0
+		DoorBlue				0
+		ReadyMin				0
+		PlatyTimeMin			0.
+		
+	GuildA          = @RemoveFirst("InitFlag" " ").
+	GuildB          = @RemoveFirst("InitFlag" " ").
+	ReadyMin		= @RemoveFirst("InitFlag" " ").
+	PlatyTimeMin	= @RemoveFirst("InitFlag" " ").
+	
+	;블럭 설정
+	doorbuild DoorRed "GT_BigGate" 1964 2124 35 4000 "Normal".
+	doorbuild DoorBlue "GT_BigGate" 10483 10518 210 4000 "Normal".
+	doorclose DoorRed "RedDoor".
+	doorclose DoorBlue "BlueDoor".
+;	dooropen DoorRed "RedDoor".
+;	dooropen DoorBlue "BlueDoor".
+	
+	;깃발 세움
+	npcstand FlagCapture_1 "Normal_Flag00" 2968 2868 0 2000 "Normal".
+	npcstand FlagCapture_2 "Normal_Flag01" 6547 6268 0 2000 "Normal".
+	npcstand FlagCapture_3 "Normal_Flag02" 9711 9559 0 2000 "Normal".
+	npcstand FlagCapture_4 "Normal_Flag03" 2475 10710 0 2000 "Normal".
+	npcstand FlagCapture_5 "Normal_Flag04" 10600 2247 0 2000 "Normal".
+	
+;	;깃발 등록 핸들 A점령시 B점령시
+	RegisteFlag FlagCapture_1 "Red_Flag00" "Blue_Flag00". 
+	RegisteFlag FlagCapture_2 "Red_Flag01" "Blue_Flag01". 
+	RegisteFlag FlagCapture_3 "Red_Flag02" "Blue_Flag02". 
+	RegisteFlag FlagCapture_4 "Red_Flag03" "Blue_Flag03". 
+	RegisteFlag FlagCapture_5 "Red_Flag04" "Blue_Flag04". 
+	
+	;포탈 세팅 
+	npcstand PortalCapture_1 "GT_TargetGate_Normal" 5084 3326 0 2000 "Normal".
+	npcstand PortalCapture_2 "GT_TargetGate_Normal" 5361 7909 0 2000 "Normal".
+	npcstand PortalCapture_3 "GT_TargetGate_Normal" 7949 9399 0 2000 "Normal".
+	npcstand PortalCapture_4 "GT_TargetGate_Normal" 4118 10360 0 2000 "Normal".
+	npcstand PortalCapture_5 "GT_TargetGate_Normal" 10313 4050 0 2000 "Normal".
+	
+	;포탈 등록
+	RegisterGTPortal PortalCapture_1 FlagCapture_1 "GT_TargetGate_Red" "GT_TargetGate_Blue".
+	RegisterGTPortal PortalCapture_2 FlagCapture_2 "GT_TargetGate_Red" "GT_TargetGate_Blue".
+	RegisterGTPortal PortalCapture_3 FlagCapture_3 "GT_TargetGate_Red" "GT_TargetGate_Blue".
+	RegisterGTPortal PortalCapture_4 FlagCapture_4 "GT_TargetGate_Red" "GT_TargetGate_Blue".
+	RegisterGTPortal PortalCapture_5 FlagCapture_5 "GT_TargetGate_Red" "GT_TargetGate_Blue".
+                           
+	;게이트 세움 A
+	npcstand Guild_A1_Gate "GuildGate00" 1784 1045 240 1000 "Normal".
+	npcstand Guild_A2_Gate "GuildGate00" 1607 1032 240 1000 "Normal".
+	npcstand Guild_A3_Gate "GuildGate00" 1429 1041 240 1000 "Normal".
+	npcstand Guild_A4_Gate "GuildGate00" 1954 1050 240 1000 "Normal".
+	npcstand Guild_A5_Gate "GuildGate00" 2114 1055 240 1000 "Normal".
+	                                 
+	;게이트 등록 소속길드 , 소속깃발 , 사용가능게이트 
+	RegisteGate Guild_A1_Gate GuildA FlagCapture_1 "GuildGate01".
+	RegisteGate Guild_A2_Gate GuildA FlagCapture_2 "GuildGate02".
+	RegisteGate Guild_A3_Gate GuildA FlagCapture_3 "GuildGate03".
+	RegisteGate Guild_A4_Gate GuildA FlagCapture_4 "GuildGate04".
+	RegisteGate Guild_A5_Gate GuildA FlagCapture_5 "GuildGate05".
+	
+	;게이트 사용 인터럽트 등록
+	interruptset NPCClickHandle "" 99999 Guild_A1_Gate "Guild_A1_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_A2_Gate "Guild_A2_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_A3_Gate "Guild_A3_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_A4_Gate "Guild_A4_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_A5_Gate "Guild_A5_Gate_Click". 
+	
+	;게이트 세움 B
+	npcstand Guild_B1_Gate "GuildGate00" 10410 11558 240 1000 "Normal".
+	npcstand Guild_B2_Gate "GuildGate00" 10320 11403 240 1000 "Normal".
+	npcstand Guild_B3_Gate "GuildGate00" 10271 11234 240 1000 "Normal".
+	npcstand Guild_B4_Gate "GuildGate00" 10557 11690 240 1000 "Normal".
+	npcstand Guild_B5_Gate "GuildGate00" 10731 11768 240 1000 "Normal".
+	
+	
+	;게이트 등록 소속길드 , 소속깃발 , 사용가능게이트 
+	RegisteGate Guild_B1_Gate GuildB FlagCapture_1 "GuildGate01".
+	RegisteGate Guild_B2_Gate GuildB FlagCapture_2 "GuildGate02".
+	RegisteGate Guild_B3_Gate GuildB FlagCapture_3 "GuildGate03".
+	RegisteGate Guild_B4_Gate GuildB FlagCapture_4 "GuildGate04".
+	RegisteGate Guild_B5_Gate GuildB FlagCapture_5 "GuildGate05".
+	
+	;게이트 사용 인터럽트 등록
+	interruptset NPCClickHandle "" 99999 Guild_B1_Gate "Guild_A1_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_B2_Gate "Guild_A2_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_B3_Gate "Guild_A3_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_B4_Gate "Guild_A4_Gate_Click". 
+	interruptset NPCClickHandle "" 99999 Guild_B5_Gate "Guild_A5_Gate_Click". 
+	
+	;스킬 사용할 몬스터 등록
+	npcstand Guild_A1_NPC "GTI_Totem" 2968 2868 0 2000  "Normal".
+	npcstand Guild_A2_NPC "GTI_Totem" 6547 6268 0 2000  "Normal".
+	npcstand Guild_A3_NPC "GTI_Totem" 9711 9559 0 2000  "Normal".
+	npcstand Guild_A4_NPC "GTI_Totem" 2475 10710 0 2000 "Normal".
+	npcstand Guild_A5_NPC "GTI_Totem" 10600 2247 0 2000 "Normal".
+	
+	npcstand Guild_B1_NPC "GTI_Totem" 2967 2867 0 2000  "Normal".
+	npcstand Guild_B2_NPC "GTI_Totem" 6546 6267 0 2000  "Normal".
+	npcstand Guild_B3_NPC "GTI_Totem" 9710 9558 0 2000  "Normal".
+	npcstand Guild_B4_NPC "GTI_Totem" 2474 10709 0 2000 "Normal".
+	npcstand Guild_B5_NPC "GTI_Totem" 10599 2246 0 2000 "Normal".
+	
+	
+	npcstand Guild_SA1_NPC "GTI_TotemSummon" 2968 2768 0 2000  "Normal".
+	npcstand Guild_SA2_NPC "GTI_TotemSummon" 6237 6268 0 2000  "Normal".
+	npcstand Guild_SA3_NPC "GTI_TotemSummon" 9711 9459 0 2000  "Normal".
+	npcstand Guild_SA4_NPC "GTI_TotemSummon" 2575 10710 0 2000 "Normal".
+	npcstand Guild_SA5_NPC "GTI_TotemSummon" 10700 2247 0 2000 "Normal".
+	
+	npcstand Guild_SB1_NPC "GTI_TotemSummon" 2968 2768 0 2000  "Normal".
+	npcstand Guild_SB2_NPC "GTI_TotemSummon" 6237 6268 0 2000  "Normal".
+	npcstand Guild_SB3_NPC "GTI_TotemSummon" 9711 9459 0 2000  "Normal".
+	npcstand Guild_SB4_NPC "GTI_TotemSummon" 2575 10710 0 2000 "Normal".
+	npcstand Guild_SB5_NPC "GTI_TotemSummon" 10700 2247 0 2000 "Normal".
+
+	;NPC 
+	GTRegisterNPC Guild_A1_NPC GuildA. 
+	GTRegisterNPC Guild_A2_NPC GuildA.
+	GTRegisterNPC Guild_A3_NPC GuildA. 
+	GTRegisterNPC Guild_A4_NPC GuildA.
+	GTRegisterNPC Guild_A5_NPC GuildA. 
+	
+	GTRegisterNPC Guild_B1_NPC GuildB. 
+	GTRegisterNPC Guild_B2_NPC GuildB.
+	GTRegisterNPC Guild_B3_NPC GuildB. 
+	GTRegisterNPC Guild_B4_NPC GuildB.
+	GTRegisterNPC Guild_B5_NPC GuildB. 
+	
+	GTRegisterNPC Guild_SA1_NPC GuildA. 
+	GTRegisterNPC Guild_SA2_NPC GuildA.
+	GTRegisterNPC Guild_SA3_NPC GuildA. 
+	GTRegisterNPC Guild_SA4_NPC GuildA.
+	GTRegisterNPC Guild_SA5_NPC GuildA. 
+	
+	GTRegisterNPC Guild_SB1_NPC GuildB. 
+	GTRegisterNPC Guild_SB2_NPC GuildB.
+	GTRegisterNPC Guild_SB3_NPC GuildB. 
+	GTRegisterNPC Guild_SB4_NPC GuildB.
+	GTRegisterNPC Guild_SB5_NPC GuildB. 
+	
+	;Adven Item
+	GTMobRegenKey "lose_Itembox_a1" 1 GuildA.
+	GTMobRegenKey "lose_Itembox_a2" 1 GuildA.
+	GTMobRegenKey "lose_Itembox_a3" 1 GuildA.
+	GTMobRegenKey "lose_Itembox_a4" 2 GuildA.
+	GTMobRegenKey "lose_Itembox_a5" 2 GuildA.
+	
+	GTMobRegenKey "lose_Itembox_b1" 1 GuildB.
+	GTMobRegenKey "lose_Itembox_b2" 1 GuildB.
+	GTMobRegenKey "lose_Itembox_b3" 1 GuildB.
+	GTMobRegenKey "lose_Itembox_b4" 2 GuildB.
+	GTMobRegenKey "lose_Itembox_b5" 2 GuildB.
+	
+		
+	;이기는 길드 체크
+	interruptset WinGuild "" 1 "WinnerGuildCheck".
+	
+;	doorclose DoorRed "RedDoor".
+;	doorclose DoorBlue "BlueDoor".
+	
+	timelimit Min ReadyMin.
+	
+    ; 일정시간 지나도록 로긴 안함
+    waitlogin StoneA.
+    if StoneA == 0
+    then open
+        call "CancelOfTournament".
+    close
+
+	;탐험시간	
+	call "MapInvestigation".
+	
+	battlestart guildtournamentstart 5.
+    pause sec 5.
+	battlestart guildtournamentstart 0.
+	
+	dooropen DoorRed "RedDoor".
+	dooropen DoorBlue "BlueDoor".
+	
+
+	timelimit min PlatyTimeMin.
+	call "WaitTimeLimit".
+	
+	battlestop Guild.
+	VictoryGuild = @GetWinnerGuild(). ; none 이면 비김 
+	
+	if VictoryGuild === "none"
+	then open
+;		chatwin "RouTownChiefRoumenus" "DualResult" VictoryGuild. 
+		timelimit sec 20.
+		call "DiceGame".
+	close
+	
+	VictoryGuild = @GetWinnerGuild(). ; none 이면 비김 승리 길드 번호 줌
+	
+	if VictoryGuild == GuildA
+	then open
+		call "GuildAWin".
+	close
+	else open	
+		call "GuildBWin".	
+	close
+close ;END MAIN
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [MapInvestigation]
+    interruptset TimeOut "" 1 "EndOfInvestigation".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EndOfInvestigation]
+    break "MapInvestigation".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open[ Guild_A1_Gate_Click ]
+	whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+		
+	IsValue = @IsGateUse( FlagCapture_1 Opener InterruptArg ).
+	if IsValue == 1
+	then open
+		teleport SomeWhere Opener 5084 3326.
+	close
+	else open
+		broadcast handle "게이트 사용 권한이 없습니다." Opener.
+	close
+;	interruptset NPCClickHandle "" 1 Guild_A1_Gate "Guild_A1_Gate_Click". ;다시 설정
+close
+
+open[ Guild_A2_Gate_Click ]
+	whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+		
+	IsValue = @IsGateUse( FlagCapture_2 Opener InterruptArg ).
+	if IsValue == 1
+	then open
+		teleport SomeWhere Opener 5361 7909.
+	close
+	else open
+		broadcast handle "게이트 사용 권한이 없습니다." Opener.
+	close
+;	interruptset NPCClickHandle "" 1 Guild_A1_Gate "Guild_A1_Gate_Click". ;다시 설정
+close
+
+open[ Guild_A3_Gate_Click ]
+	whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+		
+	IsValue = @IsGateUse( FlagCapture_3 Opener InterruptArg ).
+	if IsValue == 1
+	then open
+		teleport SomeWhere Opener 7949 9399.
+	close
+	else open
+		broadcast handle "게이트 사용 권한이 없습니다." Opener.
+	close
+;	interruptset NPCClickHandle "" 1 Guild_A1_Gate "Guild_A1_Gate_Click". ;다시 설정
+close
+
+open[ Guild_A4_Gate_Click ]
+	whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+		
+	IsValue = @IsGateUse( FlagCapture_4 Opener InterruptArg ).
+	if IsValue == 1
+	then open
+		teleport SomeWhere Opener 4118 10360.
+	close
+	else open
+		broadcast handle "게이트 사용 권한이 없습니다." Opener.
+	close
+;	interruptset NPCClickHandle "" 1 Guild_A1_Gate "Guild_A1_Gate_Click". ;다시 설정
+close
+
+open[ Guild_A5_Gate_Click ]
+	whoclickme Opener InterruptArg.                     ; InterruptArg를 클릭한 사람을 찾음
+		
+	IsValue = @IsGateUse( FlagCapture_5 Opener InterruptArg ).
+	if IsValue == 1
+	then open
+		teleport SomeWhere Opener 10313 4050.
+	close
+	else open
+		broadcast handle "게이트 사용 권한이 없습니다." Opener.
+	close
+;	interruptset NPCClickHandle "" 1 Guild_A1_Gate "Guild_A1_Gate_Click". ;다시 설정
+close
+
+;------------------------------------------------------------------------------
+;루프 를 위한 함수
+open [WaitTimeLimit]
+    interruptset TimeOut "" 1 "LimitTimeOut".
+	
+;	interruptset PlayerEliminate "" 1 "CancelOfTournament".
+    interruptset GuildEliminate "" 1 GuildA "GuildBWin" 600.    ; GuildA가 전멸시
+    interruptset GuildEliminate "" 1 GuildB "GuildAWin" 600.    ; GuildB가 전멸시
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [LimitTimeOut]
+    break "WaitTimeLimit".
+close
+
+open [GuildAWin]
+    var Winner GuildA
+        Loser  GuildB.
+
+    call "EndOfTournament".
+close
+
+open [GuildBWin]
+    var Winner GuildB
+        Loser  GuildA.
+
+    call "EndOfTournament".
+close
+
+open [WinnerGuildCheck]
+	var WinGuild	0.
+	WinGuild = @RemoveFirst("InterruptArg" " ").
+	if WinGuild == GuildA
+	then open
+		call "GuildAWin".
+	close
+	else open	
+		call "GuildBWin".	
+	close
+close
+
+open [EndOfTournament]
+    battlestop Guild.
+
+    gtresult Result Winner Loser.
+
+	endofgt Winner Loser.  ; EndOfGuildTournament : 필드의 FieldMap::fm_GuildTournamentInform 클리어, guildtournamentarray[].gta_Struct.nTournamentSeed 클리어
+
+	interruptclear.
+	
+	SaveLinkto "Eld" "Eld" 17214 13445.
+	pause sec 100.
+	
+	linkto observer "Eld" "Eld" 17214 13445.
+    linkto all "Eld" "Eld" 17214 13445.
+	ClearSaveLinkto.
+    break "main".
+close
+
+open [CancelOfTournament]
+    endofgt 0 0.  ; EndOfGuildTournament : 필드의 FieldMap::fm_GuildTournamentInform 클리어, guildtournamentarray[].gta_Struct.nTournamentSeed 클리어
+	gtresult Result 0 0.
+	linkto observer "Eld" "Eld" 17214 13445.
+    break "main".
+close
+
+open[ DiceGame ]
+	DiceGameStart 15.
+
+	interruptset TimeOut "" 1 "fnDieGameEnd".
+	
+	infinite 
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open[ fnDieGameEnd ]
+	break "DiceGame".
+close

@@ -1,0 +1,307 @@
+open [RegenGorDonMaster]
+	print "Regen RegenGorDonMaster".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea01" "Breeder" "EventManagerA".
+close
+
+open [RegenBat]
+	print "Regen RegenBat".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea07" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea08" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea11" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea24" "Breeder" "EventManagerA".
+close
+
+open [RegenFireViVi]
+	print "Regen RegenFireViVi".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea10" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea12" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea39" "Breeder" "EventManagerA".
+close
+
+open [RegenSkelArcher]
+	print "Regen RegenSkelArcher".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea04" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea09" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea18" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea19" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea21" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea28" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea30" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea33" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea37" "Breeder" "EventManagerA".
+close
+
+open [RegenSkeleton]
+	print "Regen RegenSkeleton".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea02" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea03" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea31" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea35" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea36" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea42" "Breeder" "EventManagerA".
+close
+
+open [RegenSkelKnight]
+	print "Regen RegenSkelKnight".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea14" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea15" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea20" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea25" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea26" "Breeder" "EventManagerA".
+close
+
+open [RegenSkelWarrior]
+	print "Regen RegenSkelWarrior".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea05" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea23" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea27" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea32" "Breeder" "EventManagerA".
+close
+
+open [RegenSpider]
+	print "Regen RegenSpider".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea13" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea17" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea38" "Breeder" "EventManagerA".
+close
+
+open [RegenZombie]
+	print "Regen RegenZombie".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea06" "Breeder" "EventManagerA".
+    mobregen Aggressive "KDEchoCave" "KDEchoCaveArea29" "Breeder" "EventManagerA".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [main]
+    var MyName.
+    var MyHandle.
+    myname MyName.
+    myhandle MyHandle.
+
+    var KQResult.
+
+    call MyName "DefRoutine".
+close
+
+open [DefRoutine]
+close
+
+open [WaitPlayerEntry]
+    var InitRest.
+    var CurRest.
+    kqrestminute InitRest.                ; 남은 시간을 분단위로 얻어옴
+
+    var Ply.
+    Ply = 0.
+    while Ply == 0
+    open
+        howmanymob Ply "Player".           ; 들어온 플레이어들 확인
+
+        kqrestminute CurRest.                ; 남은 시간을 분단위로 얻어옴
+        if InitRest - CurRest > 5       ; 5분간 대기
+        then
+        open
+            print "Room vanish".
+            endofevent KingdomQuest 0.       ; 킹덤퀘스트 실패로 마무리
+            break "main".
+        close
+    close
+close
+
+open [IsTimeUp]            ; 시간제한이 다 되었는지 확인
+    print "IsTimeUp".
+    var TimeUp.
+    kqrestminute TimeUp.                ; 남은 시간을 분단위로 얻어옴
+    print "EventManagerAIsTimeUp : " % TimeUp % "Minute left".
+    if TimeUp == 0                      ; 시간오버
+    then
+    open
+        print "IsTimeUp : Exit 0".
+        KQResult = "Fail".
+        break "MainLoop".
+    close
+
+    var Ply.
+    howmanymob Ply "Player".           ; 남아있는 플레이어들 확인
+    print "EventManagerAIsTimeUp : " % Ply % "Player left".
+    if Ply == 0
+    then
+    open
+        print "IsTimeUp : Exit 1".
+        KQResult = "Fail".
+        break "MainLoop".
+    close
+
+    var NumGoden.
+
+    howmanymob NumGoden "KQ_GorDonMaster".
+    if NumGoden == 0
+    then
+    open
+        print "IsTimeUp : Exit 2".
+        KQResult = "Success".
+        break "MainLoop".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [EventManagerAMobAppend]
+    var Mobs.
+    howmanymob Mobs "KQ_" % AppendMobName.
+
+    print "KQ_" % AppendMobName % "[" % Mobs % "]".
+
+    if Mobs < @("Num" % AppendMobName)
+    then
+    open
+        call "Regen" % AppendMobName.
+    close
+close
+
+open [EventManagerA]
+
+    print "EventManagerA : Entry".
+
+    var CurMap.
+    currentmap CurMap.                  ; 현재 주인몹이 있는 맵 리턴
+
+    ; 플레이어가 들어오기를 기다림
+    call "WaitPlayerEntry".
+
+    ; 모든 몹 리젠
+    call "RegenGorDonMaster".
+    call "RegenBat".
+    call "RegenFireViVi".
+    call "RegenSkelArcher".
+    call "RegenSkeleton".
+    call "RegenSkelKnight".
+    call "RegenSkelWarrior".
+    call "RegenSpider".
+    call "RegenZombie".
+
+
+    ; 기본 몹수 얻기 위해
+    var NumBat.
+    var NumFireViVi.
+    var NumGhost.
+    var NumOldFox.
+    var NumSkelArcher.
+    var NumSkeleton.
+    var NumSkelKnight.
+    var NumSkelWarrior.
+    var NumSpider.
+    var NumZombie.
+
+    howmanymob NumBat "KQ_Bat".
+    howmanymob NumFireViVi "KQ_FireViVi".
+    howmanymob NumSkelArcher "KQ_SkelArcher".
+    howmanymob NumSkeleton "KQ_Skeleton".
+    howmanymob NumSkelKnight "KQ_SkelKnight".
+    howmanymob NumSkelWarrior "KQ_SkelWarrior".
+    howmanymob NumSpider "KQ_Spider".
+    howmanymob NumZombie "KQ_Zombie".
+
+    NumBat = NumBat / 2.
+    NumFireViVi = NumFireViVi / 2.
+    NumGhost = NumGhost / 2.
+    NumOldFox = NumOldFox / 2.
+    NumSkelArcher = NumSkelArcher / 2.
+    NumSkeleton = NumSkeleton / 2.
+    NumSkelKnight = NumSkelKnight / 2.
+    NumSkelWarrior = NumSkelWarrior / 2.
+    NumSpider = NumSpider / 2.
+    NumZombie = NumZombie / 2.
+
+    var AppendMobName.
+    open [MainLoop]
+        infinite
+        open
+            ; 모자란 몹 추가
+            AppendMobName = "Bat".          call "EventManagerAMobAppend".
+            AppendMobName = "FireViVi".     call "EventManagerAMobAppend".
+            AppendMobName = "SkelArcher".   call "EventManagerAMobAppend".
+            AppendMobName = "Skeleton".     call "EventManagerAMobAppend".
+            AppendMobName = "SkelKnight".   call "EventManagerAMobAppend".
+            AppendMobName = "SkelWarrior".  call "EventManagerAMobAppend".
+            AppendMobName = "Spider".       call "EventManagerAMobAppend".
+            AppendMobName = "Zombie".       call "EventManagerAMobAppend".
+
+            call "IsTimeUp".
+        close
+    close
+
+    wait sec 3.
+    if KQResult === "Success"   ; 성공
+    then
+    open
+        reward KingdomQuest.         ; 리워드를 줌
+        broadcast all "고든마스터의 습격을 성공적으로 막아냈습니다.".
+        endofevent KingdomQuest 1.  ; 킹덤퀘스트 성공으로 마무리
+    close
+    else
+    open
+        broadcast all "고든마스터의 습격을 막는데 실패하였습니다.".
+        endofevent KingdomQuest 0.       ; 킹덤퀘스트 실패로 마무리
+    close
+
+    broadcast all "30초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "20초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "10초후 루멘으로 이동합니다.".
+    wait sec 5.
+    broadcast all "5초후 루멘으로 이동합니다.".
+    wait sec 5.
+    linkto all "Rou" "Rou" 7907 8572.
+
+    mapclear all.
+
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [KQ_GorDonMaster]
+    var MaxHP.
+    currenthp MaxHP.   ; 맥스 HP 측정
+
+    var NextSummonHPRate.
+    var NextTeleportHPRate.
+
+    NextSummonHPRate = 910.
+    NextTeleportHPRate = 800.
+
+    var CurHP.
+    var CurHPRate.
+    open [MainLoop]
+        infinite
+        open
+            currenthp CurHP.
+            CurHPRate = (CurHP * 1000) / MaxHP.   ; 주의 : 이런 수식은 뒤에서부터 실행됨!!!!
+
+            ; 소환체크
+            if CurHPRate < NextSummonHPRate
+            then
+            open
+                shout all "" "깨어나거라, 어둠의 존재들이여..".
+                mobsummon Aggressive "KQ_GorDon" 5 "Breeder" "KQ_GorDonMaster".
+                NextSummonHPRate = NextSummonHPRate - 91.
+            close
+
+            ; 텔레포트 체크
+            if CurHPRate < NextTeleportHPRate
+            then
+            open
+                shout all "" "어리석은 것들 같으니, 능력이 되면 날 찾아봐라.".
+                skillblast me "GoMasterTeleportStart".
+                NextTeleportHPRate = NextTeleportHPRate - 200.
+            close
+            call "IsTimeUp".
+        close
+    close
+
+    if KQResult === "Success"   ; 성공
+    then
+    open
+        shout All "" "안돼!!!!".
+    close
+    else
+    open
+        shout All "" "후후후, 오랜만에 질좋은 영혼들을 잔뜩 모았군...".
+    close
+close

@@ -1,0 +1,68 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+; 2013-02-07 발렌타인이벤트_슬라임맺어주기			
+#Record	E_DannySlime_Chat01	Please help my mom to come back to father and reconcile with him!	
+#Record	E_MikeSlime01_Chat01	Please help my mother come back to my father!	
+#Record	E_MomSlime01_Chat01	I won't go back until you apologize to me!	
+#Record	E_DadSlime_Chat01	Please come back to me my love...	
+#Record	E_DadSlime_01	You've finally came back.	
+#Record	E_MomSlime_01	I don't forgive you completely but oh well...	
+			
+; 2013-03-28 포밍의 마법 퍼즐			
+#Record	Xiaoming_Chat01	It's taken me        almost ten years   to find the Puzzle  God...	
+#Record	Xiaoming_Chat02	I'd like to see my   stunning wife and  lovely children.	
+#Record	Xiaoming_Chat03	Pay just one silverand become the   Puzzle God! Then  I'll go to my family.	
+#Record	Xiaoming_01	Take a close look so that you're ready to solve the puzzle correctly!	
+#Record	Xiaoming_02	"Clicking on a puzzlepiece will move it to an empty space. If there is no activity for 30 seconds, game will be forfeited."	
+#Record	Xiaoming_03	You did well! Maybe try the puzzle again after a little break? It only costs one silver.	
+#Record	Xiaoming_04	"Huh, that didn't go so well. Try again after taking a little break. It only costs one silver."	
+#Record	Xiaoming_05	You obviously do not have enough money. Come back when you've got one silver!	
+#Record	SystemMsg_01	Please wait until the previously started adventure with the puzzle has finished.	
+#Record	SystemMsg_02	Try again after 10 seconds.	
+#Record	SystemMsg_03	"Unfortunately, the puzzle has ended. You were inactive for too long!"	
+			
+; 2013-09-13 2013 할로윈이벤트			
+#Record	SystemMsg_01	You can only pass through the gate if you turn into a monster.	
+#Record	E_HwinPhino_Chat01	There are thieves stealing candy. They're not far from here.	
+#Record	E_HwinPhino_Chat02	"If they get their hands on the candy, bad things will happen!"	
+#Record	E_HwinFlie_Chat01	"If you change into a monster, you can enter the Temple of Mystery!"	
+#Record	E_HwinFlie_Chat02	I wonder what's inside...	
+			
+;2013-11-14 2013 크리스마스이벤트			
+#Record	E_X_Notice_TreeUp01	The tree is now level 2 and can hold more ornaments.	
+#Record	E_X_Notice_TreeUp02	The tree is now level 3 and can hold shining ornaments.	
+#Record	E_X_Notice_TreeUp03	The tree is now level 4 and its light becomes brighter. 	
+#Record	E_X_Notice_TreeUp04	The tree is now level 5 and looks gorgeous.	
+#Record	E_X_Notice_TreeUp05	The Prankster Kebings are stealing the tree ornaments.	
+#Record	E_X_SysMsg_Deco01	You hung a star ornament to the Christmas Wish Tree.	
+#Record	E_X_SysMsg_Deco02	You hung a star ornament to Rudolph's Wish Tree.	
+#Record	E_X_SysMsg_Deco03	You hung a star ornament to Santa Elf's Wish Tree.	
+#Record	E_X_SysMsg_Deco04	You hung a star ornament to Santa's Wish Tree.	
+#Record	E_X_SysMsg_Deco05	You hung a star ornament to Isya's Wish Tree.	
+#Record	E_X_ErrMsg_DecoFail	"You can only use a star ornament, please try again."	
+#Record	E_X_Notice_Buff01	You can feel the Christmas Wish.	
+#Record	E_X_Notice_Buff02	You can feel Rudolph's Wish.	
+#Record	E_X_Notice_Buff03	You can feel the Santa Elf's Wish.	
+#Record	E_X_Notice_Buff04	You can feel Santa's Wish.	
+#Record	E_X_SysMsg_DecoFail_1	You cannot add any ornaments to the tree. Please try again later.	
+#Record	E_X_Notice_TreeInit	The Prankster Kebings have all escaped! Please decorate the tree again.	
+#Record	E_X_SysMsg_DecoFail_2	Cannot use the item due to an Abnormal State	
+			
+;2014-05-01 킹퀘 마을복귀 메시지			
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+			
+;2014-11-13 2014 크리스마스이벤트			
+#Record	E_XKebingChat01	Don't think we will let you off that easy this time!	
+#Record	E_X_Notice_DefenseStart	The Christmas Kebing's attack has started. Please protect the Christmas Tree	
+#Record	E_X_Notice_DefenseFail	The Christmas Tree has been destoyed by the Christmas Prankster Kebing's	
+#Record	E_X_Notice_TreeRegen	A new tree has been established. Please decorate the tree.	
+#End			

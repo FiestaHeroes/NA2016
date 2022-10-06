@@ -1,0 +1,94 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		UFireDn01	N	4694	11481	0	0	654									
+#record		UFireDn02	N	3649	11310	485	86	-2									
+#record		UFireDn03	N	4741	9048	0	0	794									
+#record		UFireDn04	N	6425	11838	0	0	605									
+#record		UFireDn05	N	6277	10186	561	1028	29									
+#record		UFireDn06	N	7535	9896	795	151	32									
+#record		UFireDn07	N	7701	10993	615	137	-3									
+#record		UFireDn08	N	8819	10642	501	150	27									
+#record		UFireDn09	N	6398	7437	0	0	773									
+#record		UFireDn10	N	7248	9075	628	220	37									
+#record		UFireDn11	N	7529	7989	103	610	23									
+#record		UFireDn12	N	10042	11862	0	0	934									
+#record		UFireDn13	N	9874	9955	614	170	39									
+#record		UFireDn14	N	10431	9129	173	562	-21									
+#record		UFireDn15	N	10425	8252	91	387	31									
+#record		UFireDn16	N	9614	7680	535	94	-22									
+#record		UFireDn17	N	9059	7184	99	347	8									
+#record		UFireDn18	N	9364	6531	90	458	-42									
+#record		UFireDn19	N	9851	5458	70	797	-18									
+#record		UFireDn20	N	10005	4195	0	0	682									
+#record		UFireDn21	N	9233	3788	0	0	787									
+#record		UFireDn22	N	8570	5407	1208	117	-15									
+#record		UFireDn23	N	6414	4586	910	804	1									
+#record		UFireDn24	N	4841	4579	638	217	1									
+#record		UFireDn25	N	3024	3972	0	0	815									
+#record		UFireDn26	N	2977	5898	0	0	913									
+#record		UFireDn27	N	2448	4915	0	0	500									
+#record		UFireDn28	N	3653	4840	0	0	500									
+#record		UFireDn29	N	3096	11107	126	420	36									
+#record		UFireDn30	N	4389	10269	81	536	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		UFireDn01	LavaVivi	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn01	FlameMinemole	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn02	FlameMinemole	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn03	FlameMinemole	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn03	LavaVivi	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn04	FlameMinemole	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn04	LavaVivi	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn05	FlameMinemole	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn05	RedNix	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn06	RedNix	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn07	RedNix	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn07	LavaVivi	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn08	RedNix	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn09	LavaVivi	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn09	FlameMinemole	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn10	FlameMinemole	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn10	LavaVivi	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn11	FlameMinemole	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn12	RedNix	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn12	LavaVivi	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn13	RedNix	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn14	LavaMagmaton	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn15	LavaMagmaton	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn16	LavaMagmaton	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn17	LavaMagmaton	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn18	LavaMagmaton	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn19	LavaMagmaton	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn20	LavaMagmaton	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn21	LavaMagmaton	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn22	BellowKnight	6	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn23	BellowKnight	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn23	BellowKnight-S	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn24	BellowKnight-S	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn24	BellowKnight	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn25	BellowKnight-S	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn25	BellowKnight-G	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn26	BellowKnight-G	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn26	BellowKnight-S	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn27	BellowknightRord	1	0	600	585	615	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn27	BellowKnight-G	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn28	BellowKnight-G	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn28	BellowKnight-S	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn29	FlameMinemole	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UFireDn30	LavaVivi	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+																	
+#end																	

@@ -1,0 +1,36 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	Torin_FC01	I am glad to see you heroes of the Alliance. Pagel's army has already besieged the holy Sanctuary. 	
+#Record	Torin_FC02	"Me and my companions fought nobly, but unfortunately some of them were captured by Pagel. "	
+#Record	Torin_FC03	I will help you stop Pagel's invasion if you rescue my friends. 	
+#Record	Dlich_FC01	The enemy has appeared! Soldiers! Capture them!	
+#Record	Dlich_FC02	"My brother warned me that you would come here. The Henneath Alliance will not prevail. I will imprison you all, just like your friends. "	
+#Record	Dlich_FC03	"I am not afraid of you, even if you have more soldiers with you than before! Army of Greed, go kill them!"	
+#Record	Torin_FC04	Evil will not win. Friends of the Alliance! Forward!!	
+#Record	Wizard_FC01	"Finally the God of Greed appears, didn't you learn your lesson last time?"	
+#Record	Wizard_FC02	"I will send pain to all who are greedy for the power of bijou. You are no exception, even if you are a God. "	
+#Record	Fargels_FC01	Arhhhhh.. Servants of Legel... I will punish you for your arrogance. Do you have any last words?	
+#Record	Wizard_FC03	"Our knights will answer you with spears, swords and magic. Watch yourself. Sanctuary Knightage, forward, destroy Pagel’s army!"	
+#Record	Epis_FC01	"Pagel, I will silence this arrogant girl and her followers. "	
+#Record	Fargels_FC02	"Death Knight Captain, let the soldiers fight and defend me. "	
+#Record	Epis_FC02	"In Pagel’s name, I command the Army of Greed: destroy the Sanctuary Knightage!"	
+#Record	Torin_FC05	I did not expect such a strong enemy. Please be careful. I will go help the wounded. 	
+#Record	Epis_FC03	Ugh.. I am falling asleep… 	
+#Record	Fargels_FC03	Hahahahaha! Did you come to fight me with these little kids? Bijou's High Disciple!!	
+#Record	Wizard_FC04	Worry about the humans and elves behind you. The “greatest God of Greed”! Don’t make me laugh.	
+#Record	Fargels_FC04	I helped him revive to give the army more time… haha.. I almost defeated your Sanctuary Knightage. Now it's time to have some fun with you. 	
+#Record	Wizard_FC05	"I will watch you as you approach Pagel. But, if you do anything suspicious, I will kill you with swords and black magic, even the gods fear. "	
+#Record	Fargels_FC05	Ugh.. Nothing is going well. I will return soon.. 	
+#Record	Wizard_FC06	Thank you so much! You helped me protecting the power of bijou. I will watch over you from now on. I wish you a safe return and happiness. 	
+#Record	Torin_FC06	Oh.. I was too late. You won. Many people from the Alliance will be happy because of this news. God bless Isya..	
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+			
+#End			

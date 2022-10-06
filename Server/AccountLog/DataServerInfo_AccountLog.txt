@@ -1,0 +1,13 @@
+#DEFINE MY_SERVER  ; My Server Info
+  <STRING>         ; Server service name.
+  <STRING>         ; Server service display name.
+  <INTEGER>        ; Server ID
+  <INTEGER>        ; Server World No
+  <INTEGER>        ; Server Zone No
+#ENDDEFINE
+
+MY_SERVER "_AccountLog", 		"_AccountLog", 	1,		0,		0
+
+#include "../9Data/ServerInfo/ServerInfo.txt"
+#END
+

@@ -1,0 +1,17 @@
+;		ItemList in NPC									
+#ignore	\o042			; 인용부호 무시							
+#exchange	#	\x20		; # => space							
+;		2006.01.25									
+											
+#Table	Tab00	;아이템 상점									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05				
+#Record	0 	Pickaxe	Q_Peg	Q_Hammer	-	-	-				
+#Record	1 	El1	-	-	-	-	-				
+#Record	2 	Hay	FlyStone	Sap	Meat	Djewel	Dew				
+#Record	3 	House_MushRoom01	House_MushRoom02	-	-	-	-				
+#Record	4 	WTL_Ratman	WTL_Boar	WTL_Boogy	Recipe_BestLowCurScroll	Recipe_LowCurScroll	-				
+#Record	5 	ShortBow	LongBow	BlackColl	ThoroColl01	RedColl01	-				
+											
+#End											
+		

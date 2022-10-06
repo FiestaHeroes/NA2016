@@ -1,0 +1,523 @@
+; 전역스킬에 대한 방식
+;   1. 스킬테이블에 상태이상 부여 - 스킬시전시 원거리마법만 통하는 상태이상 부여
+;   2. 스킬을 스크립트에서 제어
+
+open [main]
+    var Players             ""
+        Kingkong            ""
+        SubKingkong         ""
+        
+        SelfHealQuantity    ""  ; 매틱마다 얼마씩 차는가
+
+        InterruptBlock      ""
+        InterruptArg        ""
+
+        Boss_1              ""
+        Boss_2              ""
+        Boss_3              ""
+        Boss_4              ""
+        Kingkong            ""
+        Temp                "".
+
+
+
+    waitlogin Players.
+    if Players == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    pause Sec 10.
+
+    scriptfile "KQKingkong".
+
+    timelimit Min 50.
+
+    call "Fi_Boss".
+    call "S_Boss".
+    call "T_Boss".
+    call "Fo_Boss".
+    call "Last_Boss".
+;;;;;;;;;;;;;;;  조금 있다가
+
+
+
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [Fi_Boss]
+
+    regengroup "KDKingkong" "KQ_Kingkong_01_01".
+    regengroup "KDKingkong" "KQ_Kingkong_01_02".
+    regengroup "KDKingkong" "KQ_Kingkong_01_03".
+    regengroup "KDKingkong" "KQ_Kingkong_01_04".
+    regengroup "KDKingkong" "KQ_Kingkong_01_05".
+    regengroup "KDKingkong" "KQ_Kingkong_01_06".
+    regengroup "KDKingkong" "KQ_Kingkong_01_07".
+    regengroup "KDKingkong" "KQ_Kingkong_01_08".
+    regengroup "KDKingkong" "KQ_Kingkong_01_09".
+    regengroup "KDKingkong" "KQ_Kingkong_01_10".
+
+
+    mobregen Boss_1 "KQ_K_Mara" 8877  10999  53 1000 "Normal".
+  ;  mobregen Boss_1 "HeroSlime" 8877  10999  53 1000 "Normal".
+
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".              ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_1 "Fi_BossClear".
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+open [Fi_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "Fi_Boss".    ; 첫번째 보스 스크립트 여기서 멈춰
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [S_Boss]   ; 2번째 스크립트
+
+    regengroup "KDKingkong" "KQ_Kingkong_02_01".
+    regengroup "KDKingkong" "KQ_Kingkong_02_02".
+    regengroup "KDKingkong" "KQ_Kingkong_02_03".
+    regengroup "KDKingkong" "KQ_Kingkong_02_04".
+    regengroup "KDKingkong" "KQ_Kingkong_02_05".
+    regengroup "KDKingkong" "KQ_Kingkong_02_06".
+    regengroup "KDKingkong" "KQ_Kingkong_02_07".
+    regengroup "KDKingkong" "KQ_Kingkong_02_08".
+
+
+    mobregen Boss_2 "KQ_K_Marlone" 4299 7556  53 1000 "Normal".
+  ;  mobregen Boss_2 "HeroSlime" 4299 7556  53 1000 "Normal".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".              ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_2 "S_BossClear".
+
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+                                                     
+open [S_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "S_Boss".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [T_Boss]
+
+    regengroup "KDKingkong" "KQ_Kingkong_03_01".
+    regengroup "KDKingkong" "KQ_Kingkong_03_02".
+    regengroup "KDKingkong" "KQ_Kingkong_03_03".
+    regengroup "KDKingkong" "KQ_Kingkong_03_04".
+    regengroup "KDKingkong" "KQ_Kingkong_03_05".
+    regengroup "KDKingkong" "KQ_Kingkong_03_06".
+    regengroup "KDKingkong" "KQ_Kingkong_03_07".
+    regengroup "KDKingkong" "KQ_Kingkong_03_08".
+    regengroup "KDKingkong" "KQ_Kingkong_03_09".
+    regengroup "KDKingkong" "KQ_Kingkong_03_10". 
+    regengroup "KDKingkong" "KQ_Kingkong_03_11". 
+
+    mobregen Boss_3 "KQ_K_G_Slime" 10635 2210 90 1000 "Normal".
+   ; mobregen Boss_3 "HeroSlime" 10635 2210 90 1000 "Normal".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".         ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_3 "T_BossClear".      ; 보스 3이 죽었을 경우 3스테이지 호출해라
+
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+
+open [T_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "T_Boss".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fo_Boss]
+
+    regengroup "KDKingkong" "KQ_Kingkong_04_01".
+    regengroup "KDKingkong" "KQ_Kingkong_04_02".
+    regengroup "KDKingkong" "KQ_Kingkong_04_03".
+    regengroup "KDKingkong" "KQ_Kingkong_04_04".
+    regengroup "KDKingkong" "KQ_Kingkong_04_05".
+    regengroup "KDKingkong" "KQ_Kingkong_04_06".
+    regengroup "KDKingkong" "KQ_Kingkong_04_07".
+    regengroup "KDKingkong" "KQ_Kingkong_04_08".
+    regengroup "KDKingkong" "KQ_Kingkong_04_09".
+    regengroup "KDKingkong" "KQ_Kingkong_04_10".
+    regengroup "KDKingkong" "KQ_Kingkong_04_11".
+    regengroup "KDKingkong" "KQ_Kingkong_04_12".
+    regengroup "KDKingkong" "KQ_Kingkong_04_13".
+    regengroup "KDKingkong" "KQ_Kingkong_04_14".
+
+
+
+    mobregen Boss_4 "KQ_K_Robo" 2052 2086  53 1000 "Normal".
+  ;  mobregen Boss_4 "HeroSlime" 2052 2086  53 1000 "Normal".
+
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".         ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_4 "Fo_BossClear".      ; 보스 4가 죽었을 경우 4스테이지 호출해라
+
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+
+open [Fo_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "Fo_Boss".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 성공과 실패
+
+open [Last_Boss]
+ regengroup "KDKingkong" "KQ_Kingkong_05_01".
+ regengroup "KDKingkong" "KQ_Kingkong_05_02".
+ regengroup "KDKingkong" "KQ_Kingkong_05_03".
+ regengroup "KDKingkong" "KQ_Kingkong_05_04".
+ regengroup "KDKingkong" "KQ_Kingkong_05_05".
+ regengroup "KDKingkong" "KQ_Kingkong_05_06".
+ regengroup "KDKingkong" "KQ_Kingkong_05_07".
+ regengroup "KDKingkong" "KQ_Kingkong_05_08".
+ regengroup "KDKingkong" "KQ_Kingkong_05_09".
+ regengroup "KDKingkong" "KQ_Kingkong_05_10".
+ regengroup "KDKingkong" "KQ_Kingkong_05_11".
+ regengroup "KDKingkong" "KQ_Kingkong_05_12".
+ regengroup "KDKingkong" "KQ_Kingkong_05_13".
+ regengroup "KDKingkong" "KQ_Kingkong_05_14".
+ regengroup "KDKingkong" "KQ_Kingkong_05_15".
+ regengroup "KDKingkong" "KQ_Kingkong_05_16".
+ regengroup "KDKingkong" "KQ_Kingkong_05_17".
+ regengroup "KDKingkong" "KQ_Kingkong_05_18".
+ regengroup "KDKingkong" "KQ_Kingkong_05_19".
+ regengroup "KDKingkong" "KQ_Kingkong_05_20".
+
+ ; 오리지날 피노플리 리젠
+   mobregen SubKingkong "KQ_K_PhinoFlie" 5521 11532 53 1000 "Normal".
+   pause sec 1.
+   chatwin "KQ_K_PhinoFlie" "Phinoflie01".
+   pause sec 1.
+   chatwin "KQ_K_PhinoFlie" "Phinoflie02".
+   pause sec 1.
+   chatwin "KQ_K_PhinoFlie" "Phinoflie03".
+   pause sec 1.
+
+
+   chatwin "KQ_K_BossPhino" "Kingkong01".
+   pause sec 1.
+   chatwin "KQ_K_BossPhino" "Kingkong02".
+   pause sec 1.
+   chatwin "KQ_K_BossPhino" "Kingkong03".
+   pause sec 1.
+   chatwin "KQ_K_BossPhino" "Kingkong04".
+   pause sec 1.
+   chatwin "KQ_K_BossPhino" "Kingkong05".
+   pause sec 3.
+   
+   chatwin "KQ_K_PhinoFlie" "Phinoflie04".
+   pause sec 1.
+   chatwin "KQ_K_PhinoFlie" "Phinoflie05".
+   pause sec 1.
+   chatwin "KQ_K_PhinoFlie" "Phinoflie06".
+   pause sec 1.
+
+; 오리지날 피노 리젠
+   
+  mobregen Kingkong "KQ_K_BossPhino" 5521 11532  53 1000 "Normal".
+
+  ;Temp 테스트 좌표
+ 
+ ; mobregen Kingkong "KQ_K_BossPhino" 4028 2055 53 1000 "Normal".
+
+    mobdetectrange Kingkong 150.
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".              ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Kingkong "QuestSuccess".
+    interruptset DeadHandle "" 1 SubKingkong "QuestFail".
+
+
+    interruptset TargetChange "" 1 Kingkong "ViewEnemy".     ; Kingkong이 적을 감지했을때
+
+    call "HP1000".
+
+;@# mobweaponrate Kingkong 1000 0 0 300.; 테스트용, 용이 메테오스킬을 자주 쓰도록
+
+    ; 힐
+    interruptset HPLow "" 1 Kingkong 750 "Heal750".
+
+
+    ; 소환
+    interruptset HPLow "" 1 Kingkong 850 "Summon850".
+
+
+    ; 분신
+    interruptset HPLow "" 1 Kingkong 120 "Duplicate120".
+
+; -------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; ---------------------------------------------------------;
+open [QuestSuccess]
+    pause Sec 10.
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+
+    broadcast all "KQReturn60".
+    pause sec 10.
+    broadcast all "KQReturn50".
+    pause sec 10.
+    broadcast all "KQReturn40".
+    pause sec 10.
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "KQFReturn30".
+    pause sec 10.
+    broadcast all "KQFReturn20".
+    pause sec 10.
+    broadcast all "KQFReturn10".
+    pause sec 5.
+    broadcast all "KQFReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+open [ViewEnemy]
+    mobdetectrange Kingkong 1000.         ; 디텍트범위 늘림
+close
+
+; 기술빈도 바꾸기
+open [HP1000]
+    mobweaponrate Kingkong 1000 200 100 0.
+    interruptset HPLow "" 1 Kingkong 900 "HP900".
+close
+
+open [HP900]
+    mobweaponrate Kingkong 1000 200 200 0.
+    interruptset HPLow "" 1 Kingkong 800 "HP800".
+close
+
+open [HP800]
+    mobweaponrate Kingkong 1000 200 150 150.
+    interruptset HPLow "" 1 Kingkong 700 "HP700".
+close
+
+open [HP700]
+    mobweaponrate Kingkong 1000 300 200 0.
+    interruptset HPLow "" 1 Kingkong 600 "HP600".
+close
+
+open [HP600]
+    mobweaponrate Kingkong 1000 350 150 200.
+    interruptset HPLow "" 1 Kingkong 500 "HP500".
+close
+
+open [HP500]
+    mobweaponrate Kingkong 1000 400 300 0.
+    interruptset HPLow "" 1 Kingkong 400 "HP400".
+close
+
+open [HP400]
+    mobweaponrate Kingkong 1000 200 250 250.
+    interruptset HPLow "" 1 Kingkong 300 "HP300".
+close
+
+open [HP300]
+    mobweaponrate Kingkong 1000 300 400 0.
+    interruptset HPLow "" 1 Kingkong 200 "HP200".
+close
+
+open [HP200]
+    mobweaponrate Kingkong 1000 400 400 0.
+    interruptset HPLow "" 1 Kingkong 100 "HP100".
+close
+
+open [HP100]
+    mobweaponrate Kingkong 1000 300 400 30.
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 자기힐링
+open [Heal750]
+    chatwin "KQ_K_BossPhino" "Heal01".
+    pause sec 2. 
+    SelfHealQuantity  = 1500.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+    interruptset HPLow "" 1 Kingkong 550 "Heal550".
+close
+
+open [Heal550]
+    chatwin "KQ_K_BossPhino" "Heal01".
+    pause sec 2.
+    SelfHealQuantity  = 2000.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+    interruptset HPLow "" 1 Kingkong 350 "Heal350".
+close
+
+open [Heal350]
+    chatwin "KQ_K_BossPhino" "Heal01".
+    pause sec 2.
+    SelfHealQuantity  = 2500.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+    interruptset HPLow "" 1 Kingkong 150 "Heal150".
+close
+
+open [Heal150]
+    chatwin "KQ_K_BossPhino" "Heal01".
+    pause sec 2.
+    SelfHealQuantity  = 3000.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+close
+
+open [SelfHealStart]
+    waitidle.        ; 스킬 캐스팅 중이라면 캐스팅이 끝날 때까지 기다림
+
+    abstateset Kingkong "StaQuestEntangle" 1 15000.
+    animate Kingkong "Pino_Bip01_heal".       ; 힐용 애니메이션(15초짜리)
+    interruptset Sec "" 15 1 "SelfHeal".    ; 1초마다 15번 실행
+close
+
+open [SelfHeal]
+    heal Kingkong SelfHealQuantity.
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 소환
+open [Summon850]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_Ogre" 1.
+    summonmob Kingkong "KQ_K_KingCall" 2.
+    interruptset HPLow "" 1 Kingkong 670 "Summon670".
+close
+
+open [Summon670]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_Harkan" 2.
+    summonmob Kingkong "KQ_K_VampireBat" 2.
+    summonmob Kingkong "KQ_K_Prisoner" 1.
+    interruptset HPLow "" 1 Kingkong 620 "Summon620".
+close
+
+open [Summon620]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_VampireBat" 2.
+    summonmob Kingkong "KQ_K_Prisoner" 2.
+    summonmob Kingkong "KQ_K_Torturer" 1.
+    interruptset HPLow "" 1 Kingkong 470 "Summon470".
+close
+
+open [Summon470]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_Torturer" 1.
+    summonmob Kingkong "KQ_K_Templer" 2.
+    summonmob Kingkong "KQ_K_Ratman" 2.
+    interruptset HPLow "" 1 Kingkong 420 "Summon420".
+close
+
+open [Summon420]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_Torturer" 1.
+    summonmob Kingkong "KQ_K_Solider" 1.
+    summonmob Kingkong "KQ_K_Templer" 2.
+    interruptset HPLow "" 1 Kingkong 280 "Summon280".
+close
+
+open [Summon280]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_Solider" 2.
+    summonmob Kingkong "KQ_K_Templer" 1.
+    summonmob Kingkong "KQ_K_Ratman" 1.
+    interruptset HPLow "" 1 Kingkong 240 "Summon240".
+close
+
+open [Summon240]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_GoldenBat" 1.
+    summonmob Kingkong "KQ_K_Spider" 1.
+    summonmob Kingkong "KQ_K_Nox" 2.
+    interruptset HPLow "" 1 Kingkong 170 "Summon170".
+close
+
+open [Summon170]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_Mara" 1.
+    summonmob Kingkong "KQ_K_Marlone" 1.
+    interruptset HPLow "" 1 Kingkong  50 "Summon050".
+close
+
+open [Summon050]
+    chatwin "KQ_K_BossPhino" "Summon01".
+    pause sec 2.
+    summonmob Kingkong "KQ_K_Robo" 1.
+close
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 분신
+open [Duplicate120]
+;@#$    duplicate Kingkong 1.
+close

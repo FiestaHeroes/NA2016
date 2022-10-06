@@ -1,0 +1,27 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Intro0	"Welcome everyone, who wants to participate in the hero tests."	
+#Record	Intro1	"To save this country in danger, we need heroes like you."	
+#Record	Intro2	Show us the results of your training.	
+#Record	Intro3	"You cannot eat the stone here, What? Ah, I am talking about HP stone and SP stone."	
+#Record	Intro4	"Instead, liquid medicine is hidden in this mineral, look for the liquid medicine first."	
+			
+#Record	DualStart	Fight start!!	
+			
+#Record	DualStop	Fight over!! Don't move!!
+		
+#Record	DualResult	"the winner of the first prize %s, the second is %s, the third one is %s, these three will get prizes."
+		
+#Record	KQReturn30	Move to Elderine in 30 seconds.
+#Record	KQReturn20	Move to Elderine in 20 seconds.
+#Record	KQReturn10	Move to Elderine in 10 seconds.
+#Record	KQReturn5	Move to Elderine in 5 seconds.
+
+#End		
+;	2006/09/19 추가	

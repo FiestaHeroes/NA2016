@@ -1,0 +1,217 @@
+open [main]
+    var InterruptBlock      1
+        InterruptArg        2
+        GroomName           ""                  ; 신랑 이름
+        BrideName           ""                  ; 신부 이름
+        GroomHandle         0                   ; 신랑 핸들
+        BrideHandle         0                   ; 신부 핸들
+        Celebrant           0                   ; 진행자
+        Book                0                   ; 서약의 책
+        Door                0                   ; 막자
+		Gate				0					; 게이트
+        .
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    timelimit Min 15.
+	interruptclear.
+	interruptset TimeOut "" 1 "WeddingEnd".
+
+    GroomName = @RemoveFirst("InitFlag" " ").
+	BrideName = @RemoveFirst("InitFlag" " ").
+
+    npcstand Book "PledgeBook" 557 1137 0 1000 "Normal".
+	npcstand Celebrant "WeddingDreian" 501 1106 0 1000 "Normal".
+	
+	doorbuild Door "OX_gate" 559 560 0 1000 "Normal".
+	dooropen Door "door1".
+
+    scriptfile "Wedding".
+
+	; 대기시간
+
+	pause Minute 1.
+	chatwin "WeddingDreian" "Wedding1".
+	pause Minute 1.
+	chatwin "WeddingDreian" "Wedding1".
+	pause Minute 1.
+	chatwin "WeddingDreian" "Wedding1".
+	pause Minute 1.
+	chatwin "WeddingDreian" "Wedding1".
+	pause Minute 1.
+
+	; 혼례시간
+
+	doorclose Door "door1".
+
+	findplayer GroomHandle GroomName  "Wedding".
+	findplayer BrideHandle BrideName  "Wedding".
+
+	teleportall Split 304 833 808 833.
+	teleport SomeWhere GroomHandle 536 580.
+	teleport SomeWhere BrideHandle 582 580.
+    playerwork GroomHandle 536 620.
+	playerwork BrideHandle 582 620.
+	
+    chatwin "WeddingDreian" "Wedding2".
+    pause Sec 10.
+	
+	chatwin "WeddingDreian" "Wedding3".
+	pause Sec 10.
+
+    playerwork GroomHandle 536 1078.
+	playerwork BrideHandle 582 1078.
+	
+    chatwin "WeddingDreian" "Wedding4".
+	pause Sec 10.
+
+    chatwin "WeddingDreian" "Wedding5".
+	pause Sec 10.
+
+    chatwin "WeddingDreian" "Wedding6".
+	pause Sec 10.
+
+    chatwin "WeddingDreian" "Wedding7".
+	pause Sec 10.
+
+    chatwin "WeddingDreian" "Wedding8".
+	pause Sec 10.
+
+    chatwin "WeddingDreian" "Wedding9".
+	pause Sec 10.
+
+    chatwin "WeddingDreian" "Wedding10".
+	pause Sec 10.
+
+	chatwin "WeddingDreian" "Wedding11".
+	pause Sec 10.
+	
+	chatwin "WeddingDreian" "Wedding12".
+	pause Sec 10.
+	
+    chatwin "PledgeBook" "Book1".
+	pause Sec 10.
+	
+    chatwin "PledgeBook" "Book2".
+	pause Sec 10.
+
+    chatwin "PledgeBook" "Book3".
+	pause Sec 10.
+
+    chatwin "PledgeBook" "Book4".
+	pause Sec 10.
+
+    chatwin "PledgeBook" "Book5".
+	pause Sec 10.
+
+	chatwin "PledgeBook" "Book6".
+	pause Sec 10.
+
+	chatwin "PledgeBook" "Book7".
+	pause Sec 10.
+
+	chatwin "PledgeBook" "Book8".
+	pause Sec 10.
+
+	chatwin "PledgeBook" "Book9".
+	pause Sec 10.
+
+	chatwin "WeddingDreian" "Wedding13".
+	pause Sec 10.
+  
+	findplayer GroomHandle GroomName.
+	findplayer BrideHandle BrideName.
+  
+	;call "WaitBookClick".
+
+	weddingcomplete ClickGroom ClickBride.
+
+;	itemcreate GroomHandle "MiniWedding01_1".
+;	itemcreate BrideHandle "MiniWedding01_1".
+
+	abstateset GroomHandle "StaWeddingSub02" 1 259200000.
+	abstateset BrideHandle "StaWeddingSub02" 1 259200000.
+	
+	chatwin "WeddingDreian" "Wedding14".
+	chatwin "WeddingDreian" "Wedding15".
+	
+	dooropen Door "door1".
+	
+	findplayer GroomHandle GroomName  "Wedding".
+	findplayer BrideHandle BrideName  "Wedding".
+  
+	playerwork GroomHandle 536 580.
+	playerwork BrideHandle 582 580.
+	
+	npcstand Gate "MapLinkGate" 549 129 0 1000 "Normal".
+	interruptset NPCClickHandle "" 1 Gate "GateClick".
+	
+	infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+
+	pause Minute 5.
+	
+	call "WeddingEnd".
+close
+
+open [WaitBookClick]
+    var ClickGroom      0
+        ClickBride      0
+		.
+
+    interruptset NPCClickHandle "" 1 Book "BookClick".
+
+    while ClickGroom === 0
+    open
+		if ClickBride === 1
+		then open
+			interruptset NPCClickHandle "" 1 Book "BookClick".	
+		close
+		waitinterrupt InterruptBlock "InterruptArg".
+		call InterruptBlock.	
+    close
+	
+	while ClickBride === 0
+	open
+		if ClickGroom === 1
+		then open
+			interruptset NPCClickHandle "" 1 Book "BookClick".	
+		close	
+		waitinterrupt InterruptBlock "InterruptArg".
+		call InterruptBlock.
+	close
+close
+
+open [BookClick]
+    var mclicker 0.
+
+    whoclickme mclicker InterruptArg.
+
+    if mclicker == GroomHandle
+    then open
+        ClickGroom = 1.
+    close
+
+    if mclicker == BrideHandle
+    then open
+        ClickBride = 1.
+    close
+close
+
+open [GateClick]
+    var mclicker 0.
+
+    whoclickme mclicker InterruptArg.
+	linkto mclicker "Eld" "Eld" 17214 13445.	
+	interruptset NPCClickHandle "" 1 Gate "GateClick".
+close
+
+open [WeddingEnd]
+	linkto all "Eld" "Eld" 17214 13445.
+	vanish mobindex "PledgeBook".
+    vanish mobindex "WeddingDreian".
+    vanish mobindex "MapLinkGate".   
+    break "main".
+close

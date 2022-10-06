@@ -1,0 +1,71 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+;#record		XmasWP	N	15717	13405	369	264	0									
+;		EventSnow01	N	14511	14136	0	0	65									
+;		EventSnow02	N	14914	14184	0	0	65									
+;		EventSnow03	N	15354	14224	0	0	65									
+;		EventSnow04	N	15804	14241	0	0	65									
+;		EventSnow05	N	16284	14221	0	0	65									
+;		EventSnow06	N	16736	14186	0	0	65									
+;		EventSnow07	N	17172	14135	0	0	65									
+;		EventSnow08	N	17245	12710	0	0	72									
+;		EventSnow09	N	16603	12619	0	0	72									
+;		EventSnow10	N	15937	12576	0	0	72									
+;		EventSnow11	N	15270	12599	0	0	79									
+;		EventSnow12	N	14616	12670	0	0	86									
+;		EventSnow13	N	11479	14028	0	0	79									
+;		EventSnow14	N	11210	13848	0	0	79									
+;		EventSnow15	N	11031	13652	0	0	79									
+;		EventSnow16	N	11441	12811	0	0	86									
+;		EventSnow17	N	11226	12987	0	0	72									
+;		EventSnow18	N	11049	13142	0	0	86									
+;		EventSlime	N	14280	14306	0	0	212									
+;		EventPzl01	N	11766	13191	0	0	10									
+;		EventPzl02	N	13571	15523	0	0	10									
+;		EventPzl03	N	16055	14615	0	0	10									
+;		EventHWeen01	N	13056	13742	0	0	10									
+;		EventXmas01	N	15572	13386	0	0	10									
+;		EventXmas02	N	15407	13477	0	0	31									
+;		EventEgg01	N	15521	13407	0	0	10									
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+;#record		XmasWP	ChristmasTree	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+;		EventSnow01	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow02	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow03	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow04	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow05	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow06	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow07	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow08	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow09	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow10	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow11	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow12	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow13	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow14	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow15	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow16	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow17	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSnow18	BH_SnowBall	3	0	10	5	15	-3	7	-2	9	5	15	6	17	0
+;		EventSlime	E_MomSlime	1	0	600	600	600	-4	5	-2	8	0	10	2	13	4
+;		EventPzl01	Xiaoming	1	0	600	600	600	-4	5	-2	8	0	10	2	13	4
+;		EventPzl02	Oluming	1	0	600	600	600	-4	5	-2	8	0	10	2	13	4
+;		EventPzl03	Toryming	1	0	600	600	600	-4	5	-2	8	0	10	2	13	4
+;		EventHWeen01	E_HwinIn	1	0	600	600	600	-4	5	-2	8	0	10	2	13	4
+;		EventXmas01	E_XTreeBig	1	0	10	5	15	-4	5	-2	8	0	10	2	13	4
+;		EventXmas02	E_XKebing_Chat	1	0	300	300	300	-4	5	-2	8	0	10	2	13	4
+;		EventEgg01	Egg2014_GoldEgg	1	0	300	300	300	-4	5	-2	8	0	10	2	13	4
+#end																	

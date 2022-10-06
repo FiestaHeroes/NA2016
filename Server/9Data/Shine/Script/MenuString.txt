@@ -1,0 +1,34 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	LinkTitle	Do you want to move to %s field?	
+			
+;	은빛날개 사용		
+#Record	SilverWingTitle	Use silver wings	
+#Record	SilverWingLocSet	Save location	
+#Record	SilverWingPortal	Fly to the saved location	
+			
+;	부활		
+#Record	Revive	Do you want to revive now?	
+			
+;	2007.1.25일 아이템부수기관련 추가		
+#Record	ItemBreakWarn0	"If you discard this item, it will automatically be destroyed."	
+#Record	ItemBreakWarn1	Do you want to destory the selected item?	
+;	2007.2.16일 아이템버리기관련 추가		
+#Record	ItemDropWarn	Do you want to discard the item?	
+
+;20080603			
+#Record	Summons	Would you like to be summoned by your spouse?	
+			
+; 20080704			
+#Record	ID_DeleteNow	There's no one inside. Would you like to quit?	
+			
+; 20091008			
+#Record	InstantDivorce	Item will be consumed and cannot be cancelled once used	
+
+#End

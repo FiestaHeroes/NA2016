@@ -1,0 +1,33 @@
+;		Item Use Function		
+				
+#Ignore	\o042			
+#Exchange	#	\x20		
+;#delimeter	\x20			
+#Table	ItemUseFunction			
+;				필요한 셀은 UseFunction 앞에 배치할것(CheckSum에 의존하지 않고 구조변경을 알기 위해)
+;				이미 정의된 것을 정의할 때는 '-' 사용
+#ColumnType	String[33]	BYTE	Index	
+#ColumnName	ItemIndex	BroadCast	UseFunction	
+#Record	SilverWings	0	UseSilverWings	
+#Record	FreeStatusReloadAll	0	StatClearStat	
+#Record	SkillReloadbundleAll	0	StatClearEmpow	
+#Record	LicenseClear	0	LicenceClear	
+#Record	HPMPotion1	0	AmountHP	
+#Record	HPMPotion2	0	AmountHP	
+#Record	HPMPotion0	0	AmountHP	
+#Record	HPMPotion3	0	AmountHP	
+#Record	HPMPotion4	0	AmountHP	
+#Record	HPMPotion5	0	AmountHP	
+#Record	SPMPotion1	0	AmountMP	
+#Record	SPMPotion2	0	AmountMP	
+#Record	SPMPotion0	0	AmountMP	
+#Record	SPMPotion3	0	AmountMP	
+#Record	GoddessWing	0	MemoryFeather	
+#Record	KQ_SoulCrystal	1	BossMobDetect	
+#Record	Firecracker02	1	NoEffect	
+#Record	HFirecracker00	1	NoEffect	
+#Record	HPMPotion2_1	0	AmountHP	
+#Record	SPMPotion2_1	0	AmountMP	
+#Record	CC_Closed	0	MobCardOpen	; 미개봉 카드를 열기 위해 우측 버튼을 누른(유저의 행동에 의해 나타나는 행동)후 카드가 나오게 만드는 루팅
+#Record	E_SixYear_Cake	0	AmountHP	
+#end				

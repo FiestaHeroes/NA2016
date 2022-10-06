@@ -1,0 +1,233 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Zone01_ArkGuard_01	N	2575	5353	0	0	180									
+#record		Zone01_ArkGuard_02	N	3016	6069	0	0	222									
+#record		Zone01_ArkGuard_03	N	2845	5689	0	0	201									
+#record		Zone01_ArkGuard_04	N	1750	6085	0	0	208									
+#record		Zone01_ArkGuard_05	N	2020	5717	0	0	229									
+#record		Zone01_ArkGuard_06	N	1601	5505	0	0	208									
+#record		Zone02_ArkNovice_01	N	4917	3927	0	0	159									
+#record		Zone02_ArkNovice_02	N	3887	3084	0	0	180									
+#record		Zone02_ArkNovice_03	N	5062	3221	0	0	187									
+#record		Zone02_ArkNovice_04	N	4329	2605	0	0	159									
+#record		Zone02_ArkNovice_05	N	4842	2269	0	0	173									
+#record		Zone02_ArkNovice_06	N	5478	2879	0	0	180									
+#record		Zone02_ArkNovice_07	N	4096	4087	0	0	131									
+#record		Zone02_ArkNovice_08	N	4478	4454	0	0	124									
+#record		Zone02_ArkNovice_09	N	5832	2732	0	0	124									
+#record		Zone02_ArkNovice_10	N	5094	4411	0	0	201									
+#record		Zone02_ArkArch_01	N	5264	4057	0	0	165									
+#record		Zone02_ArkArch_02	N	5578	3808	0	0	194									
+#record		Zone02_ArkArch_03	N	5647	4169	0	0	187									
+#record		Zone02_ArkArch_04	N	5983	3966	0	0	208									
+#record		Zone02_ArkArch_05	N	6294	3552	0	0	229									
+#record		Zone02_ArkArch_06	N	4432	4139	0	0	116									
+#record		Zone02_ArkTech_01	N	5596	2438	0	0	194									
+#record		Zone02_ArkTech_02	N	4766	2664	0	0	144									
+#record		Zone02_ArkTech_03	N	4273	3232	0	0	173									
+#record		Zone02_ArkTech_04	N	4661	3271	0	0	187									
+#record		Zone03_ArkTech_01	N	8325	2856	0	0	152									
+#record		Zone03_ArkTech_02	N	8407	3196	0	0	173									
+#record		Zone03_ArkTech_03	N	8648	2887	0	0	180									
+#record		Zone03_ArkTech_04	N	9042	2920	0	0	215									
+#record		Zone03_ArkArch_01	N	9239	2672	0	0	208									
+#record		Zone03_ArkArch_02	N	10021	2465	0	0	201									
+#record		Zone03_ArkArch_03	N	10250	3585	0	0	187									
+#record		Zone03_ArkArch_04	N	10608	2649	0	0	180									
+#record		Zone03_ArkArch_05	N	10591	3023	0	0	180									
+#record		Zone03_ArkArch_06	N	9857	3036	0	0	173									
+#record		Zone03_ArkMech_01	N	9439	3100	0	0	194									
+#record		Zone03_ArkMech_02	N	10653	4832	0	0	173									
+#record		Zone03_ArkMech_03	N	9099	4177	0	0	201									
+#record		Zone03_ArkMech_04	N	9253	4688	0	0	124									
+#record		Zone03_ArkMech_05	N	9731	4493	0	0	166									
+#record		Zone03_ArkMech_06	N	9411	4960	0	0	159									
+#record		Zone03_ArkMech_07	N	9758	5166	0	0	180									
+#record		Zone03_ArkMech_08	N	10663	3467	0	0	208									
+#record		Zone03_ArkMech_09	N	10294	3211	0	0	187									
+#record		Zone03_ArkMech_10	N	10704	4371	0	0	201									
+#record		Zone03_ArkMech_11	N	10649	3932	0	0	229									
+#record		Zone03_ArkMaster_01	N	10232	2863	0	0	173									
+#record		Zone03_ArkMaster_02	N	9393	4425	0	0	124									
+#record		Zone03_ArkAstan_01	N	10130	4198	0	0	243									
+#record		Zone03_ArkAstan_02	N	10286	5097	0	0	201									
+#record		zone04_ArkTech_01	N	10573	8986	0	0	131									
+#record		zone04_ArkTech_02	N	10349	9538	0	0	152									
+#record		zone04_ArkTech_03	N	10101	9771	0	0	159									
+#record		zone04_ArkTech_04	N	9755	9768	0	0	145									
+#record		zone04_ArkTech_05	N	9158	9111	0	0	173									
+#record		zone04_ArkTech_06	N	9869	8910	0	0	159									
+#record		zone04_ArkNovice_01	N	9549	8516	0	0	145									
+#record		zone04_ArkTech_07	N	9073	8564	0	0	194									
+#record		zone04_ArkTech_08	N	8390	8708	0	0	166									
+#record		zone04_ArkTech_09	N	8162	9249	0	0	208									
+#record		zone04_ArkTech_10	N	8629	9199	0	0	201									
+#record		zone04_ArkNovice_02	N	8085	8268	0	0	300									
+#record		zone04_ArkTech_11	N	7701	9270	0	0	194									
+#record		zone04_ArkTech_12	N	8088	9804	0	0	110									
+#record		zone04_ArkTech_13	N	8588	9778	0	0	117									
+#record		zone04_ArkTech_14	N	8835	10461	0	0	117									
+#record		Zone04_ArkMaster_01	N	8338	10313	0	0	110									
+#record		Zone04_ArkMaster_02	N	9485	10467	0	0	103									
+#record		Zone04_ArkMaster_03	N	10024	10325	0	0	117									
+#record		Zone04_ArkAstan_01	N	9226	9535	0	0	194									
+#record		Zone04_ArkAstan_02	N	5861	9105	0	0	215									
+#record		Zone04_ArkAstan_03	N	5859	8639	0	0	215									
+#record		Zone04_ArkAstan_04	N	7125	9598	0	0	166									
+#record		Zone05_ArkAstan_01	N	4080	9643	0	0	152									
+#record		Zone05_ArkAstan_02	N	3967	9276	0	0	187									
+#record		Zone05_ArkAstron_01	N	3535	9258	0	0	194									
+#record		Zone05_ArkAstan_03	N	4403	9374	0	0	173									
+#record		Zone05_ArkAstan_04	N	2891	8461	0	0	201									
+#record		Zone05_ArkAstron_02	N	2769	8881	0	0	187									
+#record		Zone05_ArkAstron_03	N	2340	8726	0	0	187									
+#record		Zone05_ArkMaster_01	N	2436	9150	0	0	194									
+#record		Zone05_ArkAstanica_01	N	2850	9355	0	0	222									
+#record		Zone05_ArkAstanica_02	N	2429	9690	0	0	257									
+#record		Zone05_ArkMaster_02	N	2860	9867	0	0	215									
+#record		Zone05_ArkAstron_04	N	2512	10148	0	0	194									
+#record		Zone05_ArkAstron_05	N	2530	10630	0	0	222									
+#record		Zone05_ArkAstan_05	N	2990	10391	0	0	278									
+#record		Zone05_ArkAstan_06	N	3514	10363	0	0	215									
+#record		Zone05_ArkAstron_06	N	3259	9535	0	0	173									
+#record		Zone05_ArkAstan_07	N	3884	10155	0	0	215									
+#record		Zone05_ArkAstan_08	N	3691	9657	0	0	201									
+#record		Secure_ArkGuard_01	N	2387	3765	0	0	130									
+#record		Secure_ArkGuard_02	N	3156	3276	0	0	151									
+#record		Secure_ArkGuard_03	N	11531	6657	0	0	137									
+#record		Secure_ArkGuard_04	N	11661	7735	0	0	137									
+#record		Secure_ArkGuard_05	N	11198	8918	0	0	123									
+#record		Secure_ArkGuard_06	N	10897	6685	0	0	151									
+#record		Secure_ArkGuard_07	N	9571	6395	0	0	201									
+#record		Secure_ArkGuard_08	N	8067	6178	0	0	201									
+#record		Secure_ArkGuard_09	N	7372	5866	0	0	201									
+#record		Secure_ArkGuard_10	N	6189	5526	0	0	201									
+#record		Secure_ArkGuard_11	N	6208	7031	0	0	201									
+#record		Secure_ArkGuard_12	N	5843	8133	0	0	123									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Zone01_ArkGuard_01	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone01_ArkGuard_02	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone01_ArkGuard_03	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone01_ArkGuard_04	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone01_ArkGuard_05	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone01_ArkGuard_06	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_01	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_02	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_03	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_04	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_05	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_06	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_07	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_08	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_09	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkNovice_10	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_01	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_01	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_02	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_03	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_04	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_05	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_05	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkArch_06	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkTech_01	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkTech_02	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkTech_03	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone02_ArkTech_04	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkTech_01	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkTech_02	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkTech_03	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkTech_04	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkArch_01	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkArch_01	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkArch_02	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkArch_03	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkArch_04	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkArch_05	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkArch_06	ArkArch	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_01	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_02	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_03	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_03	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_04	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_05	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_06	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_07	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_08	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_08	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_09	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_10	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMech_11	ArkMech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMaster_01	ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkMaster_02	ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkAstan_01	ArkAstan	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone03_ArkAstan_02	ArkAstan	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_01	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_02	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_03	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_04	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_05	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_06	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkNovice_01	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_07	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_08	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_09	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_10	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkNovice_02	ArkNovice	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_11	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_12	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_13	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		zone04_ArkTech_14	ArkTech	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone04_ArkMaster_01	ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone04_ArkMaster_02	ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone04_ArkMaster_03	ArkMaster	2	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone04_ArkAstan_01	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone04_ArkAstan_02	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone04_ArkAstan_03	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone04_ArkAstan_04	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_01	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_02	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstron_01	ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_03	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_04	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstron_02	ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstron_03	ArkAstron	1	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkMaster_01	ArkMaster	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstanica_01	ArkAstanica	1	0	200	180	240	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstanica_02	ArkAstanica	1	0	200	180	240	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkMaster_02	ArkMaster	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstron_04	ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstron_05	ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_05	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_06	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstron_06	ArkAstron	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_07	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Zone05_ArkAstan_08	ArkAstan	1	0	60	48	72	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_01	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_02	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_03	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_04	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_05	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_06	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_07	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_08	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_09	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_10	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_11	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+#record		Secure_ArkGuard_12	ArkGuard	2	0	20	18	22	-2	5	-1	8	0	10	1	13	2
+																	
+#end																	

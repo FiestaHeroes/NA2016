@@ -1,0 +1,36 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		HERO10	N	2408	2768	0	0	1192									
+#record		HERO20	N	2408	2768	0	0	1192									
+#record		HERO30	N	2408	2768	0	0	1192									
+#record		HERO40	N	2408	2768	0	0	1192									
+#record		HERO50	N	2408	2768	0	0	1192									
+#record		HERO60	N	2408	2768	0	0	1192									
+#record		HERO70	N	2408	2768	0	0	1192									
+#record		HERO80	N	2408	2768	0	0	1192									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		HERO10	KQ_HEROMINE10	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HERO20	KQ_HEROMINE20	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HERO30	KQ_HEROMINE30	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HERO40	KQ_HEROMINE40	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HERO50	KQ_HEROMINE50	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HERO60	KQ_HEROMINE60	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HERO70	KQ_HEROMINE70	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+#record		HERO80	KQ_HEROMINE80	10	0	0	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

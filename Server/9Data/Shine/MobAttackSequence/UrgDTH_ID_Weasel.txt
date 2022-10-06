@@ -1,0 +1,34 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+					
+					
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+					
+#Record	0	IDWeaselAtkSkill1			
+#Record	1	-			
+#Record	2	-			
+#Record	3	IDWeaselAtkSkill1			
+#Record	4	-			
+#Record	5	-			
+#Record	6	IDWeaselAtkSkill1			
+#Record	7	-			
+#Record	8	-			
+#Record	9	IDWeaselAtkSkill1			
+#Record	10	-			
+#Record	11	-			
+#Record	12	IDWeaselAtkSkill1			
+#Record	13	-			
+#Record	14	-			
+#Record	15	IDWeaselAtkSkill1			
+#Record	16	-			
+#Record	17	-			
+#Record	18	IDWeaselSumSkill1			
+#Record	19	-			
+#Record	20	-			
+#Record	21	-			
+#End					

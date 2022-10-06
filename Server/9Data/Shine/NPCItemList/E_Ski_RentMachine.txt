@@ -1,0 +1,22 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00	;동계올림픽 렌탈용 무버					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	E_M_RentaBoard01	-	-	-	-	-
+#Record	1	E_M_RentaBoard02	-	-	-	-	-
+#Record	2	E_M_RentaBoard03	-	-	-	-	-
+#Record	3	E_M_RentaBoard04	-	-	-	-	-
+#Record	4	E_M_RentaBoard05	-	-	-	-	-
+#Record	5	-	-	-	-	-	-
+#Record	6	-	-	-	-	-	-
+#Record	7	-	-	-	-	-	-
+#Record	8	-	-	-	-	-	-
+#Record	9	-	-	-	-	-	-
+#Record	10	-	-	-	-	-	-
+#Record	11	-	-	-	-	-	-
+#Record	12	-	-	-	-	-	-
+#End							

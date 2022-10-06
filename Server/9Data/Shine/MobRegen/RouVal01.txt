@@ -1,0 +1,353 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		RVal01_01	N	18950	20240	0	0	1130									
+#record		RVal01_02	N	17629	18991	0	0	780									
+#record		RVal01_03	N	16156	18768	0	0	766									
+#record		RVal01_04	N	15070	19993	0	0	983									
+#record		RVal01_05	N	17479	18017	0	0	801									
+#record		RVal01_06	N	15663	17366	0	0	661									
+#record		RVal01_07	N	14197	18086	0	0	1074									
+#record		RVal01_08	N	13422	19859	0	0	983									
+#record		RVal01_09	N	12446	18250	0	0	934									
+#record		RVal01_10	N	13420	17060	0	0	724									
+#record		RVal01_11	N	8221	18264	0	0	1171									
+#record		RVal01_12	N	9929	18871	0	0	885									
+#record		RVal01_13	N	9319	20276	1138	555	0									
+#record		RVal01_14	N	7349	20215	0	0	1004									
+#record		RVal01_15	Y	10205	17668	0	0	184									
+#record		RVal01_16	Y	5324	12371	0	0	50									
+#record		RVal01_17	Y	18994	13954	0	0	50									
+#record		RVal01_18	N	6390	15425	0	0	759									
+#record		RVal01_19	N	4905	15270	0	0	500									
+#record		RVal01_20	N	4494	12798	511	1216	0									
+#record		RVal01_21	N	4559	11672	0	0	626									
+#record		RVal01_22	N	4341	9825	460	1196	-2									
+#record		RVal01_23	N	5274	8311	0	0	605									
+#record		RVal01_24	N	6499	8791	0	0	598									
+#record		RVal01_25	N	7520	9584	567	831	0									
+#record		RVal01_26	N	7252	11050	0	0	500									
+#record		RVal01_27	N	6765	12314	242	982	-18									
+#record		RVal01_28	N	7190	14514	250	1089	24									
+#record		RVal01_30	N	18484	14436	0	0	471									
+#record		RVal01_31	N	18415	13491	0	0	380									
+#record		RVal01_32	N	19022	12818	0	0	471									
+#record		RVal01_33	N	20073	12541	0	0	533									
+#record		RVal01_35	N	13349	14092	0	0	787									
+#record		RVal01_36	N	11874	13892	0	0	752									
+#record		RVal01_37	N	13778	12782	0	0	675									
+#record		RVal01_38	N	10380	13474	0	0	1053									
+#record		RVal01_39	N	11185	11905	0	0	787									
+#record		RVal01_40	N	12451	12926	0	0	717									
+#record		RVal01_41	N	11905	10723	0	0	780									
+#record		RVal01_42	N	14783	11790	0	0	787									
+#record		RVal01_43	N	15981	11298	0	0	724									
+#record		RVal01_44	N	14540	10184	0	0	913									
+#record		RVal01_45	N	13104	10337	0	0	752									
+#record		RVal01_46	N	13530	11540	0	0	724									
+#record		RVal01_47	N	13274	7225	0	0	738									
+#record		RVal01_48	N	13857	4706	0	0	689									
+#record		RVal01_49	N	14512	6418	0	0	682									
+#record		RVal01_50	N	12849	4197	587	916	0									
+#record		RVal01_51	N	11910	5126	0	0	654									
+#record		RVal01_52	N	12071	7371	0	0	640									
+#record		RVal01_53	N	16803	6221	0	0	612									
+#record		RVal01_54	N	11458	5959	0	0	619									
+#record		RVal01_55	N	10789	4806	600	1034	-22									
+#record		RVal01_56	N	15784	5994	0	0	703									
+#record		RVal01_57	N	15334	4716	0	0	647									
+#record		RVal01_58	N	18269	9250	0	0	500									
+#record		RVal01_59	N	21561	7757	0	0	577									
+#record		RVal01_60	N	19596	7759	1620	239	25									
+#record		RVal01_61	N	20987	9200	950	344	56									
+#record		RVal01_62	N	19362	9482	494	249	-30									
+#record		RVal01_63	N	18115	5121	0	0	857									
+#record		RVal01_64	N	16755	4945	0	0	773									
+#record		RVal01_65	N	8430	6194	0	0	773									
+#record		RVal01_66	N	7776	5536	0	0	703									
+#record		RVal01_67	N	7242	3839	0	0	850									
+#record		RVal01_68	N	9229	4554	0	0	1123									
+#record		RouVal01AreaW1	N	11362	4305	0	0	1101									
+#record		RouVal01AreaW2	N	15250	5336	0	0	1143									
+#record		RouVal01AreaW3	N	7750	4222	0	0	1235									
+#record		RouVal01AreaW4	N	17933	4954	1278	434	42									
+#record		RouVal01AreaW5	N	12044	14023	2183	562	-5									
+#record		RouVal01AreaW6	N	13877	10954	1744	611	-9									
+#record		RouVal01AreaW7	N	13061	18520	697	1410	-26									
+#record		RouVal01AreaW8	N	9705	18829	473	1628	16									
+#record		RouVal01AreaW9	N	18371	19254	2054	719	-54									
+#record		RouVal01AreaW10	N	4572	11085	212	2539	-5									
+#record		RouVal01AreaW11	N	18719	14409	359	1226	10									
+#record		RouVal01AreaPbox01	N	12898	16633	9569	5148	0									
+#record		RouVal01AreaPbox02	N	12792	9332	9575	4893	0									
+#record		Val01Herb01	N	12106	12915	0	0	665									
+#record		Val01Herb02	N	11733	11494	0	0	696									
+#record		Val01Herb03	N	13733	12300	0	0	836									
+#record		Val01_69	N	11853	3908	0	0	647									
+#record		Val01_70	Y	4338	8361	0	0	51									
+#record		Val01_71	Y	14237	14508	0	0	51									
+#record		Val01_72	N	20660	15319	0	0	794									
+#record		Val01_73	N	19181	15219	0	0	731									
+#record		Val-1_74	N	20739	13816	261	772	8									
+;		Halloween01	N	13010	19383	5348	2142	0									
+;		Halloween02	N	12690	11430	8136	4374	0									
+;		Halloween03	N	12524	5545	6025	2092	0
+#record		Waypoint01	N	16707	5570	0	0	100									
+#record		Waypoint02	N	12306	3393	0	0	100									
+#record		Waypoint03	N	7129	4052	0	0	100									
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		RVal01_01	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_01	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_01	ProckZone	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_02	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_02	Kebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_03	Kebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_03	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_03	ProckZone	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_04	ProckZone	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_04	TombRaider	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_04	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_05	Kebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_05	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_06	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_07	ProckZone	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_07	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_07	Kebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_08	ProckZone	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_08	LittleLizardMan	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_08	TombRaider	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_09	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_09	JokeKebing	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_10	SmartPhino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_11	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_11	Boar	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_11	SpeedyBoogy	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		RVal01_12	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_12	BoogyKnight	1	0	180	165	195	-15	8	-10	15	0	60	10	120	15
+#record		RVal01_12	SpeedyBoogy	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		RVal01_13	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_13	SpeedyBoogy	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		RVal01_14	BoogyKnight	1	0	180	165	195	-15	8	-10	15	0	60	10	120	15
+#record		RVal01_14	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_14	SpeedyBoogy	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		RVal01_15	S_Wolf	1	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		RVal01_15	HungryWolf	3	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		RVal01_16	SharpBoar	1	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		RVal01_16	SubBoar	3	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		RVal01_17	SharpBoar	1	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		RVal01_17	SubBoar	3	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		RVal01_18	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_18	Boogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_19	Boar	4	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_20	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_20	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_21	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_21	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_22	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_22	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_22	RatmanFighter	1	0	180	165	195	-15	8	-10	15	0	60	10	120	15
+#record		RVal01_23	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_24	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_25	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_25	RatmanFighter	1	0	180	165	195	-15	8	-10	15	0	60	10	120	15
+#record		RVal01_26	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_27	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_27	Boogy	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_28	Boar	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_28	Boogy	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_30	Boar	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_30	Ratman	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_31	Boar	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_31	Boogy	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_32	Boar	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_32	Ratman	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_33	Ratman	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_33	Boar	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_35	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_36	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_36	RatmanFighter	1	0	180	165	195	-15	8	-10	15	0	60	10	120	15
+#record		RVal01_37	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_37	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_38	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_38	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_39	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_39	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_40	Boar	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_41	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_42	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_42	Boar	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_43	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_44	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_45	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_46	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_46	Boar	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_47	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_47	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_48	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_49	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_50	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_50	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_50	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_51	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_51	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_52	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_52	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_53	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_53	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_54	Phino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_54	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_55	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_55	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_56	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_56	Phino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_57	MiniGreenky	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_57	Phino	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_58	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_58	PhinoFlie	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_59	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_59	PhinoFlie	1	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_60	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_60	PhinoFlie	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_61	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_61	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_62	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_63	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_63	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_64	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_64	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_65	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_66	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_67	Ratman	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_68	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RVal01_68	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		RouVal01AreaW1	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW1	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	WOOD3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW2	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW3	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW3	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW3	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW3	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW3	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW3	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW4	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW4	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW4	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW4	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW4	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW4	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW5	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW6	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW7	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW7	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW7	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW7	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW7	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW7	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW8	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW9	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW10	HERB1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW10	MUSHROOM1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW10	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW10	WOOD1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW10	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW10	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW11	HERB3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW11	HERB2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW11	MUSHROOM2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW11	MUSHROOM3	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW11	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaW11	WOOD2	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		RouVal01AreaPbox01	PresentBox2	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		RouVal01AreaPbox02	PresentBox2	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		Val01Herb01	HERB1	5	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb01	HERB2	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb01	HERB3	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb02	HERB1	4	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb02	HERB2	5	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb02	HERB3	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb03	HERB1	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb03	HERB2	4	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01Herb03	HERB3	5	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Val01_69	Phino	3	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Val01_69	PhinoFlie	2	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Val01_70	SharpBoar	1	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		Val01_70	SubBoar	2	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		Val01_71	SharpBoar	1	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		Val01_71	SubBoar	2	0	600	590	610	-10	8	-5	15	0	60	5	120	10
+#record		Val01_72	MiniPinky	5	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Val01_73	MiniPinky	5	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Val-1_74	MiniPinky	5	0	5	1	7	-3	15	-2	25	0	60	1	120	2
+;		Halloween01	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO01	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+#record		Waypoint01	FLOWER1	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Waypoint02	FLOWER1	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Waypoint03	FLOWER1	3	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#end																	

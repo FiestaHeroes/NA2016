@@ -1,0 +1,17 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	FaceCut01	Welcome adventurers that wish to try their hand at glory in the Arena!	
+#Record	FaceCut02	You and your team members have to protect your own flag while trying to steal the opponent's flag.	
+#Record	FaceCut03	"The player who is carrying the enemy flag is called a runner. If the runner can bring the opponent's flag back to their own team's flag, they will score points."	
+#Record	FaceCut04	Whichever team has the most points when the game timer reaches zero is the winner.	
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+			
+#End			

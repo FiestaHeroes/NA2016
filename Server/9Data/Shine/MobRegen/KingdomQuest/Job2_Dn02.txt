@@ -1,0 +1,60 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Dn02_Mob1-1	N	9120	10038	0	0	200									
+#record		Dn02_Mob1-2	N	9410	9993	0	0	200									
+#record		Dn02_Mob2-1	N	9799	9319	0	0	200									
+#record		Dn02_Mob2-2	N	8781	9626	0	0	200									
+#record		Dn02_Mob3-1	N	8792	9314	0	0	200									
+#record		Dn02_Mob3-2	N	9618	9802	0	0	200									
+#record		Dn02_Mob4-1	N	9464	8989	0	0	200									
+#record		Dn02_Mob4-2	N	8934	9946	0	0	200									
+#record		Dn02_Mob5-1	N	9013	9025	0	0	200									
+#record		Dn02_Mob5-2	N	8690	9063	0	0	200									
+#record		Dn02_Mob6-1	N	9837	9684	0	0	200									
+#record		Dn02_Mob6-2	N	8578	9860	0	0	200									
+#record		Dn02_Mob7-1	N	9328	9547	0	0	200									
+#record		Dn02_Mob7-2	N	9078	9550	0	0	200									
+#record		Dn02_Mob8-1	N	8916	9190	0	0	200									
+#record		Dn02_Mob8-2	N	9686	9977	0	0	200									
+#record		Dn02_Mob9-1	N	9379	9097	0	0	200									
+#record		Dn02_Mob9-2	N	9332	10129	0	0	200									
+#record		Dn02_Mob10-1	N	9606	9277	0	0	200									
+#record		Dn02_Mob10-2	N	8931	10146	0	0	200									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Dn02_Mob1-1	job2_ElfKnight	3	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob1-2	Job2_LIzardK	3	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob2-1	job2_ElfKnight	4	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob2-2	Job2_LIzardK	4	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob3-1	job2_ElfKnight	5	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob3-2	Job2_LIzardK	5	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob4-1	job2_ElfKnight	6	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob4-2	Job2_LIzardK	6	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob5-1	job2_ElfKnight	7	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob5-2	Job2_LIzardK	7	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob6-1	job2_ElfKnight	8	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob6-2	Job2_LIzardK	8	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob7-1	job2_ElfKnight	9	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob7-2	Job2_LIzardK	9	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob8-1	job2_ElfKnight	10	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob8-2	Job2_LIzardK	10	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob9-1	job2_ElfKnight	10	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob9-2	Job2_LIzardK	10	0	3	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob10-1	job2_ElfKnight	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		Dn02_Mob10-2	Job2_LIzardK	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

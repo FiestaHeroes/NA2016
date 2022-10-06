@@ -1,0 +1,16 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;아이템 상점(엘더린)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Grade6	-	-	-	-	-
+#Record	1	Pickaxe	El1	-	-	-	-
+#Record	2	FlyStone	Hay	-	-	-	-
+#Record	3	Hobby01	-	-	-	-	-
+#Record	4	House_MushRoom01	House_MushRoom02	-	-	-	-
+#Record	5	-	-	-	-	-	-
+#Record	6	GoldColl01	FireColl01	RedColl01	ThoroColl01	-	-
+#End							

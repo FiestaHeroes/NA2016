@@ -1,0 +1,79 @@
+;
+; Tutorial Character Data
+; 
+
+;-------------------------------- DEFINE SCRIPTOR COMMAND ---------------------------------
+#DEFINE TUTORIAL_CHARACTER
+	<INTEGER>		; Class
+
+	<STRING>		; Start Map name
+	<INTEGER>		; Start PX
+	<INTEGER>		; Start PY
+
+	<INTEGER>		; HP
+	<INTEGER>		; SP
+	<INTEGER>		; HP Soul stone count
+	<INTEGER>		; SP Soul stone count
+
+	<INTEGER>		; Money
+	#ENDDEFINE
+
+#DEFINE DEFAULT_ITEM
+	<INTEGER>		; Class
+	<INTEGER>		; Item ID
+	<INTEGER>		; Item Lot
+	#ENDDEFINE
+
+#DEFINE TUTORIAL_ITEM
+	<INTEGER>		; Class
+	<INTEGER>		; Item ID
+	<INTEGER>		; Item Lot
+	#ENDDEFINE
+
+	
+;----------------------------------- DEFINE DATA -----------------------------------
+; Class:
+;	1 = Fighter
+;	6 = Cleric
+;	11 = Archer
+;	16 = Mage
+;	21 = Joker
+
+;-----------------------------------------------------------------------------------
+;			Class		Map		PX		PY		HP		SP		HPSoul		SPSoul		Money
+TUTORIAL_CHARACTER	1,		"RouN",		7178,		7011,		52,		10,		14,		7,		300
+
+TUTORIAL_CHARACTER	6,		"RouN",		7178,		7011,		46,		32,		13,		10,		300
+
+TUTORIAL_CHARACTER	11,		"RouN",		7178,		7011,		46,		24,		12,		10,		300
+
+TUTORIAL_CHARACTER	16,		"RouN",		7178,		7011,		42,		46,		10,		15,		300
+
+TUTORIAL_CHARACTER	21,		"RouN",		7178,		7011,		48,		46,		14,		11,		300
+
+;-----------------------------------------------------------------------------------
+; 		    Class		ItemID,		Lot	; 생성되면 이미 인벤이 있는 아이템임
+DEFAULT_ITEM		1,		250,		1	; 숏소드
+
+DEFAULT_ITEM		6,		750,		1	; 숏메이스
+
+DEFAULT_ITEM		11,		1250,		1	; 숏보우
+
+DEFAULT_ITEM		16,		1750,		1	; 숏스태프
+
+DEFAULT_ITEM		21,		57363,		1	; 아벨 크로우
+
+;-----------------------------------------------------------------------------------
+; 		    Class		ItemID,		Lot	; 생성되면 이미 인벤이 있는 아이템임
+
+;TUTORIAL_ITEM		1,		250,		1	; 숏소드
+
+;TUTORIAL_ITEM		6,		750,		1	; 숏메이스
+
+;TUTORIAL_ITEM		11,		1250,		1	; 숏보우
+
+;TUTORIAL_ITEM		16,		1750,		1	; 숏스태프
+
+;TUTORIAL_ITEM		21,		57363,		1	; 아벨 크로우
+
+#END

@@ -1,0 +1,20 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00	;크리스마스 이벤트 2013 보상 아이템					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	IblisHelmet_SD	IblisArmor_SD	IblisPants_SD	IblisBoots_SD	-	-
+#Record	1	PrometheanHelmet_SD	PrometheanArmor_SD	PrometheanPants_SD	PrometheanBoots_SD	-	-
+#Record	2	CelestisHelmet_SD	CelestisArmor_SD	CelestisPants_SD	CelestisBoots_SD	-	-
+#Record	3	TheseusHelmet_SD	TheseusArmor_SD	TheseusPants_SD	TheseusBoots_SD	-	-
+#Record	4	ChironHat_SD	ChironShirt_SD	ChironPants_SD	ChironBoots_SD	-	-
+#Record	5	CamaelHat_SD	CamaelShirt_SD	CamaelPants_SD	CamaelBoots_SD	-	-
+#Record	6	AgrippaHat_SD	AgrippaShirt_SD	AgrippaPants_SD	AgrippaBoots_SD	-	-
+#Record	7	AntigaLordHat_SD	AntigaLordShirt_SD	AntigaLordPants_SD	AntigaLordBoots_SD	-	-
+#Record	8	CypridGoggles_SD	CypridArmor_SD	CypridPants_SD	CypridBoots_SD	-	-
+#Record	9	DarkScarHood_SD	DarkScarArmor_SD	DarkScarPants_SD	DarkScarBoots_SD	-	-
+#Record	10	BlazeHelmet_SD	BlazeArmor_SD	BlazePants_SD	BlazeShoes_SD	-	-
+#End							

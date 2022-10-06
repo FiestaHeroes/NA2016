@@ -1,0 +1,125 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		KDEchoCaveArea01	N	2781	3034	0	0	219									
+#record		KDEchoCaveArea02	N	19271	17742	0	0	660									
+#record		KDEchoCaveArea03	N	16216	21052	0	0	429									
+#record		KDEchoCaveArea04	N	16569	20788	0	0	324									
+#record		KDEchoCaveArea05	N	14602	15019	0	0	1095									
+#record		KDEchoCaveArea06	N	14125	15249	0	0	1060									
+#record		KDEchoCaveArea07	N	8911	21245	456	683	51									
+#record		KDEchoCaveArea08	N	5541	17441	0	0	878									
+#record		KDEchoCaveArea09	N	5106	16823	0	0	1382									
+#record		KDEchoCaveArea10	N	5048	16472	0	0	1333									
+#record		KDEchoCaveArea11	N	19208	12190	1487	140	78									
+#record		KDEchoCaveArea12	N	17082	5812	0	0	723									
+#record		KDEchoCaveArea13	N	17304	4534	0	0	773									
+#record		KDEchoCaveArea14	N	17152	5365	0	0	1592									
+#record		KDEchoCaveArea15	N	17132	5404	0	0	1880									
+#record		KDEchoCaveArea16	N	7084	7381	0	0	1347									
+#record		KDEchoCaveArea17	N	7743	8133	0	0	2076									
+#record		KDEchoCaveArea18	N	12140	10619	891	166	36									
+#record		KDEchoCaveArea19	N	6977	8578	0	0	1543									
+#record		KDEchoCaveArea20	N	4109	3443	0	0	429									
+#record		KDEchoCaveArea21	N	2937	3247	0	0	1424									
+#record		KDEchoCaveArea22	N	2409	4124	0	0	1424									
+#record		KDEchoCaveArea23	N	14960	17396	0	0	787									
+#record		KDEchoCaveArea24	N	12069	16723	930	100	-46									
+#record		KDEchoCaveArea25	N	9247	19148	0	0	542									
+#record		KDEchoCaveArea26	N	5134	16675	0	0	1893									
+#record		KDEchoCaveArea27	N	16012	12432	112	1872	27									
+#record		KDEchoCaveArea28	N	11230	18871	2197	180	6									
+#record		KDEchoCaveArea29	N	17628	19501	0	0	471									
+#record		KDEchoCaveArea30	N	18488	14201	1310	144	64									
+#record		KDEchoCaveArea31	N	17989	19303	0	0	443									
+#record		KDEchoCaveArea32	N	19337	9437	184	1275	9									
+#record		KDEchoCaveArea33	N	18831	18150	0	0	590									
+#record		KDEchoCaveArea34	N	10739	13311	142	1054	-13									
+#record		KDEchoCaveArea35	N	14261	17968	1141	217	24									
+#record		KDEchoCaveArea36	N	17307	15618	1366	236	52									
+#record		KDEchoCaveArea37	N	8245	21013	0	0	500									
+#record		KDEchoCaveArea38	N	8899	15701	1360	162	16									
+#record		KDEchoCaveArea39	N	2243	3009	0	0	1053									
+#record		KDEchoCaveArea40	N	11648	5972	0	0	500									
+#record		KDEchoCaveArea41	N	5028	12756	0	0	500									
+#record		KDEchoCaveArea42	N	19039	20754	0	0	500									
+#record		KDEchoCaveArea43	N	18339	20247	0	0	500									
+#record		KDEchoCaveArea44	N	12979	17918	0	0	500									
+#record		KDEchoCaveArea45	N	17197	15025	0	0	500									
+#record		KDEchoCaveArea46	N	10900	10780	0	0	500									
+#record		KDEchoCaveArea47	N	15145	10867	0	0	500									
+#record		KDEchoCaveArea48	N	7342	16144	0	0	500									
+#record		KDEchoCaveArea49	N	14426	5710	0	0	500									
+#record		KDEchoCaveArea50	N	10486	15117	0	0	528									
+#record		KDEchoCaveArea51	N	15820	16760	0	0	696									
+#record		KDEchoCaveArea52	N	9759	10182	0	0	885									
+#record		KDEchoCaveArea53	N	15600	9229	284	1247	-17									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KDEchoCaveArea01	KQ_GorDonMaster	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea02	KQ_Skeleton	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea03	KQ_Skeleton	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea04	KQ_SkelArcher	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea05	KQ_SkelWarrior	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea06	KQ_Zombie	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea07	KQ_Bat	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea08	KQ_Bat	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea09	KQ_SkelArcher	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea10	KQ_FireViVi	9	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea11	KQ_Bat	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea12	KQ_FireViVi	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea13	KQ_Spider	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea14	KQ_SkelKnight	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea15	KQ_SkelKnight	11	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea16	KQ_GorDon	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea17	KQ_Spider	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea18	KQ_SkelArcher	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea19	KQ_SkelArcher	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea20	KQ_SkelKnight	9	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea21	KQ_SkelArcher	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea22	KQ_GorDon	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea23	KQ_SkelWarrior	11	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea24	KQ_Bat	9	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea25	KQ_SkelKnight	12	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea26	KQ_SkelKnight	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea27	KQ_SkelWarrior	11	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea28	KQ_SkelArcher	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea29	KQ_Zombie	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea30	KQ_SkelArcher	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea31	KQ_Skeleton	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea32	KQ_SkelWarrior	11	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea33	KQ_SkelArcher	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea35	KQ_Skeleton	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea36	KQ_Skeleton	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea37	KQ_SkelArcher	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea38	KQ_Spider	10	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea39	KQ_FireViVi	9	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea40	KQ_FireViVi	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea41	KQ_FireViVi	7	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea42	KQ_Skeleton	8	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea43	KQ_FireViVi	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea44	KQ_FireViVi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea45	KQ_FireViVi	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea46	KQ_GorDon	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea47	KQ_GorDon	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea48	KQ_FireViVi	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea49	KQ_Zombie	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea50	KQ_GorDon	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea51	KQ_GorDon	6	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea52	KQ_Spider	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KDEchoCaveArea53	KQ_SkelArcher	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

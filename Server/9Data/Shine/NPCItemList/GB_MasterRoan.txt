@@ -1,0 +1,55 @@
+;		ItemList in NPC								
+#ignore	\o042			; 인용부호 무시						
+#exchange	#	\x20		; # => space						
+;		2011.03.31								
+										
+#Table	Tab00	;인첸트 상점								
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]			
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05			
+#Record	0 	GB_VipCard	-	-	-	-	-			
+										
+#End										
+										
+										
+										
+										
+										
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

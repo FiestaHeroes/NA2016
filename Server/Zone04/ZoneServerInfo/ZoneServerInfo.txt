@@ -1,0 +1,12 @@
+#DEFINE MY_SERVER
+  <STRING>       
+  <STRING>       
+  <INTEGER>      
+  <INTEGER>      
+  <INTEGER>      
+#ENDDEFINE
+
+MY_SERVER "_Zone4",		"_Zone4",	6,		0,		4
+
+#include "../../9Data/ServerInfo/ServerInfo.txt"
+#END

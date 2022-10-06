@@ -1,0 +1,34 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; ??¢Ø?®¨??? ©ˆ?®ˆ?
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Guardian	Pikeman Guard	
+			
+#Record	AntiHenis0	This will be the final resting place for the Henneath alliance!	
+#Record	AntiHenis1	The Henneath alliance must disappear from the face of the planet!	
+#Record	AntiHenisSummon	Kill them all!	
+#Record	AntiHenisDead	Retreat!  We need more back up!  We'll get you!	
+			
+#Record	StartWarn0	You are here to help the Henneath alliance.	
+#Record	StartWarn1	The Henneath rebellion have been gathering on top of that hill.	
+#Record	StartWarn2	You must defeat the Anti-Henneath alliance within 50 minutes! 	
+#Record	StartWarn3	I will go get help!	
+#Record	StartWarn4	Please defeat them!	
+			
+#Record	GuardianSuc0	Are you okay!	
+#Record	GuardianSuc1	You have defeated every single one of them!  Amazing!	
+#Record	GuardianSuc2	I will give you a reward for your trouble!	
+			
+;	KQ ¿”Ω√		
+#Record	KQReturn30	Returning to Alberstol Ruins in 30 sec	
+#Record	KQReturn20	Returning to Alberstol Ruins in 20 sec	
+#Record	KQReturn10	Returning to Alberstol Ruins in 10 sec	
+#Record	KQReturn5	Returning to Alberstol Ruins in 5 sec	
+			
+#End			
+			
+			

@@ -1,0 +1,36 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		B_CrackerHumar	N	3274	3771	0	0	23									
+#record		B_CrackerLooter	N	4380	3570	0	0	15									
+#record		B_CrackerGuardian	N	1728	2332	0	0	15									
+#record		B_CrackerKeeper_01	N	3016	2427	0	0	32									
+#record		B_CrackerKeeper_02	N	2912	2807	0	0	32									
+#record		B_CrackerKeeper_03	N	3399	2436	0	0	32									
+#record		B_CrackerKeeper_04	N	2472	2896	0	0	32									
+#record		B_CrackerKeeper_05	N	4305	2619	0	0	32									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		B_CrackerHumar	B_CrackerHumar	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		B_CrackerLooter	B_CrackerLooter	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		B_CrackerGuardian	B_CrackerGuardian	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		B_CrackerKeeper_01	B_CrackerKeeper	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		B_CrackerKeeper_02	B_CrackerKeeper	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		B_CrackerKeeper_03	B_CrackerKeeper	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		B_CrackerKeeper_04	B_CrackerKeeper	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+#record		B_CrackerKeeper_05	B_CrackerKeeper	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+																	
+#end																	

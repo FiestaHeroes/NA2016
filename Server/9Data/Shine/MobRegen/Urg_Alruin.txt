@@ -1,0 +1,348 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Alruin01	N	15557	4810	0	0	350									
+#record		Alruin02	N	15377	5307	0	0	350									
+#record		Alruin03	N	14952	5661	0	0	350									
+#record		Alruin04	N	16633	6132	0	0	350									
+#record		Alruin05	N	17038	4653	0	0	350									
+#record		Alruin06	N	17177	4974	0	0	350									
+#record		Alruin07	N	15014	5985	0	0	350									
+#record		Alruin08	N	17551	4787	0	0	350									
+#record		Alruin09	N	16776	6522	0	0	350									
+#record		Alruin10	N	17531	5290	0	0	350									
+#record		Alruin11	N	12471	4639	0	0	350									
+#record		Alruin12	N	14587	6101	0	0	350									
+#record		Alruin13	N	16002	7193	0	0	350									
+#record		Alruin14	N	15912	7560	0	0	350									
+#record		Alruin15	N	15750	7929	0	0	350									
+#record		Alruin16	N	15679	8415	0	0	350									
+#record		Alruin17	N	15653	8833	0	0	350									
+#record		Alruin18	N	14149	7299	0	0	350									
+#record		Alruin19	N	14586	7776	0	0	350									
+#record		Alruin20	N	14627	8449	0	0	350									
+#record		Alruin21	N	14483	8924	0	0	350									
+#record		Alruin22	N	14257	9506	0	0	350									
+#record		Alruin23	N	10875	9659	0	0	350									
+#record		Alruin24	N	11366	9591	0	0	350									
+#record		Alruin25	N	11088	9267	0	0	350									
+#record		Alruin26	N	11532	9222	0	0	350									
+#record		Alruin27	N	13468	10569	0	0	350									
+#record		Alruin28	N	13307	9882	0	0	350									
+#record		Alruin29	N	13427	9310	0	0	350									
+#record		Alruin30	N	13556	7901	0	0	350									
+#record		Alruin31	N	11285	8323	0	0	350									
+#record		Alruin32	N	11724	8257	0	0	350									
+#record		Alruin33	N	11565	7842	0	0	350									
+#record		Alruin34	N	13710	8638	0	0	350									
+#record		Alruin35	N	13122	7314	0	0	350									
+#record		Alruin36	N	11458	5359	0	0	350									
+#record		Alruin37	N	15376	10268	0	0	350									
+#record		Alruin38	N	15506	9420	0	0	350									
+#record		Alruin39	N	10772	4943	0	0	350									
+#record		Alruin40	N	10181	4411	0	0	350									
+#record		Alruin41	N	6286	4327	0	0	350									
+#record		Alruin42	N	5552	4324	0	0	350									
+#record		Alruin43	N	4785	5945	0	0	350									
+#record		Alruin44	N	11568	11775	0	0	350									
+#record		Alruin45	N	13388	11818	0	0	350									
+#record		Alruin46	N	12010	12948	0	0	350									
+#record		Alruin47	N	12191	14042	0	0	350									
+#record		Alruin48	N	10385	14976	0	0	350									
+#record		Alruin49	N	10099	16679	0	0	350									
+#record		Alruin50	N	8948	16478	0	0	350									
+#record		Alruin51	N	15046	11207	0	0	350									
+#record		Alruin52	N	14418	13049	0	0	350									
+#record		Alruin53	N	14477	13977	0	0	350									
+#record		Alruin54	N	15331	14712	0	0	350									
+#record		Alruin55	N	14768	15573	0	0	350									
+#record		Alruin56	N	16081	15562	0	0	350									
+#record		Alruin57	N	20239	8785	0	0	350									
+#record		Alruin58	N	21253	12134	0	0	350									
+#record		Alruin59	N	20830	9884	0	0	350									
+#record		Alruin60	N	20850	13466	0	0	350									
+#record		Alruin61	N	20224	14439	0	0	350									
+#record		Alruin62	N	9038	14687	0	0	350									
+#record		Alruin63	N	7969	14450	0	0	350									
+#record		Alruin64	N	6954	13926	0	0	350									
+#record		Alruin65	N	5963	13847	0	0	350									
+#record		Alruin66	N	5251	14642	0	0	350									
+#record		Alruin67	N	20039	9616	0	0	350									
+#record		Alruin68	N	19058	7034	0	0	350									
+#record		Alruin69	N	19501	7779	0	0	350									
+#record		Alruin70	N	20409	7457	0	0	350									
+#record		Alruin71	N	18133	13142	0	0	350									
+#record		Alruin72	N	17015	13987	0	0	350									
+#record		Alruin73	N	21447	18398	0	0	50									
+#record		Alruin74	N	21567	17743	0	0	50									
+#record		Alruin75	N	21386	16909	0	0	50									
+#record		Alruin76	N	4740	15594	0	0	350									
+#record		Alruin77	N	5676	17620	0	0	350									
+#record		Alruin78	N	7182	17713	0	0	350									
+#record		Alruin79	N	8023	18311	0	0	350									
+#record		Alruin80	N	9121	18385	0	0	350									
+#record		Alruin81	N	14887	17028	0	0	350									
+#record		Alruin82	N	14076	18573	0	0	350									
+#record		Alruin83	N	11501	18076	0	0	350									
+#record		Alruin84	N	12091	16571	0	0	350									
+#record		Alruin85	N	13629	17640	0	0	350									
+#record		Alruin86	N	21429	19713	0	0	350									
+#record		Alruin87	N	20682	20680	0	0	350									
+#record		Alruin88	N	19594	21312	0	0	350									
+#record		Alruin89	N	18275	21139	0	0	350									
+#record		Alruin90	N	16981	20675	0	0	350									
+#record		Alruin91	N	16045	19731	0	0	350									
+#record		Alruin92	N	15966	18562	0	0	350									
+#record		Alruin93	N	17156	17793	0	0	350									
+#record		Alruin94	N	19421	16718	0	0	50									
+#record		Alruin95	N	20076	16095	0	0	50									
+#record		Alruin96	N	20973	16216	0	0	50									
+#record		Alruin97	N	11279	21551	0	0	350									
+#record		Alruin98	N	9955	20852	0	0	350									
+#record		Alruin99	N	8728	21127	0	0	350									
+#record		Alruin100	N	7733	21000	0	0	350									
+#record		Alruin101	N	6660	20532	0	0	350									
+#record		Alruin102	N	5370	19904	0	0	350									
+#record		Alruin103	N	6154	18920	0	0	350									
+#record		Alruin104	N	15857	21615	0	0	50									
+#record		Alruin105	N	13911	20177	0	0	50									
+#record		Alruin106	N	13570	21288	0	0	50									
+#record		AlruinH01	N	15577	15404	0	0	1059									
+#record		AlruinH02	N	14814	9620	0	0	996									
+#record		AlruinH03	N	9758	20228	0	0	1087									
+#record		AlruinH04	N	17865	13834	0	0	1129									
+#record		AlruinH05	N	20489	9387	0	0	1101									
+#record		AlruinM01	N	13832	17683	0	0	982									
+#record		AlruinM02	N	16600	18743	0	0	1024									
+#record		AlruinM03	N	20611	16967	0	0	1606									
+#record		AlruinM04	N	12494	8531	0	0	1598									
+#record		AlruinW01	N	6218	14843	0	0	1330									
+#record		AlruinW02	N	16311	5613	0	0	1312									
+#record		AlruinW03	N	12401	10853	0	0	1431									
+#record		AlruinW04	N	6233	19622	0	0	1022									
+#record		Alruin107	N	20793	5900	0	0	359									
+#record		Alruin108	N	18978	6223	0	0	345									
+#record		Alruin109	N	19959	6590	0	0	331									
+#record		Alruin110	N	18970	5291	0	0	331									
+#record		Alruin111	N	21119	6877	0	0	331									
+#record		Alruin112	N	19774	4561	0	0	331									
+#record		Alruin113	N	19818	5582	0	0	324									
+#record		Alruin114	N	20521	4910	0	0	317									
+#record		Waypoint01	N	10841	11172	0	0	400									
+#record		Waypoint02	N	11285	11721	0	0	400									
+#record		Waypoint03	N	11624	11715	0	0	400									
+#record		Waypoint04	N	12849	13101	0	0	400									
+#record		Waypoint05	N	12984	12606	0	0	400									
+#record		Waypoint06	N	13112	12011	0	0	400									
+#record		Waypoint07	N	20899	14368	0	0	400									
+#record		Waypoint08	N	20903	13913	0	0	400									
+#record		Waypoint09	N	20246	14257	0	0	400									
+#record		Waypoint10	N	13890	16756	0	0	400									
+#record		Waypoint11	N	13028	16837	0	0	400									
+#record		Waypoint12	N	12913	16355	0	0	400									
+#record		Waypoint13	N	6418	17643	0	0	400									
+#record		Waypoint14	N	6912	17571	0	0	400									
+#record		Waypoint15	N	6870	17059	0	0	400									
+#record		Waypoint16	N	14748	20752	0	0	400									
+#record		Waypoint17	N	14639	21236	0	0	400									
+#record		Waypoint18	N	13899	20983	0	0	400									
+#record		Waypoint19	N	8734	20094	0	0	400									
+#record		Waypoint20	N	8196	20161	0	0	400									
+#record		Waypoint21	N	8080	19538	0	0	400									
+;		Halloween01	N	13266	18878	7637	3889	0									
+;		Halloween02	N	13242	9036	2440	5101	0									
+;		Halloween03	N	18923	9902	2813	5626	0									
+;#record		XmasWaypoint	N	6774	11527	0	0	1									
+
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Alruin01	Phouch	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin02	Phouch	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin03	Phouch	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin04	Phouch	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin05	Phouch	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin06	Phouch	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin07	PhouchA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin08	PhouchA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin09	PhouchA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin10	PhouchA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin11	PhouchA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin12	PhouchA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin13	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin14	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin15	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin16	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin17	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin18	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin19	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin20	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin21	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin22	PhouchB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin23	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin24	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin25	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin26	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin27	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin28	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin29	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin30	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin31	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin32	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin33	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin34	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin35	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin36	BlackBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin37	BlackBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin38	BlackBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin39	BlackBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin40	BlackBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin41	BlackBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin42	BlackBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin43	BlackBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin44	RedBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin45	RedBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin46	RedBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin47	RedBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin48	RedBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin49	RedBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin50	RedBear	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin51	BlackBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin52	BlackBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin53	BlackBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin54	BlackBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin55	BlackBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin56	BlackBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin57	FireShella	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin58	FireShella	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin59	FireShella	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin60	FireShella	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin61	FireShella	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin62	RedBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin63	RedBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin64	RedBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin65	RedBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin66	RedBearA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin67	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin68	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin69	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin70	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin71	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin72	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin73	FireTaitan	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin74	FireTaitan	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin75	FireTaitan	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin76	RedBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin77	RedBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin78	RedBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin79	RedBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin80	RedBearB	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin81	WaterAlca	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin82	WaterAlca	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin83	WaterAlca	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin84	WaterAlca	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin85	WaterAlca	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin86	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin87	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin88	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin89	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin90	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin91	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin92	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin93	FireShellaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin94	FireTaitanA	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin95	FireTaitanA	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin96	FireTaitanA	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin97	WaterAlcaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin98	WaterAlcaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin99	WaterAlcaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin100	WaterAlcaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin101	WaterAlcaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin102	WaterAlcaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin103	WaterAlcaA	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin104	WaterBaridon	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin105	WaterBaridon	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin106	WaterBaridon	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		AlruinH01	HERB7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH01	HERB8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH01	HERB9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH02	HERB7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH02	HERB8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH02	HERB9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH03	HERB7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH03	HERB8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH03	HERB9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH04	HERB7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH04	HERB8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH04	HERB9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH05	HERB7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH05	HERB8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinH05	HERB9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM01	MUSHROOM7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM01	MUSHROOM8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM01	MUSHROOM9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM02	MUSHROOM7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM02	MUSHROOM8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM02	MUSHROOM9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM03	MUSHROOM7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM03	MUSHROOM8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM03	MUSHROOM9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM04	MUSHROOM7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM04	MUSHROOM8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinM04	MUSHROOM9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW01	WOOD7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW01	WOOD8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW01	WOOD9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW02	WOOD7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW02	WOOD8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW02	WOOD9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW03	WOOD7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW03	WOOD8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW03	WOOD9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW04	WOOD7	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW04	WOOD8	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		AlruinW04	WOOD9	1	0	298	302	-2	5	-1	8	0	10	1	13	2	0
+#record		Alruin107	Lab_Snake_Out	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin108	Lab_Unfinished	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin109	Lab_Snake_Out	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin110	Lab_Unfinished	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin111	Lab_Snake_Out	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin112	Lab_Unfinished	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin113	Lab_Unfinished	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Alruin114	Lab_Snake_Out	3	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint01	BlackBear	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint02	BlackBear	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint03	BlackBear	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint04	BlackBear	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint05	BlackBear	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint06	BlackBear	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint07	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint08	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint09	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint10	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint11	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint12	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint13	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint14	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint15	Lab_Unfinished	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint16	FireShellaB	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint17	FireShellaB	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint18	FireShellaB	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint19	FireShellaB	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint20	FireShellaB	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+#record		Waypoint21	FireShellaB	5	0	5	1	5	0	2	0	3	0	4	0	5	0
+;		Halloween01	E_JackO05	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween02	E_JackO05	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;		Halloween03	E_JackO05	1	0	600	599	601	-2	10	-1	20	0	60	1	120	2
+;#record		XmasWaypoint	ChristmasTree	1	0	5	1	5	0	2	0	3	0	4	0	5	0
+#end																	

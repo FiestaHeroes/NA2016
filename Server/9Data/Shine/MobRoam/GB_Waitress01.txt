@@ -1,0 +1,34 @@
+;	Shine Monster Roaming Table			
+;	Monster Roaming			
+#ignore	\o042			
+#exchange	#	\x20		
+#table	Roaming			
+#columntype	WORD	DWRD	DWRD	STRING[32]
+#columnname	ID	X	Y	EventIndex
+#record	0	2399	2298	-
+#record	1	2533	2118	-
+#record	2	2618	1923	-
+#record	3	2659	1708	-
+#record	4	2666	1521	-
+#record	5	2636	1314	-
+#record	6	2571	1131	-
+#record	7	2457	977	-
+#record	8	2354	842	-
+#record	9	2204	725	-
+#record	10	2051	627	-
+#record	11	1862	560	-
+#record	12	1692	531	-
+#record	13	1932	569	-
+#record	14	2101	637	-
+#record	15	2273	763	-
+#record	16	2418	899	-
+#record	17	2508	1033	-
+#record	18	2608	1211	-
+#record	19	2652	1407	-
+#record	20	2657	1611	-
+#record	21	2642	1803	-
+#record	22	2596	2009	-
+#record	23	2497	2181	-
+#record	24	2399	2298	-
+#record	25	0	0	rotate
+#end				

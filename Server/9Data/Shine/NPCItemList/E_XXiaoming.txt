@@ -1,0 +1,28 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2013.10.07					
+							
+#Table	Tab00	;크리스마스 이벤트 2013 보상 아이템					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Cos_Circus00_9	Cos_BCircus00_1	Hat_FoxEar01_2	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	Hat_Pirate01_5	Back_KeiGuitar01_2	-	-	-	-
+#Record	3	-	-	-	-	-	-
+#Record	4	MiniStrawberry_P30	-	-	-	-	-
+#Record	5	-	-	-	-	-	-
+#Record	6	IglooHouse01_1	-	-	-	-	-
+#Record	7	E_ConstellationOneHandSword	E_ConstellationTwoHandSword	E_ConstellationAxe	E_Constellation_FShield	-	-
+#Record	8	E_ConstellationMace	E_ConstellationHammer	E_Constellation_CShield	-	-	-
+#Record	9	E_ConstellationBow	E_ConstellationCrossBow	-	-	-	-
+#Record	10	E_ConstellationStaff	E_ConstellationWand	-	-	-	-
+#Record	11	E_ConstellationClaw	E_ConstellationDoubleSword	-	-	-	-
+#Record	12	E_ConstellationBlade	-	-	-	-	-
+#Record	13	-	-	-	-	-	-
+#Record	14	-	-	-	-	-	-
+#Record	15	-	-	-	-	-	-
+#Record	16	-	-	-	-	-	-
+#Record	17	-	-	-	-	-	-
+#Record	18	-	-	-	-	-	-
+#End							

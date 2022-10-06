@@ -1,0 +1,114 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		1	N	4161	2552	199	1208	0									
+#record		2	N	4189	655	687	512	0									
+#record		3	N	6167	2569	217	1167	0									
+#record		4	N	6195	638	711	507	0									
+#record		5	N	5139	3290	1784	947	0									
+#record		6	N	4184	7485	232	1173	0									
+#record		7	N	4175	9412	713	469	0									
+#record		8	N	6165	7458	245	1185	0									
+#record		9	N	6191	9390	711	470	0									
+#record		10	N	5134	6854	1811	918	0									
+#record		11	N	2264	5044	1453	148	0									
+#record		12	N	844	4962	245	2167	0									
+#record		13	N	851	7895	674	689	0									
+#record		14	N	826	1940	663	701	0									
+#record		15	N	8918	5067	1575	187	0									
+#record		16	N	9705	3286	970	972	0									
+#record		17	N	11195	6817	969	948	0									
+#record		18	N	11810	4566	612	407	0									
+#record		M_1	N	5148	3426	1729	909	0									
+#record		M_2	N	5104	6774	1826	942	0									
+#record		M_3	N	11171	6785	993	952	0									
+#record		M_4	N	9724	3349	889	880	0									
+#record		C_1	N	3879	5101	0	0	643									
+#record		C_2	N	9740	3278	0	0	1046									
+#record		C_3	N	11276	6857	0	0	1011									
+#record		C_4	N	856	5040	130	1126	0									
+#record		C_5	N	5166	7855	1222	1628	0									
+#record		C_6	N	5229	2244	1083	1557	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		1	P_KaraSolider1	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		2	P_KaraSolider1	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		2	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		2	P_KaraSolider2	6	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		3	P_KaraSolider2	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		4	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		4	P_KaraSolider1	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		4	P_KaraSolider2	15	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		5	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		5	P_KaraSolider1	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		6	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		6	P_KaraSolider1	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		7	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		7	P_KaraSolider1	12	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		7	P_KaraSolider2	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		8	P_KaraSolider2	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		8	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		9	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		9	P_KaraSolider1	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		9	P_KaraSolider2	15	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		10	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		10	P_KaraSolider2	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		11	P_KaraSolider2	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		11	P_KaraSolider3	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		12	P_KaraSolider3	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		12	P_KaraSolider4	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		13	P_KaraSolider3	12	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		13	P_KaraSolider4	12	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		13	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		14	P_KaraSolider3	12	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		14	P_KaraSolider4	12	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		14	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		15	P_KaraSolider2	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		15	P_KaraSolider3	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		15	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		16	P_KaraSolider3	15	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		16	P_KaraSolider4	25	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		16	P_LightingViVi	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		17	P_LightingViVi	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		17	P_KaraSolider3	15	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		17	P_KaraSolider4	25	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		18	P_KaraSolider4	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		18	P_LightingViVi	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		M_1	MINE4	1	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_1	MINE5	2	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_1	MINE6	1	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_2	MINE4	2	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_2	MINE5	2	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_2	MINE6	1	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_3	MINE6	2	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_3	MINE5	2	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_4	MINE5	2	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		M_4	MINE6	3	0	160	150	170	-10	20	-5	40	0	50	5	60	10
+#record		C_1	P_Fighter2F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_1	P_Archer2F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_2	P_Cleric2M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_3	P_Archer2F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_3	P_Fighter2F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_4	P_Mage2M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_4	P_Cleric2M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_5	P_Cleric2M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_5	P_Fighter2F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_5	P_Archer2F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_6	P_Mage2M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_6	P_Cleric2M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_6	P_Fighter2F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+																	
+#end																	

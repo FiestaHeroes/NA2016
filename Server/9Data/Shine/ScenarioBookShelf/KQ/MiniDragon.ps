@@ -1,0 +1,431 @@
+; 전역스킬에 대한 방식
+;   1. 스킬테이블에 상태이상 부여 - 스킬시전시 원거리마법만 통하는 상태이상 부여
+;   2. 스킬을 스크립트에서 제어
+
+open [main]
+    var Players             ""
+        MiniDragon          ""
+        KQGuard             ""
+
+        SelfHealQuantity    ""  ; 매틱마다 얼마씩 차는가
+
+        InterruptBlock      ""
+        InterruptArg        ""
+
+        Boss_1              ""
+        Boss_2              ""
+        Boss_3              ""
+        Boss_4              ""
+        MiniDragon          ""
+        Temp                "".
+
+
+
+    waitlogin Players.
+    if Players == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    pause Sec 10.
+
+    scriptfile "KQMiniDragon".
+
+    timelimit Min 50.
+
+    call "Fi_Boss".
+    call "S_Boss".
+    call "T_Boss".
+    call "Fo_Boss".
+    call "Last_Boss".
+;;;;;;;;;;;;;;;  조금 있다가
+
+
+
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [Fi_Boss]
+
+    regengroup "KDMDragon" "KQ_MiniDragon_1_1".
+    regengroup "KDMDragon" "KQ_MiniDragon_1_2".
+    regengroup "KDMDragon" "KQ_MiniDragon_1_3".
+    regengroup "KDMDragon" "KQ_MiniDragon_1_4".
+    regengroup "KDMDragon" "KQ_MiniDragon_1_5".
+
+    mobregen Boss_1 "KQ_Werebear" 4270	1926  53 1000 "Normal".
+
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".              ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_1 "Fi_BossClear".
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+open [Fi_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "Fi_Boss".    ; 첫번째 보스 스크립트 여기서 멈춰
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [S_Boss]   ; 2번째 스크립트 열어
+
+    regengroup "KDMDragon" "KQ_MiniDragon_2_1".
+    regengroup "KDMDragon" "KQ_MiniDragon_2_2".
+    regengroup "KDMDragon" "KQ_MiniDragon_2_3".
+    regengroup "KDMDragon" "KQ_MiniDragon_2_4".
+    regengroup "KDMDragon" "KQ_MiniDragon_2_5".
+
+    mobregen Boss_2 "KQ_G_BossTombRaider2" 9022 2832 53 1000 "Normal".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".              ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_2 "S_BossClear".
+
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+                                                     
+open [S_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "S_Boss".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [T_Boss]
+
+    regengroup "KDMDragon" "KQ_MiniDragon_3_1".
+    regengroup "KDMDragon" "KQ_MiniDragon_3_2".
+    regengroup "KDMDragon" "KQ_MiniDragon_3_3".
+    regengroup "KDMDragon" "KQ_MiniDragon_3_4".
+    regengroup "KDMDragon" "KQ_MiniDragon_3_5".
+    regengroup "KDMDragon" "KQ_MiniDragon_3_6".
+    regengroup "KDMDragon" "KQ_MiniDragon_3_7".
+
+    mobregen Boss_3 "KQ_BossRobo2" 2920 8076 90 1000 "Normal".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".         ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_3 "T_BossClear".      ; 보스 3이 죽었을 경우 3스테이지 호출해라
+
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+
+open [T_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "T_Boss".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fo_Boss]
+
+    regengroup "KDMDragon" "KQ_MiniDragon_4_1".
+    regengroup "KDMDragon" "KQ_MiniDragon_4_2".
+    regengroup "KDMDragon" "KQ_MiniDragon_4_3".
+    regengroup "KDMDragon" "KQ_MiniDragon_4_4".
+    regengroup "KDMDragon" "KQ_MiniDragon_4_5".
+
+    mobregen Boss_4 "KQ_GobleKing" 6356	10742 53 1000 "Normal".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".         ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Boss_4 "Fo_BossClear".      ; 보스 4가 죽었을 경우 4스테이지 호출해라
+
+; --------------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; --------------------------------------------------------------- ;
+
+open [Fo_BossClear]
+    suicide all.                                        ; 모든 몹을 죽임
+
+    break "Fo_Boss".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 성공과 실패
+
+open [Last_Boss]
+
+    mobregen MiniDragon "KQ_MiniDragon" 11474 11710 53 1000 "Normal".
+
+;Temp 테스트 좌표; mobregen MiniDragon "KQ_MiniDragon" 4028 2055 53 1000 "Normal".
+
+    mobdetectrange MiniDragon 150.
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".              ; 인터럽트 인덱스 추가 - 코딩필요
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 MiniDragon "QuestSuccess".
+    interruptset TargetChange "" 1 MiniDragon "ViewEnemy".     ; MiniDragon이 적을 감지했을때
+
+    call "HP1000".
+
+
+
+
+
+
+;@# mobweaponrate MiniDragon 1000 0 0 300.; 테스트용, 용이 메테오스킬을 자주 쓰도록
+
+    ; 힐
+    interruptset HPLow "" 1 MiniDragon 750 "Heal750".
+
+
+    ; 소환
+    interruptset HPLow "" 1 MiniDragon 850 "Summon850".
+
+
+    ; 분신
+    interruptset HPLow "" 1 MiniDragon 120 "Duplicate120".
+
+; -------------------------------------------------------- ;
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+; ---------------------------------------------------------;
+open [QuestSuccess]
+    pause Sec 10.
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+    questmobkill 2668 "Daliy_Check" 1.
+
+
+    regengroup "KDMDragon" "KQ_MiniDragon_MINE1".
+
+    broadcast all "KQReturn60".
+    pause sec 10.
+    broadcast all "KQReturn50".
+    pause sec 10.
+    broadcast all "KQReturn40".
+    pause sec 10.
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "KQFReturn30".
+    pause sec 10.
+    broadcast all "KQFReturn20".
+    pause sec 10.
+    broadcast all "KQFReturn10".
+    pause sec 5.
+    broadcast all "KQFReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    endofkq.
+    break "main".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+open [ViewEnemy]
+    mobdetectrange MiniDragon 1000.         ; 디텍트범위 늘림
+close
+
+; 기술빈도 바꾸기
+open [HP1000]
+    mobweaponrate MiniDragon 1000 200 100 0.
+    interruptset HPLow "" 1 MiniDragon 900 "HP900".
+close
+
+open [HP900]
+    mobweaponrate MiniDragon 1000 200 200 0.
+    interruptset HPLow "" 1 MiniDragon 800 "HP800".
+close
+
+open [HP800]
+    mobweaponrate MiniDragon 1000 200 150 150.
+    interruptset HPLow "" 1 MiniDragon 700 "HP700".
+close
+
+open [HP700]
+    mobweaponrate MiniDragon 1000 300 200 0.
+    interruptset HPLow "" 1 MiniDragon 600 "HP600".
+close
+
+open [HP600]
+    mobweaponrate MiniDragon 1000 350 150 200.
+    interruptset HPLow "" 1 MiniDragon 500 "HP500".
+close
+
+open [HP500]
+    mobweaponrate MiniDragon 1000 400 300 0.
+    interruptset HPLow "" 1 MiniDragon 400 "HP400".
+close
+
+open [HP400]
+    mobweaponrate MiniDragon 1000 200 250 250.
+    interruptset HPLow "" 1 MiniDragon 300 "HP300".
+close
+
+open [HP300]
+    mobweaponrate MiniDragon 1000 300 400 0.
+    interruptset HPLow "" 1 MiniDragon 200 "HP200".
+close
+
+open [HP200]
+    mobweaponrate MiniDragon 1000 400 400 0.
+    interruptset HPLow "" 1 MiniDragon 100 "HP100".
+close
+
+open [HP100]
+    mobweaponrate MiniDragon 1000 300 400 30.
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 자기힐링
+open [Heal750]
+    SelfHealQuantity  = 3000.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+    interruptset HPLow "" 1 MiniDragon 550 "Heal550".
+close
+
+open [Heal550]
+    SelfHealQuantity  = 4000.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+    interruptset HPLow "" 1 MiniDragon 350 "Heal350".
+close
+
+open [Heal350]
+    SelfHealQuantity  = 5000.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+    interruptset HPLow "" 1 MiniDragon 150 "Heal150".
+close
+
+open [Heal150]
+    SelfHealQuantity  = 6000.  ; 매틱마다 얼마씩 차는가
+    call "SelfHealStart".
+close
+
+open [SelfHealStart]
+    waitidle.        ; 스킬 캐스팅 중이라면 캐스팅이 끝날 때까지 기다림
+
+    abstateset MiniDragon "StaQuestEntangle" 1 15000.
+    animate MiniDragon "KQ_MD_BuffSkil1_1".       ; 힐용 애니메이션(15초짜리)
+    interruptset Sec "" 15 1 "SelfHeal".    ; 1초마다 15번 실행
+close
+
+open [SelfHeal]
+    heal MiniDragon SelfHealQuantity.
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 소환
+open [Summon850]
+    summonmob MiniDragon "KQ_SmallProck" 1.
+    summonmob MiniDragon "KQ_Bat" 2.
+    interruptset HPLow "" 1 MiniDragon 670 "Summon670".
+close
+
+open [Summon670]
+    summonmob MiniDragon "KQ_SmallProck" 2.
+    summonmob MiniDragon "KQ_Bat" 2.
+    summonmob MiniDragon "KQ_KissLips" 1.
+    interruptset HPLow "" 1 MiniDragon 620 "Summon620".
+close
+
+open [Summon620]
+    summonmob MiniDragon "KQ_SmallProck" 2.
+    summonmob MiniDragon "KQ_Bat" 2.
+    summonmob MiniDragon "KQ_KissLips" 1.
+    interruptset HPLow "" 1 MiniDragon 470 "Summon470".
+close
+
+open [Summon470]
+    summonmob MiniDragon "KQ_KissLips" 1.
+    summonmob MiniDragon "KQ_Spider" 2.
+    summonmob MiniDragon "KQ_SandRatman" 2.
+    interruptset HPLow "" 1 MiniDragon 420 "Summon420".
+close
+
+open [Summon420]
+    summonmob MiniDragon "KQ_KissLips" 1.
+    summonmob MiniDragon "KQ_Spider" 1.
+    summonmob MiniDragon "KQ_SandRatman" 2.
+    interruptset HPLow "" 1 MiniDragon 280 "Summon280".
+close
+
+open [Summon280]
+    summonmob MiniDragon "KQ_SandRatman" 2.
+    summonmob MiniDragon "KQ_MadHob" 1.
+    summonmob MiniDragon "KQ_HardboneImp" 1.
+    interruptset HPLow "" 1 MiniDragon 240 "Summon240".
+close
+
+open [Summon240]
+    summonmob MiniDragon "KQ_KissLips" 1.
+    summonmob MiniDragon "KQ_Spider" 1.
+    summonmob MiniDragon "KQ_SandRatman" 2.
+    interruptset HPLow "" 1 MiniDragon 170 "Summon170".
+close
+
+open [Summon170]
+    summonmob MiniDragon "KQ_Spider" 1.
+    summonmob MiniDragon "KQ_SandRatman" 2.
+    summonmob MiniDragon "KQ_MadHob" 2.
+    interruptset HPLow "" 1 MiniDragon  50 "Summon050".
+close
+
+open [Summon050]
+    summonmob MiniDragon "KQ_MadHob" 1.
+    summonmob MiniDragon "KQ_HardboneImp" 1.
+    summonmob MiniDragon "KQ_Werebear" 2.
+    summonmob MiniDragon "KQ_HeavyOgre" 2.
+    interruptset HPLow "" 1 MiniDragon  30 "Summon030".
+close
+
+open [Summon030]
+    summonmob MiniDragon "KQ_MadHob" 1.
+    summonmob MiniDragon "KQ_HardboneImp" 2.
+    summonmob MiniDragon "KQ_Werebear" 2.
+    summonmob MiniDragon "KQ_HeavyOgre" 3.
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 분신
+open [Duplicate120]
+;@#$    duplicate MiniDragon 1.
+close

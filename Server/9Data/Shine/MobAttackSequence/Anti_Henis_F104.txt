@@ -1,0 +1,23 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+;	Anti_Henis_F104				
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+#Record	0	-			
+#Record	1	CrushStrike05			
+#Record	2	RedSlash09			
+#Record	3	GreatSwing06			
+#Record	4	-			
+#Record	5	CrushStrike05			
+#Record	6	RedSlash09
+#Record	7	GreatSwing06
+#Record	8	-
+#Record	9	CrushStrike05
+#Record	10	RedSlash09
+#Record	11	GreatSwing06
+#End		

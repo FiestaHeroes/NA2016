@@ -1,0 +1,224 @@
+; 전직필드
+open [main]
+    var PlayerHandle        ""
+        Roumenos            ""
+        NPC                 ""
+        NPCList             ""
+        LoopIndex           ""
+        LoginWait           ""
+        InterruptBlock      ""
+        InterruptArg        "".
+
+    scriptfile "JobChange2-1".
+
+    ; 마을 npc들
+    npcstand NPC      "RouSmithJames"            5937    6644    0  1000 "Normal".
+    npcstand NPC      "RouSoulMctJulia"          8032    6469    0 1000 "Normal".
+    npcstand Roumenos "RouTownChiefRoumenus"     5988    4677    178 1000 "Normal".
+    npcstand NPC      "RouWeaponTitleMctZach"    4985    5853    171  1000 "Normal".
+    npcstand NPC      "RouSkillRubi"             7129    6115    173  1000 "Normal".
+    npcstand NPC      "RouItemMctPey"            7133    5428    0 1000 "Normal".
+    npcstand NPC      "RouStoreRaina"            6139    5197   342   1000 "Normal".
+    npcstand NPC      "RouRookieGuideRaemi"      7720    4623    80 1000 "Normal".
+    npcstand NPC      "RouGrandfatherRobin"      4478    6735    0 1000 "Normal".
+    npcstand NPC      "RouGuildBrom"             4948    5015    0 1000 "Normal".
+
+    open [BaggerRegen]
+        LoopIndex = 0.
+
+        var coord   ""
+            x       ""
+            y       ""
+            d       "".
+
+        while LoopIndex < 15
+        open
+            coord = @CircularScatter(6242 4646 1000).     ; 6242, 4646을 중심으로 반지름 1000 영역에 뿌릴 경우의 죄표 만들기("7276 9217" 형식의 리턴)
+            x = @RemoveFirst("coord" " ").                ; 리스트형태인 coord에서 " "로 분리된 첫째원소를 x에 넣고 coord에서는 지움. coord변수의 값도 변해야 하므로 coord 자체를 보내야 함
+            y = @RemoveFirst("coord" " ").                ; 리스트형태인 coord에서 " "로 분리된 첫째원소를 y에 넣고 coord에서는 지움. coord변수의 값도 변해야 하므로 coord 자체를 보내야 함
+            d = @Random(0 360).
+
+            ; Bandit 형태의 NPC를 만드는 기능은 없으므로 몹을 만든 후 NPC로 바꿈
+            mobregen NPC "Slime" x y d 1000 "Normal" "Beggar". ; 몹 만들어짐. 가장 뒤 인수가 플레이어 핸들이면 복사판, "Beggar"이면 클래스 상관없이 장비없음
+            change2npc NPC "Slime".
+
+            LoopIndex = LoopIndex + 1.
+        close
+
+        LoopIndex = 0.
+        while LoopIndex < 5
+        open
+            coord = @CircularScatter(5807 6234 500).
+            x = @RemoveFirst("coord" " ").
+            y = @RemoveFirst("coord" " ").
+            d = @Random(0 360).
+
+            ; Bandit 형태의 NPC를 만드는 기능은 없으므로 몹을 만든 후 NPC로 바꿈
+            mobregen NPC "Slime" x y d 1000 "Normal" "Beggar". ; 몹 만들어짐. 가장 뒤 인수가 플레이어 핸들이면 복사판, "Beggar"이면 클래스 상관없이 장비없음
+            change2npc NPC "Slime".
+
+            LoopIndex = LoopIndex + 1.
+        close
+    close
+
+
+    waitlogin LoginWait.                                                    ; 플레이어의 로긴 기다림
+    if LoginWait == 0
+    then open
+        call "QuestFail".
+    close
+
+    findhandle PlayerHandle "Player" 0.                                     ; 플레이어의 핸들을 찾음(처음 하나만)
+
+
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;; 플레이어가 들어와서 이상함을 느낄 때까지 ;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    open [Arrive]       ; NPC를 5회 클릭할 때까지 기다림
+        var ClickNum        0
+            ClickHandle     0.
+
+        interruptclear all.
+        interruptset NPCClickAny "NPCClickInt" 99999 "NPCClick".  ; 어떤 NPC든지 클릭될 때 NPCClick 호출
+        interruptset PlayerEliminate "" 1 "QuestFail".
+
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close
+
+    interrupterase "NPCClickInt".         ; NPC 클릭할때의 이벤트 지움
+
+
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;; 모든 NPC를 좀비로 바꿈 ;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    maplight 150 70 70.
+    mapfog 100 1400.
+
+    NPCList = @GetObjectList(PlayerHandle "NPC" "BANDIT"). ; PlayerHandle에서 가장 가까운 NPC, Bandit 찾기
+
+    open [Zombinaze]
+        var ScreamNo 0.
+        infinite
+        open
+            NPC = @RemoveFirst("NPCList" " ").
+
+            if NPC == ""    ; 더이상 찾을수 없음
+            then open
+                break "Zombinaze".
+            close
+
+            npcchat NPC "Scream" % ScreamNo.          ; "아아악!", "끼야악!", "으악!" 등등
+            exchange2mob NPC "Job2_Zombie".           ; NPC를 없애고 새로운 ZombieKnight를 만듦
+            npcchat NPC "Scream" % ScreamNo.          ; "아아악!", "끼야악!", "으악!" 등등
+
+            ScreamNo = ScreamNo + 1.
+            if ScreamNo >= 3
+            then open
+                ScreamNo = 0.
+            close
+        close
+    close
+
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;; 결판이 날 때까지 기다림 ;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+    timelimit Min 20.                           ; 제한시간 20분
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "QuestSuccess".
+    interruptset DeadIndex "" 99999 "Job2_Zombie" "ZombieMessage".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ZombieMessage]
+    var ZombieNum    0.
+
+    ZombieNum = @Count("Job2_Zombie").
+
+    printf "Zombie : " % ZombieNum.
+
+    if ZombieNum === 0
+    then open
+        call "QuestSuccess".
+    close
+    
+    if ZombieNum > 10
+    then open
+        ZombieNum = 10.
+    close
+
+    broadcast All "ReftMob" % ZombieNum.
+close
+
+open [NPCClick]
+    npcchat InterruptArg "NoChat".          ; "..."을 출력
+
+    if ClickHandle =!= InterruptArg
+    then open
+        ClickNum = ClickNum + 1.
+        ClickHandle = InterruptArg.
+
+
+
+
+;        if ClickNum >= 5
+;        then open
+;            break "Arrive".
+;        close
+        if InterruptArg === Roumenos
+        then open
+            break "Arrive".
+        close
+
+
+    close
+close
+
+open [QuestSuccess]
+;    itemattrset PlayerHandle "Job2_STpiece1" "-s1".    ; 아이템 Job2_STpiece1(ItemClass_KQStep)의 스텝을 1로 만듦
+    itemerase  PlayerHandle "Job2_STpiece1".
+    itemcreate PlayerHandle "Job2_STpiece1-1".
+
+    pause Sec 1.
+
+    questresult Suc.                   ; 성공패킷 날림
+    scinariocode PlayerHandle 16.
+
+    pause Sec 2.
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    linkto all "RouVal01" "RouVal01" 12842 6467.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "RouReturn30".
+    pause sec 10.
+    broadcast all "RouReturn20".
+    pause sec 10.
+    broadcast all "RouReturn10".
+    pause sec 5.
+    broadcast all "RouReturn5".
+    pause sec 5.
+    linkto all "RouVal01" "RouVal01" 12842 6467.
+    break "main".
+close

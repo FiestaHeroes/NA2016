@@ -1,0 +1,151 @@
+;		ItemList in NPC																																																																
+#ignore	\o042			; 인용부호 무시																																																														
+#exchange	#	\x20		; # => space																																																														
+;		2006.01.25																																																																
+																																																																		
+#Table	Tab00	;파이터 액티브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	TripleHit03	TripleHit04	TripleHit05	TripleHit06	-	-																																																											
+#Record	1	SeverBone03	SeverBone04	SeverBone05	-	-	-																																																											
+#Record	2	RedSlash03	RedSlash04	RedSlash05	RedSlash06	-	-																																																											
+#Record	3	SnearKick02	-	-	-	-	-																																																											
+#Record	4	MightySoul02	MightySoul03	MightySoul04	-	-	-																																																											
+#Record	5	PowerHit01	PowerHit02	PowerHit03	PowerHit04	PowerHit05	-																																																											
+#Record	6	MoraleDecrease01	MoraleDecrease02	MoraleDecrease03	MoraleDecrease04	-	-																																																											
+#Record	7	SnearShout01	SnearShout02	-	-	-	-																																																											
+#Record	8	SpeedShield01	SpeedShield02	SpeedShield03	SpeedShield04	SpeedShield05	-																																																											
+#Record	9	HarmDefect01	HarmDefect02	HarmDefect03	HarmDefect04	-	-																																																											
+#Record	10	GreatSwing01	GreatSwing02	-	-	-	-																																																											
+#Record	11	PowerDrain01	PowerDrain02	-	-	-	-																																																											
+																																																																		
+#Table	Tab01	;파이터 패시브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	BraveMastery02	BraveMastery03	BraveMastery04	BraveMastery05	BraveMastery06	-																																																											
+#Record	1	OHSwdMastery03	OHSwdMastery04	OHSwdMastery05	OHSwdMastery06	-	-																																																											
+#Record	2	THSwdMastery01	THSwdMastery02	THSwdMastery03	THSwdMastery04	THSwdMastery05	-																																																											
+#Record	3	THAxeMastery01	THAxeMastery02	THAxeMastery03	THAxeMastery04	THAxeMastery05	-																																																											
+																																																																		
+#Table	Tab02	;클레릭 액티브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	Heal04	Heal05	Heal06	Heal07	Heal08	Heal09																																																											
+#Record	1	Heal10	-	-	-	-	-																																																											
+#Record	2	Wield03	Wield04	Wield05	Wield06	Wield07	-																																																											
+#Record	3	Blessing02	Blessing03	Blessing04	Blessing05	-	-																																																											
+#Record	4	MentalShout02	MentalShout03	MentalShout04	-	-	-																																																											
+#Record	5	GreatCure01	GreatCure02	-	-	-	-																																																											
+#Record	6	DivineShield01	DivineShield02	DivineShield03	DivineShield04	DivineShield05	-																																																											
+#Record	7	Restore01	Restore02	Restore03	Restore04	Restore05	Restore06																																																											
+#Record	8	DarknessProtection01	DarknessProtection02	-	-	-	-																																																											
+#Record	9	HitProtection01	HitProtection02	-	-	-	-																																																											
+#Record	10	PsychicBlunt01	PsychicBlunt02	PsychicBlunt03	-	-	-																																																											
+#Record	11	PsychicChop01	PsychicChop02	PsychicChop03	-	-	-																																																											
+#Record	12	GreatHeal01	GreatHeal02	GreatHeal03	GreatHeal04	-	-																																																											
+#Record	13	SafeProtection01	SafeProtection02	-	-	-	-																																																											
+																																																																		
+#Table	Tab03	;클레릭 패시브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	MaceMastery03	MaceMastery04	MaceMastery05	MaceMastery06	-	-																																																											
+#Record	1	HammerMastery01	HammerMastery02	HammerMastery03	HammerMastery04	HammerMastery05	-																																																											
+#Record	2	HolySpirit02	HolySpirit03	HolySpirit04	HolySpirit05	HolySpirit06	-																																																											
+																																																																		
+#Table	Tab04	;아처 액티브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	AimingShot03	AimingShot04	AimingShot05	AimingShot06	-	-																																																											
+#Record	1	PowerShot03	PowerShot04	PowerShot05	PowerShot06	-	-																																																											
+#Record	2	PuryImpact02	PuryImpact03	PuryImpact04	PuryImpact05	-	-																																																											
+#Record	3	BoneArrow02	BoneArrow03	BoneArrow04	BoneArrow05	-	-																																																											
+#Record	4	MultiShot01	MultiShot02	MultiShot03	MultiShot04	MultiShot05	-																																																											
+#Record	5	PoisonShot01	PoisonShot02	PoisonShot03	-	-	-																																																											
+#Record	6	SpiritFog01	SpiritFog02	-	-	-	-																																																											
+#Record	7	WindCharge01	WindCharge02	WindCharge03	WindCharge04	WindCharge05	WindCharge06																																																											
+																																																																		
+#Table	Tab05	;아처 패시브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	BowMastery03	BowMastery04	BowMastery05	BowMastery06	-	-																																																											
+#Record	1	CBowMastery01	CBowMastery02	CBowMastery03	CBowMastery04	CBowMastery05	-																																																											
+#Record	2	DodgeMastery02	DodgeMastery03	DodgeMastery04	DodgeMastery05	DodgeMastery06	-																																																											
+																																																																		
+#Table	Tab06	;메이지 액티브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	MagicMissile05	MagicMissile06	MagicMissile07	MagicMissile08	-	-																																																											
+#Record	1	IceBolt04	IceBolt05	IceBolt06	IceBolt07	IceBolt08	-																																																											
+#Record	2	FireBolt04	FireBolt05	FireBolt06	FireBolt07	FireBolt08	-																																																											
+#Record	3	LightningBolt04	LightningBolt05	LightningBolt06	LightningBolt07	LightningBolt08	-																																																											
+#Record	4	VitalConversion01	VitalConversion02	VitalConversion03	VitalConversion04	VitalConversion05	-																																																											
+#Record	5	MagicBurst02	MagicBurst03	MagicBurst04	-	-	-																																																											
+#Record	6	DispelTrick01	DispelTrick02	-	-	-	-																																																											
+#Record	7	ManaBurn01	ManaBurn02	ManaBurn03	-	-	-																																																											
+#Record	8	Bleach01	-	-	-	-	-																																																											
+#Record	9	MagicBall01	MagicBall02	-	-	-	-																																																											
+#Record	10	IceBlast01	IceBlast02	-	-	-	-																																																											
+#Record	11	FireBall01	-	-	-	-	-																																																											
+#Record	12	ChainLightning01	-	-	-	-	-																																																											
+																																																																		
+#Table	Tab07	;메이지 패시브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	StaffMastery03	StaffMastery04	StaffMastery05	StaffMastery06	-	-																																																											
+#Record	1	WandMastery01	WandMastery02	WandMastery03	WandMastery04	WandMastery05	-																																																											
+#Record	2	WisdomMastery02	WisdomMastery03	WisdomMastery04	WisdomMastery05	WisdomMastery06	-																																																											
+																																																																		
+																																																																		
+#Table	Tab08	;조커 액티브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	BenTear03	BenTear04	BenTear05	BenTear06	-	-																																																											
+#Record	1	NorthTear03	NorthTear04	NorthTear05	-	-	-																																																											
+#Record	2	PowerBenTear03	PowerBenTear04	PowerBenTear05	PowerBenTear06	-	-																																																											
+#Record	3	PowerNorthTear03	PowerNorthTear04	PowerNorthTear05	-	-	-																																																											
+#Record	4	FitBlood02	FitBlood03	FitBlood04	FitBlood05	-	-																																																											
+#Record	5	NorthBreeze01	NorthBreeze02	NorthBreeze03	NorthBreeze04	NorthBreeze05	-																																																											
+#Record	6	PowerNorthBreeze01	PowerNorthBreeze02	PowerNorthBreeze03	PowerNorthBreeze04	-	-																																																											
+#Record	7	PerfectBody01	PerfectBody02	-	-	-	-																																																											
+#Record	8	FitPoison01	FitPoison02	-	-	-	-																																																											
+#Record	9	FragranceOfPoison01	-	-	-	-	-																																																											
+#Record	10	WeaponBlast01	-	-	-	-	-																																																											
+#Record	11	ResistPoison01	-	-	-	-	-																																																											
+																																																																		
+#Table	Tab09	;조커 패시브																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	ClawMastery03	ClawMastery04	ClawMastery05	ClawMastery06	-	-																																																											
+#Record	1	DSwordMastery01	DSwordMastery02	DSwordMastery03	DSwordMastery04	DSwordMastery05	DSwordMastery06																																																											
+#Record	2	CleaveMastery02	CleaveMastery03	CleaveMastery04	CleaveMastery05	CleaveMastery06	-																																																											
+																																																																		
+#Table	Tab08	;연금술 																																																																
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																											
+#Record	0	Mining	UseRide	-	-	-	-																																																											
+#Record	1	Recipe_El1	Recipe_El2	Recipe_C_NorKylinLeather	-	Recipe_R_LowKylinLeather	-																																																											
+#Record	2	Recipe_Lix1	Recipe_Lix2	Recipe_C_NorPledge	-	Recipe_R_LowPledge	-																																																											
+#Record	3	Recipe_Xir1	Recipe_Xir2	Recipe_C_NorBrokenBone	-	Recipe_R_Geranium	-																																																											
+#Record	4	Recipe_BestLowHpPotion	Recipe_LowHpPotion	Recipe_C_NorMagicCrystal	-	Recipe_R_Sage	-																																																											
+#Record	5	Recipe_BestLowSpPotion	Recipe_LowSpPotion	Recipe_C_NorSoulDust	Recipe_C_NorGemDust	Recipe_R_NorCopperOre	Recipe_R_HighCopperOre																																																											
+#Record	6	Recipe_BestLowConHPPotion	Recipe_LowConHPPotion	Recipe_C_HighSilverOre	-	Recipe_R_Topaz	-																																																											
+#Record	7	Recipe_BestLowConSPPotion	Recipe_LowConSPPotion	Recipe_C_Ramsear	-	Recipe_R_NorMushrooms	-																																																											
+#Record	8	Recipe_BestLowTHScroll	Recipe_LowTHScroll	Recipe_C_HighMushrooms	-	Recipe_R_LowSilverOre	-																																																											
+#Record	9	Recipe_BestLowTBScroll	Recipe_LowTBScroll	Recipe_C_HighToadStool	-	Recipe_R_NorToadStool	-																																																											
+#Record	10	Recipe_BestLowMRScroll	Recipe_LowMRScroll	Recipe_C_Ruby	-	Recipe_R_NorWoodSab	-																																																											
+#Record	11	Recipe_BestLowACScroll	Recipe_LowACScroll	Recipe_C_LowGoldOre	-	Recipe_R_Violet	Recipe_R_Rosemary																																																											
+#Record	12	Recipe_BestLowMaxHPScroll	Recipe_LowMaxHPScroll	Recipe_C_HighKylinLeather	-	Recipe_R_NorBeastLeather	-																																																											
+#Record	13	Recipe_BestLowMaxSPScroll	Recipe_LowMaxSPScroll	Recipe_C_Basil	-	Recipe_R_NorSilverOre	-																																																											
+#Record	14	Recipe_BestLowMSScroll	Recipe_LowMSScroll	Recipe_C_HighBeastLeather	-	Recipe_R_NorBeastTooth	-																																																											
+#Record	15	Recipe_LowPsnResiPotion	-	Recipe_C_HighWoodSab	-	Recipe_R_NorSpiritDust	-																																																											
+#Record	16	Recipe_LowDssResiPotion	-	Recipe_C_HighBeastTooth	-	Recipe_R_KylinTail	-																																																											
+#Record	17	Recipe_LowCurResiPotion	-	Recipe_C_HighSpiritDust	-	Recipe_R_NorMeat	-																																																											
+#Record	18	Recipe_LowPsnCurPotion	-	Recipe_C_KylinFighterTail	-	Recipe_R_NorSkin	-																																																											
+#Record	19	Recipe_LowDssCurPotion	-	Recipe_C_IronBadge	-	Recipe_R_NorKylinLeather	-																																																											
+#Record	20	Recipe_BestLowCurScroll	Recipe_LowCurScroll	Recipe_C_HighGemDust	-	Recipe_R_NorBrokenBone	-																																																											
+#Record	21	-	-	Recipe_C_HighMeat	-	Recipe_R_NorCleanWater	-																																																											
+#Record	22	-	-	Recipe_C_HighBrokenBone	-	Recipe_R_NorMagicCrystal	-																																																											
+#Record	23	-	-	Recipe_C_HighSkin	-	Recipe_R_NorPledge	-																																																											
+#Record	24	-	-	-	-	Recipe_R_NorSoulDust	-																																																											
+																																																																		
+#End																																																																		

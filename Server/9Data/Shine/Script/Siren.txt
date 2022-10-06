@@ -1,0 +1,24 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	Hayreddin_FaceCut01	"I can see invaders around the entrance. Varamus, Ilkane, protect the entrance!"	
+#Record	CyrusKey_FaceCut01	Varamus failed to stop you. But don’t think you can pass through here!	
+#Record	CyrusKey_FaceCut02	"Hah.. Try to open the gate behind you with the key I just dropped. If you are lucky, you can avoid the leader.. Hahaha"	
+#Record	Hayreddin_FaceCut02	Wait.. Can we wait for a battle little bit more? I have to tell Freloan about you.	
+#Record	HayEvo_FaceCut01	Hahahaha! Let's see whether you can defeat me and go to Freloan!!	
+#Record	HayEvo_FaceCut02	"If I fail to stop you, powerful Freloan will defeat you with his sword and magic!"	
+#Record	HayEvo_FaceCut03	Hah.. Go meet Freloan. You can get to him through the portal infront of you...	
+#Record	Freloan_FaceCut01	"Haha!! You are the stupid, arrogant human and elves. I heard about you from Fargels."	
+#Record	Freloan_FaceCut02	I will show you what power is!	
+#Record	SystemMessage01	You don't have the right key to open the gate.	
+#Record	Freloan_FaceCut03	I couldn't imagine you were too strong… I will let you go back to the world..	
+#Record	KQReturn30	You will be moved in 30 seconds.	
+#Record	KQReturn20	You will be moved in 20 seconds.	
+#Record	KQReturn10	You will be moved in 10 seconds.	
+#Record	KQReturn5	You will be moved in 5 seconds.	
+			
+#End			

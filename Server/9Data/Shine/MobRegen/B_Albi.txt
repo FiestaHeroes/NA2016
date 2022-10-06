@@ -1,0 +1,50 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		BossAlbireo	N	1597	2868	0	0	10									
+;#record		MineKN01	N	2096	1886	366	281	0									
+;#record		MineKN02	N	1096	1886	366	281	0									
+;#record		MineKN03	N	1096	781	366	549	0									
+;#record		MineKN04	N	2096	781	366	549	0									
+;#record		MineKN05	N	1613	1973	0	0	666									
+;#record		MineKN06	N	1600	796	0	0	533									
+;#record		MineKN07	N	1160	1463	0	0	400									
+;#record		MineKN08	N	2102	1487	0	0	400									
+;#record		MineF01	N	2694	1468	0	0	10									
+;#record		MineF02	N	502	1464	0	0	10									
+;#record		MineF03	N	2694	1468	0	0	10									
+;#record		MineF04	N	502	1464	0	0	10									
+;#record		MineF05	N	2694	1468	0	0	10									
+;#record		MineF06	N	502	1464	0	0	10									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		BossAlbireo	B_Albireo	1	0	43200	43150	43250	-4	5	-2	8	0	10	2	13	4
+;#record		MineKN01	ArkMine_Kn	10	0	10	9	11	5	-2	8	0	10	2	13	4	0
+;#record		MineKN02	ArkMine_Kn	12	0	12	11	13	5	-2	8	0	10	2	13	4	0
+;#record		MineKN03	ArkMine_Kn	8	0	8	7	9	5	-2	8	0	10	2	13	4	0
+;#record		MineKN04	ArkMine_Kn	16	0	16	15	17	5	-2	8	0	10	2	13	4	0
+;#record		MineKN05	ArkMine_Kn	15	0	15	14	16	5	-2	8	0	10	2	13	4	0
+;#record		MineKN06	ArkMine_Kn	10	0	10	9	11	5	-2	8	0	10	2	13	4	0
+;#record		MineKN07	ArkMine_Kn	20	0	20	19	21	5	-2	8	0	10	2	13	4	0
+;#record		MineKN08	ArkMine_Kn	25	0	25	24	26	5	-2	8	0	10	2	13	4	0
+;#record		MineF01	ArkMine_F	3	0	60	59	61	5	-2	8	0	10	2	13	4	0
+;#record		MineF02	ArkMine_F	3	0	60	59	61	5	-2	8	0	10	2	13	4	0
+;#record		MineF03	ArkMine_F	10	0	60	59	61	5	-2	8	0	10	2	13	4	0
+;#record		MineF04	ArkMine_F	10	0	60	59	61	5	-2	8	0	10	2	13	4	0
+;#record		MineF05	ArkMine_F	20	0	60	59	61	5	-2	8	0	10	2	13	4	0
+;#record		MineF06	ArkMine_F	20	0	60	59	61	5	-2	8	0	10	2	13	4	0
+																	
+#end																	

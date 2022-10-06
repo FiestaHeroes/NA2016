@@ -1,0 +1,32 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		QField04_01	N	618	416	0	0	67									
+#record		QField04_02	N	534	798	0	0	67									
+#record		QField04_03	N	797	880	0	0	67									
+#record		QField04_04	N	899	364	0	0	67									
+#record		QField04_05	N	971	658	0	0	67									
+#record		QField04_06	N	278	542	0	0	36									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		QField04_01	Gagoyle	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField04_02	Gagoyle	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField04_03	Gagoyle	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField04_04	Gagoyle	1	0	10	7	15	0	5	5	0	0	0	0	0	0
+#record		QField04_05	Gagoyle	1	0	75	60	90	120	15	15	0	0	0	0	0	0
+#record		QField04_06	Rock	1	0	75	60	90	120	15	15	0	0	0	0	0	0
+																	
+#end																	

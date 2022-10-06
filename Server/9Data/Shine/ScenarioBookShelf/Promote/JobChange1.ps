@@ -1,0 +1,441 @@
+; 전직필드
+open [main]
+    var InterruptBlock      ""
+        InterruptArg        ""
+        PlayerHandle        ""
+        ShadowHandle        ""
+
+        Door1               ""  ; 첫째방 출구
+        Door2               ""  ; 둘째방 입구
+        Door3               ""  ; 둘째방 출구
+        Door4               ""  ; 셋째방 입구
+        ChiefA   "" ChiefD  ""  ; 치프몹들
+        ChiefAA  "" ChiefDD ""  ; 치프몹들
+        ShadowKebingA "" ShadowKebingB "" ShadowKebingC ""
+        ShadowKebingDead    ""
+
+        ; 이 아래는 이펙트
+        Status0 "" Status1 "" Status2 "" Status3 "" Status4 "" Status5 "" Status6 ""     ; 석상들
+        Gem                 ""
+
+        ; 몹 index
+        ShadowMobIndex      ""
+
+        LoginWait           ""
+        Temp                "".
+
+    ; 문 리젠/문닫기
+    doorbuild Door1 "KQ_Gate4" 1018 1560 0 1000 "Normal".
+    doorclose Door1 "Door01".
+
+    doorbuild Door2 "KQ_Gate4" 2098 3291 270 1000 "Normal".
+    doorclose Door2 "Door02".
+
+    doorbuild Door3 "KQ_Gate4" 3845 3266 90 1000 "Normal".
+    doorclose Door3 "Door03".
+
+    doorbuild Door4 "KQ_Gate4" 5162 4629 0 1000 "Normal".
+    dooropen  Door4 "Door04".
+
+    scriptfile "JobChange1".
+
+    waitlogin LoginWait.                                                   ; 플레이어의 로긴 기다림
+    if LoginWait == 0
+    then open
+        call "QuestFail".
+    close
+
+    findhandle PlayerHandle "Player" 0.                                 ; 플레이어의 핸들을 찾음(처음 하나만)
+
+    ShadowMobIndex = "Job1_" % @CharClass(PlayerHandle) % "-m".
+
+    call "FirstContact".
+    call "FightSkeletons".
+    call "RoadToLastRoom".
+    call "LastBattle".
+close
+
+open [QuestSuccess]
+    effectobj Temp PlayerHandle "Job1_Dn_ShadowEnd" 4000 1000.
+
+    npcchat ShadowHandle "ShadowDead0".
+    npcchat ShadowHandle "ShadowDead1".
+
+    questresult Suc.                   ; 성공패킷 날림
+
+    itemcreate PlayerHandle "JOB_GradeSymbol".
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "RouVal01" "RouVal01" 12842 6467.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "RouVal01" "RouVal01" 12842 6467.
+    break "main".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [FirstContact]
+    abstateset PlayerHandle "StaQuestEntangle" 1 4200000000.            ; 플레이어 멈춤
+
+    effectloc Temp "Job1_Dn_ShadowStart" 1028 575 0 4000 1000.           ; 4초간
+    pause sec 2.
+    mobregen ShadowHandle ShadowMobIndex 1033 704 180 1000 "Shadow" PlayerHandle. ; 몹 만들어짐
+
+    npcchat ShadowHandle "StartDear0".
+    pause sec 2.
+    npcchat ShadowHandle "StartDear1".
+    pause sec 2.
+    npcchat ShadowHandle "StartDear2".
+
+    abstatereset PlayerHandle "StaQuestEntangle".                       ; 플레이어 풂
+    change2mob ShadowHandle ShadowMobIndex.                             ; 몹도 풂
+
+    mobregen ShadowKebingA "Job1_Kebing" 1677 3140 0 1000 "Normal".
+    abstateset ShadowKebingA "StaQuestEntangle" 1 4200000000.            ; 깨빙 만들고 일단 묶어놓음
+    mobregen ShadowKebingB "Job1_Kebing" 1677 3140 0 1000 "Normal".
+    abstateset ShadowKebingB "StaQuestEntangle" 1 4200000000.            ; 깨빙 만들고 일단 묶어놓음
+    ShadowKebingDead = 0.
+
+    timelimit Min 20.                           ; 제한시간 20분
+
+    interruptclear all.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset HPLow "" 1 ShadowHandle 750 "First_ShadowFlie".           ; 몹 체력이 닳았을때 몹 달아남
+    interruptset AreaEntry "" 1 "Zone_Mob01" "FirstKebing".
+    interruptset DeadIndex "" 1 "Job1_Kebing" "FirstKebingDead".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [First_ShadowFlie]
+    abstateset PlayerHandle "StaQuestEntangle" 1 10000.            ; 플레이어 멈춤(10초간)
+
+    npcchat ShadowHandle "ShadowFlie".
+
+    change2npc ShadowHandle ShadowMobIndex.
+
+    dooropen Door1 "Door01".
+
+    run	ShadowHandle 1120 2978.
+    run	ShadowHandle 1383 3257.
+    run	ShadowHandle 3785 3275.
+    run	ShadowHandle 3780 3275.
+close
+
+open [FirstKebing]
+    abstatereset ShadowKebingA "StaQuestEntangle".               ; 풀어놓음
+    abstatereset ShadowKebingB "StaQuestEntangle".               ; 풀어놓음
+    doorclose Door2 "Door02".
+close
+
+open [FirstKebingDead]
+    ShadowKebingDead = ShadowKebingDead + 1.
+    if ShadowKebingDead < 2
+    then open
+        interruptset DeadIndex "" 1 "Job1_Kebing" "FirstKebingDead".
+        break "FirstKebingDead".
+    close
+    dooropen Door2 "Door02".
+    break "FirstContact".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [FightSkeletons]
+    interruptclear all.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset AreaEntry "" 1 "Zone_Mob02" "SkelRegen".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SkelRegen]
+    doorclose Door2 "Door02".
+    doorclose Door3 "Door03".
+
+    npcchat ShadowHandle "SkellBreed0".
+    pause Sec 2.
+    npcchat ShadowHandle "SkellBreed2".
+
+    mobregen Temp "Job1_Skeleton"   2773 3306 0 1000 "Normal".
+    mobregen Temp "Job1_Skeleton"   3619 3786 0 1000 "Normal".
+    mobregen Temp "Job1_Skeleton"   2340 2868 0 1000 "Normal".
+    mobregen Temp "Job1_SkelArcher" 2446 3302 0 1000 "Normal".
+    mobregen Temp "Job1_SkelArcher" 3582 2803 0 1000 "Normal".
+    mobregen Temp "Job1_SkelArcher" 2476 3774 0 1000 "Normal".
+
+    vanish ShadowHandle.
+
+    interruptset MobEliminate "" 1 "SkelBreak".
+close
+
+open [SkelBreak]
+    break "FightSkeletons".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [RoadToLastRoom]
+    mobregen ShadowKebingA "Job1_Kebing" 5004 4056 0 1000 "Normal".
+    abstateset ShadowKebingA "StaQuestEntangle" 1 4200000000.            ; 깨빙 만들고 일단 묶어놓음
+    mobregen ShadowKebingB "Job1_Kebing" 5004 4056 0 1000 "Normal".
+    abstateset ShadowKebingB "StaQuestEntangle" 1 4200000000.            ; 깨빙 만들고 일단 묶어놓음
+    mobregen ShadowKebingC "Job1_Kebing" 5004 4056 0 1000 "Normal".
+    abstateset ShadowKebingC "StaQuestEntangle" 1 4200000000.            ; 깨빙 만들고 일단 묶어놓음
+
+    dooropen Door3 "Door03".
+
+    interruptclear all.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset AreaEntry "" 1 "Zone_Mob03" "AnotherKebing".
+    interruptset AreaEntry "" 1 "Zone_Mob04" "LightOff".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [AnotherKebing]
+    abstatereset ShadowKebingA "StaQuestEntangle".            ; 깨빙 풀어줌
+    abstatereset ShadowKebingB "StaQuestEntangle".            ; 깨빙 풀어줌
+    abstatereset ShadowKebingC "StaQuestEntangle".            ; 깨빙 풀어줌
+close
+
+open [LightOff]
+    doorclose Door4 "Door04".
+
+    maplight 0 0 0.
+
+    effectloc Status0 "Job1_Dn_Gob01"  109 4832 180 3600000 1000.
+    effectloc Status1 "Job1_Dn_Gob02"  106 4161 180 3600000 1000.
+    effectloc Status2 "Job1_Dn_Gob03"  578 3690 180 3600000 1000.
+    effectloc Status3 "Job1_Dn_Gob04" 1245 3689 180 3600000 1000.
+    effectloc Status4 "Job1_Dn_Gob05" 1719 4157 180 3600000 1000.
+    effectloc Status5 "Job1_Dn_Gob06" 1720 4826 180 3600000 1000.
+    effectloc Status6 "Job1_Dn_Gob07" 1250 5300 180 3600000 1000.
+
+    ; 치프몹들 만듦
+    mobregen ChiefA "Job1_MarloneFighter" 5867 6072 0 1000 "Normal".
+    mobregen ChiefD "Job1_MarloneArcher"  4700 6049 0 1000 "Normal".
+
+    break "RoadToLastRoom".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [LastBattle]
+    interruptclear all.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset AreaEntry "" 1 "Zone_Mob05" "LightOn".
+
+    interruptset DeadHandle "" 1 ChiefA "ChiefADead".
+    interruptset DeadHandle "" 1 ChiefD "ChiefDDead".
+
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ChiefADead]
+    ChiefA = 0.
+close
+
+open [ChiefDDead]
+    ChiefD = 0.
+close
+
+open [LightOn]
+    effectloc Temp "Job1_Dn_Red" 129 4491 180 3600000 1000.
+    pause MilliSec 500.
+
+    effectloc Temp "Job1_Dn_GoblinFire"  122 4827 273 3600000 1000.
+    maplight 36 36 36.
+    pause MilliSec 500.
+
+    effectloc Temp "Job1_Dn_GoblinFire"  119 4169 227 3600000 1000.
+    maplight 72 72 72.
+    pause MilliSec 500.
+
+    effectloc Temp "Job1_Dn_GoblinFire"  585 3704 182 3600000 1000.
+    maplight 108 108 108.
+    pause MilliSec 500.
+
+    effectloc Temp "Job1_Dn_GoblinFire" 1240 3700 137 3600000 1000.
+    maplight 144 144 144.
+    pause MilliSec 500.
+
+    effectloc Temp "Job1_Dn_GoblinFire" 1707 4162  91 3600000 1000.
+    maplight 180 180 180.
+    pause MilliSec 500.
+
+    effectloc Temp "Job1_Dn_GoblinFire" 1711 4819  48 3600000 1000.
+    maplight 216 216 216.
+    pause MilliSec 500.
+
+    effectloc Temp "Job1_Dn_GoblinFire" 1249 5288   3 3600000 1000.
+    maplight 255 255 255.
+
+
+    abstateset PlayerHandle "StaQuestEntangle" 1 4200000000.            ; 플레이어 멈춤
+
+    mobregen ShadowHandle ShadowMobIndex 1380 4500 90 1000 "Normal" PlayerHandle. ; 몹 만들어짐
+
+
+    npcchat ShadowHandle "Last0".
+    pause Sec 2.
+    npcchat ShadowHandle "Last1".
+    pause Sec 2.
+    npcchat ShadowHandle "Last2".
+
+
+    abstatereset PlayerHandle "StaQuestEntangle".
+    change2mob ShadowHandle ShadowMobIndex.                             ; 몹도 풂
+
+
+    ; 죽이지 않고 지나온 치프몹 소환
+    if ChiefA =!= 0
+    then open
+        vanish ChiefA.
+        ChiefA = 0.
+        mobregen ChiefAA "Job1_MarloneFighter" 1380 4500 0 1000 "Normal".
+    close
+    else open
+        ChiefAA = 0.
+    close
+
+    if ChiefD =!= 0
+    then open
+        vanish ChiefD.
+        ChiefD = 0.
+        mobregen ChiefDD "Job1_MarloneArcher"  1380 4500 0 1000 "Normal".
+    close
+    else open
+        ChiefDD = 0.
+    close
+
+
+    call "AggroPlus".
+    interruptset Sec "" 99999 5 "AggroPlus".                          ; 수동몹의 어그로는 일정시간마다 풀리므로 계속 더해주어야 함
+
+    interruptset DeadHandle "" 1 ShadowHandle "QuestSuccess".
+
+    ; 여기서부터는 석상이 깨질 간격을 계산하는 부분
+    ; 작동이 너무 느리면 다음과 같은 한 문장으로 바꿀것
+    ;interruptset Sec "" 7 @CalcInterval(@RestSec() 8 60) "Step_Room4_StatusBreak".
+
+    var Interval "".
+    Interval = @RestSec() / 6.
+    if Interval < 5
+    then open
+        Interval = 5.
+    close
+
+    if Interval > 60
+    then open
+        Interval = 60.
+    close
+
+    call "StatusBreak".
+
+    interruptset Sec "" 7 Interval "StatusBreak".
+close
+
+open [AggroPlus]
+    aggro ChiefAA PlayerHandle 1.
+    aggro ChiefDD PlayerHandle 1.
+close
+
+open [StatusBreak]
+    if Status0 != 0
+    then open
+        mobregen Temp "Job1_Goblin" 109 4832 273 1000 "Normal".
+        effectloc Temp "Job1_Dn_Goblinskin"  109 4832 93 3600000 1000.
+        vanish Status0.
+        Status0 = 0.
+        break "StatusBreak".
+    close
+
+    if Status1 != 0
+    then open
+        mobregen Temp "Job1_Goblin" 106 4161 227 1000 "Normal".
+        effectloc Temp "Job1_Dn_Goblinskin"  106 4161 47 3600000 1000.
+        vanish Status1.
+        Status1 = 0.
+        break "StatusBreak".
+    close
+
+    if Status2 != 0
+    then open
+        mobregen Temp "Job1_Goblin" 578 3690 182 1000 "Normal".
+        effectloc Temp "Job1_Dn_Goblinskin"  578 3690 2 3600000 1000.
+        vanish Status2.
+        Status2 = 0.
+        break "StatusBreak".
+    close
+
+    if Status3 != 0
+    then open
+        mobregen Temp "Job1_Goblin" 1245 3689 137 1000 "Normal".
+        effectloc Temp "Job1_Dn_Goblinskin" 1245 3689 317 3600000 1000.
+        vanish Status3.
+        Status3 = 0.
+        break "StatusBreak".
+    close
+
+    if Status4 != 0
+    then open
+        mobregen Temp "Job1_Goblin" 1719 4157  91 1000 "Normal".
+        effectloc Temp "Job1_Dn_Goblinskin" 1719 4157 271 3600000 1000.
+        vanish Status4.
+        Status4 = 0.
+        break "StatusBreak".
+    close
+
+    if Status5 != 0
+    then open
+        mobregen Temp "Job1_Goblin" 1720 4826  48 1000 "Normal".
+        effectloc Temp "Job1_Dn_Goblinskin" 1720 4826 228 3600000 1000.
+        vanish Status5.
+        Status5 = 0.
+        break "StatusBreak".
+    close
+
+    if Status6 != 0
+    then open
+        mobregen Temp "Job1_Goblin" 1250 5300   3 1000 "Normal".
+        effectloc Temp "Job1_Dn_Goblinskin" 1250 5300 183 3600000 1000.
+        vanish Status6.
+        Status6 = 0.
+        break "StatusBreak".
+    close
+close

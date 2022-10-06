@@ -1,0 +1,26 @@
+;	Shine Monster Regeneration Table							
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		KQArea01	N	7907 	8572	0	0	200
+#record		KQArea02	N	7907 	8572	0	0	100
+#record		KQArea03	N	7907 	8572	0	0	100
+
+
+
+#table	MobRegen											
+;		GroupID	MobIndex	number	Regen Time(sec)							Base
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		KQArea01	Slime	5	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQArea02	Honeying	1	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		KQArea03	Kebing	1	9	1	15	-4	5	-2	8	0	10	2	13	4
+
+#end																

@@ -1,0 +1,23 @@
+;		Mob Attack Sequence			
+					
+#Ignore	\o042				; 인용부호 무시
+#Exchange	#	\x20			; # => space
+;#delimeter	\x20				
+
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+#Record	0	FireBolt06			
+#Record	1	IceBolt07			
+#Record	2	MagicBurst02			
+#Record	3	ManaBurn01			
+#Record	4	FireBolt06			
+#Record	5	IceBolt07			
+#Record	6	MagicBurst02
+#Record	7	ManaBurn01
+#Record	8	FireBolt06
+#Record	9	IceBolt07
+#Record	10	MagicBurst02
+#Record	11	ManaBurn01
+#End		

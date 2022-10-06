@@ -1,0 +1,33 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Wedding1	We will commence with the wedding ceremony soon.  All well wishers please settle in and remain silent.	
+#Record	Wedding2	"Under the gracious power of Teva, we will begin with the ceremony."	
+#Record	Wedding3	"Those who wish to be joined in holy union, please step forward to Book of Oath."	
+#Record	Wedding4	"These two people, now standing before the Book of Oath"	
+#Record	Wedding5	wish to be joined as one.	
+#Record	Wedding6	"To be joined in holy union, one must shine the other's path"	
+#Record	Wedding7	be the strength when the other is weak	
+#Record	Wedding8	and support each other no matter what obstacle may lie before you.	
+#Record	Wedding9	"The adventure ahead might not be an easy path, but in this beautiful world"	
+#Record	Wedding10	I believe you two will prosper under Teva's grace.	
+#Record	Wedding11	The two of you should always cherish each other with endless effort and passion for everlasting love.	
+#Record	Wedding12	There are simply no fruits without trying.	
+#Record	Book1	Now declare your love in the front of infinite power of Bijou that your hearts will	
+#Record	Book2	never kneel down to any pains or trials	
+#Record	Book3	withstand any sadness or ordeals you as a couple may encounter	
+#Record	Book4	be strong for one another	
+#Record	Book5	become a light for each other's heart and mind	
+#Record	Book6	heal any wounds with the power of your love for one another	
+#Record	Book7	to be the light of this world.	
+#Record	Book8	We swear that we'll strive for our best	
+#Record	Book9	and won't let go of these joined hands…	
+#Record	Wedding13	"And so, now I declare by the eternal power of Bijou invested in me that these two became one. "	
+#Record	Wedding14	"Now by the power given by the all mighty Legel,"	
+#Record	Wedding15	I pronounce thee unified in holy matrimony.  	
+#End			

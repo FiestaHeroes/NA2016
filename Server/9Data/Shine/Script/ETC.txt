@@ -1,0 +1,42 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+#Record	Cancel	Cancel	
+#Record	Yes	Yes	
+#Record	No	No	
+			
+			
+;	경고 및 에러메시지		
+#Record	RecallDisableField	This location is not accessible via Warping.	
+#Record	KQEntryInCamp0	You have entered Kingdom Quest field.	
+#Record	KQEntryInCamp1	Please close active Vendor to enter the Kingdom Quest.	
+			
+; 20060626 추가			
+#Record	PresentBoxInvenFull	"Inventory is full, the box cannot be opened."	
+#Record	PresentBoxInformCall	Loading the box information.  Please check again soon.	
+			
+; 20060804 추가			
+#Record	LevelLimit	The level limit for this area is (%d-%d).	
+#Record	PartyLimitedField	"To enter the map, please leave your party."	
+			
+			
+; 20070221			
+#Record	ButtonOK	OK	
+#Record	ButtonCancel	Cancel	
+
+; 20080530			
+#Record	DeamonDead	We honor those who returned Helga to his ancient home.	
+
+; 20080514			
+#Record	NeedPartyOrQuest	You must belong in a party to enter.	
+#Record	NeedItem	You must have the admission item to enter Instance Dungeon.	
+#Record	CannotAddAnymore	You can not enter because Instance Dungeon is currently full. 	
+
+; 20091008			
+#Record	BoothInterior	Repairing	
+
+#End			

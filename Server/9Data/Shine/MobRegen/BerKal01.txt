@@ -1,0 +1,559 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		Kal01_001	N	5470	6108	0	0	400									
+#record		Kal01_002	N	6133	6594	0	0	400									
+#record		Kal01_003	N	6739	7059	0	0	400									
+#record		Kal01_004	N	7010	7735	0	0	400									
+#record		Kal01_005	N	6542	8346	0	0	400									
+#record		Kal01_006	N	5844	8730	0	0	400									
+#record		Kal01_009	N	4571	8025	0	0	400									
+#record		Kal01_010	N	4731	7300	0	0	400									
+#record		Kal01_011	N	5125	6721	0	0	400									
+#record		Kal01_012	N	5653	7295	0	0	400									
+#record		Kal01_013	N	5312	8030	0	0	400									
+#record		Kal01_015	N	6206	7759	0	0	400									
+#record		Kal01_016	N	6348	9272	0	0	400									
+#record		Kal01_017	N	6998	9003	0	0	400									
+#record		Kal01_018	N	7306	9673	0	0	400									
+#record		Kal01_019	N	6596	10031	0	0	400									
+#record		Kal01_020	N	5397	9460	0	0	400									
+#record		Kal01_021	N	4863	8666	0	0	400									
+#record		Kal01_022	N	4532	9427	0	0	400									
+#record		Kal01_024	N	5838	10096	0	0	400									
+#record		Kal01_029	N	4995	10214	0	0	400									
+#record		Kal01_031	N	4689	11712	0	0	400									
+#record		Kal01_032	N	5754	11641	0	0	400									
+#record		Kal01_033	N	5219	11101	0	0	400									
+#record		Kal01_035	N	6271	11085	0	0	400									
+#record		Kal01_036	N	6831	11797	0	0	400									
+#record		Kal01_037	N	7137	10981	0	0	400									
+#record		Kal01_039	N	7694	11673	0	0	400									
+#record		Kal01_040	N	8002	11008	0	0	400									
+#record		Kal01_041	N	8873	11282	0	0	400									
+#record		Kal01_042	N	9622	11774	0	0	400									
+#record		Kal01_043	N	10482	12003	0	0	400									
+#record		Kal01_044	N	8558	12130	0	0	400									
+#record		Kal01_046	N	10123	12708	0	0	400									
+#record		Kal01_048	N	6861	12656	0	0	400									
+#record		Kal01_049	N	7785	12519	0	0	400									
+#record		Kal01_051	N	9300	12605	0	0	400									
+#record		Kal01_054	N	11355	12130	0	0	400									
+#record		Kal01_055	N	10963	12823	0	0	400									
+#record		Kal01_058	N	12179	12875	0	0	400									
+#record		Kal01_059	N	12518	12178	0	0	400									
+#record		Kal01_060	N	12943	13264	0	0	400									
+#record		Kal01_061	N	13391	12450	0	0	400									
+#record		Kal01_062	N	13940	11789	0	0	400									
+#record		Kal01_063	N	14342	12420	0	0	400									
+#record		Kal01_065	N	13830	13171	0	0	400									
+#record		Kal01_066	N	14140	13980	0	0	400									
+#record		Kal01_067	N	14667	13240	0	0	400									
+#record		Kal01_068	N	14938	14222	0	0	400									
+#record		Kal01_069	N	15829	14319	0	0	400									
+#record		Kal01_071	N	15297	14975	0	0	400									
+#record		Kal01_073	N	16643	14589	0	0	400									
+#record		Kal01_074	N	16616	15635	0	0	400									
+#record		Kal01_075	N	17254	16140	0	0	400									
+#record		Kal01_077	N	17476	16975	0	0	400									
+#record		Kal01_078	N	17083	17691	0	0	400									
+#record		Kal01_080	N	7238	5370	0	0	400									
+#record		Kal01_081	N	7639	4431	0	0	400									
+#record		Kal01_082	N	8465	4576	0	0	400									
+#record		Kal01_083	N	7983	5126	0	0	400									
+#record		Kal01_084	N	9171	4918	0	0	400									
+#record		Kal01_085	N	8666	5604	0	0	400									
+#record		Kal01_087	N	9607	5645	0	0	400									
+#record		Kal01_088	N	9147	6321	0	0	400									
+#record		Kal01_089	N	9653	6907	0	0	400									
+#record		Kal01_091	N	10686	6852	0	0	400									
+#record		Kal01_092	N	10156	6297	0	0	400									
+#record		Kal01_094	N	8194	7190	0	0	400									
+#record		Kal01_095	N	8299	7858	0	0	400									
+#record		Kal01_096	N	8369	8564	0	0	400									
+#record		Kal01_097	N	8752	9721	0	0	400									
+#record		Kal01_098	N	9588	10154	0	0	400									
+#record		Kal01_099	N	10816	10583	0	0	400									
+#record		Kal01_101	N	11365	10067	0	0	400									
+#record		Kal01_102	N	12025	10501	0	0	400									
+#record		Kal01_104	N	12734	10821	0	0	400									
+#record		Kal01_105	N	11057	9279	0	0	400									
+#record		Kal01_106	N	10833	4820	0	0	400									
+#record		Kal01_107	N	11352	5580	0	0	400									
+#record		Kal01_109	N	12028	5068	0	0	400									
+#record		Kal01_110	N	12016	6092	0	0	400									
+#record		Kal01_112	N	12888	5182	0	0	400									
+#record		Kal01_113	N	12972	6094	0	0	400									
+#record		Kal01_114	N	13974	6398	0	0	400									
+#record		Kal01_116	N	14791	6799	0	0	400									
+#record		Kal01_117	N	13025	4124	0	0	400									
+#record		Kal01_119	N	13869	4679	0	0	400									
+#record		Kal01_120	N	13688	5563	0	0	400									
+#record		Kal01_122	N	14523	5640	0	0	400									
+#record		Kal01_123	N	14714	4605	0	0	400									
+#record		Kal01_125	N	15229	6186	0	0	400									
+#record		Kal01_126	N	15281	5254	0	0	400									
+#record		Kal01_127	N	16002	5782	0	0	400									
+#record		Kal01_128	N	12135	9015	0	0	400									
+#record		Kal01_129	N	12972	9206	0	0	400									
+#record		Kal01_131	N	11941	8260	0	0	400									
+#record		Kal01_132	N	12808	8421	0	0	400									
+#record		Kal01_133	N	12783	7585	0	0	400									
+#record		Kal01_135	N	13568	8524	0	0	400									
+#record		Kal01_136	N	14134	9019	0	0	400									
+#record		Kal01_138	N	13661	7697	0	0	400									
+#record		Kal01_140	N	14498	8317	0	0	400									
+#record		Kal01_141	N	15184	8708	0	0	400									
+#record		Kal01_142	N	13605	9898	0	0	400									
+#record		Kal01_143	N	14379	10152	0	0	400									
+#record		Kal01_144	N	15101	10036	0	0	400									
+#record		Kal01_146	N	15173	9373	0	0	400									
+#record		Kal01_147	N	15818	8300	0	0	400									
+#record		Kal01_149	N	16323	6923	0	0	400									
+#record		Kal01_150	N	16904	7548	0	0	400									
+#record		Kal01_151	N	17605	7147	0	0	400									
+#record		Kal01_154	N	18181	6377	0	0	400									
+#record		Kal01_155	N	16617	5116	0	0	400									
+#record		Kal01_156	N	18435	7187	0	0	400									
+#record		Kal01_159	N	18004	8044	0	0	400									
+#record		Kal01_160	N	19297	7117	0	0	400									
+#record		Kal01_161	N	19046	7942	0	0	400									
+#record		Kal01_163	N	18695	8749	0	0	400									
+#record		Kal01_164	N	18004	9272	0	0	400									
+#record		Kal01_165	N	18912	9665	0	0	400									
+#record		Kal01_166	N	19731	10031	0	0	400									
+#record		Kal01_167	N	19565	8948	0	0	400									
+#record		Kal01_169	N	19875	8053	0	0	400									
+#record		Kal01_170	N	20401	8936	0	0	400									
+#record		Kal01_172	N	20591	9797	0	0	400									
+#record		Kal01_173	N	20759	7923	0	0	400									
+#record		Kal01_174	N	20416	7006	0	0	400									
+#record		Kal01_175	N	16890	8981	0	0	400									
+#record		Kal01_176	N	16449	9634	0	0	400									
+#record		Kal01_177	N	17198	10047	0	0	400									
+#record		Kal01_178	N	17728	10654	0	0	400									
+#record		Kal01_180	N	16732	10717	0	0	400									
+#record		Kal01_181	N	16669	11551	0	0	400									
+#record		Kal01_182	N	17135	12291	0	0	400									
+#record		Kal01_184	N	17574	11532	0	0	400									
+#record		Kal01_188	N	18349	11814	0	0	400									
+#record		Kal01_189	N	18487	11022	0	0	400									
+#record		Kal01_190	N	15805	11637	0	0	400									
+#record		Kal01_191	N	16034	12511	0	0	400									
+#record		Kal01_192	N	16742	13113	0	0	400									
+#record		Kal01_193	N	17606	13357	0	0	400									
+#record		Kal01_196	N	18142	12536	0	0	400									
+#record		Kal01_197	N	18487	13227	0	0	400									
+#record		Kal01_199	N	18011	14144	0	0	400									
+#record		Kal01_200	N	18056	14975	0	0	400									
+#record		Kal01_201	N	21131	11072	0	0	400									
+#record		Kal01_202	N	20434	11550	0	0	400									
+#record		Kal01_203	N	20108	12329	0	0	400									
+#record		Kal01_206	N	21330	12053	0	0	400									
+#record		Kal01_207	N	20994	12895	0	0	400									
+#record		Kal01_209	N	20972	13893	0	0	400									
+#record		Kal01_211	N	20106	13239	0	0	400									
+#record		Kal01_212	N	19982	14085	0	0	400									
+#record		Kal01_213	N	19480	14776	0	0	400									
+#record		Kal01_215	N	21264	14982	0	0	400									
+#record		Kal01_217	N	20458	14863	0	0	400									
+#record		Kal01_218	N	20806	15811	0	0	400									
+#record		Kal01_219	N	19042	16410	0	0	400									
+#record		Kal01_220	N	19937	15691	0	0	400									
+#record		Kal01_221	N	19604	17256	0	0	400									
+#record		Kal01_222	N	20257	16548	0	0	400									
+#record		Kal01_223	N	21332	16662	0	0	400									
+#record		Kal01_224	N	20125	17997	0	0	400									
+#record		Kal01_225	N	20802	17369	0	0	400									
+#record		Kal01_226	N	21674	18096	0	0	400									
+#record		Kal01_227	N	20907	18560	0	0	400									
+#record		Kal01_229	N	19859	19840	0	0	400									
+#record		Kal01_230	N	19090	20279	0	0	400									
+#record		Kal01_231	N	19199	19259	0	0	400									
+#record		Kal01_232	N	18443	18763	0	0	400									
+#record		Kal01_233	N	18296	19873	0	0	400									
+#record		Kal01_236	N	17639	19100	0	0	400									
+#record		Kal01_238	N	17352	19949	0	0	400									
+#record		Kal01_239	N	16780	19352	0	0	400									
+#record		Kal01_240	N	15895	19941	0	0	400									
+#record		Kal01_242	N	15092	19481	0	0	400									
+#record		Kal01_244	N	14088	19557	0	0	400									
+#record		Kal01_245	N	16277	18076	0	0	400									
+#record		Kal01_246	N	15391	18021	0	0	400									
+#record		Kal01_247	N	16065	19119	0	0	400									
+#record		Kal01_248	N	13138	18387	0	0	400									
+#record		Kal01_249	N	12558	19018	0	0	400									
+#record		Kal01_253	N	12132	17138	0	0	400									
+#record		Kal01_254	N	10968	17223	0	0	400									
+#record		Kal01_255	N	12414	18029	0	0	400									
+#record		Kal01_256	N	11557	17821	0	0	400									
+#record		Kal01_260	N	10375	16516	0	0	400									
+#record		Kal01_261	N	9429	16341	0	0	400									
+#record		Kal01_262	N	10029	17209	0	0	400									
+#record		Kal01_263	N	9104	17197	0	0	400									
+#record		Kal01_265	N	11395	18629	0	0	400									
+#record		Kal01_266	N	11641	19422	0	0	400									
+#record		Kal01_267	N	10629	18234	0	0	400									
+#record		Kal01_269	N	10638	19323	0	0	400									
+#record		Kal01_270	N	9876	18922	0	0	400									
+#record		Kal01_271	N	9917	19770	0	0	400									
+#record		Kal01_272	N	9177	20216	0	0	400									
+#record		Kal01_275	N	9120	18601	0	0	400									
+#record		Kal01_276	N	8940	19413	0	0	400									
+#record		Kal01_277	N	9812	17997	0	0	400									
+#record		Kal01_278	N	7285	16989	0	0	400									
+#record		Kal01_279	N	7062	15824	0	0	400									
+#record		Kal01_280	N	6669	16403	0	0	400									
+#record		Kal01_282	N	5774	15863	0	0	400									
+#record		Kal01_HERO1	N	10385	4058	0	0	50									
+#record		Kal01_HERO2	N	13816	8749	0	0	107									
+#record		Kal01_HERO3	N	12691	4303	0	0	93									
+#record		Kal01_HERO4	N	20494	8464	0	0	65									
+#record		Kal01_HERO5	N	8573	19622	0	0	51									
+#record		Kal01_HERO6	N	5925	16228	0	0	58									
+#record		Collection 1	N	6624	8492	0	0	2591									
+#record		Collection 2	N	10119	12147	4244	768	-1									
+#record		Collection 3	N	13467	6866	0	0	2717									
+#record		Collection 4	N	18392	8975	0	0	2283									
+#record		Collection 5	N	16750	13644	0	0	2346									
+#record		Collection 6	N	18971	18376	0	0	2535									
+#record		Collection 7	N	11047	18779	0	0	1947									
+#record		P01	N	11859	10362	0	0	3361									
+#record		P02	N	17503	12626	0	0	3691									
+#record		Waypoint01	N	10473	9931	300	0	420									
+#record		Waypoint02	N	11048	10007	300	0	420									
+#record		Waypoint03	N	10210	10541	300	0	420									
+#record		Waypoint04	N	18210	12349	300	0	420									
+#record		Waypoint05	N	18156	11777	300	0	420									
+#record		Waypoint06	N	17614	12417	300	0	420									
+#record		Waypoint07	N	18124	9296	300	0	420									
+#record		Waypoint08	N	18697	9553	300	0	420									
+#record		Waypoint09	N	18571	8954	300	0	420									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Kal01_001	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_002	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_003	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_004	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_004	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_005	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_005	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_006	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_006	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_009	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_010	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_011	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_012	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_013	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_015	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_016	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_016	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_017	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_017	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_018	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_018	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_019	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_019	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_020	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_020	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_021	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_021	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_022	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_022	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_024	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_024	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_029	BattleBeak	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_029	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_031	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_032	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_033	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_035	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_036	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_037	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_039	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_040	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_041	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_042	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_043	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_044	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_046	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_048	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_049	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_051	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_054	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_055	Pergy	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_058	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_059	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_060	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_061	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_062	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_063	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_065	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_066	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_067	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_068	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_069	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_071	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_073	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_074	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_075	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_077	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_078	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_080	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_081	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_082	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_083	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_084	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_085	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_087	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_088	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_089	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_091	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_092	Ruga	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_094	BattleBeak	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_094	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_095	BattleBeak	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_095	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_096	BattleBeak	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_096	Ruga	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_097	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_098	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_099	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_101	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_102	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_104	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_105	WApe	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_106	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_107	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_109	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_110	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_112	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_113	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_114	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_116	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_117	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_117	LeipoonA	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_119	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_119	LeipoonA	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_120	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_120	LeipoonA	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_122	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_122	LeipoonA	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_123	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_123	LeipoonA	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_125	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_126	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_126	LeipoonA	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_127	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_128	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_129	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_131	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_132	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_133	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_135	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_135	BabyLeipoonB	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_136	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_136	BabyLeipoonB	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_138	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_140	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_141	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_142	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_143	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_144	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_146	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_147	LeipoonA	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_149	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_150	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_151	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_154	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_155	BabyLeipoonB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_155	LeipoonA	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_156	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_159	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_160	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_161	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_161	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_163	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_164	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_165	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_166	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_167	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_167	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_169	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_169	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_170	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_170	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_172	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_173	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_174	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_175	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_176	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_177	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_178	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_180	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_181	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_181	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_182	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_182	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_184	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_184	FElfFig	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_188	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_189	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_190	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_191	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_192	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_193	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_196	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_197	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_199	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_200	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_201	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_202	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_203	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_206	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_207	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_209	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_211	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_212	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_213	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_215	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_217	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_218	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_219	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_220	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_221	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_222	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_223	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_224	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_224	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_225	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_225	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_226	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_226	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_227	Shella	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_227	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_229	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_229	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_230	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_230	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_231	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_231	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_232	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_233	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_233	Vehimoth	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_236	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_238	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_239	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_240	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_242	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_244	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_245	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_246	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_247	WLeoPard	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_248	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_249	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_253	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_253	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_254	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_254	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_255	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_255	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_256	FElfCle	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_256	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_260	FElfCle	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_260	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_261	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_261	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_262	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_262	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_263	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_263	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_265	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_265	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_266	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_266	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_267	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_267	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_269	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_269	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_270	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_270	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_271	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_271	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_272	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_272	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_275	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_275	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_276	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_276	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_277	FElfCle	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_277	FElfMag	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_278	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_278	FElfMag	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_278	FElfCle	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_279	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_279	FElfCle	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_280	FElfArc	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_280	FElfMag	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_280	FElfCle	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_282	FElfArc	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_HERO1	DarkFog	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_HERO2	OldLeipoonB	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_HERO3	OldLeipoonB	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_HERO4	FElfSage	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_HERO5	FElfSage	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Kal01_HERO6	FElfSage	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		P01	PresentBox15	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		P02	PresentBox15	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		Collection 1	FLOWER10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 1	HERB10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 1	WOOD10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 1	MUSHROOM10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 2	FLOWER10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 2	HERB10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 2	WOOD10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 2	MUSHROOM10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 3	FLOWER10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 3	HERB10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 3	WOOD10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 3	MUSHROOM10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 4	FLOWER10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 4	HERB10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 4	WOOD10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 4	MUSHROOM10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 5	FLOWER10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 5	HERB10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 5	WOOD10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 5	MUSHROOM10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 6	FLOWER10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 6	HERB10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 6	WOOD10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 6	MUSHROOM10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 7	FLOWER10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 7	HERB10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 7	WOOD10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Collection 7	MUSHROOM10	3	0	200	201	199	5	-1	8	0	10	1	13	2	0
+#record		Waypoint01	BabyLeipoonB	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint02	BabyLeipoonB	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint03	BabyLeipoonB	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint04	Shella	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint05	Shella	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint06	Shella	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint07	FElfMag	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint08	FElfMag	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+#record		Waypoint09	FElfMag	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0
+																	
+#end																	

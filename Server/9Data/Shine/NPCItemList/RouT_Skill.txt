@@ -1,0 +1,103 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;파이터 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	TripleHit01	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	-	-	-	-	-	-
+#Record	4	-	-	-	-	-	-
+							
+#Table	Tab01	;파이터 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+							
+#Table	Tab02	;클레릭 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Heal01	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	-	-	-	-	-	-
+							
+#Table	Tab03	;클레릭 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+							
+#Table	Tab04	;아처 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	AimingShot01	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	-	-	-	-	-	-
+							
+#Table	Tab05	;아처 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+							
+#Table	Tab06	;메이지 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	IceBolt01	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	-	-	-	-	-	-
+							
+#Table	Tab07	;메이지 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+							
+#Table	Tab08	;조커 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	BenTear01	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	-	-	-	-	-	-
+#Record	4	-	-	-	-	-	-
+							
+#Table	Tab09	;조커 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+							
+#Table	Tab10	;연금술 					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+#Record	1	-	-	-	-	-	-
+#Record	2	-	-	-	-	-	-
+#Record	3	-	-	-	-	-	-
+#Record	4	-	-	-	-	-	-
+#Record	5	-	-	-	-	-	-
+#Record	6	-	-	-	-	-	-
+#Record	7	-	-	-	-	-	-
+#Record	8	-	-	-	-	-	-
+#Record	9	-	-	-	-	-	-
+#Record	10	-	-	-	-	-	-
+#Record	11	-	-	-	-	-	-
+#Record	12	-	-	-	-	-	-
+#Record	13	-	-	-	-	-	-
+#Record	14	-	-	-	-	-	-
+#Record	15	-	-	-	-	-	-
+#Record	16	-	-	-	-	-	-
+#Record	17	-	-	-	-	-	-
+#Record	18	-	-	-	-	-	-
+#Record	19	-	-	-	-	-	-
+#Record	20	-	-	-	-	-	-
+							
+#End							

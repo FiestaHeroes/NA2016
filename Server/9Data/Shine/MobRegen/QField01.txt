@@ -1,0 +1,32 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		QField01_01	N	1766	1109	0	0	60									
+#record		QField01_02	N	1566	965	0	0	60									
+#record		QField01_03	N	1344	1074	0	0	60									
+#record		Waypoint01	N	1930	1624	0	0	420									
+#record		Waypoint02	N	1161	1521	0	0	420									
+#record		Waypoint03	N	1555	1442	0	0	420									
+																
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		QField01_01	MemoryKeeper01	1	0	62	50	75	60	10	120	15	0	0	0	0	0
+#record		QField01_02	MemoryKeeper02	1	0	62	50	75	60	10	120	15	0	0	0	0	0
+#record		QField01_03	MemoryKeeper03	1	0	62	50	75	60	10	120	15	0	0	0	0	0
+#record		Waypoint01	MadSlugB	6	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint02	MadSlugB	6	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Waypoint03	MadSlugB	6	0	2	0	3	0	4	0	5	0	0	0	0	0
+																	
+#end																	

@@ -1,0 +1,25 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	-							
+#Record	1	-							
+#Record	2	T_GImp_Atk0							
+#Record	3	T_GImp_Atk1							
+#Record	4	-							
+#Record	5	-							
+#Record	6	T_GImp_Atk0							
+#Record	7	T_GImp_Atk1							
+#Record	8	-							
+#Record	9	-							
+#Record	10	T_GImp_Atk0							
+#Record	11	T_GImp_Atk1							
+#End									
+									

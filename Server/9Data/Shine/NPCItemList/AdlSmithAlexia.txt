@@ -1,0 +1,45 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2011.10.17					
+							
+#Table	Tab00	;무기					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	RaxesSword	-	-	-	-	-
+#Record	1	GabestoSword	-	-	-	-	-
+#Record	2	AlastoAxe	-	-	-	-	-
+#Record	3	DumbleMace	-	-	-	-	-
+#Record	4	CrageaHammer	-	-	-	-	-
+#Record	5	DarkshuterBow	-	-	-	-	-
+#Record	6	MoottalisCrossBow	-	-	-	-	-
+#Record	7	NefertiStaff	-	-	-	-	-
+#Record	8	ChamorWand	-	-	-	-	-
+#Record	9	RodClaw	-	-	-	-	-
+#Record	10	RodDoubleSword	-	-	-	-	-
+#Record	11	LuminousBlade	-	-	-	-	-
+							
+#Table	Tab01	;방어구					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	ZakarBoots	ZakarHelmet	ZakarPants	ZakarArmor	-	-
+#Record	1	RaxesBoots	RaxesHelmet	RaxesPants	RaxesArmor	-	-
+#Record	2	GabeonShield	-	-	-	-	-
+#Record	3	KhrajeBoots	KhrajeHelmet	KhrajePants	KhrajeArmor	-	-
+#Record	4	DumblinBoots	DumblinHelmet	DumblinPants	DumblinArmor	-	-
+#Record	5	DumbligaShield	-	-	-	-	-
+#Record	6	DarkshuterBoots	DarkshuterHat	DarkshuterPants	DarkshuterArmor	-	-
+#Record	7	MoottalisBoots	MoottalisHat	MoottalisPants	MoottalisArmor	-	-
+#Record	8	NefertiBoots	NefertiHat	NefertiPants	NefertiShirt	-	-
+#Record	9	ChamorBoots	ChamorHat	ChamorPants	ChamorShirt	-	-
+#Record	10	MagaBoots	MagaGoggles	MagaPants	MagaArmor	-	-
+#Record	11	ViktorBoots	ViktorHood	ViktorPants	ViktorArmor	-	-
+#Record	12	CapricornShoes	CapricornHelmet	CapricornPants	CapricornArmor	-	-
+							
+#Table	Tab02	;악세서리					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-
+#Record	1	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-
+							
+#End							

@@ -1,0 +1,51 @@
+;		Mob Attack Sequence							
+									
+#Ignore	\o042				; 인용부호 무시				
+#Exchange	#	\x20			; # => space				
+;#delimeter	\x20								
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	-							
+#Record	1	-							
+#Record	2	KarenWide							
+#Record	3	-							
+#Record	4	KarenWingWide							
+#Record	5	-							
+#Record	6	KarenSPMinus							
+#Record	7	KarenSPMinusHeal							
+#Record	8	KarenWingAtk							
+#Record	9	-							
+#Record	10	KarenSPMinusHeal							
+#Record	11	-							
+#Record	12	-							
+#Record	13	KarenWingAtk							
+#Record	14	-							
+#Record	15	KarenWide							
+#Record	16	-							
+#Record	17	KarenWingAtk							
+#Record	18	-							
+#Record	19	KarenSPMinusHeal							
+#Record	20	KarenWingAtk							
+#Record	21	-									
+#Record	22	KarenWide									
+#Record	23	-									
+#Record	24	KarenWingAtk									
+#Record	25	-									
+#Record	26	KarenCaptivate									
+#Record	27	-									
+											
+#Table	SkillChange			; 조건에 따라 다른 스킬을 써야 할 경우							
+#ColumnType	Index	Index	String[33]	String[33]							
+#ColumnName	Condition	Value	From	To							
+#Record	OutOfRange	-	-	KarenWingAtk	; 평타쓸 타이밍에 사정거리가 넘어가면 단일 날개짓으로 바꿈						
+#Record	NextSkill	-	KarenCaptivate	KarenHeal	; 매혹 후에는 카렌 힐 사용						
+#Record	HPLow	300 	KarenWide	KarenCaptivate	; 피 30% 이하일때 카렌 와이드 스킬 대신 매혹 사용						
+#Record	HPLow	100 	KarenWingAtk	KarenHeal	; 피 10% 이하 일때 날개공격 순서때 힐 사용						
+											
+#End									
+									
+									

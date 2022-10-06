@@ -1,0 +1,88 @@
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+#record		1	N	5087	3773	0	0	752									
+#record		2	N	5084	1282	925	529	0									
+#record		3	N	8994	5067	540	914	0									
+#record		4	N	1177	5086	502	980	0									
+#record		5	N	5052	8961	965	510	0									
+#record		6	Y	5410	7462	0	0	163									
+#record		7	Y	4784	7453	0	0	163									
+#record		8	N	5100	7425	0	0	422									
+#record		9	N	8479	7343	0	0	612									
+#record		10	N	8469	2816	0	0	647									
+#record		11	N	1713	7351	0	0	633									
+#record		12	N	1688	2834	0	0	626									
+#record		13	N	3261	5083	162	1907	0									
+#record		14	N	6882	5113	195	1906	0									
+#record		15	N	7329	8942	1123	154	0									
+#record		16	N	2918	8952	978	169	0									
+#record		C_1	N	5013	5100	4232	186	0									
+#record		C_2	N	5145	8982	0	0	372									
+#record		C_3	N	5098	3025	130	930	0									
+#record		C_4	N	5107	1257	0	0	535									
+#record		C_5	N	1123	5100	0	0	471									
+#record		C_6	N	9092	5083	0	0	500									
+#record		C_7	N	6927	5093	132	2264	0									
+#record		C_8	N	3245	5050	139	2209	0									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		1	P_Goblin1	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		2	P_Goblin3	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		2	P_Goblin4	17	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		2	P_Goblinmage1	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		3	P_Goblin4	17	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		3	P_Goblin3	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		3	P_Goblinmage1	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		4	P_Goblin4	17	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		4	P_Goblin3	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		4	P_Goblinmage1	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		5	P_Goblin4	17	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		5	P_Goblin3	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		5	P_Goblinmage1	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		6	P_Goblin4	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		7	P_Goblin4	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		8	P_Goblin3	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		9	P_Goblin3	13	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		9	P_Goblin2	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		10	P_Goblin3	8	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		10	P_Goblin2	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		11	P_Goblin3	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		11	P_Goblin2	8	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		12	P_Goblin3	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		12	P_Goblin2	10	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		13	P_Goblinmage1	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		13	P_Goblin2	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		13	P_Goblin1	5	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		14	P_Goblin1	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		14	P_Goblin2	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		14	P_Goblinmage1	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		15	P_Goblin3	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		16	P_Goblin3	3	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_1	P_Fighter3F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_1	P_Cleric3F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_1	P_Archer3M	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_2	P_Cleric3F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_3	P_Archer3M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_3	P_Fighter3F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_4	P_Mage3F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_5	P_Archer3M	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_6	P_Fighter3F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_7	P_Fighter3F	2	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_8	P_Cleric3F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		C_8	P_Mage3F	1	0	70	60	80	-10	20	-5	40	0	50	5	60	10
+																	
+#end																	
