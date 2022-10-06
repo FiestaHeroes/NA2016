@@ -85,10 +85,10 @@ SERVER_INFO  "PG_W00_GLDB",  3, 0, 0, 0,  "127.0.0.1",  	9034,  100,   100  ; 	L
 ;	ODBC. "UID=" is your SQL username (default username is "sa"). "PWD=" is your SQL password.
 ;####################################################################################################################
 
-ODBC_INFO	"Account",				0, 		0, 	"DRIVER={SQL Server};SERVER=DESKTOP-KBPO70L\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE Account; SET LOCK_TIMEOUT 5000"
-ODBC_INFO	"AccountLog",			1,  	0,  "DRIVER={SQL Server};SERVER=DESKTOP-KBPO70L\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE AccountLog; SET LOCK_TIMEOUT 5000"
-ODBC_INFO	"World00_Character",	10,  	0,  "DRIVER={SQL Server};SERVER=DESKTOP-KBPO70L\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE World00_Character; SET LOCK_TIMEOUT 5000"
-ODBC_INFO	"World00_GameLog",		11,  	0,  "DRIVER={SQL Server};SERVER=DESKTOP-KBPO70L\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE World00_GameLog; SET LOCK_TIMEOUT 5000"
-ODBC_INFO	"StatisticsData",		2,  	0,  "DRIVER={SQL Server};SERVER=DESKTOP-KBPO70L\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE StatisticsData; SET LOCK_TIMEOUT 5000"
-ODBC_INFO	"OperatorTool",			3,  	0,  "DRIVER={SQL Server};SERVER=DESKTOP-KBPO70L\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE OperatorTool; SET LOCK_TIMEOUT 5000"
+ODBC_INFO	"Account",				    0, 		0, 	"DRIVER={SQL Server};SERVER=.\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE Account; SET LOCK_TIMEOUT 5000"
+ODBC_INFO	"AccountLog",			    1,  	0,  "DRIVER={SQL Server};SERVER=.\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE AccountLog; SET LOCK_TIMEOUT 5000"
+ODBC_INFO	"World00_Character",	10,  	0,  "DRIVER={SQL Server};SERVER=.\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE World00_Character; SET LOCK_TIMEOUT 5000"
+ODBC_INFO	"World00_GameLog",		11,  	0,  "DRIVER={SQL Server};SERVER=.\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE World00_GameLog; SET LOCK_TIMEOUT 5000"
+ODBC_INFO	"StatisticsData",		  2,  	0,  "DRIVER={SQL Server};SERVER=.\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE StatisticsData; SET LOCK_TIMEOUT 5000"
+ODBC_INFO	"OperatorTool",			  3,  	0,  "DRIVER={SQL Server};SERVER=.\SQLEXPRESS; UID=sa;PWD=V63WsdafLJT9NDAn", "USE OperatorTool; SET LOCK_TIMEOUT 5000"
 #END
