@@ -1,1 +1,0 @@
-netsh advfirewall firewall add rule name="_NA2016" dir=in action=allow protocol=TCP localport=9010,9013,9016,9019,9022,9025,9028
