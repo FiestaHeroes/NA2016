@@ -1043,7 +1043,7 @@
 ;	부활절이벤트_2014																											
 ;	#recordin	ShineNPC	Egg2014_HoshemingNPC	Eld	15390	13395	89	1	Merchant	Item																		
 ;	축구킹퀘(KDSoccer_월드컵이벤트)																											
-	#recordin	ShineNPC	KDSoccer_MctNPC	Eld	13165	13747	178	1	Merchant	Item																		
+;	#recordin	ShineNPC	KDSoccer_MctNPC	Eld	13165	13747	178	1	Merchant	Item																		
 ;	물풍선 전쟁(여름이벤트)																											
 ;	#recordin	ShineNPC	Swimming	Eld	16445	13478	89	1	Merchant	Item																		
 ;	#recordin	ShineNPC	SwimmingR	KDWater	6311	5530	0	1	Merchant	Item																		
@@ -1130,5 +1130,9 @@
 ;	7주년 기념 이벤트																											
 ;	#recordin	ShineNPC	Xiaoming_7th	Eld	16445	13478	89	1	Merchant	Item																		
 ;	#recordin	ShineNPC	XiaomingR_7th	KDCake	7464	6070	160	1	Merchant	Item																		
-;	#recordin	ShineNPC	XiaomingB_7th	KDCake	6339	7199	-20	1	Merchant	Item																		
+;	#recordin	ShineNPC	XiaomingB_7th	KDCake	6339	7199	-20	1	Merchant	Item
+;	Puzzles
+	#recordin    ShineNPC    Xiaoming    Eld    11683    13421    43    1    QuestNpc    Quest
+    #recordin    ShineNPC    Oluming        Eld    14125    15516    134    1    QuestNpc    Quest
+    #recordin    ShineNPC    Toryming    Eld    16088    14557    176    1    QuestNpc    Quest																		
 	#End																											

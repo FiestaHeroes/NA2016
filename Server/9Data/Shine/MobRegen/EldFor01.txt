@@ -67,7 +67,7 @@
 #record		ForZoneWood02	N	7894	7481	193	593	-166									
 #record		ForZoneWood03	N	8604	7617	896	229	112									
 #record		ForZoneMush01	N	20620	10977	0	0	997									
-#record		ForZoneMush02	N	0	0	0	0	899									
+;#record		ForZoneMush02	N	0	0	0	0	899									
 #record		ForZoneMush03	N	16082	12493	790	324	-17									
 #record		EldForPbox01	N	9650	13001	3697	6822	3									
 #record		EldFor01_49	N	17825	10186	289	482	-5									
@@ -231,9 +231,9 @@
 #record		ForZoneMush01	MUSHROOM7	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10
 #record		ForZoneMush01	MUSHROOM8	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10
 #record		ForZoneMush01	MUSHROOM9	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10
-#record		ForZoneMush02	MUSHROOM7	5	0	360	350	370	-10	3	-5	15	0	60	5	120	10
-#record		ForZoneMush02	MUSHROOM8	4	0	360	350	370	-10	3	-5	15	0	60	5	120	10
-#record		ForZoneMush02	MUSHROOM9	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10
+;#record		ForZoneMush02	MUSHROOM7	5	0	360	350	370	-10	3	-5	15	0	60	5	120	10
+;#record		ForZoneMush02	MUSHROOM8	4	0	360	350	370	-10	3	-5	15	0	60	5	120	10
+;#record		ForZoneMush02	MUSHROOM9	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10
 #record		ForZoneMush03	MUSHROOM7	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10
 #record		ForZoneMush03	MUSHROOM8	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10
 #record		ForZoneMush03	MUSHROOM9	3	0	360	350	370	-10	3	-5	15	0	60	5	120	10

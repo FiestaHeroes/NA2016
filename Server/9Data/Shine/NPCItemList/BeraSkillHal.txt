@@ -101,7 +101,7 @@
 #ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
 #Record	0	VitalConversion14	VitalConversion15	-	-	-	-
 #Record	1	MagicBurst15	MagicBurst16	-	-	-	-
-#Record	2	ManaBurn11	ManaBurn12	ManaBurn13	-	-	-
+#Record	2	ManaBurn11	ManaBurn12	-	-	-	-
 #Record	3	MagicBall12	MagicBall13	-	-	-	-
 #Record	4	IceBlast11	IceBlast12	-	-	-	-
 #Record	5	FireBall11	FireBall12	-	-	-	-

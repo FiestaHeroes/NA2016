@@ -1,0 +1,16 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+							
+#Table	Tab00	;아이템 상점(우르가)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	Grade6	-	-	-	-	-
+#Record	1	FlyStone	Hobby01	-	-	-	-
+#Record	2	House_MushRoom01	House_MushRoom02	House_MushRoom03	-	-	-
+#Record	3	Converter1	Converter2	Converter3	Converter4	Converter5	-
+#Record	4	NorMagicCrystal	NorBeastLeather	NorMeat	NorSkin	NorSpiritDust	NorBrokenBone
+#Record	5	NorCleanWater	NorKylinLeather	NorPledge	NorGemDust	NorSoulDust	NorBeastTooth
+#Record	6	GoldColl01	FireColl01	ThoroColl01	RedColl01	Hay	-
+#End							
