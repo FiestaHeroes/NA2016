@@ -42,7 +42,8 @@
 Basic rundown of what is **required** to host and develop your own server. For more additional and server setup Information, please visit our [Documentation](https://doc.fiestaheroes.com/).
 ```bash
 # Operating System
-Windows Server: 2008(R2), 2012(R2), 2016, 2019 and 2022
+Windows Server: 2016, 2019 and 2022
+Windows: 10 and 11.
 
 # Server Specifications (Minimum Requirements)
 RAM: 16GB
