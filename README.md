@@ -39,24 +39,20 @@
 
 ## Requirements
 
-Basic rundown of what is **required** to host and develop your own server. For more additional and server setup Information, please visit our [Documentation](https://doc.fiestaheroes.com/).
+Basic rundown of what is **required** to host and develop your own server. For more additional server setup Information, please visit our [Documentation](https://doc.fiestaheroes.com/).
 ```bash
-# Operating System
+# Supported Operating Systems
 Windows Server: 2016, 2019 and 2022
 Windows: 10 and 11.
 
-# Server Specifications (Minimum Requirements)
+# Hardware Specifications (Minimum Requirements)
 RAM: 16GB
 CPU: 4c/2t
-DISK: 80GB
-
-# Microsoft SQL Server
-SQL Server Express 2019
-SQL Server Management Studio
+DISK: This can technically be the minimum amount the OS requires. But, we at least recommend 128GB.
 ```
 
 > **Note:**
-> You can use newer MSSQL server installations as well. But, it **must** be equal or greater than 2019. 
+> You can use newer Microsoft SQL server installations as well. But, it must be equal or greater than 2019. 
 
 
 ## Downloads
