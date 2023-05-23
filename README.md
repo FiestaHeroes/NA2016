@@ -8,60 +8,35 @@
   <br>
 </h1>
 
-<h4 align="center">Fiesta Online (Gamigo) files.</h4>
-
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#requirements">Requirements</a> •
-  <a href="#downloads">Downloads</a>
-</p>
+<h4 align="center">Fiesta Online (Gamigo)</h4>
 
 ![screenshot](https://i.imgur.com/69i9nMB.png)
 
-## Key Features
-
-*	Pagel’s Invasion
-*	Level Cap: 125
-*	Crusader Class
-*	Card System
-*	Mount Upgrades
-*	Item Combine
-*	Lua Scripting
-*	Guild, Academy and Emblems.
-*	Bijou Bracelets
-*	Friend Point System
-*	Expeditions
-*	Lucky House
-*	Item Link
-*	Item Buyback
-*	Token currency
-*	Additional Kingdom Quest Features
-
 ## Requirements
 
-Basic rundown of what is **required** to host and develop your own server. For more additional server setup Information, please visit our [Documentation](https://doc.fiestaheroes.com/).
+Minimum requirements for hosting and building your own server. For further details on setting up a server, please refer to our [documentation](https://doc.fiestaheroes.com/).
+
 ```bash
 # Supported Operating Systems
-Windows Server: 2016, 2019 and 2022
-Windows: 10 and 11.
+- Windows Server: 2016, 2019, 2022
+- Windows: 10, 11
 
-# Hardware Specifications (Minimum Requirements)
-RAM: 16GB
-CPU: 4c/2t
-DISK: This can technically be the minimum amount the OS requires. But, we at least recommend 128GB.
+# Minimum Hardware Specifications
+To ensure optimal performance, we recommend the following minimum hardware specifications:
+- RAM: 16GB
+- CPU: 4 cores / 4 threads
+- Disk: 128GB
+
+Please note that although the minimum storage requirement for the operating system can technically be lower, we highly recommend a minimum of 128GB for optimal performance.
 ```
 
-> **Note:**
-> You can use newer Microsoft SQL server installations as well. But, it must be equal or greater than 2019. 
-
+You can also utilize newer installations of Microsoft SQL Server, provided that the version is equal to or greater than 2019.
 
 ## Downloads
 
 *	[Game Client](https://drive.google.com/file/d/1lcKw6E_hLCFAWoxWiIxTXXor1oFhUZtf/view?usp=sharing)
 ```bash
-This is what we consider a "core" client. You will need to copy & paste the client files
-from this repository into your clients root directory. We will periodically update this client archive.
-The client is compressed with, RAR. So please use the appropriate software to extract this archive. 
+The "core" client is essential for your setup. To install it, you should copy and paste the client files from this repository into your client's root directory. Please note that the client is compressed using the RAR format, so ensure you have the appropriate software to extract the contents of this archive.
 ```
 *	[Microsoft SQL Server 2019](https://go.microsoft.com/fwlink/p/?linkid=866658)
 *	[Microsoft SQL Server Management Studio](https://aka.ms/ssmsfullsetup)
@@ -71,7 +46,7 @@ The client is compressed with, RAR. So please use the appropriate software to ex
 
 <h2 align="center">
   <br>
-  <a href="https://fiestaheroes.com/"><img src="https://i.imgur.com/t3PBKnc.png" alt="Markdownify" width="500"></a>
+  <a href="https://fiestaheroes.com/"><img src="https://i.imgur.com/t3PBKnc.png" alt="Website" width="500"></a>
   <br>
   <br>
   Development • Documentation • Preservation
