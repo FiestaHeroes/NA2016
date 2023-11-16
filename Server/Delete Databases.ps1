@@ -28,5 +28,6 @@ invoke-sqlcmd -ServerInstance ".\SQLEXPRESS" -Query "Drop database OperatorTool;
 invoke-sqlcmd -ServerInstance ".\SQLEXPRESS" -Query "Drop database StatisticsData;"
 invoke-sqlcmd -ServerInstance ".\SQLEXPRESS" -Query "Drop database World00_Character;"
 invoke-sqlcmd -ServerInstance ".\SQLEXPRESS" -Query "Drop database World00_GameLog;"
+invoke-sqlcmd -ServerInstance ".\SQLEXPRESS" -Query "Drop database Options;"
 
 [System.Windows.MessageBox]::Show('Databases have been deleted.')

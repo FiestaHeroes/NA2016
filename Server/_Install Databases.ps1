@@ -28,5 +28,6 @@ Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "OperatorTool"     
 Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "StatisticsData"       -BackupFile $PSScriptRoot"\Databases\StatisticsData.bak"
 Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "World00_Character"    -BackupFile $PSScriptRoot"\Databases\World00_Character.bak"
 Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "World00_GameLog"      -BackupFile $PSScriptRoot"\Databases\World00_GameLog.bak"
+Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "Options"      -BackupFile $PSScriptRoot"\Databases\Options.bak"
 
 [System.Windows.MessageBox]::Show('Databases have been restored.')
