@@ -1,33 +1,58 @@
-# Make sure we're running as Administrator.
+# Ensure the script is running with Administrator privileges.
 param([switch]$Elevated)
-function Test-Admin
-{
-	$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
-	$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-}
-if ((Test-Admin) -eq $false)
-{
-	if ($elevated)
-	{
-		Write-Host "Tried to elevate, did not work... Exiting"
-	}
-	else
-	{
-		Start-Process powershell.exe -Verb RunAs -ArgumentList ('-noprofile -noexit -file "{0}" -elevated' -f ($myinvocation.MyCommand.Definition))
-	}
-	Exit
+
+# Function to check if the script is running as an Administrator
+function Test-Admin {
+    $currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
+    return $currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
-# MessageBox.
+# Check if we need to elevate privileges
+if (-not (Test-Admin)) {
+    if ($Elevated) {
+        Write-Host "Attempted to elevate, but it did not succeed. Exiting..."
+    } else {
+        # Restart the script with elevated permissions
+        Start-Process powershell.exe -Verb RunAs -ArgumentList ('-noprofile -noexit -file "{0}" -Elevated' -f ($myinvocation.MyCommand.Definition))
+    }
+    Exit
+}
+
+# Set the path to the databases directory
+$databasesPath = Join-Path $PSScriptRoot 'Databases'
+
+# Check if the databases directory exists
+if (Test-Path $databasesPath) {
+    # Attempt to grant Full Control permissions to the SQL Server service account
+    try {
+        icacls $databasesPath /grant "NT SERVICE\MSSQL`$SQLEXPRESS:(OI)(CI)F" /T
+        Write-Host "Permissions set successfully for the databases directory."
+    } catch {
+        Write-Host "Failed to set permissions: $_"
+    }
+} else {
+    Write-Host "The databases directory does not exist: $databasesPath"
+    Exit
+}
+
+# Load the PresentationFramework assembly to display message boxes
 Add-Type -AssemblyName PresentationFramework
 
-# Restore / Install the databases.
-Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "Account"              -BackupFile $PSScriptRoot"\Databases\Account.bak"
-Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "AccountLog"           -BackupFile $PSScriptRoot"\Databases\AccountLog.bak"
-Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "OperatorTool"         -BackupFile $PSScriptRoot"\Databases\OperatorTool.bak"
-Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "StatisticsData"       -BackupFile $PSScriptRoot"\Databases\StatisticsData.bak"
-Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "World00_Character"    -BackupFile $PSScriptRoot"\Databases\World00_Character.bak"
-Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "World00_GameLog"      -BackupFile $PSScriptRoot"\Databases\World00_GameLog.bak"
-Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database "Options"      -BackupFile $PSScriptRoot"\Databases\Options.bak"
+# Restore the specified SQL databases from backup files
+$databasesToRestore = @(
+    @{ Name = "Account"; BackupFile = "Account.bak" },
+    @{ Name = "AccountLog"; BackupFile = "AccountLog.bak" },
+    @{ Name = "OperatorTool"; BackupFile = "OperatorTool.bak" },
+    @{ Name = "StatisticsData"; BackupFile = "StatisticsData.bak" },
+    @{ Name = "World00_Character"; BackupFile = "World00_Character.bak" },
+    @{ Name = "World00_GameLog"; BackupFile = "World00_GameLog.bak" },
+    @{ Name = "Options"; BackupFile = "Options.bak" }
+)
 
-[System.Windows.MessageBox]::Show('Databases have been restored.')
+# Loop through each database and restore from its respective backup file
+foreach ($db in $databasesToRestore) {
+    Restore-SqlDatabase -ServerInstance ".\SQLEXPRESS" -Database $db.Name -BackupFile (Join-Path $PSScriptRoot "Databases\$($db.BackupFile)")
+}
+
+# Notify the user that all databases have been restored
+[System.Windows.MessageBox]::Show('Databases have been successfully restored.')
