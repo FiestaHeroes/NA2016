@@ -18,7 +18,7 @@ Minimum requirements for hosting and building your own server. For further detai
 
 ```bash
 # Supported Operating Systems
-- Windows Server: 2016, 2019, 2022
+- Windows Server: 2016, 2019, 2022, 2025
 - Windows: 10, 11
 
 # Minimum Hardware Specifications
