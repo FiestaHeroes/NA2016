@@ -18,6 +18,25 @@ if (-not (Test-Admin)) {
     Exit
 }
 
+# Function to restart the SQL Server (SQLEXPRESS) service and wait until it is running
+function Restart-SQLService {
+    $serviceName = "SQL Server (SQLEXPRESS)"
+    Write-Host "Restarting the SQL Server service: $serviceName"
+    Restart-Service -Name $serviceName -Force
+
+    # Wait for the service to be running
+    Write-Host "Waiting for the SQL Server service to be running..."
+    do {
+        Start-Sleep -Seconds 5
+        $serviceStatus = Get-Service -Name $serviceName
+    } while ($serviceStatus.Status -ne 'Running')
+    
+    Write-Host "SQL Server service is running."
+}
+
+# Restart the SQL Server service
+Restart-SQLService
+
 # Set the path to the databases directory
 $databasesPath = Join-Path $PSScriptRoot 'Databases'
 

@@ -30,7 +30,7 @@ To ensure optimal performance, we recommend the following minimum hardware speci
 Please note that although the minimum storage requirement for the operating system can technically be lower, we highly recommend a minimum of 128GB for optimal performance.
 ```
 
-You can also utilize newer installations of Microsoft SQL Server, provided that the version is equal to or greater than 2019.
+You can also utilize newer installations of Microsoft SQL Server, provided that the version is equal to or greater than 2022.
 
 ## Downloads
 
@@ -38,7 +38,7 @@ You can also utilize newer installations of Microsoft SQL Server, provided that 
 ```bash
 The "core" client is essential for your setup. To install it, you should copy and paste the client files from this repository into your client's root directory. Please note that the client is compressed using the RAR format, so ensure you have the appropriate software to extract the contents of this archive.
 ```
-*	[Microsoft SQL Server 2019](https://go.microsoft.com/fwlink/p/?linkid=866658)
+*	[Microsoft SQL Server 2022](https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x409&culture=en-us&country=us)
 *	[Microsoft SQL Server Management Studio](https://aka.ms/ssmsfullsetup)
 
 <br>

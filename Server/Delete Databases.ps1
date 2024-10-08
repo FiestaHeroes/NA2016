@@ -1,22 +1,41 @@
-# Make sure we're running as Administrator.
+# Ensure the script is running with Administrator privileges.
 param([switch]$Elevated)
-function Test-Admin
-{
-	$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
-	$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+
+# Function to check if the script is running as an Administrator
+function Test-Admin {
+    $currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
+    $currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
-if ((Test-Admin) -eq $false)
-{
-	if ($elevated)
-	{
-		Write-Host "Tried to elevate, did not work... Exiting"
-	}
-	else
-	{
-		Start-Process powershell.exe -Verb RunAs -ArgumentList ('-noprofile -noexit -file "{0}" -elevated' -f ($myinvocation.MyCommand.Definition))
-	}
-	Exit
+
+# Check if we need to elevate privileges
+if (-not (Test-Admin)) {
+    if ($Elevated) {
+        Write-Host "Attempted to elevate, but it did not succeed. Exiting..."
+    } else {
+        # Restart the script with elevated permissions
+        Start-Process powershell.exe -Verb RunAs -ArgumentList ('-noprofile -noexit -file "{0}" -Elevated' -f ($myinvocation.MyCommand.Definition))
+    }
+    Exit
 }
+
+# Function to restart the SQL Server (SQLEXPRESS) service and wait until it is running
+function Restart-SQLService {
+    $serviceName = "SQL Server (SQLEXPRESS)"
+    Write-Host "Restarting the SQL Server service: $serviceName"
+    Restart-Service -Name $serviceName -Force
+
+    # Wait for the service to be running
+    Write-Host "Waiting for the SQL Server service to be running..."
+    do {
+        Start-Sleep -Seconds 5
+        $serviceStatus = Get-Service -Name $serviceName
+    } while ($serviceStatus.Status -ne 'Running')
+    
+    Write-Host "SQL Server service is running."
+}
+
+# Restart the SQL Server service
+Restart-SQLService
 
 # MessageBox.
 Add-Type -AssemblyName PresentationFramework
