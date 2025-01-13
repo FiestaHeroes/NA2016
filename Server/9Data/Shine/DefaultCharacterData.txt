@@ -86,8 +86,14 @@ ITEM		1,		46003,	1	;	Damaged Mystery Vault
 ITEM		6,		46003,	1	;	Damaged Mystery Vault
 ITEM		11,		46003,	1	;	Damaged Mystery Vault
 ITEM		16,		46003,	1	;	Damaged Mystery Vault
-ITEM		21,		46003, 	1	;	Damaged Mystery Vault
+ITEM		21,		46003,	1	;	Damaged Mystery Vault
 ITEM		26,		46012,	1	;	Blessed Mystery Vault
+
+ITEM		1,		250,	1	;	Short Sword
+ITEM		6,		750,	1	;	Short Mace
+ITEM		11,		1250,	1	;	Short Bow
+ITEM		16,		1750,	1	;	Short Staff
+ITEM		21,		57363,	1	;	Abel Claws
 
 ;-----------------------------------------------------------------------------------
 ;			Class	Skill ID	;	Comment
@@ -610,7 +616,7 @@ MAXSHAPE	16,		3,			3,			3				;	Mage
 MAXSHAPE	21,		3,			3,			3				;	Joker
 MAXSHAPE	26,		3,			3,			3				;	Sentinel
 ;-----------------------------------------------------------------------------------
-; 			Class	nSlotNo,	nCodeNo,	nValue			;	Comment
+;			Class	nSlotNo,	nCodeNo,	nValue			;	Comment
 SHORTCUT	1,		0,			4,			0				;	Fighter
 SHORTCUT	1,		1,			4,			1				;	Fighter
 SHORTCUT	1,		10,			1,			3500			;	Fighter
