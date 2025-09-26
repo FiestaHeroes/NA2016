@@ -115,6 +115,7 @@
 #Record	13	ElectricShock02	-	-	-	-	-
 #Record	14	LightningWave02	LightningWave03	-	-	-	-
 #Record	15	Meteor02	Meteor03	-	-	-	-
+#Record	16	ThunderBolt04	ThunderBolt05	ThunderBolt06	-	-	-
 							
 #Table	Tab07	;메이지 패시브					
 #ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]

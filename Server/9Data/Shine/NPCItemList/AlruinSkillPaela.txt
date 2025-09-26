@@ -139,6 +139,7 @@
 #Record	16	FirePole01	-	-	-	-	-
 #Record	17	IceField01	-	-	-	-	-
 #Record	18	ElectricShock01	-	-	-	-	-
+#Record	19	ThunderBolt01	ThunderBolt02	ThunderBolt03	-	-	-
 							
 #Table	Tab07	;메이지 패시브					
 #ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
