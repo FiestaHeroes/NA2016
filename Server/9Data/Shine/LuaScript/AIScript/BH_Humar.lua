@@ -42,6 +42,8 @@ BH_HumarBox =
 	{ Index = "BH_Humar_X", ItemDropMobIndex = "BH_Humar_O_03",	x = 3060, y =  3126, width = 303, height = 494, rotate = 4 },
 	{ Index = "BH_Humar_X", ItemDropMobIndex = "BH_Humar_O_04",	x = 3060, y =  3126, width = 303, height = 494, rotate = 4 },
 }
+HumarBox_VanishTime = 60 -- Time for Chests to Despawn.
+HumarBox_ChestsSpawns = 24 -- Chest Amount to Spawn.
 ----------------------------------------------------------------------
 HumarBox_VanishTime = 60 -- When Chests despawn.
 HumarBox_ChestsSpawns = 24 -- How many Chests should spawn.

@@ -233,8 +233,8 @@ BH_AlbiBox =
 	{ Index = "BH_Albireo_Box", ItemDropMobIndex = "BH_Albireo_Box", 	Radius = 250 },
 	{ Index = "BH_Albireo_Box", ItemDropMobIndex = "BH_Albireo_Box", 	Radius = 250 },
 }
-AlbiBox_VanishTime = 60 -- When Chests despawn.
-AlbiBox_ChestsSpawns = 5 -- How many Chests should spawn.
+AlbiBox_VanishTime = 60 -- Time for Chests to Despawn.
+AlbiBox_ChestsSpawns = 5 -- Chest Amount to Spawn.
 
 ------------------------------------------------------------------
 -----------------------    Albireo Part   ------------------------
@@ -812,7 +812,7 @@ cExecCheck "Invisible_AllVanish"
 	if cCurSec() > Var.Wait.Second then
 		cDebugLog "Invisible_AllVanish"
 		
-		cRegenGroupActiv("BH_Albireo", "BH_AlbiBox", 0)	-- ���ڰ� ������ �ʵ���(����° �μ��� �����ϰų� 1�̸� activ)
+		cRegenGroupActiv("BH_Albireo", "BH_AlbiBox", 0)	-- 상자가 나오지 않도록(세번째 인수를 생략하거나 1이면 activ)
 		Common_RemoveTreasure(Var.MapIndex)
 		cNPCVanish(Var.Handle)
 

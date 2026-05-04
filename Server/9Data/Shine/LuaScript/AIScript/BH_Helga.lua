@@ -122,8 +122,8 @@ BH_HelgaBox =
 	{ Index = "BH_Helga_X", ItemDropMobIndex = "BH_Helga_O_02",	x = 1605, y =  1638, Radius = 1032 },
 }
 ----------------------------------------------------------------------
-HGBox_VanishTime = 60 -- When Chests despawn.
-HGBox_ChestsSpawns = 24 -- How many Chests should spawn.
+HGBox_VanishTime = 60 -- Time for Chests to Despawn.
+HGBox_ChestsSpawns = 24 -- Chest Amount to Spawn.
 
 
 
