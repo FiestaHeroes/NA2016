@@ -236,432 +236,363 @@ BH_AlbiBox =
 AlbiBox_VanishTime = 60 -- Time for Chests to Despawn.
 AlbiBox_ChestsSpawns = 5 -- Chest Amount to Spawn.
 
+
 ------------------------------------------------------------------
 -----------------------    Albireo Part   ------------------------
 ------------------------------------------------------------------
-
 function Skill_Wait( Var )
-cExecCheck "Skill_Wait"
-	if Var.SkillWaitAfter ~= 0 then
+	cExecCheck "Skill_Wait"
 
-		--cDebugLog( "cCurSec : " .. cCurrentSecond() .. "SkillWaitAfter : " .. Var.SkillWaitAfter )
-		if cCurrentSecond() < Var.SkillWaitAfter then
-			--cDebugLog( "SkillWaitAfter......." )
+	if type(Var) ~= "table" then
+		cAssertLog("Skill_Wait ERROR Var not table")
+		return false
+	end
+
+	local wait = Var.SkillWaitAfter
+
+	if wait == nil then
+		cAssertLog("Skill_Wait WARN nil fix")
+		Var.SkillWaitAfter = 0
+		return false
+	end
+
+	if type(wait) ~= "number" then
+		cAssertLog("Skill_Wait ERROR type invalid")
+		Var.SkillWaitAfter = 0
+		return false
+	end
+
+	if wait ~= 0 then
+		if cCurSec() < wait then
 			return true
 		else
-			--cDebugLog( "Out Of SkillWaitAfter......." )
 			Var.SkillWaitAfter = 0
 			return false
 		end
-
 	end
 
 	return false
 end
 
+
 function Init( Var, Handle, MapIndex )
-cExecCheck "Init"
+		cExecCheck "Init"
 
-		MemBlock[Handle] 		= {}
+		MemBlock[Handle] = {}
 
-		Var 					= MemBlock[Handle]
-		Var.Handle 				= Handle
-		Var.MapIndex 			= MapIndex
-		Var.Wait 				= {}
-		Var.Wait.Second 		= 0
-		Var.Wait.NextFunc 		= nil
-		Var.TargetLostSec 		= 0 	-- 타겟을 잃은 시간
-		Var.CurrentPhase		= 0
-		Var.IsInit				= {}	-- 현 단계의 초기화 여부
-		Var.IsUsedSkill			= false	-- OneShot인 스킬의 사용 확인
-		Var.IsUsedSkillAll		= false	-- 이 단계의 스킬 사용이 모두 끝났나?
-		Var.CurrentSkill		= 1		-- 현재 사용중인 스킬의 Skill 데이터 인덱스
-		Var.SkillWaitAfter		= 0
+		Var = MemBlock[Handle]
+		Var.Handle = Handle
+		Var.MapIndex = MapIndex
+		Var.Wait = {}
+		Var.Wait.Second = 0
+		Var.Wait.NextFunc = nil
+		Var.TargetLostSec = 0
+		Var.CurrentPhase = 0
+		Var.IsInit = {}
+		Var.IsUsedSkill = false
+		Var.IsUsedSkillAll = false
+		Var.CurrentSkill = 1
+		Var.SkillWaitAfter = 0
 
-		Var.SummonList			= {}
+		Var.SummonList = {}
+
 		for i = 1, #PhaseData do
-
-			if Var.SummonList[i] == nil then
-				Var.SummonList[i] = {}
-			end
+			Var.SummonList[i] = {}
 
 			for j = 1, #(PhaseData[i]["Summon"]) do
-
-
-				if Var.SummonList[i][j] == nil then
-					Var.SummonList[i][j] = {}
-				end
-
-				Var.SummonList[i][j].IsOver	= false -- 그룹 리젠 죵료 여부
-				Var.SummonList[i][j].OverTime 	= 0 -- 그룹 리젠 제한 시간
+				Var.SummonList[i][j] = {}
+				Var.SummonList[i][j].IsOver = false
+				Var.SummonList[i][j].OverTime = 0
 
 				for k = 1, #(PhaseData[i]["Summon"][j]) do
-
-					if Var.SummonList[i][j][k] == nil then
-						Var.SummonList[i][j][k] = {}
-					end
-
-					Var.SummonList[i][j][k].IsActive 	= false	-- 개별 리젠 활성 여부
-					Var.SummonList[i][j][k].Interval	= 0		-- 개별 리젠 간격
-
+					Var.SummonList[i][j][k] = {}
+					Var.SummonList[i][j][k].IsActive = false
+					Var.SummonList[i][j][k].Interval = 0
 				end
 			end
 		end
 
-		Var.MobList				= {}
-		Var.StepFunc 			= Albi_HPCheck
+		Var.MobList = {}
+		Var.StepFunc = Albi_HPCheck
+end
+
+function BH_Albireo( Handle, MapIndex )
+		cExecCheck "BH_Albireo"
+
+		if IsSetScript == false then
+			IsSetScript = true
+		end
+
+		local Var = MemBlock[Handle]
+
+		if cIsObjectDead(Handle) ~= nil then
+
+			if Var ~= nil then
+
+				local InvisibleHandle = cMobRegen_Obj("InvisibleMan", Handle)
+				cAIScriptSet(InvisibleHandle, Handle)
+
+				MemBlock[InvisibleHandle] = {}
+				MemBlock[InvisibleHandle].Handle = InvisibleHandle
+				MemBlock[InvisibleHandle].MapIndex = MapIndex
+				MemBlock[InvisibleHandle].StepFunc = Invisible_Init
+
+				MemBlock[Handle] = nil
+
+				cVanishAll(MapIndex, "BHArkMine_Kn")
+				cVanishAll(MapIndex, "BHArkMine_F")
+
+				return MemBlock[InvisibleHandle].StepFunc(MemBlock[InvisibleHandle])
+			end
+
+			return ReturnAI.END
+		end
+
+		if Var == nil then
+			Init(Var, Handle, MapIndex)
+			return ReturnAI.CPP
+		end
+
+		Var.Handle = Handle
+		Var.MapIndex = MapIndex
+
+		if Var.StepFunc ~= nil then
+			Var.StepFunc(Var)
+		end
 
 		return ReturnAI.CPP
 end
 
-function BH_Albireo( Handle, MapIndex )
-cExecCheck "BH_Albireo"
+function Albi_Init( Var )
+		cExecCheck "Albi_Init"
 
-	--cDebugLog( "BH_Albireo - Handle : " .. Handle .. " , MapIndex : " ..  MapIndex )
-
-	--------------------------------------------------------------------------------------
-
-	if IsSetScript == false then
-
-		IsSetScript = true
-	end
-
-	local Var = MemBlock[Handle]
-
-	if cIsObjectDead( Handle ) ~= nil then
-
-		if Var ~= nil then   -- 보스가 죽었음
-
-			--cDebugLog( "Boss Dead" )
-			--for k = 1, 2 do
-				--if Var.FellowHandle[k] ~= -1 then
-					--cNPCVanish(Var.FellowHandle[k])
-					--Var.FellowHandle[k] = -1
-				--end
-			--end
-
-			-- 투명인간 소환 - 보물상자 제어용
-			local InvisibleHandle = cMobRegen_Obj( "InvisibleMan", Handle )
-			cAIScriptSet( InvisibleHandle, Handle )
-			MemBlock[InvisibleHandle] 			= {}
-			MemBlock[InvisibleHandle].Handle 	= InvisibleHandle
-			MemBlock[InvisibleHandle].MapIndex 	= MapIndex
-			MemBlock[InvisibleHandle].StepFunc 	= Invisible_Init
-
-			MemBlock[Handle] = nil
-
-			cVanishAll( MapIndex, "BHArkMine_Kn" )
-			cVanishAll( MapIndex, "BHArkMine_F" )
-
-			Var = MemBlock[InvisibleHandle]
-
-			return Var.StepFunc( Var )
+		for i = 1, #PhaseData do
+			Var.IsInit[i] = false
 		end
 
-		return ReturnAI.END
-	end
-
-
-	if Var == nil then    -- 처음 리젠되었음
-
-		Init( Var, Handle, MapIndex )
-		return
-
-	end
-
-	Var.Handle 				= Handle
-	Var.MapIndex 			= MapIndex
-
-	return Var.StepFunc( Var )
-
-
-	--------------------------------------------------------------------------------------
-end
-
-function Albi_Init( Var )
-cExecCheck "Albi_Init"
-
-	for i = 1, #PhaseData do
-		Var.IsInit[i] = false
-	end
-
-	Var.IsUsedSkill			= false	-- OneShot인 스킬의 사용 확인
-	Var.IsUsedSkillAll		= false	-- 이 단계의 스킬 사용이 모두 끝났나?
-	Var.CurrentSkill		= 1		-- 현재 사용중인 스킬의 Skill 데이터 인덱스
-	Var.SkillWaitAfter		= 0
-
+		Var.IsUsedSkill = false
+		Var.IsUsedSkillAll = false
+		Var.CurrentSkill = 1
+		Var.SkillWaitAfter = 0
 end
 
 -- Albireo HP 구간 체크
 function Albi_HPCheck( Var )
-cExecCheck "Albi_HPCheck"
+		cExecCheck "Albi_HPCheck"
 
-	local hp
-	local maxhp
+		local hp, maxhp = cObjectHP(Var.Handle)
 
-	hp, maxhp = cObjectHP( Var.Handle )
+		if hp == nil or maxhp == nil or hp == 0 then
+			Albi_Init(Var)
+			Var.CurrentPhase = HPSection.Init
 
-	if hp == nil or maxhp == nil or hp == 0 then
+		elseif maxhp * PhaseData[1].HPRateMax < hp * 1000 then
+			Albi_Init(Var)
+			Var.CurrentPhase = HPSection.None
 
-		Albi_Init( Var )
-		Var.CurrentPhase 	= HPSection.Init
+		elseif maxhp * PhaseData[1].HPRateMin < hp * 1000 and hp * 1000 <= maxhp * PhaseData[1].HPRateMax then
+			if Var.IsInit[1] == false then
+				Albi_Init(Var)
+				Var.IsInit[1] = true
+			end
+			Var.CurrentPhase = HPSection.First
 
-	elseif maxhp * PhaseData[1].HPRateMax < hp * 1000 then
+		elseif maxhp * PhaseData[2].HPRateMin < hp * 1000 and hp * 1000 <= maxhp * PhaseData[2].HPRateMax then
+			if Var.IsInit[2] == false then
+				Albi_Init(Var)
+				Var.IsInit[2] = true
+			end
+			Var.CurrentPhase = HPSection.Second
 
-		Albi_Init( Var )
-		Var.CurrentPhase 	= HPSection.None
-
-	elseif maxhp * PhaseData[1].HPRateMin < hp * 1000 and hp * 1000 <= maxhp * PhaseData[1].HPRateMax then
-
-		if Var.IsInit[1] == false then
-			Albi_Init( Var )
-			Var.IsInit[1] = true
+		elseif maxhp * PhaseData[3].HPRateMin < hp * 1000 and hp * 1000 <= maxhp * PhaseData[3].HPRateMax then
+			if Var.IsInit[3] == false then
+				Albi_Init(Var)
+				Var.IsInit[3] = true
+			end
+			Var.CurrentPhase = HPSection.Third
 		end
 
-		Var.CurrentPhase 	= HPSection.First
-
-	elseif maxhp * PhaseData[2].HPRateMin < hp * 1000 and hp * 1000 <= maxhp * PhaseData[2].HPRateMax then
-
-		if Var.IsInit[2] == false then
-			Albi_Init( Var )
-			Var.IsInit[2] = true
-		end
-
-		Var.CurrentPhase 	= HPSection.Second
-
-	elseif maxhp * PhaseData[3].HPRateMin < hp * 1000 and hp * 1000 <= maxhp * PhaseData[3].HPRateMax then
-
-		if Var.IsInit[3] == false then
-			Albi_Init( Var )
-			Var.IsInit[3] = true
-		end
-
-		Var.CurrentPhase 	= HPSection.Third
-
-	end
-
-
-	Var.StepFunc = Albi_Behaviour
-
-	return ReturnAI.CPP
-
+		Var.StepFunc = Albi_Behaviour
+		return ReturnAI.CPP
 end
 
 
 function Albi_Behaviour( Var )
-cExecCheck "Albi_Behaviour"
+		cExecCheck "Albi_Behaviour"
 
-	Var.StepFunc = Albi_HPCheck
+		Var.StepFunc = Albi_HPCheck
 
+		local Handle 	= Var.Handle
+		local MapIndex 	= Var.MapIndex
 
-	local Handle 	= Var.Handle
-	local MapIndex 	= Var.MapIndex
+		-- 타겟 잃어버린 시간 검사
+		local TargetHandle = cTargetHandle( Var.Handle )
 
-	-- 타겟 잃어버린 시간 검사
-	local TargetHandle = cTargetHandle( Var.Handle )
+		if TargetHandle ~= nil and cObjectType( TargetHandle ) == SHINEOBJECT then
+			Var.TargetLostSec = cCurSec()
+		elseif Var.TargetLostSec + 10 < cCurSec() then
 
-	if TargetHandle ~= nil and cObjectType( TargetHandle ) == SHINEOBJECT then	-- 타겟이 있고 플레이어면 (SHINEOBJECT_PLAYER == 2)
+			cResetAbstate( Var.Handle, "Sta_BH_Albi_Reflect" )
+			cResetAbstate( Var.Handle, "Sta_BH_Albi_ACMRUp" )
 
-		Var.TargetLostSec = cCurSec()
-	elseif Var.TargetLostSec + 10 < cCurSec() then	-- 적이 사라진지 10초 후
+			for i = 1, #(Var.MobList) do
+				cNPCVanish( Var.MobList[i] )
+			end
 
-		cResetAbstate( Var.Handle, "Sta_BH_Albi_Reflect" )	-- 강화버프 제거
-		cResetAbstate( Var.Handle, "Sta_BH_Albi_ACMRUp" )	-- 강화버프 제거
-		for i = 1, #(Var.MobList) do
-			cNPCVanish( Var.MobList[i] )
+			MemBlock = {}
+			WaitBoom = {}
+
+			Init( Var, Handle, MapIndex )
 		end
 
-		MemBlock = {} -->모든 메모리 삭제 - 처음부터 다시 시작
-		WaitBoom = {}
 
-		Init( Var, Handle, MapIndex )
-
-		--cDebugLog( "타겟 사라짐 -> 재초기화!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" )
-	end
+		-- 벗어난 단계 검사
+		if Var.CurrentPhase < 1 or #PhaseData < Var.CurrentPhase then
+			return ReturnAI.CPP
+		end
 
 
-	-- 벗어난 단계 검사
-	if Var.CurrentPhase < 1 or #PhaseData < Var.CurrentPhase then
-		return ReturnAI.CPP
-	end
+		local Skill = PhaseData[Var.CurrentPhase]["Skill"]
 
-
-	Skill = PhaseData[Var.CurrentPhase]["Skill"]
-
-	-- 알비레오 스킬 사용
-	if Skill ~= nil then
-
-		if Skill_Wait( Var ) == false and Var.IsUsedSkillAll == false then
-
-			-- 스킬이면
-			if Skill[Var.CurrentSkill]["Type"] == "Skill" then
-
-				--cDebugLog( "Use Skill!!!!!!!!" )
-				--cNPCSkillUse( Var.Handle, Var.Handle, Skill[Var.CurrentSkill]["Index"] )
-
-				if TargetHandle ~= nil then
-					cSkillBlast( Var.Handle, Var.Handle, Skill[Var.CurrentSkill]["Index"] )
-				end
-
-			-- AbState면
-			elseif Skill[Var.CurrentSkill]["Type"] == "AbState" then
-
-				--cDebugLog( "Use Abstate!!!!!!!!" )
-				local Range 	= Skill[Var.CurrentSkill]["Range"]
-				local Index 	= Skill[Var.CurrentSkill]["Index"]
-				local KeepTime	= Skill[Var.CurrentSkill]["KeepTime"]
-				local Strength 	= 1
-
-				-- 타겟이 적들(플레이어)이면
-				if Skill[Var.CurrentSkill]["Target"] == "Other" then
+		-- 알비레오 스킬 사용
+		if Skill ~= nil then
+			if Skill_Wait( Var ) == false and Var.IsUsedSkillAll == false then
+				-- 스킬이면
+				if Skill[Var.CurrentSkill]["Type"] == "Skill" then
 
 					if TargetHandle ~= nil then
-						cSetAbstate_Range( Var.Handle, Range, SHINEOBJECT, Index, Strength, KeepTime )
+						cSkillBlast( Var.Handle, Var.Handle, Skill[Var.CurrentSkill]["Index"] )
 					end
 
-				-- 타겟이 나(mob) 이면
-				elseif Skill[Var.CurrentSkill]["Target"] == "Me" then
+				elseif Skill[Var.CurrentSkill]["Type"] == "AbState" then
 
-					if TargetHandle ~= nil then
-						cSetAbstate( Var.Handle, Index, Strength, KeepTime )
+					local Range 	= Skill[Var.CurrentSkill]["Range"]
+					local Index 	= Skill[Var.CurrentSkill]["Index"]
+					local KeepTime	= Skill[Var.CurrentSkill]["KeepTime"]
+					local Strength 	= 1
+
+					if Skill[Var.CurrentSkill]["Target"] == "Other" then
+
+						if TargetHandle ~= nil then
+							cSetAbstate_Range( Var.Handle, Range, SHINEOBJECT, Index, Strength, KeepTime )
+						end
+
+					elseif Skill[Var.CurrentSkill]["Target"] == "Me" then
+
+						if TargetHandle ~= nil then
+							cSetAbstate( Var.Handle, Index, Strength, KeepTime )
+						end
 					end
 				end
 
+				Var.SkillWaitAfter = cCurSec() + Skill[Var.CurrentSkill]["WaitAfter"]
+
+				Var.CurrentSkill = Var.CurrentSkill + 1
+
+				if #Skill < Var.CurrentSkill then
+					Var.IsUsedSkillAll = true
+				end
 			end
-
-
-
-			Var.SkillWaitAfter = cCurrentSecond() + Skill[Var.CurrentSkill]["WaitAfter"]
-
-			Var.CurrentSkill = Var.CurrentSkill + 1
-
-			if #Skill < Var.CurrentSkill then
-				Var.IsUsedSkillAll = true
-			end
-
-
 		end
-	end
 
 
-	-- 아크 마인 소환
-	Summon 		= PhaseData[Var.CurrentPhase]["Summon"]
-	SummonInfo 	= PhaseData[Var.CurrentPhase]["SummonInfo"]
+		-- 아크 마인 소환
+		local Summon 		= PhaseData[Var.CurrentPhase]["Summon"]
+		local SummonInfo 	= PhaseData[Var.CurrentPhase]["SummonInfo"]
 
-	for i = 1, #Var.SummonList do
-		for j = 1, #(Var.SummonList[i]) do
-			for k = 1, #(Var.SummonList[i][j]) do
+		for i = 1, #Var.SummonList do
+			for j = 1, #(Var.SummonList[i]) do
+				for k = 1, #(Var.SummonList[i][j]) do
 
-				if Var.SummonList[i][j][k].IsActive == false then
+					if Var.SummonList[i][j][k].IsActive == false then
 
-					-- 현재 단계와 같은지 검사
-					if i == Var.CurrentPhase then
+						if i == Var.CurrentPhase then
 
-						-- 이전 그룹 종료 후 실행되는지 검사
-						if SummonInfo[j].IsAfterPrevSummon == true then
+							if SummonInfo[j] ~= nil and SummonInfo[j].IsAfterPrevSummon == true then
 
-							if Var.SummonList[i][j - 1].IsOver == true then
-
-								Var.SummonList[i][j][k].IsActive 	= true
-								Var.SummonList[i][j].OverTime 		= cCurSec() + SummonInfo[j].OverTime
+								if Var.SummonList[i][j - 1] and Var.SummonList[i][j - 1].IsOver == true then
+									Var.SummonList[i][j][k].IsActive = true
+									Var.SummonList[i][j].OverTime = cCurSec() + SummonInfo[j].OverTime
+								end
+							else
+								Var.SummonList[i][j][k].IsActive = true
+								Var.SummonList[i][j].OverTime = cCurSec() + (SummonInfo[j] and SummonInfo[j].OverTime or 0)
 							end
-						else
-
-							Var.SummonList[i][j][k].IsActive 	= true
-							Var.SummonList[i][j].OverTime 		= cCurSec() + SummonInfo[j].OverTime
-						end
-					end
-
-				elseif Var.SummonList[i][j][k].IsActive == true then
-
-					-- 리젠 시간 간격 검사
-					if Var.SummonList[i][j][k].Interval < cCurSec() then
-
-						local Index		= Summon[j][k].Index
-						local X			= Summon[j][k].X
-						local Y			= Summon[j][k].Y
-						local W			= Summon[j][k].W
-						local H			= Summon[j][k].H
-						local D			= Summon[j][k].D
-						local handle 	= cMobRegen_Rectangle( Var.MapIndex, Index, X, Y, W, H, D )
-
-
-						if handle ~= nil then
-							cAIScriptSet( handle, Var.Handle )
-							cAIScriptFunc( handle, "MobAttack", "ArkMine_MobAttack" )
 						end
 
-						Var.MobList[#(Var.MobList) + 1] = handle
-						Var.SummonList[i][j][k].Interval = cCurSec() + Summon[j][k].Interval
-					end
+					elseif Var.SummonList[i][j][k].IsActive == true then
+
+						if Var.SummonList[i][j][k].Interval < cCurSec() then
+
+							local s = Summon and Summon[j] and Summon[j][k]
+							if not s then
+								return ReturnAI.CPP
+							end
+
+							local Index = s.Index
+							local X = s.X
+							local Y = s.Y
+							local W = s.W
+							local H = s.H
+							local D = s.D
+							local handle = cMobRegen_Rectangle( Var.MapIndex, Index, X, Y, W, H, D )
+
+							
+							if handle ~= nil then
+								cAIScriptSet(handle, Var.Handle)
+								cAIScriptFunc(handle, "MobAttack", "ArkMine_MobAttack")
+							end
+
+							Var.MobList[#(Var.MobList) + 1] = handle
+							Var.SummonList[i][j][k].Interval = cCurSec() + Summon[j][k].Interval
+						end
 
 
-					-- 리젠 종료 검사
-					if SummonInfo[j].IsTimeOver == true then
+						local info = SummonInfo[j]
+						if info ~= nil then
 
-						if Var.SummonList[i][j].OverTime <= cCurSec() then
-							Var.SummonList[i][j][k].IsActive = false
+							if info.IsTimeOver == true then
 
-							Var.SummonList[i][j].IsOver = true
-							for n = 1, #(Var.SummonList[i][j]) do
-								if Var.SummonList[i][j][n].IsActive == true then
-									Var.SummonList[i][j].IsOver = false
+								if Var.SummonList[i][j].OverTime <= cCurSec() then
+									Var.SummonList[i][j][k].IsActive = false
+									Var.SummonList[i][j].IsOver = true
+
+									for n = 1, #(Var.SummonList[i][j]) do
+										if Var.SummonList[i][j][n].IsActive == true then
+											Var.SummonList[i][j].IsOver = false
+										end
+									end
+								end
+
+							elseif info.EndHPSection == Var.CurrentPhase then
+
+								Var.SummonList[i][j][k].IsActive = false
+								Var.SummonList[i][j].IsOver = true
+
+								for n = 1, #(Var.SummonList[i][j]) do
+									if Var.SummonList[i][j][n].IsActive == true then
+										Var.SummonList[i][j].IsOver = false
+									end
 								end
 							end
 						end
+					end
+				end
 
-					elseif SummonInfo[j].EndHPSection == Var.CurrentPhase then
-
-						Var.SummonList[i][j][k].IsActive = false
-
-						Var.SummonList[i][j].IsOver = true
-						for n = 1, #(Var.SummonList[i][j]) do
-							if Var.SummonList[i][j][n].IsActive == true then
-								Var.SummonList[i][j].IsOver = false
-							end
-						end
+				if 0 < (j - 1) then
+					if Var.SummonList[i][j - 1].IsOver == true then
+						Var.SummonList[i][j - 1].IsOver = false
 					end
 				end
 			end
-
-			if 0 < (j - 1) then
-				if Var.SummonList[i][j - 1].IsOver == true then
-				Var.SummonList[i][j - 1].IsOver = false
-				end
-			end
 		end
-	end
-
 	return ReturnAI.CPP
-
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 --------------------------------------------------------------------
 -----------------------   ArkMine  Part   --------------------------
 --------------------------------------------------------------------
-
 ExplosionTime 	= 5
 WaitBoom		= {}
 
@@ -698,13 +629,14 @@ cExecCheck "BHArkMine_Kn"
 	return ReturnAI.CPP
 end
 
+
 function BHArkMine_F( Handle, MapIndex )
 cExecCheck "BHArkMine_F"
-
 	return ReturnAI.CPP
 end
 
-function BHArkMine_MobAttack( MapIndex, AtkHandle )
+
+function ArkMine_MobAttack( MapIndex, AtkHandle )
 cExecCheck "BHArkMine_MobAttack"
 
 	--local MobID = cGetMobID( AtkHandle )
@@ -724,36 +656,20 @@ cExecCheck "BHArkMine_MobAttack"
 end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --------------------------------------------------------------------
 -------------------------   Reward Part   --------------------------
 --------------------------------------------------------------------
 -- 보물상자 제어용 오브젝트
-
 function Common_RemoveTreasure( MapIndex )
 cExecCheck "Common_RemoveTreasure"
-	cRegenGroupActiv("BH_Albireo", "BH_AlbiBox", 0)
-	cVanishAll( MapIndex, "BH_Albireo_Box" )
-	--cDebugLog( "Treasure Removed" )
+
+	for i = 1, #BH_AlbiBox
+	do
+		cVanishAll( MapIndex, BH_AlbiBox[i].ItemDropMobIndex )
+		--cDebugLog( "remove" )
+	end
 end
+
 
 function Invisible_Init(Var)
 cExecCheck "Invisible_Init"
@@ -790,6 +706,7 @@ cExecCheck "Invisible_Init"
     Var.StepFunc = Invisible_AllVanish
 end
 
+
 function InvisibleMan( Handle, MapIndex )
 cExecCheck "InvisibleMan"
 
@@ -806,13 +723,15 @@ cExecCheck "InvisibleMan"
 	return ReturnAI.END
 end
 
+
 function Invisible_AllVanish( Var )
 cExecCheck "Invisible_AllVanish"
 
 	if cCurSec() > Var.Wait.Second then
-		cDebugLog "Invisible_AllVanish"
-		
-		cRegenGroupActiv("BH_Albireo", "BH_AlbiBox", 0)	-- 상자가 나오지 않도록(세번째 인수를 생략하거나 1이면 activ)
+
+		--cRegenGroupActiv( Var.MapIndex, "UniWpLv125", 0 )	-- 상자가 나오지 않도록(세번째 인수를 생략하거나 1이면 activ)
+
+		cRegenGroupActiv("BH_Albireo", "BH_AlbiBox", 0) -- 상자가 나오지 않도록(세번째 인수를 생략하거나 1이면 activ)
 		Common_RemoveTreasure(Var.MapIndex)
 		cNPCVanish(Var.Handle)
 

@@ -8,8 +8,8 @@
 MemBlock 			= {}
 PhaseData			= {}
 ReturnAI 			= {}
-ReturnAI.END 		= 1    	-- Return_AI_END = 1;//    -- ¸ğµç AI·çÆ¾ ³¡
-ReturnAI.CPP 		= 2    	-- Return_AI_CPP = 2;//    -- ·ç¾Æ·Î ÀÏºÎ Ã³¸®ÇÑ ÈÄ cppÀÇ AI·çÆ¾ µ¹¸²
+ReturnAI.END 		= 1    	-- Return_AI_END = 1;//    -- ëª¨ë“  AIë£¨í‹´ ë
+ReturnAI.CPP 		= 2    	-- Return_AI_CPP = 2;//    -- ë£¨ì•„ë¡œ ì¼ë¶€ ì²˜ë¦¬í•œ í›„ cppì˜ AIë£¨í‹´ ëŒë¦¼
 SHINEOBJECT  		= 2		-- ShineObject_Player
 HPSection			= {}
 HPSection.Init		= -1
@@ -18,14 +18,14 @@ HPSection.First		= 1
 HPSection.Second	= 2
 HPSection.Third		= 3
 
--- 1 ´Ü°è
+-- 1 ë‹¨ê³„
 PhaseData[1]		=
 {
-	-- ´Ü°è ÁøÀÔ Á¶°Ç
+	-- ë‹¨ê³„ ì§„ì… ì¡°ê±´
 	HPRateMax	= 750,
 	HPRateMin	= 500,
 
-	-- ½ºÅ³, »óÅÂÀÌ»ó
+	-- ìŠ¤í‚¬, ìƒíƒœì´ìƒ
 	Skill 		=
 	{
 		{ Index = "B_Albireo_Skill06_W", Type = "Skill",	Target = "Me", 		KeepTime = 0, 		OneShot = true, WaitAfter = 5, Range = 0 	},
@@ -33,7 +33,7 @@ PhaseData[1]		=
 		{ Index = "Sta_B_Albi_Dot",	 	 Type = "AbState",	Target = "Other", 	KeepTime = 20000, 	OneShot	= true, WaitAfter = 0, Range = 600	},
 	},
 
-	-- ¼ÒÈ¯
+	-- ì†Œí™˜
 	Summon		=
 	{
 		{
@@ -73,18 +73,18 @@ PhaseData[1]		=
 
 PhaseData[2]		=
 {
-	-- ´Ü°è ÁøÀÔ Á¶°Ç
+	-- ë‹¨ê³„ ì§„ì… ì¡°ê±´
 	HPRateMax	= 600,
 	HPRateMin	= 400,
 
-	-- ½ºÅ³, »óÅÂÀÌ»ó
+	-- ìŠ¤í‚¬, ìƒíƒœì´ìƒ
 	Skill 		=
 	{
 		{ Index = "B_Albireo_Skill06_W", Type = "Skill",	Target = "Me", 	KeepTime = 0, 		OneShot = true, WaitAfter = 5, Range = 0 	},
 		{ Index = "Sta_B_Albi_Reflect",	 Type = "AbState",	Target = "Me", 	KeepTime = 600000, 	OneShot = true, WaitAfter = 0, Range = 150 	},
 	},
 
-	-- ¼ÒÈ¯
+	-- ì†Œí™˜
 	Summon		=
 	{
 
@@ -98,18 +98,18 @@ PhaseData[2]		=
 
 PhaseData[3]		=
 {
-	-- ´Ü°è ÁøÀÔ Á¶°Ç
+	-- ë‹¨ê³„ ì§„ì… ì¡°ê±´
 	HPRateMax	= 500,
 	HPRateMin	= 10,
 
-	-- ½ºÅ³, »óÅÂÀÌ»ó
+	-- ìŠ¤í‚¬, ìƒíƒœì´ìƒ
 	Skill 		=
 	{
 		{ Index = "B_Albireo_Skill06_W", Type = "Skill",	Target = "Me", 	KeepTime = 0, 		OneShot = true, WaitAfter = 5, Range = 0 	},
 		{ Index = "Sta_B_Albi_ACMRUp",	 Type = "AbState",	Target = "Me", 	KeepTime = 20000, 	OneShot = true, WaitAfter = 0, Range = 0 	},
 	},
 
-	-- ¼ÒÈ¯
+	-- ì†Œí™˜
 	Summon		=
 	{
 		{
@@ -225,7 +225,7 @@ PhaseData[3]		=
 	},
 }
 
--- º¸¹°»óÀÚ ¼ÒÈ¯ Á¤º¸
+-- ë³´ë¬¼ìƒì ì†Œí™˜ ì •ë³´
 B_AlbiBox =
 {
 	{ Index = "Albireo_Box", ItemDropMobIndex = "Albireo_Box", 	Radius = 250 },
@@ -238,25 +238,40 @@ AlbiBox_VanishTime = 60
 ------------------------------------------------------------------
 -----------------------    Albireo Part   ------------------------
 ------------------------------------------------------------------
-
 function Skill_Wait( Var )
 cExecCheck "Skill_Wait"
-	if Var.SkillWaitAfter ~= 0 then
 
-		--cDebugLog( "cCurSec : " .. cCurrentSecond() .. "SkillWaitAfter : " .. Var.SkillWaitAfter )
-		if cCurrentSecond() < Var.SkillWaitAfter then
-			--cDebugLog( "SkillWaitAfter......." )
+	if type(Var) ~= "table" then
+		cAssertLog("Skill_Wait ERROR Var not table")
+		return false
+	end
+
+	local wait = Var.SkillWaitAfter
+
+	if wait == nil then
+		cAssertLog("Skill_Wait WARN nil fix")
+		Var.SkillWaitAfter = 0
+		return false
+	end
+
+	if type(wait) ~= "number" then
+		cAssertLog("Skill_Wait ERROR type invalid")
+		Var.SkillWaitAfter = 0
+		return false
+	end
+
+	if wait ~= 0 then
+		if cCurSec() < wait then
 			return true
 		else
-			--cDebugLog( "Out Of SkillWaitAfter......." )
 			Var.SkillWaitAfter = 0
 			return false
 		end
-
 	end
 
 	return false
 end
+
 
 function Init( Var, Handle, MapIndex )
 cExecCheck "Init"
@@ -269,12 +284,12 @@ cExecCheck "Init"
 		Var.Wait 				= {}
 		Var.Wait.Second 		= 0
 		Var.Wait.NextFunc 		= nil
-		Var.TargetLostSec 		= 0 	-- Å¸°ÙÀ» ÀÒÀº ½Ã°£
+		Var.TargetLostSec 		= 0 	-- íƒ€ê²Ÿì„ ìƒì€ ì‹œê°„
 		Var.CurrentPhase		= 0
-		Var.IsInit				= {}	-- Çö ´Ü°èÀÇ ÃÊ±âÈ­ ¿©ºÎ
-		Var.IsUsedSkill			= false	-- OneShotÀÎ ½ºÅ³ÀÇ »ç¿ë È®ÀÎ
-		Var.IsUsedSkillAll		= false	-- ÀÌ ´Ü°èÀÇ ½ºÅ³ »ç¿ëÀÌ ¸ğµÎ ³¡³µ³ª?
-		Var.CurrentSkill		= 1		-- ÇöÀç »ç¿ëÁßÀÎ ½ºÅ³ÀÇ Skill µ¥ÀÌÅÍ ÀÎµ¦½º
+		Var.IsInit				= {}	-- í˜„ ë‹¨ê³„ì˜ ì´ˆê¸°í™” ì—¬ë¶€
+		Var.IsUsedSkill			= false	-- OneShotì¸ ìŠ¤í‚¬ì˜ ì‚¬ìš© í™•ì¸
+		Var.IsUsedSkillAll		= false	-- ì´ ë‹¨ê³„ì˜ ìŠ¤í‚¬ ì‚¬ìš©ì´ ëª¨ë‘ ëë‚¬ë‚˜?
+		Var.CurrentSkill		= 1		-- í˜„ì¬ ì‚¬ìš©ì¤‘ì¸ ìŠ¤í‚¬ì˜ Skill ë°ì´í„° ì¸ë±ìŠ¤
 		Var.SkillWaitAfter		= 0
 
 		Var.SummonList			= {}
@@ -291,8 +306,8 @@ cExecCheck "Init"
 					Var.SummonList[i][j] = {}
 				end
 
-				Var.SummonList[i][j].IsOver	= false -- ±×·ì ¸®Á¨ ÁÕ·á ¿©ºÎ
-				Var.SummonList[i][j].OverTime 	= 0 -- ±×·ì ¸®Á¨ Á¦ÇÑ ½Ã°£
+				Var.SummonList[i][j].IsOver	= false -- ê·¸ë£¹ ë¦¬ì   ì£µë£Œ ì—¬ë¶€
+				Var.SummonList[i][j].OverTime 	= 0 -- ê·¸ë£¹ ë¦¬ì   ì œí•œ ì‹œê°„
 
 				for k = 1, #(PhaseData[i]["Summon"][j]) do
 
@@ -300,8 +315,8 @@ cExecCheck "Init"
 						Var.SummonList[i][j][k] = {}
 					end
 
-					Var.SummonList[i][j][k].IsActive 	= false	-- °³º° ¸®Á¨ È°¼º ¿©ºÎ
-					Var.SummonList[i][j][k].Interval	= 0		-- °³º° ¸®Á¨ °£°İ
+					Var.SummonList[i][j][k].IsActive 	= false	-- ê°œë³„ ë¦¬ì   í™œì„± ì—¬ë¶€
+					Var.SummonList[i][j][k].Interval	= 0		-- ê°œë³„ ë¦¬ì   ê°„ê²©
 
 				end
 			end
@@ -309,9 +324,8 @@ cExecCheck "Init"
 
 		Var.MobList				= {}
 		Var.StepFunc 			= Albi_HPCheck
-
-		return ReturnAI.CPP
 end
+
 
 function B_Albireo( Handle, MapIndex )
 cExecCheck "B_Albireo"
@@ -329,7 +343,7 @@ cExecCheck "B_Albireo"
 
 	if cIsObjectDead( Handle ) ~= nil then
 
-		if Var ~= nil then   -- º¸½º°¡ Á×¾úÀ½
+		if Var ~= nil then   -- ë³´ìŠ¤ê°€ ì£½ì—ˆìŒ
 
 			--cDebugLog( "Boss Dead" )
 			--for k = 1, 2 do
@@ -339,7 +353,7 @@ cExecCheck "B_Albireo"
 				--end
 			--end
 
-			-- Åõ¸íÀÎ°£ ¼ÒÈ¯ - º¸¹°»óÀÚ Á¦¾î¿ë
+			-- íˆ¬ëª…ì¸ê°„ ì†Œí™˜ - ë³´ë¬¼ìƒì ì œì–´ìš©
 			local InvisibleHandle = cMobRegen_Obj( "InvisibleMan", Handle )
 			cAIScriptSet( InvisibleHandle, Handle )
 			MemBlock[InvisibleHandle] 			= {}
@@ -361,20 +375,22 @@ cExecCheck "B_Albireo"
 	end
 
 
-	if Var == nil then    -- Ã³À½ ¸®Á¨µÇ¾úÀ½
-
+	if Var == nil then    -- ì²˜ìŒ ë¦¬ì  ë˜ì—ˆìŒ
 		Init( Var, Handle, MapIndex )
-
+		return
 	end
 
 	Var.Handle 				= Handle
 	Var.MapIndex 			= MapIndex
 
-	return Var.StepFunc( Var )
+	if Var.StepFunc ~= nil then
+		Var.StepFunc(Var)
+	end
 
-
+	return ReturnAI.CPP
 	--------------------------------------------------------------------------------------
 end
+
 
 function Albi_Init( Var )
 cExecCheck "Albi_Init"
@@ -383,14 +399,15 @@ cExecCheck "Albi_Init"
 		Var.IsInit[i] = false
 	end
 
-	Var.IsUsedSkill			= false	-- OneShotÀÎ ½ºÅ³ÀÇ »ç¿ë È®ÀÎ
-	Var.IsUsedSkillAll		= false	-- ÀÌ ´Ü°èÀÇ ½ºÅ³ »ç¿ëÀÌ ¸ğµÎ ³¡³µ³ª?
-	Var.CurrentSkill		= 1		-- ÇöÀç »ç¿ëÁßÀÎ ½ºÅ³ÀÇ Skill µ¥ÀÌÅÍ ÀÎµ¦½º
+	Var.IsUsedSkill			= false	-- OneShotì¸ ìŠ¤í‚¬ì˜ ì‚¬ìš© í™•ì¸
+	Var.IsUsedSkillAll		= false	-- ì´ ë‹¨ê³„ì˜ ìŠ¤í‚¬ ì‚¬ìš©ì´ ëª¨ë‘ ëë‚¬ë‚˜?
+	Var.CurrentSkill		= 1		-- í˜„ì¬ ì‚¬ìš©ì¤‘ì¸ ìŠ¤í‚¬ì˜ Skill ë°ì´í„° ì¸ë±ìŠ¤
 	Var.SkillWaitAfter		= 0
 
 end
 
--- Albireo HP ±¸°£ Ã¼Å©
+
+-- Albireo HP êµ¬ê°„ ì²´í¬
 function Albi_HPCheck( Var )
 cExecCheck "Albi_HPCheck"
 
@@ -455,30 +472,30 @@ cExecCheck "Albi_Behaviour"
 	local Handle 	= Var.Handle
 	local MapIndex 	= Var.MapIndex
 
-	-- Å¸°Ù ÀÒ¾î¹ö¸° ½Ã°£ °Ë»ç
+	-- íƒ€ê²Ÿ ìƒì–´ë²„ë¦° ì‹œê°„ ê²€ì‚¬
 	local TargetHandle = cTargetHandle( Var.Handle )
 
-	if TargetHandle ~= nil and cObjectType( TargetHandle ) == SHINEOBJECT then	-- Å¸°ÙÀÌ ÀÖ°í ÇÃ·¹ÀÌ¾î¸é (SHINEOBJECT_PLAYER == 2)
+	if TargetHandle ~= nil and cObjectType( TargetHandle ) == SHINEOBJECT then	-- íƒ€ê²Ÿì´ ìˆê³  í”Œë ˆì´ì–´ë©´ (SHINEOBJECT_PLAYER == 2)
 
 		Var.TargetLostSec = cCurSec()
-	elseif Var.TargetLostSec + 10 < cCurSec() then	-- ÀûÀÌ »ç¶óÁøÁö 10ÃÊ ÈÄ
+	elseif Var.TargetLostSec + 10 < cCurSec() then	-- ì ì´ ì‚¬ë¼ì§„ì§€ 10ì´ˆ í›„
 
-		cResetAbstate( Var.Handle, "Sta_B_Albi_Reflect" )	-- °­È­¹öÇÁ Á¦°Å
-		cResetAbstate( Var.Handle, "Sta_B_Albi_ACMRUp" )	-- °­È­¹öÇÁ Á¦°Å
+		cResetAbstate( Var.Handle, "Sta_B_Albi_Reflect" )	-- ê°•í™”ë²„í”„ ì œê±°
+		cResetAbstate( Var.Handle, "Sta_B_Albi_ACMRUp" )	-- ê°•í™”ë²„í”„ ì œê±°
 		for i = 1, #(Var.MobList) do
 			cNPCVanish( Var.MobList[i] )
 		end
 
-		MemBlock = {} -->¸ğµç ¸Ş¸ğ¸® »èÁ¦ - Ã³À½ºÎÅÍ ´Ù½Ã ½ÃÀÛ
+		MemBlock = {} -->ëª¨ë“  ë©”ëª¨ë¦¬ ì‚­ì œ - ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì‹œì‘
 		WaitBoom = {}
 
 		Init( Var, Handle, MapIndex )
 
-		--cDebugLog( "Å¸°Ù »ç¶óÁü -> ÀçÃÊ±âÈ­!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" )
+		--cDebugLog( "íƒ€ê²Ÿ ì‚¬ë¼ì§ -> ì¬ì´ˆê¸°í™”!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" )
 	end
 
 
-	-- ¹ş¾î³­ ´Ü°è °Ë»ç
+	-- ë²—ì–´ë‚œ ë‹¨ê³„ ê²€ì‚¬
 	if Var.CurrentPhase < 1 or #PhaseData < Var.CurrentPhase then
 		return ReturnAI.CPP
 	end
@@ -486,12 +503,11 @@ cExecCheck "Albi_Behaviour"
 
 	Skill = PhaseData[Var.CurrentPhase]["Skill"]
 
-	-- ¾Ëºñ·¹¿À ½ºÅ³ »ç¿ë
+	-- ì•Œë¹„ë ˆì˜¤ ìŠ¤í‚¬ ì‚¬ìš©
 	if Skill ~= nil then
 
 		if Skill_Wait( Var ) == false and Var.IsUsedSkillAll == false then
-
-			-- ½ºÅ³ÀÌ¸é
+			-- ìŠ¤í‚¬ì´ë©´
 			if Skill[Var.CurrentSkill]["Type"] == "Skill" then
 
 				--cDebugLog( "Use Skill!!!!!!!!" )
@@ -501,7 +517,7 @@ cExecCheck "Albi_Behaviour"
 					cSkillBlast( Var.Handle, Var.Handle, Skill[Var.CurrentSkill]["Index"] )
 				end
 
-			-- AbState¸é
+			-- AbStateë©´
 			elseif Skill[Var.CurrentSkill]["Type"] == "AbState" then
 
 				--cDebugLog( "Use Abstate!!!!!!!!" )
@@ -510,14 +526,14 @@ cExecCheck "Albi_Behaviour"
 				local KeepTime	= Skill[Var.CurrentSkill]["KeepTime"]
 				local Strength 	= 1
 
-				-- Å¸°ÙÀÌ Àûµé(ÇÃ·¹ÀÌ¾î)ÀÌ¸é
+				-- íƒ€ê²Ÿì´ ì ë“¤(í”Œë ˆì´ì–´)ì´ë©´
 				if Skill[Var.CurrentSkill]["Target"] == "Other" then
 
 					if TargetHandle ~= nil then
 						cSetAbstate_Range( Var.Handle, Range, SHINEOBJECT, Index, Strength, KeepTime )
 					end
 
-				-- Å¸°ÙÀÌ ³ª(mob) ÀÌ¸é
+				-- íƒ€ê²Ÿì´ ë‚˜(mob) ì´ë©´
 				elseif Skill[Var.CurrentSkill]["Target"] == "Me" then
 
 					if TargetHandle ~= nil then
@@ -529,7 +545,7 @@ cExecCheck "Albi_Behaviour"
 
 
 
-			Var.SkillWaitAfter = cCurrentSecond() + Skill[Var.CurrentSkill]["WaitAfter"]
+			Var.SkillWaitAfter = cCurSec() + Skill[Var.CurrentSkill]["WaitAfter"]
 
 			Var.CurrentSkill = Var.CurrentSkill + 1
 
@@ -542,9 +558,9 @@ cExecCheck "Albi_Behaviour"
 	end
 
 
-	-- ¾ÆÅ© ¸¶ÀÎ ¼ÒÈ¯
-	Summon 		= PhaseData[Var.CurrentPhase]["Summon"]
-	SummonInfo 	= PhaseData[Var.CurrentPhase]["SummonInfo"]
+	-- ì•„í¬ ë§ˆì¸ ì†Œí™˜
+	local Summon 		= PhaseData[Var.CurrentPhase]["Summon"]
+	local SummonInfo 	= PhaseData[Var.CurrentPhase]["SummonInfo"]
 
 	for i = 1, #Var.SummonList do
 		for j = 1, #(Var.SummonList[i]) do
@@ -552,36 +568,38 @@ cExecCheck "Albi_Behaviour"
 
 				if Var.SummonList[i][j][k].IsActive == false then
 
-					-- ÇöÀç ´Ü°è¿Í °°ÀºÁö °Ë»ç
+					-- í˜„ì¬ ë‹¨ê³„ì™€ ê°™ì€ì§€ ê²€ì‚¬
 					if i == Var.CurrentPhase then
 
-						-- ÀÌÀü ±×·ì Á¾·á ÈÄ ½ÇÇàµÇ´ÂÁö °Ë»ç
-						if SummonInfo[j].IsAfterPrevSummon == true then
+							if SummonInfo[j] ~= nil and SummonInfo[j].IsAfterPrevSummon == true then
 
-							if Var.SummonList[i][j - 1].IsOver == true then
-
-								Var.SummonList[i][j][k].IsActive 	= true
-								Var.SummonList[i][j].OverTime 		= cCurSec() + SummonInfo[j].OverTime
+								if Var.SummonList[i][j - 1] and Var.SummonList[i][j - 1].IsOver == true then
+									Var.SummonList[i][j][k].IsActive = true
+									Var.SummonList[i][j].OverTime = cCurSec() + SummonInfo[j].OverTime
+								end
+							else
+								Var.SummonList[i][j][k].IsActive = true
+								Var.SummonList[i][j].OverTime = cCurSec() + (SummonInfo[j] and SummonInfo[j].OverTime or 0)
 							end
-						else
-
-							Var.SummonList[i][j][k].IsActive 	= true
-							Var.SummonList[i][j].OverTime 		= cCurSec() + SummonInfo[j].OverTime
 						end
-					end
 
 				elseif Var.SummonList[i][j][k].IsActive == true then
 
-					-- ¸®Á¨ ½Ã°£ °£°İ °Ë»ç
+					-- ë¦¬ì   ì‹œê°„ ê°„ê²© ê²€ì‚¬
 					if Var.SummonList[i][j][k].Interval < cCurSec() then
 
-						local Index		= Summon[j][k].Index
-						local X			= Summon[j][k].X
-						local Y			= Summon[j][k].Y
-						local W			= Summon[j][k].W
-						local H			= Summon[j][k].H
-						local D			= Summon[j][k].D
-						local handle 	= cMobRegen_Rectangle( Var.MapIndex, Index, X, Y, W, H, D )
+						local s = Summon and Summon[j] and Summon[j][k]
+							if not s then
+								return ReturnAI.CPP
+							end
+
+							local Index = s.Index
+							local X = s.X
+							local Y = s.Y
+							local W = s.W
+							local H = s.H
+							local D = s.D
+							local handle 	= cMobRegen_Rectangle( Var.MapIndex, Index, X, Y, W, H, D )
 
 
 						if handle ~= nil then
@@ -594,31 +612,35 @@ cExecCheck "Albi_Behaviour"
 					end
 
 
-					-- ¸®Á¨ Á¾·á °Ë»ç
-					if SummonInfo[j].IsTimeOver == true then
+					-- ë¦¬ì   ì¢…ë£Œ ê²€ì‚¬
+					local info = SummonInfo[j]
+						if info ~= nil then
 
-						if Var.SummonList[i][j].OverTime <= cCurSec() then
-							Var.SummonList[i][j][k].IsActive = false
+							if info.IsTimeOver == true then
 
-							Var.SummonList[i][j].IsOver = true
-							for n = 1, #(Var.SummonList[i][j]) do
-								if Var.SummonList[i][j][n].IsActive == true then
-									Var.SummonList[i][j].IsOver = false
+								if Var.SummonList[i][j].OverTime <= cCurSec() then
+									Var.SummonList[i][j][k].IsActive = false
+									Var.SummonList[i][j].IsOver = true
+
+									for n = 1, #(Var.SummonList[i][j]) do
+										if Var.SummonList[i][j][n].IsActive == true then
+											Var.SummonList[i][j].IsOver = false
+										end
+									end
+								end
+
+							elseif info.EndHPSection == Var.CurrentPhase then
+
+								Var.SummonList[i][j][k].IsActive = false
+								Var.SummonList[i][j].IsOver = true
+
+								for n = 1, #(Var.SummonList[i][j]) do
+									if Var.SummonList[i][j][n].IsActive == true then
+										Var.SummonList[i][j].IsOver = false
+									end
 								end
 							end
 						end
-
-					elseif SummonInfo[j].EndHPSection == Var.CurrentPhase then
-
-						Var.SummonList[i][j][k].IsActive = false
-
-						Var.SummonList[i][j].IsOver = true
-						for n = 1, #(Var.SummonList[i][j]) do
-							if Var.SummonList[i][j][n].IsActive == true then
-								Var.SummonList[i][j].IsOver = false
-							end
-						end
-					end
 				end
 			end
 
@@ -629,37 +651,13 @@ cExecCheck "Albi_Behaviour"
 			end
 		end
 	end
-
 	return ReturnAI.CPP
-
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 --------------------------------------------------------------------
 -----------------------   ArkMine  Part   --------------------------
 --------------------------------------------------------------------
-
 ExplosionTime 	= 5
 WaitBoom		= {}
 
@@ -677,7 +675,7 @@ cExecCheck "ArkMine_Kn"
 
 	end
 
-	-- MineÀÌ Second ÈÄ ÀÚÆø
+	-- Mineì´ Second í›„ ìí­
 
 	if Var.Second ~= 0 then
 
@@ -696,11 +694,12 @@ cExecCheck "ArkMine_Kn"
 	return ReturnAI.CPP
 end
 
+
 function ArkMine_F( Handle, MapIndex )
 cExecCheck "ArkMine_F"
-
 	return ReturnAI.CPP
 end
+
 
 function ArkMine_MobAttack( MapIndex, AtkHandle )
 cExecCheck "ArkMine_MobAttack"
@@ -717,35 +716,15 @@ cExecCheck "ArkMine_MobAttack"
 	--end
 
 	cNPCVanish( AtkHandle )
-	--cSetObjectHP( 0 ) -- ÀÚ»ì
+	--cSetObjectHP( 0 ) -- ìì‚´
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 --------------------------------------------------------------------
 -------------------------   Reward Part   --------------------------
 --------------------------------------------------------------------
--- º¸¹°»óÀÚ Á¦¾î¿ë ¿ÀºêÁ§Æ®
-
+-- ë³´ë¬¼ìƒì ì œì–´ìš© ì˜¤ë¸Œì íŠ¸
 function Common_RemoveTreasure( MapIndex )
 cExecCheck "Common_RemoveTreasure"
 
@@ -756,12 +735,13 @@ cExecCheck "Common_RemoveTreasure"
 	end
 end
 
+
 function Invisible_Init( Var )
 cExecCheck "Invisible_Init"
 
 	----------------------------------------------------------------------
 	-- Mantis 8164
-	-- ¡Ø º¸¹°»óÁ¦ ¼ÒÈ¯ ¹× ¾ÆÀÌÅÛµå¶ø±×·ì ¸ó½ºÅÍ ¼ÂÆÃ
+	-- â€» ë³´ë¬¼ìƒì œ ì†Œí™˜ ë° ì•„ì´í…œë“œëê·¸ë£¹ ëª¬ìŠ¤í„° ì…‹íŒ…
 
 --	local x, y = cObjectLocate( Var.Handle )
 
@@ -776,12 +756,13 @@ cExecCheck "Invisible_Init"
 --	end
 	----------------------------------------------------------------------
 
-	--cGroupRegen("BH_Cracker", "BH_HumarBox")	-- »óÀÚ°¡ ³ª¿Àµµ·Ï
+	--cGroupRegen("BH_Cracker", "BH_HumarBox")	-- ìƒìê°€ ë‚˜ì˜¤ë„ë¡
 
 	Var.Wait 		= {}
 	Var.Wait.Second = cCurSec() + AlbiBox_VanishTime
 	Var.StepFunc 	= Invisible_AllVanish
 end
+
 
 function InvisibleMan( Handle, MapIndex )
 cExecCheck "InvisibleMan"
@@ -799,12 +780,13 @@ cExecCheck "InvisibleMan"
 	return ReturnAI.END
 end
 
+
 function Invisible_AllVanish( Var )
 cExecCheck "Invisible_AllVanish"
 
 	if cCurSec() > Var.Wait.Second then
 
-		--cRegenGroupActiv( Var.MapIndex, "UniWpLv125", 0 )	-- »óÀÚ°¡ ³ª¿ÀÁö ¾Êµµ·Ï(¼¼¹øÂ° ÀÎ¼ö¸¦ »ı·«ÇÏ°Å³ª 1ÀÌ¸é activ)
+		--cRegenGroupActiv( Var.MapIndex, "UniWpLv125", 0 )	-- ìƒìê°€ ë‚˜ì˜¤ì§€ ì•Šë„ë¡(ì„¸ë²ˆì§¸ ì¸ìˆ˜ë¥¼ ìƒëµí•˜ê±°ë‚˜ 1ì´ë©´ activ)
 
 		--Common_RemoveTreasure( Var.MapIndex )
 		cNPCVanish( Var.Handle )
@@ -812,7 +794,3 @@ cExecCheck "Invisible_AllVanish"
 		Var.StepFunc = nil
 	end
 end
-
-
-
-
